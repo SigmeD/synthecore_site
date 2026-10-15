@@ -1,5 +1,7 @@
 # Compact Hero geometry — 2026-10-14
 
+> **Архив до рефакторинга v31.** Этот документ сохраняет постановку, реализацию и результаты своей итерации. Его слова «актуально» и «проверено» не являются приёмкой текущей страницы. Текущий вход: [старт v31](01_NEW_CHAT_START.md), [QA v31](QA_V31.md). Пути «локальный артефакт» обозначают материалы вне Git, которые могут отсутствовать в клоне.
+
 Goal: restore the initial compact banner and place its footer near its bottom,
 while retaining the accepted reveal / READY / next-gesture sequence.
 

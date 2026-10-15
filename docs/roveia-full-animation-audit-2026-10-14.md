@@ -1,5 +1,7 @@
 # Roveia → SyntheCore: диагностический отчёт до реализации
 
+> **Архив до рефакторинга v31.** Этот документ сохраняет постановку, реализацию и результаты своей итерации. Его слова «актуально» и «проверено» не являются приёмкой текущей страницы. Текущий вход: [старт v31](01_NEW_CHAT_START.md), [QA v31](QA_V31.md). Пути «локальный артефакт» обозначают материалы вне Git, которые могут отсутствовать в клоне.
+
 14 октября 2026. Исследованы живой https://www.roveia.com/ и фактический
 http://127.0.0.1:4173/ в Chromium через Playwright/CDP. На момент составления
 этого отчёта код сайта не изменён: хеши шести контрольных файлов совпали с
@@ -44,11 +46,11 @@ SyntheCore, а не доказанные универсальные свойст
   проверочных страницах; в проект их не внедряли.
 
 Данные находятся в `../output/playwright/roveia-full-audit-2026-10-14/`:
-[discovery.json](../output/playwright/roveia-full-audit-2026-10-14/discovery.json),
-[deep.json](../output/playwright/roveia-full-audit-2026-10-14/deep.json),
-[measurements-before.json](../output/playwright/roveia-full-audit-2026-10-14/measurements-before.json),
-[input-performance-before.json](../output/playwright/roveia-full-audit-2026-10-14/input-performance-before.json),
-[публичный inline JS](../output/playwright/roveia-full-audit-2026-10-14/inline-motion.js).
+discovery.json (локальный артефакт: `output/playwright/roveia-full-audit-2026-10-14/discovery.json`),
+deep.json (локальный артефакт: `output/playwright/roveia-full-audit-2026-10-14/deep.json`),
+measurements-before.json (локальный артефакт: `output/playwright/roveia-full-audit-2026-10-14/measurements-before.json`),
+input-performance-before.json (локальный артефакт: `output/playwright/roveia-full-audit-2026-10-14/input-performance-before.json`),
+публичный inline JS (локальный артефакт: `output/playwright/roveia-full-audit-2026-10-14/inline-motion.js`).
 Trace-файлы и свежие кадры лежат в этой же папке. Записаны текущие полные
 кадры down/reverse для четырёх размеров SyntheCore и двух размеров Roveia;
 `recording.json` сохраняет реальные времена и поданные wheel delta.
@@ -164,7 +166,7 @@ Snap не предлагается: его нет у Hero референса. Wh
 не обоснован: непрерывный ввод работает в референсе.
 
 Предлагаемый runtime diff — только `js/hero-scroll.js`:
-[proposed.diff](../output/playwright/roveia-full-audit-2026-10-14/proposed.diff).
+proposed.diff (локальный артефакт: `output/playwright/roveia-full-audit-2026-10-14/proposed.diff`).
 Константа5/6 получена из живого timeline, а не из приблизительных скриншотов.
 Текущий end, pinSpacing, Lenis duration, shade, crop, конечный scale и
 параллакс не меняются. Новых обработчиков, таймеров, spacer или triggers нет.

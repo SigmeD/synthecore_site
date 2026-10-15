@@ -1,5 +1,7 @@
 # «С кем работаем» — доработка и проверка
 
+> **Архив до рефакторинга v31.** Этот документ сохраняет постановку, реализацию и результаты своей итерации. Его слова «актуально» и «проверено» не являются приёмкой текущей страницы. Текущий вход: [старт v31](01_NEW_CHAT_START.md), [QA v31](QA_V31.md). Пути «локальный артефакт» обозначают материалы вне Git, которые могут отсутствовать в клоне.
+
 14 октября 2026 г. Изменён только блок #audiences. База — текущая локальная версия с работающим Lenis Hero. Новый номер версии не назначался. Chrome 149.0.7827.55 через CDP 127.0.0.1:9222.
 
 ## Результат
@@ -15,7 +17,7 @@
 
 ## Сравнение одинаковых viewport
 
-[До 1920×1080](../output/playwright/audiences/before-1920x1080-0.png), [после 1920×1080](../output/playwright/audiences/after-1920x1080-0.png), [Roveia 1920×1080](../output/playwright/audiences/roveia-1920x1080-0.png).
+До 1920×1080 (локальный артефакт: `output/playwright/audiences/before-1920x1080-0.png`), после 1920×1080 (локальный артефакт: `output/playwright/audiences/after-1920x1080-0.png`), Roveia 1920×1080 (локальный артефакт: `output/playwright/audiences/roveia-1920x1080-0.png`).
 
 Live [Roveia](https://www.roveia.com/) открыт в том же Chromium и том же 1920×1080. Сняты закрытый блок и все три hover-карточки. Измерены заголовок 32px/38.4px, контейнер 1200px, padding карточки 24px, текст 16px/24px. Габариты hover-карточек с учётом их поворота — примерно385×513,369×498,369×501px. Их иллюстрации имеют заданную ширину 165px. SyntheCore сохраняет собственные тексты и изображения, а уменьшение иллюстраций выполнено относительно SyntheCore, как задано пользователем.
 
@@ -39,7 +41,7 @@ Live [Roveia](https://www.roveia.com/) открыт в том же Chromium и �
 
 ## Проверки
 
-[acceptance.json](../output/playwright/audiences/acceptance.json) — семь viewport passed, ошибок JavaScript нет: 1366×768,1920×1080,3840×2160,390×844,430×932,850×900,851×900.
+acceptance.json (локальный артефакт: `output/playwright/audiences/acceptance.json`) — семь viewport passed, ошибок JavaScript нет: 1366×768,1920×1080,3840×2160,390×844,430×932,850×900,851×900.
 
 Для каждого размера проверены все три категории: правильная active/aria/inert, изображение декодировано и целиком внутри статьи, содержимое помещается, теги в одной строке без рамок, отсутствует горизонтальная прокрутка. Desktop: две колонки, границы общего контейнера, текст в своей колонке, одинаковая высота карточки при переключении. Проверены Enter, Space, ArrowDown, Escape, hover/leave и reduced motion. Mobile: переключение и повторный tap закрывают preview, закрытая карточка не резервирует пустую область.
 
@@ -57,7 +59,7 @@ Live [Roveia](https://www.roveia.com/) открыт в том же Chromium и �
 
 Документы: этот отчёт, README.md, docs/00_MASTER_CONTEXT.md, docs/01_NEW_CHAT_START.md, дополнение к docs/verification.md, spec/plan в docs/superpowers. Backup — backup/audiences-before-2026-10-14.
 
-Скриншоты before/after каждого размера, закрытый блок и три active-статьи, live-reference и JSON — output/playwright/audiences. Для примера: [агентства после](../output/playwright/audiences/after-1920x1080-1.png), [студии после](../output/playwright/audiences/after-1920x1080-2.png), [mobile после](../output/playwright/audiences/after-390x844-0.png). Mobile PNG сняты full-page, поэтому содержат соседние секции как контекст.
+Скриншоты before/after каждого размера, закрытый блок и три active-статьи, live-reference и JSON — output/playwright/audiences. Для примера: агентства после (локальный артефакт: `output/playwright/audiences/after-1920x1080-1.png`), студии после (локальный артефакт: `output/playwright/audiences/after-1920x1080-2.png`), mobile после (локальный артефакт: `output/playwright/audiences/after-390x844-0.png`). Mobile PNG сняты full-page, поэтому содержат соседние секции как контекст.
 
 Команды:
 

@@ -1,5 +1,7 @@
 # Audience-copy parallax — 2026-10-14
 
+> **Архив до рефакторинга v31.** Этот документ сохраняет постановку, реализацию и результаты своей итерации. Его слова «актуально» и «проверено» не являются приёмкой текущей страницы. Текущий вход: [старт v31](01_NEW_CHAT_START.md), [QA v31](QA_V31.md). Пути «локальный артефакт» обозначают материалы вне Git, которые могут отсутствовать в клоне.
+
 Latest steering: restore Hero exactly from Works_v8_TEST_2_cards(1).html,
 retain only local hold at full reveal and next-gesture release. Original scrub1
 is confirmed through onScrubComplete; previous height/scene changes are canceled.

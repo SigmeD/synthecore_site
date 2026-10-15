@@ -78,7 +78,7 @@
       position:relative;z-index:14;text-align:center;margin:0 auto;
       padding:clamp(142px,15.6vh,260px) 20px 0;max-width:2100px;
     }
-    .eyebrow{font-size:12px;letter-spacing:.20em;font-weight:660;text-transform:uppercase;color:rgb(var(--hero-secondary));margin:0 0 clamp(18px,2.8vh,38px);text-shadow:0 2px 16px rgba(8,15,22,var(--hero-shadow-alpha))}
+
     h1{margin:0;font-size:clamp(50px,5.25vw,114px);line-height:1.045;letter-spacing:-.067em;font-weight:540;color:rgb(var(--hero-strong));text-shadow:0 3px 24px rgba(8,15,22,var(--hero-shadow-alpha))}
     h1 span{color:var(--hero-accent, var(--orange));font-weight:550;text-shadow:0 3px 24px rgba(8,15,22,var(--hero-shadow-alpha))}
     .hero-stage{
@@ -140,7 +140,7 @@
         padding-top:clamp(150px,14svh,295px);
         max-width:1680px;
       }
-      .eyebrow{font-size:12px;margin-bottom:clamp(20px,2.5svh,34px)}
+
       h1{font-size:clamp(84px,2.9vw,112px)}
       .hero-stage{
         width:min(1780px,calc(100% - 120px));
@@ -189,7 +189,7 @@
       :root{--hero-edge:10px;--header-offset:10px}
       .hero{border-radius:18px;min-height:100svh}
       .hero-head{padding-top:135px;text-align:left;width:calc(100% - 40px);padding-left:0;padding-right:0}
-      .eyebrow{font-size:10px;letter-spacing:.15em;margin-bottom:24px}
+
       h1{font-size:clamp(43px,11.2vw,62px);line-height:1.02}
       .hero-stage{width:calc(100% - 40px);margin-top:35px;gap:19px 14px}
       .photo{aspect-ratio:1.28/1;border-radius:17px}
@@ -209,7 +209,7 @@
     /* Short/wide viewports or non-default 4K browser zoom must never crop the footer. */
     @media (min-width:851px) and (max-height:1000px){
       .hero-head{padding-top:clamp(116px,12svh,145px)}
-      .eyebrow{margin-bottom:clamp(13px,1.8svh,24px)}
+
       h1{font-size:clamp(56px,4.5vw,88px)}
       .hero-stage{margin-top:clamp(22px,3.5svh,36px)}
       .hero-bottom{padding-top:12px;padding-bottom:clamp(20px,2.5svh,30px)}
@@ -239,10 +239,7 @@
         padding-top:clamp(100px,10.5svh,228px);
         max-width:1700px;
       }
-      .eyebrow {
-        font-size:clamp(10px,.55vw,12px);
-        margin-bottom:clamp(13px,1.4svh,24px);
-      }
+
       h1 {
         font-size:clamp(52px,3.5vw,96px);
         line-height:1.055;
@@ -275,7 +272,7 @@
       .hero-stage .photo {max-height:28svh}
       h1 {font-size:clamp(49px,3.45vw,78px)}
       .hero-bottom {padding-bottom:clamp(16px,2.2svh,30px);padding-top:8px}
-      .eyebrow {margin-bottom:clamp(10px,1svh,18px)}
+
     }
     /* 4K remains proportional but elements have the same human-scale maximums. */
     @media (min-width:2300px) and (min-height:1051px) {
@@ -329,9 +326,7 @@
         padding:0;
         text-align:center;
       }
-      .hero .eyebrow{
-        margin-bottom:clamp(14px,1.5svh,25px);
-      }
+
       .hero h1{
         font-size:clamp(48px,3.05vw,81px);
         line-height:1.07;
@@ -434,16 +429,8 @@
       font-size:clamp(46px,3.3vw,68px);font-weight:380;letter-spacing:-.072em;
       line-height:1.08;display:block;position:relative;overflow-wrap:normal;white-space:nowrap;
     }
-    .audience-option-action{
-      display:inline-flex;vertical-align:middle;align-items:center;justify-content:center;
-      font-size:clamp(12px,.85vw,16px);font-weight:550;letter-spacing:0;
-      min-height:clamp(32px,2.6vw,44px);padding:0 15px;margin:0;
-      border-radius:100px;background:#ed4d20;color:#fff;
-      position:absolute;right:calc(-1 * clamp(25px,3vw,55px));top:50%;z-index:4;
-      opacity:0;transform:translateY(calc(-50% + 9px));pointer-events:none;
-      transition:opacity .28s ease,transform .28s ease;
-    }
-    .audience-option.is-active .audience-option-action,.audience-option:hover .audience-option-action,.audience-option:focus-visible .audience-option-action{opacity:1;transform:translateY(-50%)}
+
+
     .audience-visual{min-width:0;padding:20px 12px}
     .audience-card-shell{
       position:relative;min-height:clamp(580px,40vw,710px);
@@ -476,20 +463,12 @@
     .audience-tags span{display:inline-flex;align-items:center;padding:10px 12px;
       color:#e6eaf0;border:1px solid #4a535e;border-radius:30px;
       font-size:clamp(11px,.7vw,13px);white-space:nowrap}
-    /* Reveal matches the supplied scroll clip: copy first, visual follows gently. */
-    .audience-section.motion-ready .audience-heading,
-    .audience-section.motion-ready .audience-option,
-    .audience-section.motion-ready .audience-visual{
-      opacity:0;translate:0 44px;
-      transition:opacity .88s cubic-bezier(.25,.8,.2,1),translate 1.02s cubic-bezier(.15,.8,.25,1);
-    }
-    .audience-section.motion-ready.is-visible .audience-heading,
-    .audience-section.motion-ready.is-visible .audience-option,
-    .audience-section.motion-ready.is-visible .audience-visual{opacity:1;translate:0 0}
-    .audience-section.motion-ready .audience-option:nth-child(1){transition-delay:.12s}
-    .audience-section.motion-ready .audience-option:nth-child(2){transition-delay:.2s}
-    .audience-section.motion-ready .audience-option:nth-child(3){transition-delay:.28s}
-    .audience-section.motion-ready .audience-visual{transition-delay:.23s}
+
+
+
+
+
+
     @media (min-width:2300px){
       .audience-container{width:min(1320px,100%)}
       .audience-option .audience-name{font-size:67px}
@@ -511,7 +490,7 @@
       .audience-option{grid-template-columns:30px 1fr;column-gap:10px;min-height:66px;padding:6px 0}
       .audience-name{font-size:clamp(36px,7.5vw,58px);line-height:1.07;white-space:normal}
       .audience-number{font-size:13px}
-      .audience-option-action{font-size:12px;padding:0 12px;min-height:32px;right:0}
+
       .audience-visual{padding:0 8px}
       .audience-card-shell{transform:rotate(-1.5deg);min-height:620px;border-radius:26px}
       .audience-visual:hover .audience-card-shell{transform:rotate(-1.5deg)}
@@ -531,17 +510,14 @@
       .audience-tags span{font-size:11px}
     }
     @media(prefers-reduced-motion:reduce){
-      .audience-section.motion-ready :is(.audience-heading,.audience-option,.audience-visual){opacity:1!important;translate:0 0!important;transition:none!important}
-      .audience-card-shell,.audience-card,.audience-option-action{transition:none!important}
+
+
+
+      .audience-card-shell,.audience-card{transition:none!important}
     }
 
     /* v13 — continuity between pinned hero and the following document section.
        IMPORTANT: the pin ends when the photo expansion ends; no dead tail. */
-    @media (min-width:851px) and (min-height:851px) and (max-aspect-ratio:3/1){
-      
-      
-      
-    }
     /* As soon as the previous section moves up, this heading enters the
        viewport as regular content — matching the reference scroll sequence. */
     @media (min-width:851px){
@@ -568,12 +544,8 @@
     /* v14: default is NO selected segment, NO preview panel. */
     .audience-option:not(.is-active){color:#141719}
     .audience-option.is-active{color:#eb4d20}
-    .audience-option:not(.is-active) .audience-option-action{
-      opacity:0;transform:translateY(calc(-50% + 9px));pointer-events:none;
-    }
-    .audience-option.is-active .audience-option-action{
-      opacity:1;transform:translateY(-50%);
-    }
+
+
     .audience-visual{
       opacity:0;
       visibility:hidden;
@@ -615,9 +587,6 @@
         padding-top:clamp(74px,7.5svh,120px);
       }
       
-      
-    }
-    @media (min-width:2300px) and (min-height:851px) and (max-aspect-ratio:3/1){
       
     }
     @media (prefers-reduced-motion:reduce){
@@ -696,24 +665,9 @@
         min-width:0;
         letter-spacing:-.063em;
       }
-      .audience-option-action{
-        position:static;
-        flex:0 0 auto;
-        right:auto;
-        top:auto;
-        margin-left:8px;
-        transform:translateY(8px);
-        pointer-events:none;
-      }
-      .audience-option .audience-option-action,
-      .audience-option:not(.is-active) .audience-option-action{
-        opacity:0;
-        transform:translateY(8px);
-      }
-      .audience-option:is(.is-active,:hover,:focus-visible) .audience-option-action{
-        opacity:1;
-        transform:translateY(0);
-      }
+
+
+
       /* The preview does not create a phantom second column while closed. */
       .audience-visual{
         position:absolute;

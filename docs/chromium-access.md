@@ -1,5 +1,7 @@
 # Chromium: локальный доступ для проверки SyntheCore
 
+> Инструкция запуска отдельного Chromium сохранена. Диагностика доступа и результаты ниже относятся к 14 октября 2026; наличие соединения нужно проверять заново. Старый `verify-hero.cjs` — историческая узкая проверка. Текущая полная приёмка: [QA v31](QA_V31.md), реестр старых сценариев: [HISTORICAL_CHECKS](../scripts/HISTORICAL_CHECKS.md). Пути «локальный артефакт» не входят в Git.
+
 14 октября 2026 г. В текущей сессии запуск браузера через Playwright завершался `spawn EPERM`, прямой Chromium — отказом Windows IPC. В `C:\Users\Max\.codex\config.toml` найдено `windows.sandbox = "unelevated"`. Само чтение этой настройки не доказывает, что переключение sandbox исправит конкретную ошибку.
 
 ## Подготовленный запуск
@@ -40,6 +42,6 @@ node scripts/verify-hero.cjs --reference
 
 ## Текущий статус
 
-Пользователь запустил start-chromium.bat. CDP http://127.0.0.1:9222 подключён: Chrome 149.0.7827.55, status connected, ошибок нет. Проверка открыла локальный сайт в isolated context, подтвердила engine lenis-gsap-scrolltrigger и сохранила [browser-access.json](../output/playwright/browser-access.json). Матрица Hero выполнена; [протокол](verification.md) и [видео](../output/playwright/hero-down-up.webm) доступны.
+Пользователь запустил start-chromium.bat. CDP http://127.0.0.1:9222 подключён: Chrome 149.0.7827.55, status connected, ошибок нет. Проверка открыла локальный сайт в isolated context, подтвердила engine lenis-gsap-scrolltrigger и сохранила browser-access.json (локальный артефакт: `output/playwright/browser-access.json`). Матрица Hero выполнена; [протокол](verification.md) и видео (локальный артефакт: `output/playwright/hero-down-up.webm`) доступны.
 
 recordVideo из Node столкнулся со spawn EPERM encoder. Запись получена через настоящий CDP screencast и прямой запуск установленного FFmpeg; воспроизведение WebM проверено в Chromium. Настройки Codex и managed sandbox не менялись.

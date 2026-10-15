@@ -1,5 +1,7 @@
 # Hero → «С кем работаем»: геометрия и контрольная точка
 
+> **Архив до рефакторинга v31.** Этот документ сохраняет постановку, реализацию и результаты своей итерации. Его слова «актуально» и «проверено» не являются приёмкой текущей страницы. Текущий вход: [старт v31](01_NEW_CHAT_START.md), [QA v31](QA_V31.md). Пути «локальный артефакт» обозначают материалы вне Git, которые могут отсутствовать в клоне.
+
 > Дополнение: [компактный начальный Hero](hero-compact-verification.md). Стартовая полноэкранная высота баннера заменена компактной; viewport занимает сцена, а баннер расширяется с фото. Gate этого отчёта сохранён. Скриншоты начальной композиции ниже относятся к предыдущей геометрии.
 
 14 октября 2026. Актуальная реализация по заданию
@@ -81,19 +83,19 @@ Reduced motion, touch/mobile и отсутствие hover используют 
 | 3840×2160 | 2376 | 1 | 2142 | 2160 | 2272 | READY / 0 |
 
 Полные значения на А/Б/В, reverse, hold, resize, а также состояния и скорость
-на каждом собранном кадре находятся в [acceptance.json](../output/playwright/hero-gate/acceptance.json).
-Для сопоставления исходной геометрии есть [baseline.json](../output/playwright/hero-gate/baseline.json).
+на каждом собранном кадре находятся в acceptance.json (локальный артефакт: `output/playwright/hero-gate/acceptance.json`).
+Для сопоставления исходной геометрии есть baseline.json (локальный артефакт: `output/playwright/hero-gate/baseline.json`).
 До исправления на 1920/4K heading.top был943/1140px с учётом скрывающего translateY24px;
 проверка новой физической последовательности на этой копии завершилась ошибкой.
 
-[Открыть галерею А/Б/В, reverse и исходные кадры](../output/playwright/hero-gate/comparison.html).
+Открыть галерею А/Б/В, reverse и исходные кадры (локальный артефакт: `output/playwright/hero-gate/comparison.html`).
 Локально: http://127.0.0.1:4173/output/playwright/hero-gate/comparison.html
 
 | Окно | А: раскрывается | Б: READY | В: новый жест |
 |---|---|---|---|
-| 1366×768 | [А](../output/playwright/hero-gate/1366x768-A.png) | [Б](../output/playwright/hero-gate/1366x768-B.png) | [В](../output/playwright/hero-gate/1366x768-C.png) |
-| 1920×1080 | [А](../output/playwright/hero-gate/1920x1080-A.png) | [Б](../output/playwright/hero-gate/1920x1080-B.png) | [В](../output/playwright/hero-gate/1920x1080-C.png) |
-| 3840×2160 | [А](../output/playwright/hero-gate/3840x2160-A.png) | [Б](../output/playwright/hero-gate/3840x2160-B.png) | [В](../output/playwright/hero-gate/3840x2160-C.png) |
+| 1366×768 | А (локальный артефакт: `output/playwright/hero-gate/1366x768-A.png`) | Б (локальный артефакт: `output/playwright/hero-gate/1366x768-B.png`) | В (локальный артефакт: `output/playwright/hero-gate/1366x768-C.png`) |
+| 1920×1080 | А (локальный артефакт: `output/playwright/hero-gate/1920x1080-A.png`) | Б (локальный артефакт: `output/playwright/hero-gate/1920x1080-B.png`) | В (локальный артефакт: `output/playwright/hero-gate/1920x1080-C.png`) |
+| 3840×2160 | А (локальный артефакт: `output/playwright/hero-gate/3840x2160-A.png`) | Б (локальный артефакт: `output/playwright/hero-gate/3840x2160-B.png`) | В (локальный артефакт: `output/playwright/hero-gate/3840x2160-C.png`) |
 
 ## Проверки и границы доказательств
 
@@ -110,7 +112,7 @@ precision-ускорение2/5/12/24, малые отдельные шаги20/
 прокрутку и отмену завершения Lenis средним кликом во время SETTLING. Эти случаи
 воспроизведены как падающие проверки,
 исправлены и проверяются отдельно в
-[edge-acceptance.json](../output/playwright/hero-gate/edge-acceptance.json).
+edge-acceptance.json (локальный артефакт: `output/playwright/hero-gate/edge-acceptance.json`).
 
 `verify-hero.cjs`: семь общих конфигураций, меню, пять стадий фотографии,
 wheel-stop, клавиатура, якоря, native/mobile/reduced, отказ Lenis/GSAP и lifecycle.
@@ -124,7 +126,7 @@ wheel-stop, клавиатура, якоря, native/mobile/reduced, отказ 
 Источник сравнения — предоставленные MP4, декодированные в Chromium. На Roveia
 2.55s Hero уже широк, следующий heading отсутствует; в3.35s следующий раздел
 входит снизу. В прежней локальной записи2.1s heading уже виден после небольшого
-ухода Hero. [Галерея](../output/playwright/hero-gate/comparison.html) содержит эти
+ухода Hero. Галерея (локальный артефакт: `output/playwright/hero-gate/comparison.html`) содержит эти
 кадры и новые снимки3776×1472. Секунды разных записей не сравниваются как скорость.
 Размеры видео не доказывают параметры CSS viewport при записи, а записи не
 подтверждают число жестов или внутреннюю механику Roveia.

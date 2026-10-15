@@ -1,5 +1,7 @@
 # SyntheCore — Hero: изменения и браузерная приёмка
 
+> **Архив до рефакторинга v31.** Этот документ сохраняет постановку, реализацию и результаты своей итерации. Его слова «актуально» и «проверено» не являются приёмкой текущей страницы. Текущий вход: [старт v31](01_NEW_CHAT_START.md), [QA v31](QA_V31.md). Пути «локальный артефакт» обозначают материалы вне Git, которые могут отсутствовать в клоне.
+
 > Этот протокол и видео относятся к задаче Hero до следующей доработки блока аудиторий. Текущее состояние «С кем работаем», семь новых browser cases и кадры до/после описаны в [отдельном отчёте](audiences-verification.md). Hero-контроллеры сохранены.
 
 14 октября 2026 г. **Реализация и браузерная проверка завершены.** Пользователь запустил отдельный Chromium; доступ по CDP подтверждён. База v23.1; новый номер версии и пользовательское утверждение сборки не назначались.
@@ -64,13 +66,13 @@ Desktop дополнительно проверяет монотонное за�
 
 На release отступ между нижней границей Hero и заголовком «С кем работаем» остаётся в пределах 145 px (принимается существующий межблочный интервал, без дополнительной пустой секции). При reduced motion исчезает spacer, фото возвращается в сетку, заголовок расположен ниже хедера.
 
-[Машинная матрица](../output/playwright/acceptance.json): семь случаев passed, errors пуст. Два дополнительных случая — отсутствие Lenis и отсутствие GSAP. [Доступ](../output/playwright/browser-access.json): connected.
+Машинная матрица (локальный артефакт: `output/playwright/acceptance.json`): семь случаев passed, errors пуст. Два дополнительных случая — отсутствие Lenis и отсутствие GSAP. Доступ (локальный артефакт: `output/playwright/browser-access.json`): connected.
 
-Промежуточные кадры сохранены с именами viewport-progress.png; например [25%](../output/playwright/1920x1080-25.png), [50%](../output/playwright/1920x1080-50.png), [75%](../output/playwright/1920x1080-75.png), [release](../output/playwright/1920x1080-release.png), [mobile](../output/playwright/430x932-native.png). Кадры просмотрены; фотография, маска, поля, оранжевый акцент, хедер и кнопки сохраняются.
+Промежуточные кадры сохранены с именами viewport-progress.png; например 25% (локальный артефакт: `output/playwright/1920x1080-25.png`), 50% (локальный артефакт: `output/playwright/1920x1080-50.png`), 75% (локальный артефакт: `output/playwright/1920x1080-75.png`), release (локальный артефакт: `output/playwright/1920x1080-release.png`), mobile (локальный артефакт: `output/playwright/430x932-native.png`). Кадры просмотрены; фотография, маска, поля, оранжевый акцент, хедер и кнопки сохраняются.
 
 ## Адверсальная проверка
 
-[adversarial.json](../output/playwright/adversarial.json) — пять пройденных дополнительных случаев, errors пуст:
+adversarial.json (локальный артефакт: `output/playwright/adversarial.json`) — пять пройденных дополнительных случаев, errors пуст:
 
 - Resize во время активного pin: ширины слоя/баннера совпали, scaleX=scaleY, один spacer.
 - Wheel ±20000: пересечение границ, обратная прокрутка вернула scroll 0 без отскока.
@@ -84,7 +86,7 @@ NEURO-LINT как формальный инструмент не объявля�
 
 ## Roveia
 
-[Live Roveia](https://www.roveia.com/) открыт в том же Chromium при 1920×1080. Сняты шесть состояний scroll 0/250/500/750/1000/1250; получены live ScrollTrigger и inline-код. [reference.json](../output/playwright/reference.json), [начало](../output/playwright/roveia-0.png), [переход](../output/playwright/roveia-5.png), исходник roveia-inline.js.
+[Live Roveia](https://www.roveia.com/) открыт в том же Chromium при 1920×1080. Сняты шесть состояний scroll 0/250/500/750/1000/1250; получены live ScrollTrigger и inline-код. reference.json (локальный артефакт: `output/playwright/reference.json`), начало (локальный артефакт: `output/playwright/roveia-0.png`), переход (локальный артефакт: `output/playwright/roveia-5.png`), исходник roveia-inline.js.
 
 | Свойство | Roveia live | SyntheCore |
 |---|---|---|
@@ -99,7 +101,7 @@ NEURO-LINT как формальный инструмент не объявля�
 
 ## Запись
 
-[hero-down-up.webm](../output/playwright/hero-down-up.webm) — реальная прокрутка колесом вниз через освобождение Hero и обратно, 11,95 секунды, VP8/WebM, 20 fps, 1280×624. [video-check.json](../output/playwright/video-check.json) подтверждает настоящее воспроизведение в Chromium, разные декодированные кадры на2/5/9 секунде, длительность и отсутствие media error. Кадры просмотрены: раскрытие, второй блок и обратное движение. В проверочном headless-браузере seek по paused video давал устаревшую compositor-картинку; проверка использует естественное воспроизведение и чтение пикселей decoded video, а не только loadedmetadata.
+hero-down-up.webm (локальный артефакт: `output/playwright/hero-down-up.webm`) — реальная прокрутка колесом вниз через освобождение Hero и обратно, 11,95 секунды, VP8/WebM, 20 fps, 1280×624. video-check.json (локальный артефакт: `output/playwright/video-check.json`) подтверждает настоящее воспроизведение в Chromium, разные декодированные кадры на2/5/9 секунде, длительность и отсутствие media error. Кадры просмотрены: раскрытие, второй блок и обратное движение. В проверочном headless-браузере seek по paused video давал устаревшую compositor-картинку; проверка использует естественное воспроизведение и чтение пикселей decoded video, а не только loadedmetadata.
 
 Источник — настоящие CDP Page.screencastFrame с timestamps; точный список и количество сохранены в recording.json. Запись ресэмплирована к 20 fps по времени. CDP записывает видимую compositor surface, которая в этой сессии ниже эмулированного CSS viewport; пропорции исходных кадров при кодировании сохранены. Видео показывает Hero и переход, не является замером FPS приложения.
 

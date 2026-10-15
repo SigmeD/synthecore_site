@@ -1,5 +1,7 @@
 # Компактный начальный Hero
 
+> **Архив до рефакторинга v31.** Этот документ сохраняет постановку, реализацию и результаты своей итерации. Его слова «актуально» и «проверено» не являются приёмкой текущей страницы. Текущий вход: [старт v31](01_NEW_CHAT_START.md), [QA v31](QA_V31.md). Пути «локальный артефакт» обозначают материалы вне Git, которые могут отсутствовать в клоне.
+
 14 октября2026. Исправление по замечанию пользователя о растянутом голубом
 баннере и нижней строке, удалённой от его края.
 
@@ -51,12 +53,12 @@ transform:none. Reverse возвращает компактный баннер. 
 | 1920×1080 | 1044 → 801 | 351.6 → 27 | 549.4×309.0 | 0/0px |
 | 3840×2160 | 2124 → 968 | 1281.6 → 40 | 546×307.1 | 0/0px |
 
-[Галерея до/после, А/Б/В и reverse](../output/playwright/hero-compact/comparison.html).
+Галерея до/после, А/Б/В и reverse (локальный артефакт: `output/playwright/hero-compact/comparison.html`).
 В браузере: http://127.0.0.1:4173/output/playwright/hero-compact/comparison.html
 
-[Начальный кадр1920×1080](../output/playwright/hero-compact/after-1920x1080-start.png) ·
-[Полное раскрытие](../output/playwright/hero-compact/after-1920x1080-B.png) ·
-[Переход следующим жестом](../output/playwright/hero-compact/after-1920x1080-C.png).
+Начальный кадр1920×1080 (локальный артефакт: `output/playwright/hero-compact/after-1920x1080-start.png`) ·
+Полное раскрытие (локальный артефакт: `output/playwright/hero-compact/after-1920x1080-B.png`) ·
+Переход следующим жестом (локальный артефакт: `output/playwright/hero-compact/after-1920x1080-C.png`).
 
 ## Проверки
 
@@ -64,9 +66,9 @@ transform:none. Reverse возвращает компактный баннер. 
 неизменные координаты/размеры начального фото/title/CTA, footer20–40px,
 изменение высоты только с прогрессом раскрытия, постоянная высота документа,
 полное раскрытие и hold, следующий жест, reverse, resize/refresh посередине
-и reduced motion. Логи — [acceptance.json](../output/playwright/hero-compact/acceptance.json).
-Начальные значения — [до](../output/playwright/hero-compact/before-geometry.json)
-и [после](../output/playwright/hero-compact/after-geometry.json).
+и reduced motion. Логи — acceptance.json (локальный артефакт: `output/playwright/hero-compact/acceptance.json`).
+Начальные значения — до (локальный артефакт: `output/playwright/hero-compact/before-geometry.json`)
+и после (локальный артефакт: `output/playwright/hero-compact/after-geometry.json`).
 
 Повторены проверки существующего gate, его пограничных прерываний, общих режимов
 Hero и hover/focus/tap карточек. Статичный снимок служит доказательством геометрии;
