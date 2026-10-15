@@ -1,0 +1,121 @@
+/* Works v29 — universal glass card component.
+   One independent sticky sibling per project; one scaled visual frame per card.
+   Media, gradient and SEO-readable copy are separate layers.
+   Add another article.sc-work-item to the stack to extend the gallery.
+   No bespoke CSS per project; no duplicate scrolling engines. */
+.sc-services-anchor {height:0;scroll-margin-top:20px}
+.sc-works {
+  --works-gutter:clamp(14px,1vw,28px);
+  --works-padding:clamp(10px,0.8vw,16px);
+  --works-radius:clamp(17px,1.25vw,28px);
+  --works-aspect:2.75268817;
+  --works-width:min(
+    calc(100vw - 2 * var(--works-gutter) - 2 * var(--works-padding)),
+    calc((100svh - 2 * var(--works-padding) - 24px) * var(--works-aspect))
+  );
+  --works-height:calc(var(--works-width) / var(--works-aspect));
+  --works-step:145svh;
+  --works-last-hold:85svh;
+  position:relative;
+  width:100%;background:#fff;
+  isolation:isolate;
+}
+.sc-works,.sc-works * {box-sizing:border-box}
+.sc-works-stack {display:flex; flex-direction:column; overflow:visible; position:relative}
+/* Preserve half a viewport of holding time for the final sticky item. */
+.sc-works-stack::after {content:"";display:block;flex:0 0 var(--works-last-hold);height:var(--works-last-hold);pointer-events:none}
+.sc-work-item {
+  position:sticky;top:0;z-index:1;
+  width:calc(100% - 2 * var(--works-gutter));
+  height:var(--works-step);flex:0 0 var(--works-step);
+  margin:0 auto;padding:var(--works-padding);
+  pointer-events:none;
+}
+/* The next card is painted above its predecessor because it is a later sticky sibling. */
+.sc-work-item + .sc-work-item {z-index:2}
+.sc-work-frame {
+  position:relative;display:block;overflow:hidden;
+  width:var(--works-width);height:var(--works-height);
+  margin-inline:auto;border-radius:var(--works-radius);
+  isolation:isolate;background:#d5d8db;
+  transform:scale(1);transform-origin:50% 0%;
+  box-shadow:0 13px 42px rgba(16,31,45,.10);
+  will-change:transform;
+}
+.sc-work-media {position:absolute;inset:0;pointer-events:none}
+.sc-work-media {z-index:1;overflow:hidden}
+.sc-work-media picture, .sc-work-media img{display:block;width:100%;height:100%}
+.sc-work-media img{object-fit:cover;object-position:center}
+/* Works v29: media is never darkened; text sits on its own frosted-glass panel.
+   The panel is sized by its HTML content, not a fullscreen overlay. */
+.sc-work-content {
+  --glass-y:0px;
+  --glass-glint:0%;
+  position:absolute;
+  z-index:3;
+  left:clamp(22px,1.35vw,34px);
+  bottom:clamp(20px,1.35vw,34px);
+  width:max-content;
+  max-width:min(636px,calc(100% - 44px));
+  padding:clamp(21px,1.7vw,35px) clamp(25px,2vw,42px);
+  border-radius:clamp(21px,1.65vw,29px);
+  border:1px solid rgba(255,255,255,.67);
+  background:linear-gradient(125deg,
+    rgba(255,255,255,.64) 0%,
+    rgba(255,255,255,.48) 52%,
+    rgba(255,255,255,.39) 100%);
+  -webkit-backdrop-filter:blur(17px) saturate(1.17);
+  backdrop-filter:blur(17px) saturate(1.17);
+  box-shadow:0 18px 46px rgba(31,43,54,.10),inset 0 1px 0 rgba(255,255,255,.54);
+  font-family:var(--sc-font-family,inherit);
+  color:#18212a;
+  text-shadow:none;
+  transform:translate3d(0,var(--glass-y),0);
+  isolation:isolate;
+  overflow:hidden;
+  pointer-events:none;
+}
+/* Subtle highlight; driven by the existing sticky-card tween, not by a second scroll listener. */
+.sc-work-content::before {
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:0;
+  background:linear-gradient(112deg,
+    transparent 28%,rgba(255,255,255,.16) 43%,rgba(255,255,255,.24) 50%,transparent 68%);
+  transform:translate3d(var(--glass-glint),0,0);
+  pointer-events:none;
+}
+.sc-work-content>* {position:relative;z-index:1}
+.sc-work-content__type {display:block;margin:0 0 10px;font:500 clamp(12px,.8vw,14px)/1.4 var(--sc-font-family,inherit);color:#45515b}
+.sc-work-content__title {margin:0 0 12px;font-family:var(--sc-font-family,inherit);font-size:clamp(31px,2.35vw,46px);font-weight:460;letter-spacing:-.058em;line-height:1.08;text-wrap:balance;color:#171e23}
+.sc-work-content__description {margin:0;max-width:570px;font-family:var(--sc-font-family,inherit);font-size:clamp(14px,.94vw,17px);font-weight:400;line-height:1.47;color:#303b45}
+@supports not ((-webkit-backdrop-filter:blur(1px)) or (backdrop-filter:blur(1px))) {
+  .sc-work-content {background:rgba(250,250,250,.92)}
+}
+/* New media can be swapped for video without changing scale/sticky markup. */
+.sc-work-media video{display:block;width:100%;height:100%;object-fit:cover}
+@media(max-width:850px){
+  .sc-works{--works-gutter:0px;--works-padding:10px;--works-width:calc(100vw - 20px);--works-height:calc(87svh - 20px)}
+  .sc-work-media img{object-position:59% center}
+  .sc-work-content{left:22px;bottom:24px;max-width:calc(100% - 44px);padding:24px 23px;transform:none}
+  .sc-work-content__title{font-size:clamp(30px,6vw,46px)}
+  .sc-work-content__description{font-size:15px}
+}
+@media(max-width:480px){
+  .sc-works{--works-height:calc(82svh - 20px);--works-radius:20px}
+  .sc-work-media img{object-position:60% center}
+  .sc-work-content{left:19px;bottom:21px;max-width:calc(100% - 38px);padding:20px 19px;border-radius:21px;transform:none}
+  .sc-work-content__title{font-size:clamp(28px,7vw,35px);margin-bottom:9px}
+  .sc-work-content__description{font-size:14px}
+}
+@media(prefers-reduced-motion:reduce){
+  .sc-work-content{transform:none!important}
+  .sc-work-content::before{display:none}
+  .sc-works-stack::after{display:none}
+  .sc-work-item{position:relative;height:auto;min-height:var(--works-height);flex:none;margin-bottom:20px}
+  .sc-work-frame{transform:none!important;will-change:auto}
+}
+.sc-works--fallback .sc-work-frame{transform:none!important;will-change:auto}
+
+@media(max-width:850px){.sc-work-content::before{display:none}}
