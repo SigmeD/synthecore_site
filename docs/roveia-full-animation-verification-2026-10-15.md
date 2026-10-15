@@ -1,8 +1,10 @@
 # Roveia / SyntheCore — реализация и фактическая приёмка
 
+> **Архив до рефакторинга v31.** Этот документ сохраняет постановку, реализацию и результаты своей итерации. Его слова «актуально» и «проверено» не являются приёмкой текущей страницы. Текущий вход: [старт v31](01_NEW_CHAT_START.md), [QA v31](QA_V31.md). Пути «локальный артефакт» обозначают материалы вне Git, которые могут отсутствовать в клоне.
+
 15 октября 2026. Работа началась14 октября. До изменения кода опубликованы
 [диагностический отчёт](roveia-full-animation-audit-2026-10-14.md) и
-[предлагаемый diff](../output/playwright/roveia-full-audit-2026-10-14/proposed.diff).
+предлагаемый diff (локальный артефакт: `output/playwright/roveia-full-audit-2026-10-14/proposed.diff`).
 Контрольные хеши подтверждали отсутствие правок приложения до отчёта.
 Резервная версия: `backup/roveia-full-audit-before-2026-10-14/`.
 
@@ -93,14 +95,14 @@ Hero. В +25%H полностью видима. На mobile transform отсут
 
 ## Кадры, записи и diff
 
-[Интерактивная галерея Roveia / SC до / SC после](../output/playwright/roveia-full-audit-2026-10-14/comparison.html)
+Интерактивная галерея Roveia / SC до / SC после (локальный артефакт: `output/playwright/roveia-full-audit-2026-10-14/comparison.html`)
 показывает реальные scrollY, высоту Hero, mediaProgress, координату и opacity
 заголовка. Можно выбрать1920/4K/1366 и конкретный контрольный кадр.
 
 | Размер | Roveia | SC до | SC после |
 |---|---|---|---|
-|1920×1080|[запись](../output/playwright/roveia-full-audit-2026-10-14/video-roveia-1920x1080/transition-final.webm)|[запись](../output/playwright/roveia-full-audit-2026-10-14/video-local-before-1920x1080/transition-final.webm)|[запись](../output/playwright/roveia-full-audit-2026-10-14/video-local-after-1920x1080/transition-final.webm)|
-|3840×2160|[запись](../output/playwright/roveia-full-audit-2026-10-14/video-roveia-3840x2160/transition-final.webm)|[запись](../output/playwright/roveia-full-audit-2026-10-14/video-local-before-3840x2160/transition-final.webm)|[запись](../output/playwright/roveia-full-audit-2026-10-14/video-local-after-3840x2160/transition-final.webm)|
+|1920×1080|запись (локальный артефакт: `output/playwright/roveia-full-audit-2026-10-14/video-roveia-1920x1080/transition-final.webm`)|запись (локальный артефакт: `output/playwright/roveia-full-audit-2026-10-14/video-local-before-1920x1080/transition-final.webm`)|запись (локальный артефакт: `output/playwright/roveia-full-audit-2026-10-14/video-local-after-1920x1080/transition-final.webm`)|
+|3840×2160|запись (локальный артефакт: `output/playwright/roveia-full-audit-2026-10-14/video-roveia-3840x2160/transition-final.webm`)|запись (локальный артефакт: `output/playwright/roveia-full-audit-2026-10-14/video-local-before-3840x2160/transition-final.webm`)|запись (локальный артефакт: `output/playwright/roveia-full-audit-2026-10-14/video-local-after-3840x2160/transition-final.webm`)|
 
 Все записи содержат вниз и обратно; кодировались реальные полные кадры
 Chromium без интерполяции. Метаданные decode проверены; WebM remux сохраняет
@@ -112,7 +114,7 @@ Chromium без интерполяции. Метаданные decode прове
 Она сохранена в папке sources. У изученных Webflow bundles ссылки на source
 map не найдены; приватные исходники Webflow не использовались.
 
-[Итоговый diff](../output/playwright/roveia-full-audit-2026-10-14/final.diff).
+Итоговый diff (локальный артефакт: `output/playwright/roveia-full-audit-2026-10-14/final.diff`).
 Он включает runtime, проверку сохранения проекта и обновление README;
 новые отчёты и собранные доказательства доступны отдельными ссылками.
 Дополнительно сохранены initial-video1366/mobile, исходные video v3 и

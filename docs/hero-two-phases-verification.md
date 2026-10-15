@@ -1,5 +1,7 @@
 # Hero → «С кем работаем»: две последовательные фазы
 
+> **Архив до рефакторинга v31.** Этот документ сохраняет постановку, реализацию и результаты своей итерации. Его слова «актуально» и «проверено» не являются приёмкой текущей страницы. Текущий вход: [старт v31](01_NEW_CHAT_START.md), [QA v31](QA_V31.md). Пути «локальный артефакт» обозначают материалы вне Git, которые могут отсутствовать в клоне.
+
 > Исторический отчёт. Отдельная opacity/transform-анимация отменена новым видеоаудитом. Актуальная геометрия и локальная контрольная точка описаны в [hero-gate-verification.md](hero-gate-verification.md).
 
 14 октября 2026. Исправление внесено в локальный проект. Видеозапись исключена по последнему сообщению пользователя.
@@ -20,21 +22,21 @@
 
 | Viewport | А: раскрытие | Б: полностью раскрыто, второй блок скрыт | В: дальнейший скролл |
 |---|---|---|---|
-|1366×768|[А](../output/playwright/hero-two-phases/1366x768-A.png)|[Б](../output/playwright/hero-two-phases/1366x768-B.png)|[В](../output/playwright/hero-two-phases/1366x768-V.png)|
-|1920×1080|[А](../output/playwright/hero-two-phases/1920x1080-A.png)|[Б](../output/playwright/hero-two-phases/1920x1080-B.png)|[В](../output/playwright/hero-two-phases/1920x1080-V.png)|
-|3840×2160|[А](../output/playwright/hero-two-phases/3840x2160-A.png)|[Б](../output/playwright/hero-two-phases/3840x2160-B.png)|[В](../output/playwright/hero-two-phases/3840x2160-V.png)|
+|1366×768|А (локальный артефакт: `output/playwright/hero-two-phases/1366x768-A.png`)|Б (локальный артефакт: `output/playwright/hero-two-phases/1366x768-B.png`)|В (локальный артефакт: `output/playwright/hero-two-phases/1366x768-V.png`)|
+|1920×1080|А (локальный артефакт: `output/playwright/hero-two-phases/1920x1080-A.png`)|Б (локальный артефакт: `output/playwright/hero-two-phases/1920x1080-B.png`)|В (локальный артефакт: `output/playwright/hero-two-phases/1920x1080-V.png`)|
+|3840×2160|А (локальный артефакт: `output/playwright/hero-two-phases/3840x2160-A.png`)|Б (локальный артефакт: `output/playwright/hero-two-phases/3840x2160-B.png`)|В (локальный артефакт: `output/playwright/hero-two-phases/3840x2160-V.png`)|
 
 Дополнительно сохранены heading-first — заголовок уже проявляется, opacity направлений ещё0 — и reverse-B/reverse-A/reverse-start.
 
-Контрольные кадры [Roveia](https://www.roveia.com/) при этих же размерах, снятые ранее в этой сессии: [1366: конец](../output/playwright/hero-handoff/roveia-1366x768-complete.png), [1920: конец](../output/playwright/hero-handoff/roveia-1920x1080-complete.png), [1920: переход](../output/playwright/hero-handoff/roveia-1920x1080-transition.png), [4K: конец](../output/playwright/hero-handoff/roveia-3840x2160-complete.png). На4K live-reference показывал следующий heading уже при раскрытии; для нашего проекта соблюдено более строгое требование пользователя. Высоту Roveia не переносили в SyntheCore, сравнение разных viewport не использовалось.
+Контрольные кадры [Roveia](https://www.roveia.com/) при этих же размерах, снятые ранее в этой сессии: 1366: конец (локальный артефакт: `output/playwright/hero-handoff/roveia-1366x768-complete.png`), 1920: конец (локальный артефакт: `output/playwright/hero-handoff/roveia-1920x1080-complete.png`), 1920: переход (локальный артефакт: `output/playwright/hero-handoff/roveia-1920x1080-transition.png`), 4K: конец (локальный артефакт: `output/playwright/hero-handoff/roveia-3840x2160-complete.png`). На4K live-reference показывал следующий heading уже при раскрытии; для нашего проекта соблюдено более строгое требование пользователя. Высоту Roveia не переносили в SyntheCore, сравнение разных viewport не использовалось.
 
 ## Проверки
 
-[acceptance.json](../output/playwright/hero-two-phases/acceptance.json): **3/3 passed** на1366×768,1920×1080,3840×2160. На каждом размере около1280 rAF-состояний с реальными wheel events: stop посередине, быстрый overshoot конца pin, reverse, серия медленных импульсов вниз и обратно. Каждое состояние проверяет порядок фаз с учётом visibility/opacity всех предков. При видимом heading фотография уже полностью раскрыта и физический scroll больше pinEnd. В фазе1 opacity heading/направлений/следующего контента0; контент inert. Ошибок JS и horizontal overflow нет.
+acceptance.json (локальный артефакт: `output/playwright/hero-two-phases/acceptance.json`): **3/3 passed** на1366×768,1920×1080,3840×2160. На каждом размере около1280 rAF-состояний с реальными wheel events: stop посередине, быстрый overshoot конца pin, reverse, серия медленных импульсов вниз и обратно. Каждое состояние проверяет порядок фаз с учётом visibility/opacity всех предков. При видимом heading фотография уже полностью раскрыта и физический scroll больше pinEnd. В фазе1 opacity heading/направлений/следующего контента0; контент inert. Ошибок JS и horizontal overflow нет.
 
-Контрольные состояния подтверждают совпадение handoffStart и pinEnd, полный размер image scale1 и затемнение0.98 в Б, появление heading перед направлениями, прежнюю высоту Hero и постоянную высоту документа. После полного появления heading/направлений зазор от Hero до начала аудитории остаётся около14/18px. Фаза2 не создаёт второго pin-spacer. [baseline-failures.json](../output/playwright/hero-two-phases/baseline-failures.json) фиксирует отсутствие такого gate до изменения кода.
+Контрольные состояния подтверждают совпадение handoffStart и pinEnd, полный размер image scale1 и затемнение0.98 в Б, появление heading перед направлениями, прежнюю высоту Hero и постоянную высоту документа. После полного появления heading/направлений зазор от Hero до начала аудитории остаётся около14/18px. Фаза2 не создаёт второго pin-spacer. baseline-failures.json (локальный артефакт: `output/playwright/hero-two-phases/baseline-failures.json`) фиксирует отсутствие такого gate до изменения кода.
 
-[lifecycle.json](../output/playwright/hero-two-phases/lifecycle.json): resize во время фазы1 пересчитывает границу входа; при обратном проходе скрываемые controls теряют focus; reduced motion снимает оба trigger и восстанавливает видимость всех секций; mobile не оставляет inert/hidden; прямые #audiences/#services корректно показывают конечное состояние, preview продолжает работать.
+lifecycle.json (локальный артефакт: `output/playwright/hero-two-phases/lifecycle.json`): resize во время фазы1 пересчитывает границу входа; при обратном проходе скрываемые controls теряют focus; reduced motion снимает оба trigger и восстанавливает видимость всех секций; mobile не оставляет inert/hidden; прямые #audiences/#services корректно показывают конечное состояние, preview продолжает работать.
 
 Общая `scripts/verify-hero.cjs`: **7 cases passed**, без ошибок — три desktop, два mobile, отсутствие Lenis, отсутствие GSAP. Проверены anchors, keyboard, stop/reverse, release, cleanup и resize. `scripts/verify-audience-preview.cjs`: **11/11 passed**, включая keyboard, tap toggle, reduced motion, отсутствие библиотек и неподвижный курсор при скролле. Новый handoff не активирует категории.
 

@@ -1,5 +1,7 @@
 # Works v31 — интеграция и приёмка
 
+> **Архив до рефакторинга v31.** Этот документ сохраняет постановку, реализацию и результаты своей итерации. Его слова «актуально» и «проверено» не являются приёмкой текущей страницы. Текущий вход: [старт v31](01_NEW_CHAT_START.md), [QA v31](QA_V31.md). Пути «локальный артефакт» обозначают материалы вне Git, которые могут отсутствовать в клоне.
+
 Дата: 15.10.2026. Ветка: `feature/works-v31-integration`.
 Пакет: `SyntheCore_v31_Works_Git_Integration_Only.zip`.
 База: `origin/main` = `79a7f50`; подготовительный коммит `b1f128a`.
@@ -39,9 +41,9 @@ Hero и содержимое аудиторий, включая открывае
 
 Артефакты и исполняемые проверочные сценарии сохранены локально в `output/playwright/works-v31/` (по существующему .gitignore не коммитятся):
 
-- [Основная матрица](../output/playwright/works-v31/browser-report.json), [визуальное сравнение](../output/playwright/works-v31/regression-report.json), [граничные сценарии](../output/playwright/works-v31/edge-report.json).
-- [Desktop, первая карточка](../output/playwright/works-v31/after-1440x900-b2b.png), [последняя](../output/playwright/works-v31/after-1440x900-metal.png).
-- [Mobile, первая карточка](../output/playwright/works-v31/after-390x844-b2b.png), [последняя](../output/playwright/works-v31/after-390x844-metal.png).
+- Основная матрица (локальный артефакт: `output/playwright/works-v31/browser-report.json`), визуальное сравнение (локальный артефакт: `output/playwright/works-v31/regression-report.json`), граничные сценарии (локальный артефакт: `output/playwright/works-v31/edge-report.json`).
+- Desktop, первая карточка (локальный артефакт: `output/playwright/works-v31/after-1440x900-b2b.png`), последняя (локальный артефакт: `output/playwright/works-v31/after-1440x900-metal.png`).
+- Mobile, первая карточка (локальный артефакт: `output/playwright/works-v31/after-390x844-b2b.png`), последняя (локальный артефакт: `output/playwright/works-v31/after-390x844-metal.png`).
 
 ## Отдельные замечания и границы проверки
 
