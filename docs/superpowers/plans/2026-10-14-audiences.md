@@ -1,0 +1,18 @@
+# Audiences Implementation Plan
+
+**Goal:** Доработать только «С кем работаем» по заданию и подтвердить результат реальными кадрами.
+
+**Architecture:** Существующая HTML/JS-структура, scoped CSS grid, одинаковая высота трёх статей без фиксированного crop. Никаких новых библиотек.
+
+**Tech Stack:** Vanilla HTML/CSS/JS, уже установленный Playwright-core и работающий Chromium CDP.
+
+План исполняется в текущем авторизованном проекте; Git отсутствует, backup создан. Использовать executing-plans для последовательной реализации и requesting-code-review для независимой проверки.
+
+- [x] Изучить CSS-переопределения, разметку и существующие handlers.
+- [x] Сохранить backup и before screenshots на пяти размерах.
+- [x] Открыть live Roveia1920×1080, сохранить closed/hover и параметры.
+- [x] Подготовить проверку реальной геометрии и переключения; подтвердить исходные нарушения.
+- [x] Удалить три span action; обновить только audience CSS: heading, grid, article layout, illustration, tags, lighter labels.
+- [x] Проверить после изменений все категории/размеры, клавиатуру, touch, reduced motion и отсутствие overflow.
+- [x] Независимый review, устранить существенные замечания.
+- [x] Сохранить after screenshots и отчёт с до/после, параметрами и списком файлов.

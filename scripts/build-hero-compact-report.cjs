@@ -1,0 +1,18 @@
+const fs=require('node:fs/promises');
+const path=require('node:path');
+const out=path.resolve(__dirname,'../output/playwright/hero-compact');
+(async()=>{
+  const [before,after]=await Promise.all(['before','after'].map(name=>fs.readFile(path.join(out,`${name}-geometry.json`),'utf8').then(JSON.parse)));
+  const rows=after.map(a=>{const b=before.find(x=>x.viewport[0]===a.viewport[0]);return `<tr><td>${a.viewport.join('×')}</td><td>${b.hero.height.toFixed(1)} → ${a.hero.height.toFixed(1)}</td><td>${b.footerGap.toFixed(1)} → ${a.footerGap.toFixed(1)}</td><td>${(a.title.top-b.title.top).toFixed(1)}</td><td>${a.photo.width.toFixed(1)}×${a.photo.height.toFixed(1)}</td></tr>`;}).join('');
+  await fs.writeFile(path.join(out,'comparison.html'),`<!doctype html><html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Компактный Hero: до и после</title>
+  <style>body{font:16px/1.5 system-ui;background:#eef0f2;color:#172027;margin:24px}h1{font-size:24px}label{display:inline-flex;gap:12px;align-items:center;margin:8px 20px 12px 0}select{font:inherit;padding:8px;border:1px solid #bbb;border-radius:6px;background:white}.frames{display:grid;grid-template-columns:1fr 1fr;gap:16px}figure{margin:0}img{width:100%;display:block;background:white}figcaption{margin-bottom:8px}table{border-collapse:collapse;width:100%;margin:16px 0}td,th{text-align:left;padding:10px;border-bottom:1px solid #ccd0d4}a{color:#174d90}@media(max-width:800px){.frames{grid-template-columns:1fr}table{font-size:13px}}</style>
+  <h1>Компактный Hero и сохранённое раскрытие</h1><p>Начальные кадры сняты при scrollY=0. Размер окна одинаков внутри каждой пары. Размер фотографии, координаты заголовка и CTA сохранены; нижняя строка расположена в20–40px от края.</p>
+  <label>Окно <select id="size">${after.map(a=>`<option${a.viewport[0]===1920?' selected':''}>${a.viewport.join('x')}</option>`).join('')}</select></label>
+  <label>После исправления <select id="stage"><option value="start">Начало — до прокрутки</option><option value="A">А — раскрывается</option><option value="B">Б — раскрыт, READY</option><option value="C">В — новый жест</option><option value="reverse-start">Обратно — компактный старт</option><option value="resize-half">Resize в середине раскрытия</option></select></label>
+  <div class="frames"><figure><figcaption>До: начальное состояние</figcaption><a id="left" target="_blank"><img id="old" alt="Hero до исправления"></a></figure><figure><figcaption>После</figcaption><a id="right" target="_blank"><img id="new" alt="Hero после исправления"></a></figure></div>
+  <table><thead><tr><th>Окно</th><th>Высота Hero,px</th><th>Нижняя строка → край,px</th><th>Сдвиг заголовка,px</th><th>Начальное фото,px</th></tr></thead><tbody>${rows}</tbody></table>
+  <p>При скролле компактный баннер и фото раскрываются в одну закреплённую сцену. Фиксация READY, следующий жест и обратное движение проверены отдельно; статичный кадр не подтверждает механику.</p>
+  <p><a href="acceptance.json">Проверки и кадры</a> · <a href="after-geometry.json">Начальные замеры</a> · <a href="reference-geometry.json">Замеры live Roveia</a></p>
+  <script>const size=document.querySelector('#size'),stage=document.querySelector('#stage');function update(){for(const[id,src,link]of[['old','before-'+size.value+'-start.png','left'],['new','after-'+size.value+'-'+stage.value+'.png','right']]){document.querySelector('#'+id).src=src;document.querySelector('#'+link).href=src}}size.onchange=stage.onchange=update;update()</script></html>`);
+  console.log('Saved compact Hero comparison.html');
+})().catch(e=>{console.error(e);process.exitCode=1;});

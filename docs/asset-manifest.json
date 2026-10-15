@@ -1,0 +1,22 @@
+[
+  {
+    "path": "assets/media/hero.webp",
+    "bytes": 136084,
+    "sha256": "f3a1bf38588e57a7c0f88b662a3f62b81dcf0baa338d505d17440006756a78e3"
+  },
+  {
+    "path": "assets/icons/01_business.webp",
+    "bytes": 155182,
+    "sha256": "87e6f30f51a5b20ae14ee197d67c0af15b8260d3ac6170ce610352b32d04f013"
+  },
+  {
+    "path": "assets/icons/02_agencies.webp",
+    "bytes": 149504,
+    "sha256": "9d048a8b1be8ad3ea3f53fde679132493b0904e09628957df99f68c07373bc1e"
+  },
+  {
+    "path": "assets/icons/03_studios.webp",
+    "bytes": 177350,
+    "sha256": "60707902f5953c1f24dc3e8685ba604b4559cdc28dc472241fe60de95c5679f5"
+  }
+]
