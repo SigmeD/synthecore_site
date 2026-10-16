@@ -16,3 +16,6 @@ node_modules/
 !.env.example
 Thumbs.db
 .DS_Store
+
+# v60 QA recordings stay local; retain screenshots and JSON reports in Git.
+/docs/qa/v60/**/*.webm

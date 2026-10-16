@@ -2,3 +2,4 @@
 # Avoid core.autocrlf changing SVGs and local vendor distributions/licenses.
 assets/**/*.svg -text
 assets/vendor/** -text
+assets/vendor/LENIS-LICENSE.txt whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

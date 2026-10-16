@@ -12,6 +12,8 @@ const engine = process.argv.find(a=>a.startsWith('--engine='))?.split('=')[1] ||
 const only = process.argv.find(a=>a.startsWith('--only='))?.split('=')[1];
 const phase = process.argv.find(a=>a.startsWith('--phase='))?.split('=')[1] || 'audit';
 const group = process.argv.find(a=>a.startsWith('--group='))?.split('=')[1];
+const navigationOnly=process.argv.includes('--navigation-only');
+const touch=process.argv.includes('--touch');
 const sizes = [[3840,2160],[2560,1440],[2048,1080],[1920,1080],[1440,900],[1366,768],[1024,768],[768,1024],[390,844],[320,568]];
 if (!pw[engine] || (only && !sizes.some(s=>s.join('x')===only))) throw Error('Unknown engine/viewport');
 const output = path.join(root,'output/playwright/v60',phase,engine);
@@ -204,7 +206,7 @@ async function extras(page,dir,entry,width,height,context) {
   } else {
     for(const hash of ['works','services','contact']) {
       await page.locator('.header-links a[href="#'+hash+'"]').click();await pause(1800);
-      const r=await page.locator('#'+hash).evaluate(n=>{const r=n.getBoundingClientRect(),top=r.top+scrollY,margin=parseFloat(getComputedStyle(n).scrollMarginTop)||0,max=document.documentElement.scrollHeight-innerHeight;return{top:r.top,expectedTop:top-Math.min(max,Math.max(0,top-margin)),scroll:scrollY,max};});
+      const r=await page.locator('#'+hash).evaluate(n=>{const r=n.getBoundingClientRect(),top=r.top+scrollY,margin=parseFloat(getComputedStyle(n).scrollMarginTop)||0,padding=parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop)||0,max=document.documentElement.scrollHeight-innerHeight;return{top:r.top,expectedTop:top-Math.min(max,Math.max(0,top-margin-padding)),scroll:scrollY,max,padding};});
       check(entry,new URL(page.url()).hash==='#'+hash && Math.abs(r.top-r.expectedTop)<4,'header anchor #'+hash,r);
     }
   }
@@ -236,7 +238,7 @@ async function extras(page,dir,entry,width,height,context) {
   try {
     for(const [width,height] of sizes.filter(s=>(!only||s.join('x')===only) && (!group || (group==='large'?s[0]>1920:s[0]<=1920)))) {
       const name=width+'x'+height,dir=path.join(output,name);await fs.mkdir(dir,{recursive:true});
-      const mobile=width<=850;
+      const mobile=width<=850||touch;
       const options={viewport:{width,height},deviceScaleFactor:1,hasTouch:mobile,...(engine!=='firefox'?{isMobile:mobile}:{})};
       if(engine==='chromium' && [3840,2560,1920,1440].includes(width)) options.recordVideo={dir,size:{width:Math.min(width,1920),height:Math.round(height*Math.min(width,1920)/width)}};
       const context=await browser.newContext(options);await instrument(context);
@@ -246,8 +248,10 @@ async function extras(page,dir,entry,width,height,context) {
       page.on('console',m=>{if(m.type()==='error')entry.errors.push(m.text());});
       page.on('response',r=>{if(r.status()>=400)entry.httpErrors.push({url:r.url(),status:r.status()});});
       try {
-        await open(page);await sweep(page,dir,entry,height);
-        await sections(page,dir,entry,width,height);await extras(page,dir,entry,width,height,context);
+        await open(page);
+        if(!navigationOnly){await sweep(page,dir,entry,height);await sections(page,dir,entry,width,height);}
+        entry.scope=navigationOnly?'responsive-navigation-reduced-motion':'full-page';
+        await extras(page,dir,entry,width,height,context);
       } catch(e) {entry.errors.push(e.stack);await shot(page,dir,'failure').catch(()=>{});}
       check(entry,entry.errors.length===0,'no JS errors or aborted acceptance steps',entry.errors);
       check(entry,entry.httpErrors.length===0,'no HTTP 404/errors',entry.httpErrors);
