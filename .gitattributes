@@ -1,0 +1,4 @@
+# Asset manifests verify exact distributed bytes on every platform.
+# Avoid core.autocrlf changing SVGs and local vendor distributions/licenses.
+assets/**/*.svg -text
+assets/vendor/** -text
