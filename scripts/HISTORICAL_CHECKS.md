@@ -11,17 +11,18 @@ node scripts/verify-services-static.cjs
 node scripts/check-hero-geometry.cjs
 node --test scripts/test-static-checks.cjs
 node scripts/verify-works-handoff-v45.cjs
+$env:SYNTHECORE_URL = 'http://127.0.0.1:4173/'
 node scripts/verify-v60-regressions.cjs
 node scripts/verify-v60-browser.cjs
 git ls-files --cached --others --exclude-standard | node scripts/check-doc-links.cjs
-node scripts/check-project.cjs --http http://127.0.0.1:4174/
+node scripts/check-project.cjs --http http://127.0.0.1:4173/
 ```
 
-`verify-v60-regressions.cjs` и `verify-v60-browser.cjs` требуют работающий HTTP-сервер, Playwright и Chromium; последняя команда сравнивает отданные ресурсы с диском. Остальные команды работают без сервера. Статические проверки не доказывают качество переходов и реальную прокрутку. Узкий `verify-works-handoff-v45.cjs` фактически запущен при обновлении документации 16 октября 2026 и прошёл на импортированном runtime: один Works pin, въезд от `innerHeight`, отсутствие LAST_HOLD и отрицательного margin перед Services. Он применим как текущий static guard, но не заменяет браузерную приёмку перехода.
+`verify-v60-regressions.cjs` и `verify-v60-browser.cjs` требуют работающий HTTP-сервер, Playwright и Chromium. Переменная `SYNTHECORE_URL` задаёт их адрес. Команда с `--http` сравнивает отданные ресурсы с диском. Статические команды работают без сервера. Статические проверки не доказывают качество переходов и реальную прокрутку. Узкий `verify-works-handoff-v45.cjs` фактически запущен при обновлении документации 16 октября 2026 и прошёл на импортированном runtime: один Works pin, въезд от `innerHeight`, отсутствие LAST_HOLD и отрицательного margin перед Services. Он применим как текущий static guard, но не заменяет браузерную приёмку перехода.
 
 Новый regression-сценарий проверяет фокус Services/Reviews, переключение native/pinned ленты, Escape меню и refresh FAQ; `--phase=...` задаёт имя локального JSON в `output/playwright/v60/regressions/`. Полный browser-сценарий проверяет десять размеров; принимает `--only=1440x900`, `--engine=chromium` и `--phase=...`, сохраняет evidence под `output/playwright/v60/`. Это локальные артефакты вне Git; итоговые результаты и ограничения приведены в QA.
 
-Текущие результаты остальных команд и browser-матрицы ведутся в QA. Сам список команд не является заявлением об их успешном запуске. Порт новой рабочей копии — 4174; исходная v31 на 4173 проверяется отдельно.
+Текущие результаты остальных команд и browser-матрицы ведутся в QA. Сам список команд не является заявлением об их успешном запуске. Основная копия `main` запускается на 4173; для параллельной копии можно выбрать 4174. Браузерные сценарии без `SYNTHECORE_URL` обращаются к 4174; явно указывайте адрес проверяемого сервера.
 
 ## Сохранённые проверки v31 и переходов v38–v43
 
