@@ -1,0 +1,15 @@
+const fs=require('node:fs');
+const assert=require('node:assert/strict');
+const path=require('node:path');
+const root=path.resolve(__dirname,'..');
+const js=fs.readFileSync(path.join(root,'js/works.js'),'utf8');
+const css=fs.readFileSync(path.join(root,'css/works.css'),'utf8');
+const svc=fs.readFileSync(path.join(root,'js/services.js'),'utf8');
+assert.equal((js.match(/scrollTrigger\s*:/g)||[]).length,1,'Only one ScrollTrigger in Works');
+assert.ok(js.includes('sc-works-timeline'),'Expected named Works trigger');
+assert.ok(js.includes('pin:true') && js.includes('pinSpacing:true'),'Works must own scene pin');
+assert.ok(!js.includes("items.forEach((item,index) => {\n      const frame"),'Old per-card triggers must not remain');
+assert.ok(css.includes('.sc-works--timeline') && css.includes('position:absolute'),'Cards belong to a shared pinned stage');
+assert.ok(!css.includes('--works-last-hold') && !css.includes('--works-step'),'Do not reintroduce per-card spacer lengths');
+assert.ok(svc.includes('refreshPriority:-15') && svc.includes('refreshPriority:-20'),'Services must refresh after Works');
+console.log('PASS: single pinned Works scene, no per-card spacers, deterministic refresh order');

@@ -1,57 +1,95 @@
-/* Works v29. Sticky positioning is pure CSS.
-   GSAP animates exactly one transform on each independent card.
-   The existing Lenis instance in hero-scroll.js remains the only scroll engine. */
+/* Works v45. Single GSAP ScrollTrigger pins one stage and advances the six
+   approved project cards in a consistent timeline. No fixed per-card vh spacer.
+   The global Lenis remains owned exclusively by hero-scroll.js. */
 document.addEventListener('DOMContentLoaded', () => {
-  const section = document.querySelector('#works');
+  const section = document.querySelector('#works.sc-works');
   if (!section) return;
+  const stack = section.querySelector('.sc-works-stack');
   const items = [...section.querySelectorAll('.sc-work-item')];
-  const reduced = matchMedia('(prefers-reduced-motion: reduce)');
-  const gsap = window.gsap, ScrollTrigger = window.ScrollTrigger;
-  let tweens = [];
+  const frames = items.map(item => item.querySelector('.sc-work-frame'));
+  const captions = items.map(item => item.querySelector('.sc-work-content'));
+  const gsap = window.gsap;
+  const ScrollTrigger = window.ScrollTrigger;
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const STAGE_PER_CARD = 0.92;
+  let timeline = null;
   let mode = 'initial';
-  function setup() {
-    tweens.forEach(tween => tween.kill());
-    tweens = [];
-    for (const item of items) {
-      const frame = item.querySelector('.sc-work-frame');
-      if (frame) gsap?.set(frame, {clearProps:'transform,transformOrigin'});
-      const caption=item.querySelector('.sc-work-content');
-      if (caption){caption.style.removeProperty('--glass-y');caption.style.removeProperty('--glass-glint');}
+
+  const reset = () => {
+    const current = timeline;
+    timeline = null;
+    current?.scrollTrigger?.kill();
+    current?.kill();
+    if (gsap) {
+      gsap.set(items, {clearProps:'transform,opacity,visibility'});
+      gsap.set(frames.filter(Boolean),{clearProps:'transform,transformOrigin'});
     }
-    const fallback = reduced.matches || !gsap || !ScrollTrigger;
-    section.classList.toggle('sc-works--fallback',fallback);
-    if (fallback) {mode = reduced.matches ? 'reduced-motion' : 'no-gsap';return;}
-    gsap.registerPlugin(ScrollTrigger);
-    items.forEach((item,index) => {
-      const frame = item.querySelector('.sc-work-frame');
-      if (!frame) return;
-      const caption = item.querySelector('.sc-work-content');
-      // One timeline per card. Light glass motion uses the SAME scale progress.
-      // No separate ScrollTrigger and no per-frame blur animation.
-      tweens.push(gsap.fromTo(frame,
-        {scale:innerWidth<=480 ? .90 : .885,transformOrigin:'50% 0%'},
-        {scale:1,ease:'none',immediateRender:true,
-         onUpdate:function(){
-           if (!caption || innerWidth <= 850) return;
-           const p=this.progress();
-           caption.style.setProperty('--glass-y',((1-p)*8).toFixed(2)+'px');
-           caption.style.setProperty('--glass-glint',((p*12)-6).toFixed(2)+'%');
-         },
-         scrollTrigger:{id:'sc-work-'+index,trigger:item,start:'top bottom',end:'top top',scrub:1.05,invalidateOnRefresh:true,refreshPriority:-10}}
-      ));
+    captions.forEach(caption => {
+      if (!caption) return;
+      caption.style.removeProperty('--glass-y');
+      caption.style.removeProperty('--glass-glint');
     });
-    mode = 'single-frame-scale';
+    section.classList.remove('sc-works--timeline');
+  };
+
+  function setup() {
+    reset();
+    if (!gsap || !ScrollTrigger || reduced.matches || items.length < 2 || frames.some(f => !f) || !stack) {
+      mode = reduced.matches ? 'reduced-motion' : 'fallback';
+      return;
+    }
+    gsap.registerPlugin(ScrollTrigger);
+    section.classList.add('sc-works--timeline');
+    items.forEach((item,index) => item.style.setProperty('--sc-work-layer',index+1));
+    const scaleStart = () => innerWidth <= 480 ? .9 : .885;
+    gsap.set(items, {y:0,autoAlpha:1});
+    gsap.set(items.slice(1), {y:()=>innerHeight});
+    gsap.set(frames, {scale:1,transformOrigin:'50% 0%'});
+    gsap.set(frames.slice(1),{scale:scaleStart});
+
+    const stages = items.length - 1;
+    const tl = gsap.timeline({
+      defaults:{ease:'none'},
+      scrollTrigger:{
+        id:'sc-works-timeline', trigger:section,
+        start:'top top',
+        end:()=>'+='+Math.round(stages*innerHeight*STAGE_PER_CARD),
+        pin:true, pinSpacing:true,
+        scrub:true, anticipatePin:1,
+        invalidateOnRefresh:true, refreshPriority:-5
+      }
+    });
+    // A new card covers the previous one. Each preceding card remains still
+    // until its successor has arrived; none is displaced prematurely.
+    for (let index=1; index<items.length; index++) {
+      const at = index-1;
+      tl.fromTo(items[index], {y:()=>innerHeight}, {y:0,duration:1,immediateRender:false},at);
+      tl.fromTo(frames[index], {scale:scaleStart}, {scale:1,duration:1,immediateRender:false},at);
+      if (innerWidth>850 && captions[index]) {
+        tl.fromTo(captions[index],{'--glass-y':'8px','--glass-glint':'-6%'},
+          {'--glass-y':'0px','--glass-glint':'6%',duration:1,immediateRender:false},at);
+      }
+    }
+    timeline=tl;
+    mode='single-pinned-timeline';
     ScrollTrigger.refresh();
   }
-  reduced.addEventListener('change',setup);
-  window.addEventListener('resize',() => ScrollTrigger?.refresh());
+
+  reduced.addEventListener('change', setup);
+  // On resize GSAP invalidates function-based geometry; no manual spacers.
+  window.addEventListener('resize',()=>ScrollTrigger?.refresh(),{passive:true});
+  window.addEventListener('load',()=>ScrollTrigger?.refresh(),{once:true});
   setup();
   window.__synthecoreWorksQA = {
-    getState:() => ({mode,itemCount:items.length,items:items.map((item,index) => {
-      const card=item.querySelector('.sc-work-frame');const r=card.getBoundingClientRect();
-      return {index,id:item.dataset.workId,cardTop:r.top,width:r.width,height:r.height,scale:tweens[index] ? gsap.getProperty(card,'scale'):1,
-        progress:tweens[index]?.scrollTrigger?.progress ?? null,sticky:getComputedStyle(item).position};
-    })}),
-    refresh:() => ScrollTrigger?.refresh()
+    getState:()=>({
+      mode,itemCount:items.length,
+      progress:timeline?.scrollTrigger?.progress ?? null,
+      pinStart:timeline?.scrollTrigger?.start ?? null,
+      pinEnd:timeline?.scrollTrigger?.end ?? null,
+      timelineDuration:timeline?.duration() ?? null,
+      cards:items.map((item,i)=>({id:item.dataset.workId,
+        top:Math.round(item.getBoundingClientRect().top),
+        scale:frames[i] ? gsap?.getProperty(frames[i],'scale') ?? 1 : 1}))
+    }), refresh:()=>ScrollTrigger?.refresh()
   };
 });

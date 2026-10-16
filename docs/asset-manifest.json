@@ -1,10 +1,5 @@
 [
   {
-    "path": "assets/media/hero.webp",
-    "bytes": 136084,
-    "sha256": "f3a1bf38588e57a7c0f88b662a3f62b81dcf0baa338d505d17440006756a78e3"
-  },
-  {
     "path": "assets/icons/01_business.webp",
     "bytes": 155182,
     "sha256": "87e6f30f51a5b20ae14ee197d67c0af15b8260d3ac6170ce610352b32d04f013"
@@ -18,5 +13,135 @@
     "path": "assets/icons/03_studios.webp",
     "bytes": 177350,
     "sha256": "60707902f5953c1f24dc3e8685ba604b4559cdc28dc472241fe60de95c5679f5"
+  },
+  {
+    "path": "assets/media/hero.webp",
+    "bytes": 136084,
+    "sha256": "f3a1bf38588e57a7c0f88b662a3f62b81dcf0baa338d505d17440006756a78e3"
+  },
+  {
+    "path": "assets/process/process-background.png",
+    "bytes": 10785,
+    "sha256": "6f9d1060c62e490c544980ebd6256d41aeb1a46262148528337ffe9b9c521b56"
+  },
+  {
+    "path": "assets/process/process-illustration-source.webp",
+    "bytes": 658644,
+    "sha256": "530013f706469f972dd26c05d2aba0dd22ea00466648df49179d469c73f772c7"
+  },
+  {
+    "path": "assets/process/process-illustration.png",
+    "bytes": 627938,
+    "sha256": "44d927033d24af8c2c05b0be1c8b347fdcb969b127ab0e13fc9fb2d835c8cdd2"
+  },
+  {
+    "path": "assets/services/ai-mono.svg",
+    "bytes": 3075,
+    "sha256": "c3adddb28302e41a7f26947fff72c3c086ee1975276d40d21c1d454520ad2d2e"
+  },
+  {
+    "path": "assets/services/ai.svg",
+    "bytes": 3066,
+    "sha256": "4fefb72b2d782791d62ed74b71eeacaf21bf1e79061cd99bd8b1e8609fdf31b7"
+  },
+  {
+    "path": "assets/services/audit-mono.svg",
+    "bytes": 3039,
+    "sha256": "f8ccccc75963aadbb796ff6b5b1a7af11942a58456575912639727b1755d6c25"
+  },
+  {
+    "path": "assets/services/audit.svg",
+    "bytes": 3033,
+    "sha256": "1ed41fa1862083763cc2d6e3c1be790f1eec8b57c4251ac585a93048855a559e"
+  },
+  {
+    "path": "assets/services/automation-mono.svg",
+    "bytes": 3197,
+    "sha256": "d70f7fb255a7ca095d49055473fb0b15f3cf2490a3edb06dc70e480e7476804d"
+  },
+  {
+    "path": "assets/services/automation.svg",
+    "bytes": 3188,
+    "sha256": "a915965531353973b69e0811d5a7a77f29d8036172a854721d7aac1af877f322"
+  },
+  {
+    "path": "assets/services/integrations-mono.svg",
+    "bytes": 3067,
+    "sha256": "d1b383525121a2285e5b445ef2d8bac49758927701e3d7601836475c11032c97"
+  },
+  {
+    "path": "assets/services/integrations.svg",
+    "bytes": 3055,
+    "sha256": "1070b7d696c629e915a4efd898c968e3f80d739b8a7c1ad85e441ce72d605f25"
+  },
+  {
+    "path": "assets/services/launch-mono.svg",
+    "bytes": 3222,
+    "sha256": "78ce02f1f97e069d1bb5236375ab26d31359b8573982bd149397fbcdd88ddb3f"
+  },
+  {
+    "path": "assets/services/launch.svg",
+    "bytes": 3213,
+    "sha256": "9ea965dfe9033fce47e5928a4b24eb75fa249e2e628840b210e3d76dadc8909c"
+  },
+  {
+    "path": "assets/services/web-services-mono.svg",
+    "bytes": 3853,
+    "sha256": "01b040c10bc7b7740a34bfe53097ea5561712d49c9d985b99c20440a003f9b78"
+  },
+  {
+    "path": "assets/services/web-services.svg",
+    "bytes": 3847,
+    "sha256": "e5d6e98fbb208925a435284ce17943b33e5b73ce9abbd3e3f0e30215c44f1e62"
+  },
+  {
+    "path": "assets/testimonials/portrait-01.svg",
+    "bytes": 1352,
+    "sha256": "011fff0699e022d8b4e124b84e943c89f4870485b9eea5b7bc07906aa48102b8"
+  },
+  {
+    "path": "assets/testimonials/portrait-02.svg",
+    "bytes": 1352,
+    "sha256": "5a3648648ed118e69fc4634d3c37d9c6f5f473d26c49a40593a2df7e0f8257f2"
+  },
+  {
+    "path": "assets/testimonials/portrait-03.svg",
+    "bytes": 1352,
+    "sha256": "73c5fe464de1f70770d8bc05aeb0932400ffa8ceeae55a8ca3ce51a41007719c"
+  },
+  {
+    "path": "assets/testimonials/portrait-04.svg",
+    "bytes": 1352,
+    "sha256": "3377fb1a35404f1b3e3a69f95082cb0f5cb3ea106d4ee73d2f838904e2970946"
+  },
+  {
+    "path": "assets/works/b2b-feature-wide.png",
+    "bytes": 1312868,
+    "sha256": "d370c21dfaf54a5125b8e2edacb8c87856de2717dd0b82fc58d422b7b8138baf"
+  },
+  {
+    "path": "assets/works/beauty-feature-wide.png",
+    "bytes": 1736941,
+    "sha256": "b42caffc361c3e984b5e025c73373bc86b4156b3d10e915558d9c362d2eeea5b"
+  },
+  {
+    "path": "assets/works/crm-feature-wide.png",
+    "bytes": 1719922,
+    "sha256": "c4a40cca019fcfe14516024211032dc971c975b1950c8929506f6d85f669f75e"
+  },
+  {
+    "path": "assets/works/flowers-feature-wide.png",
+    "bytes": 1976915,
+    "sha256": "4fa9c06a7b0ce56fb8d930a69a0077ab5a5887ea09347473b2ae67a38f00f062"
+  },
+  {
+    "path": "assets/works/metal-feature-wide.png",
+    "bytes": 1573755,
+    "sha256": "fb603d636e42ddc8bb218fc7e64119bf23c62a13fd297beadf8c4dce50c98484"
+  },
+  {
+    "path": "assets/works/prostor-feature-wide.png",
+    "bytes": 2487630,
+    "sha256": "e5f8fd40cba97861fb24a6c1c107b054d04319c56d4a19cb2f244c82e256fc01"
   }
 ]

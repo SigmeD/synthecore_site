@@ -10,7 +10,7 @@ const normalizedText = node => textContent(node).replace(/\s+/g, ' ').trim();
 const ORDER = ['b2b', 'flowers', 'crm', 'beauty', 'prostor', 'metal'];
 const SCRIPT_ORDER = [
   'assets/vendor/gsap-3.12.5.min.js', 'assets/vendor/ScrollTrigger-3.12.5.min.js',
-  'assets/vendor/lenis-1.3.26.min.js', 'js/hero-geometry.js', 'js/hero-scroll.js', 'js/main.js', 'js/works.js',
+  'assets/vendor/lenis-1.3.26.min.js', 'js/hero-geometry.js', 'js/hero-scroll.js', 'js/main.js', 'js/works.js', 'js/services.js', 'js/process.js', 'js/testimonials.js', 'js/faq-footer.js',
 ];
 async function verifyWorks(root = path.resolve(__dirname, '..')) {
   const { nodes } = parseHTML(await fs.readFile(path.join(root, 'index.html'), 'utf8'));
@@ -22,13 +22,19 @@ async function verifyWorks(root = path.resolve(__dirname, '..')) {
   const main = nodes.filter(node => node.tag === 'main');
   assert.equal(main.length, 1, 'Exactly one main required');
   const sections = nodes.filter(node => node.tag === 'section' && node.parent === main[0]);
-  assert.deepEqual(sections.map(node => node.attrs.id), ['top', 'audiences', 'works', 'services', 'contact'], 'Section order: Hero, audiences, works, services, contact as direct main children');
+  assert.deepEqual(sections.map(node => node.attrs.id), ['top', 'audiences', 'works', 'services', 'process', 'testimonials', 'faq', 'contact'], 'Section order: Hero, audiences, works, services, process, testimonials, FAQ, contact as direct main children');
   for (const anchor of nodes.filter(node => node.tag === 'a' && node.attrs.href?.startsWith('#'))) {
     let target;
     try { target = decodeURIComponent(anchor.attrs.href.slice(1)); }
     catch { throw new Error(`Malformed same-page fragment: ${anchor.attrs.href}`); }
     assert.ok(target && ids.has(target), `Same-page fragment target does not exist: ${anchor.attrs.href}`);
   }
+  const testimonials=ids.get('testimonials');
+  assert.ok(hasClass(testimonials,'sc-testimonials'), 'Testimonials must be standalone section');
+  const demoCards=nodes.filter(node=>hasClass(node,'sc-testimonial'));
+  assert.equal(demoCards.length,4,'Exactly four demo testimonial cards required');
+  assert.equal(testimonials.attrs['data-demo'],'true','Demo review status must be explicit');
+  for(const item of demoCards) assert.ok(inside(item,testimonials),'Testimonial card outside section');
   const works = ids.get('works');
   assert.ok(hasClass(works, 'sc-works'), '#works must use sc-works hook');
   const items = nodes.filter(node => hasClass(node, 'sc-work-item'));
@@ -83,6 +89,8 @@ async function verifyWorks(root = path.resolve(__dirname, '..')) {
   }
   assert.deepEqual(scripts, SCRIPT_ORDER, 'Script hooks and dependency order must match the current single-owner site');
   assert.equal(styles.filter(file => file === 'css/works.css').length, 1, 'Exactly one Works CSS hook required');
+  assert.equal(styles.filter(file => file === 'css/services.css').length, 1, 'Exactly one Services CSS hook required');
+  assert.ok(styles.indexOf('css/services.css') > styles.indexOf('css/works.css'), 'Services CSS should load after Works');
   assert.ok(styles.includes('css/main.css') && styles.indexOf('css/main.css') < styles.indexOf('css/works.css'), 'Works CSS hook must follow main stylesheet');
   assert.equal(styles.filter(file => /(?:^|\/)lenis[^/]*\.css$/i.test(file)).length, 1, 'Exactly one Lenis CSS library required');
   const owners = [];

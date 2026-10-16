@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="460" viewBox="0 0 720 460" fill="none" aria-hidden="true"><defs>
+<linearGradient id="orange" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffc28f"/><stop offset=".23" stop-color="#ff883d"/><stop offset=".64" stop-color="#ff661d"/><stop offset="1" stop-color="#c73b08"/></linearGradient>
+<linearGradient id="shine" x1="0" y1="0" x2=".95" y2="1"><stop stop-color="#ffffff"/><stop offset=".52" stop-color="#f5f7fc"/><stop offset="1" stop-color="#c9d0df"/></linearGradient>
+<linearGradient id="side" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e8edf6"/><stop offset="1" stop-color="#9ba7bd"/></linearGradient>
+<linearGradient id="halo" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffb46e"/><stop offset=".55" stop-color="#f2671d"/><stop offset="1" stop-color="#b93308"/></linearGradient>
+<linearGradient id="warm" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fffefc"/><stop offset="1" stop-color="#ffe6ce"/></linearGradient>
+<filter id="drop" x="-45%" y="-60%" width="190%" height="230%"><feGaussianBlur in="SourceAlpha" stdDeviation="10" result="blur"/><feOffset in="blur" dy="14" result="off"/><feComponentTransfer in="off" result="fade"><feFuncA type="linear" slope=".23"/></feComponentTransfer><feMerge><feMergeNode in="fade"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5"/></filter>
+</defs>
+<g transform="rotate(-17 354 240)"><ellipse cx="360" cy="240" rx="260" ry="108" stroke="url(#halo)" stroke-width="12" opacity=".9"/><circle cx="99" cy="239" r="16" fill="url(#orange)"/><circle cx="620" cy="230" r="17" fill="url(#orange)"/></g>
+<g filter="url(#drop)" transform="translate(178 45)"><rect x="41" y="40" width="307" height="307" rx="60" fill="url(#side)"/><rect x="29" y="28" width="307" height="307" rx="58" fill="url(#shine)" stroke="#fff" stroke-width="9"/>
+<g stroke="url(#orange)" stroke-width="18" stroke-linecap="round"><path d="M93 14V-1M163 14V-1M233 14V-1M303 14V-1M93 352v-18M163 352v-18M233 352v-18M303 352v-18M13 91h18M13 162h18M13 231h18M13 301h18M337 91h18M337 162h18M337 231h18M337 301h18"/></g>
+<rect x="86" y="84" width="192" height="192" rx="41" fill="url(#orange)" stroke="#ffe5cb" stroke-width="7"/><rect x="104" y="102" width="157" height="156" rx="34" fill="#ff8e46" opacity=".38"/><text x="182" y="203" font-family="Arial,sans-serif" font-weight="bold" font-size="93" text-anchor="middle" fill="white">AI</text>
+</g>
+<g filter="url(#drop)" transform="translate(65 193) rotate(-8 68 67)"><rect width="128" height="130" rx="29" fill="url(#shine)" stroke="#fff" stroke-width="7"/><path d="m63 23 8 32 32 8-32 8-8 32-8-32-32-8 32-8Z" fill="url(#orange)"/></g>
+<g filter="url(#drop)" transform="translate(529 125) rotate(11 60 55)"><rect width="115" height="113" rx="29" fill="url(#shine)" stroke="#fff" stroke-width="7"/><circle cx="59" cy="56" r="33" fill="url(#orange)"/><path d="M59 35v40M39 55h40" stroke="white" stroke-width="11" stroke-linecap="round"/></g>
+</svg>

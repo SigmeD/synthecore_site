@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="460" viewBox="0 0 720 460" fill="none" aria-hidden="true"><defs>
+<linearGradient id="orange" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d4d4d4"/><stop offset=".23" stop-color="#adadad"/><stop offset=".64" stop-color="#979797"/><stop offset="1" stop-color="#737373"/></linearGradient>
+<linearGradient id="shine" x1="0" y1="0" x2=".95" y2="1"><stop stop-color="#fcfcfc"/><stop offset=".52" stop-color="#f7f7f7"/><stop offset="1" stop-color="#d7d7d7"/></linearGradient>
+<linearGradient id="side" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#efefef"/><stop offset="1" stop-color="#b5b5b5"/></linearGradient>
+<linearGradient id="halo" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#c9c9c9"/><stop offset=".55" stop-color="#959595"/><stop offset="1" stop-color="#6b6b6b"/></linearGradient>
+<linearGradient id="warm" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fcfcfc"/><stop offset="1" stop-color="#ececec"/></linearGradient>
+<filter id="drop" x="-45%" y="-60%" width="190%" height="230%"><feGaussianBlur in="SourceAlpha" stdDeviation="10" result="blur"/><feOffset in="blur" dy="14" result="off"/><feComponentTransfer in="off" result="fade"><feFuncA type="linear" slope=".23"/></feComponentTransfer><feMerge><feMergeNode in="fade"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5"/></filter>
+</defs>
+<g transform="rotate(-10 360 220)"><ellipse cx="360" cy="228" rx="278" ry="113" stroke="url(#halo)" stroke-width="12"/><circle cx="94" cy="246" r="17" fill="url(#orange)"/><circle cx="633" cy="213" r="14" fill="url(#orange)"/></g>
+<g filter="url(#drop)" transform="translate(171 70)"><rect x="9" y="20" width="352" height="273" rx="36" fill="url(#side)"/><rect x="0" y="9" width="348" height="270" rx="35" fill="url(#shine)" stroke="#fcfcfc" stroke-width="8"/><rect x="42" y="42" width="265" height="49" rx="17" fill="url(#orange)"/><text x="174" y="76" fill="#fcfcfc" font-family="Arial,sans-serif" font-size="37" font-weight="bold" text-anchor="middle">API</text>
+<path d="M93 153l-24 22 24 22m164-44 24 22-24 22m-100-48-13 54" stroke="url(#orange)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><rect x="48" y="240" width="242" height="8" rx="4" fill="#d9d9d9"/>
+</g>
+<g filter="url(#drop)" transform="translate(37 172)"><rect width="143" height="121" rx="29" fill="url(#shine)" stroke="#fcfcfc" stroke-width="6"/><ellipse cx="70" cy="39" rx="44" ry="16" fill="#c6c6c6" stroke="#e7e7e7" stroke-width="4"/><path d="M26 39v48c0 22 88 22 88 0V39" fill="url(#orange)"/><ellipse cx="70" cy="85" rx="44" ry="15" fill="#989898" stroke="#d5d5d5" stroke-width="4"/></g>
+<g filter="url(#drop)" transform="translate(539 122) rotate(8 75 73)"><rect width="148" height="145" rx="31" fill="url(#shine)" stroke="#fcfcfc" stroke-width="7"/><path d="M33 84c-16-28 11-45 29-37 15-32 56-20 57 11 26 6 26 39 5 45H50c-17 0-23-7-17-19Z" fill="url(#orange)" stroke="#dedede" stroke-width="5"/></g>
+</svg>
