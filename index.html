@@ -6,10 +6,14 @@
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="#f4f8ff" name="theme-color"/>
 <meta content="SyntheCore — Бюро сложных систем. Работаем с существующими IT-проектами, интеграциями и запуском." name="description"/>
-<title>SyntheCore — текущая сборка v31</title>
+<title>SyntheCore — работы и услуги</title>
 <link rel="stylesheet" href="./css/main.css">
 <link rel="stylesheet" href="./assets/vendor/lenis-1.3.26.css">
 <link rel="stylesheet" href="./css/works.css">
+<link rel="stylesheet" href="./css/services.css">
+<link rel="stylesheet" href="./css/process.css">
+<link rel="stylesheet" href="./css/testimonials.css">
+<link rel="stylesheet" href="./css/faq-footer.css">
 </head>
 <body>
 <header class="floating-header" id="floatingHeader">
@@ -19,8 +23,8 @@
 <span class="brand-note">Бюро сложных<br/>систем</span>
 </a>
 <nav aria-label="Основная навигация" class="header-links">
-<a href="#services">Услуги</a>
 <a href="#works">Работы</a>
+<a href="#services">Услуги</a>
 <a href="#contact">Контакты</a>
 </nav>
 <a class="nav-cta" href="mailto:max.eroxin@gmail.com?subject=SyntheCore%20%E2%80%94%20%D0%BE%D0%B1%D1%81%D1%83%D0%B4%D0%B8%D1%82%D1%8C%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D1%83">Обсудить задачу <svg aria-hidden="true" class="arrow" viewbox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a>
@@ -28,8 +32,8 @@
 <svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
 </button>
 <nav aria-label="Меню на телефоне" class="mobile-panel" hidden="" id="mobilePanel">
-<a href="#services">Услуги</a><a href="#works">Работы</a><a href="#contact">Контакты</a>
-<a href="mailto:max.eroxin@gmail.com?subject=SyntheCore%20%E2%80%94%20%D0%BE%D0%B1%D1%81%D1%83%D0%B4%D0%B8%D1%82%D1%8C%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D1%83">Обсудить задачу ↗</a>
+<a href="#works">Работы</a><a href="#services">Услуги</a><a href="#contact">Контакты</a>
+<a href="mailto:max.eroxin@gmail.com?subject=SyntheCore%20%E2%80%94%20%D0%BE%D0%B1%D1%81%D1%83%D0%B4%D0%B8%D1%82%D1%8C%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D1%83">Обсудить задачу <svg aria-hidden="true" class="arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a>
 </nav>
 </header>
 <main>
@@ -185,9 +189,208 @@
   </div>
 </section>
 
-<!-- Future services section follows the approved Works stack. -->
-<section aria-labelledby="services-title" class="next-stage" id="services"><div class="stub-inner"><small>02 / следующий этап</small><h2 id="services-title">Услуги</h2><p>Этот раздел будет оформлен после согласования первого экрана. Сейчас он служит для проверки фиксированного меню и прокрутки.</p></div></section>
-<section aria-labelledby="contact-title" class="contact-footer" id="contact"><h2 id="contact-title">Обсудим задачу?</h2><a href="mailto:max.eroxin@gmail.com?subject=SyntheCore%20%E2%80%94%20%D0%BE%D0%B1%D1%81%D1%83%D0%B4%D0%B8%D1%82%D1%8C%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D1%83">Написать на почту ↗</a></section>
+<section class="sc-services" id="services" aria-labelledby="services-title">
+  <div class="sc-services__scene">
+    <div class="sc-services__head">
+      <h2 id="services-title" class="sc-services__title">Что мы делаем</h2>
+      <div class="sc-services__navigation" aria-label="Переключение услуг">
+        <button type="button" class="sc-services__arrow" data-services-prev aria-label="Предыдущая услуга" disabled>←</button>
+        <button type="button" class="sc-services__arrow" data-services-next aria-label="Следующая услуга">→</button>
+      </div>
+    </div>
+    <div class="sc-services__viewport">
+      <div class="sc-services__track" data-services-track role="region" aria-label="Шесть направлений работы SyntheCore" tabindex="0">
+      <article class="sc-service-card" tabindex="0" aria-labelledby="sc-service-web-services-title">
+        <img class="sc-service-card__icon sc-service-card__icon--mono" src="./assets/services/web-services-mono.svg" alt="" aria-hidden="true" width="612" height="391" loading="lazy" decoding="async">
+        <img class="sc-service-card__icon sc-service-card__icon--color" src="./assets/services/web-services.svg" alt="" aria-hidden="true" width="612" height="391" loading="lazy" decoding="async">
+        <div class="sc-service-card__body">
+          <h3 id="sc-service-web-services-title">Веб-сервисы и кабинеты</h3>
+          <div class="sc-service-card__tags" aria-label="Что входит"><span>Личные кабинеты</span><span>CRM</span><span>B2B-платформы</span><span>MVP</span></div>
+          <p>Разрабатываем сервисы, в которых клиенты и сотрудники решают свои задачи.</p>
+        </div>
+      </article>
+      <article class="sc-service-card" tabindex="0" aria-labelledby="sc-service-automation-title">
+        <img class="sc-service-card__icon sc-service-card__icon--mono" src="./assets/services/automation-mono.svg" alt="" aria-hidden="true" width="612" height="391" loading="lazy" decoding="async">
+        <img class="sc-service-card__icon sc-service-card__icon--color" src="./assets/services/automation.svg" alt="" aria-hidden="true" width="612" height="391" loading="lazy" decoding="async">
+        <div class="sc-service-card__body">
+          <h3 id="sc-service-automation-title">Автоматизация процессов</h3>
+          <div class="sc-service-card__tags" aria-label="Что входит"><span>Заявки</span><span>Согласования</span><span>Учёт</span><span>Отчёты</span></div>
+          <p>Убираем ручные операции и соединяем разрозненные этапы работы.</p>
+        </div>
+      </article>
+      <article class="sc-service-card" tabindex="0" aria-labelledby="sc-service-integrations-title">
+        <img class="sc-service-card__icon sc-service-card__icon--mono" src="./assets/services/integrations-mono.svg" alt="" aria-hidden="true" width="612" height="391" loading="lazy" decoding="async">
+        <img class="sc-service-card__icon sc-service-card__icon--color" src="./assets/services/integrations.svg" alt="" aria-hidden="true" width="612" height="391" loading="lazy" decoding="async">
+        <div class="sc-service-card__body">
+          <h3 id="sc-service-integrations-title">Интеграции и API</h3>
+          <div class="sc-service-card__tags" aria-label="Что входит"><span>CRM и ERP</span><span>Внешние API</span><span>Платежи</span><span>Обмен данными</span></div>
+          <p>Настраиваем обмен данными между сервисами без постоянного ручного переноса.</p>
+        </div>
+      </article>
+      <article class="sc-service-card" tabindex="0" aria-labelledby="sc-service-audit-title">
+        <img class="sc-service-card__icon sc-service-card__icon--mono" src="./assets/services/audit-mono.svg" alt="" aria-hidden="true" width="612" height="391" loading="lazy" decoding="async">
+        <img class="sc-service-card__icon sc-service-card__icon--color" src="./assets/services/audit.svg" alt="" aria-hidden="true" width="612" height="391" loading="lazy" decoding="async">
+        <div class="sc-service-card__body">
+          <h3 id="sc-service-audit-title">Доработка и аудит</h3>
+          <div class="sc-service-card__tags" aria-label="Что входит"><span>Существующий код</span><span>Legacy</span><span>Новые модули</span><span>Ошибки</span></div>
+          <p>Разбираемся в готовой системе, исправляем проблемы и продолжаем разработку.</p>
+        </div>
+      </article>
+      <article class="sc-service-card" tabindex="0" aria-labelledby="sc-service-launch-title">
+        <img class="sc-service-card__icon sc-service-card__icon--mono" src="./assets/services/launch-mono.svg" alt="" aria-hidden="true" width="612" height="391" loading="lazy" decoding="async">
+        <img class="sc-service-card__icon sc-service-card__icon--color" src="./assets/services/launch.svg" alt="" aria-hidden="true" width="612" height="391" loading="lazy" decoding="async">
+        <div class="sc-service-card__body">
+          <h3 id="sc-service-launch-title">Инфраструктура и запуск</h3>
+          <div class="sc-service-card__tags" aria-label="Что входит"><span>Production</span><span>Docker</span><span>CI/CD</span><span>Мониторинг</span></div>
+          <p>Готовим приложения к запуску, обновлениям и повседневной работе.</p>
+        </div>
+      </article>
+      <article class="sc-service-card" tabindex="0" aria-labelledby="sc-service-ai-title">
+        <img class="sc-service-card__icon sc-service-card__icon--mono" src="./assets/services/ai-mono.svg" alt="" aria-hidden="true" width="612" height="391" loading="lazy" decoding="async">
+        <img class="sc-service-card__icon sc-service-card__icon--color" src="./assets/services/ai.svg" alt="" aria-hidden="true" width="612" height="391" loading="lazy" decoding="async">
+        <div class="sc-service-card__body">
+          <h3 id="sc-service-ai-title">AI и прототипы</h3>
+          <div class="sc-service-card__tags" aria-label="Что входит"><span>AI-функции</span><span>RAG</span><span>Агенты</span><span>Проверка прототипов</span></div>
+          <p>Подключаем AI к задачам бизнеса и доводим прототипы до рабочего состояния.</p>
+        </div>
+      </article>
+      </div>
+    </div>
+    <div class="sc-services__bottom" aria-hidden="true">
+      <span class="sc-services__count">01 — 06</span>
+      <span class="sc-services__progress"><span data-services-progress-bar></span></span>
+    </div>
+  </div>
+</section>
+<section class="sc-process" id="process" aria-labelledby="sc-process-title">
+  <div class="sc-process__banner">
+    <div class="sc-process__inner">
+      <div class="sc-process__intro">
+        <h2 class="sc-process__title" id="sc-process-title">3 шага<br>до запуска</h2>
+        <div class="sc-process__art-parallax" aria-hidden="true">
+          <div class="sc-process__art-float">
+            <img class="sc-process__art" src="./assets/process/process-illustration.png" width="1228" height="793" alt="" decoding="async" loading="lazy">
+          </div>
+        </div>
+      </div>
+      <ol class="sc-process__steps" aria-label="Три шага работы с SyntheCore">
+        <li class="sc-process__step" data-process-step="0">
+          <button class="sc-process__marker" type="button" aria-label="Подсветить шаг 1: Разбираемся в задаче" aria-pressed="false">1</button>
+          <h3>Разбираемся<br>в задаче</h3>
+          <p>Изучаем текущую ситуацию, уточняем задачу и определяем, с чего начать.</p>
+        </li>
+        <li class="sc-process__step" data-process-step="1">
+          <button class="sc-process__marker" type="button" aria-label="Подсветить шаг 2: Согласуем и делаем" aria-pressed="false">2</button>
+          <h3>Согласуем<br>и делаем</h3>
+          <p>Фиксируем объём, сроки и результат этапа. После этого переходим к реализации.</p>
+        </li>
+        <li class="sc-process__step" data-process-step="2">
+          <button class="sc-process__marker" type="button" aria-label="Подсветить шаг 3: Проверяем и запускаем" aria-pressed="false">3</button>
+          <h3>Проверяем<br>и запускаем</h3>
+          <p>Тестируем решение, показываем результат и доводим систему до рабочего запуска.</p>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+<section aria-labelledby="sc-testimonials-title" class="sc-testimonials" data-demo="true" id="testimonials">
+<div class="sc-testimonials__scene">
+<div class="sc-testimonials__center"><div class="sc-testimonials__center-inner">
+<p class="sc-testimonials__eyebrow">ОТЗЫВЫ · ДЕМОНСТРАЦИЯ</p>
+<h2 id="sc-testimonials-title">Что говорят<br/><span>клиенты</span></h2>
+<p class="sc-testimonials__disclaimer">Пока здесь демонстрационные карточки.<br/>Перед публикацией заменим отзывы и фотографии.</p>
+</div></div>
+<div aria-label="Четыре демонстрационные карточки отзывов" class="sc-testimonials__cards">
+<div class="sc-testimonials__card-slot"><article tabindex="0" aria-label="Демонстрационный отзыв 01" class="sc-testimonial sc-testimonial--01" data-testimonial="01">
+<div class="sc-testimonial__top"><span aria-hidden="true" class="sc-testimonial__quote">“</span><span class="sc-testimonial__demo">ДЕМО</span></div>
+<h3 class="sc-testimonial__topic">Разобрались в задаче</h3>
+<blockquote class="sc-testimonial__copy">Понравилось, что начали не с обещаний, а с вопросов. Стало понятно, что нужно исправить и с чего лучше начать.</blockquote>
+<div class="sc-testimonial__author"><span>Клиент 01</span><span>Руководитель бизнеса</span></div>
+<div class="sc-testimonial__photo"><img alt="" decoding="async" height="360" loading="lazy" src="./assets/testimonials/portrait-01.svg" width="640"/><span>Место для фотографии</span></div>
+</article></div>
+<div class="sc-testimonials__card-slot"><article tabindex="0" aria-label="Демонстрационный отзыв 02" class="sc-testimonial sc-testimonial--02" data-testimonial="02">
+<div class="sc-testimonial__top"><span aria-hidden="true" class="sc-testimonial__quote">“</span><span class="sc-testimonial__demo">ДЕМО</span></div>
+<h3 class="sc-testimonial__topic">Интеграция без хаоса</h3>
+<blockquote class="sc-testimonial__copy">Сложную интеграцию разбили на понятные части. Мы видели ход работы и могли проверять результат по этапам.</blockquote>
+<div class="sc-testimonial__author"><span>Клиент 02</span><span>Руководитель продукта</span></div>
+<div class="sc-testimonial__photo"><img alt="" decoding="async" height="360" loading="lazy" src="./assets/testimonials/portrait-02.svg" width="640"/><span>Место для фотографии</span></div>
+</article></div>
+<div class="sc-testimonials__card-slot"><article tabindex="0" aria-label="Демонстрационный отзыв 03" class="sc-testimonial sc-testimonial--03" data-testimonial="03">
+<div class="sc-testimonial__top"><span aria-hidden="true" class="sc-testimonial__quote">“</span><span class="sc-testimonial__demo">ДЕМО</span></div>
+<h3 class="sc-testimonial__topic">Сохранили рабочее</h3>
+<blockquote class="sc-testimonial__copy">Не предлагали переписывать всё заново. Сначала посмотрели, что уже работает, затем определили объём доработок.</blockquote>
+<div class="sc-testimonial__author"><span>Клиент 03</span><span>Основатель сервиса</span></div>
+<div class="sc-testimonial__photo"><img alt="" decoding="async" height="360" loading="lazy" src="./assets/testimonials/portrait-03.svg" width="640"/><span>Место для фотографии</span></div>
+</article></div>
+<div class="sc-testimonials__card-slot"><article tabindex="0" aria-label="Демонстрационный отзыв 04" class="sc-testimonial sc-testimonial--04" data-testimonial="04">
+<div class="sc-testimonial__top"><span aria-hidden="true" class="sc-testimonial__quote">“</span><span class="sc-testimonial__demo">ДЕМО</span></div>
+<h3 class="sc-testimonial__topic">Прозрачный процесс</h3>
+<blockquote class="sc-testimonial__copy">До старта согласовали объём и сроки. На каждом этапе было понятно, что готово и какой результат мы принимаем.</blockquote>
+<div class="sc-testimonial__author"><span>Клиент 04</span><span>Менеджер проекта</span></div>
+<div class="sc-testimonial__photo"><img alt="" decoding="async" height="360" loading="lazy" src="./assets/testimonials/portrait-04.svg" width="640"/><span>Место для фотографии</span></div>
+</article></div>
+
+</div>
+
+</div>
+</section>
+<section class="sc-faq" id="faq" aria-labelledby="sc-faq-title">
+  <div class="sc-faq__inner">
+    <h2 id="sc-faq-title" class="sc-faq__title">Ответы на<br>популярные<br>вопросы</h2>
+    <div class="sc-faq__list">
+<div class="sc-faq__item" data-sc-faq-item>
+      <h3 class="sc-faq__question-wrap"><button class="sc-faq__question" id="faq-question-1" type="button" aria-expanded="false" aria-controls="faq-answer-1"><span class="sc-faq__question-label">Можно обратиться без технического задания?</span><span class="sc-faq__icon" aria-hidden="true"><svg aria-hidden="true" class="arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></span></button></h3>
+      <div class="sc-faq__answer-region" id="faq-answer-1" role="region" aria-labelledby="faq-question-1" aria-hidden="true"><div class="sc-faq__answer-inner"><p>Да. Расскажите, как сейчас устроена работа, что мешает и какого результата хотите добиться. Поможем определить, какие вводные нужны для следующего шага.</p></div></div>
+    </div>
+<div class="sc-faq__item" data-sc-faq-item>
+      <h3 class="sc-faq__question-wrap"><button class="sc-faq__question" id="faq-question-2" type="button" aria-expanded="false" aria-controls="faq-answer-2"><span class="sc-faq__question-label">У нас уже есть программа. Вы сможете её доработать?</span><span class="sc-faq__icon" aria-hidden="true"><svg aria-hidden="true" class="arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></span></button></h3>
+      <div class="sc-faq__answer-region" id="faq-answer-2" role="region" aria-labelledby="faq-question-2" aria-hidden="true"><div class="sc-faq__answer-inner"><p>Сначала посмотрим, как устроен действующий проект и в каком состоянии код. После разбора предложим перечень доработок и оценку.</p></div></div>
+    </div>
+<div class="sc-faq__item" data-sc-faq-item>
+      <h3 class="sc-faq__question-wrap"><button class="sc-faq__question" id="faq-question-3" type="button" aria-expanded="false" aria-controls="faq-answer-3"><span class="sc-faq__question-label">Можно начать с одной задачи?</span><span class="sc-faq__icon" aria-hidden="true"><svg aria-hidden="true" class="arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></span></button></h3>
+      <div class="sc-faq__answer-region" id="faq-answer-3" role="region" aria-labelledby="faq-question-3" aria-hidden="true"><div class="sc-faq__answer-inner"><p>Да. Выделим приоритетную задачу или небольшой этап с конкретным результатом. Остальные работы можно согласовать позже.</p></div></div>
+    </div>
+<div class="sc-faq__item" data-sc-faq-item>
+      <h3 class="sc-faq__question-wrap"><button class="sc-faq__question" id="faq-question-4" type="button" aria-expanded="false" aria-controls="faq-answer-4"><span class="sc-faq__question-label">Можно связать нашу программу с 1С, CRM или другим сервисом?</span><span class="sc-faq__icon" aria-hidden="true"><svg aria-hidden="true" class="arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></span></button></h3>
+      <div class="sc-faq__answer-region" id="faq-answer-4" role="region" aria-labelledby="faq-question-4" aria-hidden="true"><div class="sc-faq__answer-inner"><p>Изучим возможности обмена данными, доступы и ограничения каждой системы. Затем предложим способ интеграции и оценим работу.</p></div></div>
+    </div>
+<div class="sc-faq__item" data-sc-faq-item>
+      <h3 class="sc-faq__question-wrap"><button class="sc-faq__question" id="faq-question-5" type="button" aria-expanded="false" aria-controls="faq-answer-5"><span class="sc-faq__question-label">Сколько стоит работа?</span><span class="sc-faq__icon" aria-hidden="true"><svg aria-hidden="true" class="arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></span></button></h3>
+      <div class="sc-faq__answer-region" id="faq-answer-5" role="region" aria-labelledby="faq-question-5" aria-hidden="true"><div class="sc-faq__answer-inner"><p>Стоимость зависит от задачи, состояния проекта и объёма изменений. Оценку согласуем после разбора исходных данных.</p></div></div>
+    </div>
+<div class="sc-faq__item" data-sc-faq-item>
+      <h3 class="sc-faq__question-wrap"><button class="sc-faq__question" id="faq-question-6" type="button" aria-expanded="false" aria-controls="faq-answer-6"><span class="sc-faq__question-label">Что входит в первичный разбор задачи?</span><span class="sc-faq__icon" aria-hidden="true"><svg aria-hidden="true" class="arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></span></button></h3>
+      <div class="sc-faq__answer-region" id="faq-answer-6" role="region" aria-labelledby="faq-question-6" aria-hidden="true"><div class="sc-faq__answer-inner"><p>На первом разговоре уточняем цель, ограничения и вводные. Глубокий технический аудит, проектирование или создание прототипа оцениваются отдельно.</p></div></div>
+    </div>
+<div class="sc-faq__item" data-sc-faq-item>
+      <h3 class="sc-faq__question-wrap"><button class="sc-faq__question" id="faq-question-7" type="button" aria-expanded="false" aria-controls="faq-answer-7"><span class="sc-faq__question-label">Что будет после запуска?</span><span class="sc-faq__icon" aria-hidden="true"><svg aria-hidden="true" class="arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></span></button></h3>
+      <div class="sc-faq__answer-region" id="faq-answer-7" role="region" aria-labelledby="faq-question-7" aria-hidden="true"><div class="sc-faq__answer-inner"><p>Проверяем согласованный результат и передаём необходимые материалы. Поддержку, новые задачи и условия исправлений фиксируем отдельно.</p></div></div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="contact-title" class="contact-footer sc-footer" id="contact">
+<div class="sc-footer__waves" aria-hidden="true">
+ <div class="sc-footer__wave sc-footer__wave--back"><svg viewBox="0 0 1440 600" preserveAspectRatio="none"><defs><linearGradient id="sc-wb" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#f5fbff" stop-opacity="0"/><stop offset="30%" stop-color="#d6edff" stop-opacity=".42"/><stop offset="100%" stop-color="#7db9f7" stop-opacity=".96"/></linearGradient></defs><path d="M0 205 C185 25 375 370 625 178 C875 -14 1080 45 1440 226 L1440 600 L0 600 Z" fill="url(#sc-wb)"><animate attributeName="d" dur="24s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines=".42 0 .58 1;.42 0 .58 1" values="M0 205 C185 25 375 370 625 178 C875 -14 1080 45 1440 226 L1440 600 L0 600 Z;M0 252 C210 -18 390 370 635 232 C860 5 1080 160 1440 152 L1440 600 L0 600 Z;M0 177 C160 130 350 268 625 139 C895 -48 1050 45 1440 266 L1440 600 L0 600 Z"/></path></svg></div>
+ <div class="sc-footer__wave sc-footer__wave--middle"><svg viewBox="0 0 1440 600" preserveAspectRatio="none"><defs><linearGradient id="sc-wm" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#e8f6ff" stop-opacity="0"/><stop offset="25%" stop-color="#b9defe" stop-opacity=".46"/><stop offset="100%" stop-color="#6eb0f4" stop-opacity=".92"/></linearGradient></defs><path d="M0 310 C220 90 395 135 585 305 C805 420 1040 65 1440 190 L1440 600 L0 600 Z" fill="url(#sc-wm)"><animate attributeName="d" dur="21s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines=".42 0 .58 1;.42 0 .58 1" values="M0 310 C220 90 395 135 585 305 C805 420 1040 65 1440 190 L1440 600 L0 600 Z;M0 232 C190 110 445 48 610 294 C860 455 1050 18 1440 265 L1440 600 L0 600 Z;M0 360 C190 40 405 237 580 325 C830 490 1060 35 1440 138 L1440 600 L0 600 Z"/></path></svg></div>
+ <div class="sc-footer__wave sc-footer__wave--front"><svg viewBox="0 0 1440 600" preserveAspectRatio="none"><defs><linearGradient id="sc-wf" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#e9f6ff" stop-opacity="0"/><stop offset="30%" stop-color="#b4d8ff" stop-opacity=".55"/><stop offset="100%" stop-color="#a1ccfc" stop-opacity="1"/></linearGradient></defs><path d="M0 275 C185 335 352 35 600 267 C848 499 990 420 1440 183 L1440 600 L0 600 Z" fill="url(#sc-wf)"><animate attributeName="d" dur="18s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines=".42 0 .58 1;.42 0 .58 1" values="M0 275 C185 335 352 35 600 267 C848 499 990 420 1440 183 L1440 600 L0 600 Z;M0 295 C210 385 340 36 618 203 C865 490 1120 365 1440 190 L1440 600 L0 600 Z;M0 238 C150 260 380 0 602 320 C855 535 1025 480 1440 166 L1440 600 L0 600 Z"/></path></svg></div>
+</div>
+  <div class="sc-footer__content">
+    <div class="sc-footer__intro">
+      <h2 id="contact-title">Обсудим задачу?</h2>
+      <p>Расскажите, что нужно сделать. Обсудим задачу и определим, с чего начать.</p>
+      <a class="nav-cta sc-footer__cta" href="mailto:max.eroxin@gmail.com?subject=SyntheCore%20%E2%80%94%20%D0%BE%D0%B1%D1%81%D1%83%D0%B4%D0%B8%D1%82%D1%8C%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D1%83">Обсудить задачу <svg aria-hidden="true" class="arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a>
+    </div>
+    <div class="sc-footer__bottom">
+      <div class="sc-footer__brand">
+        <a class="brand" href="#top" aria-label="SyntheCore — к началу страницы"><span class="brand-name">SyntheCore<span class="brand-dot">.</span></span><span class="brand-divider" aria-hidden="true"></span><span class="brand-note">Бюро сложных<br>систем</span></a>
+      </div>
+      <nav class="sc-footer__nav" aria-label="Навигация в футере"><a href="#works">Работы</a><a href="#services">Услуги</a><a href="#faq">Вопросы</a><a href="#contact">Контакты</a></nav>
+    </div>
+    <div class="sc-footer__fine">© 2026 SyntheCore</div>
+  </div>
+</section>
 </main>
 <script defer src="./assets/vendor/gsap-3.12.5.min.js"></script>
 <script defer src="./assets/vendor/ScrollTrigger-3.12.5.min.js"></script>
@@ -195,5 +398,9 @@
 <script defer src="./js/hero-geometry.js"></script>
 <script defer src="./js/hero-scroll.js"></script>
 <script defer src="./js/main.js"></script>
-<script defer src="./js/works.js"></script></body>
+<script defer src="./js/works.js"></script>
+<script defer src="./js/services.js"></script>
+<script defer src="./js/process.js"></script>
+<script defer src="./js/testimonials.js"></script>
+<script defer src="./js/faq-footer.js"></script></body>
 </html>

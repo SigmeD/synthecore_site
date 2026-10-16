@@ -1,0 +1,14 @@
+'use strict';
+const fs=require('node:fs');
+const path=require('node:path');
+const assert=require('node:assert/strict');
+const root=path.resolve(__dirname,'..');
+const works=fs.readFileSync(path.join(root,'css/works.css'),'utf8');
+const js=fs.readFileSync(path.join(root,'js/works.js'),'utf8');
+const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
+assert.match(works,/\.sc-work-frame\s*\{[^}]*box-shadow:none;/s);
+assert.doesNotMatch(works,/\.sc-work-item--front|\.sc-work-item:last-child \.sc-work-frame/);
+assert.doesNotMatch(js,/updateFrontCard|sc-work-item--front/);
+assert.match(works, /--works-last-hold:12svh/);
+assert.equal((html.match(/class="sc-work-item"/g)||[]).length,6);
+console.log('PASS: all six Works frames have no exterior shadow; unnecessary front-card tracker removed; 6 Works unchanged');

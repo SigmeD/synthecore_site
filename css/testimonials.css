@@ -1,0 +1,76 @@
+/* SyntheCore v58 — four DEMO reviews, centre lift + early sticky release. */
+.sc-testimonials{position:relative;z-index:5;background:#fff;color:#141719;isolation:isolate}
+.sc-testimonials,.sc-testimonials *{box-sizing:border-box}
+.sc-testimonials__scene{position:relative;min-height:700px;padding:110px max(24px,calc((100vw - 1200px)/2)) 90px;overflow:hidden;isolation:isolate;background:#fff}
+.sc-testimonials__center{position:relative;z-index:2;max-width:700px;margin:0 auto 56px;text-align:center;pointer-events:none}
+.sc-testimonials__center-inner{will-change:auto}
+.sc-testimonials__eyebrow{font:500 10px/1.5 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:.16em;color:#858b92;margin:0 0 24px}
+.sc-testimonials__center h2{margin:0;font:400 clamp(48px,5.3vw,81px)/1.02 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:-.065em;color:#141719}
+.sc-testimonials__center h2 span{color:#e44d1f}
+.sc-testimonials__disclaimer{font:400 12px/1.65 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#7b858d;margin:26px auto 0}
+.sc-testimonials__cards{position:relative;width:min(1150px,100%);margin:0 auto;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.sc-testimonials__card-slot{min-width:0;position:relative}
+.sc-testimonial{--review-end:#f1f5fa;position:relative;display:flex;flex-direction:column;width:100%;height:100%;min-height:390px;padding:20px 19px 18px;border-radius:22px;border:1px solid #ebeff4;background:linear-gradient(148deg,#fff 0%,#fff 38%,var(--review-end) 100%);box-shadow:0 14px 36px rgba(31,49,74,.085),0 3px 8px rgba(31,49,74,.038);overflow:hidden;transform:translateZ(0)}
+.sc-testimonial::before{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:inset 0 1px 0 rgba(255,255,255,.8);pointer-events:none}
+.sc-testimonial--01{--review-end:#ecf5ff}
+.sc-testimonial--02{--review-end:#fff1e9}
+.sc-testimonial--03{--review-end:#f4efff}
+.sc-testimonial--04{--review-end:#edf9f5}
+.sc-testimonial__top{display:flex;align-items:flex-start;justify-content:space-between;height:33px}
+.sc-testimonial__quote{font:600 58px/.8 Georgia,serif;color:#e44d1f}
+.sc-testimonial__demo{display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(21,29,34,.16);border-radius:100px;padding:5px 8px;font:500 9px/1 Inter,Arial,sans-serif;letter-spacing:.1em;color:#57616a}
+.sc-testimonial__topic{font:500 16px/1.24 Inter,Arial,sans-serif;letter-spacing:-.025em;margin:18px 0 10px;color:#202528}
+.sc-testimonial__copy{margin:0;max-width:100%;font:400 14px/1.49 Inter,Arial,sans-serif;letter-spacing:-.016em;color:#333d43}
+.sc-testimonial__author{display:flex;flex-direction:column;gap:3px;margin-top:auto;padding:16px 0 14px;font:500 12px/1.25 Inter,Arial,sans-serif;color:#222b30}
+.sc-testimonial__author span:last-child{color:#656f76;font-weight:400;font-size:11px}
+.sc-testimonial__photo{position:relative;flex:none;width:100%;height:123px;overflow:hidden;border-radius:12px;background:rgba(255,255,255,.4)}
+.sc-testimonial__photo img{width:100%;height:100%;object-fit:cover;display:block}
+.sc-testimonial__photo span{position:absolute;bottom:9px;left:10px;border-radius:5px;padding:4px 7px;font:500 10px/1.2 Inter,Arial,sans-serif;color:#27323a;background:rgba(255,255,255,.76);backdrop-filter:blur(8px)}
+/* Desktop: full-height sticky scene, slower opaque cards. No GSAP pin. */
+@media(min-width:1200px) and (min-height:800px){
+  /* The previous banner is followed closely by the first already-visible review. */
+  .sc-process:has(+ .sc-testimonials){padding-bottom:clamp(16px,1.7vw,30px)}
+  /* Match the reference handoff: full banner remains within the viewport. */
+  .sc-process:has(+ .sc-testimonials) .sc-process__banner{min-height:clamp(580px,66svh,690px)}
+  .sc-process:has(+ .sc-testimonials) .sc-process__inner{padding-top:clamp(52px,6svh,78px);padding-bottom:clamp(18px,2vw,32px)}
+  .sc-testimonials.sc-testimonials--motion{height:410svh;min-height:2900px}
+  .sc-testimonials.sc-testimonials--motion .sc-testimonials__scene{position:sticky;top:0;height:100svh;min-height:800px;padding:0;overflow:hidden}
+  .sc-testimonials.sc-testimonials--motion .sc-testimonials__center{position:absolute;left:50%;top:49%;width:min(560px,46vw);max-width:none;margin:0;transform:translate(-50%,-50%);z-index:2}
+  .sc-testimonials.sc-testimonials--motion .sc-testimonials__center h2{font-size:clamp(54px,4.9vw,80px);opacity:1;color:#141719}
+  .sc-testimonials.sc-testimonials--motion .sc-testimonials__disclaimer{max-width:355px}
+  .sc-testimonials.sc-testimonials--motion .sc-testimonials__cards{position:absolute;inset:0;width:100%;max-width:none;margin:0;display:block;pointer-events:none;z-index:3}
+  .sc-testimonials.sc-testimonials--motion .sc-testimonials__card-slot{position:absolute;top:0;left:50%;width:clamp(252px,21.5vw,338px);height:clamp(382px,32vw,466px);pointer-events:auto;will-change:transform;transform-origin:center center}
+  .sc-testimonials.sc-testimonials--motion .sc-testimonial{height:100%;min-height:0;padding:20px 19px 18px;animation:sc-review-float 7.1s ease-in-out infinite alternate;transition:box-shadow .38s ease,filter .38s ease,transform .38s ease;transform-origin:center center}
+  .sc-testimonials.sc-testimonials--motion .sc-testimonial__topic{font-size:clamp(15px,1.12vw,18px);margin-top:16px}
+  .sc-testimonials.sc-testimonials--motion .sc-testimonial__copy{font-size:clamp(13px,.95vw,15px)}
+  .sc-testimonials.sc-testimonials--motion .sc-testimonial__photo{height:clamp(113px,9.3vw,149px)}
+  .sc-testimonials.sc-testimonials--motion .sc-testimonials__card-slot:nth-child(2) .sc-testimonial{animation-duration:8.2s;animation-delay:-2.9s}
+  .sc-testimonials.sc-testimonials--motion .sc-testimonials__card-slot:nth-child(3) .sc-testimonial{animation-duration:6.9s;animation-delay:-4.4s}
+  .sc-testimonials.sc-testimonials--motion .sc-testimonials__card-slot:nth-child(4) .sc-testimonial{animation-duration:8.8s;animation-delay:-1.7s}
+  .sc-testimonials.sc-testimonials--motion .sc-testimonials__card-slot:hover,
+  .sc-testimonials.sc-testimonials--motion .sc-testimonials__card-slot:focus-within{z-index:25!important}
+  .sc-testimonials.sc-testimonials--motion .sc-testimonials__card-slot:hover .sc-testimonial,
+  .sc-testimonials.sc-testimonials--motion .sc-testimonials__card-slot:focus-within .sc-testimonial{animation:none;transform:translateY(-8px) scale(1.06);box-shadow:0 24px 58px rgba(31,49,74,.17),0 8px 18px rgba(31,49,74,.09)}
+}
+@keyframes sc-review-float{0%{transform:translate3d(0,4px,0) rotate(-.25deg)}100%{transform:translate3d(0,-5px,0) rotate(.25deg)}}
+@media(max-width:1199px),(max-height:799px){
+  .sc-testimonials__scene{min-height:0;padding:clamp(84px,10vw,130px) 0 85px}
+  .sc-testimonials__center{padding:0 24px;max-width:620px}
+  .sc-testimonials__cards{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;overscroll-behavior-inline:contain;scroll-padding-left:24px;padding:12px 24px 30px;scrollbar-width:thin;-webkit-overflow-scrolling:touch;max-width:100%}
+  .sc-testimonials__card-slot{flex:0 0 min(340px,76vw);scroll-snap-align:start;height:426px}
+  .sc-testimonial{height:100%;min-height:0}
+}
+@media(max-width:650px){
+  .sc-testimonials__scene{padding:83px 0 75px}
+  .sc-testimonials__center{margin-bottom:34px}
+  .sc-testimonials__center h2{font-size:clamp(45px,10vw,62px)}
+  .sc-testimonials__eyebrow{font-size:9px;letter-spacing:.13em;margin-bottom:18px}
+  .sc-testimonials__disclaimer{font-size:11px;margin-top:20px}
+  .sc-testimonials__card-slot{flex-basis:min(320px,82vw);height:420px}
+  .sc-testimonials__cards{gap:14px;padding:8px 18px 27px;scroll-padding-left:18px}
+}
+@media(prefers-reduced-motion:reduce){
+  .sc-testimonial{animation:none!important;transition:none!important;will-change:auto!important}
+  .sc-testimonials__card-slot{will-change:auto!important}
+  .sc-testimonials__cards{scroll-behavior:auto!important}
+}

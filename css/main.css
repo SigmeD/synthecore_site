@@ -49,15 +49,21 @@
     .header-links a:hover{color:var(--orange)}
     .nav-cta,.main-cta{display:inline-flex;align-items:center;justify-content:center;gap:16px;border-radius:100px;white-space:nowrap;transition:transform .22s ease,background .22s ease,box-shadow .22s ease}
     .nav-cta{min-height:53px;padding:0 20px;background:#171a1c;color:#fff;font-size:13px;font-weight:610;box-shadow:inset 0 0 0 1px rgba(255,255,255,.05)}
-    .nav-cta:hover{background:#32383b;transform:translateY(-2px)}
+    .nav-cta:hover,.nav-cta:focus-visible{background:var(--orange);transform:none}
     .arrow{width:18px;height:18px;stroke:currentColor;stroke-width:1.8;fill:none;flex-shrink:0}
+    .nav-cta .arrow,.main-cta .arrow{transform-origin:50% 50%;transition:transform .38s cubic-bezier(.22,1,.36,1);stroke-linecap:round;stroke-linejoin:round}
+    .nav-cta:is(:hover,:focus-visible) .arrow,.main-cta:is(:hover,:focus-visible) .arrow{transform:rotate(-45deg)}
+    .nav-cta:active .arrow,.main-cta:active .arrow{transform:rotate(-45deg)}
     .menu-toggle{display:none;border:0;background:#171a1c;color:#fff;width:44px;height:44px;border-radius:50%;align-items:center;justify-content:center;flex-shrink:0}
     .menu-toggle svg{width:21px;height:21px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round}
     .mobile-panel[hidden]{display:none}
     .mobile-panel{position:absolute;top:calc(100% + 12px);left:0;right:0;border-radius:24px;padding:12px;background:#fff;box-shadow:var(--pill-shadow);display:grid;gap:2px;border:1px solid #e9edf1}
     .mobile-panel a{padding:17px 18px;border-radius:14px;font-size:16px;font-weight:580}
     .mobile-panel a:hover{background:#f1f5f8}
-    .mobile-panel a:last-child{background:var(--orange);color:#fff;text-align:center;margin-top:8px}
+    .mobile-panel a:last-child{background:var(--orange);color:#fff;text-align:center;margin-top:8px;display:flex;align-items:center;justify-content:center;gap:12px}
+    .mobile-panel a:last-child:hover{background:#fc7045}
+    .mobile-panel a:last-child .arrow{transform-origin:center;transition:transform .38s cubic-bezier(.22,1,.36,1)}
+    .mobile-panel a:last-child:is(:hover,:focus-visible) .arrow{transform:rotate(-45deg)}
     /* The outer hero is 100% static. ONLY its centered photo expands with scroll. */
     
     
@@ -105,8 +111,8 @@
     .photo-caption{position:absolute;bottom:16px;left:17px;font-size:10px;color:#fff;background:rgba(17,29,39,.65);padding:8px 11px;border-radius:30px;backdrop-filter:blur(6px);letter-spacing:.06em}
     .side-right{gap:18px}
     .side-right p{margin:0;max-width:290px;font-size:clamp(19px,1.36vw,25px);line-height:1.33;letter-spacing:-.03em;font-weight:520;color:rgb(var(--hero-strong));text-shadow:0 2px 14px rgba(8,15,22,var(--hero-shadow-alpha))}
-    .main-cta{color:#fff;background:var(--orange-deep);padding:0 25px;min-height:53px;font-weight:620;font-size:14px;border:0;box-shadow:0 7px 17px rgba(185,59,20,.18)}
-    .main-cta:hover{background:#aa300c;transform:translateY(-2px);box-shadow:0 12px 26px rgba(185,59,20,.23)}
+    .main-cta{color:#fff;background:var(--orange);padding:0 25px;min-height:53px;font-weight:620;font-size:14px;border:0;box-shadow:0 7px 17px rgba(228,77,31,.18)}
+    .main-cta:hover,.main-cta:focus-visible{background:#fc7045;transform:none;box-shadow:0 10px 26px rgba(228,77,31,.24)}
     .hero-bottom{position:relative;z-index:14;width:min(1580px,calc(100% - 80px));margin:auto auto 0;display:flex;align-items:center;justify-content:space-between;gap:20px;padding-bottom:clamp(26px,3.2vh,48px);padding-top:28px}
     .capabilities{display:flex;gap:clamp(18px,2.7vw,48px);align-items:center;color:rgb(var(--hero-secondary));font-size:13px;text-shadow:0 2px 14px rgba(8,15,22,var(--hero-shadow-alpha))}
     .capabilities span{display:flex;align-items:center;gap:9px;white-space:nowrap}
@@ -1085,3 +1091,5 @@
   #audiences .audience-option,#audiences .audience-visual{transition:none}
   #audiences .audience-card.is-active{animation:none}
 }
+
+@media(prefers-reduced-motion:reduce){.nav-cta .arrow,.main-cta .arrow{transition:none!important}.nav-cta,.main-cta{transition:none!important}}

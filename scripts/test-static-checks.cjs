@@ -69,7 +69,7 @@ for (const id of ['b2b', 'flowers', 'crm', 'beauty', 'prostor', 'metal']) {
   }, /hash/i]);
 }
 
-test('current v31 static checks accept the site and reject isolated fixture mutations', async t => {
+test('current v60 static checks accept the site and reject isolated fixture mutations', async t => {
   assert.ok(fs.existsSync(validator), 'portable Works validator must exist');
   const { verifyWorks } = require(validator);
   const temp = fs.mkdtempSync(path.join(os.tmpdir(), 'synthecore-checks-'));
