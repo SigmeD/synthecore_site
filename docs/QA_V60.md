@@ -105,4 +105,4 @@ PASS означает выполнение браузерного сценари
 
 Перед отправкой проверены GitHub: Pages выключен; workflows/hooks отсутствуют; deployments пусты; checks/status contexts на main отсутствуют. Production-команды не запускались. Публикация PR не означает разрешение на выпуск.
 
-Ссылка на фактически открытый PR добавляется после отправки ветки. Полный список изменений и откат — [релиз](RELEASE_V60.md), [файлы](RELEASE_V60_FILES.md).
+Открыт [draft PR #3](https://github.com/SigmeD/synthecore_site/pull/3), OPEN/DRAFT, без merge. Удалённый SHA ветки сверён; `main` остаётся на baseline, deployments пусты. Полный список изменений и откат — [релиз](RELEASE_V60.md), [файлы](RELEASE_V60_FILES.md).

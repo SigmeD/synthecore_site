@@ -10,7 +10,7 @@
 - SHA256 исходного ZIP: `e11759a059c28ade395c80bc5d7d24bf5288b0ab2ca0dc2247d0083e28130b14`.
 - Историческая интеграция Works v31: [PR #1](https://github.com/SigmeD/synthecore_site/pull/1), merge `038a062f95b52f833910aa99a12e2364b8460d97`.
 
-Итоговая ссылка на PR v60 добавляется после безопасного открытия PR. Имя предполагаемой ветки и старый PR #1 не заменяют фактическую ссылку на новый PR.
+Открыт [draft PR #3](https://github.com/SigmeD/synthecore_site/pull/3): `release/site-v60` → `main`. Состояние OPEN/DRAFT, mergeStateStatus CLEAN. `main` остаётся на baseline; deployments после отправки отсутствуют. Merge и production не выполнялись.
 
 ## Состав переноса относительно v31
 
