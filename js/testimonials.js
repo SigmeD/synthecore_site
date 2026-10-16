@@ -132,6 +132,23 @@ document.addEventListener('DOMContentLoaded', () => {
     if (canAnimate() !== (mode==='scroll-stream')) setup();
     else if (mode==='scroll-stream') trigger?.refresh();
   }
+  // Preserve the v58 scroll geometry for wheel/touch. Keyboard focus seeks
+  // within that same stream instead of scrolling the clipped sticky scene.
+  cards.forEach((card,index)=>card.addEventListener('focusin',event=>{
+    if(mode!=='scroll-stream'||!event.target.matches(':focus-visible'))return;
+    requestAnimationFrame(()=>{
+      if(!trigger||mode!=='scroll-stream')return;
+      scene.scrollLeft=0;
+      section.querySelector('.sc-testimonials__cards').scrollLeft=0;
+      const vw=scene.clientWidth||innerWidth,cardWidth=cards[0].offsetWidth;
+      const firstCenter=vw-cardWidth*.03,spacing=vw*.36;
+      const travel=firstCenter+(cards.length-1)*spacing-(cardWidth*.52+vw*.02);
+      const progress=clamp((firstCenter+index*spacing-vw*.5)/travel,0,1);
+      window.scrollTo({top:trigger.start+(trigger.end-trigger.start)*progress,behavior:'instant'});
+      ScrollTrigger.update();
+      schedule(progress);
+    });
+  }));
   desktop.addEventListener('change',reconcile);
   reduced.addEventListener('change',reconcile);
   addEventListener('resize',reconcile,{passive:true});

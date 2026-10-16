@@ -63,6 +63,21 @@ document.addEventListener('DOMContentLoaded', () => {
   previous.addEventListener('click',()=>move(-1));
   next.addEventListener('click',()=>move(1));
   viewport.addEventListener('scroll',nativeUpdate,{passive:true});
+  // Keyboard focus must use the existing pin, rather than independently
+  // scrolling an overflow:hidden viewport underneath the translated track.
+  cards.forEach(card=>card.addEventListener('focus',()=>{
+    if(!pinned||!card.matches(':focus-visible'))return;
+    requestAnimationFrame(()=>{
+      const trigger=horizontal?.scrollTrigger;
+      if(!trigger)return;
+      const offset=card.getBoundingClientRect().left-track.getBoundingClientRect().left;
+      const edge=parseFloat(getComputedStyle(track).paddingLeft)||0;
+      const progress=Math.max(0,Math.min(1,(offset-edge)/Math.max(1,railTravel())));
+      viewport.scrollLeft=0;
+      window.scrollTo({top:trigger.start+(trigger.end-trigger.start)*progress,behavior:'instant'});
+      ScrollTrigger.update();
+    });
+  }));
   track.addEventListener('keydown',event => {
     if(!['ArrowRight','ArrowLeft','Home','End'].includes(event.key)) return;
     if(event.target!==track)return;

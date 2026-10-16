@@ -4,7 +4,7 @@ $root = [System.IO.Path]::GetFullPath($PSScriptRoot)
 $listener = [System.Net.Sockets.TcpListener]::new([System.Net.IPAddress]::Loopback, $Port)
 try {
     $listener.Start()
-    Write-Host "SyntheCore v23.1: http://127.0.0.1:$Port/" -ForegroundColor Green
+    Write-Host "SyntheCore v60: http://127.0.0.1:$Port/" -ForegroundColor Green
     Write-Host "Папка: $root"
     Write-Host 'Остановить: Ctrl+C'
     Start-Process "http://127.0.0.1:$Port/"

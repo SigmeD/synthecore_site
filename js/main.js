@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded",()=>{
   function closeMenu(){panel.hidden=true;toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Открыть меню')}
   toggle.addEventListener('click',()=>{const open=panel.hidden;panel.hidden=!open;toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'Закрыть меню':'Открыть меню')});
   panel.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
-  document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu()});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!panel.hidden){const restore=panel.contains(document.activeElement);closeMenu();if(restore)toggle.focus({preventScroll:true})}});
   document.addEventListener('pointerdown',e=>{if(!header.contains(e.target))closeMenu()});
   addEventListener('resize',()=>{if(innerWidth>850)closeMenu()});
 })();

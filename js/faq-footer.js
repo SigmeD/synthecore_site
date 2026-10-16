@@ -8,6 +8,16 @@
     const opening=!item.classList.contains('is-open');
     for(const other of items)setOpen(other,other===item&&opening);
   });}
+  // Wait until accordion layout settles, then recalculate global trigger
+  // positions and the existing Lenis dimensions through its refresh listener.
+  if('ResizeObserver' in window){
+    let refreshTimer;
+    const observer=new ResizeObserver(()=>{
+      clearTimeout(refreshTimer);
+      refreshTimer=setTimeout(()=>window.ScrollTrigger?.refresh(true),120);
+    });
+    observer.observe(faq);
+  }
   // Roveia-like handoff: only the incoming FAQ content shifts a few pixels.
   // No opacity, no new ScrollTrigger pin, and no changes to the v58 reviews.
   const faqMotion=matchMedia('(min-width: 1200px) and (min-height: 800px)');
