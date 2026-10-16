@@ -2,7 +2,7 @@
 
 ## v60 — полная интеграция от v31, 16 октября 2026
 
-Ветка `release/site-v60` подготовлена от `main` (`dc54a7db5e82e71ee947262d6e926a3e6a7d68e6`); baseline сохранён тегом `backup/v31-before-v60-2026-10-16`. Источник — полный `SyntheCore_v60_Full_Site.zip`. Открыт [draft PR #3](https://github.com/SigmeD/synthecore_site/pull/3); старый PR #1 ниже относится к v31. Merge и production требуют отдельного разрешения.
+Ветка `release/site-v60` подготовлена от `main` (`dc54a7db5e82e71ee947262d6e926a3e6a7d68e6`); baseline сохранён тегом `backup/v31-before-v60-2026-10-16`. Источник — полный `SyntheCore_v60_Full_Site.zip`. По прямому разрешению владельца 16 октября 2026 объединён [PR #3](https://github.com/SigmeD/synthecore_site/pull/3), merge-коммит `19efcea`; старый PR #1 ниже относится к v31. Merge разрешён и выполнен; production требует отдельного разрешения.
 
 - Вместо пяти секций с заглушкой услуг страница содержит восемь: Hero, аудитории, Works ×6, Services ×6, Process ×3, Reviews ×4, FAQ ×7, светлый footer.
 - Works получил одну pinned timeline v45; Services v46 — горизонтальную desktop-сцену с native fallback. Добавлены Process и его иллюстрации. Единственный Lenis остался в Hero, версии локальных GSAP/ScrollTrigger 3.12.5 и Lenis 1.3.26 сохранены.

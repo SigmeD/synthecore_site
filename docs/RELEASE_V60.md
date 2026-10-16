@@ -1,6 +1,6 @@
 # Релиз SyntheCore v60 — интеграция
 
-**Дата:** 16 октября 2026. **Ветка:** `release/site-v60`, base `main`. Это кандидат на приёмку; merge и production не разрешены. Актуальные результаты автоматических и браузерных проверок ведутся отдельно в [QA v60](QA_V60.md). Этот документ не переносит PASS из исходного архива.
+**Дата:** 16 октября 2026. **Ветка:** `release/site-v60`, base `main`. PR #3 объединён в main по прямому разрешению владельца 16 октября 2026; production не разрешён. Актуальные результаты автоматических и браузерных проверок ведутся отдельно в [QA v60](QA_V60.md). Этот документ не переносит PASS из исходного архива.
 
 ## Baseline и источник
 
@@ -10,7 +10,7 @@
 - SHA256 исходного ZIP: `e11759a059c28ade395c80bc5d7d24bf5288b0ab2ca0dc2247d0083e28130b14`.
 - Историческая интеграция Works v31: [PR #1](https://github.com/SigmeD/synthecore_site/pull/1), merge `038a062f95b52f833910aa99a12e2364b8460d97`.
 
-Открыт [draft PR #3](https://github.com/SigmeD/synthecore_site/pull/3): `release/site-v60` → `main`. Состояние OPEN/DRAFT, mergeStateStatus CLEAN. `main` остаётся на baseline; deployments после отправки отсутствуют. Merge и production не выполнялись.
+[PR #3](https://github.com/SigmeD/synthecore_site/pull/3): `release/site-v60` → `main`, MERGED 16 октября 2026, merge-коммит `19efcea9235939286609eed438f64320d47e1006`. Владелец отдельно разрешил merge и push в main. Baseline v31 сохранён в истории и локальном теге; production не выполнялся.
 
 ## Состав переноса относительно v31
 
