@@ -1,0 +1,2357 @@
+{
+  "date": "2026-10-20T16:33:39.391Z",
+  "url": "http://127.0.0.1:4182/",
+  "engine": "chromium",
+  "phase": "shared-v27",
+  "commit": "67f75cda3a7398be7c3d7955cc2706db71f0ae6a",
+  "cases": [
+    {
+      "viewport": "1440x900",
+      "checks": [
+        {
+          "message": "wheel: reached footer",
+          "pass": true,
+          "details": 14273
+        },
+        {
+          "message": "wheel: returned to top",
+          "pass": true,
+          "details": 0
+        },
+        {
+          "message": "no horizontal document overflow during full down/up scroll",
+          "pass": true
+        },
+        {
+          "message": "one live Lenis owner at most",
+          "pass": true,
+          "details": {
+            "live": 1,
+            "max": 1,
+            "created": 1
+          }
+        },
+        {
+          "message": "100% zoom, DPR 1",
+          "pass": true,
+          "details": {
+            "dpr": 1,
+            "scale": 1
+          }
+        },
+        {
+          "message": "audience keyboard selection 1",
+          "pass": true
+        },
+        {
+          "message": "audience keyboard selection 2",
+          "pass": true
+        },
+        {
+          "message": "audience keyboard selection 3",
+          "pass": true
+        },
+        {
+          "message": "Works card 1 visible at its stage",
+          "pass": true,
+          "details": {
+            "x": 25.921875,
+            "y": 11.703125,
+            "width": 1388.15625,
+            "height": 504.28125
+          }
+        },
+        {
+          "message": "Works card 2 visible at its stage",
+          "pass": true,
+          "details": {
+            "x": 25.921875,
+            "y": 11.703125,
+            "width": 1388.15625,
+            "height": 504.28125
+          }
+        },
+        {
+          "message": "Works card 3 visible at its stage",
+          "pass": true,
+          "details": {
+            "x": 25.921875,
+            "y": 11.703125,
+            "width": 1388.15625,
+            "height": 504.28125
+          }
+        },
+        {
+          "message": "Works card 4 visible at its stage",
+          "pass": true,
+          "details": {
+            "x": 25.921875,
+            "y": 11.703125,
+            "width": 1388.15625,
+            "height": 504.28125
+          }
+        },
+        {
+          "message": "Works card 5 visible at its stage",
+          "pass": true,
+          "details": {
+            "x": 25.921875,
+            "y": 11.703125,
+            "width": 1388.15625,
+            "height": 504.28125
+          }
+        },
+        {
+          "message": "Works card 6 visible at its stage",
+          "pass": true,
+          "details": {
+            "x": 25.921875,
+            "y": 11.703125,
+            "width": 1388.15625,
+            "height": 504.28125
+          }
+        },
+        {
+          "message": "Services card 1 reachable",
+          "pass": true,
+          "details": {
+            "x": 120,
+            "y": 274.828125,
+            "width": 403.1875,
+            "height": 459
+          }
+        },
+        {
+          "message": "Services card 2 reachable",
+          "pass": true,
+          "details": {
+            "x": 279.0419921875,
+            "y": 274.828125,
+            "width": 403.1875,
+            "height": 459
+          }
+        },
+        {
+          "message": "Services card 3 reachable",
+          "pass": true,
+          "details": {
+            "x": 438.96209716796875,
+            "y": 274.828125,
+            "width": 403.1875,
+            "height": 459
+          }
+        },
+        {
+          "message": "Services card 4 reachable",
+          "pass": true,
+          "details": {
+            "x": 597.9884033203125,
+            "y": 274.828125,
+            "width": 403.1875,
+            "height": 459
+          }
+        },
+        {
+          "message": "Services card 5 reachable",
+          "pass": true,
+          "details": {
+            "x": 757.9215087890625,
+            "y": 274.828125,
+            "width": 403.1875,
+            "height": 459
+          }
+        },
+        {
+          "message": "Services card 6 reachable",
+          "pass": true,
+          "details": {
+            "x": 916.94140625,
+            "y": 274.828125,
+            "width": 403.1875,
+            "height": 459
+          }
+        },
+        {
+          "message": "Process step 1",
+          "pass": true
+        },
+        {
+          "message": "Process step 2",
+          "pass": true
+        },
+        {
+          "message": "Process step 3",
+          "pass": true
+        },
+        {
+          "message": "Reviews fourth card still visible on release",
+          "pass": true,
+          "details": [
+            {
+              "left": -1535,
+              "right": -1195
+            },
+            {
+              "left": -1000,
+              "right": -693
+            },
+            {
+              "left": -494,
+              "right": -162
+            },
+            {
+              "left": 19,
+              "right": 361
+            }
+          ]
+        },
+        {
+          "message": "Reviews v58: opaque cards, no second GSAP pin",
+          "pass": true
+        },
+        {
+          "message": "Reviews demo labeling preserved",
+          "pass": true
+        },
+        {
+          "message": "FAQ opens 1",
+          "pass": true
+        },
+        {
+          "message": "FAQ single expanded item 1",
+          "pass": true
+        },
+        {
+          "message": "FAQ keyboard closes 1",
+          "pass": true
+        },
+        {
+          "message": "FAQ opens 2",
+          "pass": true
+        },
+        {
+          "message": "FAQ single expanded item 2",
+          "pass": true
+        },
+        {
+          "message": "FAQ keyboard closes 2",
+          "pass": true
+        },
+        {
+          "message": "FAQ opens 3",
+          "pass": true
+        },
+        {
+          "message": "FAQ single expanded item 3",
+          "pass": true
+        },
+        {
+          "message": "FAQ keyboard closes 3",
+          "pass": true
+        },
+        {
+          "message": "FAQ opens 4",
+          "pass": true
+        },
+        {
+          "message": "FAQ single expanded item 4",
+          "pass": true
+        },
+        {
+          "message": "FAQ keyboard closes 4",
+          "pass": true
+        },
+        {
+          "message": "FAQ opens 5",
+          "pass": true
+        },
+        {
+          "message": "FAQ single expanded item 5",
+          "pass": true
+        },
+        {
+          "message": "FAQ keyboard closes 5",
+          "pass": true
+        },
+        {
+          "message": "FAQ opens 6",
+          "pass": true
+        },
+        {
+          "message": "FAQ single expanded item 6",
+          "pass": true
+        },
+        {
+          "message": "FAQ keyboard closes 6",
+          "pass": true
+        },
+        {
+          "message": "FAQ opens 7",
+          "pass": true
+        },
+        {
+          "message": "FAQ single expanded item 7",
+          "pass": true
+        },
+        {
+          "message": "FAQ keyboard closes 7",
+          "pass": true
+        },
+        {
+          "message": "Footer: all three v12 wave paths animate while scroll is stopped",
+          "pass": true,
+          "details": {
+            "before": [
+              {
+                "d": "M -259.2 110.9 C -218.4 105.4 -96.0 77.3 -14.4 78.1 C 67.2 78.9 148.8 90.1 230.4 115.6 C 312.0 141.2 393.6 224.1 475.2 231.6 C 556.8 239.2 638.4 168.0 720.0 160.9 C 801.6 153.8 883.2 183.8 964.8 189.1 C 1046.4 194.4 1128.0 209.8 1209.6 192.8 C 1291.2 175.7 1372.8 103.5 1454.4 86.9 C 1536.0 70.3 1658.4 92.1 1699.2 93.1 L 1699.2 600 L -259.2 600 Z"
+              },
+              {
+                "d": "M -259.2 103.1 C -218.4 105.1 -96.0 85.2 -14.4 115.1 C 67.2 144.9 148.8 255.5 230.4 282.3 C 312.0 309.0 393.6 303.6 475.2 275.6 C 556.8 247.6 638.4 129.9 720.0 114.3 C 801.6 98.7 883.2 167.7 964.8 181.9 C 1046.4 196.0 1128.0 222.0 1209.6 199.3 C 1291.2 176.6 1372.8 33.1 1454.4 45.4 C 1536.0 57.8 1658.4 235.4 1699.2 273.4 L 1699.2 500 L -259.2 500 Z"
+              },
+              {
+                "d": "M -259.2 90.6 C -218.4 83.5 -96.0 49.4 -14.4 48.0 C 67.2 46.6 148.8 64.6 230.4 82.1 C 312.0 99.7 393.6 156.4 475.2 153.1 C 556.8 149.9 638.4 70.0 720.0 62.8 C 801.6 55.6 883.2 117.6 964.8 109.8 C 1046.4 102.0 1128.0 15.3 1209.6 15.8 C 1291.2 16.3 1372.8 100.2 1454.4 112.7 C 1536.0 125.3 1658.4 94.7 1699.2 91.1 L 1699.2 350 L -259.2 350 Z"
+              }
+            ],
+            "after": [
+              {
+                "d": "M -259.2 223.3 C -218.4 200.0 -96.0 114.9 -14.4 83.4 C 67.2 51.9 148.8 8.6 230.4 34.3 C 312.0 59.9 393.6 217.8 475.2 237.1 C 556.8 256.4 638.4 168.1 720.0 150.3 C 801.6 132.5 883.2 132.7 964.8 130.1 C 1046.4 127.5 1128.0 128.1 1209.6 134.7 C 1291.2 141.2 1372.8 168.8 1454.4 169.6 C 1536.0 170.4 1658.4 144.5 1699.2 139.5 L 1699.2 600 L -259.2 600 Z"
+              },
+              {
+                "d": "M -259.2 20.4 C -218.4 32.3 -96.0 61.1 -14.4 91.6 C 67.2 122.0 148.8 179.1 230.4 203.3 C 312.0 227.5 393.6 235.5 475.2 236.6 C 556.8 237.7 638.4 219.5 720.0 209.9 C 801.6 200.3 883.2 169.8 964.8 179.1 C 1046.4 188.5 1128.0 287.9 1209.6 266.1 C 1291.2 244.3 1372.8 52.6 1454.4 48.4 C 1536.0 44.3 1658.4 209.2 1699.2 241.3 L 1699.2 500 L -259.2 500 Z"
+              },
+              {
+                "d": "M -259.2 147.2 C -218.4 134.9 -96.0 88.1 -14.4 73.4 C 67.2 58.7 148.8 52.1 230.4 59.2 C 312.0 66.2 393.6 104.2 475.2 115.6 C 556.8 127.0 638.4 135.5 720.0 127.6 C 801.6 119.8 883.2 74.3 964.8 68.2 C 1046.4 62.1 1128.0 81.7 1209.6 91.1 C 1291.2 100.5 1372.8 115.7 1454.4 124.6 C 1536.0 133.5 1658.4 141.2 1699.2 144.5 L 1699.2 350 L -259.2 350 Z"
+              }
+            ]
+          }
+        },
+        {
+          "message": "Footer wave animation does not move scroll",
+          "pass": true
+        },
+        {
+          "message": "Footer CTA has contact email",
+          "pass": true
+        },
+        {
+          "message": "resize/orientation: no duplicate Lenis",
+          "pass": true
+        },
+        {
+          "message": "resize/orientation: one spacer per active pin owner",
+          "pass": true,
+          "details": [
+            {
+              "id": "synthecore-hero",
+              "start": -0.001,
+              "end": 990,
+              "active": true
+            },
+            {
+              "id": "sc-works-timeline",
+              "start": 2296,
+              "end": 6436,
+              "active": false
+            },
+            {
+              "id": "sc-services-pin",
+              "start": 6963,
+              "end": 8366,
+              "active": false
+            }
+          ]
+        },
+        {
+          "message": "resize/orientation: no overflow",
+          "pass": true
+        },
+        {
+          "message": "reload: no overflow",
+          "pass": true
+        },
+        {
+          "message": "header Works link opens catalog route",
+          "pass": true
+        },
+        {
+          "message": "header anchor #services",
+          "pass": true,
+          "details": {
+            "top": 115.1875,
+            "expectedTop": 115,
+            "scroll": 6848,
+            "max": 14273,
+            "padding": 115
+          }
+        },
+        {
+          "message": "header anchor #contact",
+          "pass": true,
+          "details": {
+            "top": 117.734375,
+            "expectedTop": 117.734375,
+            "scroll": 14273,
+            "max": 14273,
+            "padding": 115
+          }
+        },
+        {
+          "message": "CTA no vertical shift: #floatingHeader > .nav-cta",
+          "pass": true,
+          "details": {
+            "before": {
+              "y": 36.390625,
+              "cy": 56.390625,
+              "color": "rgb(23, 26, 28)"
+            },
+            "after": {
+              "y": 36.390625,
+              "cy": 56.390625,
+              "color": "rgb(228, 77, 31)",
+              "transform": "matrix(0.707107, -0.707107, 0.707107, 0.707107, 0, 0)"
+            }
+          }
+        },
+        {
+          "message": "CTA hover color: #floatingHeader > .nav-cta",
+          "pass": true,
+          "details": {
+            "before": {
+              "y": 36.390625,
+              "cy": 56.390625,
+              "color": "rgb(23, 26, 28)"
+            },
+            "after": {
+              "y": 36.390625,
+              "cy": 56.390625,
+              "color": "rgb(228, 77, 31)",
+              "transform": "matrix(0.707107, -0.707107, 0.707107, 0.707107, 0, 0)"
+            }
+          }
+        },
+        {
+          "message": "CTA no vertical shift: .main-cta",
+          "pass": true,
+          "details": {
+            "before": {
+              "y": 379.09375,
+              "cy": 405.09375,
+              "color": "rgb(228, 77, 31)"
+            },
+            "after": {
+              "y": 379.09375,
+              "cy": 405.09375,
+              "color": "rgb(252, 112, 69)",
+              "transform": "matrix(0.707107, -0.707107, 0.707107, 0.707107, 0, 0)"
+            }
+          }
+        },
+        {
+          "message": "CTA hover color: .main-cta",
+          "pass": true,
+          "details": {
+            "before": {
+              "y": 379.09375,
+              "cy": 405.09375,
+              "color": "rgb(228, 77, 31)"
+            },
+            "after": {
+              "y": 379.09375,
+              "cy": 405.09375,
+              "color": "rgb(252, 112, 69)",
+              "transform": "matrix(0.707107, -0.707107, 0.707107, 0.707107, 0, 0)"
+            }
+          }
+        },
+        {
+          "message": "CTA no vertical shift: #contact .sc-footer__cta",
+          "pass": true,
+          "details": {
+            "before": {
+              "y": 481.734375,
+              "cy": 507.734375,
+              "color": "rgb(228, 77, 31)"
+            },
+            "after": {
+              "y": 481.734375,
+              "cy": 507.734375,
+              "color": "rgb(252, 112, 69)",
+              "transform": "matrix(0.707107, -0.707107, 0.707107, 0.707107, 0, 0)"
+            }
+          }
+        },
+        {
+          "message": "CTA hover color: #contact .sc-footer__cta",
+          "pass": true,
+          "details": {
+            "before": {
+              "y": 481.734375,
+              "cy": 507.734375,
+              "color": "rgb(228, 77, 31)"
+            },
+            "after": {
+              "y": 481.734375,
+              "cy": 507.734375,
+              "color": "rgb(252, 112, 69)",
+              "transform": "matrix(0.707107, -0.707107, 0.707107, 0.707107, 0, 0)"
+            }
+          }
+        },
+        {
+          "message": "reduced motion disables smooth owner and all pins",
+          "pass": true,
+          "details": []
+        },
+        {
+          "message": "reduced motion stops v12 wave paths",
+          "pass": true,
+          "details": {
+            "waves": [
+              "M -259.2 378.9 C -218.4 321.5 -96.0 42.3 -14.4 34.9 C 67.2 27.4 148.8 283.4 230.4 334.3 C 312.0 385.2 393.6 349.6 475.2 340.3 C 556.8 331.1 638.4 300.3 720.0 278.9 C 801.6 257.4 883.2 199.3 964.8 211.8 C 1046.4 224.3 1128.0 346.7 1209.6 353.8 C 1291.2 360.8 1372.8 280.0 1454.4 253.9 C 1536.0 227.8 1658.4 206.6 1699.2 197.2 L 1699.2 600 L -259.2 600 Z",
+              "M -259.2 205.9 C -218.4 191.1 -96.0 103.8 -14.4 116.9 C 67.2 130.1 148.8 283.6 230.4 284.8 C 312.0 286.1 393.6 144.3 475.2 124.5 C 556.8 104.7 638.4 174.0 720.0 166.2 C 801.6 158.3 883.2 69.1 964.8 77.3 C 1046.4 85.6 1128.0 207.1 1209.6 215.9 C 1291.2 224.6 1372.8 129.9 1454.4 130.0 C 1536.0 130.1 1658.4 202.0 1699.2 216.3 L 1699.2 500 L -259.2 500 Z",
+              "M -259.2 140.2 C -218.4 126.4 -96.0 70.5 -14.4 57.6 C 67.2 44.7 148.8 50.0 230.4 62.7 C 312.0 75.4 393.6 135.6 475.2 133.7 C 556.8 131.8 638.4 50.6 720.0 51.2 C 801.6 51.9 883.2 129.9 964.8 137.5 C 1046.4 145.1 1128.0 105.4 1209.6 96.7 C 1291.2 88.1 1372.8 86.0 1454.4 85.5 C 1536.0 85.1 1658.4 92.7 1699.2 94.1 L 1699.2 350 L -259.2 350 Z"
+            ],
+            "still": [
+              "M -259.2 378.9 C -218.4 321.5 -96.0 42.3 -14.4 34.9 C 67.2 27.4 148.8 283.4 230.4 334.3 C 312.0 385.2 393.6 349.6 475.2 340.3 C 556.8 331.1 638.4 300.3 720.0 278.9 C 801.6 257.4 883.2 199.3 964.8 211.8 C 1046.4 224.3 1128.0 346.7 1209.6 353.8 C 1291.2 360.8 1372.8 280.0 1454.4 253.9 C 1536.0 227.8 1658.4 206.6 1699.2 197.2 L 1699.2 600 L -259.2 600 Z",
+              "M -259.2 205.9 C -218.4 191.1 -96.0 103.8 -14.4 116.9 C 67.2 130.1 148.8 283.6 230.4 284.8 C 312.0 286.1 393.6 144.3 475.2 124.5 C 556.8 104.7 638.4 174.0 720.0 166.2 C 801.6 158.3 883.2 69.1 964.8 77.3 C 1046.4 85.6 1128.0 207.1 1209.6 215.9 C 1291.2 224.6 1372.8 129.9 1454.4 130.0 C 1536.0 130.1 1658.4 202.0 1699.2 216.3 L 1699.2 500 L -259.2 500 Z",
+              "M -259.2 140.2 C -218.4 126.4 -96.0 70.5 -14.4 57.6 C 67.2 44.7 148.8 50.0 230.4 62.7 C 312.0 75.4 393.6 135.6 475.2 133.7 C 556.8 131.8 638.4 50.6 720.0 51.2 C 801.6 51.9 883.2 129.9 964.8 137.5 C 1046.4 145.1 1128.0 105.4 1209.6 96.7 C 1291.2 88.1 1372.8 86.0 1454.4 85.5 C 1536.0 85.1 1658.4 92.7 1699.2 94.1 L 1699.2 350 L -259.2 350 Z"
+            ]
+          }
+        },
+        {
+          "message": "reduced motion: no overflow",
+          "pass": true
+        },
+        {
+          "message": "no JS errors or aborted acceptance steps",
+          "pass": true,
+          "details": []
+        },
+        {
+          "message": "no HTTP 404/errors",
+          "pass": true,
+          "details": []
+        }
+      ],
+      "errors": [],
+      "httpErrors": [],
+      "scrollSamples": [
+        {
+          "direction": 1,
+          "y": 0,
+          "max": 14273,
+          "overflow": 0,
+          "works": 0,
+          "services": "01 — 06",
+          "reviews": 0,
+          "pins": [
+            "synthecore-hero"
+          ]
+        },
+        {
+          "direction": 1,
+          "y": 311,
+          "max": 14273,
+          "overflow": 0,
+          "works": 0,
+          "services": "01 — 06",
+          "reviews": 0,
+          "pins": [
+            "synthecore-hero"
+          ]
+        },
+        {
+          "direction": 1,
+          "y": 774,
+          "max": 14273,
+          "overflow": 0,
+          "works": 0,
+          "services": "01 — 06",
+          "reviews": 0,
+          "pins": [
+            "synthecore-hero"
+          ]
+        },
+        {
+          "direction": 1,
+          "y": 1319,
+          "max": 14273,
+          "overflow": 0,
+          "works": 0,
+          "services": "01 — 06",
+          "reviews": 0,
+          "pins": []
+        },
+        {
+          "direction": 1,
+          "y": 1895,
+          "max": 14273,
+          "overflow": 0,
+          "works": 0,
+          "services": "01 — 06",
+          "reviews": 0,
+          "pins": []
+        },
+        {
+          "direction": 1,
+          "y": 2483,
+          "max": 14273,
+          "overflow": 0,
+          "works": 0.04516908212560387,
+          "services": "01 — 06",
+          "reviews": 0,
+          "pins": [
+            "sc-works-timeline"
+          ]
+        },
+        {
+          "direction": 1,
+          "y": 3047,
+          "max": 14273,
+          "overflow": 0,
+          "works": 0.18140096618357487,
+          "services": "01 — 06",
+          "reviews": 0,
+          "pins": [
+            "sc-works-timeline"
+          ]
+        },
+        {
+          "direction": 1,
+          "y": 3648,
+          "max": 14273,
+          "overflow": 0,
+          "works": 0.32657004830917874,
+          "services": "01 — 06",
+          "reviews": 0,
+          "pins": [
+            "sc-works-timeline"
+          ]
+        },
+        {
+          "direction": 1,
+          "y": 4248,
+          "max": 14273,
+          "overflow": 0,
+          "works": 0.4714975845410628,
+          "services": "01 — 06",
+          "reviews": 0,
+          "pins": [
+            "sc-works-timeline"
+          ]
+        },
+        {
+          "direction": 1,
+          "y": 4856,
+          "max": 14273,
+          "overflow": 0,
+          "works": 0.6183574879227053,
+          "services": "01 — 06",
+          "reviews": 0,
+          "pins": [
+            "sc-works-timeline"
+          ]
+        },
+        {
+          "direction": 1,
+          "y": 5381,
+          "max": 14273,
+          "overflow": 0,
+          "works": 0.7451690821256038,
+          "services": "01 — 06",
+          "reviews": 0,
+          "pins": [
+            "sc-works-timeline"
+          ]
+        },
+        {
+          "direction": 1,
+          "y": 6022,
+          "max": 14273,
+          "overflow": 0,
+          "works": 0.9,
+          "services": "01 — 06",
+          "reviews": 0,
+          "pins": [
+            "sc-works-timeline"
+          ]
+        },
+        {
+          "direction": 1,
+          "y": 6670,
+          "max": 14273,
+          "overflow": 0,
+          "works": 1,
+          "services": "01 — 06",
+          "reviews": 0,
+          "pins": []
+        },
+        {
+          "direction": 1,
+          "y": 7262,
+          "max": 14273,
+          "overflow": 0,
+          "works": 1,
+          "services": "01 — 06",
+          "reviews": 0,
+          "pins": [
+            "sc-services-pin"
+          ]
+        },
+        {
+          "direction": 1,
+          "y": 7777,
+          "max": 14273,
+          "overflow": 0,
+          "works": 1,
+          "services": "03 — 06",
+          "reviews": 0,
+          "pins": [
+            "sc-services-pin"
+          ]
+        },
+        {
+          "direction": 1,
+          "y": 8355,
+          "max": 14273,
+          "overflow": 0,
+          "works": 1,
+          "services": "05 — 06",
+          "reviews": 0,
+          "pins": [
+            "sc-services-pin"
+          ]
+        },
+        {
+          "direction": 1,
+          "y": 8899,
+          "max": 14273,
+          "overflow": 0,
+          "works": 1,
+          "services": "06 — 06",
+          "reviews": 0,
+          "pins": []
+        },
+        {
+          "direction": 1,
+          "y": 9492,
+          "max": 14273,
+          "overflow": 0,
+          "works": 1,
+          "services": "06 — 06",
+          "reviews": 0.06050029086678301,
+          "pins": []
+        },
+        {
+          "direction": 1,
+          "y": 10041,
+          "max": 14273,
+          "overflow": 0,
+          "works": 1,
+          "services": "06 — 06",
+          "reviews": 0.22018615474112857,
+          "pins": []
+        },
+        {
+          "direction": 1,
+          "y": 10646,
+          "max": 14273,
+          "overflow": 0,
+          "works": 1,
+          "services": "06 — 06",
+          "reviews": 0.3961605584642234,
+          "pins": []
+        },
+        {
+          "direction": 1,
+          "y": 11252,
+          "max": 14273,
+          "overflow": 0,
+          "works": 1,
+          "services": "06 — 06",
+          "reviews": 0.5724258289703316,
+          "pins": []
+        },
+        {
+          "direction": 1,
+          "y": 11822,
+          "max": 14273,
+          "overflow": 0,
+          "works": 1,
+          "services": "06 — 06",
+          "reviews": 0.7382198952879581,
+          "pins": []
+        },
+        {
+          "direction": 1,
+          "y": 12416,
+          "max": 14273,
+          "overflow": 0,
+          "works": 1,
+          "services": "06 — 06",
+          "reviews": 0.9109947643979057,
+          "pins": []
+        },
+        {
+          "direction": 1,
+          "y": 13012,
+          "max": 14273,
+          "overflow": 0,
+          "works": 1,
+          "services": "06 — 06",
+          "reviews": 1,
+          "pins": []
+        },
+        {
+          "direction": 1,
+          "y": 13592,
+          "max": 14273,
+          "overflow": 0,
+          "works": 1,
+          "services": "06 — 06",
+          "reviews": 1,
+          "pins": []
+        },
+        {
+          "direction": 1,
+          "y": 13958,
+          "max": 14273,
+          "overflow": 0,
+          "works": 1,
+          "services": "06 — 06",
+          "reviews": 1,
+          "pins": []
+        },
+        {
+          "direction": 1,
+          "y": 14159,
+          "max": 14273,
+          "overflow": 0,
+          "works": 1,
+          "services": "06 — 06",
+          "reviews": 1,
+          "pins": []
+        },
+        {
+          "direction": 1,
+          "y": 14242,
+          "max": 14273,
+          "overflow": 0,
+          "works": 1,
+          "services": "06 — 06",
+          "reviews": 1,
+          "pins": []
+        },
+        {
+          "direction": 1,
+          "y": 14265,
+          "max": 14273,
+          "overflow": 0,
+          "works": 1,
+          "services": "06 — 06",
+          "reviews": 1,
+          "pins": []
+        },
+        {
+          "direction": 1,
+          "y": 14271,
+          "max": 14273,
+          "overflow": 0,
+          "works": 1,
+          "services": "06 — 06",
+          "reviews": 1,
+          "pins": []
+        },
+        {
+          "direction": -1,
+          "y": 14273,
+          "max": 14273,
+          "overflow": 0,
+          "works": 1,
+          "services": "06 — 06",
+          "reviews": 1,
+          "pins": []
+        },
+        {
+          "direction": -1,
+          "y": 13922,
+          "max": 14273,
+          "overflow": 0,
+          "works": 1,
+          "services": "06 — 06",
+          "reviews": 1,
+          "pins": []
+        },
+        {
+          "direction": -1,
+          "y": 13460,
+          "max": 14273,
+          "overflow": 0,
+          "works": 1,
+          "services": "06 — 06",
+          "reviews": 1,
+          "pins": []
+        },
+        {
+          "direction": -1,
+          "y": 12928,
+          "max": 14273,
+          "overflow": 0,
+          "works": 1,
+          "services": "06 — 06",
+          "reviews": 1,
+          "pins": []
+        },
+        {
+          "direction": -1,
+          "y": 12361,
+          "max": 14273,
+          "overflow": 0,
+          "works": 1,
+          "services": "06 — 06",
+          "reviews": 0.8949970913321699,
+          "pins": []
+        },
+        {
+          "direction": -1,
+          "y": 11776,
+          "max": 14273,
+          "overflow": 0,
+          "works": 1,
+          "services": "06 — 06",
+          "reviews": 0.7248400232693426,
+          "pins": []
+        },
+        {
+          "direction": -1,
+          "y": 11203,
+          "max": 14273,
+          "overflow": 0,
+          "works": 1,
+          "services": "06 — 06",
+          "reviews": 0.558173356602676,
+          "pins": []
+        },
+        {
+          "direction": -1,
+          "y": 10627,
+          "max": 14273,
+          "overflow": 0,
+          "works": 1,
+          "services": "06 — 06",
+          "reviews": 0.39063408958696916,
+          "pins": []
+        },
+        {
+          "direction": -1,
+          "y": 10014,
+          "max": 14273,
+          "overflow": 0,
+          "works": 1,
+          "services": "06 — 06",
+          "reviews": 0.2123327515997673,
+          "pins": []
+        },
+        {
+          "direction": -1,
+          "y": 9448,
+          "max": 14273,
+          "overflow": 0,
+          "works": 1,
+          "services": "06 — 06",
+          "reviews": 0.0477021524141943,
+          "pins": []
+        },
+        {
+          "direction": -1,
+          "y": 8862,
+          "max": 14273,
+          "overflow": 0,
+          "works": 1,
+          "services": "06 — 06",
+          "reviews": 0,
+          "pins": []
+        },
+        {
+          "direction": -1,
+          "y": 8321,
+          "max": 14273,
+          "overflow": 0,
+          "works": 1,
+          "services": "06 — 06",
+          "reviews": 0,
+          "pins": [
+            "sc-services-pin"
+          ]
+        },
+        {
+          "direction": -1,
+          "y": 7713,
+          "max": 14273,
+          "overflow": 0,
+          "works": 1,
+          "services": "05 — 06",
+          "reviews": 0,
+          "pins": [
+            "sc-services-pin"
+          ]
+        },
+        {
+          "direction": -1,
+          "y": 7104,
+          "max": 14273,
+          "overflow": 0,
+          "works": 1,
+          "services": "02 — 06",
+          "reviews": 0,
+          "pins": [
+            "sc-services-pin"
+          ]
+        },
+        {
+          "direction": -1,
+          "y": 6566,
+          "max": 14273,
+          "overflow": 0,
+          "works": 0.9999,
+          "services": "01 — 06",
+          "reviews": 0,
+          "pins": [
+            "sc-works-timeline"
+          ]
+        },
+        {
+          "direction": -1,
+          "y": 5859,
+          "max": 14273,
+          "overflow": 0,
+          "works": 0.8606280193236715,
+          "services": "01 — 06",
+          "reviews": 0,
+          "pins": [
+            "sc-works-timeline"
+          ]
+        },
+        {
+          "direction": -1,
+          "y": 5325,
+          "max": 14273,
+          "overflow": 0,
+          "works": 0.7316425120772947,
+          "services": "01 — 06",
+          "reviews": 0,
+          "pins": [
+            "sc-works-timeline"
+          ]
+        },
+        {
+          "direction": -1,
+          "y": 4747,
+          "max": 14273,
+          "overflow": 0,
+          "works": 0.5920289855072464,
+          "services": "01 — 06",
+          "reviews": 0,
+          "pins": [
+            "sc-works-timeline"
+          ]
+        },
+        {
+          "direction": -1,
+          "y": 4157,
+          "max": 14273,
+          "overflow": 0,
+          "works": 0.4495169082125604,
+          "services": "01 — 06",
+          "reviews": 0,
+          "pins": [
+            "sc-works-timeline"
+          ]
+        },
+        {
+          "direction": -1,
+          "y": 3553,
+          "max": 14273,
+          "overflow": 0,
+          "works": 0.3036231884057971,
+          "services": "01 — 06",
+          "reviews": 0,
+          "pins": [
+            "sc-works-timeline"
+          ]
+        },
+        {
+          "direction": -1,
+          "y": 2966,
+          "max": 14273,
+          "overflow": 0,
+          "works": 0.16183574879227053,
+          "services": "01 — 06",
+          "reviews": 0,
+          "pins": [
+            "sc-works-timeline"
+          ]
+        },
+        {
+          "direction": -1,
+          "y": 2424,
+          "max": 14273,
+          "overflow": 0,
+          "works": 0.030917874396135265,
+          "services": "01 — 06",
+          "reviews": 0,
+          "pins": [
+            "sc-works-timeline"
+          ]
+        },
+        {
+          "direction": -1,
+          "y": 1847,
+          "max": 14273,
+          "overflow": 0,
+          "works": 0,
+          "services": "01 — 06",
+          "reviews": 0,
+          "pins": []
+        },
+        {
+          "direction": -1,
+          "y": 1254,
+          "max": 14273,
+          "overflow": 0,
+          "works": 0,
+          "services": "01 — 06",
+          "reviews": 0,
+          "pins": []
+        },
+        {
+          "direction": -1,
+          "y": 644,
+          "max": 14273,
+          "overflow": 0,
+          "works": 0,
+          "services": "01 — 06",
+          "reviews": 0,
+          "pins": [
+            "synthecore-hero"
+          ]
+        },
+        {
+          "direction": -1,
+          "y": 249,
+          "max": 14273,
+          "overflow": 0,
+          "works": 0,
+          "services": "01 — 06",
+          "reviews": 0,
+          "pins": [
+            "synthecore-hero"
+          ]
+        },
+        {
+          "direction": -1,
+          "y": 97,
+          "max": 14273,
+          "overflow": 0,
+          "works": 0,
+          "services": "01 — 06",
+          "reviews": 0,
+          "pins": [
+            "synthecore-hero"
+          ]
+        },
+        {
+          "direction": -1,
+          "y": 34,
+          "max": 14273,
+          "overflow": 0,
+          "works": 0,
+          "services": "01 — 06",
+          "reviews": 0,
+          "pins": [
+            "synthecore-hero"
+          ]
+        },
+        {
+          "direction": -1,
+          "y": 12,
+          "max": 14273,
+          "overflow": 0,
+          "works": 0,
+          "services": "01 — 06",
+          "reviews": 0,
+          "pins": [
+            "synthecore-hero"
+          ]
+        },
+        {
+          "direction": -1,
+          "y": 4,
+          "max": 14273,
+          "overflow": 0,
+          "works": 0,
+          "services": "01 — 06",
+          "reviews": 0,
+          "pins": [
+            "synthecore-hero"
+          ]
+        },
+        {
+          "direction": -1,
+          "y": 1,
+          "max": 14273,
+          "overflow": 0,
+          "works": 0,
+          "services": "01 — 06",
+          "reviews": 0,
+          "pins": [
+            "synthecore-hero"
+          ]
+        }
+      ],
+      "sectionResults": {
+        "Hero": true,
+        "Audiences": true,
+        "Works": true,
+        "Services": true,
+        "Process": true,
+        "Reviews": true,
+        "FAQ": true,
+        "Footer": true
+      },
+      "initial": {
+        "y": 0,
+        "max": 14273,
+        "overflow": 0,
+        "zoom": {
+          "dpr": 1,
+          "scale": 1
+        },
+        "lenis": {
+          "live": 1,
+          "max": 1,
+          "created": 1
+        },
+        "hero": {
+          "engine": "lenis-gsap-scrolltrigger",
+          "ready": true,
+          "timelineProgress": 0.000001,
+          "scrollProgress": 0.00000101009998979799,
+          "pinActive": true,
+          "pinStart": -0.001,
+          "pinEnd": 990,
+          "parallaxStart": 990,
+          "parallaxEnd": 1620,
+          "parallaxProgress": 0,
+          "parallaxScrub": 0.55,
+          "gateState": "EXPANDING",
+          "blockedWheels": 0,
+          "smoothWheel": true,
+          "duration": 1.2,
+          "lerp": 0,
+          "scrub": true,
+          "scroll": 0,
+          "targetScroll": 0,
+          "velocity": 0
+        },
+        "works": {
+          "mode": "single-pinned-timeline",
+          "itemCount": 6,
+          "progress": 0,
+          "pinStart": 2296,
+          "pinEnd": 6436,
+          "timelineDuration": 5,
+          "cards": [
+            {
+              "id": "b2b",
+              "top": 2296,
+              "scale": 1
+            },
+            {
+              "id": "flowers",
+              "top": 3196,
+              "scale": 0.885
+            },
+            {
+              "id": "crm",
+              "top": 3196,
+              "scale": 0.885
+            },
+            {
+              "id": "beauty",
+              "top": 3196,
+              "scale": 0.885
+            },
+            {
+              "id": "prostor",
+              "top": 3196,
+              "scale": 0.885
+            },
+            {
+              "id": "metal",
+              "top": 3196,
+              "scale": 0.885
+            }
+          ]
+        },
+        "services": {
+          "mode": "pinned-horizontal",
+          "cards": 6,
+          "travel": 1299,
+          "scrollLeft": 0,
+          "pinActive": false,
+          "pinStart": 6963,
+          "pinEnd": 8366,
+          "progress": "01 — 06"
+        },
+        "reviews": {
+          "mode": "scroll-stream",
+          "cards": 4,
+          "progress": 0,
+          "renderedProgress": 0,
+          "sceneTop": 9931.734375,
+          "pins": 0,
+          "headingOpacity": 1,
+          "cardOpacities": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "scales": [
+            1.006,
+            0.955,
+            0.955,
+            0.955
+          ],
+          "lifts": [
+            87.2,
+            158,
+            103,
+            151
+          ],
+          "positions": [
+            {
+              "left": 1263,
+              "right": 1598
+            },
+            {
+              "left": 1782,
+              "right": 2116
+            },
+            {
+              "left": 2316,
+              "right": 2619
+            },
+            {
+              "left": 2818,
+              "right": 3154
+            }
+          ]
+        },
+        "process": {
+          "active": -1,
+          "chosen": -1,
+          "progress": "0",
+          "steps": 3
+        },
+        "pins": [
+          {
+            "id": "synthecore-hero",
+            "start": -0.001,
+            "end": 990,
+            "active": true
+          },
+          {
+            "id": "sc-works-timeline",
+            "start": 2296,
+            "end": 6436,
+            "active": false
+          },
+          {
+            "id": "sc-services-pin",
+            "start": 6963,
+            "end": 8366,
+            "active": false
+          }
+        ],
+        "spacers": 3,
+        "sections": [
+          {
+            "id": "top",
+            "top": 0,
+            "height": 1687
+          },
+          {
+            "id": "audiences",
+            "top": 1687,
+            "height": 609
+          },
+          {
+            "id": "process",
+            "top": 9266,
+            "height": 666
+          },
+          {
+            "id": "testimonials",
+            "top": 9932,
+            "height": 3690
+          },
+          {
+            "id": "faq",
+            "top": 13622,
+            "height": 769
+          },
+          {
+            "id": "contact",
+            "top": 14391,
+            "height": 782
+          }
+        ]
+      },
+      "workStages": [
+        {
+          "i": 0,
+          "frame": {
+            "x": 25.921875,
+            "y": 11.703125,
+            "width": 1388.15625,
+            "height": 504.28125
+          },
+          "state": {
+            "mode": "single-pinned-timeline",
+            "itemCount": 6,
+            "progress": 0,
+            "pinStart": 2296,
+            "pinEnd": 6436,
+            "timelineDuration": 5,
+            "cards": [
+              {
+                "id": "b2b",
+                "top": 0,
+                "scale": 1
+              },
+              {
+                "id": "flowers",
+                "top": 900,
+                "scale": 0.885
+              },
+              {
+                "id": "crm",
+                "top": 900,
+                "scale": 0.885
+              },
+              {
+                "id": "beauty",
+                "top": 900,
+                "scale": 0.885
+              },
+              {
+                "id": "prostor",
+                "top": 900,
+                "scale": 0.885
+              },
+              {
+                "id": "metal",
+                "top": 900,
+                "scale": 0.885
+              }
+            ]
+          }
+        },
+        {
+          "i": 1,
+          "frame": {
+            "x": 25.921875,
+            "y": 11.703125,
+            "width": 1388.15625,
+            "height": 504.28125
+          },
+          "state": {
+            "mode": "single-pinned-timeline",
+            "itemCount": 6,
+            "progress": 0.2,
+            "pinStart": 2296,
+            "pinEnd": 6436,
+            "timelineDuration": 5,
+            "cards": [
+              {
+                "id": "b2b",
+                "top": 0,
+                "scale": 1
+              },
+              {
+                "id": "flowers",
+                "top": 0,
+                "scale": 1
+              },
+              {
+                "id": "crm",
+                "top": 900,
+                "scale": 0.885
+              },
+              {
+                "id": "beauty",
+                "top": 900,
+                "scale": 0.885
+              },
+              {
+                "id": "prostor",
+                "top": 900,
+                "scale": 0.885
+              },
+              {
+                "id": "metal",
+                "top": 900,
+                "scale": 0.885
+              }
+            ]
+          }
+        },
+        {
+          "i": 2,
+          "frame": {
+            "x": 25.921875,
+            "y": 11.703125,
+            "width": 1388.15625,
+            "height": 504.28125
+          },
+          "state": {
+            "mode": "single-pinned-timeline",
+            "itemCount": 6,
+            "progress": 0.4,
+            "pinStart": 2296,
+            "pinEnd": 6436,
+            "timelineDuration": 5,
+            "cards": [
+              {
+                "id": "b2b",
+                "top": 0,
+                "scale": 1
+              },
+              {
+                "id": "flowers",
+                "top": 0,
+                "scale": 1
+              },
+              {
+                "id": "crm",
+                "top": 0,
+                "scale": 1
+              },
+              {
+                "id": "beauty",
+                "top": 900,
+                "scale": 0.885
+              },
+              {
+                "id": "prostor",
+                "top": 900,
+                "scale": 0.885
+              },
+              {
+                "id": "metal",
+                "top": 900,
+                "scale": 0.885
+              }
+            ]
+          }
+        },
+        {
+          "i": 3,
+          "frame": {
+            "x": 25.921875,
+            "y": 11.703125,
+            "width": 1388.15625,
+            "height": 504.28125
+          },
+          "state": {
+            "mode": "single-pinned-timeline",
+            "itemCount": 6,
+            "progress": 0.6,
+            "pinStart": 2296,
+            "pinEnd": 6436,
+            "timelineDuration": 5,
+            "cards": [
+              {
+                "id": "b2b",
+                "top": 0,
+                "scale": 1
+              },
+              {
+                "id": "flowers",
+                "top": 0,
+                "scale": 1
+              },
+              {
+                "id": "crm",
+                "top": 0,
+                "scale": 1
+              },
+              {
+                "id": "beauty",
+                "top": 0,
+                "scale": 1
+              },
+              {
+                "id": "prostor",
+                "top": 900,
+                "scale": 0.885
+              },
+              {
+                "id": "metal",
+                "top": 900,
+                "scale": 0.885
+              }
+            ]
+          }
+        },
+        {
+          "i": 4,
+          "frame": {
+            "x": 25.921875,
+            "y": 11.703125,
+            "width": 1388.15625,
+            "height": 504.28125
+          },
+          "state": {
+            "mode": "single-pinned-timeline",
+            "itemCount": 6,
+            "progress": 0.8,
+            "pinStart": 2296,
+            "pinEnd": 6436,
+            "timelineDuration": 5,
+            "cards": [
+              {
+                "id": "b2b",
+                "top": 0,
+                "scale": 1
+              },
+              {
+                "id": "flowers",
+                "top": 0,
+                "scale": 1
+              },
+              {
+                "id": "crm",
+                "top": 0,
+                "scale": 1
+              },
+              {
+                "id": "beauty",
+                "top": 0,
+                "scale": 1
+              },
+              {
+                "id": "prostor",
+                "top": 0,
+                "scale": 1
+              },
+              {
+                "id": "metal",
+                "top": 900,
+                "scale": 0.885
+              }
+            ]
+          }
+        },
+        {
+          "i": 5,
+          "frame": {
+            "x": 25.921875,
+            "y": 11.703125,
+            "width": 1388.15625,
+            "height": 504.28125
+          },
+          "state": {
+            "mode": "single-pinned-timeline",
+            "itemCount": 6,
+            "progress": 1,
+            "pinStart": 2296,
+            "pinEnd": 6436,
+            "timelineDuration": 5,
+            "cards": [
+              {
+                "id": "b2b",
+                "top": 0,
+                "scale": 1
+              },
+              {
+                "id": "flowers",
+                "top": 0,
+                "scale": 1
+              },
+              {
+                "id": "crm",
+                "top": 0,
+                "scale": 1
+              },
+              {
+                "id": "beauty",
+                "top": 0,
+                "scale": 1
+              },
+              {
+                "id": "prostor",
+                "top": 0,
+                "scale": 1
+              },
+              {
+                "id": "metal",
+                "top": 0,
+                "scale": 1
+              }
+            ]
+          }
+        }
+      ],
+      "reviewStages": [
+        {
+          "mode": "scroll-stream",
+          "cards": 4,
+          "progress": 0,
+          "renderedProgress": 0,
+          "sceneTop": 647.734375,
+          "pins": 0,
+          "headingOpacity": 1,
+          "cardOpacities": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "scales": [
+            1.006,
+            0.955,
+            0.955,
+            0.955
+          ],
+          "lifts": [
+            87.2,
+            158,
+            103,
+            151
+          ],
+          "positions": [
+            {
+              "left": 1263,
+              "right": 1598
+            },
+            {
+              "left": 1782,
+              "right": 2116
+            },
+            {
+              "left": 2316,
+              "right": 2619
+            },
+            {
+              "left": 2818,
+              "right": 3154
+            }
+          ]
+        },
+        {
+          "mode": "scroll-stream",
+          "cards": 4,
+          "progress": 0.20011634671320536,
+          "renderedProgress": 0.20011634671320536,
+          "sceneTop": 0,
+          "pins": 0,
+          "headingOpacity": 1,
+          "cardOpacities": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "scales": [
+            1.079,
+            1.013,
+            0.955,
+            0.955
+          ],
+          "lifts": [
+            165.1,
+            238.9,
+            195,
+            243
+          ],
+          "positions": [
+            {
+              "left": 687,
+              "right": 1055
+            },
+            {
+              "left": 1215,
+              "right": 1564
+            },
+            {
+              "left": 1756,
+              "right": 2060
+            },
+            {
+              "left": 2259,
+              "right": 2594
+            }
+          ]
+        },
+        {
+          "mode": "scroll-stream",
+          "cards": 4,
+          "progress": 0.39994182664339734,
+          "renderedProgress": 0.39994182664339734,
+          "sceneTop": 0,
+          "pins": 0,
+          "headingOpacity": 1,
+          "cardOpacities": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "scales": [
+            1.056,
+            1.08,
+            1.02,
+            0.955
+          ],
+          "lifts": [
+            169.6,
+            226,
+            182.5,
+            242.9
+          ],
+          "positions": [
+            {
+              "left": 129,
+              "right": 496
+            },
+            {
+              "left": 649,
+              "right": 1013
+            },
+            {
+              "left": 1185,
+              "right": 1514
+            },
+            {
+              "left": 1700,
+              "right": 2036
+            }
+          ]
+        },
+        {
+          "mode": "scroll-stream",
+          "cards": 4,
+          "progress": 0.6000581733566027,
+          "renderedProgress": 0.6000581733566027,
+          "sceneTop": 0,
+          "pins": 0,
+          "headingOpacity": 1,
+          "cardOpacities": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "scales": [
+            0.968,
+            1.05,
+            1.08,
+            1.027
+          ],
+          "lifts": [
+            186.5,
+            231.8,
+            171,
+            229.2
+          ],
+          "positions": [
+            {
+              "left": -419,
+              "right": -75
+            },
+            {
+              "left": 98,
+              "right": 444
+            },
+            {
+              "left": 611,
+              "right": 968
+            },
+            {
+              "left": 1131,
+              "right": 1486
+            }
+          ]
+        },
+        {
+          "mode": "scroll-stream",
+          "cards": 4,
+          "progress": 0.7998836532867947,
+          "renderedProgress": 0.7998836532867947,
+          "sceneTop": 0,
+          "pins": 0,
+          "headingOpacity": 1,
+          "cardOpacities": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "scales": [
+            0.955,
+            0.964,
+            1.044,
+            1.08
+          ],
+          "lifts": [
+            189,
+            248.3,
+            178,
+            219
+          ],
+          "positions": [
+            {
+              "left": -976,
+              "right": -636
+            },
+            {
+              "left": -442,
+              "right": -132
+            },
+            {
+              "left": 55,
+              "right": 408
+            },
+            {
+              "left": 567,
+              "right": 932
+            }
+          ]
+        },
+        {
+          "mode": "scroll-stream",
+          "cards": 4,
+          "progress": 1,
+          "renderedProgress": 1,
+          "sceneTop": -0.265625,
+          "pins": 0,
+          "headingOpacity": 1,
+          "cardOpacities": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "scales": [
+            0.955,
+            0.955,
+            0.96,
+            1.037
+          ],
+          "lifts": [
+            189,
+            250,
+            194,
+            227.3
+          ],
+          "positions": [
+            {
+              "left": -1535,
+              "right": -1195
+            },
+            {
+              "left": -1000,
+              "right": -693
+            },
+            {
+              "left": -494,
+              "right": -162
+            },
+            {
+              "left": 19,
+              "right": 361
+            }
+          ]
+        }
+      ],
+      "scope": "full-page",
+      "afterOrientation": {
+        "y": 0,
+        "max": 14273,
+        "overflow": 0,
+        "zoom": {
+          "dpr": 1,
+          "scale": 1
+        },
+        "lenis": {
+          "live": 1,
+          "max": 1,
+          "created": 1
+        },
+        "hero": {
+          "engine": "lenis-gsap-scrolltrigger",
+          "ready": true,
+          "timelineProgress": 0.000001,
+          "scrollProgress": 0.00000101009998979799,
+          "pinActive": true,
+          "pinStart": -0.001,
+          "pinEnd": 990,
+          "parallaxStart": 990,
+          "parallaxEnd": 1620,
+          "parallaxProgress": 0,
+          "parallaxScrub": 0.55,
+          "gateState": "EXPANDING",
+          "blockedWheels": 0,
+          "smoothWheel": true,
+          "duration": 1.2,
+          "lerp": 0,
+          "scrub": true,
+          "scroll": 0,
+          "targetScroll": 0,
+          "velocity": 0
+        },
+        "works": {
+          "mode": "single-pinned-timeline",
+          "itemCount": 6,
+          "progress": 0,
+          "pinStart": 2296,
+          "pinEnd": 6436,
+          "timelineDuration": 5,
+          "cards": [
+            {
+              "id": "b2b",
+              "top": 2296,
+              "scale": 1
+            },
+            {
+              "id": "flowers",
+              "top": 3196,
+              "scale": 0.885
+            },
+            {
+              "id": "crm",
+              "top": 3196,
+              "scale": 0.885
+            },
+            {
+              "id": "beauty",
+              "top": 3196,
+              "scale": 0.885
+            },
+            {
+              "id": "prostor",
+              "top": 3196,
+              "scale": 0.885
+            },
+            {
+              "id": "metal",
+              "top": 3196,
+              "scale": 0.885
+            }
+          ]
+        },
+        "services": {
+          "mode": "pinned-horizontal",
+          "cards": 6,
+          "travel": 1299,
+          "scrollLeft": 0,
+          "pinActive": false,
+          "pinStart": 6963,
+          "pinEnd": 8366,
+          "progress": "01 — 06"
+        },
+        "reviews": {
+          "mode": "scroll-stream",
+          "cards": 4,
+          "progress": 0,
+          "renderedProgress": 0.0005603391956549359,
+          "sceneTop": 9931.734375,
+          "pins": 0,
+          "headingOpacity": 1,
+          "cardOpacities": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "scales": [
+            1.006,
+            0.955,
+            0.955,
+            0.955
+          ],
+          "lifts": [
+            87.2,
+            158,
+            103,
+            151
+          ],
+          "positions": [
+            {
+              "left": 1262,
+              "right": 1597
+            },
+            {
+              "left": 1781,
+              "right": 2114
+            },
+            {
+              "left": 2314,
+              "right": 2618
+            },
+            {
+              "left": 2816,
+              "right": 3152
+            }
+          ]
+        },
+        "process": {
+          "active": 2,
+          "chosen": 2,
+          "progress": "1",
+          "steps": 3
+        },
+        "pins": [
+          {
+            "id": "synthecore-hero",
+            "start": -0.001,
+            "end": 990,
+            "active": true
+          },
+          {
+            "id": "sc-works-timeline",
+            "start": 2296,
+            "end": 6436,
+            "active": false
+          },
+          {
+            "id": "sc-services-pin",
+            "start": 6963,
+            "end": 8366,
+            "active": false
+          }
+        ],
+        "spacers": 3,
+        "sections": [
+          {
+            "id": "top",
+            "top": 0,
+            "height": 1687
+          },
+          {
+            "id": "audiences",
+            "top": 1687,
+            "height": 609
+          },
+          {
+            "id": "process",
+            "top": 9266,
+            "height": 666
+          },
+          {
+            "id": "testimonials",
+            "top": 9932,
+            "height": 3690
+          },
+          {
+            "id": "faq",
+            "top": 13622,
+            "height": 769
+          },
+          {
+            "id": "contact",
+            "top": 14391,
+            "height": 782
+          }
+        ]
+      },
+      "reduced": {
+        "y": 7538,
+        "max": 7628,
+        "overflow": 0,
+        "zoom": {
+          "dpr": 1,
+          "scale": 1
+        },
+        "lenis": {
+          "live": 0,
+          "max": 1,
+          "created": 1
+        },
+        "hero": {
+          "engine": "native-reduced-motion",
+          "ready": true,
+          "timelineProgress": 0,
+          "scrollProgress": 0,
+          "pinActive": false,
+          "pinStart": 0,
+          "pinEnd": 0,
+          "parallaxStart": 0,
+          "parallaxEnd": 0,
+          "parallaxProgress": 0,
+          "parallaxScrub": 0,
+          "gateState": "DISABLED",
+          "blockedWheels": 0,
+          "smoothWheel": false,
+          "duration": 0,
+          "lerp": 0,
+          "scrub": 0,
+          "scroll": 7538,
+          "targetScroll": 7538,
+          "velocity": 0
+        },
+        "works": {
+          "mode": "reduced-motion",
+          "itemCount": 6,
+          "progress": null,
+          "pinStart": null,
+          "pinEnd": null,
+          "timelineDuration": null,
+          "cards": [
+            {
+              "id": "b2b",
+              "top": -6232,
+              "scale": 1
+            },
+            {
+              "id": "flowers",
+              "top": -5685,
+              "scale": 1
+            },
+            {
+              "id": "crm",
+              "top": -5138,
+              "scale": 1
+            },
+            {
+              "id": "beauty",
+              "top": -4590,
+              "scale": 1
+            },
+            {
+              "id": "prostor",
+              "top": -4043,
+              "scale": 1
+            },
+            {
+              "id": "metal",
+              "top": -3496,
+              "scale": 1
+            }
+          ]
+        },
+        "services": {
+          "mode": "native-horizontal",
+          "cards": 6,
+          "travel": 1299,
+          "scrollLeft": 120,
+          "pinActive": false,
+          "pinStart": null,
+          "pinEnd": null,
+          "progress": "01 — 06"
+        },
+        "reviews": {
+          "mode": "native",
+          "cards": 4,
+          "progress": null,
+          "renderedProgress": 0,
+          "sceneTop": -1467.546875,
+          "pins": 0,
+          "headingOpacity": 1,
+          "cardOpacities": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "scales": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "lifts": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "positions": [
+            {
+              "left": 145,
+              "right": 419
+            },
+            {
+              "left": 437,
+              "right": 711
+            },
+            {
+              "left": 729,
+              "right": 1003
+            },
+            {
+              "left": 1021,
+              "right": 1295
+            }
+          ]
+        },
+        "process": {
+          "active": -1,
+          "chosen": -1,
+          "progress": "0",
+          "steps": 3
+        },
+        "pins": [],
+        "spacers": 0,
+        "sections": [
+          {
+            "id": "top",
+            "top": 0,
+            "height": 697
+          },
+          {
+            "id": "audiences",
+            "top": 697,
+            "height": 609
+          },
+          {
+            "id": "works",
+            "top": 1306,
+            "height": 3264
+          },
+          {
+            "id": "services",
+            "top": 4570,
+            "height": 835
+          },
+          {
+            "id": "process",
+            "top": 5405,
+            "height": 666
+          },
+          {
+            "id": "testimonials",
+            "top": 6070,
+            "height": 906
+          },
+          {
+            "id": "faq",
+            "top": 6977,
+            "height": 769
+          },
+          {
+            "id": "contact",
+            "top": 7746,
+            "height": 782
+          }
+        ]
+      },
+      "pass": true
+    }
+  ],
+  "browser": "149.0.7827.55",
+  "pass": true
+}

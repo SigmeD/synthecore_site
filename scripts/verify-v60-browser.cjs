@@ -177,9 +177,9 @@ async function sections(page,dir,entry,width,height) {
   await shot(page,dir,'07-faq');
   entry.sectionResults.FAQ=entry.checks.filter(c=>c.message.startsWith('FAQ')).every(c=>c.pass);
   await go(page,Number.MAX_SAFE_INTEGER);
-  const waveState=()=>page.evaluate(()=>[...document.querySelectorAll('.sc-footer__wave svg')].map(n=>({transform:getComputedStyle(n).transform,d:n.querySelector('path').getAttribute('d'),time:n.getCurrentTime(),paused:n.animationsPaused()})));
+  const waveState=()=>page.evaluate(()=>[...document.querySelectorAll('#roveiaWaveBg .rwb-layer svg')].map(n=>({d:n.querySelector('path').getAttribute('d')})));
   const before=await waveState();const scrollBefore=await page.evaluate(()=>scrollY);await pause(1200);const after=await waveState();
-  check(entry,before.length===3 && before.every((s,i)=>s.transform!==after[i].transform),'Footer: all three waves animate while scroll is stopped',{before,after});
+  check(entry,before.length===3 && before.every((s,i)=>s.d!==after[i].d),'Footer: all three v12 wave paths animate while scroll is stopped',{before,after});
   check(entry,Math.abs(await page.evaluate(()=>scrollY)-scrollBefore)<1,'Footer wave animation does not move scroll');
   check(entry,await page.locator('#contact a[href^="mailto:"]').count()>=1,'Footer CTA has contact email');
   await shot(page,dir,'08-footer');
@@ -204,7 +204,11 @@ async function extras(page,dir,entry,width,height,context) {
     await toggle.tap();await page.locator('#mobilePanel a[href="#services"]').tap();await pause(1800);
     check(entry,await toggle.getAttribute('aria-expanded')==='false' && new URL(page.url()).hash==='#services','mobile menu anchor closes and navigates');
   } else {
-    for(const hash of ['works','services','contact']) {
+    await page.locator('.header-links a[href="/raboty/"]').click();
+    await page.waitForURL('**/raboty/');
+    check(entry,await page.locator('#catalog-title').count()===1,'header Works link opens catalog route');
+    await open(page);
+    for(const hash of ['services','contact']) {
       await page.locator('.header-links a[href="#'+hash+'"]').click();await pause(1800);
       const r=await page.locator('#'+hash).evaluate(n=>{const r=n.getBoundingClientRect(),top=r.top+scrollY,margin=parseFloat(getComputedStyle(n).scrollMarginTop)||0,padding=parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop)||0,max=document.documentElement.scrollHeight-innerHeight;return{top:r.top,expectedTop:top-Math.min(max,Math.max(0,top-margin-padding)),scroll:scrollY,max,padding};});
       check(entry,new URL(page.url()).hash==='#'+hash && Math.abs(r.top-r.expectedTop)<4,'header anchor #'+hash,r);
@@ -227,8 +231,11 @@ async function extras(page,dir,entry,width,height,context) {
   await page.emulateMedia({reducedMotion:'reduce'});await pause(850);
   const reduced=await state(page);entry.reduced=reduced;
   check(entry,reduced.lenis.live===0 && reduced.pins.length===0 && reduced.works.mode==='reduced-motion' && reduced.reviews.mode==='native','reduced motion disables smooth owner and all pins',reduced.pins);
-  const waves=await page.locator('.sc-footer__wave svg').evaluateAll(ns=>ns.map(n=>({css:getComputedStyle(n).animationName,paused:n.animationsPaused()})));
-  check(entry,waves.every(w=>w.css==='none' && w.paused),'reduced motion stops CSS and SVG waves',waves);
+  await go(page,Number.MAX_SAFE_INTEGER);
+  const waves=await page.locator('#roveiaWaveBg path').evaluateAll(ns=>ns.map(n=>n.getAttribute('d')));
+  await pause(250);
+  const still=await page.locator('#roveiaWaveBg path').evaluateAll(ns=>ns.map(n=>n.getAttribute('d')));
+  check(entry,waves.length===3 && waves.every((w,i)=>w===still[i]),'reduced motion stops v12 wave paths',{waves,still});
   check(entry,reduced.overflow<=1,'reduced motion: no overflow');
   await page.emulateMedia({reducedMotion:'no-preference'});await pause(850);
 }
