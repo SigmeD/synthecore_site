@@ -29,7 +29,9 @@ Runtime fetch of partials would introduce delayed header/footer layout and requi
 - [x] Fix local launcher directory-index resolution for `/raboty/`; retain traversal protection. Add font MIME types.
 - [x] Run build freshness, original static tests, project/resource/hash checks, both routes over HTTP. Run main browser regressions and full viewport checks. Run new browser acceptance across 320/390/768/990/1440/1920/2560, reduced motion, pointer hover, keyboard/menu/dialog and footer animation/performance.
 - [x] Visually inspect before/after screenshots, six images including Prostor/B2B, menu and both footers; record a short motion clip. Commit screenshots/report under `docs/qa/works-v27/`, keep video local.
-- [ ] Independent review, fix material issues, write architecture/token/component/rollback docs, make logical commits, push feature branch and create PR into main with screenshots and factual results. No merge/deploy.
+- [x] Independent review, fix material issues, write architecture/token/component/rollback docs, make logical commits, push feature branch and create PR into main with screenshots and factual results. No merge/deploy.
+
+Delivery: [PR #4](https://github.com/SigmeD/synthecore_site/pull/4), head `feat/works-shared-shell-v27`, base `main`. Static 74/74, shared browser 295/295, full homepage 268/268 across four viewports, footer motion 6/6. Working tree retained for review and local video evidence. Merge/deploy not performed.
 
 ## Acceptance and rollback
 

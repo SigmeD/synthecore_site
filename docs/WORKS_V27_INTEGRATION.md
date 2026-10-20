@@ -2,6 +2,8 @@
 
 База: актуальный `origin/main` `67f75cda3a7398be7c3d7955cc2706db71f0ae6a`, ветка `feat/works-shared-shell-v27`. Архив `SyntheCore_FULL_v27_AGENT_GIT_DESIGN_SYSTEM_2026-10-20.zip` изучен начиная с `00_READ_AGENT_FIRST.md` и `00_AGENT_HANDOFF/`. Четыре отдельно приложенных Markdown совпадают с handoff после нормализации переносов строк.
 
+Передача для ревью: [PR #4](https://github.com/SigmeD/synthecore_site/pull/4). Feature-ветка отправлена в origin; main остаётся на исходном коммите. Merge и deploy не выполнялись.
+
 ## Отличия архива от Git
 
 Главная HTML из архива добавляла только Google Fonts и Header/CTA v24. Её `main.js`, FAQ, Services, Testimonials и проверки отставали от Git: в Git уже исправлены возврат фокуса меню, пересчёт ScrollTrigger после FAQ и другие регрессии. Эти файлы не заменялись архивными копиями. Шесть изображений и локальные vendor-файлы совпадают по SHA256.
