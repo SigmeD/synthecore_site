@@ -1,15 +1,36 @@
 # Текущие и исторические проверки
 
-Этот реестр отделяет команды интеграции v60 от сохранённых сценариев прежних итераций. Старые PASS, viewport, DOM-ожидания и файлы `output/` не заменяют [QA v60](../docs/QA_V60.md). Исторические файлы сохраняются для воспроизведения своей версии, без ослабления их ожиданий под новую страницу.
+Этот реестр описывает проверки ветки `feat/works-shared-shell-v27`, [PR #4](https://github.com/SigmeD/synthecore_site/pull/4), и отделяет их от исторических сценариев. Текущая приёмка — [QA v27](../docs/qa/works-v27/README.md); прежняя — [QA v60](../docs/QA_V60.md). Старые PASS, viewport, DOM-ожидания и локальные файлы `output/` не заменяют новую проверку.
 
-## Текущие команды v60
+## Общая оболочка и каталог v27
+
+```powershell
+node scripts/build-site.cjs --check
+node --test scripts/test-static-checks.cjs scripts/test-shared-site.cjs
+$env:SYNTHECORE_URL = 'http://127.0.0.1:4183/'
+node scripts/verify-works-v27-browser.cjs
+node scripts/verify-works-v27-motion.cjs
+```
+
+| Команда | Область и артефакты |
+|---|---|
+| `build-site.cjs` / `--check` | Генерация HTML из partials/шаблонов либо проверка, что готовые `/` и `/raboty/` соответствуют источникам |
+| `test-shared-site.cjs` | Общие шаблоны, правильные маршруты/якоря, 6 исходных кейсов/PNG, один footer/menu owner, локальные font hashes; вместе с исходными static fixtures — 74 теста |
+| `verify-works-v27-browser.cjs` | Обе страницы, 320/390/768/990/1440/1920/2560; размеры/типографика, menu, dialog/focus/scroll-lock, hover, единственный scroll owner, footer, reduced motion, маршруты/refresh; PNG и `browser-report.json` в `docs/qa/works-v27/` |
+| `verify-works-v27-motion.cjs` | Начальное/промежуточное/конечное состояние CTA, повторное подключение, mobile copyright; PNG и `motion-report.json` в QA; видео локально в `output/playwright/works-v27/motion/` |
+
+Браузерные команды требуют HTTP-сервер, Playwright и Chromium. Без переменной URL новые v27-сценарии используют 4182, прежние v60 — 4174, поэтому адрес проверяемой копии задавайте явно. В текущем сеансе v27 работает на 4183; launcher по умолчанию использует 4173. `verify-works-v27-motion.cjs --diagnose` — локальная диагностика сравнения архива/интеграции на фиксированных 4181/4182, не переносимая приёмочная команда.
+
+Приёмка 20 октября: static 74/74, общий browser 295/295, motion 6/6. Это сохранённые результаты, не автоматическое подтверждение последующих правок. При новом запуске браузерные сценарии перезаписывают evidence; проверяйте изменения до коммита.
+
+## Текущие проверки главной v60 в интеграционной ветке
 
 ```powershell
 node scripts/check-project.cjs
 node scripts/verify-works-static.cjs
 node scripts/verify-services-static.cjs
 node scripts/check-hero-geometry.cjs
-node --test scripts/test-static-checks.cjs
+node --test scripts/test-static-checks.cjs scripts/test-shared-site.cjs
 node scripts/verify-works-handoff-v45.cjs
 $env:SYNTHECORE_URL = 'http://127.0.0.1:4173/'
 node scripts/verify-v60-regressions.cjs
@@ -22,7 +43,9 @@ node scripts/check-project.cjs --http http://127.0.0.1:4173/
 
 Новый regression-сценарий проверяет фокус Services/Reviews, переключение native/pinned ленты, Escape меню и refresh FAQ; `--phase=...` задаёт имя локального JSON в `output/playwright/v60/regressions/`. Полный browser-сценарий проверяет десять размеров; принимает `--only=1440x900`, `--engine=chromium` и `--phase=...`, сохраняет evidence под `output/playwright/v60/`. Это локальные артефакты вне Git; итоговые результаты и ограничения приведены в QA.
 
-Текущие результаты остальных команд и browser-матрицы ведутся в QA. Сам список команд не является заявлением об их успешном запуске. Основная копия `main` запускается на 4173; для параллельной копии можно выбрать 4174. Браузерные сценарии без `SYNTHECORE_URL` обращаются к 4174; явно указывайте адрес проверяемого сервера.
+В этой ветке `verify-v60-browser.cjs` учитывает переход Header Works на каталог и JS-path Footer v12; прежние SMIL-ожидания заменены проверками реального нового компонента. Сцены главной и сценарии их регрессий сохранены. Полный прогон новой интеграции выполнен на четырёх размерах: 1440×900 — 68/68, 390×844 — 64/64, 1920×1080 — 68/68, 2560×1440 — 68/68; регрессии до/после — 5/5 + 5/5. Исторические 666/666 на десяти размерах относятся к QA исходной v60.
+
+`check-project.cjs` проверяет 40 asset/vendor/font hashes; `--http` дополнительно сравнивает 53 ресурса главной с диском. Этот HTTP-режим не заменяет browser/shared-site проверки каталога. Сам список команд не означает, что они запущены после последних правок.
 
 ## Сохранённые проверки v31 и переходов v38–v43
 

@@ -2,7 +2,7 @@
 
 База `67f75cd`. Полный список изменённых/добавленных файлов этой интеграции; исходные PNG и vendor-библиотеки повторно не копировались. Назначение групп описано в [интеграции](WORKS_V27_INTEGRATION.md), снимки — в [QA](qa/works-v27/README.md).
 
-+- `.gitattributes`
+- `.gitattributes`
 - `README.md`
 - `assets/fonts/OFL-Manrope.txt`
 - `assets/fonts/manrope-400.ttf`
@@ -19,6 +19,10 @@
 - `css/raboty-type.css`
 - `css/shared-header-cta.css`
 - `css/site-footer.css`
+- `docs/01_NEW_CHAT_START.md`
+- `docs/CHANGELOG.md`
+- `docs/SCROLL_MECHANICS.md`
+- `docs/SITE_ARCHITECTURE.md`
 - `docs/DESIGN_SYSTEM_V0_1.md`
 - `docs/WORKS_V27_FILES.md`
 - `docs/WORKS_V27_INTEGRATION.md`
@@ -84,6 +88,7 @@
 - `js/site-header.js`
 - `raboty/index.html`
 - `scripts/build-site.cjs`
+- `scripts/HISTORICAL_CHECKS.md`
 - `scripts/check-project.cjs`
 - `scripts/test-shared-site.cjs`
 - `scripts/test-static-checks.cjs`
