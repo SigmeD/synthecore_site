@@ -1,0 +1,43 @@
+/* SyntheCore / Работы — isolated design concept; existing site CSS remains unchanged. */
+html.sc-dialog-open{overflow:hidden;}
+.works-catalog{background:#f4f5f6;overflow-x:clip}
+.works-catalog .floating-header .header-links [aria-current="page"]{color:var(--orange);font-weight:630}
+.catalog-intro{position:relative;overflow:hidden;min-height:350px;background:radial-gradient(ellipse 680px 300px at 9% 4%,rgba(205,227,240,.92),transparent 84%),radial-gradient(ellipse 610px 340px at 95% 11%,rgba(185,207,222,.8),transparent 85%),linear-gradient(180deg,#f2f6f9 0%,#f0f4f7 53%,#f4f5f6 100%);padding:108px 24px 55px;text-align:center}
+.catalog-intro__inner{position:relative;margin:auto;max-width:900px}
+.catalog-intro__eyebrow{margin:0 0 14px;font-size:11px;letter-spacing:.16em;font-weight:650;color:#6f7d87}
+.works-catalog .catalog-intro h1{font-size:clamp(64px,6.2vw,106px);line-height:1.04;letter-spacing:-.077em;font-weight:520;margin:0;color:#171e23;text-shadow:none}
+.catalog-intro h1 span,.catalog-outro h2 span{color:var(--orange)}
+.catalog-intro__lead{font-size:clamp(15px,1.15vw,18px);line-height:1.46;letter-spacing:-.015em;color:#60717e;max-width:570px;margin:17px auto 23px}
+.catalog-intro__cta,.catalog-outro__cta,.case-dialog__cta{display:inline-flex;align-items:center;justify-content:center;gap:17px;border-radius:100px;background:var(--orange);color:#fff;padding:0 24px;min-height:51px;font-weight:620;font-size:14px;transition:background .2s}
+.catalog-intro__cta:hover,.catalog-outro__cta:hover,.case-dialog__cta:hover{background:#fc7045}
+.catalog-intro__cta .arrow,.catalog-outro__cta .arrow,.case-dialog__cta .arrow{transition:transform .35s;transform-origin:center}
+.catalog-intro__cta:hover .arrow,.catalog-outro__cta:hover .arrow,.case-dialog__cta:hover .arrow{transform:rotate(-45deg)}
+.catalog-content{padding:0 24px 120px}
+.catalog-container{width:min(1215px,100%);margin:0 auto}
+.catalog-topline{display:flex;align-items:center;justify-content:space-between;gap:16px;color:#89939b;font-size:11px;letter-spacing:.095em;font-weight:610;margin:10px 2px 23px;text-transform:uppercase}
+/* Card component moved to raboty-v18-cards.css: one source of truth. */
+.catalog-outro{padding:100px 24px;background:linear-gradient(110deg,#dceaf8,#eef4fc 60%,#d5e7fa);scroll-margin-top:110px}
+.catalog-outro__inner{max-width:1215px;margin:auto;display:flex;justify-content:space-between;align-items:flex-end;gap:40px}
+.catalog-outro__eyebrow{font-size:12px;font-weight:650;letter-spacing:.14em;color:#5c7890}
+.catalog-outro h2{font-size:clamp(56px,6.1vw,102px);font-weight:520;letter-spacing:-.075em;line-height:.99;margin:14px 0 18px}
+.catalog-outro p{font-size:16px;color:#60717e;line-height:1.5;max-width:480px;margin:0}
+.catalog-outro__cta{margin-bottom:9px;flex:0 0 auto}
+.catalog-footer{background:#fff;min-height:118px;display:flex;align-items:center;gap:30px;justify-content:space-between;padding:25px max(25px,calc((100vw - 1215px)/2));font-size:12px;color:#818990}
+.catalog-footer__brand{font-weight:760;font-size:22px;letter-spacing:-.07em;color:#171e23}
+.catalog-footer__brand span{color:var(--orange)}
+.catalog-footer a:last-child{font-weight:580;color:#171e23}
+.case-dialog{border:0;padding:0;border-radius:22px;background:#fff;max-width:min(850px,calc(100vw - 32px));width:100%;max-height:calc(100svh - 36px);box-shadow:0 30px 90px #0b192e40;overflow-y:auto}
+.case-dialog::backdrop{background:rgba(12,27,39,.63);backdrop-filter:blur(5px)}
+.case-dialog__close{position:absolute;right:18px;top:18px;display:grid;place-items:center;background:#fff;border:1px solid #ecf0f3;width:44px;height:44px;border-radius:50%;font-size:27px;z-index:1;line-height:1;color:#28333b}
+.case-dialog__media{height:310px;background:#f1f4f6;overflow:hidden}
+.case-dialog__media img{width:100%;height:100%;object-fit:cover}
+.case-dialog__content{padding:32px 40px 40px}
+.case-dialog__category{font-size:12px;letter-spacing:.08em;color:var(--orange);font-weight:680;margin:0 0 12px;text-transform:uppercase}
+.case-dialog__content h2{font-size:clamp(35px,5vw,60px);letter-spacing:-.065em;line-height:1.04;font-weight:530;margin:0 0 20px}
+.case-dialog__description{max-width:630px;font-size:17px;line-height:1.55;color:#687681}
+.case-dialog__actions{margin-top:30px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+.case-dialog__back{background:transparent;color:#6f7d87;border:0;padding:12px;font-size:13px}
+@media (max-width:1040px){.catalog-content{padding-bottom:96px}.catalog-intro{padding-top:122px}.catalog-outro{padding:80px 32px}}
+@media (max-width:650px){.catalog-intro{padding:125px 20px 54px;min-height:290px}.catalog-intro__eyebrow{font-size:10px}.works-catalog .catalog-intro h1{font-size:clamp(56px,13vw,76px)}.catalog-intro__lead{font-size:15px;max-width:380px}.catalog-content{padding:0 14px 80px}.catalog-topline{font-size:10px;margin:4px 5px 17px}.catalog-topline span:last-child{display:none}.catalog-outro{padding:74px 25px}.catalog-outro__inner{align-items:flex-start;flex-direction:column;gap:29px}.catalog-outro h2{font-size:58px}.catalog-outro p{font-size:15px}.catalog-footer{padding:28px 22px;gap:10px;flex-wrap:wrap}.catalog-footer span{order:3;width:100%}.case-dialog__media{height:210px}.case-dialog__content{padding:28px 22px 32px}.case-dialog__description{font-size:15px}.case-dialog__actions{gap:14px}.case-dialog__cta{font-size:12px;min-height:46px;padding:0 16px}}
+@media(prefers-reduced-motion:reduce){.catalog-intro__cta .arrow,.catalog-outro__cta .arrow{transition:none}}
+

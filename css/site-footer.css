@@ -1,0 +1,76 @@
+/* Approved Footer v12; active styles only. Wave and reveal values preserved. */
+.sc-footer{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;}
+.sc-footer *{box-sizing:border-box;}
+.contact-footer.sc-footer{position:relative;display:block;isolation:isolate;overflow:hidden;background:linear-gradient(180deg,#fff 0%,#fff 39%,#fbfdff 59%,#f6fbff 79%,#edf7ff 100%);color:#171e23;min-height:780px;padding:60px max(24px,calc((100vw - 1200px)/2)) 32px}
+.sc-footer__content{position:relative;z-index:1;display:flex;flex-direction:column;justify-content:space-between;gap:55px;min-height:690px;margin:auto;max-width:1200px}
+.sc-footer__intro{text-align:center;padding:35px 0 70px}
+.contact-footer.sc-footer h2{font-size:clamp(58px,7vw,108px);font-weight:400;line-height:1.04;letter-spacing:-.067em;margin:0 auto 24px;text-wrap:balance}
+.sc-footer__intro p{margin:0 auto 30px;max-width:560px;font-size:clamp(15px,1.1vw,17px);line-height:1.55;color:#687884}
+.contact-footer.sc-footer .sc-footer__cta{display:inline-flex;min-height:53px;padding:0 23px;gap:16px;border:0;background:var(--orange);color:#fff;font-weight:610;font-size:14px;text-decoration:none;box-shadow:0 8px 22px rgba(228,77,31,.18);transition:transform .24s cubic-bezier(.22,1,.36,1),box-shadow .24s ease,background-color .24s ease}
+.contact-footer.sc-footer .sc-footer__cta:is(:hover,:focus-visible){background:#fc7045;transform:none;box-shadow:0 11px 27px rgba(228,77,31,.24)}
+.sc-footer__cta .arrow{stroke-linecap:round;stroke-linejoin:round;transition:transform .34s cubic-bezier(.22,1,.36,1)}
+.sc-footer__cta:is(:hover,:focus-visible) .arrow{transform:rotate(-45deg)}
+.sc-footer__cta:active .arrow{transform:rotate(-45deg)}
+.sc-footer__bottom{display:flex;align-items:flex-start;justify-content:space-between;gap:44px;padding:0 0 37px}
+.sc-footer__brand .brand{display:inline-flex;text-decoration:none;color:#171e23}
+.sc-footer__brand .brand-name{font-size:25px}
+.sc-footer__nav{display:flex;align-items:center;gap:clamp(18px,2.8vw,38px);flex-wrap:wrap}
+.contact-footer.sc-footer .sc-footer__nav a{font-size:14px;color:#273745;text-decoration:none;white-space:nowrap;transition:color .2s ease}
+.contact-footer.sc-footer .sc-footer__nav a:hover{color:var(--orange)}
+.sc-footer__fine{padding-top:17px;border-top:1px solid rgba(91,139,181,.18);font-size:12px;color:#698199}
+@media (max-width:1000px){.contact-footer.sc-footer{padding-inline:36px}
+}
+@media (max-width:700px){.contact-footer.sc-footer{padding:22px 22px 26px;min-height:700px}
+.sc-footer__content{min-height:652px;gap:40px}
+.sc-footer__intro{padding:54px 0 35px}
+.contact-footer.sc-footer h2{font-size:clamp(46px,11vw,68px)}
+.sc-footer__bottom{flex-direction:column;gap:25px;padding-bottom:22px}
+.sc-footer__nav{gap:16px 22px}
+.sc-footer__fine{font-size:11px}
+}
+@media (prefers-reduced-motion:reduce){.sc-footer__cta .arrow{transition:none}
+}
+@media (prefers-reduced-motion:no-preference){.sc-footer__bottom.sc5-enter-pending,.sc-footer__fine.sc5-enter-pending{
+     opacity:0; transition:opacity 2.55s cubic-bezier(.25,.45,.2,1);
+  }
+.sc-footer__bottom.sc5-enter-pending.sc5-enter-visible,
+  .sc-footer__fine.sc5-enter-pending.sc5-enter-visible{opacity:1;}
+}
+.contact-footer.sc-footer{ background:#fff; }
+#roveiaWaveBg{
+  --rwb-blur: 16px;
+  --rwb-color: #218AFF;
+  --rwb-fill: 0.5;
+  position:absolute; inset:0; overflow:hidden;
+  z-index:0; pointer-events:none;
+}
+#roveiaWaveBg .rwb-layer{
+  position:absolute;left:0;right:0;bottom:0;
+  filter:blur(calc(var(--rwb-blur) * var(--m, 1)));
+  will-change:transform;
+  transform:translateZ(0);
+  backface-visibility:hidden;
+}
+#roveiaWaveBg .rwb-layer svg{display:block;width:100%;height:100%;}
+@media (prefers-reduced-motion:reduce){#roveiaWaveBg .rwb-layer{will-change:auto;}
+}
+@media (prefers-reduced-motion: no-preference){.sc-footer__intro.sc12-cta-enter-pending{
+    opacity: 0;
+    transform: scale(.8);
+    transform-origin: center center;
+    transition: opacity .92s cubic-bezier(.22,.61,.36,1),
+                transform .92s cubic-bezier(.22,.61,.36,1);
+    will-change: opacity, transform;
+  }
+.sc-footer__intro.sc12-cta-enter-pending.sc12-cta-enter-visible{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@media (prefers-reduced-motion: reduce){.sc-footer__intro{
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    will-change: auto !important;
+  }
+}

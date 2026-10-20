@@ -76,7 +76,7 @@ test('current v60 static checks accept the site and reject isolated fixture muta
   t.after(() => fs.rmSync(temp, { recursive: true, force: true }));
   const fixture = path.join(temp, 'site');
   fs.mkdirSync(fixture);
-  for (const item of ['index.html', 'assets', 'css', 'js', 'docs/asset-manifest.json', 'docs/vendor-manifest.json']) {
+  for (const item of ['index.html', 'assets', 'css', 'js', 'docs/asset-manifest.json', 'docs/vendor-manifest.json', 'docs/font-manifest.json']) {
     fs.cpSync(path.join(root, item), path.join(fixture, item), { recursive: true });
   }
   await t.test('accepted package passes without HTTP or historical backups', async () => {

@@ -1,13 +1,13 @@
-﻿param([int]$Port = 4173)
+﻿param([int]$Port = 4173, [switch]$NoBrowser)
 $ErrorActionPreference = 'Stop'
 $root = [System.IO.Path]::GetFullPath($PSScriptRoot)
 $listener = [System.Net.Sockets.TcpListener]::new([System.Net.IPAddress]::Loopback, $Port)
 try {
     $listener.Start()
-    Write-Host "SyntheCore v60: http://127.0.0.1:$Port/" -ForegroundColor Green
+    Write-Host "SyntheCore: http://127.0.0.1:$Port/" -ForegroundColor Green
     Write-Host "Папка: $root"
     Write-Host 'Остановить: Ctrl+C'
-    Start-Process "http://127.0.0.1:$Port/"
+    if (-not $NoBrowser) { Start-Process "http://127.0.0.1:$Port/" }
     while ($true) {
         $client = $listener.AcceptTcpClient()
         try {
@@ -23,6 +23,9 @@ try {
             $relative = $requestPath.TrimStart('/').Replace('/', [IO.Path]::DirectorySeparatorChar)
             $full = [System.IO.Path]::GetFullPath((Join-Path $root $relative))
             $allowed = $full.StartsWith($root + [IO.Path]::DirectorySeparatorChar, [StringComparison]::OrdinalIgnoreCase)
+            if ($allowed -and [System.IO.Directory]::Exists($full)) {
+                $full = Join-Path $full 'index.html'
+            }
             $exists = $allowed -and [System.IO.File]::Exists($full)
             if ($exists) {
                 $content = [System.IO.File]::ReadAllBytes($full)
@@ -34,6 +37,8 @@ try {
                     '.webp' {'image/webp'}
                     '.png' {'image/png'}
                     '.svg' {'image/svg+xml'}
+                    '.ttf' {'font/ttf'}
+                    '.woff2' {'font/woff2'}
                     '.json' {'application/json; charset=utf-8'}
                     '.md' {'text/plain; charset=utf-8'}
                     default {'application/octet-stream'}

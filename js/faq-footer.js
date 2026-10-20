@@ -38,25 +38,4 @@
   faqMotion.addEventListener?.('change',scheduleFaq);
   matchMedia('(prefers-reduced-motion: reduce)').addEventListener?.('change',scheduleFaq);
   scheduleFaq();
-  const footer=document.querySelector('#contact.sc-footer');
-  const waves=footer?[...footer.querySelectorAll('.sc-footer__wave')]:[];
-  const reduced=window.matchMedia('(prefers-reduced-motion: reduce)');
-  let queued=false;
-  // Ambient movement runs independently on the SVGs. Scroll only lifts each wave
-  // a short distance, without resetting its continuous motion or deforming the text.
-  function update(){
-    queued=false;
-    for(const wave of waves){
-      const svg=wave.querySelector('svg');
-      if(svg && typeof svg.pauseAnimations==='function'){
-        if(reduced.matches)svg.pauseAnimations();else svg.unpauseAnimations();
-      }
-    }
-    if(reduced.matches){for(const wave of waves)wave.style.setProperty('--wave-scroll-y','0px');return;}
-    const r=footer.getBoundingClientRect(),vh=window.innerHeight;
-    const p=Math.min(1,Math.max(0,(vh-r.top)/(vh+r.height*.8)));
-    waves.forEach((wave,i)=>wave.style.setProperty('--wave-scroll-y',((1-p)*[46,37,27][i]).toFixed(2)+'px'));
-  }
-  function schedule(){if(queued)return;queued=true;requestAnimationFrame(update);}
-  if(footer){addEventListener('scroll',schedule,{passive:true});addEventListener('resize',schedule,{passive:true});if(reduced.addEventListener)reduced.addEventListener('change',schedule);schedule();}
 })();

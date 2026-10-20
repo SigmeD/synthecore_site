@@ -1,0 +1,82 @@
+/* SyntheCore / Works v23 — reference-based typographic design system.
+ * Roveia supplied CSS: .heading-style-h2 70px/400/110%, .text-size-regular 16px/150%,
+ * .case-study-name 24px/400, .case-study-card_description 16px/500/150%,
+ * .case-study-card_stat-item 14px/500, .case-study-card_cta 16px/500.
+ * One source of truth for typography of Works; does not modify approved v12 footer
+ * wave engine, its CTA entrance or shared header brand/nav.
+ */
+body.works-catalog {
+  --sc-type-family: var(--sc-font-ui);
+  --sc-type-display-size: var(--sc-font-size-display);
+  --sc-type-display-leading: var(--sc-line-display);
+  --sc-type-display-tracking: -.02857em;
+  --sc-type-body-size: var(--sc-font-size-body);
+  --sc-type-body-leading: var(--sc-line-copy);
+  --sc-type-card-title-size: var(--sc-font-size-card-title);
+  --sc-type-card-caption-size: 16px;
+  --sc-type-card-link-size: 16px;
+  --sc-type-tag-size: var(--sc-font-size-tag);
+  --sc-type-block-gap: 24px;
+}
+/* H1 and footer CTA H2 are two instances of the same display typographic role. */
+body.works-catalog .catalog-intro__inner h1 {
+  font-family: var(--sc-type-family);
+  font-size: var(--sc-type-display-size);
+  font-weight: 400;
+  letter-spacing: var(--sc-type-display-tracking);
+  line-height: var(--sc-type-display-leading);
+  text-wrap: balance;
+}
+/* All description and action typography uses a single body scale. */
+body.works-catalog .catalog-intro__lead {
+  font-family: var(--sc-type-family);
+  font-size: var(--sc-type-body-size);
+  font-weight: 400;
+  line-height: var(--sc-type-body-leading);
+  letter-spacing: 0;
+}
+body.works-catalog .catalog-intro__lead {
+  margin-top: var(--sc-type-block-gap);
+  margin-bottom: var(--sc-type-block-gap);
+}
+/* Card content stays in the previously approved 412×451px external geometry. */
+body.works-catalog {
+  --card-font: var(--sc-type-family);
+  --card-heading-size: var(--sc-type-card-title-size);
+  --card-description-size: var(--sc-type-card-caption-size);
+  --card-cta-size: var(--sc-type-card-link-size);
+  --card-tag-size: var(--sc-type-tag-size);
+}
+body.works-catalog .case-card__body h2 {
+  font-weight:400;
+  letter-spacing:-.018em;
+  line-height:1.2;
+}
+body.works-catalog .case-card__body p {
+  font-weight:500;
+  line-height:var(--sc-type-body-leading);
+  letter-spacing:0;
+}
+body.works-catalog .case-card .tag {
+  font-weight:500;
+  line-height:1.24;
+}
+body.works-catalog .case-card__more {
+  font-weight:500;
+  line-height:1.35;
+}
+/* All breakpoints flow without an abrupt 70→44px jump. Do not change footer waves. */
+@media (max-width:850px) {
+  body.works-catalog {
+    --sc-type-tag-size:13px;
+  }
+}
+@media (max-width:650px) {
+  body.works-catalog {
+    --sc-type-body-size:14px;
+    --sc-type-card-title-size:22px;
+    --sc-type-card-caption-size:14px;
+    --sc-type-card-link-size:14px;
+    --sc-type-tag-size:12px;
+  }
+}

@@ -5,7 +5,7 @@ const { verifyManifest, verifyHTTP, parseCLI } = require('./lib/static-resources
 async function verifyProject(root = path.resolve(__dirname, '..'), options = {}) {
   const works = await verifyWorks(root);
   let hashes = 0;
-  for (const manifest of ['docs/asset-manifest.json', 'docs/vendor-manifest.json']) {
+  for (const manifest of ['docs/asset-manifest.json', 'docs/vendor-manifest.json', 'docs/font-manifest.json']) {
     hashes += await verifyManifest(root, manifest);
   }
   // Retain portable crop/geometry assertions without spawning a process.

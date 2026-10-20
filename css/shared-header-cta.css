@@ -1,0 +1,109 @@
+/* SyntheCore · Shared Header + CTA design tokens, v24 (2026-10-20)
+   Shared by / and /raboty/; load LAST after page-specific styles.
+   Purely visual; does NOT modify the approved v12 wave/reveal engine.
+   Header on mobile keeps the v60 compact menu layout.
+*/
+:root {
+  --sc-ui-font:var(--sc-font-ui);
+  --sc-nav-font-size:var(--sc-font-size-nav);
+  --sc-header-cta-height:var(--sc-height-header-cta);
+  --sc-desktop-header-height:var(--sc-height-header-desktop);
+  --sc-primary-cta-height:var(--sc-height-primary-cta);
+  --sc-cta-font-size:var(--sc-font-size-body);
+  --sc-arrow-size:var(--sc-icon-arrow-size);
+}
+/* ONE header geometry: 40px CTA + 7px vertical padding + 1px borders = 56px. */
+.floating-header {
+  min-height: var(--sc-desktop-header-height);
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.floating-header .header-links {
+  font-family: var(--sc-ui-font);
+  font-size: var(--sc-nav-font-size);
+  font-weight: 400;
+  line-height: 1.3;
+}
+/* Active page is semantically marked by aria-current, not orange by default. */
+.floating-header .header-links a,
+.floating-header .header-links a:hover,
+.floating-header .header-links a:focus-visible,
+.floating-header .header-links a[aria-current="page"],
+body.works-catalog .floating-header .header-links a[aria-current="page"],
+body.works-catalog .floating-header .header-links a[aria-current="page"]:hover {
+  color: var(--ink, #171e23);
+  font-weight: 400;
+}
+.floating-header .header-links a:hover { opacity: .75; }
+.floating-header > .nav-cta {
+  height: var(--sc-header-cta-height);
+  min-height: var(--sc-header-cta-height);
+  padding: 0 12px;
+  gap: 10px;
+  font-family: var(--sc-ui-font);
+  font-size: var(--sc-cta-font-size);
+  font-weight: 500;
+  line-height: 1;
+}
+/* A single icon geometry for CTAs, mobile menu, and existing arrow controls. */
+.arrow,
+.floating-header .nav-cta .arrow,
+.main-cta .arrow,
+.hero .main-cta .arrow,
+.catalog-intro__cta .arrow,
+.case-dialog__cta .arrow,
+.contact-footer.sc-footer .sc-footer__cta .arrow,
+.mobile-panel a .arrow,
+.case-card__more .arrow,
+body.works-catalog .case-card__more .arrow {
+  width: var(--sc-arrow-size);
+  height: var(--sc-arrow-size);
+  flex: 0 0 var(--sc-arrow-size);
+}
+/* All primary CTAs except the header pill use 52px height. */
+.main-cta,
+.hero .main-cta,
+.catalog-intro__cta,
+.catalog-outro__cta,
+.case-dialog__cta,
+.contact-footer.sc-footer .sc-footer__cta,
+.sc-footer__intro > .nav-cta {
+  height: var(--sc-primary-cta-height);
+  min-height: var(--sc-primary-cta-height);
+  padding: 0 23px;
+  gap: 12px;
+  font-family: var(--sc-ui-font);
+  font-size: var(--sc-cta-font-size);
+  font-weight: 500;
+  line-height: 1;
+}
+/* The mobile navigation remains accessible, but uses the same typography. */
+.mobile-panel a { font-family: var(--sc-ui-font); font-size: 16px; }
+.mobile-panel a:last-child { min-height: var(--sc-primary-cta-height); }
+/* Keep mobile header geometry from v60: logo + 44px toggle need 62px. */
+@media (max-width:850px) {
+  .floating-header { min-height: 66px; padding-top: 8px; padding-bottom: 8px; }
+}
+@media (max-width:540px) {
+  .floating-header { min-height: 62px; }
+  /* v60 homepage uses a two-column hero; prevent CTA clipping there. */
+  .hero .main-cta { padding-inline: 12px; gap: 8px; font-size: clamp(12px, 3.5vw, 16px); }
+}
+@media (prefers-reduced-motion:reduce) {
+  .floating-header .nav-cta, .main-cta,
+  .catalog-intro__cta,.contact-footer.sc-footer .sc-footer__cta { transition:none !important; }
+}
+
+/* v26: footer links use the same 16px body/action typography on ALL pages.
+ * Single shared rule; does not touch approved footer v12 wave or reveal scripts. */
+.contact-footer.sc-footer .sc-footer__nav a {
+  font-family:var(--sc-ui-font);
+  font-size:16px;
+  font-weight:400;
+  line-height:1.5;
+}
+
+/* Shared display/body roles from approved Works typography v23. */
+.contact-footer.sc-footer h2{font-family:var(--sc-font-ui);font-size:var(--sc-font-size-display);font-weight:400;letter-spacing:-.02857em;line-height:var(--sc-line-display);margin-bottom:24px;text-wrap:balance;}
+.sc-footer__intro p{font-family:var(--sc-font-ui);font-size:var(--sc-font-size-body);font-weight:400;line-height:var(--sc-line-copy);letter-spacing:0;}
+@media(max-width:650px){.sc-footer__intro p{font-size:14px;}}
