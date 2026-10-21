@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-20T16:51:38.684Z",
+  "checks": [
+    {
+      "name": "footer CTA starts pending",
+      "pass": true
+    },
+    {
+      "name": "CTA animates opacity and scale without vertical translation",
+      "pass": true,
+      "data": {
+        "opacity": 0.198325,
+        "transform": "matrix(0.839665, 0, 0, 0.839665, 0, 0)"
+      }
+    },
+    {
+      "name": "CTA reaches full opacity",
+      "pass": true
+    },
+    {
+      "name": "repeat inclusion does not duplicate waves or reset CTA",
+      "pass": true
+    },
+    {
+      "name": "home footer fine print reveals",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "rect": {
+          "x": 22,
+          "y": 785.484375,
+          "width": 346,
+          "height": 33,
+          "top": 785.484375,
+          "right": 368,
+          "bottom": 818.484375,
+          "left": 22
+        },
+        "cls": "sc-footer__fine sc5-enter-pending sc5-enter-visible"
+      }
+    },
+    {
+      "name": "works footer fine print reveals",
+      "pass": true,
+      "data": {
+        "opacity": "1",
+        "rect": {
+          "x": 22,
+          "y": 785.125,
+          "width": 346,
+          "height": 33,
+          "top": 785.125,
+          "right": 368,
+          "bottom": 818.125,
+          "left": 22
+        },
+        "cls": "sc-footer__fine sc5-enter-pending sc5-enter-visible"
+      }
+    }
+  ],
+  "pass": true
+}

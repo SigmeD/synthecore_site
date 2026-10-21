@@ -1,0 +1,52 @@
+
+
+/* v13: Roveia case-studies entrance calibrated from the Oct 19 screen recording.
+   The shared v60 header is fixed and visible as the visual anchor.
+   One actual .works-surface, not two containers or a viewport overlay.
+   Changes only the entrance: no new gradients, backgrounds, parallax, or footer overrides. */
+@keyframes sc13-surface-reveal {
+  from { opacity: .08; transform: translate3d(0, 76px, 0) scale(.94); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0) scale(1); }
+}
+@keyframes sc13-hero-reveal {
+  from { opacity: 0; transform: translate3d(0, 9px, 0) scale(.96); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0) scale(1); }
+}
+@keyframes sc13-projects-reveal {
+  from { opacity: 0; transform: translate3d(0, 17px, 0) scale(.97); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0) scale(1); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  html.sc-works-motion body.works-catalog .floating-header {
+    animation: none;
+    opacity: 1;
+  }
+  html.sc-works-motion body.works-catalog .works-surface {
+    animation: sc13-surface-reveal .84s cubic-bezier(.2,.74,.24,1) both;
+    transform-origin: 50% 0;
+    backface-visibility: hidden;
+  }
+  html.sc-works-motion body.works-catalog .catalog-intro__inner {
+    animation: sc13-hero-reveal .64s cubic-bezier(.2,.73,.25,1) .07s both;
+    transform-origin: 50% 40%;
+  }
+  html.sc-works-motion body.works-catalog .catalog-container {
+    animation: sc13-projects-reveal .70s cubic-bezier(.2,.73,.25,1) .13s both;
+    transform-origin: center top;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  body.works-catalog .works-surface,
+  body.works-catalog .catalog-intro__inner,
+  body.works-catalog .catalog-container {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+
+/* Reduced motion must not unset the header's structural translateX(-50%) centering. */
+@media (prefers-reduced-motion:reduce) {
+  body.works-catalog .floating-header { animation:none!important;opacity:1!important;transform:translateX(-50%)!important; }
+}

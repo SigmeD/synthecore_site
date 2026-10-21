@@ -1,0 +1,28 @@
+{
+  "file": "scroll-and-checks.webm",
+  "duration": 68.16,
+  "width": 1440,
+  "height": 900,
+  "readyState": 4,
+  "error": null,
+  "samples": [
+    {
+      "fraction": 0.2,
+      "time": 13.632
+    },
+    {
+      "fraction": 0.4,
+      "time": 27.264
+    },
+    {
+      "fraction": 0.6,
+      "time": 40.895999
+    },
+    {
+      "fraction": 0.8,
+      "time": 54.528
+    }
+  ],
+  "pass": true,
+  "originalFile": "page@e34b2c0d3bd9dce8a25078a8afcbc8af.webm"
+}

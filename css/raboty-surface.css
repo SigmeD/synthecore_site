@@ -1,0 +1,100 @@
+
+
+
+
+/* SyntheCore Works v6 — one SVG surface, subtle shared-footer wave tuning. */
+
+/* SyntheCore Works v5 — one content surface, one SVG, original v60 header/footer.
+   No scroll-driven inset, page-height coordinates or duplicated footer animations. */
+body.works-catalog {background:#fff; overflow-x:clip;}
+body.works-catalog main {margin:0;padding:0;overflow:visible;min-height:0;background:#fff;}
+body.works-catalog .works-page {position:relative;background:#fff;isolation:isolate;}
+body.works-catalog .works-surface {
+  --surface-radius:clamp(20px,1.5vw,30px);
+  position:relative;isolation:isolate;
+  width:calc(100% - 2 * var(--hero-edge));margin:var(--hero-edge) auto 0;
+  padding:clamp(112px,8vw,160px) 24px clamp(112px,11vw,180px);
+  border-radius:var(--surface-radius);overflow:hidden;
+  /* Match the SVG's white dissolved ending. Avoid a hard tinted bottom rectangle. */
+  background:#ffffff;
+}
+body.works-catalog .works-surface__art {
+  position:absolute;z-index:-1;pointer-events:none;
+  /* 24px overscan: parallax up to 18px never exposes the base at the top corners. */
+  top:-24px;left:0;display:block;width:100%;height:auto;min-height:470px;
+  transform:translate3d(0,var(--surface-art-shift,0px),0);
+  will-change:transform;
+}
+/* Single SVG surface: no secondary ::after color overlay. */
+body.works-catalog .works-surface__content {position:relative;z-index:1;width:100%;}
+body.works-catalog .catalog-intro__inner {max-width:900px;margin:0 auto;text-align:center;}
+body.works-catalog .catalog-intro__inner h1 {
+  margin:0;color:#171e23;
+  font-family:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;
+  font-size:clamp(58px,5.1vw,86px);font-weight:400;
+  letter-spacing:-.065em;line-height:1.09;
+}
+body.works-catalog .catalog-intro__lead {
+  margin:16px auto 22px;max-width:650px;
+  font-size:clamp(14px,.98vw,16px);font-weight:400;
+  line-height:1.55;color:#70808d;
+}
+body.works-catalog .catalog-container {
+  width:min(1215px,100%);margin:clamp(48px,4.6vw,76px) auto 0;
+}
+/* Footer is the exact v60 component; no second CTA or page-level footer background. */
+body.works-catalog main>.contact-footer.sc-footer{margin:0;position:relative;z-index:1;}
+
+/* Entrance: the single surface enters upward. Header stays reused and independent. */
+@keyframes sc5-surface-in {
+  0% {opacity:.60;transform:translate3d(0,92px,0);}
+  100% {opacity:1;transform:translate3d(0,0,0);}
+}
+@keyframes sc5-header-in {
+  0% {opacity:0;transform:translate(-50%,12px)}
+  100% {opacity:1;transform:translate(-50%,0)}
+}
+@keyframes sc5-content-in {
+  0% {opacity:0;transform:translate3d(0,12px,0)}
+  100% {opacity:1;transform:translate3d(0,0,0)}
+}
+@media (prefers-reduced-motion:no-preference){
+  html.sc-works-motion body.works-catalog .works-surface {
+    animation:sc5-surface-in 1.35s cubic-bezier(.22,.69,.21,1) both;
+    backface-visibility:hidden;
+  }
+  html.sc-works-motion body.works-catalog .floating-header {
+    animation:sc5-header-in .90s cubic-bezier(.22,.71,.22,1) .10s both;
+  }
+  html.sc-works-motion body.works-catalog .catalog-intro__inner,
+  html.sc-works-motion body.works-catalog .catalog-container {
+    animation:sc5-content-in 1.1s cubic-bezier(.22,.71,.22,1) .24s both;
+  }
+
+}
+@media (max-width:850px){
+  body.works-catalog .works-surface{
+    padding:clamp(122px,15vw,145px) 20px 118px;
+
+  }
+  body.works-catalog .catalog-intro__inner h1{font-size:clamp(50px,7.7vw,70px);}
+  body.works-catalog .catalog-container{margin-top:52px;}
+}
+@media (max-width:650px){
+  body.works-catalog .works-surface{
+    padding:clamp(118px,24vw,137px) 14px 96px;
+
+  }
+  body.works-catalog .works-surface__art{min-height:320px;}
+  body.works-catalog .catalog-intro__inner h1{font-size:clamp(44px,11vw,60px);letter-spacing:-.063em;}
+  body.works-catalog .catalog-intro__lead{margin:16px auto 22px;font-size:14px;max-width:360px;}
+  body.works-catalog .catalog-container{margin-top:45px;}
+}
+@media (max-width:540px){
+  body.works-catalog .works-surface{--surface-radius:18px;}
+}
+@media (prefers-reduced-motion:reduce){
+  body.works-catalog .works-surface, body.works-catalog .works-surface__art,
+  body.works-catalog .sc-footer__intro,body.works-catalog .sc-footer__bottom,
+  body.works-catalog .sc-footer__fine {opacity:1!important;transform:none!important;animation:none!important;transition:none!important;}
+}

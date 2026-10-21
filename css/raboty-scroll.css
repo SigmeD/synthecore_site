@@ -1,0 +1,58 @@
+/* SyntheCore Works v22: page-level spacing + reveal, isolated from v60 shared footer.
+   Same smooth-scroll engine parameters as the homepage, without hero-specific pinning.
+   Use only a single owner of wheel smoothing. All six cards keep 412x451 desktop geometry.
+*/
+body.works-catalog {
+  --works-section-space-top:clamp(112px, 8vw, 160px);
+  --works-section-space-bottom:clamp(112px, 11vw, 180px);
+  --works-intro-lead-top:16px;
+  --works-intro-button-gap:22px;
+  --works-intro-to-grid:clamp(48px, 4.6vw, 76px);
+  --works-reveal-y:18px;
+  --works-reveal-duration:760ms;
+  --works-reveal-ease:cubic-bezier(.22,.72,.25,1);
+}
+body.works-catalog .works-surface {
+  padding-top:var(--works-section-space-top);
+  padding-bottom:var(--works-section-space-bottom);
+}
+body.works-catalog .catalog-intro__lead {
+  margin-top:var(--works-intro-lead-top);
+  margin-bottom:var(--works-intro-button-gap);
+}
+body.works-catalog .catalog-container {
+  margin-top:var(--works-intro-to-grid);
+}
+/* Reveal lives on the button, so card hover-lift remains a separate transform layer. */
+@media (prefers-reduced-motion:no-preference) {
+  body.works-catalog .case-card__open.sc22-reveal-pending {
+    opacity:0;
+    transform:translate3d(0,var(--works-reveal-y),0);
+    transition:opacity var(--works-reveal-duration) var(--works-reveal-ease),
+      transform var(--works-reveal-duration) var(--works-reveal-ease);
+    transition-delay:var(--works-reveal-delay,0ms);
+  }
+  body.works-catalog .case-card__open.sc22-reveal-pending.sc22-reveal-visible {
+    opacity:1;
+    transform:translate3d(0,0,0);
+  }
+}
+@media (max-width:850px) {
+  body.works-catalog {
+    --works-section-space-top:clamp(122px,15vw,145px);
+    --works-section-space-bottom:118px;
+    --works-intro-to-grid:52px;
+  }
+}
+@media (max-width:650px) {
+  body.works-catalog {
+    --works-section-space-top:clamp(118px,24vw,137px);
+    --works-section-space-bottom:96px;
+    --works-intro-to-grid:45px;
+  }
+}
+@media (prefers-reduced-motion:reduce) {
+  body.works-catalog .case-card__open.sc22-reveal-pending {
+    opacity:1!important;transform:none!important;transition:none!important;
+  }
+}

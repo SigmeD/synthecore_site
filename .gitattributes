@@ -2,4 +2,7 @@
 # Avoid core.autocrlf changing SVGs and local vendor distributions/licenses.
 assets/**/*.svg -text
 assets/vendor/** -text
+assets/fonts/** -text
+# Preserve the upstream OFL license byte-for-byte, including its original spacing.
+assets/fonts/OFL-Manrope.txt whitespace=-blank-at-eol
 assets/vendor/LENIS-LICENSE.txt whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

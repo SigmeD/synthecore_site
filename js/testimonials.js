@@ -16,11 +16,30 @@ document.addEventListener('DOMContentLoaded', () => {
   const ScrollTrigger = window.ScrollTrigger;
   const desktop = matchMedia('(min-width: 1200px) and (min-height: 800px)');
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+  // One definition for drawing and keyboard seek: no duplicated scroll maths.
+  const motion = Object.freeze({
+    firstPeekCardFraction: 0.03,
+    cardSpacingViewportFraction: 0.36,
+    endCardFraction: 0.52,
+    endViewportFraction: 0.02,
+    entryViewportFraction: 0.72,
+    entryLift: 92,
+    centerHeightFraction: 0.495,
+    baseScale: 0.955,
+    focusScale: 0.125,
+    focusLift: 24,
+    rotationTravel: 1.8,
+    titleEntryOffset: 220,
+    bannerEntryOffset: 17,
+    bannerEntryScale: 0.014,
+    smoothSeconds: 0.18,
+    verticalOffsets: [-26, 35, -20, 28],
+    cardRotations: [-4.2, 3.3, -2.8, 3.6]
+  });
   const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
   const smoothstep = (a, b, v) => { const t = clamp((v - a)/(b - a), 0, 1); return t*t*(3-2*t); };
   const canAnimate = () => !!(gsap && ScrollTrigger && desktop.matches && !reduced.matches && cards.length >= 3);
-  const yOffsets = [-26, 35, -20, 28];
-  const rotations = [-4.2, 3.3, -2.8, 3.6];
+  let geometry = null;
   let trigger = null;
   let mode = 'native';
   let targetProgress = 0;
@@ -28,20 +47,24 @@ document.addEventListener('DOMContentLoaded', () => {
   let raf = 0;
   let lastTime = 0;
 
+  function measureGeometry(){
+    const width=scene.clientWidth || innerWidth;
+    const height=scene.clientHeight || innerHeight;
+    const cardWidth=cards[0]?.offsetWidth || 300;
+    const firstCenter=width-cardWidth*motion.firstPeekCardFraction;
+    const spacing=width*motion.cardSpacingViewportFraction;
+    const endCenter=cardWidth*motion.endCardFraction+width*motion.endViewportFraction;
+    geometry={width,height,cardWidth,firstCenter,spacing,
+      travel:Math.max(1,firstCenter+(cards.length-1)*spacing-endCenter),
+      cardHeights:cards.map(card=>card.offsetHeight)};
+  }
+
   function draw(progress) {
+    if(!geometry)return;
     renderedProgress = clamp(progress, 0, 1);
-    const vw = scene.clientWidth || innerWidth;
-    const vh = scene.clientHeight || innerHeight;
-    const cardWidth = cards[0]?.offsetWidth || 300;
+    const {width:vw,height:vh,cardWidth,firstCenter,spacing,travel,cardHeights}=geometry;
     const sceneTop = section.getBoundingClientRect().top;
-    const entry = smoothstep(innerHeight*.72, 0, sceneTop);
-    const firstCenter = vw - cardWidth * .03;  // substantial right-edge preview
-    const spacing = vw * .36;                   // next enters before previous exits
-    // Let the fourth card finish just beyond the centre and stay partially
-    // visible near the left edge when the next section begins rising.
-    // The preceding cards have already exited through the left boundary.
-    const endCenter = cardWidth * .52 + vw * .02;
-    const travel = firstCenter + (cards.length - 1) * spacing - endCenter;
+    const entry = smoothstep(innerHeight*motion.entryViewportFraction,0,sceneTop);
     const stageShift = travel * renderedProgress;
 
     cards.forEach((card, i) => {
@@ -50,11 +73,13 @@ document.addEventListener('DOMContentLoaded', () => {
       const centreFocus = 1 - smoothstep(.1, 1.15, Math.abs(normalized));
       // Automatic centre emphasis, not gated behind hover.
       // Both lift and scale smoothly reverse when scrolling upwards.
-      const scale = .955 + .125 * centreFocus;
-      const rotation = rotations[i % rotations.length] + clamp(normalized, -1, 1) * 1.8;
-      const centreY = vh*.495 + yOffsets[i % yOffsets.length] - 92*(1-entry);
-      const centerLift = 24 * centreFocus;
-      const y = centreY - card.offsetHeight/2 - centerLift;
+      const scale=motion.baseScale+motion.focusScale*centreFocus;
+      const rotation=motion.cardRotations[i%motion.cardRotations.length]
+        +clamp(normalized,-1,1)*motion.rotationTravel;
+      const centreY=vh*motion.centerHeightFraction
+        +motion.verticalOffsets[i%motion.verticalOffsets.length]
+        -motion.entryLift*(1-entry);
+      const y=centreY-cardHeights[i]/2-motion.focusLift*centreFocus;
       // Cards remain opaque. They leave ONLY via the clipped viewport edges.
       gsap.set(card, {
         left: '0px', top:'0px', x:cardCenter, xPercent:-50, y,
@@ -66,23 +91,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Before the sticky frame reaches top: the title is already completely
     // visible / dark as the process banner scrolls out above it.
-    if (heading) gsap.set(heading, {y:-220*(1-entry),opacity:1,scale:1});
-    if (previousBanner) gsap.set(previousBanner, {y:-17*entry,scale:1-.014*entry,opacity:1});
+    if(heading)gsap.set(heading,{y:-motion.titleEntryOffset*(1-entry),opacity:1,scale:1});
+    if(previousBanner)gsap.set(previousBanner,{y:-motion.bannerEntryOffset*entry,
+      scale:1-motion.bannerEntryScale*entry,opacity:1});
   }
 
   function tick(time) {
     const dt = lastTime ? Math.min(.05,(time-lastTime)/1000) : .016;
     lastTime = time;
     // Time-independent damping prevents jumps during fast wheel input.
-    const amount = 1-Math.exp(-dt/.24);
+    const amount = 1-Math.exp(-dt/motion.smoothSeconds);
     renderedProgress += (targetProgress-renderedProgress)*amount;
     if (Math.abs(targetProgress-renderedProgress) < .00012) renderedProgress = targetProgress;
     draw(renderedProgress);
+    if (mode === 'scroll-stream') section.classList.toggle('is-stream-moving',
+      Math.abs(targetProgress - renderedProgress) > .00012);
     if (renderedProgress !== targetProgress && mode === 'scroll-stream') {
       raf = requestAnimationFrame(tick);
     } else {
       raf = 0;
       lastTime = 0;
+      section.classList.remove('is-stream-moving');
     }
   }
 
@@ -95,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (raf) cancelAnimationFrame(raf);
     raf = 0;lastTime = 0;
     trigger?.kill(); trigger = null;
-    section.classList.remove('sc-testimonials--motion');
+    section.classList.remove('sc-testimonials--motion', 'is-stream-moving');
     if (gsap) {
       gsap.set(cards,{clearProps:'all'});
       if (heading) gsap.set(heading,{clearProps:'all'});
@@ -108,6 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     targetProgress = renderedProgress = 0;
     mode='native';
+    geometry=null;
   }
 
   function setup() {
@@ -116,21 +146,31 @@ document.addEventListener('DOMContentLoaded', () => {
     gsap.registerPlugin(ScrollTrigger);
     mode='scroll-stream';
     section.classList.add('sc-testimonials--motion');
+    measureGeometry();
     trigger=ScrollTrigger.create({
       id:'sc-testimonials-card-stream', trigger:section,
       start:'top 72%',end:'bottom bottom',
       invalidateOnRefresh:true,refreshPriority:-30,
       onUpdate:self=>schedule(self.progress),
-      onRefresh:self=>{targetProgress=self.progress;renderedProgress=self.progress;draw(self.progress);}
+      onRefresh:self=>{
+        measureGeometry();
+        targetProgress=self.progress;
+        renderedProgress=self.progress;
+        draw(self.progress);
+      }
     });
     targetProgress=renderedProgress=trigger.progress;
     draw(renderedProgress);
-    ScrollTrigger.refresh();
+    (window.SyntheCoreMotion?.requestRefresh || (()=>ScrollTrigger.refresh()))();
   }
 
   function reconcile() {
     if (canAnimate() !== (mode==='scroll-stream')) setup();
-    else if (mode==='scroll-stream') trigger?.refresh();
+    else if(mode==='scroll-stream'){
+      // Sizes change without crossing desktop breakpoint (e.g. font reflow).
+      measureGeometry();
+      window.SyntheCoreMotion?.requestRefresh();
+    }
   }
   // Preserve the v58 scroll geometry for wheel/touch. Keyboard focus seeks
   // within that same stream instead of scrolling the clipped sticky scene.
@@ -140,11 +180,12 @@ document.addEventListener('DOMContentLoaded', () => {
       if(!trigger||mode!=='scroll-stream')return;
       scene.scrollLeft=0;
       section.querySelector('.sc-testimonials__cards').scrollLeft=0;
-      const vw=scene.clientWidth||innerWidth,cardWidth=cards[0].offsetWidth;
-      const firstCenter=vw-cardWidth*.03,spacing=vw*.36;
-      const travel=firstCenter+(cards.length-1)*spacing-(cardWidth*.52+vw*.02);
-      const progress=clamp((firstCenter+index*spacing-vw*.5)/travel,0,1);
-      window.scrollTo({top:trigger.start+(trigger.end-trigger.start)*progress,behavior:'instant'});
+      if(!geometry)measureGeometry();
+      const {width,firstCenter,spacing,travel}=geometry;
+      const progress=clamp((firstCenter+index*spacing-width*.5)/travel,0,1);
+      const top=trigger.start+(trigger.end-trigger.start)*progress;
+      if(window.SyntheCoreMotion?.scrollTo)window.SyntheCoreMotion.scrollTo(top,{immediate:true});
+      else window.scrollTo({top,behavior:'instant'});
       ScrollTrigger.update();
       schedule(progress);
     });
@@ -152,7 +193,7 @@ document.addEventListener('DOMContentLoaded', () => {
   desktop.addEventListener('change',reconcile);
   reduced.addEventListener('change',reconcile);
   addEventListener('resize',reconcile,{passive:true});
-  addEventListener('load',()=>{if(mode==='scroll-stream')ScrollTrigger?.refresh();},{once:true});
+  addEventListener('load',()=>{if(mode==='scroll-stream')window.SyntheCoreMotion?.requestRefresh();},{once:true});
   setup();
   window.__synthecoreTestimonialsQA={getState:()=>({
     mode, cards:cards.length,progress:trigger?.progress ?? null,

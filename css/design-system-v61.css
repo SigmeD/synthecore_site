@@ -1,0 +1,117 @@
+/* SyntheCore v61 — DESIGN SYSTEM v0.2 VISUAL CANDIDATE, 2026-10-20.
+   Applies proposed SyntheCore scale, not Roveia's raw Webflow tag defaults.
+   Color, structures, pinned scroll scenes and GSAP transforms remain from v60.
+   Isolated as final stylesheet for easy A/B rollback. */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
+:root {
+ --sc61-font:"Manrope",Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+ --sc61-container:1200px;
+ --sc61-gutter:40px;
+ --sc61-space:96px;
+ --sc61-display:72px;
+ --sc61-section:64px;
+ --sc61-subtitle:40px;
+ --sc61-card-title:32px;
+ --sc61-small-title:24px;
+ --sc61-lead:22px;
+ --sc61-body:18px;
+ --sc61-caption:14px;
+ --sc61-nav:16px;
+ --sc61-tracking-display:-.035em;
+ --sc61-tracking-section:-.03em;
+ --sc61-tracking-subtitle:-.02em;
+}
+body {font-family:var(--sc61-font);font-size:var(--sc61-body);line-height:1.5;}
+/* Typography is assigned by COMPONENT, not via h1...h6 tag selectors. */
+.floating-header {width:min(1080px,calc(100% - 40px));gap:24px}
+.brand-name {font-family:var(--sc61-font);font-weight:700}
+.header-links {font-size:var(--sc61-nav);font-weight:500;gap:24px}
+.nav-cta {font-size:16px;font-weight:500;line-height:1.2}
+.mobile-panel a {font-family:var(--sc61-font)}
+/* Preserve hero's viewport height and all photo/GSAP scroll geometry. */
+#top .hero .hero-head{max-width:1050px}
+#top .hero h1{font-family:var(--sc61-font);font-size:var(--sc61-display);font-weight:400;line-height:1.1;letter-spacing:var(--sc61-tracking-display)}
+#top .hero h1 span {font-weight:400}
+#top .hero .hero-stage {max-width:var(--sc61-container)}
+#top .hero .side-left p,#top .hero .side-right p{font-family:var(--sc61-font);font-size:var(--sc61-lead);font-weight:400;line-height:1.45;letter-spacing:-.018em}
+#top .hero .side-small{font-size:var(--sc61-caption);line-height:1.4}
+#top .hero .main-cta{font-size:16px;font-weight:500;line-height:1.2}
+/* Section widths and rhythm: avoid altering cards' pinned/absolute positioning. */
+#audiences.audience-section{padding-top:136px;padding-bottom:var(--sc61-space)}
+#audiences .audience-container{max-width:var(--sc61-container)}
+#audiences .audience-heading{font-family:var(--sc61-font);font-size:var(--sc61-section);font-weight:400;line-height:1.1;letter-spacing:var(--sc61-tracking-section);margin-bottom:48px}
+#audiences .audience-option .audience-name{font-family:var(--sc61-font);font-size:clamp(40px,3.8vw,60px);font-weight:300;line-height:1.2;letter-spacing:-.035em}
+#audiences .audience-option{min-height:104px}
+#audiences .audience-card h3{font-family:var(--sc61-font);font-weight:500;line-height:1.2;letter-spacing:-.015em}
+#audiences .audience-card p{font-family:var(--sc61-font);font-size:16px;line-height:1.5}
+/* Work cards are also animation frames; only text metrics are standardized. */
+.sc-works .sc-work-content__title{font-family:var(--sc61-font);font-weight:400;letter-spacing:var(--sc61-tracking-subtitle);line-height:1.16}
+.sc-works .sc-work-content__description{font-family:var(--sc61-font);line-height:1.5}
+.sc-services__head{max-width:var(--sc61-container);margin-bottom:48px}
+.sc-services__title{font-family:var(--sc61-font);font-size:var(--sc61-section);font-weight:400;line-height:1.1;letter-spacing:var(--sc61-tracking-section)}
+.sc-service-card h3{font-family:var(--sc61-font);font-size:var(--sc61-card-title);font-weight:500;line-height:1.2;letter-spacing:-.015em}
+.sc-service-card__body p{font-family:var(--sc61-font);line-height:1.5}
+.sc-process__title{font-family:var(--sc61-font);font-size:var(--sc61-section);font-weight:400;line-height:1.1;letter-spacing:var(--sc61-tracking-section)}
+.sc-process__step h3{font-family:var(--sc61-font);font-size:var(--sc61-card-title);font-weight:500;line-height:1.2;letter-spacing:-.015em;margin-bottom:12px}
+.sc-process__step p{font-family:var(--sc61-font);font-size:clamp(16px,1.06vw,18px);line-height:1.5}
+.sc-testimonials__center h2{font-family:var(--sc61-font);font-size:var(--sc61-section);font-weight:400;line-height:1.1;letter-spacing:var(--sc61-tracking-section)}
+.sc-testimonials__eyebrow,.sc-testimonials__disclaimer,.sc-testimonial__topic,.sc-testimonial__copy,.sc-testimonial__author,.sc-testimonial__demo,.sc-testimonial__photo span{font-family:var(--sc61-font)}
+.sc-testimonial__topic{font-weight:500;letter-spacing:-.015em}
+.sc-faq{padding-top:var(--sc61-space);padding-bottom:var(--sc61-space)}
+.sc-faq__inner{max-width:var(--sc61-container);margin-inline:auto;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);column-gap:72px}
+.sc-faq__title{font-family:var(--sc61-font);font-size:var(--sc61-section);font-weight:400;line-height:1.1;letter-spacing:var(--sc61-tracking-section);max-width:490px}
+.sc-faq__question{font-family:var(--sc61-font);font-size:18px;font-weight:500;line-height:1.45;letter-spacing:-.015em}
+.sc-faq__answer-inner p{font-family:var(--sc61-font);font-size:16px;line-height:1.5}
+.contact-footer.sc-footer{padding-left:max(var(--sc61-gutter),calc((100vw - var(--sc61-container))/2));padding-right:max(var(--sc61-gutter),calc((100vw - var(--sc61-container))/2))}
+.contact-footer.sc-footer h2{font-family:var(--sc61-font);font-size:var(--sc61-display);font-weight:400;line-height:1.1;letter-spacing:var(--sc61-tracking-display);max-width:750px;margin-bottom:28px}
+.sc-footer__intro p{font-family:var(--sc61-font);font-size:var(--sc61-body);line-height:1.5;max-width:680px;margin-bottom:32px}
+.contact-footer.sc-footer .sc-footer__cta{font-family:var(--sc61-font);font-size:16px;font-weight:500}
+.contact-footer.sc-footer .sc-footer__nav a{font-family:var(--sc61-font);font-size:16px;font-weight:500}
+/* Responsive scale from the candidate design system. */
+@media(max-width:991px){
+ :root{--sc61-gutter:32px;--sc61-space:72px;--sc61-display:52px;--sc61-section:48px;--sc61-subtitle:34px;--sc61-card-title:28px;--sc61-small-title:22px;--sc61-lead:20px;--sc61-body:17px;}
+ .floating-header{width:calc(100% - 32px)}
+ .mobile-panel a{font-size:18px;font-weight:500}
+ #top .hero h1{font-size:var(--sc61-display);line-height:1.1}
+ #top .hero .side-left p,#top .hero .side-right p{font-size:var(--sc61-lead)}
+ .sc-services__title,.sc-process__title,.sc-faq__title{font-size:var(--sc61-section)}
+ #audiences .audience-heading{font-size:var(--sc61-section)}
+ .sc-testimonials__center h2,.sc-testimonials.sc-testimonials--motion .sc-testimonials__center h2{font-size:var(--sc61-section)}
+ .contact-footer.sc-footer h2{font-size:var(--sc61-display)}
+ .sc-process__step h3,.sc-service-card h3{font-size:var(--sc61-card-title)}
+ .sc-faq__inner{grid-template-columns:1fr;gap:40px}
+ .sc-faq,.contact-footer.sc-footer{padding-inline:var(--sc61-gutter)}
+ #audiences.audience-section{padding-top:104px}
+}
+@media(max-width:767px){
+ :root{--sc61-gutter:20px;--sc61-space:56px;--sc61-display:36px;--sc61-section:34px;--sc61-subtitle:28px;--sc61-card-title:24px;--sc61-small-title:20px;--sc61-lead:18px;--sc61-body:16px}
+ #top .hero h1{font-size:var(--sc61-display);line-height:1.1;letter-spacing:-.035em}
+ #top .hero .side-left p,#top .hero .side-right p{font-size:16px;line-height:1.35}
+ #top .hero .side-small{font-size:11px}
+ #top .hero .main-cta{font-size:12px}
+ #audiences.audience-section{padding:96px var(--sc61-gutter) var(--sc61-space)}
+ .sc-services__scene{padding-top:112px}
+ #audiences .audience-heading{font-size:var(--sc61-section);margin-bottom:32px}
+ #audiences .audience-option{min-height:82px}
+ #audiences .audience-option .audience-name{font-size:clamp(30px,8.5vw,40px);line-height:1.14}
+ .sc-services__title{font-size:var(--sc61-section)}
+ .sc-services__head{width:calc(100% - 2 * var(--sc61-gutter));margin-bottom:32px}
+ .sc-service-card h3{font-size:var(--sc61-card-title)}
+ .sc-process__title{font-size:var(--sc61-section)}
+ .sc-process__step h3{font-size:var(--sc61-card-title)}
+ .sc-testimonials__center h2{font-size:var(--sc61-section)}
+ .sc-faq{padding:100px var(--sc61-gutter) var(--sc61-space)}
+ .sc-testimonials + .sc-faq{padding-top:100px}
+ .sc-faq__title{font-size:var(--sc61-section);margin-bottom:0}
+ .sc-faq__question{font-size:16px}
+ .contact-footer.sc-footer{padding-inline:var(--sc61-gutter)}
+ .contact-footer.sc-footer h2{font-size:var(--sc61-display);margin-bottom:24px}
+ .sc-footer__intro p{font-size:var(--sc61-body)}
+}
+@media(max-width:359px){:root{--sc61-gutter:16px}}
+@media(min-width:1200px) and (min-height:800px){
+ /* The v58 testimonial scene remains pinned at exactly its previous geometry. */
+ .sc-testimonials.sc-testimonials--motion .sc-testimonials__center h2{font-size:var(--sc61-section);line-height:1.1}
+ /* v59 handoff applies to FAQ; don't overrule its scroll offset animation. */
+ .sc-testimonials + .sc-faq{padding-top:clamp(116px,10svh,146px)}
+}

@@ -1,0 +1,221 @@
+/* SyntheCore / Works v21. One card component, single source of truth.
+   Reference: Roveia case-studies HTML + CSS supplied 2026-10-20.
+   Desktop geometry approved: approx 412 x 451px, radius 24px.
+   The image and content are SIBLINGS; no image/text overlaps, no per-card hardcoded heights.
+*/
+body.works-catalog {
+  --cards-max-width: var(--sc-width-cards-max);
+  --cards-gap: var(--sc-gap-card);
+  --card-radius: var(--sc-radius-card);
+  --card-font: var(--sc-font-ui);
+  --card-media-ratio: 1.92;
+  --card-media-fade-height: var(--sc-card-media-fade); /* v26: mask bright edge without overlapping content */
+  --card-padding-x: var(--sc-card-padding-inline);
+  --card-padding-top: 12px;
+  --card-padding-bottom: 22px;
+  --card-heading-size: 24px;
+  --card-description-size: 16px;
+  --card-cta-size: 16px;
+  --card-tag-size: 12px;
+  --card-hover-lift: var(--sc-motion-card-y);
+  --card-shadow-duration: var(--sc-motion-card-shadow);  /* gentle gradual shadow lighting */
+  --card-lift-duration: var(--sc-motion-card-lift);
+  --card-shadow-ease: cubic-bezier(.22,1,.36,1);
+  --card-accent: var(--sc-color-accent);         /* SyntheCore approved orange */
+}
+body.works-catalog .catalog-container {
+  width: min(100%,var(--cards-max-width));
+  margin-inline:auto;
+}
+body.works-catalog .case-grid {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:var(--cards-gap);
+  align-items:stretch;
+}
+body.works-catalog .case-card {
+  display:flex;
+  flex-direction:column;
+  min-width:0;
+  aspect-ratio:411 / 450;
+  overflow:hidden;
+  border:1px solid rgba(23,30,35,.065);
+  border-radius:var(--card-radius);
+  background:#fff;
+  box-shadow:0 2px 6px -3px rgba(0,0,0,.10);
+  transition:
+    transform var(--card-lift-duration) var(--card-shadow-ease),
+    box-shadow var(--card-shadow-duration) var(--card-shadow-ease);
+}
+body.works-catalog .case-card__open {
+  display:flex;
+  flex:1 1 auto;
+  flex-direction:column;
+  min-width:0;
+  width:100%;
+  height:100%;
+  padding:0;
+  border:0;
+  background:#fff;
+  color:var(--sc-color-ink);
+  text-align:left;
+  font:inherit;
+  font-family:var(--card-font);
+  cursor:pointer;
+  -webkit-tap-highlight-color:transparent;
+}
+body.works-catalog .case-card__image {
+  position:relative;
+  flex:0 0 auto;
+  width:100%;
+  aspect-ratio:var(--card-media-ratio);
+  overflow:hidden;
+  background:#eef2f5;
+}
+body.works-catalog .case-card__image img {
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  /* Deliberately no hover zoom: keep source photo and fade stationary. */
+}
+/* A short, bottom-anchored fade. The text begins AFTER the image, in normal flow. */
+body.works-catalog .case-card__image::after {
+  content:"";
+  position:absolute;
+  z-index:1;
+  inset:auto 0 -1px;
+  height:var(--card-media-fade-height);
+  background:linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,.14) 22%, rgba(255,255,255,.5) 50%, rgba(255,255,255,.89) 79%, #fff 100%);
+  pointer-events:none;
+}
+body.works-catalog .case-card__index {
+  position:absolute;
+  z-index:2;
+  inset:14px auto auto 14px;
+  border-radius:100px;
+  background:rgba(255,255,255,.9);
+  color:#66747c;
+  padding:6px 9px;
+  font-size:11px;
+  font-weight:550;
+  line-height:1.25;
+  letter-spacing:.065em;
+}
+body.works-catalog .case-card__body {
+  display:flex;
+  flex:1 1 auto;
+  flex-direction:column;
+  min-height:0;
+  min-width:0;
+  margin:0;
+  padding:var(--card-padding-top) var(--card-padding-x) var(--card-padding-bottom);
+  background:#fff;
+}
+body.works-catalog .case-card__body h2 {
+  margin:0 0 8px;
+  font-size:var(--card-heading-size);
+  line-height:1.2;
+  font-weight:400;
+  letter-spacing:-.035em;
+  color:#171e23;
+  overflow-wrap:anywhere;
+}
+body.works-catalog .case-card__tags {
+  display:flex;
+  flex-wrap:wrap;
+  align-items:flex-start;
+  gap:5px;
+  margin:0 0 10px;
+}
+body.works-catalog .case-card .tag {
+  display:inline-flex;
+  align-items:center;
+  max-width:100%;
+  min-height:25px;
+  padding:5px 8px;
+  border-radius:6px;
+  font-size:var(--card-tag-size);
+  line-height:1.28;
+  font-weight:500;
+  overflow-wrap:anywhere;
+}
+body.works-catalog .tag--blue {color:var(--sc-color-tag-blue-text);background:var(--sc-color-tag-blue-bg);}
+body.works-catalog .tag--mint {color:var(--sc-color-tag-mint-text);background:var(--sc-color-tag-mint-bg);}
+body.works-catalog .case-card__body p {
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+  margin:0 0 12px;
+  color:var(--sc-color-copy-muted);
+  font-size:var(--card-description-size);
+  font-weight:400;
+  line-height:1.48;
+  letter-spacing:-.012em;
+}
+body.works-catalog .case-card__more {
+  display:inline-flex;
+  flex:0 0 auto;
+  align-items:center;
+  gap:10px;
+  margin-top:auto;
+  color:#171e23;
+  font-size:var(--card-cta-size);
+  font-weight:500;
+  line-height:1.35;
+  transition:color 240ms ease;
+}
+body.works-catalog .case-card__more .arrow {
+  flex:none;
+  width:17px;
+  height:17px;
+  /* Reference: inline Read More stays fixed; moving tooltip follows pointer. */
+  transition:color 240ms ease;
+}
+@media (hover:hover) and (pointer:fine) {
+  body.works-catalog .case-card:hover,
+  body.works-catalog .case-card:focus-within {
+    transform:translateY(var(--card-hover-lift));
+    box-shadow:
+      0 20px 48px -22px rgba(23,30,35,.19),
+      0 5px 16px -10px rgba(23,30,35,.11);
+  }
+  body.works-catalog .case-card:hover .case-card__more {color:var(--card-accent);}
+}
+/* Keyboard focus is indicated on the inline action, without requiring a mouse tooltip. */
+body.works-catalog .case-card:focus-within .case-card__more {color:var(--card-accent);}
+body.works-catalog .case-card__open:focus-visible {
+  outline:3px solid #e44d1f;
+  outline-offset:-4px;
+  border-radius:var(--card-radius);
+}
+@media (max-width:1180px) {
+  body.works-catalog .case-grid {grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+@media (max-width:680px) {
+  body.works-catalog {
+    --card-radius:20px;
+    --cards-gap:14px;
+    --card-padding-x:18px;
+    --card-heading-size:22px;
+    --card-description-size:14px;
+    --card-cta-size:14px;
+    --card-tag-size:11px;
+  }
+  body.works-catalog .case-grid {grid-template-columns:minmax(0,1fr);}
+  body.works-catalog .case-card__image {aspect-ratio:1.95;}
+}
+@media (max-width:360px) {
+  body.works-catalog .case-card {aspect-ratio:auto;}
+  body.works-catalog .case-card__open {height:auto;}
+  body.works-catalog .case-card__body {min-height:225px;}
+}
+@media (prefers-reduced-motion:reduce) {
+  body.works-catalog .case-card,
+  body.works-catalog .case-card__more .arrow {transition:none!important;transform:none!important;}
+}
+
+/* v27: inline arrow remains stationary on hover and focus. */
+body.works-catalog .case-card .case-card__more .arrow{transform:none;}

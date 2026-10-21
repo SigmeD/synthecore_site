@@ -1,0 +1,38 @@
+/* SyntheCore semantic design tokens v0.1. Scope: shared shell and Works; homepage scene typography is preserved. */
+:root {
+  --sc-color-ink: #171e23;
+  --sc-color-accent: #e44d1f;
+  --sc-color-accent-deep: #c63d14;
+  --sc-color-surface: #ffffff;
+  --sc-color-copy-muted: #75828d;
+  --sc-color-tag-blue-bg: #e3efff;
+  --sc-color-tag-blue-text: #347ad0;
+  --sc-color-tag-mint-bg: #e4f5ee;
+  --sc-color-tag-mint-text: #329675;
+  --sc-font-ui: "Manrope", "Inter", system-ui, sans-serif;
+  --sc-font-size-display: clamp(35px, 4.86111vw, 70px);
+  --sc-font-size-body: 16px;
+  --sc-font-size-card-title: 24px;
+  --sc-font-size-nav: 16px;
+  --sc-font-size-tag: 14px;
+  --sc-font-weight-display: 400;
+  --sc-font-weight-copy: 500;
+  --sc-line-display: 1.1;
+  --sc-line-copy: 1.5;
+  --sc-radius-card: 24px;
+  --sc-radius-surface: clamp(20px, 1.5vw, 30px);
+  --sc-surface-outer-gap: clamp(12px, 1vw, 18px);
+  --sc-width-cards-max: 1268px;
+  --sc-gap-card: 16px;
+  --sc-card-padding-inline: 24px;
+  --sc-card-media-fade: 72px;
+  --sc-height-header-desktop: 56px;
+  --sc-height-header-cta: 40px;
+  --sc-height-primary-cta: 52px;
+  --sc-icon-arrow-size: 20px;
+  --sc-motion-card-shadow: 820ms;
+  --sc-motion-card-lift: 640ms;
+  --sc-motion-card-y: -3px;
+}
+/* Exceptions: homepage v60 hero typography/GSAP remain as originally authored;
+   footer wave paint #218AFF and its reveal logic remain approved v12. */

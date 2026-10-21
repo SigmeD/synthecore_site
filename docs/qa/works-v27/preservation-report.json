@@ -1,0 +1,115 @@
+{
+  "baseline": "67f75cda3a7398be7c3d7955cc2706db71f0ae6a",
+  "files": [
+    {
+      "file": "js/hero-scroll.js",
+      "sha256": "79257885b21780d1e5ec83e3827c99e643ddc993603fe1d68428ab0f900a4681",
+      "unchanged": true
+    },
+    {
+      "file": "js/hero-geometry.js",
+      "sha256": "34ed0a12ab2d44d1e4896a51dc9b4c0b6a145d90caabaf3cff3283b9464d4815",
+      "unchanged": true
+    },
+    {
+      "file": "js/works.js",
+      "sha256": "a76dde746568e3163b1ef6edf2fa248c4c44e6c2a36954f97c9ebe4ea90c41c5",
+      "unchanged": true
+    },
+    {
+      "file": "js/services.js",
+      "sha256": "3b80ad29297458e13cf981aa11b31ce7d209d11e9b390ba34eee178120bb9da2",
+      "unchanged": true
+    },
+    {
+      "file": "js/process.js",
+      "sha256": "42fc9ad7fb434c54488265d08116cff575ea317840d8724045e976ea03a31ae3",
+      "unchanged": true
+    },
+    {
+      "file": "js/testimonials.js",
+      "sha256": "7fa4717d98a942556680ec620e7a99d0fc5de819214ff5587a4fc30110894f18",
+      "unchanged": true
+    },
+    {
+      "file": "css/main.css",
+      "sha256": "5890ea24a0b8a7a5acf36f65bb4eb60472533c6602531fefa8ebefd8d07c25a9",
+      "unchanged": true
+    },
+    {
+      "file": "css/works.css",
+      "sha256": "21914359def84700c9b0cc77ebd00d965c224360423b18c75843b23b0f88e72e",
+      "unchanged": true
+    },
+    {
+      "file": "css/services.css",
+      "sha256": "740fa4adc9b7de114c2f289c25f99d292009a0beece316a7efc8c2e02ea17cc1",
+      "unchanged": true
+    },
+    {
+      "file": "css/process.css",
+      "sha256": "7ef60df2638eab26a188d06bea38766b38a3b08adc97da4fedd1dcf7f9e2f847",
+      "unchanged": true
+    },
+    {
+      "file": "css/testimonials.css",
+      "sha256": "81ba2c9e5c0005bcba11b913aac705c40648b6ab82f9e816e88905c16a850ba4",
+      "unchanged": true
+    }
+  ],
+  "sections": [
+    {
+      "id": "top",
+      "sha256": "48ea55ff70790b6bbe3b1424dc03da98f40180b29cdd5307ce1c1085a38090e0",
+      "unchanged": true
+    },
+    {
+      "id": "audiences",
+      "sha256": "38be3e06ac2c02cdf0d1a3905e8049b02e46f3a732ec89cdbfae3c74f3a8ebbc",
+      "unchanged": true
+    },
+    {
+      "id": "works",
+      "sha256": "c6fde926000e016050443ba8c8f59b381081e42c24a6bbb82c1ecdfd48f60bcc",
+      "unchanged": true
+    },
+    {
+      "id": "services",
+      "sha256": "782baee6dcf2f59997fbe0d2baa2d717329b1c5f06da0b43735d799293b27585",
+      "unchanged": true
+    },
+    {
+      "id": "process",
+      "sha256": "2e49729527a5fa1b4130dc7f5a137e465e1fd58615548990f5d679238df7dcdb",
+      "unchanged": true
+    },
+    {
+      "id": "testimonials",
+      "sha256": "f5817de5d147800cf1f9887cdf465534ddcbd327a7906464c8984187dbf845a1",
+      "unchanged": true
+    },
+    {
+      "id": "faq",
+      "sha256": "3a541f39cc2b22d0b636c0bcd19cd3104631886d7d606f2b3c254aaafb41e6fd",
+      "unchanged": true
+    }
+  ],
+  "handoff": [
+    {
+      "file": "01_AGENT_TASK.md",
+      "identical": true
+    },
+    {
+      "file": "02_DESIGN_SYSTEM_V0_1.md",
+      "identical": true
+    },
+    {
+      "file": "03_COMPONENT_CONTRACTS.md",
+      "identical": true
+    },
+    {
+      "file": "05_QA_ACCEPTANCE.md",
+      "identical": true
+    }
+  ]
+}
