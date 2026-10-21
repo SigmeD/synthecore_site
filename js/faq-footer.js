@@ -14,7 +14,10 @@
     let refreshTimer;
     const observer=new ResizeObserver(()=>{
       clearTimeout(refreshTimer);
-      refreshTimer=setTimeout(()=>window.ScrollTrigger?.refresh(true),120);
+      refreshTimer=setTimeout(()=>{
+        if(window.SyntheCoreMotion?.requestRefresh)window.SyntheCoreMotion.requestRefresh();
+        else window.ScrollTrigger?.refresh(true);
+      },120);
     });
     observer.observe(faq);
   }

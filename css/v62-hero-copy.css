@@ -1,0 +1,19 @@
+/* SyntheCore v62 — approved hero offer texts only.
+   No sticky, pin, Lenis, transform, viewport geometry or motion changes. */
+#top .hero .side-right .hero-offer-title {
+  font-family: "Manrope", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -.02em;
+}
+#top .hero .side-right .hero-offer-copy {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+@media(max-width:767px) {
+  #top .hero .side-right .hero-offer-title {font-size:16px;line-height:1.4}
+  #top .hero .side-right .hero-offer-copy {font-size:16px;line-height:1.4}
+}
