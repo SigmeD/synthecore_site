@@ -9,6 +9,8 @@
 - [x] Record branch cleanup, detached worktree preservation, localhost/launcher defaults, historical strict exceptions and browser-script prerequisites.
 - [x] Mark old handoffs/master context as historical without rewriting their original evidence.
 - [x] Check Markdown links against Git files, inspect documentation-only diff, verify 17 motion hashes and Git source contract, and request read-only review.
-- [ ] Commit and push documentation branch and open a PR. Do not merge or publish without a new instruction.
+- [x] Commit and push documentation branch and open a PR. Do not merge or publish without a new instruction.
+
+Delivery: [PR #7](https://github.com/SigmeD/synthecore_site/pull/7), base main, head docs/v62-post-merge-state. Main remains at 3256e53; the documentation PR is open and unmerged. No deployment was performed.
 
 Verification on the documentation checkout: 75/75 existing static tests, 17/17 raw motion hashes, HEAD source contract 25/25 v27 and all seven v62 sections, build --check, current offline checks and local Markdown links passed. Independent read-only review found no issues. Only Markdown paths are changed; original manifests, QA evidence and runtime files are preserved. Browser reruns are unnecessary for documentation-only changes; recorded browser results are labelled historical and not reported as a new run.
