@@ -1,0 +1,57 @@
+{
+  "pass": true,
+  "viewports": [
+    {
+      "width": 320,
+      "pass": true,
+      "desktopCard": null
+    },
+    {
+      "width": 390,
+      "pass": true,
+      "desktopCard": null
+    },
+    {
+      "width": 768,
+      "pass": true,
+      "desktopCard": null
+    },
+    {
+      "width": 1440,
+      "pass": true,
+      "desktopCard": {
+        "width": 411.984375,
+        "height": 451.09375
+      }
+    },
+    {
+      "width": 1920,
+      "pass": true,
+      "desktopCard": {
+        "width": 411.984375,
+        "height": 451.09375
+      }
+    }
+  ],
+  "modalChecks": 12,
+  "pageErrors": [],
+  "date": "2026-10-21T17:08:27.434Z",
+  "baseCommit": "b3db18ae547f119ba4ef1fad7a8b45461a3ecfca",
+  "task": "SyntheCore_Cards_Naming_Agent_Task_v27_REVISED_2026-10-21.md",
+  "url": "http://127.0.0.1:4176/raboty/",
+  "catalogSha256": "8897ac109d60d4a4d6dc0d3109d36ba73be1532d0093031efd01bc67ce94b969",
+  "matchesOwnerApprovedPreview": true,
+  "staticTests": {
+    "passed": 76,
+    "total": 76
+  },
+  "rawMotionHashesMatched": 17,
+  "sourceManifestsUnchanged": true,
+  "limitations": [
+    "Automated Chromium; physical-device smoothness and other engines not asserted."
+  ],
+  "screenshots": [
+    "catalog-1440.png",
+    "catalog-390.png"
+  ]
+}

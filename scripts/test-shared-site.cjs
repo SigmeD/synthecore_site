@@ -2,6 +2,7 @@ const {test}=require('node:test');
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const path=require('node:path');
+const {restoreV27CatalogCopy}=require('./lib/approved-catalog-naming.cjs');
 const root=path.resolve(__dirname,'..');
 const read=file=>fs.readFileSync(path.join(root,file),'utf8').replace(/\r\n/g,'\n');
 
@@ -35,11 +36,11 @@ test('route-aware shared navigation resolves every local anchor',()=>{
  assert.equal((read('raboty/index.html').match(/aria-current="page"/g)||[]).length,2);
 });
 
-test('catalog preserves six ordered project descriptions and approved assets',()=>{
+test('catalog permits only approved naming while preserving six projects, descriptions and assets',()=>{
  assert.ok(fs.existsSync(path.join(root,'raboty/index.html')),'Works route must exist');
  const {parseHTML,hasClass,inside,textContent}=require('./lib/static-html.cjs');
  const approved=require('./lib/works-copy.cjs'),pins=require('./lib/works-assets.cjs');
- const crypto=require('node:crypto'),{nodes}=parseHTML(read('raboty/index.html'));
+ const crypto=require('node:crypto'),{nodes}=parseHTML(restoreV27CatalogCopy('raboty/index.html',read('raboty/index.html')));
  const buttons=nodes.filter(n=>hasClass(n,'case-card__open'));
  assert.deepEqual(buttons.map(n=>n.attrs['data-project']),Object.keys(approved));
  for(const button of buttons) {
@@ -52,6 +53,36 @@ test('catalog preserves six ordered project descriptions and approved assets',()
   assert.equal(image.attrs.width,String(pins[id].width));assert.equal(image.attrs.height,String(pins[id].height));
  }
  assert.ok(!/cursor-follow|cursor-tooltip|case-cursor/.test(read('raboty/index.html')));
+});
+
+test('catalog copy exception rejects unapproved copy and structural or shell changes',()=>{
+ const crypto=require('node:crypto');
+ const manifest=JSON.parse(read('docs/V62_ON_V27_SOURCES.json'));
+ const accepted=(file,html)=>{
+  try {return crypto.createHash('sha256').update(restoreV27CatalogCopy(file,html)).digest('hex')===manifest.v27[file];}
+  catch {return false;}
+ };
+ for(const file of ['templates/pages/works.html','raboty/index.html']) {
+  const html=read(file);
+  assert.ok(accepted(file,html));
+  const mutations=[
+   ['<h2>Кабинет клиента</h2>','<h2>Кабинет покупателя</h2>'],
+   ['aria-label="Открыть описание проекта: Кабинет клиента"','aria-label="Открыть описание проекта: B2B-кабинет для клиентов"'],
+   ['alt="Иллюстрация проекта Кабинет клиента"','alt="Проект"'],
+   ['<span class="tag tag--mint">Финансовая аналитика</span>','<span class="tag tag--mint">Финансы и аналитика</span>'],
+   ['<p>Интерактивный мобильный прототип','<p>Действующее приложение'],
+   ['class="case-grid"','class="changed-grid"'],
+   ['/assets/works/b2b-feature-wide.png','/assets/works/crm-feature-wide.png'],
+   ['/js/footer-waves.js','/js/another-footer.js'],
+   ['{{header}}','{{changedHeader}}'],
+   ['id="floatingHeader"','id="changedHeader"'],
+   ['id="contact"','id="changedFooter"'],
+  ];
+  for(const [before,after] of mutations) {
+   if(!html.includes(before))continue;
+   assert.equal(accepted(file,html.replace(before,after)),false,`${file} must reject ${after}`);
+  }
+ }
 });
 
 test('single footer and menu owners retain local motion contracts',()=>{
@@ -89,7 +120,7 @@ test('combined build preserves v62 motion bytes/content and the owner-selected v
  }
  for(const [file,expected] of Object.entries(sources.v27)) {
   const data=fs.readFileSync(path.join(root,file));
-  assert.equal(hash(file.endsWith('.ttf')?data:Buffer.from(data.toString('utf8').replace(/\r\n/g,'\n'))),expected,`v27 shell/catalog source: ${file}`);
+  assert.equal(hash(file.endsWith('.ttf')?data:Buffer.from(restoreV27CatalogCopy(file,data.toString('utf8').replace(/\r\n/g,'\n')))),expected,`v27 shell/catalog source (approved copy only): ${file}`);
  }
  const html=read('index.html');
  const content=html.slice(html.indexOf('<main>')+6,html.lastIndexOf('<section aria-labelledby="contact-title"'));
