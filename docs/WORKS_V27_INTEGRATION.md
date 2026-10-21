@@ -1,5 +1,7 @@
 # Интеграция Works v27
 
+> **Исторический протокол подготовки v27.** PR #4 вошёл в main вместе с v62 через PR #6, merge `3256e53` от 21.10.2026. Ветка `feat/works-shared-shell-v27` удалена после merge; локальный reference-worktree сохранён detached на `0849711`. Старые статусы и адреса ниже относятся к приёмке v27. Текущие [релиз](RELEASE_V62.md), [архитектура](SITE_ARCHITECTURE.md) и [QA](qa/v62-on-v27/README.md) описывают итоговую композицию, где главная снова использует защищённый menu owner `main.js`. Публикация не выполнялась.
+
 База: актуальный `origin/main` `67f75cda3a7398be7c3d7955cc2706db71f0ae6a`, ветка `feat/works-shared-shell-v27`. Архив `SyntheCore_FULL_v27_AGENT_GIT_DESIGN_SYSTEM_2026-10-20.zip` изучен начиная с `00_READ_AGENT_FIRST.md` и `00_AGENT_HANDOFF/`. Четыре отдельно приложенных Markdown совпадают с handoff после нормализации переносов строк.
 
 Передача для ревью: [PR #4](https://github.com/SigmeD/synthecore_site/pull/4). Feature-ветка отправлена в origin; main остаётся на исходном коммите. Merge и deploy не выполнялись.

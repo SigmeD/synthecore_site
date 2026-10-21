@@ -1,8 +1,29 @@
 # Текущие и исторические проверки
 
-Этот реестр описывает проверки ветки `feat/works-shared-shell-v27`, [PR #4](https://github.com/SigmeD/synthecore_site/pull/4), и отделяет их от исторических сценариев. Текущая приёмка — [QA v27](../docs/qa/works-v27/README.md); прежняя — [QA v60](../docs/QA_V60.md). Старые PASS, viewport, DOM-ожидания и локальные файлы `output/` не заменяют новую проверку.
+Текущий main после [PR #6](https://github.com/SigmeD/synthecore_site/pull/6), merge `3256e53`, содержит v62 с оболочкой и каталогом v27. Действующая приёмка и prerequisites браузерных сценариев — [QA v62](../docs/qa/v62-on-v27/README.md). Старые PASS, viewport, DOM-ожидания и локальные файлы `output/` не заменяют новую проверку.
 
-## Общая оболочка и каталог v27
+## Текущие проверки v62 + v27
+
+```powershell
+node scripts/verify-v62-import.cjs
+node docs/qa/v62-on-v27/verify-git.cjs HEAD
+node scripts/build-site.cjs --check
+node scripts/check-project.cjs
+node scripts/verify-works-static.cjs
+node scripts/verify-services-static.cjs
+node scripts/check-hero-geometry.cjs
+node scripts/verify-sticky-handoff-v61.cjs
+node --test scripts/test-static-checks.cjs scripts/test-shared-site.cjs
+git ls-files --cached --others --exclude-standard | node scripts/check-doc-links.cjs
+```
+
+Статические тесты — 75, проверка источников — 17 raw motion / 25 v27 / семь секций. `verify-git.cjs HEAD` проверяет коммит, без аргумента — индекс; изменения на диске отдельно проверяет `verify-v62-import.cjs`. Полный архивный `--strict` не является контрактом принятой композиции: 423/437 — исторический снимок.
+
+Браузерные сценарии принятой композиции находятся в `docs/qa/v62-on-v27/`: `catalog.cjs` принимает `SYNTHECORE_URL`, `motion.cjs` и `shell.cjs` используют фиксированные 4180/4181/4182 и требуют эталонов. Результаты новых прогонов пишутся в `output/v62-on-v27/`. Команды запуска и ограничения приведены в [QA](../docs/qa/v62-on-v27/README.md). Основной launcher по умолчанию — 4173; последний локальный просмотр — 4176.
+
+**Все разделы ниже исторические.** Они описывают прежнюю приёмку v27/v60 и старые ожидания pin/menu/Lenis, поэтому их нельзя запускать как обязательный acceptance suite текущей главной. [QA v27](../docs/qa/works-v27/README.md), [QA v60](../docs/QA_V60.md) сохраняются как доказательства прежних состояний. Старые browser scripts могут перезаписывать эти доказательства — используйте их только для явно поставленной исторической диагностики.
+
+## История: общая оболочка и каталог v27
 
 ```powershell
 node scripts/build-site.cjs --check
@@ -23,7 +44,7 @@ node scripts/verify-works-v27-motion.cjs
 
 Приёмка 20 октября: static 74/74, общий browser 295/295, motion 6/6. Это сохранённые результаты, не автоматическое подтверждение последующих правок. При новом запуске браузерные сценарии перезаписывают evidence; проверяйте изменения до коммита.
 
-## Текущие проверки главной v60 в интеграционной ветке
+## История: проверки главной v60 в интеграционной ветке
 
 ```powershell
 node scripts/check-project.cjs
