@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-21T09:48:44.184Z",
+  "ownerAuthorizedMerge": true,
+  "publicationAuthorized": false,
+  "baseMain": "67f75cda3a7398be7c3d7955cc2706db71f0ae6a",
+  "featureBeforeDocumentation": "3ca6949f75850e5099b83fb2c4a924fa893a420f",
+  "runtimeCommit": "09a6da3",
+  "staticTests": {
+    "passed": 75,
+    "total": 75
+  },
+  "protectedMotionFiles": 17,
+  "v27ContractFiles": 25,
+  "v62ContentSections": 7,
+  "browsers": [
+    {
+      "viewport": "1440x900",
+      "passed": 80,
+      "total": 80,
+      "consoleErrors": 0,
+      "runDate": "2026-10-21T09:44:28.378Z"
+    },
+    {
+      "viewport": "390x844",
+      "passed": 59,
+      "total": 59,
+      "consoleErrors": 0,
+      "runDate": "2026-10-21T09:44:28.382Z"
+    }
+  ],
+  "autopublishChecks": {
+    "githubPages": false,
+    "githubWorkflows": 0,
+    "githubWebhooks": 0,
+    "githubDeployments": 0,
+    "linkedVercelProjects": 0
+  },
+  "review": "Independent read-only review found no blockers",
+  "manualDeviceSmoothness": "Not asserted by automated QA",
+  "fullArchiveStrict": "Expected exceptions for owner-selected v27 shell; not claimed passing"
+}

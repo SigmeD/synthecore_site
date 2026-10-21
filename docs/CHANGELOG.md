@@ -1,5 +1,9 @@
 # История изменений
 
+## Передача v62 с оболочкой v27 в main, 21 октября 2026
+
+Владелец разрешил слияние [PR #6](https://github.com/SigmeD/synthecore_site/pull/6) в `main` одним merge commit, включая историю v27. Главная сохраняет все 17 motion-файлов v62 и семь исходных содержательных секций; Header/Footer, волны и каталог сохранены из v27. Для передачи обновлены только документы, runtime не менялся. [Протокол передачи](RELEASE_V62.md), [полная интеграция](V62_ON_V27_INTEGRATION.md). Публикация остаётся отдельным действием.
+
 ## Каталог v27, общая оболочка и дизайн-система v0.1, 20 октября 2026
 
 Подготовлена ветка `feat/works-shared-shell-v27` от актуального `main` `67f75cd`, открыт [PR #4](https://github.com/SigmeD/synthecore_site/pull/4). Merge и deploy не выполнялись. [Интеграция](WORKS_V27_INTEGRATION.md), [перечень файлов](WORKS_V27_FILES.md), [QA](qa/works-v27/README.md).

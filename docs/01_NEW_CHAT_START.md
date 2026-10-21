@@ -6,6 +6,12 @@
 
 ## Текущее состояние
 
+- 21.10.2026 владелец разрешил слияние [PR #6](https://github.com/SigmeD/synthecore_site/pull/6) в `main` одним merge commit: главная v62 + Header/Footer и каталог v27. Начинать с [передачи в main](RELEASE_V62.md), затем читать [контракт и QA интеграции](V62_ON_V27_INTEGRATION.md).
+- Исходная feature-ветка — `chore/import-approved-v62-on-v27`; после завершения merge основная папка синхронизируется с `main`. Факт merge проверять по GitHub и Git refs. Локальный адрес текущей сборки — `http://127.0.0.1:4176/`, каталог — `/raboty/`.
+- 17 motion-файлов v62 и общий Header/Footer заморожены. Публикация не разрешена. Видео и результаты браузерной QA v62 включены в `docs/qa/v62-on-v27`; свежие pre-merge логи — в локальном `output/merge-v62`.
+
+## История основы до v62
+
 - Ветка `main` содержит полный сайт v60. [PR #3](https://github.com/SigmeD/synthecore_site/pull/3) объединён 16 октября 2026 по разрешению владельца, merge-коммит `19efcea`.
 - Новая интеграция находится в `feat/works-shared-shell-v27`, [PR #4](https://github.com/SigmeD/synthecore_site/pull/4) открыт в `main`. В ней главная v60 получила общий Header v24 и Footer v12, добавлены `/raboty/` v27 и дизайн-система v0.1. База `67f75cd`; более свежие исправления Git сохранены. PR #4 не объединён.
 - Основная папка `D:\Projects\synthecore` остаётся на `main`. Копия с PR #4 — `D:\Projects\synthecore\output\worktrees\works-v27`; в сеансе 20 октября она обслуживается на [4183](http://127.0.0.1:4183/) и [4183/raboty/](http://127.0.0.1:4183/raboty/). В новом сеансе проверьте доступность сервера. Порт launcher по умолчанию — 4173; 4174 относится к прежней интеграционной копии v60.
