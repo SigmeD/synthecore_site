@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   let chosen=-1;
   let temporary=-1;
   const setActive=(index)=>{
-    rail.style.setProperty('--sc-process-progress',index<0?'0':String(index/2));
+    rail.style.setProperty('--sc-process-progress',index<0?'0':String(index/Math.max(1,steps.length-1)));
     steps.forEach((step,i)=>{
       step.classList.toggle('is-active',index===i);
       step.classList.toggle('is-passed',index>i);

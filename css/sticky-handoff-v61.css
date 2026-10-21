@@ -1,0 +1,32 @@
+/* v61 experimental handoff: three independent CSS sticky stages.
+   GSAP draws their timelines but does NOT insert/remove pin-spacers.
+   Disabled automatically for reduced-motion and compact Hero/Services branches. */
+#top.sc-sticky-pin-container {
+  height:calc(var(--sc-hero-stage-height, 100svh) + 110svh);
+  min-height:0;
+}
+#imageScrollSticky.sc-sticky-pin {
+  position:sticky;top:0;z-index:1;
+}
+.sc-works.sc-works--timeline {
+  height:calc(var(--works-height) + 2 * var(--works-padding) + var(--sc-works-scroll-length,0px));
+}
+.sc-works.sc-works--timeline .sc-works-stack {
+  position:sticky;top:0;
+  height:calc(var(--works-height) + 2 * var(--works-padding));
+}
+.sc-services.sc-services--pinned {
+  height:calc(100svh + var(--sc-services-scroll-length,0px));
+}
+.sc-services.sc-services--pinned .sc-services__scene {
+  position:sticky;top:0;min-height:100svh;height:100svh;
+}
+@media (max-width:850px) {
+  #top.sc-sticky-pin-container{height:auto}
+  #imageScrollSticky.sc-sticky-pin{position:relative}
+}
+@media (prefers-reduced-motion:reduce) {
+  .sc-works.sc-works--timeline .sc-works-stack,
+  .sc-services.sc-services--pinned .sc-services__scene,
+  #imageScrollSticky.sc-sticky-pin {position:relative!important}
+}

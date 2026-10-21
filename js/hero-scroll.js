@@ -16,7 +16,22 @@ document.addEventListener('DOMContentLoaded', async () => {
   const originalStyles = new Map([hero, photo, image, caption, ...textGroups, ...edgeText].map(node => [node, node.getAttribute('style')]));
   // Preserve Works_v8 geometry; live Roveia media uses .5 of a .6 timeline.
   // Lenis smooths scroll once; reveal follows it exactly through pin release.
-  const settings = { duration: 1.2, scrub: true, pinViewportRatio: 1.1, revealPortion: 5 / 6 };
+  const settings = Object.freeze({
+    // Interpolate scroll distance at a constant rate; unlike an ease-out duration,
+    // repeated high-velocity wheel events cannot restart the curve abruptly.
+    lerp: 0.068, wheelMultiplier: 1, touchMultiplier: 1.5,
+    // Only unusually large wheel bursts are limited. Trackpad and ordinary
+    // 80-140px wheel events retain their native distances; extreme bursts
+    // are compressed rather than hard-capped.
+    wheelSoftLimit: 320, wheelCompression: 0.6,
+    scrub: true, pinViewportRatio: 1.1,
+    revealPortion: 1,
+    audienceOffsetMin: 80,
+    audienceOffsetMax: 140,
+    audienceOffsetViewportFraction: 0.1,
+    audienceTravelViewportFraction: 0.7,
+    audienceScrub: true
+  });
   let timeline = null, parallax = null, context = null, lenis = null, holder = null;
   let geometry = null, engine = 'initializing', ready = false;
   let textCoverage = [], pendingAnchor = null;
@@ -30,11 +45,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     ScrollTrigger.update();
   }
   function tick(time) {
-    // Native navigation can interrupt a running Lenis wheel animation.
-    // Keep its target aligned instead of pulling a scrollbar move back.
-    if (lenis?.isScrolling === 'smooth' && Math.abs(window.scrollY - lenis.animatedScroll) > 2) {
-      lenis.scrollTo(window.scrollY, { immediate: true, force: true });
-    }
+    // One clock and one scroll owner. Never force an immediate jump here:
+    // window.scrollY can change briefly as ScrollTrigger inserts/removes pins.
     lenis?.raf(time * 1000);
   }
   function resizeLenis() {
@@ -45,9 +57,65 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Retain its destination so the next downward wheel cannot aim backwards.
     if (scrolling) lenis.targetScroll = Math.max(0, Math.min(lenis.limit, target));
   }
-  function refresh() {
-    if (available) ScrollTrigger.refresh();
-    resizeLenis();
+  // A pin refresh changes spacer heights synchronously. Performing it while
+  // Lenis is still interpolating is one cause of a visible boundary snap.
+  // Geometry updates from all sections share this single idle-aware queue.
+  let refreshFrame = 0;
+  let refreshTimer = 0;
+  function requestRefresh({immediate = false} = {}) {
+    if (!available) return;
+    if (refreshFrame) cancelAnimationFrame(refreshFrame);
+    refreshFrame = requestAnimationFrame(() => {
+      refreshFrame = 0;
+      if (!immediate && lenis && lenis.isScrolling === 'smooth') {
+        if (refreshTimer) clearTimeout(refreshTimer);
+        refreshTimer = setTimeout(() => {
+          refreshTimer = 0;
+          requestRefresh();
+        }, 150);
+        return;
+      }
+      if (refreshTimer) { clearTimeout(refreshTimer); refreshTimer = 0; }
+      ScrollTrigger.refresh();
+    });
+  }
+  function refresh() { requestRefresh(); }
+  function syncLenis() {
+    const canSmooth = !reduced.matches && available && Boolean(window.Lenis);
+    if (!canSmooth) {
+      if (lenis) {
+        gsap.ticker.remove(tick);
+        lenis.off('scroll', scrollUpdated);
+        lenis.destroy();
+        lenis = null;
+      }
+      return;
+    }
+    if (lenis) return;
+    // Roveia uses a single global Lenis (duration 1.2), including outside
+    // pinned areas. A lerp-based response produces a softer impulse and
+    // remains continuous when wheel input accelerates or changes direction.
+    lenis = new window.Lenis({
+      lerp: settings.lerp,
+      smoothWheel: true,
+      wheelMultiplier: settings.wheelMultiplier,
+      touchMultiplier: settings.touchMultiplier,
+      syncTouch: false,
+      // Smooth the approach to independently pinned sections without
+      // imposing a second scrub lag on their animations.
+      virtualScroll: input => {
+        if (Math.abs(input.deltaY) > settings.wheelSoftLimit) {
+          const excess = (Math.abs(input.deltaY) - settings.wheelSoftLimit) / settings.wheelSoftLimit;
+          input.deltaY = Math.sign(input.deltaY) * settings.wheelSoftLimit
+            * (1 + settings.wheelCompression * Math.log1p(excess));
+        }
+      },
+      anchors: false,
+      autoRaf: false
+    });
+    lenis.on('scroll', scrollUpdated);
+    gsap.ticker.add(tick);
+    gsap.ticker.lagSmoothing(0);
   }
 
   function focusAnchor() {
@@ -87,6 +155,26 @@ document.addEventListener('DOMContentLoaded', async () => {
     lenis.scrollTo(window.scrollY, { immediate: true, force: true });
   }
 
+  // Shared scroll navigation for pinned components. No second Lenis and
+  // no browser smooth-scroll competing with the active Lenis target.
+  window.SyntheCoreMotion = Object.freeze({
+    requestRefresh,
+    getScrollState: () => ({
+      owner: lenis ? 'lenis' : 'native',
+      isScrolling: lenis?.isScrolling ?? false,
+      target: lenis?.targetScroll ?? window.scrollY,
+      animated: lenis?.animatedScroll ?? window.scrollY,
+      velocity: lenis?.velocity ?? 0,
+      lerp: lenis?.options.lerp ?? 0,
+      wheelSoftLimit: settings.wheelSoftLimit,
+      remaining: Math.abs((lenis?.targetScroll ?? window.scrollY) - window.scrollY)
+    }),
+    scrollTo(top, {immediate=false}={}) {
+      if (lenis && !reduced.matches) lenis.scrollTo(top, {immediate,force:true});
+      else window.scrollTo({top,behavior:immediate||reduced.matches?'instant':'smooth'});
+    }
+  });
+
   window.__synthecoreScrollQA = {
     getEngine: () => engine,
     getProgress: () => timeline?.progress() ?? 0,
@@ -116,13 +204,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   };
 
   function teardown() {
-    // Stop the only inertia owner before removing the pin spacer.
-    if (lenis) {
-      gsap.ticker.remove(tick);
-      lenis.off('scroll', scrollUpdated);
-      lenis.destroy();
-      lenis = null;
-    }
+    // Lenis survives Hero's pin lifecycle and responsive changes. Only the
+    // explicit reduced-motion preference may disable global smooth scrolling.
     context?.revert();
     context = null;
     timeline = null;
@@ -133,6 +216,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
     photo.classList.remove('hero-image-expander');
     sticky.classList.remove('is-image-animated');
+    sticky.classList.remove('sc-sticky-pin');
+    document.getElementById('top').classList.remove('sc-sticky-pin-container');
+    document.getElementById('top').style.removeProperty('--sc-hero-stage-height');
     for (const [node, style] of originalStyles) {
       if (style === null) node.removeAttribute('style');
       else node.setAttribute('style', style);
@@ -252,9 +338,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   function rebuild() {
     if (!ready) return;
+    if (refreshFrame) { cancelAnimationFrame(refreshFrame); refreshFrame = 0; }
+    if (refreshTimer) { clearTimeout(refreshTimer); refreshTimer = 0; }
     teardown();
+    syncLenis();
     if (reduced.matches) { engine = 'native-reduced-motion'; return; }
-    if (compact.matches || !mouse.matches) { engine = 'native-mobile'; return; }
+    if (compact.matches || !mouse.matches) { engine = lenis ? 'lenis-compact' : 'native-mobile'; return; }
     if (!available) { engine = 'native-missing-dependencies'; return; }
     if (!image.naturalWidth) { engine = 'native-missing-image'; return; }
 
@@ -265,6 +354,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     photo.classList.add('hero-image-expander');
     hero.appendChild(photo);
     sticky.classList.add('is-image-animated');
+    sticky.classList.add('sc-sticky-pin');
+    document.getElementById('top').style.setProperty('--sc-hero-stage-height', `${Math.ceil(sticky.getBoundingClientRect().height)}px`);
+    document.getElementById('top').classList.add('sc-sticky-pin-container');
     if (!measure()) { teardown(); engine = 'native-unmeasured'; return; }
 
     try {
@@ -272,9 +364,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         timeline = gsap.timeline({
           defaults: { ease: 'none' },
           scrollTrigger: {
-            id: 'synthecore-hero', trigger: sticky, pin: true, pinSpacing: true,
+            id: 'synthecore-hero', trigger: sticky, // CSS sticky holds stage without GSAP pin-spacer
             start: 'top top', end: () => `+=${Math.round(innerHeight * settings.pinViewportRatio)}`,
-            scrub: settings.scrub, anticipatePin: 1, invalidateOnRefresh: true,
+            scrub: settings.scrub, invalidateOnRefresh: true,
             onRefresh: self => {
               // The pin now has its new width. refreshInit still has the old one.
               if (!measure()) return;
@@ -300,15 +392,16 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         // Only the inner copy receives extra motion. Its section remains in
         // normal flow; this range starts at the unchanged Hero pin end.
-        const audienceOffset = () => Math.min(140, Math.max(80, innerHeight * .1));
-        const audienceRange = () => Math.round(innerHeight * .7);
+        const audienceOffset = () => Math.min(settings.audienceOffsetMax,
+          Math.max(settings.audienceOffsetMin,innerHeight*settings.audienceOffsetViewportFraction));
+        const audienceRange = () => Math.round(innerHeight*settings.audienceTravelViewportFraction);
         parallax = gsap.timeline({
           defaults: { ease: 'none' },
           scrollTrigger: {
               id: 'synthecore-audience-parallax', trigger: audienceSection,
               start: () => timeline.scrollTrigger.end,
               end: () => timeline.scrollTrigger.end + audienceRange(),
-              scrub: .55, invalidateOnRefresh: true,
+              scrub: settings.audienceScrub, invalidateOnRefresh: true,
               onRefresh: self => {
                 const fade = self.animation.getChildren().find(t => t.vars.autoAlpha === 1);
                 if (!fade) return;
@@ -325,18 +418,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
       }, hero);
 
-      if (window.Lenis) {
-        lenis = new window.Lenis({
-          duration: settings.duration, lerp: 0, smoothWheel: true,
-          // Built-in anchors also process modified/new-tab links. Our filtered
-          // handler above delegates to scrollTo and preserves hash/focus safely.
-          syncTouch: false, anchors: false, autoRaf: false,
-        });
-        lenis.on('scroll', scrollUpdated);
-        gsap.ticker.add(tick);
-        gsap.ticker.lagSmoothing(0);
-        engine = 'lenis-gsap-scrolltrigger';
-      } else engine = 'gsap-scrolltrigger';
+      engine = lenis ? 'lenis-gsap-scrolltrigger' : 'gsap-scrolltrigger';
       refresh();
     } catch (error) {
       teardown();
@@ -347,12 +429,17 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   if (available) {
     gsap.registerPlugin(ScrollTrigger);
+    // The shared queue owns resize refreshes; keep GSAP's load/visibility
+    // refresh. Otherwise each module + the built-in resize listener refresh
+    // the entire chain independently, possibly mid-inertia.
+    ScrollTrigger.config({autoRefreshEvents:'visibilitychange,DOMContentLoaded,load'});
     ScrollTrigger.addEventListener('refresh', resizeLenis);
   }
   reduced.addEventListener('change', rebuild);
   compact.addEventListener('change', rebuild);
   mouse.addEventListener('change', rebuild);
   window.addEventListener('orientationchange', refresh);
+  window.addEventListener('resize', refresh, {passive:true});
   window.addEventListener('pageshow', refresh);
   document.addEventListener('click', anchorClick, { capture: true });
   document.addEventListener('keydown', keyboardScroll);

@@ -1,0 +1,32 @@
+/* SyntheCore v62 — Services alignment and section rhythm, REVIEW CANDIDATE.
+   Reference: Roveia desktop screenshot, 2026-10-20.
+   Do not change animation geometry, services cards, Works, footer, or wave code.
+
+   Root cause of clipped first service card:
+   overflow:hidden generated a programmatically scrollable container, and
+   Chrome had sc-services__viewport.scrollLeft == the track's left padding
+   even while ScrollTrigger progress remained zero. overflow:clip prohibits
+   that second horizontal scroller. Only GSAP transforms the track. */
+.sc-services.sc-services--pinned .sc-services__viewport {
+  overflow: clip;
+}
+
+/* Desktop rhythm only. Existing native carousel on compact screens retained. */
+@media (min-width: 992px) and (min-height: 650px) {
+  /* ~20px more space from section heading to service cards at 824–900px tall. */
+  .sc-services.sc-services--pinned .sc-services__head {
+    margin-bottom: clamp(68px, 7.7svh, 86px);
+  }
+  /* Move the full services group slightly lower without increasing the
+     sticky scene height or modifying any ScrollTrigger start/end positions. */
+  .sc-services.sc-services--pinned .sc-services__scene {
+    padding-top: clamp(112px, 15svh, 176px);
+  }
+  /* More white space between ordinary sections. No extra nested sticky/pin. */
+  #audiences.audience-section {
+    padding-bottom: clamp(120px, 10svh, 156px);
+  }
+  .sc-process {
+    padding-top: clamp(56px, 5.5vw, 96px);
+  }
+}

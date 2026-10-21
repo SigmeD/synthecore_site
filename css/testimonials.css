@@ -33,7 +33,7 @@
   /* Match the reference handoff: full banner remains within the viewport. */
   .sc-process:has(+ .sc-testimonials) .sc-process__banner{min-height:clamp(580px,66svh,690px)}
   .sc-process:has(+ .sc-testimonials) .sc-process__inner{padding-top:clamp(52px,6svh,78px);padding-bottom:clamp(18px,2vw,32px)}
-  .sc-testimonials.sc-testimonials--motion{height:410svh;min-height:2900px}
+  .sc-testimonials.sc-testimonials--motion{height:533svh;min-height:3770px}
   .sc-testimonials.sc-testimonials--motion .sc-testimonials__scene{position:sticky;top:0;height:100svh;min-height:800px;padding:0;overflow:hidden}
   .sc-testimonials.sc-testimonials--motion .sc-testimonials__center{position:absolute;left:50%;top:49%;width:min(560px,46vw);max-width:none;margin:0;transform:translate(-50%,-50%);z-index:2}
   .sc-testimonials.sc-testimonials--motion .sc-testimonials__center h2{font-size:clamp(54px,4.9vw,80px);opacity:1;color:#141719}
@@ -41,6 +41,7 @@
   .sc-testimonials.sc-testimonials--motion .sc-testimonials__cards{position:absolute;inset:0;width:100%;max-width:none;margin:0;display:block;pointer-events:none;z-index:3}
   .sc-testimonials.sc-testimonials--motion .sc-testimonials__card-slot{position:absolute;top:0;left:50%;width:clamp(252px,21.5vw,338px);height:clamp(382px,32vw,466px);pointer-events:auto;will-change:transform;transform-origin:center center}
   .sc-testimonials.sc-testimonials--motion .sc-testimonial{height:100%;min-height:0;padding:20px 19px 18px;animation:sc-review-float 7.1s ease-in-out infinite alternate;transition:box-shadow .38s ease,filter .38s ease,transform .38s ease;transform-origin:center center}
+  .sc-testimonials.sc-testimonials--motion.is-stream-moving .sc-testimonial{animation-play-state:paused}
   .sc-testimonials.sc-testimonials--motion .sc-testimonial__topic{font-size:clamp(15px,1.12vw,18px);margin-top:16px}
   .sc-testimonials.sc-testimonials--motion .sc-testimonial__copy{font-size:clamp(13px,.95vw,15px)}
   .sc-testimonials.sc-testimonials--motion .sc-testimonial__photo{height:clamp(113px,9.3vw,149px)}

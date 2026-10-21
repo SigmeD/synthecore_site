@@ -10,7 +10,7 @@ const normalizedText = node => textContent(node).replace(/\s+/g, ' ').trim();
 const ORDER = ['b2b', 'flowers', 'crm', 'beauty', 'prostor', 'metal'];
 const SCRIPT_ORDER = [
   'assets/vendor/gsap-3.12.5.min.js', 'assets/vendor/ScrollTrigger-3.12.5.min.js',
-  'assets/vendor/lenis-1.3.26.min.js', 'js/hero-geometry.js', 'js/hero-scroll.js', 'js/site-header.js', 'js/main.js', 'js/works.js', 'js/services.js', 'js/process.js', 'js/testimonials.js', 'js/faq-footer.js', 'js/footer-waves.js', 'js/footer-reveal.js',
+  'assets/vendor/lenis-1.3.26.min.js', 'js/hero-geometry.js', 'js/hero-scroll.js', 'js/main.js', 'js/works.js', 'js/services.js', 'js/process.js', 'js/testimonials.js', 'js/faq-footer.js', 'js/footer-waves.js', 'js/footer-reveal.js',
 ];
 async function verifyWorks(root = path.resolve(__dirname, '..')) {
   const { nodes } = parseHTML(await fs.readFile(path.join(root, 'index.html'), 'utf8'));

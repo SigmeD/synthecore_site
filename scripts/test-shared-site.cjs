@@ -56,8 +56,14 @@ test('catalog preserves six ordered project descriptions and approved assets',()
 
 test('single footer and menu owners retain local motion contracts',()=>{
  assert.ok(fs.existsSync(path.join(root,'js/footer-waves.js')),'shared wave engine must exist');
- assert.ok(!/const footer=|pauseAnimations|wave-scroll-y/.test(read('js/faq-footer.js')));
- assert.ok(!/menuToggle/.test(read('js/main.js')));
+ // v62 main.js is byte-locked and includes the homepage menu. The catalog
+ // retains v27 site-header.js. Never load both owners on the same page.
+ assert.ok(/menuToggle/.test(read('js/main.js')));
+ assert.ok(!/src="[^\"]*site-header.js"/.test(read('index.html')));
+ assert.ok(/src="[^\"]*site-header.js"/.test(read('raboty/index.html')));
+ assert.ok(!/src="[^\"]*\/main.js"/.test(read('raboty/index.html')));
+ // The legacy v62 footer loop has no .sc-footer__wave nodes to animate.
+ assert.ok(!/class="[^\"]*\bsc-footer__wave\b/.test(read('index.html')));
  assert.ok(!/menuToggle/.test(read('js/raboty-cards.js')));
  const wave=read('js/footer-waves.js');
  for(const speed of ['0.50','0.60','0.70'])assert.ok(wave.includes(`speed: ${speed}`));
@@ -71,4 +77,23 @@ test('single footer and menu owners retain local motion contracts',()=>{
 test('local Manrope distributions match the recorded hashes',async()=>{
  const {verifyManifest}=require('./lib/static-resources.cjs');
  assert.equal(await verifyManifest(root,'docs/font-manifest.json'),4);
+});
+
+test('combined build preserves v62 motion bytes/content and the owner-selected v27 shell',()=>{
+ const crypto=require('node:crypto');
+ const sources=JSON.parse(read('docs/V62_ON_V27_SOURCES.json'));
+ const hash=data=>crypto.createHash('sha256').update(data).digest('hex');
+ assert.equal(Object.keys(sources.motion).length,17);
+ for(const [file,expected] of Object.entries(sources.motion)) {
+  assert.equal(hash(fs.readFileSync(path.join(root,file))),expected,`protected v62 bytes: ${file}`);
+ }
+ for(const [file,expected] of Object.entries(sources.v27)) {
+  const data=fs.readFileSync(path.join(root,file));
+  assert.equal(hash(file.endsWith('.ttf')?data:Buffer.from(data.toString('utf8').replace(/\r\n/g,'\n'))),expected,`v27 shell/catalog source: ${file}`);
+ }
+ const html=read('index.html');
+ const content=html.slice(html.indexOf('<main>')+6,html.lastIndexOf('<section aria-labelledby="contact-title"'));
+ assert.equal(hash(Buffer.from(content)),sources.v62ContentSha256,'all seven v62 content sections are unchanged');
+ const bridge=read('css/v62-v27-shell-preservation.css');
+ assert.ok(!/GSAP|ScrollTrigger|lenis|scrub:|position:\s*sticky/.test(bridge),'shell preservation adds no motion implementation');
 });

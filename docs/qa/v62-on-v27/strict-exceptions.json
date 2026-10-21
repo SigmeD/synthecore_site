@@ -1,0 +1,24 @@
+{
+  "matched": 423,
+  "total": 437,
+  "different": [
+    ".gitattributes",
+    "README.md",
+    "docs/01_NEW_CHAT_START.md",
+    "docs/CHANGELOG.md",
+    "docs/SCROLL_MECHANICS.md",
+    "docs/SITE_ARCHITECTURE.md",
+    "index.html",
+    "scripts/HISTORICAL_CHECKS.md",
+    "scripts/check-project.cjs",
+    "scripts/test-static-checks.cjs",
+    "scripts/verify-v60-browser.cjs",
+    "scripts/verify-works-static.cjs",
+    "start-local.ps1"
+  ],
+  "missing": [
+    "Screenshot_1.png"
+  ],
+  "expectedStrictPass": false,
+  "reason": "Explicit owner correction: preserve v27 shell/catalog/infrastructure and approved v62 motion."
+}

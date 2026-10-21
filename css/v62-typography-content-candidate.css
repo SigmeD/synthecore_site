@@ -1,0 +1,101 @@
+/* SyntheCore v62 — TYPOGRAPHY + CONTENT CANDIDATE, 2026-10-20.
+   User-approved typography overrides proposed v0.2 scale.
+   Explicitly DOES NOT modify scroll scene geometry, sticky, pin, transform,
+   animation, overflow, heights, progress calculation, or footer wave layers.
+   This is the final CSS link after v62-services-alignment.css. */
+:root {
+  --sc62-text-font: "Manrope", sans-serif;
+  --sc61-font: "Manrope", sans-serif;
+  --sc-font-family: "Manrope", sans-serif;
+  --sc62-text-base: 16px;
+  --sc62-text-display: 70px;
+  --sc62-text-section: 32px;
+  --sc62-text-feature: 80px;
+  --sc62-text-service: 32px;
+  --sc62-text-process: 60px;
+  --sc62-text-step: 40px;
+  --sc62-text-large-section: 70px;
+}
+html, body {font-family:var(--sc62-text-font);font-size:var(--sc62-text-base)}
+body, body button, body input, body textarea, body select {font-family:var(--sc62-text-font)}
+:where(main,header) :where(p,span,a,button,h1,h2,h3,h4,blockquote,small) {font-family:var(--sc62-text-font)}
+/* Header and small supporting labels. Keep branded wordmark weight. */
+.brand-note,.header-links,.nav-cta,.mobile-panel a{font-family:var(--sc62-text-font)}
+.header-links,.nav-cta,.mobile-panel a{font-size:16px}
+.brand-note{font-size:12px}
+/* HERO: changing text colors through existing CSS variables is a LOCKED
+   scroll-driven contrast feature: only typography is changed here. */
+#top .hero h1{font-family:var(--sc62-text-font);font-size:var(--sc62-text-display);font-weight:400;line-height:1.1;letter-spacing:-.035em}
+#top .hero h1 span{font-family:inherit;font-weight:400}
+#top .hero .side-left p{font-family:inherit;font-size:22px;font-weight:400;line-height:1.4}
+#top .hero .side-right p{font-family:inherit;font-size:16px;font-weight:400;line-height:1.5}
+#top .hero .side-index,#top .hero .side-small,#top .hero .photo-caption,
+#top .hero .capabilities,#top .hero .scroll-next,#top .hero .main-cta{font-family:var(--sc62-text-font);font-size:16px;line-height:1.35}
+/* SPECIAL DESIGNER AREA — not the global 80px heading scale. */
+#audiences .audience-heading{font-family:var(--sc62-text-font);font-size:32px;font-weight:400;line-height:1.2;letter-spacing:-.02em}
+#audiences .audience-option .audience-name{font-family:var(--sc62-text-font);font-size:80px;font-weight:300;letter-spacing:-.035em;line-height:1.13;white-space:normal;overflow-wrap:normal}
+#audiences .audience-number,#audiences .audience-tags span{font-size:16px;font-weight:400}
+#audiences .audience-card h3{font-family:inherit;font-weight:400}
+#audiences .audience-card p{font-family:inherit;font-size:16px;font-weight:400;line-height:1.5}
+/* Works text, not Works scene or card layout. */
+.sc-work-content__type,.sc-work-content__description{font-family:var(--sc62-text-font);font-size:16px;font-weight:400;line-height:1.5}
+.sc-work-content__title{font-family:var(--sc62-text-font);font-weight:400}
+/* Services. All six cards receive identical typography. */
+.sc-services__title{font-family:var(--sc62-text-font);font-size:32px;font-weight:400;line-height:1.2;letter-spacing:-.02em}
+.sc-service-card h3{font-family:var(--sc62-text-font);font-size:32px;font-weight:400;line-height:1.2;letter-spacing:-.02em}
+.sc-service-card__tags span,.sc-service-card__body p{font-family:var(--sc62-text-font);font-size:16px;font-weight:400;line-height:1.35}
+.sc-services__progress,.sc-services__navigation button{font-family:var(--sc62-text-font);font-size:16px}
+/* Three steps. Preserve timeline and artwork. */
+.sc-process__title{font-family:var(--sc62-text-font);font-size:60px;font-weight:400;line-height:1.12;letter-spacing:-.025em}
+.sc-process__step h3{font-family:var(--sc62-text-font);font-size:40px;font-weight:400;line-height:1.17;letter-spacing:-.02em}
+.sc-process__step p{font-family:var(--sc62-text-font);font-size:16px;line-height:1.5;font-weight:400}
+/* Reviews: only typography, not scroll distance or animation. Demo marks are
+   retained until actual client testimonials are approved. */
+.sc-testimonials__center h2,.sc-testimonials.sc-testimonials--motion .sc-testimonials__center h2{font-family:var(--sc62-text-font);font-size:70px;font-weight:400;line-height:1.1;letter-spacing:-.035em}
+.sc-testimonial__topic,.sc-testimonial__copy,.sc-testimonial__author,.sc-testimonial__author span:last-child,.sc-testimonial__photo span,.sc-testimonial__demo{font-family:var(--sc62-text-font);font-size:16px;font-weight:400;line-height:1.35}
+.sc-testimonials.sc-testimonials--motion .sc-testimonial__topic,.sc-testimonials.sc-testimonials--motion .sc-testimonial__copy{font-size:16px}
+/* FAQ and CTA. */
+.sc-faq__title{font-family:var(--sc62-text-font);font-size:70px;font-weight:400;line-height:1.1;letter-spacing:-.035em}
+.sc-faq__question{font-family:var(--sc62-text-font);font-size:20px;font-weight:400;line-height:1.4;letter-spacing:-.015em}
+.sc-faq__answer-inner p{font-family:var(--sc62-text-font);font-size:16px;line-height:1.5;font-weight:400}
+.contact-footer.sc-footer h2{font-family:var(--sc62-text-font);font-size:70px;font-weight:400;line-height:1.1;letter-spacing:-.035em}
+.sc-footer__intro p,.contact-footer.sc-footer .sc-footer__cta,
+.contact-footer.sc-footer .sc-footer__nav a,.sc-footer__fine{font-family:var(--sc62-text-font);font-size:16px;font-weight:400;line-height:1.5}
+/* Compact screens retain existing adaptive layout and animate exactly as v62. */
+@media(max-width:1199px){
+  #audiences .audience-option .audience-name{font-size:clamp(48px,5.2vw,64px)}
+  .sc-process__step h3{font-size:clamp(30px,3.1vw,40px)}
+}
+@media(max-width:991px){
+  #top .hero h1{font-size:52px}
+  #audiences .audience-option .audience-name{font-size:clamp(42px,5.6vw,56px)}
+  .sc-process__title{font-size:48px}
+  .sc-testimonials__center h2,.sc-testimonials.sc-testimonials--motion .sc-testimonials__center h2{font-size:48px}
+  .sc-faq__title{font-size:48px}
+  .contact-footer.sc-footer h2{font-size:52px}
+  .sc-service-card h3{font-size:28px}
+}
+@media(max-width:767px){
+  #top .hero h1{font-size:36px}
+  #top .hero .side-left p,#top .hero .side-right p{font-size:16px}
+  #top .hero .side-index,#top .hero .side-small,#top .hero .photo-caption,
+  #top .hero .capabilities,#top .hero .scroll-next,#top .hero .main-cta{font-size:16px}
+  #audiences .audience-option .audience-name{font-size:clamp(30px,8vw,40px);line-height:1.14}
+  .sc-service-card h3{font-size:24px}
+  .sc-process__title{font-size:40px}
+  .sc-process__step h3{font-size:28px}
+  .sc-testimonials__center h2,.sc-testimonials.sc-testimonials--motion .sc-testimonials__center h2{font-size:36px}
+  .sc-faq__title{font-size:36px}
+  .sc-faq__question{font-size:18px}
+  .contact-footer.sc-footer h2{font-size:36px}
+}
+/* Text-fit safeguards discovered in 320–390px and 1440px visual QA.
+   Only text wrapping / tracking, not sticky or animation geometry. */
+@media(min-width:1200px){
+  .sc-process__step h3 {letter-spacing:-.065em}
+}
+@media(max-width:540px){
+  #top .hero .capabilities {flex-direction:column;align-items:flex-start;gap:4px}
+  #top .hero .scroll-next {white-space:normal;max-width:142px;justify-content:flex-end;text-align:right}
+  #top .hero .scroll-next .down {flex:0 0 31px}
+}

@@ -1,4 +1,4 @@
-/* Homepage FAQ v60, preserved independently of the shared footer. */
+/* FAQ + footer candidate. All selectors scoped except the existing SVG CTA animation. */
 .sc-faq{position:relative;background:#fff;padding:clamp(110px,10vw,165px) max(24px,calc((100vw - 1200px)/2)) clamp(105px,10vw,160px);scroll-margin-top:108px}
 .sc-faq__inner{display:grid;grid-template-columns:minmax(260px,.95fr) minmax(450px,1.25fr);column-gap:clamp(52px,7vw,140px);align-items:start}
 .sc-faq__title{font-size:clamp(49px,4.75vw,74px);letter-spacing:-.065em;line-height:1.06;font-weight:400;margin:0;color:var(--ink)}
@@ -14,34 +14,64 @@
 .sc-faq__item.is-open .sc-faq__answer-region{grid-template-rows:1fr}
 .sc-faq__answer-inner{overflow:hidden;min-height:0}
 .sc-faq__answer-inner p{margin:0;padding:0 70px 25px 0;max-width:590px;color:#60707b;font-size:15px;line-height:1.65;letter-spacing:-.008em}
-@media(max-width:1000px){.sc-faq{padding-inline:36px}
-.sc-faq__inner{grid-template-columns:1fr;gap:48px}
-.sc-faq__title{font-size:clamp(50px,6vw,65px)}
-}
-@media(max-width:700px){.sc-faq{padding:102px 22px 90px}
-.sc-faq__inner{gap:40px}
-.sc-faq__title{font-size:clamp(42px,10vw,58px);line-height:1.07}
-.sc-faq__question{min-height:72px;padding:18px 0;font-size:16px;gap:16px}
-.sc-faq__icon{width:36px;height:36px;min-width:36px}
-.sc-faq__icon svg{width:18px;height:18px}
-.sc-faq__answer-inner p{padding:0 7px 20px 0;font-size:14px}
-}
-@media(prefers-reduced-motion:reduce){.sc-faq__icon,.sc-faq__icon svg,.sc-faq__answer-region{transition:none}
-}
-@media(min-width:1200px) and (min-height:800px){.sc-testimonials + .sc-faq{
+/* Reuse v58 contact-footer ID/content and existing .nav-cta component. Only adapt its theme. */
+.contact-footer.sc-footer{position:relative;display:block;isolation:isolate;overflow:hidden;background:linear-gradient(180deg,#fff 0%,#fff 39%,#fbfdff 59%,#f6fbff 79%,#edf7ff 100%);color:#171e23;min-height:780px;padding:60px max(24px,calc((100vw - 1200px)/2)) 32px}
+.sc-footer__waves{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+/* Three smaller independent wave layers. Outer transform = scroll lift;
+   SVG transform and path morph = slow ambient motion even when scroll stops. */
+.sc-footer__wave{position:absolute;left:-13%;width:126%;height:490px;bottom:-82px;opacity:.92;filter:blur(5px);transform:translate3d(0,var(--wave-scroll-y,0px),0);will-change:transform}
+.sc-footer__wave svg{width:100%;height:100%;display:block;transform-origin:50% 75%;will-change:transform}
+.sc-footer__wave--back{bottom:-44px;opacity:.86;filter:blur(7px)}
+.sc-footer__wave--middle{bottom:-63px;opacity:.91;filter:blur(5px)}
+.sc-footer__wave--front{bottom:-96px;opacity:.95;filter:blur(3px)}
+.sc-footer__wave--back svg{animation:sc-wave-back-drift 21s ease-in-out infinite alternate}
+.sc-footer__wave--middle svg{animation:sc-wave-middle-drift 17s ease-in-out infinite alternate}
+.sc-footer__wave--front svg{animation:sc-wave-front-drift 15s ease-in-out infinite alternate}
+@keyframes sc-wave-back-drift{from{transform:translate3d(-3%,10px,0) scaleY(1.035)}to{transform:translate3d(3%,-10px,0) scaleY(.98)}}
+@keyframes sc-wave-middle-drift{from{transform:translate3d(3%,-12px,0) scaleY(.98)}to{transform:translate3d(-3%,12px,0) scaleY(1.04)}}
+@keyframes sc-wave-front-drift{from{transform:translate3d(-2.6%,-9px,0) scaleY(1.025)}to{transform:translate3d(2.6%,9px,0) scaleY(.975)}}
+.sc-footer__content{position:relative;z-index:1;display:flex;flex-direction:column;justify-content:space-between;gap:55px;min-height:690px;margin:auto;max-width:1200px}
+.sc-footer__intro{text-align:center;padding:35px 0 70px}
+.contact-footer.sc-footer h2{font-size:clamp(58px,7vw,108px);font-weight:400;line-height:1.04;letter-spacing:-.067em;margin:0 auto 24px;text-wrap:balance}
+.sc-footer__intro p{margin:0 auto 30px;max-width:560px;font-size:clamp(15px,1.1vw,17px);line-height:1.55;color:#687884}
+.contact-footer.sc-footer .sc-footer__cta{display:inline-flex;min-height:53px;padding:0 23px;gap:16px;border:0;background:var(--orange);color:#fff;font-weight:610;font-size:14px;text-decoration:none;box-shadow:0 8px 22px rgba(228,77,31,.18);transition:transform .24s cubic-bezier(.22,1,.36,1),box-shadow .24s ease,background-color .24s ease}
+.contact-footer.sc-footer .sc-footer__cta:is(:hover,:focus-visible){background:#fc7045;transform:none;box-shadow:0 11px 27px rgba(228,77,31,.24)}
+/* Original SVG icon has exactly the same markup as v58 header .nav-cta. */
+.sc-footer__cta .arrow{stroke-linecap:round;stroke-linejoin:round;transition:transform .34s cubic-bezier(.22,1,.36,1)}
+.sc-footer__cta:is(:hover,:focus-visible) .arrow{transform:rotate(-45deg)}
+.sc-footer__cta:active .arrow{transform:rotate(-45deg)}
+.sc-footer__bottom{display:flex;align-items:flex-start;justify-content:space-between;gap:44px;padding:0 0 37px}
+.sc-footer__brand .brand{display:inline-flex;text-decoration:none;color:#171e23}
+.sc-footer__brand .brand-name{font-size:25px}
+.sc-footer__nav{display:flex;align-items:center;gap:clamp(18px,2.8vw,38px);flex-wrap:wrap}
+.contact-footer.sc-footer .sc-footer__nav a{font-size:14px;color:#273745;text-decoration:none;white-space:nowrap;transition:color .2s ease}
+.contact-footer.sc-footer .sc-footer__nav a:hover{color:var(--orange)}
+.sc-footer__fine{padding-top:17px;border-top:1px solid rgba(91,139,181,.18);font-size:12px;color:#698199}
+@media(max-width:1000px){.sc-faq{padding-inline:36px}.sc-faq__inner{grid-template-columns:1fr;gap:48px}.sc-faq__title{font-size:clamp(50px,6vw,65px)}.contact-footer.sc-footer{padding-inline:36px}}
+@media(max-width:700px){.sc-faq{padding:102px 22px 90px}.sc-faq__inner{gap:40px}.sc-faq__title{font-size:clamp(42px,10vw,58px);line-height:1.07}.sc-faq__question{min-height:72px;padding:18px 0;font-size:16px;gap:16px}.sc-faq__icon{width:36px;height:36px;min-width:36px}.sc-faq__icon svg{width:18px;height:18px}.sc-faq__answer-inner p{padding:0 7px 20px 0;font-size:14px}.contact-footer.sc-footer{padding:22px 22px 26px;min-height:700px}.sc-footer__content{min-height:652px;gap:40px}.sc-footer__intro{padding:54px 0 35px}.contact-footer.sc-footer h2{font-size:clamp(46px,11vw,68px)}.sc-footer__bottom{flex-direction:column;gap:25px;padding-bottom:22px}.sc-footer__nav{gap:16px 22px}.sc-footer__wave{width:190%;left:-45%;height:390px;bottom:-72px}.sc-footer__wave--back{bottom:-39px}.sc-footer__wave--middle{bottom:-57px}.sc-footer__wave--front{bottom:-81px}.sc-footer__fine{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.sc-faq__icon,.sc-faq__icon svg,.sc-faq__answer-region,.sc-footer__cta .arrow{transition:none}.sc-footer__wave,.sc-footer__wave svg{will-change:auto}.sc-footer__wave svg{animation:none!important;transform:none!important}}
+
+
+/* v59: naturally paced handoff from sticky reviews to FAQ, based on Roveia.
+   Keep the approved v58 testimonials section completely untouched. */
+@media(min-width:1200px) and (min-height:800px){
+  .sc-testimonials + .sc-faq{
     /* Flow naturally after approved v58 reviews, without overlapping or clipping
        the departing card. Compact lead-in keeps both headings visible. */
     margin-top:0;
     padding-top:clamp(32px,4svh,48px);
   }
-.sc-testimonials + .sc-faq .sc-faq__inner{
+  .sc-testimonials + .sc-faq .sc-faq__inner{
     transform:translate3d(0,var(--sc-faq-entry-offset,0px),0);
     will-change:transform;
   }
 }
-@media(min-width:701px) and (max-width:1199px), (max-height:799px) and (min-width:701px){.sc-testimonials + .sc-faq{padding-top:clamp(100px,13vw,145px)}
+@media(min-width:701px) and (max-width:1199px), (max-height:799px) and (min-width:701px){
+  .sc-testimonials + .sc-faq{padding-top:clamp(100px,13vw,145px)}
 }
-@media(max-width:700px){.sc-testimonials + .sc-faq{padding-top:86px}
+@media(max-width:700px){
+  .sc-testimonials + .sc-faq{padding-top:86px}
 }
-@media(prefers-reduced-motion:reduce){.sc-testimonials + .sc-faq .sc-faq__inner{transform:none;will-change:auto}
+@media(prefers-reduced-motion:reduce){
+  .sc-testimonials + .sc-faq .sc-faq__inner{transform:none;will-change:auto}
 }

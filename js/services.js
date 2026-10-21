@@ -26,10 +26,33 @@ document.addEventListener('DOMContentLoaded', () => {
   let horizontal = null;
   let entrance = null;
   let resizeObserver = null;
+  let refreshFrame = 0;
+  const motion = Object.freeze({
+    minScrollDistance: 250,
+    travelMultiplier: 1.08,
+    entryMaxPx: 35,
+    entryViewportRatio: 0.045,
+    pinScrub: true
+  });
   let drag = null;
 
   const railTravel = () => Math.max(0,track.scrollWidth - viewport.clientWidth);
-  const travelDistance = () => Math.max(250,Math.round(railTravel() * 1.08));
+  const travelDistance = () => Math.max(motion.minScrollDistance,
+    Math.round(railTravel() * motion.travelMultiplier));
+
+  // Coalesce ResizeObserver, media-query and window resize notifications into
+  // one geometry pass. Pin refreshes are expensive and affect later scenes.
+  function requestGeometryRefresh(){
+    if(refreshFrame) return;
+    refreshFrame=requestAnimationFrame(()=>{
+      refreshFrame=0;
+      if(pinned) {
+        section.style.setProperty('--sc-services-scroll-length', `${travelDistance()}px`);
+        (window.SyntheCoreMotion?.requestRefresh || (()=>ScrollTrigger?.refresh()))();
+      }
+      else nativeUpdate();
+    });
+  }
 
   function updateProgress(progress){
     const amount = Math.max(0,Math.min(1,progress));
@@ -45,6 +68,15 @@ document.addEventListener('DOMContentLoaded', () => {
     if (pinned) return;
     updateProgress(viewport.scrollLeft / Math.max(1,viewport.scrollWidth-viewport.clientWidth));
   }
+  // Programmatic vertical navigation uses the SAME Lenis owner as the rest
+  // of the page. Native smooth scroll on top of Lenis caused double easing.
+  function scrollVertically(top, immediate=false){
+    if(window.SyntheCoreMotion?.scrollTo){
+      window.SyntheCoreMotion.scrollTo(top,{immediate});
+    }else{
+      window.scrollTo({top,behavior:immediate||reduced.matches?'instant':'smooth'});
+    }
+  }
   function move(direction){
     if(pinned){
       const trigger = horizontal?.scrollTrigger;
@@ -53,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const scroll = trigger.start+(trigger.end-trigger.start)*targetProgress;
       // Navigation uses native document scroll; the existing Lenis instance
       // observes it just as it observes other anchor interactions.
-      window.scrollTo({top:scroll,behavior:reduced.matches?'instant':'smooth'});
+      scrollVertically(scroll, reduced.matches);
       return;
     }
     const width = cards[0].getBoundingClientRect().width;
@@ -74,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const edge=parseFloat(getComputedStyle(track).paddingLeft)||0;
       const progress=Math.max(0,Math.min(1,(offset-edge)/Math.max(1,railTravel())));
       viewport.scrollLeft=0;
-      window.scrollTo({top:trigger.start+(trigger.end-trigger.start)*progress,behavior:'instant'});
+      scrollVertically(trigger.start+(trigger.end-trigger.start)*progress,true);
       ScrollTrigger.update();
     });
   }));
@@ -84,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
     event.preventDefault();
     if(event.key==='Home'||event.key==='End'){
       if(!pinned) viewport.scrollTo({left:event.key==='Home'?0:viewport.scrollWidth,behavior:reduced.matches?'instant':'smooth'});
-      else window.scrollTo({top:event.key==='Home'?horizontal.scrollTrigger.start:horizontal.scrollTrigger.end,behavior:'smooth'});
+      else scrollVertically(event.key==='Home'?horizontal.scrollTrigger.start:horizontal.scrollTrigger.end,reduced.matches);
     }else move(event.key==='ArrowRight'?1:-1);
   });
   track.addEventListener('pointerdown',event => {
@@ -114,6 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
     horizontal=null;entrance=null;
     pinned=false;
     section.classList.remove('sc-services--pinned');
+    section.style.removeProperty('--sc-services-scroll-length');
     if(gsap){gsap.set(scene,{clearProps:'transform,opacity,visibility'});gsap.set(track,{clearProps:'transform'});}
     updateProgress(0);
   }
@@ -123,10 +156,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if(pinEnabled() && railTravel()>1){
       pinned=true;
       section.classList.add('sc-services--pinned');
+      section.style.setProperty('--sc-services-scroll-length', `${travelDistance()}px`);
       // The entry completes EXACTLY when pin starts. No numeric scrub lag
       // can leave the scene translated as ScrollTrigger switches pin modes.
       entrance=gsap.fromTo(scene,
-        {y:()=>Math.min(35,window.innerHeight*.045),autoAlpha:1},
+        {y:()=>Math.min(motion.entryMaxPx,window.innerHeight*motion.entryViewportRatio),autoAlpha:1},
         {y:0,autoAlpha:1,ease:'none',
           scrollTrigger:{
             id:'sc-services-entry',trigger:section,
@@ -136,25 +170,24 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       );
       // The horizontal tween is owned by its ONE pinned ScrollTrigger.
-      // No dead scroll zone, second imperative gsap.set, or double-smoothing.
+      // Lenis owns wheel easing; the horizontal tween tracks the pin exactly.
+      // Numeric scrub lag could leave the rail moving after pin release.
       horizontal=gsap.to(track,{
         x:()=>-railTravel(),
         ease:'none',
-        onUpdate:()=>updateProgress(horizontal?.progress() ?? 0),
+        onUpdate:()=>updateProgress(Math.min(1, Math.abs(Number(gsap.getProperty(track,'x')) || 0) / Math.max(1,railTravel()))),
         scrollTrigger:{
           id:'sc-services-pin',
           trigger:section,
           start:'top top',
           end:()=>`+=${travelDistance()}`,
-          pin:true,
-          pinSpacing:true,
-          scrub:.5,
-          anticipatePin:1,
+          // A sticky scene replaces the ScrollTrigger pin-spacer.
+          scrub:motion.pinScrub,
           invalidateOnRefresh:true,
           refreshPriority:-20
         }
       });
-      ScrollTrigger.refresh();
+      requestGeometryRefresh();
     }else{
       updateProgress(0);
       nativeUpdate();
@@ -167,15 +200,32 @@ document.addEventListener('DOMContentLoaded', () => {
   let lastMode=null;
   function reconcile(){
     const nextMode=pinEnabled();
-    if(lastMode!==nextMode){lastMode=nextMode;setup();}
-    else if(pinned)ScrollTrigger?.refresh();
-    else nativeUpdate();
+    // A gallery may gain/lose horizontal overflow after responsive reflow.
+    if(lastMode!==nextMode || (nextMode && (railTravel()>1)!==pinned)){
+      lastMode=nextMode;
+      setup();
+    } else requestGeometryRefresh();
   }
   reduced.addEventListener('change',reconcile);
   wide.addEventListener('change',reconcile);
-  window.addEventListener('resize',()=>{if(pinned)ScrollTrigger?.refresh();else nativeUpdate()},{passive:true});
+  window.addEventListener('resize',requestGeometryRefresh,{passive:true});
+  if('ResizeObserver' in window){
+    let lastWidth=viewport.clientWidth;
+    let lastTravel=railTravel();
+    resizeObserver=new ResizeObserver(()=>{
+      const width=viewport.clientWidth;
+      const travel=railTravel();
+      if(width===lastWidth && Math.abs(travel-lastTravel)<1) return;
+      lastWidth=width;
+      lastTravel=travel;
+      // The fixed/native mode may be unchanged while overflow changes.
+      reconcile();
+    });
+    resizeObserver.observe(viewport);
+    resizeObserver.observe(track);
+  }
   window.addEventListener('load',()=>{
-    if(pinned)ScrollTrigger?.refresh();
+    requestGeometryRefresh();
   },{once:true});
   reconcile();
   window.__synthecoreServicesQA={
