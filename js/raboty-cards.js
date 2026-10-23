@@ -15,7 +15,7 @@
       if(!card) return;
       const name=card.querySelector('.case-card__body h2')?.textContent?.trim();
       const description=card.querySelector('.case-card__body p')?.textContent?.trim();
-      const type=card.querySelector('.case-card__tags .tag')?.textContent?.trim();
+      const type=[...card.querySelectorAll('.case-card__tags .tag')].map(tag=>tag.textContent.trim()).join(' · ');
       const image=card.querySelector('.case-card__image img');
       if(!name || !description || !image) return;
       opener=button;

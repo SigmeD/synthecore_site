@@ -1,7 +1,7 @@
 'use strict';
 const fs=require('node:fs'),path=require('node:path');
 const read=(root,file)=>fs.readFileSync(path.join(root,file),'utf8').replace(/\r\n/g,'\n');
-const escape=value=>String(value).replace(/[&<>"'{}]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;','{':'&#123;','}':'&#125;'}[c]));
+const {escape,catalogCopy}=require('./project-copy.cjs');
 function casePages(root){
  return fs.readdirSync(path.join(root,'templates/data/cases')).filter(f=>f.endsWith('.json')).sort().map(f=>{
   const data=JSON.parse(read(root,'templates/data/cases/'+f));
@@ -11,8 +11,9 @@ function casePages(root){
 }
 function renderCase(root,data){
  if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(data.slug))throw Error('Invalid case slug');
- for(const field of ['catalog_id','short_name','status','meta_title','meta_description','intro','result'])if(typeof data[field]!=='string'||!data[field].trim())throw Error('Missing case field '+field);
- if(!Array.isArray(data.h1)||!data.h1.length||data.h1.some(s=>typeof s!=='string'||!s.trim()))throw Error('Invalid h1');
+ for(const field of ['catalog_id','status','result'])if(typeof data[field]!=='string'||!data[field].trim())throw Error('Missing case field '+field);
+ for(const field of ['h1','intro','meta_title','meta_description','short_name'])if(Object.hasOwn(data,field))throw Error('Case '+field+' must come from catalog');
+ const copy=catalogCopy(root)[data.catalog_id];if(!copy)throw Error('Unknown catalog project '+data.catalog_id);
  if(!Array.isArray(data.process)||!data.process.length||data.process.some(s=>typeof s.title!=='string'||!s.title.trim()||typeof s.body!=='string'||!s.body.trim()))throw Error('Invalid process');
  if(!Array.isArray(data.screens)||data.screens.length!==4||data.screens.some(s=>typeof s.caption!=='string'||!s.caption.trim()))throw Error('Case screens must contain four approved images and captions');
  for(const image of [...Object.values(data.hero_media||{}),data.result_media,...data.screens]){
@@ -20,7 +21,7 @@ function renderCase(root,data){
   if(!fs.existsSync(path.join(root,image.src.slice(1))))throw Error('Missing case asset '+image.src);
  }
  for(const key of ['left','main','right'])if(!data.hero_media?.[key])throw Error('Missing hero asset '+key);
- const values={...Object.fromEntries(['meta_title','meta_description','intro','result','short_name','status'].map(k=>[k,escape(data[k])])),h1:data.h1.map(escape).join('<br>')};
+ const values={result:escape(data.result),status:escape(data.status),h1:escape(copy.title),short_name:escape(copy.title),intro:escape(copy.description),meta_title:escape(copy.title+' — SyntheCore'),meta_description:escape(copy.description)};
  values.process=data.process.map((step,i)=>`<article class="sc-case-process__step" data-process-step="${i+1}"><div class="sc-case-process__number-wrap"><span class="sc-case-process__number-circle" aria-hidden="true">${i+1}</span></div><div class="sc-case-process__text"><h3>${escape(step.title)}</h3><p>${escape(step.body)}</p></div></article>`).join('\n');
  values.screens=data.screens.map(screen=>`<figure class="sc-case-screens__item sc-case-reveal"><button class="sc-case-screens__open" type="button" aria-label="Увеличить: ${escape(screen.caption)}" data-full="${escape(screen.src)}" data-title="${escape(screen.caption)}"><img src="${escape(screen.src)}" alt="${escape(screen.alt)}" loading="lazy" decoding="async"></button><figcaption>${escape(screen.caption)}</figcaption></figure>`).join('\n');
  for(const [key,image] of Object.entries(data.hero_media)){values['hero_'+key+'_src']=escape(image.src);values['hero_'+key+'_alt']=escape(image.alt);}

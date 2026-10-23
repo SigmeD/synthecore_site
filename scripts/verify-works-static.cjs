@@ -5,7 +5,10 @@ const vm = require('node:vm');
 const { parseHTML, hasClass, textContent, inside } = require('./lib/static-html.cjs');
 const { localPath, sha256, verifyHTTP, parseCLI } = require('./lib/static-resources.cjs');
 const approved = require('./lib/works-assets.cjs');
-const approvedCopy = require('./lib/works-copy.cjs');
+const originalCopy = require('./lib/works-copy.cjs');
+const {catalogCopy}=require('./lib/project-copy.cjs');
+const currentCopy=catalogCopy(path.resolve(__dirname,'..'));
+const approvedCopy=Object.fromEntries(Object.entries(originalCopy).map(([id,copy])=>[id,{...copy,...currentCopy[id]}]));
 const normalizedText = node => textContent(node).replace(/\s+/g, ' ').trim();
 const ORDER = ['b2b', 'flowers', 'crm', 'beauty', 'prostor', 'metal'];
 const SCRIPT_ORDER = [
