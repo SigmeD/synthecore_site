@@ -2,6 +2,7 @@
 const {test}=require('node:test'),assert=require('node:assert/strict');
 const fs=require('node:fs'),path=require('node:path');
 const {parseHTML,hasClass,inside,textContent}=require('./lib/static-html.cjs');
+const {restoreLaterCaseLinks}=require('./lib/case-baseline.cjs');
 const root=path.resolve(__dirname,'..');
 const read=f=>fs.readFileSync(path.join(root,f),'utf8').replace(/\r\n/g,'\n');
 test('metal route is generated through the shared shell and catalog copy',()=>{
@@ -35,7 +36,7 @@ test('catalog registers the new primary route and keeps the other five cards',()
  const cards=nodes.filter(n=>hasClass(n,'case-card__open'));assert.equal(cards.length,6);
  assert.equal(cards.find(n=>n.attrs['data-project']==='metal').attrs.href,'/raboty/metal-calc/');
  assert.equal(cards.find(n=>n.attrs['data-project']==='beauty').attrs.href,'/raboty/beauty-insight/');
- assert.equal(cards.filter(n=>n.tag==='button').length,4);
+ assert.equal(cards.filter(n=>n.tag==='button').length,6-require('./lib/case-page.cjs').casePages(root).length);
 });
 
 test('metal variant rejects extra hero images, unknown layouts and missing result proof fields',()=>{
@@ -64,13 +65,13 @@ test('metal resources resolve from the nested route and imported images retain s
  }
 });
 
-test('Beauty content and the other five catalog cards remain byte-identical to main',()=>{
+test('Beauty and other catalog content retain baseline bytes after exact registered route additions',()=>{
  const crypto=require('node:crypto'),audit=JSON.parse(read('docs/qa/metal-v5/source-audit.json'));
  const hash=text=>crypto.createHash('sha256').update(text).digest('hex');
- for(const match of read('raboty/index.html').matchAll(/<article class="case-card case-card--([^\"]+)">[\s\S]*?<\/article>/g)){
+ for(const match of restoreLaterCaseLinks(read('raboty/index.html')).matchAll(/<article class="case-card case-card--([^\"]+)">[\s\S]*?<\/article>/g)){
   const article=match[0],id=match[1];
   if(id==='metal')continue;assert.equal(hash(article),audit.catalogArticles[id].baselineSHA256,'unchanged catalog card '+id);
  }
- const beauty=read('raboty/beauty-insight/index.html').replace(/<article class="case-card case-card--metal">[\s\S]*?<\/article>/g,article=>article.replace('<a ','<button ').replace(' href="/raboty/metal-calc/">',' type="button">').replace('</a>','</button>'));
+ const beauty=restoreLaterCaseLinks(read('raboty/beauty-insight/index.html'));
  assert.equal(hash(beauty),audit.beauty.baselineSHA256);
 });

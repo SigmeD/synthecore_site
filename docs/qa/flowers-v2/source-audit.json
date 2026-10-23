@@ -1,0 +1,190 @@
+{
+  "date": "2026-10-23",
+  "base": "3b7dd382f3e5914b26aa0cef581659e655140ab8",
+  "archive": "SyntheCore_Flowers_Detail_v2.zip",
+  "archiveSHA256": "fe90737274f1c0b4794b904bb7d585c1918d91dddb6bc0f7804f011323d4a979",
+  "preview": "SyntheCore_Flowers_Detail_v2_preview (2).html",
+  "previewSHA256": "bce5c71adde0ed20fe21125b01650910609754d8ae482d37531945a30ff83565",
+  "assets": {
+    "/assets/cases/flowers/flowers-home.webp": {
+      "source": "assets/case-screens/flowers-home.webp",
+      "bytes": 159330,
+      "sha256": "426694dfefc868476e0eb5c0829622635492d0a468c33ed6b10444deaaa292ab",
+      "width": 496,
+      "height": 2048
+    },
+    "/assets/cases/flowers/flowers-catalog.webp": {
+      "source": "assets/case-screens/flowers-catalog.webp",
+      "bytes": 96128,
+      "sha256": "fc905311227647448d859390139073e439cdbe4bbb5480ab98db52cbaf2d9d49",
+      "width": 738,
+      "height": 2048
+    },
+    "/assets/cases/flowers/flowers-search.webp": {
+      "source": "assets/case-screens/flowers-search.webp",
+      "bytes": 34088,
+      "sha256": "bb96c074ba9a3cfee9f8ad2e3acc891ec454a381557e9706bd962e2f3227d039",
+      "width": 780,
+      "height": 868
+    },
+    "/assets/cases/flowers/flowers-profile.webp": {
+      "source": "assets/case-screens/flowers-profile.webp",
+      "bytes": 60214,
+      "sha256": "fe1a39d4c07f4cc2f3bfc77f4095efe3a53fd9eff1d78bf99574182e41264afd",
+      "width": 730,
+      "height": 2048
+    }
+  },
+  "sharedSources": [
+    {
+      "source": "css/detail-related-air-v9.css",
+      "sha256": "88dcbbe4a16bb5960440bff21b4277c13177f30fc32fcecbbc15787bf81351e7",
+      "approvedBeautySHA256": "88dcbbe4a16bb5960440bff21b4277c13177f30fc32fcecbbc15787bf81351e7",
+      "integratedInto": "css/case-detail.css",
+      "pass": true
+    },
+    {
+      "source": "css/detail-stage1.css",
+      "sha256": "5bc4c446d36bf6daa3455a634af1ce6ffe6db92b9fbdf22c3830548749ee620e",
+      "approvedBeautySHA256": "5bc4c446d36bf6daa3455a634af1ce6ffe6db92b9fbdf22c3830548749ee620e",
+      "integratedInto": "css/case-detail.css",
+      "pass": true
+    },
+    {
+      "source": "css/detail-stage2-cta-v15.css",
+      "sha256": "3b90bf1c7af7e18d5bb7c85871b8f8ce7bc9dcbcb47abe9ea64a44a519bb84e7",
+      "approvedBeautySHA256": "3b90bf1c7af7e18d5bb7c85871b8f8ce7bc9dcbcb47abe9ea64a44a519bb84e7",
+      "integratedInto": "css/case-detail.css",
+      "pass": true
+    },
+    {
+      "source": "css/detail-stage2-process.css",
+      "sha256": "09fdbb19cb0c226737975cedab9335b15da0c661da42c5e65802214baa85048a",
+      "approvedBeautySHA256": "09fdbb19cb0c226737975cedab9335b15da0c661da42c5e65802214baa85048a",
+      "integratedInto": "css/case-detail.css",
+      "pass": true
+    },
+    {
+      "source": "css/detail-stage2-surface-v6.css",
+      "sha256": "ea2b871c50fd7b94ff7791d77e0902a24af973e901db256f85d726681880b319",
+      "approvedBeautySHA256": "ea2b871c50fd7b94ff7791d77e0902a24af973e901db256f85d726681880b319",
+      "integratedInto": "css/case-detail.css",
+      "pass": true
+    },
+    {
+      "source": "css/detail-stage3-parallax-v10.css",
+      "sha256": "925dc6c9bbdf712bf1aa0e41eef55f7f21260d3afa1d05ebc616406012918f84",
+      "approvedBeautySHA256": "925dc6c9bbdf712bf1aa0e41eef55f7f21260d3afa1d05ebc616406012918f84",
+      "integratedInto": "css/case-detail.css",
+      "pass": true
+    },
+    {
+      "source": "css/detail-stage3-results.css",
+      "sha256": "3dd738148954e852ba76807022467b8cd7456e60fe5e00e07af4f1303c16858a",
+      "approvedBeautySHA256": "3dd738148954e852ba76807022467b8cd7456e60fe5e00e07af4f1303c16858a",
+      "integratedInto": "css/case-detail.css",
+      "pass": true
+    },
+    {
+      "source": "css/detail-stage4-refinement-v16.css",
+      "sha256": "f246d9c32ac28ca1ca40fdd3dc8b0e86fb7268bbf3ba30d38001a4f093f49ce8",
+      "approvedBeautySHA256": "f246d9c32ac28ca1ca40fdd3dc8b0e86fb7268bbf3ba30d38001a4f093f49ce8",
+      "integratedInto": "css/case-detail.css",
+      "pass": true
+    },
+    {
+      "source": "css/detail-v19-journey.css",
+      "sha256": "5aec66678574814fa2d7314dd9be88f9e487aa9ec61ec1bfe5ef87a2bc3000f2",
+      "approvedBeautySHA256": "5aec66678574814fa2d7314dd9be88f9e487aa9ec61ec1bfe5ef87a2bc3000f2",
+      "integratedInto": "css/case-detail.css",
+      "pass": true
+    },
+    {
+      "source": "js/detail-stage1.js",
+      "sha256": "294bdff030fd21d136df16ff6badbdc54bd3b96af28ebb14c2fe2a3f96cbb2f0",
+      "approvedBeautySHA256": "294bdff030fd21d136df16ff6badbdc54bd3b96af28ebb14c2fe2a3f96cbb2f0",
+      "integratedInto": "js/case-detail.js",
+      "pass": true
+    },
+    {
+      "source": "js/detail-stage2-process.js",
+      "sha256": "8b4be52ef81f6cef7d82b8400fefd763e495c0849a95c028bf4e5b6bbac2ae0e",
+      "approvedBeautySHA256": "8b4be52ef81f6cef7d82b8400fefd763e495c0849a95c028bf4e5b6bbac2ae0e",
+      "integratedInto": "js/case-detail.js",
+      "pass": true
+    },
+    {
+      "source": "js/detail-stage3-parallax-v10.js",
+      "sha256": "e11184b0e3bd3f7c7138361150510d1fe8832259edd230e900e1f6e0bbab171c",
+      "approvedBeautySHA256": "e11184b0e3bd3f7c7138361150510d1fe8832259edd230e900e1f6e0bbab171c",
+      "integratedInto": "js/case-detail.js",
+      "pass": true
+    },
+    {
+      "source": "js/detail-stage3-results.js",
+      "sha256": "df878cd63ac24450863a2693f237ee896ec1bd8bc06fd73e53fea628c01966fe",
+      "approvedBeautySHA256": "df878cd63ac24450863a2693f237ee896ec1bd8bc06fd73e53fea628c01966fe",
+      "integratedInto": "js/case-detail.js",
+      "pass": true
+    },
+    {
+      "source": "js/detail-stage4-refinement-v16.js",
+      "sha256": "c8da2e6cd26e2ab26a3cf4af07f9e4445f437a3a8cc55b033a0b000ac72d9f48",
+      "approvedBeautySHA256": "c8da2e6cd26e2ab26a3cf4af07f9e4445f437a3a8cc55b033a0b000ac72d9f48",
+      "integratedInto": "js/case-detail.js",
+      "pass": true
+    }
+  ],
+  "specificCSS": {
+    "source": "css/detail-flowers.css",
+    "sha256": "1eefa97fda5514ccf0aa25cb1d6bdbc3ebdb9a645542b44e365966f4266b3fdc",
+    "integratedInto": "css/case-flowers.css"
+  },
+  "catalogArticles": {
+    "b2b": {
+      "baselineSHA256": "66d7a00b33d2799e71ac469fb476c7e56fb51d1d4d2e96931cfe65da799bf9b4",
+      "currentSHA256": "66d7a00b33d2799e71ac469fb476c7e56fb51d1d4d2e96931cfe65da799bf9b4",
+      "pass": true
+    },
+    "crm": {
+      "baselineSHA256": "ee5a27a1d0512b5fe9ec3c641104ae5aa9076196909d20985d628fcd78d2f852",
+      "currentSHA256": "ee5a27a1d0512b5fe9ec3c641104ae5aa9076196909d20985d628fcd78d2f852",
+      "pass": true
+    },
+    "beauty": {
+      "baselineSHA256": "a6646b89aae984fc0f9fa598e7c8d0e82ee85a10116b78ea357e47886ed8e04c",
+      "currentSHA256": "a6646b89aae984fc0f9fa598e7c8d0e82ee85a10116b78ea357e47886ed8e04c",
+      "pass": true
+    },
+    "prostor": {
+      "baselineSHA256": "4a980287d7e929c49f60ee8b54ab9fa35568c6f4106f8ed875d49c6a7b352b6f",
+      "currentSHA256": "4a980287d7e929c49f60ee8b54ab9fa35568c6f4106f8ed875d49c6a7b352b6f",
+      "pass": true
+    },
+    "metal": {
+      "baselineSHA256": "cae19733bb006c4177ca2b5d82eca8aa5566448658bd256cc2a9efd5b63fb5d4",
+      "currentSHA256": "cae19733bb006c4177ca2b5d82eca8aa5566448658bd256cc2a9efd5b63fb5d4",
+      "pass": true
+    }
+  },
+  "beauty": {
+    "baselineSHA256": "6b7c920f94acca1f5d73e572aeb4e7ce56720a53f0ea97d54edaf9fd2181e3f8",
+    "normalizedCurrentSHA256": "6b7c920f94acca1f5d73e572aeb4e7ce56720a53f0ea97d54edaf9fd2181e3f8",
+    "pass": true
+  },
+  "content": {
+    "status": "UX/UI-концепт и интерактивный прототип",
+    "clientStatement": "80% is attributed to the client in the process, not a measured project result.",
+    "release": "PWA, production and Android/iOS releases are not claimed."
+  },
+  "integrationChanges": [
+    "Reuse current Header/Footer, fonts, vendor, shared v20 CSS/JS and CTA artwork without overwriting them.",
+    "Use canonical catalog title, summary and tags, matching global copy rules.",
+    "Extract unchanged default partials; add only the approved Flowers hero/result variants and scoped CSS.",
+    "Import only four full-length original WebP images; no archive, standalone preview or intermediate assets."
+  ],
+  "previewComparison": {
+    "specificCSSMatches": true,
+    "allFourAssetsMatch": true
+  }
+}

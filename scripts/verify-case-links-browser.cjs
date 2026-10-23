@@ -6,7 +6,7 @@ const project=process.env.CASE_PROJECT||'beauty';
 const registered=require('./lib/case-page.cjs').casePages(process.cwd()).find(c=>c.catalog_id===project);
 if(!registered)throw Error('No registered detail page for '+project);
 const destination='/raboty/'+registered.slug+'/';
-const out=path.resolve('output/playwright/case-primary-links'+(project==='beauty'?'':'-'+project));fs.mkdirSync(out,{recursive:true});
+const out=path.resolve(process.env.CASE_LINK_QA_OUTPUT||'output/playwright/case-primary-links'+(project==='beauty'?'':'-'+project));fs.mkdirSync(out,{recursive:true});
 const report={date:new Date().toISOString(),base,project,destination,checks:[],errors:[]};
 const check=(name,pass,data)=>{report.checks.push({name,pass:!!pass,data});if(!pass)console.log('FAIL',name,data)};
 const wait=ms=>new Promise(r=>setTimeout(r,ms));

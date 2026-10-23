@@ -15,7 +15,7 @@ node scripts/verify-works-static.cjs
 node scripts/verify-services-static.cjs
 node scripts/check-hero-geometry.cjs
 node scripts/verify-sticky-handoff-v61.cjs
-node --test scripts/test-static-checks.cjs scripts/test-shared-site.cjs scripts/test-button-policy.cjs scripts/test-case-pages.cjs scripts/test-project-copy.cjs scripts/test-metal-case.cjs
+node --test scripts/test-static-checks.cjs scripts/test-shared-site.cjs scripts/test-button-policy.cjs scripts/test-case-pages.cjs scripts/test-project-copy.cjs scripts/test-flowers-case.cjs scripts/test-metal-case.cjs scripts/test-case-integration.cjs
 git ls-files --cached --others --exclude-standard | node scripts/check-doc-links.cjs
 ```
 
@@ -79,19 +79,35 @@ node --test scripts/test-project-copy.cjs
 
 Для базового v20 обязательны 320/390/768/1024/1100/1440 px, lightbox с возвратом фокуса, модалки работ без страницы, карусель, touch, неподвижный hover стрелок, sticky до «Других работ», обратная прокрутка и reduced motion. Главная и каталог проверяются повторно. Точная вставка ссылки зарегистрированного кейса на старых страницах разрешена владельцем; остальные тексты, структура и движение сохраняют прежний контроль.
 
-## Калькулятор металлоизделий v5
+## Совместная интеграция Beauty, Flowers и Metal
 
-[Свежий отчёт и снимки](qa/metal-v5/README.md) относятся к ветке `feature/metal-calculator-detail` поверх `main` `3b7dd38`. Проверяются 390/768/1440/1920 px, полный центральный скрин, пять этапов, четыре lightbox, баннер −50%, sticky, обычная/обратная прокрутка, смена reduced motion, ссылки и регрессии существующих страниц.
+Текущие совместные результаты после совмещения PR #12 с `main` после Flowers: [отчёт](qa/case-integration/README.md). Исходные материалы отдельных кейсов сохраняются как историческая приёмка, а не доказательство новой сборки. Все три варианта общего генератора проверяются вместе: три настоящих маршрута, три fallback-модалки, неизменные данные/изображения/стили, перекрёстные переходы и исходная оболочка.
 
 ```powershell
-node --test scripts/test-metal-case.cjs
+node --test scripts/test-static-checks.cjs scripts/test-shared-site.cjs scripts/test-case-pages.cjs scripts/test-project-copy.cjs scripts/test-button-policy.cjs scripts/test-metal-case.cjs scripts/test-flowers-case.cjs scripts/test-case-integration.cjs
+$env:METAL_BASELINE_URL = 'http://127.0.0.1:4191/'
+$env:CASE_QA_OUTPUT = 'output/playwright/case-integration/metal'
 node scripts/verify-metal-browser.cjs
-$env:CASE_PROJECT = 'metal'
+$env:FLOWERS_BASELINE_URL = 'http://127.0.0.1:4191/'
+$env:CASE_QA_OUTPUT = 'output/playwright/case-integration/flowers'
+node scripts/verify-flowers-browser.cjs
+```
+
+На 4191 нужен экспорт `main` `0aab90a` до Metal, на 4186 — исходная v5, на 4189 — исходная v2, на 4176 — текущая сборка. Можно использовать другие адреса через переменные сценариев. Для основных переходов выполните `verify-case-links-browser.cjs` с `CASE_PROJECT` `beauty`, `flowers`, `metal`; `CASE_LINK_QA_OUTPUT` задаёт отдельную папку результатов. После проверки удалите временные переменные среды. `case-baseline.cjs` отменяет только точные зарегистрированные anchor Flowers/Metal для старых Beauty-only снимков; неверные URL отклоняются. Исходные manifests и прежние SHA не меняются.
+
+## Приложение заказа цветов v2
+
+[Отчёт и свежие сравнительные снимки](qa/flowers-v2/README.md) относятся к ветке `feature/flowers-case-detail` поверх `main` `3b7dd38`. Обязательные ширины: 320/390/768/1440/1920 px. Проверяются три смартфона и их нативная прокрутка на телефоне, четыре этапа, два устройства результата, четыре lightbox с исходными размерами изображений, sticky CTA, меню, основные переходы, параллакс, обратный scroll, reduced motion и регрессии главной, каталога и Beauty.
+
+```powershell
+node --test scripts/test-flowers-case.cjs
+node scripts/verify-flowers-browser.cjs
+$env:CASE_PROJECT = 'flowers'
 node scripts/verify-case-links-browser.cjs
 Remove-Item Env:CASE_PROJECT
 ```
 
-Сравнительный сценарий требует текущий сайт на 4176, распакованную автономную v5 на 4186 и экспорт исходного `main` на 4187. Можно переопределить `SYNTHECORE_URL`, `METAL_REFERENCE_URL`, `METAL_BASELINE_URL`. Архив и локальные эталоны не коммитятся; при их отсутствии сравнительная приёмка не выполнена. Результаты пишутся в `output/playwright/metal-v5/` и `output/playwright/case-primary-links-metal/`. В `docs/qa/metal-v5/` сохранены доказательства этого запуска. Заголовок/описание намеренно берутся из каталога по общему правилу; reduced motion исправляет скрытый центральный скрин автономного исходника, сохраняя его без анимации.
+Сравнительный сценарий требует текущий сайт на 4176, распакованную автономную v2 на 4189 и экспорт исходного `main` на 4190. Адреса меняются через `SYNTHECORE_URL`, `FLOWERS_REFERENCE_URL`, `FLOWERS_BASELINE_URL`. Локальные эталоны, ZIP и standalone preview в Git не входят; без них сравнительную приёмку нельзя считать выполненной. Результаты пишутся в `output/playwright/flowers-v2/` и `output/playwright/case-primary-links-flowers/`; в `docs/qa/flowers-v2/` сохранены доказательства этого запуска. Заголовок/вводный текст намеренно берутся из каталога; статус прототипа и атрибуция 80% заказчику проверяются отдельно. Размеры всех четырёх исходных изображений берутся из аудита, а не предполагаются одинаковыми.
 
 Полный режим `verify-v62-import.cjs --strict` сравнивает 437 файлов самостоятельного архива v62, включая его прежнюю оболочку и документацию. Итоговый сайт имеет другой согласованный состав. Исторические 423/437 не являются текущей нормой: после очистки старых документов расхождений будет больше. Это не ошибка анимаций. Исходный манифест сохраняется как описание архива; менять его под новый состав нельзя.
 

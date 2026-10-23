@@ -4,7 +4,7 @@ const {chromium}=require(require.resolve('playwright',{paths:[process.cwd(),proc
 const base=process.env.SYNTHECORE_URL||'http://127.0.0.1:4176/';
 const reference=process.env.METAL_REFERENCE_URL||'http://127.0.0.1:4186/';
 const baseline=process.env.METAL_BASELINE_URL||'http://127.0.0.1:4187/';
-const dir=path.resolve('output/playwright/metal-v5');fs.mkdirSync(dir,{recursive:true});
+const dir=path.resolve(process.env.CASE_QA_OUTPUT||'output/playwright/metal-v5');fs.mkdirSync(dir,{recursive:true});
 const report={date:new Date().toISOString(),base,reference,baseline,checks:[],errors:[],measurements:[],referenceDifferences:['Shared title/summary and related cards use current catalog copy.','The reference hides the focus image with reduced motion; the integrated variant keeps it visible without animation.','Owner refinement on 23 October removes the hero frame background, border and shadow; the image retains its own aspect ratio and rounding.'],limitations:['Automated scrolling does not prove physical-device smoothness.','Firefox/WebKit and real mobile hardware are not tested.']};
 const check=(name,pass,data)=>{report.checks.push({name,pass:!!pass,...(data===undefined?{}:{data})});if(!pass)console.log('FAIL '+name+' '+JSON.stringify(data))};
 const pause=ms=>new Promise(r=>setTimeout(r,ms));
@@ -60,7 +60,11 @@ async function instrument(ctx){await ctx.addInitScript(()=>{window.__caseLenis={
    check(label+' five other projects',await related.count()===5);
    check(label+' current metal excluded',await related.locator('[data-project="metal"]').count()===0);
    check(label+' related Beauty has existing route',await related.locator('[data-project="beauty"]').getAttribute('href')==='/raboty/beauty-insight/');
-   for(const id of ['b2b','flowers','crm','prostor']){const opener=related.locator('[data-project="'+id+'"]');await opener.click();check(label+' related '+id+' modal',await page.locator('#caseDialog').evaluate(e=>e.open));await page.keyboard.press('Escape')}
+   for(const id of ['b2b','flowers','crm','prostor']){
+    const opener=related.locator('[data-project="'+id+'"]'),href=await opener.getAttribute('href');await opener.click();
+    if(href){await page.waitForURL('**'+href);check(label+' related '+id+' route',await page.locator('#caseTitle').isVisible());await page.goBack({waitUntil:'networkidle'});await page.evaluate(()=>document.fonts.ready);await pause(800)}
+    else{check(label+' related '+id+' modal',await page.locator('#caseDialog').evaluate(e=>e.open));await page.keyboard.press('Escape')}
+   }
    await scroll(page,(await top(page,'.related-work__controls'))-height/2);
    const arrow=page.locator('.related-work__arrow').last(),before=await arrow.boundingBox();await arrow.hover();await pause(250);const after=await arrow.boundingBox();
    check(label+' arrow does not lift',Math.abs(before.x-after.x)<.5&&Math.abs(before.y-after.y)<.5);

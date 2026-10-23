@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-23T19:46:11.594Z",
+  "base": "0aab90a24a1a3ef559a09867d9fa8e509a869d09",
+  "metalInput": "aafcc8eb808ff786ba622396d521c37ccd8f857c",
+  "branch": "feature/metal-calculator-detail",
+  "checks": [
+    {
+      "command": "node scripts/verify-v62-import.cjs",
+      "exitCode": 0,
+      "pass": true,
+      "output": "SyntheCore v62 MOTION LOCK: 17/17 matched."
+    },
+    {
+      "command": "node docs/qa/v62-on-v27/verify-git.cjs",
+      "exitCode": 0,
+      "pass": true,
+      "output": "{\n  \"ref\": \"INDEX\",\n  \"motionFiles\": 17,\n  \"v27Files\": 25,\n  \"approvedCatalogCopy\": \"2026-10-21\",\n  \"approvedButtonPolicy\": \"2026-10-22\",\n  \"v62ContentMatches\": true,\n  \"failures\": [],\n  \"pass\": true\n}"
+    },
+    {
+      "command": "node scripts/build-site.cjs --check",
+      "exitCode": 0,
+      "pass": true,
+      "output": "PASS: shared Header/Footer are current in home, catalog and case routes."
+    },
+    {
+      "command": "node scripts/check-project.cjs --http http://127.0.0.1:4176/",
+      "exitCode": 0,
+      "pass": true,
+      "output": "PASS: 12 image/viewport combinations, 60 crop states, zero-size guards.\nPASS: current v60 structure/resources, 6 approved Works images, 40 vendor/asset manifest hashes. 59 HTTP resources match disk."
+    },
+    {
+      "command": "node scripts/verify-works-static.cjs",
+      "exitCode": 0,
+      "pass": true,
+      "output": "PASS: 6 ordered Works cards with approved copy, 6 approved PNG hashes/dimensions, unique ids/hooks, valid fragment targets, dependency order, one Lenis owner, 58 local resources. Offline checks only."
+    },
+    {
+      "command": "node scripts/verify-services-static.cjs",
+      "exitCode": 0,
+      "pass": true,
+      "output": "PASS: six services cards, accessible headings, twelve local illustrations (mono + color), idle tilt, active alignment, single scroll owner, no vertical wheel capture."
+    },
+    {
+      "command": "node scripts/check-hero-geometry.cjs",
+      "exitCode": 0,
+      "pass": true,
+      "output": "PASS: 12 image/viewport combinations, 60 crop states, zero-size guards."
+    },
+    {
+      "command": "node scripts/verify-sticky-handoff-v61.cjs",
+      "exitCode": 0,
+      "pass": true,
+      "output": "PASS: experimental CSS sticky scenes and +30% testimonials."
+    },
+    {
+      "command": "node --test scripts/test-static-checks.cjs scripts/test-shared-site.cjs scripts/test-case-pages.cjs scripts/test-project-copy.cjs scripts/test-button-policy.cjs scripts/test-metal-case.cjs scripts/test-flowers-case.cjs scripts/test-case-integration.cjs",
+      "exitCode": 0,
+      "pass": true,
+      "output": "✔ button policy exception accepts only the exact two additions to v27 (2.5816ms)\n✔ QA does not exempt protected motion files or unrelated components (0.9944ms)\n✔ joint integration preserves every complete case and its styles against accepted branch snapshots (21.6498ms)\n✔ baseline comparison refuses malformed registered routes instead of hiding them (4.4076ms)\n✔ case renderer builds a nested route from shared shell and case content (26.1436ms)\n✔ all case assets and local links resolve under the nested URL (7.5912ms)\n✔ case renderer escapes content and rejects missing or unsafe project data (20.6705ms)\n✔ authorized case links restore exact original pages and reject other mutations (36.6446ms)\n✔ all six case registrations automatically wire primary homepage and catalog actions (2.7355ms)\n✔ imported case images retain verified handoff bytes (4.9053ms)\n✔ Flowers is built from the canonical catalog copy and existing shared components (27.582ms)\n✔ Flowers retains three phones, four factual prototype stages, two result devices and four full interfaces (3.4005ms)\n✔ the Flowers variant rejects unapproved layouts and incorrect media/process data (7.4666ms)\n✔ Flowers assets retain source bytes, resources resolve, and other catalog/Beauty content remains unchanged (10.7999ms)\n✔ metal route is generated through the shared shell and catalog copy (23.8018ms)\n✔ metal variant renders one hero, five steps and the approved result banner (2.7858ms)\n✔ catalog registers the new primary route and keeps the other five cards (4.695ms)\n✔ metal variant rejects extra hero images, unknown layouts and missing result proof fields (6.6412ms)\n✔ metal resources resolve from the nested route and imported images retain source bytes (12.4497ms)\n✔ Beauty and other catalog content retain baseline bytes after exact registered route additions (4.8996ms)\n✔ all six homepage titles and summaries match the catalog source (13.2801ms)\n✔ editing catalog copy updates both dependent templates automatically (83.1063ms)\n✔ case first screen and metadata use catalog title and summary, not independent copies (3.7886ms)\n✔ both static routes are generated from one header and one footer (18.5152ms)\n✔ route-aware shared navigation resolves every local anchor (7.5882ms)\n✔ catalog permits only approved naming while preserving six projects, descriptions and assets (22.1171ms)\n✔ catalog copy exception rejects unapproved copy and structural or shell changes (33.814ms)\n✔ single footer and menu owners retain local motion contracts (1.8144ms)\n✔ local Manrope distributions match the recorded hashes (8.8303ms)\n✔ combined build preserves v62 motion bytes/content and the owner-selected v27 shell (14.6559ms)\n▶ current v60 static checks accept the site and reject isolated fixture mutations\n  ✔ accepted package passes without HTTP or historical backups (119.7627ms)\n  ✔ missing card (13.7196ms)\n  ✔ reordered cards (15.5565ms)\n  ✔ duplicate DOM id (13.5705ms)\n  ✔ missing label target (18.8762ms)\n  ✔ label targets another card (19.8962ms)\n  ✔ label target is not h2 (15.1873ms)\n  ✔ empty title (15.3822ms)\n  ✔ empty category (16.28ms)\n  ✔ missing description (11.1327ms)\n  ✔ empty description (12.2102ms)\n  ✔ missing image (12.635ms)\n  ✔ empty image src (13.1923ms)\n  ✔ wrong image mapping (12.5525ms)\n  ✔ wrong natural dimension attribute (14.0942ms)\n  ✔ missing image file (10.6358ms)\n  ✔ wrong PNG dimensions (14.4909ms)\n  ✔ wrong approved image hash (12.6795ms)\n  ✔ wrong section order (16.4045ms)\n  ✔ nested rather than sequential section (12.7832ms)\n  ✔ duplicate Works CSS hook (30.3882ms)\n  ✔ duplicate Works JS hook (30.087ms)\n  ✔ CSS hook before main (31.9834ms)\n  ✔ Works script before dependencies (29.317ms)\n  ✔ async Works script (30.5105ms)\n  ✔ duplicate vendor URL alias (30.4787ms)\n  ✔ second external library copy (30.4764ms)\n  ✔ second Lenis constructor (48.4617ms)\n  ✔ missing Lenis constructor (49.5616ms)\n  ✔ missing local CSS resource (23.4923ms)\n  ✔ malformed nested markup (13.4857ms)\n  ✔ removed prototype category qualification (13.6807ms)\n  ✔ removed prototype description qualification (13.7144ms)\n  ✔ removed demo-data qualification (18.6198ms)\n  ✔ removed concept qualification (19.0459ms)\n  ✔ dangling services navigation link (11.6046ms)\n  ✔ dangling encoded navigation link (11.1964ms)\n  ✔ malformed percent-encoded fragment (10.8082ms)\n  ✔ empty fragment (12.3425ms)\n  ✔ b2b nonempty title copy changes (11.3802ms)\n  ✔ b2b nonempty category copy changes (12.7765ms)\n  ✔ b2b nonempty description copy changes (10.7437ms)\n  ✔ flowers nonempty title copy changes (12.8052ms)\n  ✔ flowers nonempty category copy changes (13.1963ms)\n  ✔ flowers nonempty description copy changes (12.9774ms)\n  ✔ crm nonempty title copy changes (14.8732ms)\n  ✔ crm nonempty category copy changes (14.6435ms)\n  ✔ crm nonempty description copy changes (16.1714ms)\n  ✔ beauty nonempty title copy changes (16.8326ms)\n  ✔ beauty nonempty category copy changes (17.142ms)\n  ✔ beauty nonempty description copy changes (18.2169ms)\n  ✔ prostor nonempty title copy changes (18.569ms)\n  ✔ prostor nonempty category copy changes (18.1294ms)\n  ✔ prostor nonempty description copy changes (20.9032ms)\n  ✔ metal nonempty title copy changes (21.9027ms)\n  ✔ metal nonempty category copy changes (21.0735ms)\n  ✔ metal nonempty description copy changes (23.6173ms)\n  ✔ b2b image hash differs with same byte length (12.8852ms)\n  ✔ flowers image hash differs with same byte length (14.4567ms)\n  ✔ crm image hash differs with same byte length (17.2825ms)\n  ✔ beauty image hash differs with same byte length (20.9213ms)\n  ✔ prostor image hash differs with same byte length (20.9793ms)\n  ✔ metal image hash differs with same byte length (27.2895ms)\n  ✔ whitespace, attribute quoting and nested inline text remain valid (39.4532ms)\nPASS: 12 image/viewport combinations, 60 crop states, zero-size guards.\n  ✔ project check works offline from an unrelated cwd (44.5835ms)\n  ✔ asset manifest hash rejects same-length mutation (42.2936ms)\n  ✔ vendor manifest hash rejects same-length mutation (74.9315ms)\n  ✔ explicit HTTP verifies bytes and rejects stale content / 404 (62.7395ms)\n✔ current v60 static checks accept the site and reject isolated fixture mutations (1665.7585ms)\nℹ tests 99\nℹ suites 0\nℹ pass 99\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 1818.4798"
+    },
+    {
+      "command": "git ls-files --cached --others --exclude-standard | node scripts/check-doc-links.cjs",
+      "exitCode": 0,
+      "pass": true,
+      "output": "PASS: 260 local links across 12 current/historical Markdown documents target supplied Git files."
+    }
+  ],
+  "pass": true
+}
