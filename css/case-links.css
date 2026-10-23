@@ -1,10 +1,5 @@
-/* Only the owner-requested entry points; existing card sizes and modal owners remain intact. */
-.sc-work-content__title > .sc-work-detail-link {color:inherit;font:inherit;letter-spacing:inherit;line-height:inherit;text-decoration:none;pointer-events:auto;}
-.sc-work-detail-link:focus-visible {outline:3px solid #e44d1f;outline-offset:5px;}
-body.works-catalog .case-grid > .case-card--beauty {position:relative;}
-body.works-catalog .case-grid > .case-card--beauty > .sc-case-card-detail-link {
- position:absolute;top:16px;right:16px;z-index:2;display:inline-flex;align-items:center;min-height:36px;
- padding:7px 12px;border:1px solid #dde5eb;border-radius:100px;background:#fff;color:#171e23;
- font:500 12px/1.5 Manrope,sans-serif;text-decoration:none;
+/* All published cases share the same full-frame entry point; scene geometry stays unchanged. */
+.sc-work-frame > .sc-work-detail-link {
+ position:absolute;inset:0;z-index:4;display:block;cursor:pointer;pointer-events:auto;border-radius:inherit;
 }
-body.works-catalog .case-grid > .case-card--beauty > .sc-case-card-detail-link:focus-visible {outline:3px solid #e44d1f;outline-offset:3px;}
+.sc-work-frame > .sc-work-detail-link:focus-visible {outline:3px solid #e44d1f;outline-offset:-5px;}

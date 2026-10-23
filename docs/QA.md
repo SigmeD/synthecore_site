@@ -51,7 +51,7 @@ node scripts/check-project.cjs --http http://127.0.0.1:4176/
 node scripts/verify-orange-buttons.cjs
 ```
 
-Сценарий использует существующую локальную установку Playwright. Он проверяет главную и каталог на 320/390/768/1024/1440 px: обычное состояние, hover, удержание мыши, клавиатурный Tab и outline, мобильное меню, шаги процесса, карусель услуг, шесть проектных диалогов и горизонтальную прокрутку. Модалки сохранены; Beauty Insight дополнительно доступен по `/raboty/beauty-insight/`.
+Сценарий использует существующую локальную установку Playwright. Он проверяет главную и каталог на 320/390/768/1024/1440 px: обычное состояние, hover, удержание мыши, клавиатурный Tab и outline, мобильное меню, шаги процесса, карусель услуг, проектные диалоги и горизонтальную прокрутку. Beauty Insight открывается основным переходом на `/raboty/beauty-insight/`; модалки остаются у работ без детальной страницы.
 
 ## Детальные кейсы v20
 
@@ -61,6 +61,7 @@ node scripts/verify-orange-buttons.cjs
 node --test scripts/test-case-pages.cjs scripts/test-shared-site.cjs scripts/test-button-policy.cjs
 node scripts/build-site.cjs --check
 node scripts/verify-case-browser.cjs
+node scripts/verify-case-links-browser.cjs
 ```
 
 Браузерный сценарий использует текущий сайт на 4176, распакованный эталон v20 на 4183 и исходный `main` на 4184. Адреса задаются через `SYNTHECORE_URL`, `CASE_REFERENCE_URL`, `CASE_BASELINE_URL`; для чистой проверочной сборки можно передать `--base=http://127.0.0.1:4185/`. Эти эталоны локальные и в новый клон не входят. Если их нет, сравнительный QA не выполнен: не выдавайте его за PASS. Сценарий сохраняет свежие снимки, видео и JSON в `output/playwright/beauty-v20/`.

@@ -48,6 +48,8 @@ async function footerCheck(page,label,width){
 }
 async function modalCheck(page,label){
  for(const [index,button] of (await page.locator('.case-card__open').all()).entries()){
+  const href=await button.getAttribute('href');
+  if(href){await button.click();await page.waitForURL('**'+href);check(`${label} case ${index+1} primary link`,await page.locator('#caseTitle').isVisible());await page.goBack();await page.waitForSelector('#catalog-title');continue;}
   await button.click();await pause(80);
   check(`${label} dialog ${index+1} content`,await page.locator('#caseDialog').evaluate(n=>n.open&&n.querySelector('#dialogDescription').textContent.length>30));
   const y=await page.evaluate(()=>scrollY);await page.mouse.wheel(0,400);await pause(250);

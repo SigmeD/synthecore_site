@@ -54,19 +54,40 @@ test('case renderer escapes content and rejects missing or unsafe project data',
 });
 
 test('authorized case links restore exact original pages and reject other mutations',()=>{
- const crypto=require('node:crypto');const {restoreCaseLinks,linkedTitle,cardLink}=require('./lib/approved-case-links.cjs');
+ const crypto=require('node:crypto');const {restoreCaseLinks}=require('./lib/approved-case-links.cjs');
+ const {wireCaseLinks}=require('./lib/case-links.cjs');const {casePages}=require('./lib/case-page.cjs');
  const originals={'templates/pages/home.html':'49bed7ee41cd91c5c34b696a5d596fa9d32ee917ba32c6756347bc8b36f50b4f','templates/pages/works.html':'9f733f48690270aeb5a968b9f2311eb2c560cf165b0cab24c7964b33cc6e16f7'};
  const hash=text=>crypto.createHash('sha256').update(text).digest('hex');
- for(const [file,marker] of [['templates/pages/home.html',linkedTitle],['templates/pages/works.html',cardLink]]){
-  const html=read(file),original=originals[file];
+ for(const [file,page] of [['templates/pages/home.html','home'],['templates/pages/works.html','works']]){
+  const html=wireCaseLinks(page,read(file),casePages(root)),original=originals[file];
+  const marker=page==='home'?html.match(/<a class="sc-work-detail-link"[^>]+><\/a>/)[0]:html.match(/<a [^>]+data-project="beauty"[^>]+>/)[0];
+  const accepted=value=>{try{return hash(restoreCaseLinks(file,value))===original}catch{return false}};
   assert.equal(hash(restoreCaseLinks(file,html)),original);
-  assert.throws(()=>restoreCaseLinks(file,html.replace(marker,marker+marker)),/exactly one/);
-  assert.throws(()=>restoreCaseLinks(file,html.replace('/raboty/beauty-insight/','/raboty/missing/')),/exactly one|inside Beauty/);
-  assert.throws(()=>restoreCaseLinks(file,html.replace('<link rel="stylesheet" href="/css/case-links.css">\n','').replace('</head>','</head><link rel="stylesheet" href="/css/case-links.css">\n')),/exactly one/);
-  if(file.includes('works'))assert.throws(()=>restoreCaseLinks(file,html.replace(cardLink,'').replace('{{header}}','{{header}}'+cardLink)),/inside Beauty/);
+  assert.equal(accepted(html.replace(marker,marker+marker)),false);
+  assert.equal(accepted(html.replace('/raboty/beauty-insight/','/raboty/missing/')),false);
+  assert.equal(accepted(html.replace('<link rel="stylesheet" href="/css/case-links.css">\n','').replace('</head>','</head><link rel="stylesheet" href="/css/case-links.css">\n')),false);
+  assert.equal(accepted(html.replace(marker,'').replace('{{header}}','{{header}}'+marker)),false);
+  if(page==='home'){
+   const article=html.match(/<article class="sc-work-item" data-work-id="beauty"[\s\S]*?<\/article>/)[0];
+   const moved=article.replace(marker,'').replace(/(<\/p>\s*)<\/div>/,'$1'+marker+'</div>');
+   assert.equal(accepted(html.replace(article,moved)),false,'overlay cannot be reduced to the text panel');
+  }
   const changed=restoreCaseLinks(file,html.replace('id="top"','id="changed-top"'));
   if(html.includes('id="top"'))assert.notEqual(hash(changed),original);
  }
+});
+
+test('all six case registrations automatically wire primary homepage and catalog actions',()=>{
+ const {wireCaseLinks}=require('./lib/case-links.cjs');
+ const cases=['b2b','flowers','crm','beauty','prostor','metal'].map(id=>({slug:id==='beauty'?'beauty-insight':id,catalog_id:id}));
+ const home=wireCaseLinks('home',read('templates/pages/home.html'),cases);
+ const catalog=wireCaseLinks('works',read('templates/pages/works.html'),cases);
+ assert.equal((home.match(/class="sc-work-detail-link"/g)||[]).length,6);
+ assert.equal((catalog.match(/<a [^>]+class="case-card__open"/g)||[]).length,6);
+ assert.ok(!catalog.includes('<button aria-label="Открыть описание проекта:'));
+ for(const data of cases){assert.ok(home.includes(`href="/raboty/${data.slug}/"`));assert.ok(catalog.includes(`href="/raboty/${data.slug}/"`))}
+ const current=read('raboty/index.html');assert.equal((current.match(/<button [^>]+class="case-card__open"/g)||[]).length,5);
+ assert.ok(/<a [^>]+data-project="beauty" href="\/raboty\/beauty-insight\/">/.test(current));
 });
 
 test('imported case images retain verified handoff bytes',()=>{

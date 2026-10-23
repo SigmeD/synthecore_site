@@ -169,6 +169,12 @@ async function preserved(page, key, selectors) {
         } else {
           await preserved(page, label, ['.case-card']);
           for (const id of ['b2b', 'flowers', 'crm', 'beauty', 'prostor', 'metal']) {
+            const project=page.locator('[data-project="'+id+'"]');
+            if(await project.evaluate(e=>e.tagName==='A')){
+              await project.click();await page.waitForURL('**/raboty/beauty-insight/');
+              check(label+'/'+id+' primary link navigates',await page.locator('#caseTitle').isVisible());
+              await page.goBack();await page.waitForSelector('#catalog-title');continue;
+            }
             await page.locator('[data-project="' + id + '"]').click();
             check(label + '/' + id + ' detail opens', await page.locator('#caseDialog').evaluate(n => n.open));
             await states(page, label + '/detail-' + id, '.case-dialog__cta');

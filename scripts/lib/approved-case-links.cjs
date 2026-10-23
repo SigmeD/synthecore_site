@@ -1,22 +1,29 @@
 'use strict';
-// Exact owner-authorized entry points, 2026-10-23. The original baseline manifests stay unchanged.
+// Restore only registered whole-card links before the original SHA comparison.
+const path=require('node:path');
+const {casePages}=require('./case-page.cjs');
+const {homeLink}=require('./case-links.cjs');
 const stylesheet='<link rel="stylesheet" href="/css/case-links.css">\n';
-const title='<h2 class="sc-work-content__title" id="sc-work-beauty-title">Beauty Insight AI</h2>';
-const linkedTitle='<h2 class="sc-work-content__title" id="sc-work-beauty-title"><a class="sc-work-detail-link" href="/raboty/beauty-insight/">Beauty Insight AI</a></h2>';
-const cardLink='<a class="sc-case-card-detail-link" href="/raboty/beauty-insight/" aria-label="Подробный кейс: Beauty Insight AI">Подробный кейс →</a>';
 function once(text,from,to){if(text.split(from).length!==2)throw Error('Expected exactly one authorized case link insertion');return text.replace(from,to)}
 function restoreCaseLinks(file,text){
- if(['index.html','templates/pages/home.html'].includes(file)){
-  if(!text.includes(linkedTitle)&&!text.includes(stylesheet))return text;
-  text=once(text,linkedTitle,title);return once(text,stylesheet+'</head>','</head>');
- }
- if(['raboty/index.html','templates/pages/works.html'].includes(file)){
-  if(!text.includes(cardLink)&&!text.includes(stylesheet))return text;
-  if(text.split(cardLink).length!==2)throw Error('Expected exactly one authorized case link insertion');
-  const article=text.match(/<article class="case-card case-card--beauty">[\s\S]*?<\/article>/)?.[0];
-  if(!article||!article.includes('</button>'+cardLink+'\n</article>'))throw Error('Expected authorized case link inside Beauty card');
-  text=text.replace(article,once(article,cardLink,''));return once(text,stylesheet+'</head>','</head>');
- }
- return text;
+ if(file==='js/raboty-cards.js')return once(text,"document.querySelectorAll('button.case-card__open')","document.querySelectorAll('.case-card__open')");
+ const page=['index.html','templates/pages/home.html'].includes(file)?'home':['raboty/index.html','templates/pages/works.html'].includes(file)?'works':null;
+ if(!page)return text;
+ const cases=casePages(path.resolve(__dirname,'../..'));
+ for(const project of cases)text=text.replace(/<article\b[\s\S]*?<\/article>/g,article=>{
+  if(page==='home'){
+   if(!article.includes(`data-work-id="${project.catalog_id}"`))return article;
+   const id=article.match(/aria-labelledby="([^"]+)"/)?.[1],link=homeLink(project,id);
+   if(!article.includes('sc-work-detail-link'))return article;
+   if(!/^<\/div>\s*<\/article>$/.test(article.slice(article.indexOf(link)+link.length)))throw Error('Case link must end its own project frame');
+   return once(article,link,'');
+  }
+  if(!article.includes(`data-project="${project.catalog_id}"`)||!article.includes('<a '))return article;
+  const opening=article.match(/<a [^>]+>/)?.[0];
+  if(!opening?.endsWith(` data-project="${project.catalog_id}" href="/raboty/${project.slug}/">`))throw Error('Unexpected case card link');
+  return once(once(article,opening,opening.replace('<a ','<button ').replace(` href="/raboty/${project.slug}/">`,' type="button">')),'</a>','</button>');
+ });
+ if(/sc-work-detail-link|sc-case-card-detail-link/.test(text))throw Error('Case link outside its own project frame');
+ return once(text,stylesheet+'</head>','</head>');
 }
-module.exports={restoreCaseLinks,stylesheet,title,linkedTitle,cardLink};
+module.exports={restoreCaseLinks,stylesheet};

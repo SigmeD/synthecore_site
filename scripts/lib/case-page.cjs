@@ -26,10 +26,11 @@ function renderCase(root,data){
  for(const [key,image] of Object.entries(data.hero_media)){values['hero_'+key+'_src']=escape(image.src);values['hero_'+key+'_alt']=escape(image.alt);}
  values.result_src=escape(data.result_media.src);values.result_alt=escape(data.result_media.alt);
  // Reuse current semantic catalog cards and its dialog behavior, with no second project list.
- const cards=[...read(root,'templates/pages/works.html').matchAll(/<article class="case-card\b[\s\S]*?<\/article>/g)].map(m=>m[0]);
+ const {wireCaseLinks}=require('./case-links.cjs');
+ const catalog=wireCaseLinks('works',read(root,'templates/pages/works.html'),casePages(root));
+ const cards=[...catalog.matchAll(/<article class="case-card\b[\s\S]*?<\/article>/g)].map(m=>m[0]);
  if(cards.length!==6||!cards.some(c=>c.includes(`data-project="${data.catalog_id}"`)))throw Error('Case must match one of six catalog projects');
- const {cardLink}=require('./approved-case-links.cjs');
- values.related=cards.filter(c=>!c.includes(`data-project="${data.catalog_id}"`)).map(c=>c.replace(cardLink,'')).join('\n');
+ values.related=cards.filter(c=>!c.includes(`data-project="${data.catalog_id}"`)).join('\n');
  return read(root,'templates/pages/case.html').replace(/\{\{([a-z0-9_]+)\}\}/g,(marker,key)=>Object.hasOwn(values,key)?values[key]:marker);
 }
 module.exports={casePages,renderCase};

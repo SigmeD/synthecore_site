@@ -2,6 +2,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const {casePages,renderCase}=require('./lib/case-page.cjs');
+const {wireCaseLinks}=require('./lib/case-links.cjs');
 const PAGES = {home:'index.html', works:'raboty/index.html'};
 const read = (root, file) => fs.readFileSync(path.join(root, file), 'utf8').replace(/\r\n/g, '\n');
 
@@ -14,7 +15,7 @@ function renderPage(root, page) {
     home: page === 'home' ? '' : '/',
     worksCurrent: page === 'works' ? ' aria-current="page"' : '',
   };
-  const output = (data?renderCase(root,data):read(root, `templates/pages/${page}.html`))
+  const output = (data?renderCase(root,data):wireCaseLinks(page,read(root, `templates/pages/${page}.html`),casePages(root)))
     .replace(/\{\{(header|footer)\}\}/g, (_, key) => values[key])
     .replace(/\{\{(home|worksCurrent)\}\}/g, (_, key) => values[key]);
   if (/\{\{[^}]+\}\}/.test(output)) throw new Error(`Unresolved template marker in ${page}`);

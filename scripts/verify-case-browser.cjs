@@ -116,7 +116,6 @@ function watch(page,label){page.on('pageerror',e=>report.errors.push({label,type
    const actual=await sample(page,list),expected=await sample(previous,list);
    for(const s of list)check(width+route+' unchanged geometry '+s,Math.abs(actual[s].width-expected[s].width)<1&&Math.abs(actual[s].height-expected[s].height)<1&&actual[s].font===expected[s].font,{actual:actual[s],baseline:expected[s]});
    const key=route==='/'?'home':'catalog';await snapshot(page,key+'-'+width);await snapshot(previous,'baseline-'+key+'-'+width);
-   if(route==='/raboty/'){await page.locator('[data-project="beauty"]').click();check(width+' catalog Beauty modal preserved',await page.locator('#caseDialog').evaluate(e=>e.open));await page.keyboard.press('Escape')}
    const link=page.locator('a[href="/raboty/beauty-insight/"]');await link.click();await page.waitForURL('**/raboty/beauty-insight/');check(width+route+' Beauty link navigates',await page.locator('#caseTitle').isVisible());await context.close();
   }
   completed=true;
