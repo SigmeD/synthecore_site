@@ -1,0 +1,5732 @@
+{
+  "date": "2026-10-23T10:49:30.619Z",
+  "base": "http://127.0.0.1:4185/",
+  "reference": "http://127.0.0.1:4183/",
+  "baseline": "http://127.0.0.1:4184/",
+  "browser": "Chromium",
+  "checks": [
+    {
+      "name": "320 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "320 desktop sticky boundary",
+      "pass": true,
+      "data": {
+        "width": 292,
+        "height": 410.671875,
+        "x": 14,
+        "y": 3595.109375,
+        "font": "16px",
+        "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+        "lineHeight": "normal",
+        "position": "relative",
+        "top": "0px",
+        "shadow": "rgba(28, 72, 106, 0.2) 0px 12px 38px -30px",
+        "transform": "none"
+      }
+    },
+    {
+      "name": "320 CTA typography and size",
+      "pass": true
+    },
+    {
+      "name": "320 timeline circles",
+      "pass": true
+    },
+    {
+      "name": "320 four interfaces",
+      "pass": true
+    },
+    {
+      "name": "320 five original related cards",
+      "pass": true
+    },
+    {
+      "name": "320 reduced native scrolling",
+      "pass": true
+    },
+    {
+      "name": "320 reduced parallax disabled",
+      "pass": true
+    },
+    {
+      "name": "320 CSS selectors scoped",
+      "pass": true
+    },
+    {
+      "name": "320 no accent glow .sc-case-process__cta-button",
+      "pass": true
+    },
+    {
+      "name": "320 no accent glow .sc-footer__cta",
+      "pass": true
+    },
+    {
+      "name": "320 no accent glow .case-dialog__cta",
+      "pass": true
+    },
+    {
+      "name": "320 lightbox 0 open",
+      "pass": true
+    },
+    {
+      "name": "320 lightbox focus trapped",
+      "pass": true
+    },
+    {
+      "name": "320 lightbox 0 close/focus",
+      "pass": true
+    },
+    {
+      "name": "320 lightbox 1 open",
+      "pass": true
+    },
+    {
+      "name": "320 lightbox focus trapped",
+      "pass": true
+    },
+    {
+      "name": "320 lightbox 1 close/focus",
+      "pass": true
+    },
+    {
+      "name": "320 lightbox 2 open",
+      "pass": true
+    },
+    {
+      "name": "320 lightbox focus trapped",
+      "pass": true
+    },
+    {
+      "name": "320 lightbox 2 close/focus",
+      "pass": true
+    },
+    {
+      "name": "320 lightbox 3 open",
+      "pass": true
+    },
+    {
+      "name": "320 lightbox focus trapped",
+      "pass": true
+    },
+    {
+      "name": "320 lightbox 3 close/focus",
+      "pass": true
+    },
+    {
+      "name": "320 related modal b2b",
+      "pass": true
+    },
+    {
+      "name": "320 related modal focus b2b",
+      "pass": true
+    },
+    {
+      "name": "320 related modal flowers",
+      "pass": true
+    },
+    {
+      "name": "320 related modal focus flowers",
+      "pass": true
+    },
+    {
+      "name": "320 related modal crm",
+      "pass": true
+    },
+    {
+      "name": "320 related modal focus crm",
+      "pass": true
+    },
+    {
+      "name": "320 related modal prostor",
+      "pass": true
+    },
+    {
+      "name": "320 related modal focus prostor",
+      "pass": true
+    },
+    {
+      "name": "320 related modal metal",
+      "pass": true
+    },
+    {
+      "name": "320 related modal focus metal",
+      "pass": true
+    },
+    {
+      "name": "320 arrows stationary on hover",
+      "pass": true
+    },
+    {
+      "name": "320 carousel click advances",
+      "pass": true
+    },
+    {
+      "name": "320 mobile menu opens",
+      "pass": true
+    },
+    {
+      "name": "320 mobile menu closes",
+      "pass": true
+    },
+    {
+      "name": "320 reference geometry h1",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 272,
+          "height": 115.5,
+          "x": 24,
+          "y": 128,
+          "font": "35px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "38.5px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 272,
+          "height": 115.5,
+          "x": 24,
+          "y": 128,
+          "font": "35px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "38.5px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "320 reference geometry .case-hero__intro",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 272,
+          "height": 212.75,
+          "x": 24,
+          "y": 273.5,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 272,
+          "height": 212.75,
+          "x": 24,
+          "y": 273.5,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "320 reference geometry .case-hero__media",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 272,
+          "height": 325,
+          "x": 24,
+          "y": 522.25,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 272,
+          "height": 325,
+          "x": 24,
+          "y": 522.25,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "320 reference geometry .sc-case-process__number-circle",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 32,
+          "height": 32,
+          "x": 18,
+          "y": 955.75,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(134, 134, 134, 0.72) 0px 0px 0px 4px",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 32,
+          "height": 32,
+          "x": 18,
+          "y": 955.75,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(134, 134, 134, 0.72) 0px 0px 0px 4px",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "320 reference geometry .sc-case-result__heading",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 292,
+          "height": 290.84375,
+          "x": 14,
+          "y": 1784.078125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 292,
+          "height": 290.84375,
+          "x": 14,
+          "y": 1784.078125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "320 reference geometry .sc-case-result__hero-media",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 292,
+          "height": 232.6875,
+          "x": 14,
+          "y": 2106.921875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(24, 52, 77, 0.22) 0px 25px 80px -70px",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        "reference": {
+          "width": 292,
+          "height": 232.6875,
+          "x": 14,
+          "y": 2106.921875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(24, 52, 77, 0.22) 0px 25px 80px -70px",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        }
+      }
+    },
+    {
+      "name": "320 reference geometry .sc-case-screens__grid",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 292,
+          "height": 1044,
+          "x": 14,
+          "y": 2469.109375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 292,
+          "height": 1044,
+          "x": 14,
+          "y": 2469.109375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "320 reference geometry .sc-case-process__cta",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 292,
+          "height": 410.671875,
+          "x": 14,
+          "y": 3595.109375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(28, 72, 106, 0.2) 0px 12px 38px -30px",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 292,
+          "height": 410.671875,
+          "x": 14,
+          "y": 3595.109375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(28, 72, 106, 0.2) 0px 12px 38px -30px",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "320 reference geometry .sc-case-process__cta h3",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 252,
+          "height": 71.65625,
+          "x": 34,
+          "y": 3762.109375,
+          "font": "32px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "35.84px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 252,
+          "height": 71.65625,
+          "x": 34,
+          "y": 3762.109375,
+          "font": "32px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "35.84px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "320 reference geometry .sc-case-process__cta-button",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 252,
+          "height": 52,
+          "x": 34,
+          "y": 3933.78125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 252,
+          "height": 52,
+          "x": 34,
+          "y": 3933.78125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "320 reference geometry .related-work__head",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 292,
+          "height": 38.5,
+          "x": 14,
+          "y": 4195.78125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 292,
+          "height": 38.5,
+          "x": 14,
+          "y": 4195.78125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "320 reference geometry .case-card",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 292,
+          "height": 375.703125,
+          "x": -910,
+          "y": 4266.28125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(0, 0, 0, 0.1) 0px 2px 6px -3px",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 292,
+          "height": 406.828125,
+          "x": -910,
+          "y": 4266.28125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(0, 0, 0, 0.1) 0px 2px 6px -3px",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "320 shared header matches catalog",
+      "pass": true
+    },
+    {
+      "name": "320 shared footer matches catalog",
+      "pass": true
+    },
+    {
+      "name": "390 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "390 desktop sticky boundary",
+      "pass": true,
+      "data": {
+        "width": 362,
+        "height": 410,
+        "x": 14,
+        "y": 3594.203125,
+        "font": "16px",
+        "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+        "lineHeight": "normal",
+        "position": "relative",
+        "top": "0px",
+        "shadow": "rgba(28, 72, 106, 0.2) 0px 12px 38px -30px",
+        "transform": "none"
+      }
+    },
+    {
+      "name": "390 CTA typography and size",
+      "pass": true
+    },
+    {
+      "name": "390 timeline circles",
+      "pass": true
+    },
+    {
+      "name": "390 four interfaces",
+      "pass": true
+    },
+    {
+      "name": "390 five original related cards",
+      "pass": true
+    },
+    {
+      "name": "390 reduced native scrolling",
+      "pass": true
+    },
+    {
+      "name": "390 reduced parallax disabled",
+      "pass": true
+    },
+    {
+      "name": "390 CSS selectors scoped",
+      "pass": true
+    },
+    {
+      "name": "390 no accent glow .sc-case-process__cta-button",
+      "pass": true
+    },
+    {
+      "name": "390 no accent glow .sc-footer__cta",
+      "pass": true
+    },
+    {
+      "name": "390 no accent glow .case-dialog__cta",
+      "pass": true
+    },
+    {
+      "name": "390 lightbox 0 open",
+      "pass": true
+    },
+    {
+      "name": "390 lightbox focus trapped",
+      "pass": true
+    },
+    {
+      "name": "390 lightbox 0 close/focus",
+      "pass": true
+    },
+    {
+      "name": "390 lightbox 1 open",
+      "pass": true
+    },
+    {
+      "name": "390 lightbox focus trapped",
+      "pass": true
+    },
+    {
+      "name": "390 lightbox 1 close/focus",
+      "pass": true
+    },
+    {
+      "name": "390 lightbox 2 open",
+      "pass": true
+    },
+    {
+      "name": "390 lightbox focus trapped",
+      "pass": true
+    },
+    {
+      "name": "390 lightbox 2 close/focus",
+      "pass": true
+    },
+    {
+      "name": "390 lightbox 3 open",
+      "pass": true
+    },
+    {
+      "name": "390 lightbox focus trapped",
+      "pass": true
+    },
+    {
+      "name": "390 lightbox 3 close/focus",
+      "pass": true
+    },
+    {
+      "name": "390 related modal b2b",
+      "pass": true
+    },
+    {
+      "name": "390 related modal focus b2b",
+      "pass": true
+    },
+    {
+      "name": "390 related modal flowers",
+      "pass": true
+    },
+    {
+      "name": "390 related modal focus flowers",
+      "pass": true
+    },
+    {
+      "name": "390 related modal crm",
+      "pass": true
+    },
+    {
+      "name": "390 related modal focus crm",
+      "pass": true
+    },
+    {
+      "name": "390 related modal prostor",
+      "pass": true
+    },
+    {
+      "name": "390 related modal focus prostor",
+      "pass": true
+    },
+    {
+      "name": "390 related modal metal",
+      "pass": true
+    },
+    {
+      "name": "390 related modal focus metal",
+      "pass": true
+    },
+    {
+      "name": "390 arrows stationary on hover",
+      "pass": true
+    },
+    {
+      "name": "390 carousel click advances",
+      "pass": true
+    },
+    {
+      "name": "390 mobile menu opens",
+      "pass": true
+    },
+    {
+      "name": "390 mobile menu closes",
+      "pass": true
+    },
+    {
+      "name": "390 reference geometry h1",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 342,
+          "height": 77.1875,
+          "x": 24,
+          "y": 128,
+          "font": "35.1px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "38.61px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 342,
+          "height": 77.1875,
+          "x": 24,
+          "y": 128,
+          "font": "35.1px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "38.61px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "390 reference geometry .case-hero__intro",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 342,
+          "height": 161.5625,
+          "x": 24,
+          "y": 235.1875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 342,
+          "height": 161.5625,
+          "x": 24,
+          "y": 235.1875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "390 reference geometry .case-hero__media",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 342,
+          "height": 325,
+          "x": 24,
+          "y": 432.75,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 342,
+          "height": 325,
+          "x": 24,
+          "y": 432.75,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "390 reference geometry .sc-case-process__number-circle",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 32,
+          "height": 32,
+          "x": 18,
+          "y": 872.796875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(134, 134, 134, 0.72) 0px 0px 0px 4px",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 32,
+          "height": 32,
+          "x": 18,
+          "y": 872.796875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(134, 134, 134, 0.72) 0px 0px 0px 4px",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "390 reference geometry .sc-case-result__heading",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 362,
+          "height": 271.796875,
+          "x": 14,
+          "y": 1577.140625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 362,
+          "height": 271.796875,
+          "x": 14,
+          "y": 1577.140625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "390 reference geometry .sc-case-result__hero-media",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 362,
+          "height": 288.46875,
+          "x": 14,
+          "y": 1880.9375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(24, 52, 77, 0.22) 0px 25px 80px -70px",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        "reference": {
+          "width": 362,
+          "height": 288.46875,
+          "x": 14,
+          "y": 1880.9375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(24, 52, 77, 0.22) 0px 25px 80px -70px",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        }
+      }
+    },
+    {
+      "name": "390 reference geometry .sc-case-screens__grid",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 362,
+          "height": 1206.75,
+          "x": 14,
+          "y": 2305.453125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 362,
+          "height": 1206.75,
+          "x": 14,
+          "y": 2305.453125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "390 reference geometry .sc-case-process__cta",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 362,
+          "height": 410,
+          "x": 14,
+          "y": 3594.203125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(28, 72, 106, 0.2) 0px 12px 38px -30px",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 362,
+          "height": 410,
+          "x": 14,
+          "y": 3594.203125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(28, 72, 106, 0.2) 0px 12px 38px -30px",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "390 reference geometry .sc-case-process__cta h3",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 280,
+          "height": 71.65625,
+          "x": 37,
+          "y": 3780.203125,
+          "font": "32px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "35.84px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 280,
+          "height": 71.65625,
+          "x": 37,
+          "y": 3780.203125,
+          "font": "32px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "35.84px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "390 reference geometry .sc-case-process__cta-button",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 316,
+          "height": 52,
+          "x": 37,
+          "y": 3930.203125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 316,
+          "height": 52,
+          "x": 37,
+          "y": 3930.203125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "390 reference geometry .related-work__head",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 362,
+          "height": 45.046875,
+          "x": 14,
+          "y": 4194.203125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 362,
+          "height": 45.046875,
+          "x": 14,
+          "y": 4194.203125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "390 reference geometry .case-card",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 362,
+          "height": 396.34375,
+          "x": -1120,
+          "y": 4271.25,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(0, 0, 0, 0.1) 0px 2px 6px -3px",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 362,
+          "height": 396.34375,
+          "x": -1120,
+          "y": 4271.25,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(0, 0, 0, 0.1) 0px 2px 6px -3px",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "390 shared header matches catalog",
+      "pass": true
+    },
+    {
+      "name": "390 shared footer matches catalog",
+      "pass": true
+    },
+    {
+      "name": "768 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "768 desktop sticky boundary",
+      "pass": true,
+      "data": {
+        "width": 410,
+        "height": 393,
+        "x": 20,
+        "y": 3263.703125,
+        "font": "16px",
+        "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+        "lineHeight": "normal",
+        "position": "relative",
+        "top": "0px",
+        "shadow": "rgba(28, 72, 106, 0.2) 0px 12px 38px -30px",
+        "transform": "none"
+      }
+    },
+    {
+      "name": "768 CTA typography and size",
+      "pass": true
+    },
+    {
+      "name": "768 timeline circles",
+      "pass": true
+    },
+    {
+      "name": "768 four interfaces",
+      "pass": true
+    },
+    {
+      "name": "768 five original related cards",
+      "pass": true
+    },
+    {
+      "name": "768 reduced native scrolling",
+      "pass": true
+    },
+    {
+      "name": "768 reduced parallax disabled",
+      "pass": true
+    },
+    {
+      "name": "768 CSS selectors scoped",
+      "pass": true
+    },
+    {
+      "name": "768 no accent glow .sc-case-process__cta-button",
+      "pass": true
+    },
+    {
+      "name": "768 no accent glow .sc-footer__cta",
+      "pass": true
+    },
+    {
+      "name": "768 no accent glow .case-dialog__cta",
+      "pass": true
+    },
+    {
+      "name": "768 lightbox 0 open",
+      "pass": true
+    },
+    {
+      "name": "768 lightbox focus trapped",
+      "pass": true
+    },
+    {
+      "name": "768 lightbox 0 close/focus",
+      "pass": true
+    },
+    {
+      "name": "768 lightbox 1 open",
+      "pass": true
+    },
+    {
+      "name": "768 lightbox focus trapped",
+      "pass": true
+    },
+    {
+      "name": "768 lightbox 1 close/focus",
+      "pass": true
+    },
+    {
+      "name": "768 lightbox 2 open",
+      "pass": true
+    },
+    {
+      "name": "768 lightbox focus trapped",
+      "pass": true
+    },
+    {
+      "name": "768 lightbox 2 close/focus",
+      "pass": true
+    },
+    {
+      "name": "768 lightbox 3 open",
+      "pass": true
+    },
+    {
+      "name": "768 lightbox focus trapped",
+      "pass": true
+    },
+    {
+      "name": "768 lightbox 3 close/focus",
+      "pass": true
+    },
+    {
+      "name": "768 related modal b2b",
+      "pass": true
+    },
+    {
+      "name": "768 related modal focus b2b",
+      "pass": true
+    },
+    {
+      "name": "768 related modal flowers",
+      "pass": true
+    },
+    {
+      "name": "768 related modal focus flowers",
+      "pass": true
+    },
+    {
+      "name": "768 related modal crm",
+      "pass": true
+    },
+    {
+      "name": "768 related modal focus crm",
+      "pass": true
+    },
+    {
+      "name": "768 related modal prostor",
+      "pass": true
+    },
+    {
+      "name": "768 related modal focus prostor",
+      "pass": true
+    },
+    {
+      "name": "768 related modal metal",
+      "pass": true
+    },
+    {
+      "name": "768 related modal focus metal",
+      "pass": true
+    },
+    {
+      "name": "768 arrows stationary on hover",
+      "pass": true
+    },
+    {
+      "name": "768 carousel click advances",
+      "pass": true
+    },
+    {
+      "name": "768 mobile menu opens",
+      "pass": true
+    },
+    {
+      "name": "768 mobile menu closes",
+      "pass": true
+    },
+    {
+      "name": "768 reference geometry h1",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 704,
+          "height": 83.59375,
+          "x": 32,
+          "y": 134,
+          "font": "38px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "41.8px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 704,
+          "height": 83.59375,
+          "x": 32,
+          "y": 134,
+          "font": "38px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "41.8px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "768 reference geometry .case-hero__intro",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 590,
+          "height": 110.375,
+          "x": 32,
+          "y": 247.59375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 590,
+          "height": 110.375,
+          "x": 32,
+          "y": 247.59375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "768 reference geometry .case-hero__media",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 704,
+          "height": 480,
+          "x": 32,
+          "y": 409.96875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 704,
+          "height": 480,
+          "x": 32,
+          "y": 409.96875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "768 reference geometry .sc-case-process__number-circle",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 32,
+          "height": 32,
+          "x": 24,
+          "y": 1058.015625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(134, 134, 134, 0.78) 0px 0px 0px 5px",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 32,
+          "height": 32,
+          "x": 24,
+          "y": 1058.015625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(134, 134, 134, 0.78) 0px 0px 0px 5px",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "768 reference geometry .sc-case-result__heading",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 728,
+          "height": 171.578125,
+          "x": 20,
+          "y": 1774.953125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 728,
+          "height": 171.578125,
+          "x": 20,
+          "y": 1774.953125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "768 reference geometry .sc-case-result__hero-media",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 728,
+          "height": 580.125,
+          "x": 20,
+          "y": 1978.53125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(24, 52, 77, 0.22) 0px 25px 80px -70px",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        "reference": {
+          "width": 728,
+          "height": 580.125,
+          "x": 20,
+          "y": 1978.53125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(24, 52, 77, 0.22) 0px 25px 80px -70px",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        }
+      }
+    },
+    {
+      "name": "768 reference geometry .sc-case-screens__grid",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 728,
+          "height": 482,
+          "x": 20,
+          "y": 2689.703125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 728,
+          "height": 482,
+          "x": 20,
+          "y": 2689.703125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "768 reference geometry .sc-case-process__cta",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 410,
+          "height": 393,
+          "x": 20,
+          "y": 3263.703125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(28, 72, 106, 0.2) 0px 12px 38px -30px",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 410,
+          "height": 393,
+          "x": 20,
+          "y": 3263.703125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(28, 72, 106, 0.2) 0px 12px 38px -30px",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "768 reference geometry .sc-case-process__cta h3",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 280,
+          "height": 71.65625,
+          "x": 39,
+          "y": 3434.703125,
+          "font": "32px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "35.84px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 280,
+          "height": 71.65625,
+          "x": 39,
+          "y": 3434.703125,
+          "font": "32px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "35.84px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "768 reference geometry .sc-case-process__cta-button",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 372,
+          "height": 52,
+          "x": 39,
+          "y": 3584.703125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 372,
+          "height": 52,
+          "x": 39,
+          "y": 3584.703125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "768 reference geometry .related-work__head",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 728,
+          "height": 41.046875,
+          "x": 20,
+          "y": 3841.703125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 728,
+          "height": 41.046875,
+          "x": 20,
+          "y": 3841.703125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "768 reference geometry .case-card",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 356,
+          "height": 389.765625,
+          "x": -1096,
+          "y": 3930.75,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(0, 0, 0, 0.1) 0px 2px 6px -3px",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 356,
+          "height": 389.765625,
+          "x": -1096,
+          "y": 3930.75,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(0, 0, 0, 0.1) 0px 2px 6px -3px",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "768 shared header matches catalog",
+      "pass": true
+    },
+    {
+      "name": "768 shared footer matches catalog",
+      "pass": true
+    },
+    {
+      "name": "1024 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "1024 desktop sticky boundary",
+      "pass": true,
+      "data": {
+        "width": 410,
+        "height": 393,
+        "x": 20,
+        "y": 3372.125,
+        "font": "16px",
+        "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+        "lineHeight": "normal",
+        "position": "relative",
+        "top": "0px",
+        "shadow": "rgba(28, 72, 106, 0.2) 0px 12px 38px -30px",
+        "transform": "none"
+      }
+    },
+    {
+      "name": "1024 CTA typography and size",
+      "pass": true
+    },
+    {
+      "name": "1024 timeline circles",
+      "pass": true
+    },
+    {
+      "name": "1024 four interfaces",
+      "pass": true
+    },
+    {
+      "name": "1024 five original related cards",
+      "pass": true
+    },
+    {
+      "name": "1024 reduced native scrolling",
+      "pass": true
+    },
+    {
+      "name": "1024 reduced parallax disabled",
+      "pass": true
+    },
+    {
+      "name": "1024 CSS selectors scoped",
+      "pass": true
+    },
+    {
+      "name": "1024 no accent glow .sc-case-process__cta-button",
+      "pass": true
+    },
+    {
+      "name": "1024 no accent glow .sc-footer__cta",
+      "pass": true
+    },
+    {
+      "name": "1024 no accent glow .case-dialog__cta",
+      "pass": true
+    },
+    {
+      "name": "1024 lightbox 0 open",
+      "pass": true
+    },
+    {
+      "name": "1024 lightbox focus trapped",
+      "pass": true
+    },
+    {
+      "name": "1024 lightbox 0 close/focus",
+      "pass": true
+    },
+    {
+      "name": "1024 lightbox 1 open",
+      "pass": true
+    },
+    {
+      "name": "1024 lightbox focus trapped",
+      "pass": true
+    },
+    {
+      "name": "1024 lightbox 1 close/focus",
+      "pass": true
+    },
+    {
+      "name": "1024 lightbox 2 open",
+      "pass": true
+    },
+    {
+      "name": "1024 lightbox focus trapped",
+      "pass": true
+    },
+    {
+      "name": "1024 lightbox 2 close/focus",
+      "pass": true
+    },
+    {
+      "name": "1024 lightbox 3 open",
+      "pass": true
+    },
+    {
+      "name": "1024 lightbox focus trapped",
+      "pass": true
+    },
+    {
+      "name": "1024 lightbox 3 close/focus",
+      "pass": true
+    },
+    {
+      "name": "1024 related modal b2b",
+      "pass": true
+    },
+    {
+      "name": "1024 related modal focus b2b",
+      "pass": true
+    },
+    {
+      "name": "1024 related modal flowers",
+      "pass": true
+    },
+    {
+      "name": "1024 related modal focus flowers",
+      "pass": true
+    },
+    {
+      "name": "1024 related modal crm",
+      "pass": true
+    },
+    {
+      "name": "1024 related modal focus crm",
+      "pass": true
+    },
+    {
+      "name": "1024 related modal prostor",
+      "pass": true
+    },
+    {
+      "name": "1024 related modal focus prostor",
+      "pass": true
+    },
+    {
+      "name": "1024 related modal metal",
+      "pass": true
+    },
+    {
+      "name": "1024 related modal focus metal",
+      "pass": true
+    },
+    {
+      "name": "1024 arrows stationary on hover",
+      "pass": true
+    },
+    {
+      "name": "1024 carousel click advances",
+      "pass": true
+    },
+    {
+      "name": "1024 reference geometry h1",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 572.5,
+          "height": 109.5,
+          "x": 36,
+          "y": 176.0625,
+          "font": "49.7766px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "54.7543px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 572.5,
+          "height": 109.5,
+          "x": 36,
+          "y": 176.0625,
+          "font": "49.7766px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "54.7543px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1024 reference geometry .case-hero__intro",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 318.0625,
+          "height": 161.5625,
+          "x": 669.9375,
+          "y": 124,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 318.0625,
+          "height": 161.5625,
+          "x": 669.9375,
+          "y": 124,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1024 reference geometry .case-hero__media",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 952,
+          "height": 481.265625,
+          "x": 36,
+          "y": 350.0625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 952,
+          "height": 481.265625,
+          "x": 36,
+          "y": 350.0625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1024 reference geometry .sc-case-process__number-circle",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 32,
+          "height": 32,
+          "x": 24,
+          "y": 1014.796875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(134, 134, 134, 0.78) 0px 0px 0px 5px",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 32,
+          "height": 32,
+          "x": 24,
+          "y": 1014.796875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(134, 134, 134, 0.78) 0px 0px 0px 5px",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1024 reference geometry .sc-case-result__heading",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 984,
+          "height": 192.96875,
+          "x": 20,
+          "y": 1731.734375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 984,
+          "height": 192.96875,
+          "x": 20,
+          "y": 1731.734375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1024 reference geometry .sc-case-result__hero-media",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 740,
+          "height": 589.6875,
+          "x": 20,
+          "y": 1965.65625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(24, 52, 77, 0.22) 0px 25px 80px -70px",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        "reference": {
+          "width": 740,
+          "height": 589.6875,
+          "x": 20,
+          "y": 1965.65625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(24, 52, 77, 0.22) 0px 25px 80px -70px",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        }
+      }
+    },
+    {
+      "name": "1024 reference geometry .sc-case-screens__grid",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 984,
+          "height": 557.25,
+          "x": 20,
+          "y": 2712.484375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 984,
+          "height": 557.25,
+          "x": 20,
+          "y": 2712.484375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1024 reference geometry .sc-case-process__cta",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 410,
+          "height": 393,
+          "x": 20,
+          "y": 3372.125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(28, 72, 106, 0.2) 0px 12px 38px -30px",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 410,
+          "height": 393,
+          "x": 20,
+          "y": 3372.125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(28, 72, 106, 0.2) 0px 12px 38px -30px",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1024 reference geometry .sc-case-process__cta h3",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 280,
+          "height": 71.65625,
+          "x": 39,
+          "y": 3543.125,
+          "font": "32px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "35.84px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 280,
+          "height": 71.65625,
+          "x": 39,
+          "y": 3543.125,
+          "font": "32px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "35.84px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1024 reference geometry .sc-case-process__cta-button",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 372,
+          "height": 52,
+          "x": 39,
+          "y": 3693.125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 372,
+          "height": 52,
+          "x": 39,
+          "y": 3693.125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1024 reference geometry .related-work__head",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 976,
+          "height": 54.75,
+          "x": 24,
+          "y": 3945.125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 976,
+          "height": 54.75,
+          "x": 24,
+          "y": 3945.125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1024 reference geometry .case-card",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 480,
+          "height": 525.546875,
+          "x": -1464,
+          "y": 4047.875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(0, 0, 0, 0.1) 0px 2px 6px -3px",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 480,
+          "height": 525.546875,
+          "x": -1464,
+          "y": 4047.875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(0, 0, 0, 0.1) 0px 2px 6px -3px",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1024 shared header matches catalog",
+      "pass": true
+    },
+    {
+      "name": "1024 shared footer matches catalog",
+      "pass": true
+    },
+    {
+      "name": "1100 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "1100 desktop sticky boundary",
+      "pass": true,
+      "data": {
+        "width": 320,
+        "height": 407,
+        "x": 756,
+        "y": 1018.15625,
+        "font": "16px",
+        "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+        "lineHeight": "normal",
+        "position": "sticky",
+        "top": "202.56px",
+        "shadow": "rgba(28, 72, 106, 0.2) 0px 12px 38px -30px",
+        "transform": "none"
+      }
+    },
+    {
+      "name": "1100 CTA typography and size",
+      "pass": true
+    },
+    {
+      "name": "1100 timeline circles",
+      "pass": true
+    },
+    {
+      "name": "1100 four interfaces",
+      "pass": true
+    },
+    {
+      "name": "1100 five original related cards",
+      "pass": true
+    },
+    {
+      "name": "1100 reduced native scrolling",
+      "pass": true
+    },
+    {
+      "name": "1100 reduced parallax disabled",
+      "pass": true
+    },
+    {
+      "name": "1100 CSS selectors scoped",
+      "pass": true
+    },
+    {
+      "name": "1100 no accent glow .sc-case-process__cta-button",
+      "pass": true
+    },
+    {
+      "name": "1100 no accent glow .sc-footer__cta",
+      "pass": true
+    },
+    {
+      "name": "1100 no accent glow .case-dialog__cta",
+      "pass": true
+    },
+    {
+      "name": "1100 lightbox 0 open",
+      "pass": true
+    },
+    {
+      "name": "1100 lightbox focus trapped",
+      "pass": true
+    },
+    {
+      "name": "1100 lightbox 0 close/focus",
+      "pass": true
+    },
+    {
+      "name": "1100 lightbox 1 open",
+      "pass": true
+    },
+    {
+      "name": "1100 lightbox focus trapped",
+      "pass": true
+    },
+    {
+      "name": "1100 lightbox 1 close/focus",
+      "pass": true
+    },
+    {
+      "name": "1100 lightbox 2 open",
+      "pass": true
+    },
+    {
+      "name": "1100 lightbox focus trapped",
+      "pass": true
+    },
+    {
+      "name": "1100 lightbox 2 close/focus",
+      "pass": true
+    },
+    {
+      "name": "1100 lightbox 3 open",
+      "pass": true
+    },
+    {
+      "name": "1100 lightbox focus trapped",
+      "pass": true
+    },
+    {
+      "name": "1100 lightbox 3 close/focus",
+      "pass": true
+    },
+    {
+      "name": "1100 related modal b2b",
+      "pass": true
+    },
+    {
+      "name": "1100 related modal focus b2b",
+      "pass": true
+    },
+    {
+      "name": "1100 related modal flowers",
+      "pass": true
+    },
+    {
+      "name": "1100 related modal focus flowers",
+      "pass": true
+    },
+    {
+      "name": "1100 related modal crm",
+      "pass": true
+    },
+    {
+      "name": "1100 related modal focus crm",
+      "pass": true
+    },
+    {
+      "name": "1100 related modal prostor",
+      "pass": true
+    },
+    {
+      "name": "1100 related modal focus prostor",
+      "pass": true
+    },
+    {
+      "name": "1100 related modal metal",
+      "pass": true
+    },
+    {
+      "name": "1100 related modal focus metal",
+      "pass": true
+    },
+    {
+      "name": "1100 arrows stationary on hover",
+      "pass": true
+    },
+    {
+      "name": "1100 carousel click advances",
+      "pass": true
+    },
+    {
+      "name": "1100 reference geometry h1",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 618.421875,
+          "height": 117.625,
+          "x": 36,
+          "y": 167.9375,
+          "font": "53.471px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "58.8181px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 618.421875,
+          "height": 117.625,
+          "x": 36,
+          "y": 167.9375,
+          "font": "53.471px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "58.8181px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1100 reference geometry .case-hero__intro",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 343.578125,
+          "height": 161.5625,
+          "x": 720.421875,
+          "y": 124,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 343.578125,
+          "height": 161.5625,
+          "x": 720.421875,
+          "y": 124,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1100 reference geometry .case-hero__media",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 1028,
+          "height": 517,
+          "x": 36,
+          "y": 354.859375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 1028,
+          "height": 517,
+          "x": 36,
+          "y": 354.859375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1100 reference geometry .sc-case-process__number-circle",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 32,
+          "height": 32,
+          "x": 28,
+          "y": 1064.96875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(134, 134, 134, 0.78) 0px 0px 0px 5px",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 32,
+          "height": 32,
+          "x": 28,
+          "y": 1064.96875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(134, 134, 134, 0.78) 0px 0px 0px 5px",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1100 reference geometry .sc-case-result__heading",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 671.5,
+          "height": 199.3125,
+          "x": 24,
+          "y": 3406.375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 671.5,
+          "height": 199.3125,
+          "x": 24,
+          "y": 3406.375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1100 reference geometry .sc-case-result__hero-media",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 671.5,
+          "height": 535.109375,
+          "x": 24,
+          "y": 3649.6875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(24, 52, 77, 0.22) 0px 25px 80px -70px",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        "reference": {
+          "width": 671.5,
+          "height": 535.109375,
+          "x": 24,
+          "y": 3649.6875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(24, 52, 77, 0.22) 0px 25px 80px -70px",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        }
+      }
+    },
+    {
+      "name": "1100 reference geometry .sc-case-screens__grid",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 671.5,
+          "height": 593,
+          "x": 24,
+          "y": 4353.609375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 671.5,
+          "height": 593,
+          "x": 24,
+          "y": 4353.609375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1100 reference geometry .sc-case-process__cta",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 320,
+          "height": 407,
+          "x": 756,
+          "y": 1018.15625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "sticky",
+          "top": "202.56px",
+          "shadow": "rgba(28, 72, 106, 0.2) 0px 12px 38px -30px",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 320,
+          "height": 407,
+          "x": 756,
+          "y": 1018.15625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "sticky",
+          "top": "202.56px",
+          "shadow": "rgba(28, 72, 106, 0.2) 0px 12px 38px -30px",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1100 reference geometry .sc-case-process__cta h3",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 278,
+          "height": 71.65625,
+          "x": 777,
+          "y": 1202.15625,
+          "font": "32px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "35.84px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 278,
+          "height": 71.65625,
+          "x": 777,
+          "y": 1202.15625,
+          "font": "32px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "35.84px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1100 reference geometry .sc-case-process__cta-button",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 278,
+          "height": 52,
+          "x": 777,
+          "y": 1352.15625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 278,
+          "height": 52,
+          "x": 777,
+          "y": 1352.15625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1100 reference geometry .related-work__head",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 1052,
+          "height": 58.8125,
+          "x": 24,
+          "y": 5146.796875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 1052,
+          "height": 58.8125,
+          "x": 24,
+          "y": 5146.796875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1100 reference geometry .case-card",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 518,
+          "height": 567.140625,
+          "x": -1578,
+          "y": 5253.609375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(0, 0, 0, 0.1) 0px 2px 6px -3px",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 518,
+          "height": 567.140625,
+          "x": -1578,
+          "y": 5253.609375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(0, 0, 0, 0.1) 0px 2px 6px -3px",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1100 shared header matches catalog",
+      "pass": true
+    },
+    {
+      "name": "1100 shared footer matches catalog",
+      "pass": true
+    },
+    {
+      "name": "1440 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "1440 desktop sticky boundary",
+      "pass": true,
+      "data": {
+        "width": 320,
+        "height": 407,
+        "x": 1034,
+        "y": 1232.296875,
+        "font": "16px",
+        "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+        "lineHeight": "normal",
+        "position": "sticky",
+        "top": "210px",
+        "shadow": "rgba(28, 72, 106, 0.2) 0px 12px 38px -30px",
+        "transform": "none"
+      }
+    },
+    {
+      "name": "1440 CTA typography and size",
+      "pass": true
+    },
+    {
+      "name": "1440 timeline circles",
+      "pass": true
+    },
+    {
+      "name": "1440 four interfaces",
+      "pass": true
+    },
+    {
+      "name": "1440 five original related cards",
+      "pass": true
+    },
+    {
+      "name": "1440 reduced native scrolling",
+      "pass": true
+    },
+    {
+      "name": "1440 reduced parallax disabled",
+      "pass": true
+    },
+    {
+      "name": "1440 CSS selectors scoped",
+      "pass": true
+    },
+    {
+      "name": "1440 no accent glow .sc-case-process__cta-button",
+      "pass": true
+    },
+    {
+      "name": "1440 no accent glow .sc-footer__cta",
+      "pass": true
+    },
+    {
+      "name": "1440 no accent glow .case-dialog__cta",
+      "pass": true
+    },
+    {
+      "name": "1440 lightbox 0 open",
+      "pass": true
+    },
+    {
+      "name": "1440 lightbox focus trapped",
+      "pass": true
+    },
+    {
+      "name": "1440 lightbox 0 close/focus",
+      "pass": true
+    },
+    {
+      "name": "1440 lightbox 1 open",
+      "pass": true
+    },
+    {
+      "name": "1440 lightbox focus trapped",
+      "pass": true
+    },
+    {
+      "name": "1440 lightbox 1 close/focus",
+      "pass": true
+    },
+    {
+      "name": "1440 lightbox 2 open",
+      "pass": true
+    },
+    {
+      "name": "1440 lightbox focus trapped",
+      "pass": true
+    },
+    {
+      "name": "1440 lightbox 2 close/focus",
+      "pass": true
+    },
+    {
+      "name": "1440 lightbox 3 open",
+      "pass": true
+    },
+    {
+      "name": "1440 lightbox focus trapped",
+      "pass": true
+    },
+    {
+      "name": "1440 lightbox 3 close/focus",
+      "pass": true
+    },
+    {
+      "name": "1440 related modal b2b",
+      "pass": true
+    },
+    {
+      "name": "1440 related modal focus b2b",
+      "pass": true
+    },
+    {
+      "name": "1440 related modal flowers",
+      "pass": true
+    },
+    {
+      "name": "1440 related modal focus flowers",
+      "pass": true
+    },
+    {
+      "name": "1440 related modal crm",
+      "pass": true
+    },
+    {
+      "name": "1440 related modal focus crm",
+      "pass": true
+    },
+    {
+      "name": "1440 related modal prostor",
+      "pass": true
+    },
+    {
+      "name": "1440 related modal focus prostor",
+      "pass": true
+    },
+    {
+      "name": "1440 related modal metal",
+      "pass": true
+    },
+    {
+      "name": "1440 related modal focus metal",
+      "pass": true
+    },
+    {
+      "name": "1440 arrows stationary on hover",
+      "pass": true
+    },
+    {
+      "name": "1440 carousel click advances",
+      "pass": true
+    },
+    {
+      "name": "1440 reference geometry h1",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 759.59375,
+          "height": 154,
+          "x": 86,
+          "y": 129.578125,
+          "font": "69.9984px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "76.9982px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 759.59375,
+          "height": 154,
+          "x": 86,
+          "y": 129.578125,
+          "font": "69.9984px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "76.9982px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1440 reference geometry .case-hero__intro",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 422.015625,
+          "height": 135.96875,
+          "x": 931.984375,
+          "y": 147.609375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 422.015625,
+          "height": 135.96875,
+          "x": 931.984375,
+          "y": 147.609375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1440 reference geometry .case-hero__media",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 1268,
+          "height": 675,
+          "x": 86,
+          "y": 373.578125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 1268,
+          "height": 675,
+          "x": 86,
+          "y": 373.578125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1440 reference geometry .sc-case-process__number-circle",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 32,
+          "height": 32,
+          "x": 90,
+          "y": 1284.6875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(134, 134, 134, 0.78) 0px 0px 0px 5px",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 32,
+          "height": 32,
+          "x": 90,
+          "y": 1284.6875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(134, 134, 134, 0.78) 0px 0px 0px 5px",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1440 reference geometry .sc-case-result__heading",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 868.8125,
+          "height": 220.5,
+          "x": 86,
+          "y": 3801.078125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 868.8125,
+          "height": 220.5,
+          "x": 86,
+          "y": 3801.078125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1440 reference geometry .sc-case-result__hero-media",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 740,
+          "height": 589.6875,
+          "x": 86,
+          "y": 4077.578125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(24, 52, 77, 0.22) 0px 25px 80px -70px",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        "reference": {
+          "width": 740,
+          "height": 589.6875,
+          "x": 86,
+          "y": 4077.578125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(24, 52, 77, 0.22) 0px 25px 80px -70px",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        }
+      }
+    },
+    {
+      "name": "1440 reference geometry .sc-case-screens__grid",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 868.8125,
+          "height": 604,
+          "x": 86,
+          "y": 4885.0625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 868.8125,
+          "height": 604,
+          "x": 86,
+          "y": 4885.0625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1440 reference geometry .sc-case-process__cta",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 320,
+          "height": 407,
+          "x": 1034,
+          "y": 1232.296875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "sticky",
+          "top": "210px",
+          "shadow": "rgba(28, 72, 106, 0.2) 0px 12px 38px -30px",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 320,
+          "height": 407,
+          "x": 1034,
+          "y": 1232.296875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "sticky",
+          "top": "210px",
+          "shadow": "rgba(28, 72, 106, 0.2) 0px 12px 38px -30px",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1440 reference geometry .sc-case-process__cta h3",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 278,
+          "height": 71.65625,
+          "x": 1055,
+          "y": 1416.296875,
+          "font": "32px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "35.84px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 278,
+          "height": 71.65625,
+          "x": 1055,
+          "y": 1416.296875,
+          "font": "32px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "35.84px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1440 reference geometry .sc-case-process__cta-button",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 278,
+          "height": 52,
+          "x": 1055,
+          "y": 1566.296875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 278,
+          "height": 52,
+          "x": 1055,
+          "y": 1566.296875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1440 reference geometry .related-work__head",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 1268,
+          "height": 77,
+          "x": 86,
+          "y": 5751.140625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 1268,
+          "height": 77,
+          "x": 86,
+          "y": 5751.140625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1440 reference geometry .case-card",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 412,
+          "height": 451.09375,
+          "x": -1198,
+          "y": 5876.140625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(0, 0, 0, 0.1) 0px 2px 6px -3px",
+          "transform": "none"
+        },
+        "reference": {
+          "width": 412,
+          "height": 451.09375,
+          "x": -1198,
+          "y": 5876.140625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(0, 0, 0, 0.1) 0px 2px 6px -3px",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1440 shared header matches catalog",
+      "pass": true
+    },
+    {
+      "name": "1440 shared footer matches catalog",
+      "pass": true
+    },
+    {
+      "name": "1440 single existing Lenis owner",
+      "pass": true
+    },
+    {
+      "name": "1440 sticky follows process/result/interfaces",
+      "pass": true,
+      "data": [
+        {
+          "y": 210,
+          "top": 210
+        },
+        {
+          "y": 210,
+          "top": 210
+        },
+        {
+          "y": 210,
+          "top": 210
+        }
+      ]
+    },
+    {
+      "name": "1440 banner releases before related",
+      "pass": true
+    },
+    {
+      "name": "timeline scroll changes opacity",
+      "pass": true,
+      "data": {
+        "opacity1": "0.9293",
+        "opacity2": "0.4247"
+      }
+    },
+    {
+      "name": "resize disables sticky",
+      "pass": true
+    },
+    {
+      "name": "1440 rapid/reverse wheel remains responsive",
+      "pass": true
+    },
+    {
+      "name": "390 single existing Lenis owner",
+      "pass": true
+    },
+    {
+      "name": "390 rapid/reverse wheel remains responsive",
+      "pass": true
+    },
+    {
+      "name": "390 native touch carousel swipe",
+      "pass": true,
+      "data": {
+        "initial": 1134,
+        "final": 1512,
+        "y": 320,
+        "viewport": {
+          "x": 14,
+          "y": 200.25,
+          "width": 362,
+          "height": 456.34375
+        },
+        "hit": "<img alt=\"Иллюстрация проекта Приложение для заказа цветов\" decoding=\"async\" height=\"763\" loading=\"eager\" src=\"/assets/works/flowers-feature-wide.png\" width=\"2062\">"
+      }
+    },
+    {
+      "name": "1440/ unchanged geometry #floatingHeader",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 1160,
+          "height": 56,
+          "x": 140,
+          "y": 28.390625,
+          "font": "16px",
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "fixed",
+          "top": "28.4px",
+          "shadow": "rgba(33, 53, 79, 0.1) 0px 18px 45px 0px, rgba(20, 37, 54, 0.06) 0px 2px 10px 0px",
+          "transform": "matrix(1, 0, 0, 1, -580, 0)"
+        },
+        "baseline": {
+          "width": 1160,
+          "height": 56,
+          "x": 140,
+          "y": 28.390625,
+          "font": "16px",
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "fixed",
+          "top": "28.4px",
+          "shadow": "rgba(33, 53, 79, 0.1) 0px 18px 45px 0px, rgba(20, 37, 54, 0.06) 0px 2px 10px 0px",
+          "transform": "matrix(1, 0, 0, 1, -580, 0)"
+        }
+      }
+    },
+    {
+      "name": "1440/ unchanged geometry #sc-work-beauty-title",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 570,
+          "height": 39.25,
+          "x": 77.71875,
+          "y": 3425.984375,
+          "font": "33.84px",
+          "fontFamily": "Manrope, sans-serif",
+          "lineHeight": "39.2544px",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "baseline": {
+          "width": 570,
+          "height": 39.25,
+          "x": 77.71875,
+          "y": 3425.984375,
+          "font": "33.84px",
+          "fontFamily": "Manrope, sans-serif",
+          "lineHeight": "39.2544px",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1440/ unchanged geometry #contact",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 1440,
+          "height": 782,
+          "x": 0,
+          "y": 7884.375,
+          "font": "16px",
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "baseline": {
+          "width": 1440,
+          "height": 782,
+          "x": 0,
+          "y": 7884.375,
+          "font": "16px",
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1440/ Beauty link navigates",
+      "pass": true
+    },
+    {
+      "name": "1440/raboty/ unchanged geometry #floatingHeader",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 1160,
+          "height": 56,
+          "x": 140,
+          "y": 28.390625,
+          "font": "16px",
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "fixed",
+          "top": "28.4px",
+          "shadow": "rgba(33, 53, 79, 0.1) 0px 18px 45px 0px, rgba(20, 37, 54, 0.06) 0px 2px 10px 0px",
+          "transform": "matrix(1, 0, 0, 1, -580, 0)"
+        },
+        "baseline": {
+          "width": 1160,
+          "height": 56,
+          "x": 140,
+          "y": 28.390625,
+          "font": "16px",
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "fixed",
+          "top": "28.4px",
+          "shadow": "rgba(33, 53, 79, 0.1) 0px 18px 45px 0px, rgba(20, 37, 54, 0.06) 0px 2px 10px 0px",
+          "transform": "matrix(1, 0, 0, 1, -580, 0)"
+        }
+      }
+    },
+    {
+      "name": "1440/raboty/ unchanged geometry .case-card--beauty",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 411.984375,
+          "height": 451.09375,
+          "x": 86,
+          "y": 887.90625,
+          "font": "16px",
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(0, 0, 0, 0.1) 0px 2px 6px -3px",
+          "transform": "none"
+        },
+        "baseline": {
+          "width": 411.984375,
+          "height": 451.09375,
+          "x": 86,
+          "y": 887.90625,
+          "font": "16px",
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(0, 0, 0, 0.1) 0px 2px 6px -3px",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1440/raboty/ unchanged geometry #contact",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 1440,
+          "height": 782,
+          "x": 0,
+          "y": 1497.390625,
+          "font": "16px",
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "baseline": {
+          "width": 1440,
+          "height": 782,
+          "x": 0,
+          "y": 1497.390625,
+          "font": "16px",
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1440 catalog Beauty modal preserved",
+      "pass": true
+    },
+    {
+      "name": "1440/raboty/ Beauty link navigates",
+      "pass": true
+    },
+    {
+      "name": "390/ unchanged geometry #floatingHeader",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 366,
+          "height": 62,
+          "x": 12,
+          "y": 20,
+          "font": "16px",
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "fixed",
+          "top": "20px",
+          "shadow": "rgba(33, 53, 79, 0.1) 0px 18px 45px 0px, rgba(20, 37, 54, 0.06) 0px 2px 10px 0px",
+          "transform": "matrix(1, 0, 0, 1, -183, 0)"
+        },
+        "baseline": {
+          "width": 366,
+          "height": 62,
+          "x": 12,
+          "y": 20,
+          "font": "16px",
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "fixed",
+          "top": "20px",
+          "shadow": "rgba(33, 53, 79, 0.1) 0px 18px 45px 0px, rgba(20, 37, 54, 0.06) 0px 2px 10px 0px",
+          "transform": "matrix(1, 0, 0, 1, -183, 0)"
+        }
+      }
+    },
+    {
+      "name": "390/ unchanged geometry #sc-work-beauty-title",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 292,
+          "height": 32.46875,
+          "x": 49,
+          "y": 3928.359375,
+          "font": "28px",
+          "fontFamily": "Manrope, sans-serif",
+          "lineHeight": "32.48px",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "baseline": {
+          "width": 292,
+          "height": 32.46875,
+          "x": 49,
+          "y": 3928.359375,
+          "font": "28px",
+          "fontFamily": "Manrope, sans-serif",
+          "lineHeight": "32.48px",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "390/ unchanged geometry #contact",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 390,
+          "height": 700,
+          "x": 0,
+          "y": 8943.421875,
+          "font": "16px",
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "baseline": {
+          "width": 390,
+          "height": 700,
+          "x": 0,
+          "y": 8943.421875,
+          "font": "16px",
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "390/ Beauty link navigates",
+      "pass": true
+    },
+    {
+      "name": "390/raboty/ unchanged geometry #floatingHeader",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 366,
+          "height": 62,
+          "x": 12,
+          "y": 20,
+          "font": "16px",
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "fixed",
+          "top": "20px",
+          "shadow": "rgba(33, 53, 79, 0.1) 0px 18px 45px 0px, rgba(20, 37, 54, 0.06) 0px 2px 10px 0px",
+          "transform": "matrix(1, 0, 0, 1, -183, 0)"
+        },
+        "baseline": {
+          "width": 366,
+          "height": 62,
+          "x": 12,
+          "y": 20,
+          "font": "16px",
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "fixed",
+          "top": "20px",
+          "shadow": "rgba(33, 53, 79, 0.1) 0px 18px 45px 0px, rgba(20, 37, 54, 0.06) 0px 2px 10px 0px",
+          "transform": "matrix(1, 0, 0, 1, -183, 0)"
+        }
+      }
+    },
+    {
+      "name": "390/raboty/ unchanged geometry .case-card--beauty",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 341.984375,
+          "height": 374.4375,
+          "x": 24,
+          "y": 1539.8125,
+          "font": "16px",
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(0, 0, 0, 0.1) 0px 2px 6px -3px",
+          "transform": "none"
+        },
+        "baseline": {
+          "width": 341.984375,
+          "height": 374.4375,
+          "x": 24,
+          "y": 1539.8125,
+          "font": "16px",
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(0, 0, 0, 0.1) 0px 2px 6px -3px",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "390/raboty/ unchanged geometry #contact",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 390,
+          "height": 700,
+          "x": 0,
+          "y": 2787.125,
+          "font": "16px",
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "none",
+          "transform": "none"
+        },
+        "baseline": {
+          "width": 390,
+          "height": 700,
+          "x": 0,
+          "y": 2787.125,
+          "font": "16px",
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "390 catalog Beauty modal preserved",
+      "pass": true
+    },
+    {
+      "name": "390/raboty/ Beauty link navigates",
+      "pass": true
+    },
+    {
+      "name": "all acceptance scenarios completed",
+      "pass": true
+    },
+    {
+      "name": "no browser/console/network failures",
+      "pass": true,
+      "data": []
+    }
+  ],
+  "errors": [],
+  "samples": [
+    {
+      "width": 320,
+      "actual": {
+        "h1": {
+          "width": 272,
+          "height": 115.5,
+          "x": 24,
+          "y": 128,
+          "font": "35px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "38.5px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".case-hero__intro": {
+          "width": 272,
+          "height": 212.75,
+          "x": 24,
+          "y": 273.5,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".case-hero__media": {
+          "width": 272,
+          "height": 325,
+          "x": 24,
+          "y": 522.25,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-process__number-circle": {
+          "width": 32,
+          "height": 32,
+          "x": 18,
+          "y": 955.75,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(134, 134, 134, 0.72) 0px 0px 0px 4px",
+          "transform": "none"
+        },
+        ".sc-case-result__heading": {
+          "width": 292,
+          "height": 290.84375,
+          "x": 14,
+          "y": 1784.078125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-result__hero-media": {
+          "width": 292,
+          "height": 232.6875,
+          "x": 14,
+          "y": 2106.921875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(24, 52, 77, 0.22) 0px 25px 80px -70px",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        ".sc-case-screens__grid": {
+          "width": 292,
+          "height": 1044,
+          "x": 14,
+          "y": 2469.109375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-process__cta": {
+          "width": 292,
+          "height": 410.671875,
+          "x": 14,
+          "y": 3595.109375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(28, 72, 106, 0.2) 0px 12px 38px -30px",
+          "transform": "none"
+        },
+        ".sc-case-process__cta h3": {
+          "width": 252,
+          "height": 71.65625,
+          "x": 34,
+          "y": 3762.109375,
+          "font": "32px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "35.84px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-process__cta-button": {
+          "width": 252,
+          "height": 52,
+          "x": 34,
+          "y": 3933.78125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".related-work__head": {
+          "width": 292,
+          "height": 38.5,
+          "x": 14,
+          "y": 4195.78125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".case-card": {
+          "width": 292,
+          "height": 375.703125,
+          "x": -910,
+          "y": 4266.28125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(0, 0, 0, 0.1) 0px 2px 6px -3px",
+          "transform": "none"
+        }
+      },
+      "reference": {
+        "h1": {
+          "width": 272,
+          "height": 115.5,
+          "x": 24,
+          "y": 128,
+          "font": "35px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "38.5px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".case-hero__intro": {
+          "width": 272,
+          "height": 212.75,
+          "x": 24,
+          "y": 273.5,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".case-hero__media": {
+          "width": 272,
+          "height": 325,
+          "x": 24,
+          "y": 522.25,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-process__number-circle": {
+          "width": 32,
+          "height": 32,
+          "x": 18,
+          "y": 955.75,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(134, 134, 134, 0.72) 0px 0px 0px 4px",
+          "transform": "none"
+        },
+        ".sc-case-result__heading": {
+          "width": 292,
+          "height": 290.84375,
+          "x": 14,
+          "y": 1784.078125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-result__hero-media": {
+          "width": 292,
+          "height": 232.6875,
+          "x": 14,
+          "y": 2106.921875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(24, 52, 77, 0.22) 0px 25px 80px -70px",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        ".sc-case-screens__grid": {
+          "width": 292,
+          "height": 1044,
+          "x": 14,
+          "y": 2469.109375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-process__cta": {
+          "width": 292,
+          "height": 410.671875,
+          "x": 14,
+          "y": 3595.109375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(28, 72, 106, 0.2) 0px 12px 38px -30px",
+          "transform": "none"
+        },
+        ".sc-case-process__cta h3": {
+          "width": 252,
+          "height": 71.65625,
+          "x": 34,
+          "y": 3762.109375,
+          "font": "32px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "35.84px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-process__cta-button": {
+          "width": 252,
+          "height": 52,
+          "x": 34,
+          "y": 3933.78125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".related-work__head": {
+          "width": 292,
+          "height": 38.5,
+          "x": 14,
+          "y": 4195.78125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".case-card": {
+          "width": 292,
+          "height": 406.828125,
+          "x": -910,
+          "y": 4266.28125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(0, 0, 0, 0.1) 0px 2px 6px -3px",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "width": 390,
+      "actual": {
+        "h1": {
+          "width": 342,
+          "height": 77.1875,
+          "x": 24,
+          "y": 128,
+          "font": "35.1px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "38.61px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".case-hero__intro": {
+          "width": 342,
+          "height": 161.5625,
+          "x": 24,
+          "y": 235.1875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".case-hero__media": {
+          "width": 342,
+          "height": 325,
+          "x": 24,
+          "y": 432.75,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-process__number-circle": {
+          "width": 32,
+          "height": 32,
+          "x": 18,
+          "y": 872.796875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(134, 134, 134, 0.72) 0px 0px 0px 4px",
+          "transform": "none"
+        },
+        ".sc-case-result__heading": {
+          "width": 362,
+          "height": 271.796875,
+          "x": 14,
+          "y": 1577.140625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-result__hero-media": {
+          "width": 362,
+          "height": 288.46875,
+          "x": 14,
+          "y": 1880.9375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(24, 52, 77, 0.22) 0px 25px 80px -70px",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        ".sc-case-screens__grid": {
+          "width": 362,
+          "height": 1206.75,
+          "x": 14,
+          "y": 2305.453125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-process__cta": {
+          "width": 362,
+          "height": 410,
+          "x": 14,
+          "y": 3594.203125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(28, 72, 106, 0.2) 0px 12px 38px -30px",
+          "transform": "none"
+        },
+        ".sc-case-process__cta h3": {
+          "width": 280,
+          "height": 71.65625,
+          "x": 37,
+          "y": 3780.203125,
+          "font": "32px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "35.84px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-process__cta-button": {
+          "width": 316,
+          "height": 52,
+          "x": 37,
+          "y": 3930.203125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".related-work__head": {
+          "width": 362,
+          "height": 45.046875,
+          "x": 14,
+          "y": 4194.203125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".case-card": {
+          "width": 362,
+          "height": 396.34375,
+          "x": -1120,
+          "y": 4271.25,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(0, 0, 0, 0.1) 0px 2px 6px -3px",
+          "transform": "none"
+        }
+      },
+      "reference": {
+        "h1": {
+          "width": 342,
+          "height": 77.1875,
+          "x": 24,
+          "y": 128,
+          "font": "35.1px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "38.61px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".case-hero__intro": {
+          "width": 342,
+          "height": 161.5625,
+          "x": 24,
+          "y": 235.1875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".case-hero__media": {
+          "width": 342,
+          "height": 325,
+          "x": 24,
+          "y": 432.75,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-process__number-circle": {
+          "width": 32,
+          "height": 32,
+          "x": 18,
+          "y": 872.796875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(134, 134, 134, 0.72) 0px 0px 0px 4px",
+          "transform": "none"
+        },
+        ".sc-case-result__heading": {
+          "width": 362,
+          "height": 271.796875,
+          "x": 14,
+          "y": 1577.140625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-result__hero-media": {
+          "width": 362,
+          "height": 288.46875,
+          "x": 14,
+          "y": 1880.9375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(24, 52, 77, 0.22) 0px 25px 80px -70px",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        ".sc-case-screens__grid": {
+          "width": 362,
+          "height": 1206.75,
+          "x": 14,
+          "y": 2305.453125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-process__cta": {
+          "width": 362,
+          "height": 410,
+          "x": 14,
+          "y": 3594.203125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(28, 72, 106, 0.2) 0px 12px 38px -30px",
+          "transform": "none"
+        },
+        ".sc-case-process__cta h3": {
+          "width": 280,
+          "height": 71.65625,
+          "x": 37,
+          "y": 3780.203125,
+          "font": "32px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "35.84px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-process__cta-button": {
+          "width": 316,
+          "height": 52,
+          "x": 37,
+          "y": 3930.203125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".related-work__head": {
+          "width": 362,
+          "height": 45.046875,
+          "x": 14,
+          "y": 4194.203125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".case-card": {
+          "width": 362,
+          "height": 396.34375,
+          "x": -1120,
+          "y": 4271.25,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(0, 0, 0, 0.1) 0px 2px 6px -3px",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "width": 768,
+      "actual": {
+        "h1": {
+          "width": 704,
+          "height": 83.59375,
+          "x": 32,
+          "y": 134,
+          "font": "38px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "41.8px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".case-hero__intro": {
+          "width": 590,
+          "height": 110.375,
+          "x": 32,
+          "y": 247.59375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".case-hero__media": {
+          "width": 704,
+          "height": 480,
+          "x": 32,
+          "y": 409.96875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-process__number-circle": {
+          "width": 32,
+          "height": 32,
+          "x": 24,
+          "y": 1058.015625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(134, 134, 134, 0.78) 0px 0px 0px 5px",
+          "transform": "none"
+        },
+        ".sc-case-result__heading": {
+          "width": 728,
+          "height": 171.578125,
+          "x": 20,
+          "y": 1774.953125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-result__hero-media": {
+          "width": 728,
+          "height": 580.125,
+          "x": 20,
+          "y": 1978.53125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(24, 52, 77, 0.22) 0px 25px 80px -70px",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        ".sc-case-screens__grid": {
+          "width": 728,
+          "height": 482,
+          "x": 20,
+          "y": 2689.703125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-process__cta": {
+          "width": 410,
+          "height": 393,
+          "x": 20,
+          "y": 3263.703125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(28, 72, 106, 0.2) 0px 12px 38px -30px",
+          "transform": "none"
+        },
+        ".sc-case-process__cta h3": {
+          "width": 280,
+          "height": 71.65625,
+          "x": 39,
+          "y": 3434.703125,
+          "font": "32px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "35.84px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-process__cta-button": {
+          "width": 372,
+          "height": 52,
+          "x": 39,
+          "y": 3584.703125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".related-work__head": {
+          "width": 728,
+          "height": 41.046875,
+          "x": 20,
+          "y": 3841.703125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".case-card": {
+          "width": 356,
+          "height": 389.765625,
+          "x": -1096,
+          "y": 3930.75,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(0, 0, 0, 0.1) 0px 2px 6px -3px",
+          "transform": "none"
+        }
+      },
+      "reference": {
+        "h1": {
+          "width": 704,
+          "height": 83.59375,
+          "x": 32,
+          "y": 134,
+          "font": "38px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "41.8px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".case-hero__intro": {
+          "width": 590,
+          "height": 110.375,
+          "x": 32,
+          "y": 247.59375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".case-hero__media": {
+          "width": 704,
+          "height": 480,
+          "x": 32,
+          "y": 409.96875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-process__number-circle": {
+          "width": 32,
+          "height": 32,
+          "x": 24,
+          "y": 1058.015625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(134, 134, 134, 0.78) 0px 0px 0px 5px",
+          "transform": "none"
+        },
+        ".sc-case-result__heading": {
+          "width": 728,
+          "height": 171.578125,
+          "x": 20,
+          "y": 1774.953125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-result__hero-media": {
+          "width": 728,
+          "height": 580.125,
+          "x": 20,
+          "y": 1978.53125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(24, 52, 77, 0.22) 0px 25px 80px -70px",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        ".sc-case-screens__grid": {
+          "width": 728,
+          "height": 482,
+          "x": 20,
+          "y": 2689.703125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-process__cta": {
+          "width": 410,
+          "height": 393,
+          "x": 20,
+          "y": 3263.703125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(28, 72, 106, 0.2) 0px 12px 38px -30px",
+          "transform": "none"
+        },
+        ".sc-case-process__cta h3": {
+          "width": 280,
+          "height": 71.65625,
+          "x": 39,
+          "y": 3434.703125,
+          "font": "32px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "35.84px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-process__cta-button": {
+          "width": 372,
+          "height": 52,
+          "x": 39,
+          "y": 3584.703125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".related-work__head": {
+          "width": 728,
+          "height": 41.046875,
+          "x": 20,
+          "y": 3841.703125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".case-card": {
+          "width": 356,
+          "height": 389.765625,
+          "x": -1096,
+          "y": 3930.75,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(0, 0, 0, 0.1) 0px 2px 6px -3px",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "width": 1024,
+      "actual": {
+        "h1": {
+          "width": 572.5,
+          "height": 109.5,
+          "x": 36,
+          "y": 176.0625,
+          "font": "49.7766px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "54.7543px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".case-hero__intro": {
+          "width": 318.0625,
+          "height": 161.5625,
+          "x": 669.9375,
+          "y": 124,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".case-hero__media": {
+          "width": 952,
+          "height": 481.265625,
+          "x": 36,
+          "y": 350.0625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-process__number-circle": {
+          "width": 32,
+          "height": 32,
+          "x": 24,
+          "y": 1014.796875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(134, 134, 134, 0.78) 0px 0px 0px 5px",
+          "transform": "none"
+        },
+        ".sc-case-result__heading": {
+          "width": 984,
+          "height": 192.96875,
+          "x": 20,
+          "y": 1731.734375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-result__hero-media": {
+          "width": 740,
+          "height": 589.6875,
+          "x": 20,
+          "y": 1965.65625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(24, 52, 77, 0.22) 0px 25px 80px -70px",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        ".sc-case-screens__grid": {
+          "width": 984,
+          "height": 557.25,
+          "x": 20,
+          "y": 2712.484375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-process__cta": {
+          "width": 410,
+          "height": 393,
+          "x": 20,
+          "y": 3372.125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(28, 72, 106, 0.2) 0px 12px 38px -30px",
+          "transform": "none"
+        },
+        ".sc-case-process__cta h3": {
+          "width": 280,
+          "height": 71.65625,
+          "x": 39,
+          "y": 3543.125,
+          "font": "32px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "35.84px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-process__cta-button": {
+          "width": 372,
+          "height": 52,
+          "x": 39,
+          "y": 3693.125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".related-work__head": {
+          "width": 976,
+          "height": 54.75,
+          "x": 24,
+          "y": 3945.125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".case-card": {
+          "width": 480,
+          "height": 525.546875,
+          "x": -1464,
+          "y": 4047.875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(0, 0, 0, 0.1) 0px 2px 6px -3px",
+          "transform": "none"
+        }
+      },
+      "reference": {
+        "h1": {
+          "width": 572.5,
+          "height": 109.5,
+          "x": 36,
+          "y": 176.0625,
+          "font": "49.7766px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "54.7543px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".case-hero__intro": {
+          "width": 318.0625,
+          "height": 161.5625,
+          "x": 669.9375,
+          "y": 124,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".case-hero__media": {
+          "width": 952,
+          "height": 481.265625,
+          "x": 36,
+          "y": 350.0625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-process__number-circle": {
+          "width": 32,
+          "height": 32,
+          "x": 24,
+          "y": 1014.796875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(134, 134, 134, 0.78) 0px 0px 0px 5px",
+          "transform": "none"
+        },
+        ".sc-case-result__heading": {
+          "width": 984,
+          "height": 192.96875,
+          "x": 20,
+          "y": 1731.734375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-result__hero-media": {
+          "width": 740,
+          "height": 589.6875,
+          "x": 20,
+          "y": 1965.65625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(24, 52, 77, 0.22) 0px 25px 80px -70px",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        ".sc-case-screens__grid": {
+          "width": 984,
+          "height": 557.25,
+          "x": 20,
+          "y": 2712.484375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-process__cta": {
+          "width": 410,
+          "height": 393,
+          "x": 20,
+          "y": 3372.125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(28, 72, 106, 0.2) 0px 12px 38px -30px",
+          "transform": "none"
+        },
+        ".sc-case-process__cta h3": {
+          "width": 280,
+          "height": 71.65625,
+          "x": 39,
+          "y": 3543.125,
+          "font": "32px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "35.84px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-process__cta-button": {
+          "width": 372,
+          "height": 52,
+          "x": 39,
+          "y": 3693.125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".related-work__head": {
+          "width": 976,
+          "height": 54.75,
+          "x": 24,
+          "y": 3945.125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".case-card": {
+          "width": 480,
+          "height": 525.546875,
+          "x": -1464,
+          "y": 4047.875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(0, 0, 0, 0.1) 0px 2px 6px -3px",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "width": 1100,
+      "actual": {
+        "h1": {
+          "width": 618.421875,
+          "height": 117.625,
+          "x": 36,
+          "y": 167.9375,
+          "font": "53.471px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "58.8181px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".case-hero__intro": {
+          "width": 343.578125,
+          "height": 161.5625,
+          "x": 720.421875,
+          "y": 124,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".case-hero__media": {
+          "width": 1028,
+          "height": 517,
+          "x": 36,
+          "y": 354.859375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-process__number-circle": {
+          "width": 32,
+          "height": 32,
+          "x": 28,
+          "y": 1064.96875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(134, 134, 134, 0.78) 0px 0px 0px 5px",
+          "transform": "none"
+        },
+        ".sc-case-result__heading": {
+          "width": 671.5,
+          "height": 199.3125,
+          "x": 24,
+          "y": 3406.375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-result__hero-media": {
+          "width": 671.5,
+          "height": 535.109375,
+          "x": 24,
+          "y": 3649.6875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(24, 52, 77, 0.22) 0px 25px 80px -70px",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        ".sc-case-screens__grid": {
+          "width": 671.5,
+          "height": 593,
+          "x": 24,
+          "y": 4353.609375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-process__cta": {
+          "width": 320,
+          "height": 407,
+          "x": 756,
+          "y": 1018.15625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "sticky",
+          "top": "202.56px",
+          "shadow": "rgba(28, 72, 106, 0.2) 0px 12px 38px -30px",
+          "transform": "none"
+        },
+        ".sc-case-process__cta h3": {
+          "width": 278,
+          "height": 71.65625,
+          "x": 777,
+          "y": 1202.15625,
+          "font": "32px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "35.84px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-process__cta-button": {
+          "width": 278,
+          "height": 52,
+          "x": 777,
+          "y": 1352.15625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".related-work__head": {
+          "width": 1052,
+          "height": 58.8125,
+          "x": 24,
+          "y": 5146.796875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".case-card": {
+          "width": 518,
+          "height": 567.140625,
+          "x": -1578,
+          "y": 5253.609375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(0, 0, 0, 0.1) 0px 2px 6px -3px",
+          "transform": "none"
+        }
+      },
+      "reference": {
+        "h1": {
+          "width": 618.421875,
+          "height": 117.625,
+          "x": 36,
+          "y": 167.9375,
+          "font": "53.471px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "58.8181px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".case-hero__intro": {
+          "width": 343.578125,
+          "height": 161.5625,
+          "x": 720.421875,
+          "y": 124,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".case-hero__media": {
+          "width": 1028,
+          "height": 517,
+          "x": 36,
+          "y": 354.859375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-process__number-circle": {
+          "width": 32,
+          "height": 32,
+          "x": 28,
+          "y": 1064.96875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(134, 134, 134, 0.78) 0px 0px 0px 5px",
+          "transform": "none"
+        },
+        ".sc-case-result__heading": {
+          "width": 671.5,
+          "height": 199.3125,
+          "x": 24,
+          "y": 3406.375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-result__hero-media": {
+          "width": 671.5,
+          "height": 535.109375,
+          "x": 24,
+          "y": 3649.6875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(24, 52, 77, 0.22) 0px 25px 80px -70px",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        ".sc-case-screens__grid": {
+          "width": 671.5,
+          "height": 593,
+          "x": 24,
+          "y": 4353.609375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-process__cta": {
+          "width": 320,
+          "height": 407,
+          "x": 756,
+          "y": 1018.15625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "sticky",
+          "top": "202.56px",
+          "shadow": "rgba(28, 72, 106, 0.2) 0px 12px 38px -30px",
+          "transform": "none"
+        },
+        ".sc-case-process__cta h3": {
+          "width": 278,
+          "height": 71.65625,
+          "x": 777,
+          "y": 1202.15625,
+          "font": "32px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "35.84px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-process__cta-button": {
+          "width": 278,
+          "height": 52,
+          "x": 777,
+          "y": 1352.15625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".related-work__head": {
+          "width": 1052,
+          "height": 58.8125,
+          "x": 24,
+          "y": 5146.796875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".case-card": {
+          "width": 518,
+          "height": 567.140625,
+          "x": -1578,
+          "y": 5253.609375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(0, 0, 0, 0.1) 0px 2px 6px -3px",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "width": 1440,
+      "actual": {
+        "h1": {
+          "width": 759.59375,
+          "height": 154,
+          "x": 86,
+          "y": 129.578125,
+          "font": "69.9984px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "76.9982px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".case-hero__intro": {
+          "width": 422.015625,
+          "height": 135.96875,
+          "x": 931.984375,
+          "y": 147.609375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".case-hero__media": {
+          "width": 1268,
+          "height": 675,
+          "x": 86,
+          "y": 373.578125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-process__number-circle": {
+          "width": 32,
+          "height": 32,
+          "x": 90,
+          "y": 1284.6875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(134, 134, 134, 0.78) 0px 0px 0px 5px",
+          "transform": "none"
+        },
+        ".sc-case-result__heading": {
+          "width": 868.8125,
+          "height": 220.5,
+          "x": 86,
+          "y": 3801.078125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-result__hero-media": {
+          "width": 740,
+          "height": 589.6875,
+          "x": 86,
+          "y": 4077.578125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(24, 52, 77, 0.22) 0px 25px 80px -70px",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        ".sc-case-screens__grid": {
+          "width": 868.8125,
+          "height": 604,
+          "x": 86,
+          "y": 4885.0625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-process__cta": {
+          "width": 320,
+          "height": 407,
+          "x": 1034,
+          "y": 1232.296875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "sticky",
+          "top": "210px",
+          "shadow": "rgba(28, 72, 106, 0.2) 0px 12px 38px -30px",
+          "transform": "none"
+        },
+        ".sc-case-process__cta h3": {
+          "width": 278,
+          "height": 71.65625,
+          "x": 1055,
+          "y": 1416.296875,
+          "font": "32px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "35.84px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-process__cta-button": {
+          "width": 278,
+          "height": 52,
+          "x": 1055,
+          "y": 1566.296875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".related-work__head": {
+          "width": 1268,
+          "height": 77,
+          "x": 86,
+          "y": 5751.140625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".case-card": {
+          "width": 412,
+          "height": 451.09375,
+          "x": -1198,
+          "y": 5876.140625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(0, 0, 0, 0.1) 0px 2px 6px -3px",
+          "transform": "none"
+        }
+      },
+      "reference": {
+        "h1": {
+          "width": 759.59375,
+          "height": 154,
+          "x": 86,
+          "y": 129.578125,
+          "font": "69.9984px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "76.9982px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".case-hero__intro": {
+          "width": 422.015625,
+          "height": 135.96875,
+          "x": 931.984375,
+          "y": 147.609375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".case-hero__media": {
+          "width": 1268,
+          "height": 675,
+          "x": 86,
+          "y": 373.578125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-process__number-circle": {
+          "width": 32,
+          "height": 32,
+          "x": 90,
+          "y": 1284.6875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(134, 134, 134, 0.78) 0px 0px 0px 5px",
+          "transform": "none"
+        },
+        ".sc-case-result__heading": {
+          "width": 868.8125,
+          "height": 220.5,
+          "x": 86,
+          "y": 3801.078125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-result__hero-media": {
+          "width": 740,
+          "height": 589.6875,
+          "x": 86,
+          "y": 4077.578125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "relative",
+          "top": "0px",
+          "shadow": "rgba(24, 52, 77, 0.22) 0px 25px 80px -70px",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        ".sc-case-screens__grid": {
+          "width": 868.8125,
+          "height": 604,
+          "x": 86,
+          "y": 4885.0625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-process__cta": {
+          "width": 320,
+          "height": 407,
+          "x": 1034,
+          "y": 1232.296875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "position": "sticky",
+          "top": "210px",
+          "shadow": "rgba(28, 72, 106, 0.2) 0px 12px 38px -30px",
+          "transform": "none"
+        },
+        ".sc-case-process__cta h3": {
+          "width": 278,
+          "height": 71.65625,
+          "x": 1055,
+          "y": 1416.296875,
+          "font": "32px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "35.84px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".sc-case-process__cta-button": {
+          "width": 278,
+          "height": 52,
+          "x": 1055,
+          "y": 1566.296875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".related-work__head": {
+          "width": 1268,
+          "height": 77,
+          "x": 86,
+          "y": 5751.140625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "none",
+          "transform": "none"
+        },
+        ".case-card": {
+          "width": 412,
+          "height": 451.09375,
+          "x": -1198,
+          "y": 5876.140625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "position": "static",
+          "top": "auto",
+          "shadow": "rgba(0, 0, 0, 0.1) 0px 2px 6px -3px",
+          "transform": "none"
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Automated wheel/touch does not prove physical-device smoothness.",
+    "Firefox/WebKit and physical devices are not tested."
+  ],
+  "pass": true
+}

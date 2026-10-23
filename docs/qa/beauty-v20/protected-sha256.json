@@ -1,0 +1,122 @@
+{
+  "date": "2026-10-23T10:55:42.075Z",
+  "motion": [
+    {
+      "file": "css/design-system-v61.css",
+      "expected": "5080c5c3abbefff90be14add970d083a34c6cc6ab2dbe3aaccaeebbc0bc37be1",
+      "actual": "5080c5c3abbefff90be14add970d083a34c6cc6ab2dbe3aaccaeebbc0bc37be1",
+      "pass": true
+    },
+    {
+      "file": "css/faq-footer.css",
+      "expected": "bb083c831c214735804ddb3ca5963ce6c948c8f9bfe29325c4d4615648339cb6",
+      "actual": "bb083c831c214735804ddb3ca5963ce6c948c8f9bfe29325c4d4615648339cb6",
+      "pass": true
+    },
+    {
+      "file": "css/main.css",
+      "expected": "83ce60a237a0c7d77baf7785f87596085e1557a376f3b1d3d6b3ec2463cb8674",
+      "actual": "83ce60a237a0c7d77baf7785f87596085e1557a376f3b1d3d6b3ec2463cb8674",
+      "pass": true
+    },
+    {
+      "file": "css/process.css",
+      "expected": "f691ad221f799b7e6237db91031f9b3ed46c60e99f7b44ee3a32f13eb872e963",
+      "actual": "f691ad221f799b7e6237db91031f9b3ed46c60e99f7b44ee3a32f13eb872e963",
+      "pass": true
+    },
+    {
+      "file": "css/services.css",
+      "expected": "d1ae5844f7eb3e683742a641891dab41c0da8af2f728fc77721431d90345dbf4",
+      "actual": "d1ae5844f7eb3e683742a641891dab41c0da8af2f728fc77721431d90345dbf4",
+      "pass": true
+    },
+    {
+      "file": "css/sticky-handoff-v61.css",
+      "expected": "b4e622b3cec6d97a8d55bcfe9aa5a47174e23dbe103ac1c473ac0c8de7e64326",
+      "actual": "b4e622b3cec6d97a8d55bcfe9aa5a47174e23dbe103ac1c473ac0c8de7e64326",
+      "pass": true
+    },
+    {
+      "file": "css/testimonials.css",
+      "expected": "6deb37bf56574fb5117fba4dd256fa0998dc6afa3072a8fc253b962e362a5b5e",
+      "actual": "6deb37bf56574fb5117fba4dd256fa0998dc6afa3072a8fc253b962e362a5b5e",
+      "pass": true
+    },
+    {
+      "file": "css/v62-services-alignment.css",
+      "expected": "796a112b05a8aa198bff5250c42c23cee762acd311adebc330cd0c0dc439290a",
+      "actual": "796a112b05a8aa198bff5250c42c23cee762acd311adebc330cd0c0dc439290a",
+      "pass": true
+    },
+    {
+      "file": "css/works.css",
+      "expected": "1b7ba5202fc4d74be087b9fe46816fb39ebdeda286304c1e010c6e5469234249",
+      "actual": "1b7ba5202fc4d74be087b9fe46816fb39ebdeda286304c1e010c6e5469234249",
+      "pass": true
+    },
+    {
+      "file": "js/faq-footer.js",
+      "expected": "f8c69ed2af307077ffeb1a3a5625463ad3fa77dd86847a87038012dbc7b05dc7",
+      "actual": "f8c69ed2af307077ffeb1a3a5625463ad3fa77dd86847a87038012dbc7b05dc7",
+      "pass": true
+    },
+    {
+      "file": "js/hero-geometry.js",
+      "expected": "34ed0a12ab2d44d1e4896a51dc9b4c0b6a145d90caabaf3cff3283b9464d4815",
+      "actual": "34ed0a12ab2d44d1e4896a51dc9b4c0b6a145d90caabaf3cff3283b9464d4815",
+      "pass": true
+    },
+    {
+      "file": "js/hero-scroll.js",
+      "expected": "871bf69e0ce8ba0569b89166bde0cb77364858556e2b22fab728b5090270bdf2",
+      "actual": "871bf69e0ce8ba0569b89166bde0cb77364858556e2b22fab728b5090270bdf2",
+      "pass": true
+    },
+    {
+      "file": "js/main.js",
+      "expected": "1039ff7042ad020540ea61b21426ac2d7c5c424c9f5df3b8ebcd9dd7c73fe8b1",
+      "actual": "1039ff7042ad020540ea61b21426ac2d7c5c424c9f5df3b8ebcd9dd7c73fe8b1",
+      "pass": true
+    },
+    {
+      "file": "js/process.js",
+      "expected": "95d3230bbc8904bc49db1eb965396043ae22562313cd915f8e50c899a8c8e43d",
+      "actual": "95d3230bbc8904bc49db1eb965396043ae22562313cd915f8e50c899a8c8e43d",
+      "pass": true
+    },
+    {
+      "file": "js/services.js",
+      "expected": "69a387045061ffeeb43d25cd472b5b48924a4e4e2938bad305490aa1a5fe8f79",
+      "actual": "69a387045061ffeeb43d25cd472b5b48924a4e4e2938bad305490aa1a5fe8f79",
+      "pass": true
+    },
+    {
+      "file": "js/testimonials.js",
+      "expected": "12f90a613c0c949be3e405146beaf1187d6a0eb90581bd408e5650b23d3c8fb3",
+      "actual": "12f90a613c0c949be3e405146beaf1187d6a0eb90581bd408e5650b23d3c8fb3",
+      "pass": true
+    },
+    {
+      "file": "js/works.js",
+      "expected": "af9d9bc1c4a606972af477e0514e4fc168420fc45b27cd440c349922ca5ca67d",
+      "actual": "af9d9bc1c4a606972af477e0514e4fc168420fc45b27cd440c349922ca5ca67d",
+      "pass": true
+    }
+  ],
+  "sharedPartials": [
+    {
+      "file": "templates/partials/header.html",
+      "baseline": "840b82592baf2c264c5d5b8bc38ed2dc51b655f52977b2524a292d98776cc1fa",
+      "actual": "840b82592baf2c264c5d5b8bc38ed2dc51b655f52977b2524a292d98776cc1fa",
+      "pass": true
+    },
+    {
+      "file": "templates/partials/footer.html",
+      "baseline": "f0af226a0b28261162a938b261b2c961df0d3b59ac9bd6bdeba2c0bd35759e02",
+      "actual": "f0af226a0b28261162a938b261b2c961df0d3b59ac9bd6bdeba2c0bd35759e02",
+      "pass": true
+    }
+  ],
+  "pass": true
+}
