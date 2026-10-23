@@ -1,18 +1,20 @@
 /* Dependency-free build-time shared shell. Commit the generated HTML for static hosting. */
 const fs = require('node:fs');
 const path = require('node:path');
+const {casePages,renderCase}=require('./lib/case-page.cjs');
 const PAGES = {home:'index.html', works:'raboty/index.html'};
 const read = (root, file) => fs.readFileSync(path.join(root, file), 'utf8').replace(/\r\n/g, '\n');
 
 function renderPage(root, page) {
-  if (!Object.hasOwn(PAGES, page)) throw new Error(`Unknown page: ${page}`);
+  const data=Object.hasOwn(PAGES,page)?null:casePages(root).find(data=>data.slug===page);
+  if (!Object.hasOwn(PAGES, page)&&!data) throw new Error(`Unknown page: ${page}`);
   const values = {
     header: read(root, 'templates/partials/header.html').trim(),
     footer: read(root, 'templates/partials/footer.html').trim(),
     home: page === 'home' ? '' : '/',
     worksCurrent: page === 'works' ? ' aria-current="page"' : '',
   };
-  const output = read(root, `templates/pages/${page}.html`)
+  const output = (data?renderCase(root,data):read(root, `templates/pages/${page}.html`))
     .replace(/\{\{(header|footer)\}\}/g, (_, key) => values[key])
     .replace(/\{\{(home|worksCurrent)\}\}/g, (_, key) => values[key]);
   if (/\{\{[^}]+\}\}/.test(output)) throw new Error(`Unresolved template marker in ${page}`);
@@ -20,7 +22,8 @@ function renderPage(root, page) {
 }
 
 function build(root, check = false) {
-  for (const [page, file] of Object.entries(PAGES)) {
+  const pages={...PAGES,...Object.fromEntries(casePages(root).map(data=>[data.slug,`raboty/${data.slug}/index.html`]))};
+  for (const [page, file] of Object.entries(pages)) {
     const output = renderPage(root, page), destination = path.join(root, file);
     if (check) {
       if (!fs.existsSync(destination) || read(root, file) !== output) throw new Error(`${file} is stale; run node scripts/build-site.cjs`);
@@ -35,7 +38,7 @@ if (require.main === module) {
     const args=process.argv.slice(2);
     if (args.some(a=>a!=='--check')) throw new Error('Usage: node scripts/build-site.cjs [--check]');
     build(path.resolve(__dirname, '..'),args.includes('--check'));
-    console.log(`PASS: shared Header/Footer ${args.includes('--check')?'are current in':'generated for'} / and /raboty/.`);
+    console.log(`PASS: shared Header/Footer ${args.includes('--check')?'are current in':'generated for'} home, catalog and case routes.`);
   } catch(error) {console.error(error.message);process.exitCode=1;}
 }
 module.exports={renderPage,build};

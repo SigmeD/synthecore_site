@@ -3,6 +3,7 @@
    Purely visual; does NOT modify the approved v12 wave/reveal engine.
    Header on mobile keeps the v60 compact menu layout.
 */
+@import url("./button-interactions.css");
 :root {
   --sc-ui-font:var(--sc-font-ui);
   --sc-nav-font-size:var(--sc-font-size-nav);

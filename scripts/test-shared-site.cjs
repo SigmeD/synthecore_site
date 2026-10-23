@@ -1,8 +1,10 @@
+const {restoreCaseLinks}=require('./lib/approved-case-links.cjs');
 const {test}=require('node:test');
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const path=require('node:path');
 const {restoreV27CatalogCopy}=require('./lib/approved-catalog-naming.cjs');
+const {restoreV27ButtonShadows}=require('./lib/approved-button-shadows.cjs');
 const root=path.resolve(__dirname,'..');
 const read=file=>fs.readFileSync(path.join(root,file),'utf8').replace(/\r\n/g,'\n');
 
@@ -27,7 +29,7 @@ test('route-aware shared navigation resolves every local anchor',()=>{
   const html=read(file),base=new URL(file==='index.html'?'/':'/raboty/','https://synthecore.test');
   for(const [,href] of html.matchAll(/href="([^\"]+)"/g)) {
    const url=new URL(href,base);if(url.origin!==base.origin)continue;
-   const target=url.pathname==='/'?'index.html':url.pathname==='/raboty/'?'raboty/index.html':url.pathname.slice(1);
+   const target=url.pathname.endsWith('/')?url.pathname.slice(1)+'index.html':url.pathname.slice(1);
    assert.ok(fs.existsSync(path.join(root,target)),`missing target ${href}`);
    if(url.hash) assert.ok(read(target).includes(`id="${decodeURIComponent(url.hash.slice(1))}"`),`missing anchor ${href}`);
   }
@@ -59,7 +61,7 @@ test('catalog copy exception rejects unapproved copy and structural or shell cha
  const crypto=require('node:crypto');
  const manifest=JSON.parse(read('docs/V62_ON_V27_SOURCES.json'));
  const accepted=(file,html)=>{
-  try {return crypto.createHash('sha256').update(restoreV27CatalogCopy(file,html)).digest('hex')===manifest.v27[file];}
+  try {return crypto.createHash('sha256').update(restoreV27CatalogCopy(file,restoreCaseLinks(file,html))).digest('hex')===manifest.v27[file];}
   catch {return false;}
  };
  for(const file of ['templates/pages/works.html','raboty/index.html']) {
@@ -120,9 +122,9 @@ test('combined build preserves v62 motion bytes/content and the owner-selected v
  }
  for(const [file,expected] of Object.entries(sources.v27)) {
   const data=fs.readFileSync(path.join(root,file));
-  assert.equal(hash(file.endsWith('.ttf')?data:Buffer.from(restoreV27CatalogCopy(file,data.toString('utf8').replace(/\r\n/g,'\n')))),expected,`v27 shell/catalog source (approved copy only): ${file}`);
+  assert.equal(hash(file.endsWith('.ttf')?data:Buffer.from(restoreV27ButtonShadows(file,restoreV27CatalogCopy(file,restoreCaseLinks(file,data.toString('utf8').replace(/\r\n/g,'\n')))))),expected,`v27 shell/catalog source (approved copy and button policy only): ${file}`);
  }
- const html=read('index.html');
+ const html=restoreCaseLinks('index.html',read('index.html'));
  const content=html.slice(html.indexOf('<main>')+6,html.lastIndexOf('<section aria-labelledby="contact-title"'));
  assert.equal(hash(Buffer.from(content)),sources.v62ContentSha256,'all seven v62 content sections are unchanged');
  const bridge=read('css/v62-v27-shell-preservation.css');
