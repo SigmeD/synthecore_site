@@ -1,0 +1,30 @@
+/* Orange button policy, shared by every route.
+   Keep the byte-locked v62 styles intact; consume semantic shadow tokens here.
+   Color, geometry, keyboard outline and arrow motion belong to existing rules. */
+.sc-button--accent,
+.main-cta,
+.catalog-intro__cta,
+.catalog-outro__cta,
+.case-dialog__cta,
+.mobile-panel a:last-child,
+.contact-footer.sc-footer .sc-footer__cta,
+.sc-process__step.is-active .sc-process__marker {
+  box-shadow: var(--sc-button-shadow);
+  filter: none;
+  text-shadow: none;
+}
+
+.sc-button--accent:is(:hover, :focus-visible, :active),
+.main-cta:is(:hover, :focus-visible, :active),
+.catalog-intro__cta:is(:hover, :focus-visible, :active),
+.catalog-outro__cta:is(:hover, :focus-visible, :active),
+.case-dialog__cta:is(:hover, :focus-visible, :active),
+.mobile-panel a:last-child:is(:hover, :focus-visible, :active),
+.contact-footer.sc-footer .sc-footer__cta:is(:hover, :focus-visible, :active),
+.sc-process__step.is-active .sc-process__marker:is(:hover, :focus-visible, :active),
+/* The header CTA is dark at rest and orange only in these existing states. */
+.floating-header > .nav-cta:is(:hover, :focus-visible) {
+  box-shadow: var(--sc-button-hover-shadow);
+  filter: none;
+  text-shadow: none;
+}

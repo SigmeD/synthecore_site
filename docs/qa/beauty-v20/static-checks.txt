@@ -1,0 +1,158 @@
+
+$ node scripts/verify-v62-import.cjs
+SyntheCore v62 MOTION LOCK: 17/17 matched.
+
+exit=0
+
+$ node docs/qa/v62-on-v27/verify-git.cjs HEAD
+{
+  "ref": "HEAD",
+  "motionFiles": 17,
+  "v27Files": 25,
+  "approvedCatalogCopy": "2026-10-21",
+  "approvedButtonPolicy": "2026-10-22",
+  "v62ContentMatches": true,
+  "failures": [],
+  "pass": true
+}
+
+exit=0
+
+$ node scripts/build-site.cjs --check
+PASS: shared Header/Footer are current in home, catalog and case routes.
+
+exit=0
+
+$ node scripts/check-project.cjs
+PASS: 12 image/viewport combinations, 60 crop states, zero-size guards.
+PASS: current v60 structure/resources, 6 approved Works images, 40 vendor/asset manifest hashes. Offline checks only; use --http [URL] to compare served bytes.
+
+exit=0
+
+$ node scripts/verify-works-static.cjs
+PASS: 6 ordered Works cards with approved copy, 6 approved PNG hashes/dimensions, unique ids/hooks, valid fragment targets, dependency order, one Lenis owner, 58 local resources. Offline checks only.
+
+exit=0
+
+$ node scripts/verify-services-static.cjs
+PASS: six services cards, accessible headings, twelve local illustrations (mono + color), idle tilt, active alignment, single scroll owner, no vertical wheel capture.
+
+exit=0
+
+$ node scripts/check-hero-geometry.cjs
+PASS: 12 image/viewport combinations, 60 crop states, zero-size guards.
+
+exit=0
+
+$ node scripts/verify-sticky-handoff-v61.cjs
+PASS: experimental CSS sticky scenes and +30% testimonials.
+
+exit=0
+
+$ node --test scripts/test-static-checks.cjs scripts/test-shared-site.cjs scripts/test-case-pages.cjs scripts/test-button-policy.cjs
+✔ button policy exception accepts only the exact two additions to v27 (3.0588ms)
+✔ QA does not exempt protected motion files or unrelated components (2.5234ms)
+✔ case renderer builds a nested route from shared shell and case content (6.7998ms)
+✔ all case assets and local links resolve under the nested URL (6.7082ms)
+✔ case renderer escapes content and rejects missing or unsafe project data (4.0259ms)
+✔ authorized case links restore exact original pages and reject other mutations (4.6885ms)
+✔ imported case images retain verified handoff bytes (7.5744ms)
+✔ both static routes are generated from one header and one footer (12.0253ms)
+✔ route-aware shared navigation resolves every local anchor (11.4434ms)
+✔ catalog permits only approved naming while preserving six projects, descriptions and assets (16.9864ms)
+✔ catalog copy exception rejects unapproved copy and structural or shell changes (4.8428ms)
+✔ single footer and menu owners retain local motion contracts (3.3095ms)
+✔ local Manrope distributions match the recorded hashes (7.8724ms)
+✔ combined build preserves v62 motion bytes/content and the owner-selected v27 shell (16.4337ms)
+▶ current v60 static checks accept the site and reject isolated fixture mutations
+  ✔ accepted package passes without HTTP or historical backups (77.2876ms)
+  ✔ missing card (13.3889ms)
+  ✔ reordered cards (11.5622ms)
+  ✔ duplicate DOM id (10.4984ms)
+  ✔ missing label target (10.8937ms)
+  ✔ label targets another card (10.6071ms)
+  ✔ label target is not h2 (10.1567ms)
+  ✔ empty title (10.608ms)
+  ✔ empty category (10.6634ms)
+  ✔ missing description (10.6325ms)
+  ✔ empty description (10.5523ms)
+  ✔ missing image (10.8415ms)
+  ✔ empty image src (10.6203ms)
+  ✔ wrong image mapping (10.9948ms)
+  ✔ wrong natural dimension attribute (10.9738ms)
+  ✔ missing image file (9.2155ms)
+  ✔ wrong PNG dimensions (10.8196ms)
+  ✔ wrong approved image hash (10.4595ms)
+  ✔ wrong section order (9.9377ms)
+  ✔ nested rather than sequential section (9.9737ms)
+  ✔ duplicate Works CSS hook (26.871ms)
+  ✔ duplicate Works JS hook (25.7548ms)
+  ✔ CSS hook before main (28.1843ms)
+  ✔ Works script before dependencies (35.3974ms)
+  ✔ async Works script (31.9452ms)
+  ✔ duplicate vendor URL alias (29.7003ms)
+  ✔ second external library copy (27.1476ms)
+  ✔ second Lenis constructor (45.071ms)
+  ✔ missing Lenis constructor (50.3153ms)
+  ✔ missing local CSS resource (22.4093ms)
+  ✔ malformed nested markup (9.2208ms)
+  ✔ removed prototype category qualification (12.3625ms)
+  ✔ removed prototype description qualification (11.287ms)
+  ✔ removed demo-data qualification (16.3811ms)
+  ✔ removed concept qualification (18.2456ms)
+  ✔ dangling services navigation link (10.166ms)
+  ✔ dangling encoded navigation link (10.8819ms)
+  ✔ malformed percent-encoded fragment (10.8101ms)
+  ✔ empty fragment (9.6991ms)
+  ✔ b2b nonempty title copy changes (10.682ms)
+  ✔ b2b nonempty category copy changes (10.2547ms)
+  ✔ b2b nonempty description copy changes (10.0081ms)
+  ✔ flowers nonempty title copy changes (11.5066ms)
+  ✔ flowers nonempty category copy changes (12.1537ms)
+  ✔ flowers nonempty description copy changes (11.6624ms)
+  ✔ crm nonempty title copy changes (14.6428ms)
+  ✔ crm nonempty category copy changes (13.6104ms)
+  ✔ crm nonempty description copy changes (13.6308ms)
+  ✔ beauty nonempty title copy changes (15.7245ms)
+  ✔ beauty nonempty category copy changes (16.8608ms)
+  ✔ beauty nonempty description copy changes (15.1587ms)
+  ✔ prostor nonempty title copy changes (17.2028ms)
+  ✔ prostor nonempty category copy changes (17.2568ms)
+  ✔ prostor nonempty description copy changes (17.9782ms)
+  ✔ metal nonempty title copy changes (19.0858ms)
+  ✔ metal nonempty category copy changes (19.8865ms)
+  ✔ metal nonempty description copy changes (22.7419ms)
+  ✔ b2b image hash differs with same byte length (11.7971ms)
+  ✔ flowers image hash differs with same byte length (13.9559ms)
+  ✔ crm image hash differs with same byte length (15.5438ms)
+  ✔ beauty image hash differs with same byte length (18.3612ms)
+  ✔ prostor image hash differs with same byte length (19.6476ms)
+  ✔ metal image hash differs with same byte length (21.2872ms)
+  ✔ whitespace, attribute quoting and nested inline text remain valid (36.3967ms)
+PASS: 12 image/viewport combinations, 60 crop states, zero-size guards.
+  ✔ project check works offline from an unrelated cwd (53.2011ms)
+  ✔ asset manifest hash rejects same-length mutation (28.9957ms)
+  ✔ vendor manifest hash rejects same-length mutation (62.1053ms)
+  ✔ explicit HTTP verifies bytes and rejects stale content / 404 (50.8244ms)
+✔ current v60 static checks accept the site and reject isolated fixture mutations (1409.5495ms)
+ℹ tests 83
+ℹ suites 0
+ℹ pass 83
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1501.7307
+
+exit=0
+
+$ node scripts/check-project.cjs --http http://127.0.0.1:4185/
+PASS: 12 image/viewport combinations, 60 crop states, zero-size guards.
+PASS: current v60 structure/resources, 6 approved Works images, 40 vendor/asset manifest hashes. 59 HTTP resources match disk.
+
+exit=0
+
+$ git ls-files --cached --others --exclude-standard | node scripts/check-doc-links.cjs
+PASS: 91 local links across 8 current/historical Markdown documents target supplied Git files.
+
+exit=0

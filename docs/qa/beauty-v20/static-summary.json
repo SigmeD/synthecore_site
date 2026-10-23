@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-23T11:01:24.355Z",
+  "ref": "HEAD",
+  "checks": [
+    {
+      "command": "node scripts/verify-v62-import.cjs",
+      "exit": 0
+    },
+    {
+      "command": "node docs/qa/v62-on-v27/verify-git.cjs HEAD",
+      "exit": 0
+    },
+    {
+      "command": "node scripts/build-site.cjs --check",
+      "exit": 0
+    },
+    {
+      "command": "node scripts/check-project.cjs",
+      "exit": 0
+    },
+    {
+      "command": "node scripts/verify-works-static.cjs",
+      "exit": 0
+    },
+    {
+      "command": "node scripts/verify-services-static.cjs",
+      "exit": 0
+    },
+    {
+      "command": "node scripts/check-hero-geometry.cjs",
+      "exit": 0
+    },
+    {
+      "command": "node scripts/verify-sticky-handoff-v61.cjs",
+      "exit": 0
+    },
+    {
+      "command": "node --test scripts/test-static-checks.cjs scripts/test-shared-site.cjs scripts/test-case-pages.cjs scripts/test-button-policy.cjs",
+      "exit": 0
+    },
+    {
+      "command": "node scripts/check-project.cjs --http http://127.0.0.1:4185/",
+      "exit": 0
+    },
+    {
+      "command": "doc links",
+      "exit": 0
+    }
+  ],
+  "pass": true
+}

@@ -3,6 +3,8 @@
   --sc-color-ink: #171e23;
   --sc-color-accent: #e44d1f;
   --sc-color-accent-deep: #c63d14;
+  --sc-button-shadow: none;
+  --sc-button-hover-shadow: none;
   --sc-color-surface: #ffffff;
   --sc-color-copy-muted: #75828d;
   --sc-color-tag-blue-bg: #e3efff;

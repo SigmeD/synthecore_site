@@ -1,0 +1,296 @@
+PASS home-320 direct route loads
+PASS home-320 header height
+PASS home-320 no horizontal overflow
+PASS home-320 UI typography
+PASS home-320 one scroll owner
+PASS home-320 menu opens
+PASS home-320 menu ESC restores focus
+PASS home-320 menu closes outside
+PASS home-320 FAQ preserved
+PASS home-320 exactly three v12 waves and heights
+PASS home-320 waves move in viewport
+PASS home-320 CTA v12 visible with .92s scale/opacity reveal
+PASS home-320 waves sleep away from footer
+PASS home-320 CTA stays revealed once
+PASS home-320 no runtime/network errors
+PASS works-320 direct route loads
+PASS works-320 header height
+PASS works-320 no horizontal overflow
+PASS works-320 UI typography
+PASS works-320 one scroll owner
+PASS works-320 menu opens
+PASS works-320 menu ESC restores focus
+PASS works-320 menu closes outside
+PASS works-320 grid 3/2/1
+PASS works-320 title/copy type
+PASS works-320 arrows 20px
+PASS works-320 v27 hover timings
+PASS works-320 dialog 1 content
+PASS works-320 dialog 1 locks document
+PASS works-320 dialog 1 ESC restores focus/unlocks
+PASS works-320 dialog 2 content
+PASS works-320 dialog 2 locks document
+PASS works-320 dialog 2 ESC restores focus/unlocks
+PASS works-320 dialog 3 content
+PASS works-320 dialog 3 locks document
+PASS works-320 dialog 3 ESC restores focus/unlocks
+PASS works-320 dialog 4 content
+PASS works-320 dialog 4 locks document
+PASS works-320 dialog 4 ESC restores focus/unlocks
+PASS works-320 dialog 5 content
+PASS works-320 dialog 5 locks document
+PASS works-320 dialog 5 ESC restores focus/unlocks
+PASS works-320 dialog 6 content
+PASS works-320 dialog 6 locks document
+PASS works-320 dialog 6 ESC restores focus/unlocks
+PASS works-320 all six cards reveal once
+PASS works-320 exactly three v12 waves and heights
+PASS works-320 waves move in viewport
+PASS works-320 CTA v12 visible with .92s scale/opacity reveal
+PASS works-320 waves sleep away from footer
+PASS works-320 CTA stays revealed once
+PASS works-320 no runtime/network errors
+PASS home-390 direct route loads
+PASS home-390 header height
+PASS home-390 no horizontal overflow
+PASS home-390 UI typography
+PASS home-390 one scroll owner
+PASS home-390 menu opens
+PASS home-390 menu ESC restores focus
+PASS home-390 menu closes outside
+PASS home-390 FAQ preserved
+PASS home-390 exactly three v12 waves and heights
+PASS home-390 waves move in viewport
+PASS home-390 CTA v12 visible with .92s scale/opacity reveal
+PASS home-390 waves sleep away from footer
+PASS home-390 CTA stays revealed once
+PASS home-390 no runtime/network errors
+PASS works-390 direct route loads
+PASS works-390 header height
+PASS works-390 no horizontal overflow
+PASS works-390 UI typography
+PASS works-390 one scroll owner
+PASS works-390 menu opens
+PASS works-390 menu ESC restores focus
+PASS works-390 menu closes outside
+PASS works-390 grid 3/2/1
+PASS works-390 title/copy type
+PASS works-390 arrows 20px
+PASS works-390 v27 hover timings
+PASS works-390 dialog 1 content
+PASS works-390 dialog 1 locks document
+PASS works-390 dialog 1 ESC restores focus/unlocks
+PASS works-390 dialog 2 content
+PASS works-390 dialog 2 locks document
+PASS works-390 dialog 2 ESC restores focus/unlocks
+PASS works-390 dialog 3 content
+PASS works-390 dialog 3 locks document
+PASS works-390 dialog 3 ESC restores focus/unlocks
+PASS works-390 dialog 4 content
+PASS works-390 dialog 4 locks document
+PASS works-390 dialog 4 ESC restores focus/unlocks
+PASS works-390 dialog 5 content
+PASS works-390 dialog 5 locks document
+PASS works-390 dialog 5 ESC restores focus/unlocks
+PASS works-390 dialog 6 content
+PASS works-390 dialog 6 locks document
+PASS works-390 dialog 6 ESC restores focus/unlocks
+PASS works-390 all six cards reveal once
+PASS works-390 exactly three v12 waves and heights
+PASS works-390 waves move in viewport
+PASS works-390 CTA v12 visible with .92s scale/opacity reveal
+PASS works-390 waves sleep away from footer
+PASS works-390 CTA stays revealed once
+PASS works-390 no runtime/network errors
+PASS home-768 direct route loads
+PASS home-768 header height
+PASS home-768 no horizontal overflow
+PASS home-768 UI typography
+PASS home-768 one scroll owner
+PASS home-768 menu opens
+PASS home-768 menu ESC restores focus
+PASS home-768 menu closes outside
+PASS home-768 FAQ preserved
+PASS home-768 exactly three v12 waves and heights
+PASS home-768 waves move in viewport
+PASS home-768 CTA v12 visible with .92s scale/opacity reveal
+PASS home-768 waves sleep away from footer
+PASS home-768 CTA stays revealed once
+PASS home-768 no runtime/network errors
+PASS works-768 direct route loads
+PASS works-768 header height
+PASS works-768 no horizontal overflow
+PASS works-768 UI typography
+PASS works-768 one scroll owner
+PASS works-768 menu opens
+PASS works-768 menu ESC restores focus
+PASS works-768 menu closes outside
+PASS works-768 grid 3/2/1
+PASS works-768 title/copy type
+PASS works-768 arrows 20px
+PASS works-768 v27 hover timings
+PASS works-768 all six cards reveal once
+PASS works-768 exactly three v12 waves and heights
+PASS works-768 waves move in viewport
+PASS works-768 CTA v12 visible with .92s scale/opacity reveal
+PASS works-768 waves sleep away from footer
+PASS works-768 CTA stays revealed once
+PASS works-768 no runtime/network errors
+PASS home-990 direct route loads
+PASS home-990 header height
+PASS home-990 no horizontal overflow
+PASS home-990 UI typography
+PASS home-990 one scroll owner
+PASS home-990 header CTA 40px
+PASS home-990 FAQ preserved
+PASS home-990 exactly three v12 waves and heights
+PASS home-990 waves move in viewport
+PASS home-990 CTA v12 visible with .92s scale/opacity reveal
+PASS home-990 waves sleep away from footer
+PASS home-990 CTA stays revealed once
+PASS home-990 no runtime/network errors
+PASS works-990 direct route loads
+PASS works-990 header height
+PASS works-990 no horizontal overflow
+PASS works-990 UI typography
+PASS works-990 one scroll owner
+PASS works-990 header CTA 40px
+PASS works-990 grid 3/2/1
+PASS works-990 title/copy type
+PASS works-990 arrows 20px
+PASS works-990 v27 hover timings
+PASS works-990 all six cards reveal once
+PASS works-990 exactly three v12 waves and heights
+PASS works-990 waves move in viewport
+PASS works-990 CTA v12 visible with .92s scale/opacity reveal
+PASS works-990 waves sleep away from footer
+PASS works-990 CTA stays revealed once
+PASS works-990 no runtime/network errors
+PASS home-1440 direct route loads
+PASS home-1440 header height
+PASS home-1440 no horizontal overflow
+PASS home-1440 UI typography
+PASS home-1440 one scroll owner
+PASS home-1440 header CTA 40px
+PASS home-1440 FAQ preserved
+PASS home-1440 exactly three v12 waves and heights
+PASS home-1440 waves move in viewport
+PASS home-1440 CTA v12 visible with .92s scale/opacity reveal
+PASS home-1440 waves sleep away from footer
+PASS home-1440 CTA stays revealed once
+PASS home-1440 no runtime/network errors
+PASS works-1440 direct route loads
+PASS works-1440 header height
+PASS works-1440 no horizontal overflow
+PASS works-1440 UI typography
+PASS works-1440 one scroll owner
+PASS works-1440 header CTA 40px
+PASS works-1440 grid 3/2/1
+PASS works-1440 title/copy type
+PASS works-1440 arrows 20px
+PASS works-1440 v27 hover timings
+PASS works-1440 approved full desktop geometry
+PASS works-1440 all six cards reveal once
+PASS works-1440 keyboard anchor transfers focus
+PASS works-1440 next Tab reaches footer CTA
+PASS works-1440 cross-page Services route
+PASS works-1440 Works nav and refresh
+PASS works-1440 exactly three v12 waves and heights
+PASS works-1440 waves move in viewport
+PASS works-1440 CTA v12 visible with .92s scale/opacity reveal
+PASS works-1440 waves sleep away from footer
+PASS works-1440 CTA stays revealed once
+PASS works-1440 no runtime/network errors
+PASS home-1920 direct route loads
+PASS home-1920 header height
+PASS home-1920 no horizontal overflow
+PASS home-1920 UI typography
+PASS home-1920 one scroll owner
+PASS home-1920 header CTA 40px
+PASS home-1920 FAQ preserved
+PASS home-1920 exactly three v12 waves and heights
+PASS home-1920 waves move in viewport
+PASS home-1920 CTA v12 visible with .92s scale/opacity reveal
+PASS home-1920 waves sleep away from footer
+PASS home-1920 CTA stays revealed once
+PASS home-1920 no runtime/network errors
+PASS works-1920 direct route loads
+PASS works-1920 header height
+PASS works-1920 no horizontal overflow
+PASS works-1920 UI typography
+PASS works-1920 one scroll owner
+PASS works-1920 header CTA 40px
+PASS works-1920 grid 3/2/1
+PASS works-1920 title/copy type
+PASS works-1920 arrows 20px
+PASS works-1920 v27 hover timings
+PASS works-1920 approved full desktop geometry
+PASS works-1920 stationary orange arrow/no zoom/3px lift
+PASS works-1920 no cursor-follow badge
+PASS works-1920 dialog 1 content
+PASS works-1920 dialog 1 locks document
+PASS works-1920 dialog 1 ESC restores focus/unlocks
+PASS works-1920 dialog 2 content
+PASS works-1920 dialog 2 locks document
+PASS works-1920 dialog 2 ESC restores focus/unlocks
+PASS works-1920 dialog 3 content
+PASS works-1920 dialog 3 locks document
+PASS works-1920 dialog 3 ESC restores focus/unlocks
+PASS works-1920 dialog 4 content
+PASS works-1920 dialog 4 locks document
+PASS works-1920 dialog 4 ESC restores focus/unlocks
+PASS works-1920 dialog 5 content
+PASS works-1920 dialog 5 locks document
+PASS works-1920 dialog 5 ESC restores focus/unlocks
+PASS works-1920 dialog 6 content
+PASS works-1920 dialog 6 locks document
+PASS works-1920 dialog 6 ESC restores focus/unlocks
+PASS works-1920 all six cards reveal once
+PASS works-1920 exactly three v12 waves and heights
+PASS works-1920 waves move in viewport
+PASS works-1920 CTA v12 visible with .92s scale/opacity reveal
+PASS works-1920 waves sleep away from footer
+PASS works-1920 CTA stays revealed once
+PASS works-1920 no runtime/network errors
+PASS home-2560 direct route loads
+PASS home-2560 header height
+PASS home-2560 no horizontal overflow
+PASS home-2560 UI typography
+PASS home-2560 one scroll owner
+PASS home-2560 header CTA 40px
+PASS home-2560 FAQ preserved
+PASS home-2560 exactly three v12 waves and heights
+PASS home-2560 waves move in viewport
+PASS home-2560 CTA v12 visible with .92s scale/opacity reveal
+PASS home-2560 waves sleep away from footer
+PASS home-2560 CTA stays revealed once
+PASS home-2560 no runtime/network errors
+PASS works-2560 direct route loads
+PASS works-2560 header height
+PASS works-2560 no horizontal overflow
+PASS works-2560 UI typography
+PASS works-2560 one scroll owner
+PASS works-2560 header CTA 40px
+PASS works-2560 grid 3/2/1
+PASS works-2560 title/copy type
+PASS works-2560 arrows 20px
+PASS works-2560 v27 hover timings
+PASS works-2560 approved full desktop geometry
+PASS works-2560 all six cards reveal once
+PASS works-2560 exactly three v12 waves and heights
+PASS works-2560 waves move in viewport
+PASS works-2560 CTA v12 visible with .92s scale/opacity reveal
+PASS works-2560 waves sleep away from footer
+PASS works-2560 CTA stays revealed once
+PASS works-2560 no runtime/network errors
+PASS home-reduced native scrolling
+PASS home-reduced centered header
+PASS home-reduced static waves
+PASS home-reduced CTA immediately visible
+PASS works-reduced native scrolling
+PASS works-reduced centered header
+PASS works-reduced static waves
+PASS works-reduced CTA immediately visible
+PASS works live reduced-motion destroys Lenis
+PASS works live motion resumes with one owner
+RESULT 295/295

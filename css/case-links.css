@@ -1,0 +1,5 @@
+/* All published cases share the same full-frame entry point; scene geometry stays unchanged. */
+.sc-work-frame > .sc-work-detail-link {
+ position:absolute;inset:0;z-index:4;display:block;cursor:pointer;pointer-events:auto;border-radius:inherit;
+}
+.sc-work-frame > .sc-work-detail-link:focus-visible {outline:3px solid #e44d1f;outline-offset:-5px;}

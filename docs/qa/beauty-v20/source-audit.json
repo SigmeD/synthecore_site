@@ -1,0 +1,301 @@
+{
+  "date": "2026-10-23",
+  "base": "87937cdb4a59704bfa2d0a68afc536fb5d621f93",
+  "archive": "SyntheCore_Case_Template_v20_Agent_Handoff_2026-10-23.zip",
+  "archiveSHA256": "c974475bda456b9aeb4e26cb5cdbed0be0395be6d99f69e2488ee3aa2b98b3d6",
+  "archiveManifestEntriesVerified": 71,
+  "images": [
+    {
+      "source": "reference-v20/assets/case-screens/client-record.webp",
+      "destination": "assets/cases/beauty-insight/client-record.webp",
+      "bytes": 69440,
+      "sha256": "78fb8d12f11f977bbb8b2599170ce4ee28388220c0aeae2aa48e39cd6c6deaf9"
+    },
+    {
+      "source": "reference-v20/assets/dashboard.webp",
+      "destination": "assets/cases/beauty-insight/dashboard.webp",
+      "bytes": 44536,
+      "sha256": "7062769d3c17396392c2868d63bcfd632d828781c74fe7d740f624a794e69bcd"
+    },
+    {
+      "source": "reference-v20/assets/case-screens/employee-list.webp",
+      "destination": "assets/cases/beauty-insight/employee-list.webp",
+      "bytes": 66672,
+      "sha256": "0808893c731f08743640927ddc8d45af8371d9df3580c687ffa81a2c26349fb1"
+    },
+    {
+      "source": "reference-v20/assets/case-screens/repeat-bookings-2026.png",
+      "destination": "assets/cases/beauty-insight/repeat-bookings-2026.png",
+      "bytes": 1287171,
+      "sha256": "b880b1b34344362568ba157c3b08e390a99f8b0e3d2964dacfd9bab2810120d1"
+    },
+    {
+      "source": "reference-v20/assets/case-screens/service-margin.webp",
+      "destination": "assets/cases/beauty-insight/service-margin.webp",
+      "bytes": 31878,
+      "sha256": "b95e34bb04d780e131b007c8cec91c1c50986d3a76d62b8111a0fffb12965591"
+    },
+    {
+      "source": "reference-v20/assets/staff.webp",
+      "destination": "assets/cases/beauty-insight/staff.webp",
+      "bytes": 87010,
+      "sha256": "9616d1852126ffd0f8c424d5cf17240be44eb5126361095d07d7db2a6da2c290"
+    },
+    {
+      "source": "reference-v20/assets/cta/analytics.webp",
+      "destination": "assets/cases/shared/analytics.webp",
+      "bytes": 755400,
+      "sha256": "d7a6252cfcb2020971bf00a28d4fa0b25f55785c9c9fd7545dac780462d96943"
+    },
+    {
+      "source": "reference-v20/assets/cta/dashboard.webp",
+      "destination": "assets/cases/shared/dashboard.webp",
+      "bytes": 681238,
+      "sha256": "90e16d4dc97c14de2c18f597afe78d43b99da3b8328a48785320030414a6a9e7"
+    },
+    {
+      "source": "reference-v20/assets/cta/design.webp",
+      "destination": "assets/cases/shared/design.webp",
+      "bytes": 645552,
+      "sha256": "f58d788f2a871bafc2f0a6f342f3354029d0ba0f60fc8ec25fc2ba1d42c6fb4f"
+    }
+  ],
+  "caseSources": [
+    {
+      "source": "reference-v20/css/detail-related-air-v9.css",
+      "sha256": "88dcbbe4a16bb5960440bff21b4277c13177f30fc32fcecbbc15787bf81351e7",
+      "integratedInto": "css/case-detail.css"
+    },
+    {
+      "source": "reference-v20/css/detail-stage1.css",
+      "sha256": "5bc4c446d36bf6daa3455a634af1ce6ffe6db92b9fbdf22c3830548749ee620e",
+      "integratedInto": "css/case-detail.css"
+    },
+    {
+      "source": "reference-v20/css/detail-stage2-cta-v15.css",
+      "sha256": "3b90bf1c7af7e18d5bb7c85871b8f8ce7bc9dcbcb47abe9ea64a44a519bb84e7",
+      "integratedInto": "css/case-detail.css"
+    },
+    {
+      "source": "reference-v20/css/detail-stage2-process.css",
+      "sha256": "09fdbb19cb0c226737975cedab9335b15da0c661da42c5e65802214baa85048a",
+      "integratedInto": "css/case-detail.css"
+    },
+    {
+      "source": "reference-v20/css/detail-stage2-surface-v6.css",
+      "sha256": "ea2b871c50fd7b94ff7791d77e0902a24af973e901db256f85d726681880b319",
+      "integratedInto": "css/case-detail.css"
+    },
+    {
+      "source": "reference-v20/css/detail-stage3-parallax-v10.css",
+      "sha256": "925dc6c9bbdf712bf1aa0e41eef55f7f21260d3afa1d05ebc616406012918f84",
+      "integratedInto": "css/case-detail.css"
+    },
+    {
+      "source": "reference-v20/css/detail-stage3-results.css",
+      "sha256": "3dd738148954e852ba76807022467b8cd7456e60fe5e00e07af4f1303c16858a",
+      "integratedInto": "css/case-detail.css"
+    },
+    {
+      "source": "reference-v20/css/detail-stage4-refinement-v16.css",
+      "sha256": "f246d9c32ac28ca1ca40fdd3dc8b0e86fb7268bbf3ba30d38001a4f093f49ce8",
+      "integratedInto": "css/case-detail.css"
+    },
+    {
+      "source": "reference-v20/css/detail-v19-journey.css",
+      "sha256": "5aec66678574814fa2d7314dd9be88f9e487aa9ec61ec1bfe5ef87a2bc3000f2",
+      "integratedInto": "css/case-detail.css"
+    },
+    {
+      "source": "reference-v20/js/detail-stage1.js",
+      "sha256": "294bdff030fd21d136df16ff6badbdc54bd3b96af28ebb14c2fe2a3f96cbb2f0",
+      "integratedInto": "js/case-detail.js"
+    },
+    {
+      "source": "reference-v20/js/detail-stage2-process.js",
+      "sha256": "8b4be52ef81f6cef7d82b8400fefd763e495c0849a95c028bf4e5b6bbac2ae0e",
+      "integratedInto": "js/case-detail.js"
+    },
+    {
+      "source": "reference-v20/js/detail-stage3-parallax-v10.js",
+      "sha256": "e11184b0e3bd3f7c7138361150510d1fe8832259edd230e900e1f6e0bbab171c",
+      "integratedInto": "js/case-detail.js"
+    },
+    {
+      "source": "reference-v20/js/detail-stage3-results.js",
+      "sha256": "df878cd63ac24450863a2693f237ee896ec1bd8bc06fd73e53fea628c01966fe",
+      "integratedInto": "js/case-detail.js"
+    },
+    {
+      "source": "reference-v20/js/detail-stage4-refinement-v16.js",
+      "sha256": "c8da2e6cd26e2ab26a3cf4af07f9e4445f437a3a8cc55b033a0b000ac72d9f48",
+      "integratedInto": "js/case-detail.js"
+    }
+  ],
+  "reusedWithoutImport": [
+    {
+      "source": "reference-v20/assets/fonts/manrope-400.ttf",
+      "existingIdentical": true,
+      "decision": "Use current repository file; never overwrite from handoff."
+    },
+    {
+      "source": "reference-v20/assets/fonts/manrope-500.ttf",
+      "existingIdentical": true,
+      "decision": "Use current repository file; never overwrite from handoff."
+    },
+    {
+      "source": "reference-v20/assets/fonts/manrope-600.ttf",
+      "existingIdentical": true,
+      "decision": "Use current repository file; never overwrite from handoff."
+    },
+    {
+      "source": "reference-v20/assets/fonts/OFL-Manrope.txt",
+      "existingIdentical": true,
+      "decision": "Use current repository file; never overwrite from handoff."
+    },
+    {
+      "source": "reference-v20/assets/vendor/gsap-3.12.5.min.js",
+      "existingIdentical": true,
+      "decision": "Use current repository file; never overwrite from handoff."
+    },
+    {
+      "source": "reference-v20/assets/vendor/GSAP-LICENSE.txt",
+      "existingIdentical": true,
+      "decision": "Use current repository file; never overwrite from handoff."
+    },
+    {
+      "source": "reference-v20/assets/vendor/lenis-1.3.26.css",
+      "existingIdentical": true,
+      "decision": "Use current repository file; never overwrite from handoff."
+    },
+    {
+      "source": "reference-v20/assets/vendor/lenis-1.3.26.min.js",
+      "existingIdentical": true,
+      "decision": "Use current repository file; never overwrite from handoff."
+    },
+    {
+      "source": "reference-v20/assets/vendor/LENIS-LICENSE.txt",
+      "existingIdentical": true,
+      "decision": "Use current repository file; never overwrite from handoff."
+    },
+    {
+      "source": "reference-v20/assets/vendor/ScrollTrigger-3.12.5.min.js",
+      "existingIdentical": true,
+      "decision": "Use current repository file; never overwrite from handoff."
+    },
+    {
+      "source": "reference-v20/assets/works/b2b-feature-wide.png",
+      "existingIdentical": true,
+      "decision": "Use current repository file; never overwrite from handoff."
+    },
+    {
+      "source": "reference-v20/assets/works/crm-feature-wide.png",
+      "existingIdentical": true,
+      "decision": "Use current repository file; never overwrite from handoff."
+    },
+    {
+      "source": "reference-v20/assets/works/flowers-feature-wide.png",
+      "existingIdentical": true,
+      "decision": "Use current repository file; never overwrite from handoff."
+    },
+    {
+      "source": "reference-v20/assets/works/metal-feature-wide.png",
+      "existingIdentical": true,
+      "decision": "Use current repository file; never overwrite from handoff."
+    },
+    {
+      "source": "reference-v20/assets/works/prostor-feature-wide.png",
+      "existingIdentical": true,
+      "decision": "Use current repository file; never overwrite from handoff."
+    },
+    {
+      "source": "reference-v20/css/design-tokens.css",
+      "existingIdentical": false,
+      "decision": "Use current repository file; never overwrite from handoff."
+    },
+    {
+      "source": "reference-v20/css/fonts.css",
+      "existingIdentical": true,
+      "decision": "Use current repository file; never overwrite from handoff."
+    },
+    {
+      "source": "reference-v20/css/main.css",
+      "existingIdentical": false,
+      "decision": "Use current repository file; never overwrite from handoff."
+    },
+    {
+      "source": "reference-v20/css/raboty-base.css",
+      "existingIdentical": true,
+      "decision": "Use current repository file; never overwrite from handoff."
+    },
+    {
+      "source": "reference-v20/css/raboty-cards.css",
+      "existingIdentical": true,
+      "decision": "Use current repository file; never overwrite from handoff."
+    },
+    {
+      "source": "reference-v20/css/raboty-surface.css",
+      "existingIdentical": true,
+      "decision": "Use current repository file; never overwrite from handoff."
+    },
+    {
+      "source": "reference-v20/css/raboty-type.css",
+      "existingIdentical": false,
+      "decision": "Use current repository file; never overwrite from handoff."
+    },
+    {
+      "source": "reference-v20/css/shared-header-cta.css",
+      "existingIdentical": false,
+      "decision": "Use current repository file; never overwrite from handoff."
+    },
+    {
+      "source": "reference-v20/css/site-footer.css",
+      "existingIdentical": false,
+      "decision": "Use current repository file; never overwrite from handoff."
+    },
+    {
+      "source": "reference-v20/js/footer-reveal.js",
+      "existingIdentical": true,
+      "decision": "Use current repository file; never overwrite from handoff."
+    },
+    {
+      "source": "reference-v20/js/footer-waves.js",
+      "existingIdentical": true,
+      "decision": "Use current repository file; never overwrite from handoff."
+    },
+    {
+      "source": "reference-v20/js/raboty-cards.js",
+      "existingIdentical": true,
+      "decision": "Use current repository file; never overwrite from handoff."
+    },
+    {
+      "source": "reference-v20/js/raboty-effects.js",
+      "existingIdentical": true,
+      "decision": "Use current repository file; never overwrite from handoff."
+    },
+    {
+      "source": "reference-v20/js/raboty-motion.js",
+      "existingIdentical": true,
+      "decision": "Use current repository file; never overwrite from handoff."
+    },
+    {
+      "source": "reference-v20/js/raboty-scroll.js",
+      "existingIdentical": true,
+      "decision": "Use current repository file; never overwrite from handoff."
+    },
+    {
+      "source": "reference-v20/js/site-header.js",
+      "existingIdentical": true,
+      "decision": "Use current repository file; never overwrite from handoff."
+    }
+  ],
+  "integrationChanges": [
+    "Use actual shared Header/Footer partials and root-absolute resource paths.",
+    "Replace literal case content with escaped JSON values and reuse the current catalog for related cards.",
+    "Scope case CSS selectors and keyframe name; retain v20 cascade order.",
+    "Use local 32px CTA h3 fallback because the handoff-only token is absent from main.",
+    "Restore lightbox opener focus and trap Tab; remove cloned focusable controls from keyboard navigation.",
+    "Keep current approved catalog descriptions and modal behavior; add owner-requested Beauty entry points.",
+    "Include the complete preexisting no-glow button task per owner follow-up; preserve protected motion and global geometry."
+  ]
+}

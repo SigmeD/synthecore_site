@@ -9,7 +9,7 @@
   const modalDescription=document.getElementById('dialogDescription');
   const modalImage=document.getElementById('dialogImage');
   let opener=null;
-  for(const button of document.querySelectorAll('.case-card__open')) {
+  for(const button of document.querySelectorAll('button.case-card__open')) {
     button.addEventListener('click', () => {
       const card=button.closest('.case-card');
       if(!card) return;
