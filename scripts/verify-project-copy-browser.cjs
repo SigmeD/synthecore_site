@@ -14,7 +14,8 @@ const pause=ms=>new Promise(r=>setTimeout(r,ms));
   await page.goto(new URL('/raboty/',base).href,{waitUntil:'networkidle'});await page.evaluate(()=>document.fonts.ready);
   const catalog=await page.locator('.case-card__open').evaluateAll(cards=>Object.fromEntries(cards.map(e=>[e.dataset.project,{title:e.querySelector('h2').textContent.trim(),description:e.querySelector('.case-card__body p').textContent.trim(),tags:[...e.querySelectorAll('.tag')].map(tag=>tag.textContent.trim())}])));
   check(width+' source has six projects',Object.keys(catalog).length===6);
-  for(const id of Object.keys(catalog).filter(id=>id!=='beauty')){
+  const modalIds=await page.locator('button.case-card__open').evaluateAll(buttons=>buttons.map(button=>button.dataset.project));
+  for(const id of modalIds){
    await page.locator('button[data-project="'+id+'"]').click();
    check(width+'/'+id+' modal category',await page.locator('#dialogType').textContent()===catalog[id].tags.join(' · '));
    await page.keyboard.press('Escape');await page.waitForFunction(()=>!document.querySelector('#caseDialog').open);

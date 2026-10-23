@@ -1,0 +1,3631 @@
+{
+  "date": "2026-10-23T16:52:34.247Z",
+  "base": "http://127.0.0.1:4176/",
+  "reference": "http://127.0.0.1:4186/",
+  "baseline": "http://127.0.0.1:4187/",
+  "checks": [
+    {
+      "name": "390 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "390 five process steps",
+      "pass": true
+    },
+    {
+      "name": "390 four interfaces",
+      "pass": true
+    },
+    {
+      "name": "390 result metric",
+      "pass": true
+    },
+    {
+      "name": "390 one centered complete hero",
+      "pass": true
+    },
+    {
+      "name": "390 reduced hero visible without animation",
+      "pass": true
+    },
+    {
+      "name": "390 reduced native owner",
+      "pass": true
+    },
+    {
+      "name": "390 reduced parallax disabled",
+      "pass": true
+    },
+    {
+      "name": "390 sticky responsive",
+      "pass": true
+    },
+    {
+      "name": "390 CSS isolated to metal",
+      "pass": true
+    },
+    {
+      "name": "390 resource /css/main.css",
+      "pass": true
+    },
+    {
+      "name": "390 resource /css/fonts.css",
+      "pass": true
+    },
+    {
+      "name": "390 resource /assets/vendor/lenis-1.3.26.css",
+      "pass": true
+    },
+    {
+      "name": "390 resource /css/design-tokens.css",
+      "pass": true
+    },
+    {
+      "name": "390 resource /css/raboty-base.css",
+      "pass": true
+    },
+    {
+      "name": "390 resource /css/raboty-surface.css",
+      "pass": true
+    },
+    {
+      "name": "390 resource /css/raboty-cards.css",
+      "pass": true
+    },
+    {
+      "name": "390 resource /css/raboty-type.css",
+      "pass": true
+    },
+    {
+      "name": "390 resource /css/site-footer.css",
+      "pass": true
+    },
+    {
+      "name": "390 resource /css/shared-header-cta.css",
+      "pass": true
+    },
+    {
+      "name": "390 resource /css/case-detail.css",
+      "pass": true
+    },
+    {
+      "name": "390 resource /css/case-metal.css",
+      "pass": true
+    },
+    {
+      "name": "390 resource /js/raboty-motion.js",
+      "pass": true
+    },
+    {
+      "name": "390 resource /assets/cases/metal-calc/metal-project-calculation-v3.png",
+      "pass": true
+    },
+    {
+      "name": "390 resource /assets/cases/metal-calc/metal-result-halftone-tubes.png",
+      "pass": true
+    },
+    {
+      "name": "390 resource /assets/cases/metal-calc/metal-presets.png",
+      "pass": true
+    },
+    {
+      "name": "390 resource /assets/cases/metal-calc/metal-preset-details.png",
+      "pass": true
+    },
+    {
+      "name": "390 resource /assets/cases/metal-calc/metal-margin-detail-v2.png",
+      "pass": true
+    },
+    {
+      "name": "390 resource /assets/cases/shared/dashboard.webp",
+      "pass": true
+    },
+    {
+      "name": "390 resource /assets/cases/shared/design.webp",
+      "pass": true
+    },
+    {
+      "name": "390 resource /assets/cases/shared/analytics.webp",
+      "pass": true
+    },
+    {
+      "name": "390 resource /assets/works/crm-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "390 resource /assets/works/beauty-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "390 resource /assets/works/prostor-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "390 resource /assets/works/b2b-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "390 resource /assets/works/flowers-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "390 resource /assets/vendor/gsap-3.12.5.min.js",
+      "pass": true
+    },
+    {
+      "name": "390 resource /assets/vendor/ScrollTrigger-3.12.5.min.js",
+      "pass": true
+    },
+    {
+      "name": "390 resource /assets/vendor/lenis-1.3.26.min.js",
+      "pass": true
+    },
+    {
+      "name": "390 resource /js/site-header.js",
+      "pass": true
+    },
+    {
+      "name": "390 resource /js/raboty-scroll.js",
+      "pass": true
+    },
+    {
+      "name": "390 resource /js/case-detail.js",
+      "pass": true
+    },
+    {
+      "name": "390 resource /js/raboty-effects.js",
+      "pass": true
+    },
+    {
+      "name": "390 resource /js/footer-waves.js",
+      "pass": true
+    },
+    {
+      "name": "390 resource /js/footer-reveal.js",
+      "pass": true
+    },
+    {
+      "name": "390 resource /js/raboty-cards.js",
+      "pass": true
+    },
+    {
+      "name": "390 lightbox 0 opens",
+      "pass": true
+    },
+    {
+      "name": "390 lightbox 0 traps focus",
+      "pass": true
+    },
+    {
+      "name": "390 lightbox 0 closes/restores",
+      "pass": true
+    },
+    {
+      "name": "390 lightbox 1 opens",
+      "pass": true
+    },
+    {
+      "name": "390 lightbox 1 traps focus",
+      "pass": true
+    },
+    {
+      "name": "390 lightbox 1 closes/restores",
+      "pass": true
+    },
+    {
+      "name": "390 lightbox 2 opens",
+      "pass": true
+    },
+    {
+      "name": "390 lightbox 2 traps focus",
+      "pass": true
+    },
+    {
+      "name": "390 lightbox 2 closes/restores",
+      "pass": true
+    },
+    {
+      "name": "390 lightbox 3 opens",
+      "pass": true
+    },
+    {
+      "name": "390 lightbox 3 traps focus",
+      "pass": true
+    },
+    {
+      "name": "390 lightbox 3 closes/restores",
+      "pass": true
+    },
+    {
+      "name": "390 five other projects",
+      "pass": true
+    },
+    {
+      "name": "390 current metal excluded",
+      "pass": true
+    },
+    {
+      "name": "390 related Beauty has existing route",
+      "pass": true
+    },
+    {
+      "name": "390 related b2b modal",
+      "pass": true
+    },
+    {
+      "name": "390 related flowers modal",
+      "pass": true
+    },
+    {
+      "name": "390 related crm modal",
+      "pass": true
+    },
+    {
+      "name": "390 related prostor modal",
+      "pass": true
+    },
+    {
+      "name": "390 arrow does not lift",
+      "pass": true
+    },
+    {
+      "name": "390 carousel advances",
+      "pass": true
+    },
+    {
+      "name": "390 no glow .sc-case-process__cta-button",
+      "pass": true
+    },
+    {
+      "name": "390 no glow .sc-footer__cta",
+      "pass": true
+    },
+    {
+      "name": "390 v5 geometry h1",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 342,
+          "height": 112.171875,
+          "font": "34px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "37.4px",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 342,
+          "height": 112.171875,
+          "font": "34px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "37.4px",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "390 v5 geometry .case-hero__media",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 342,
+          "height": 290,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "19px"
+        },
+        "reference": {
+          "width": 342,
+          "height": 290,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "19px"
+        }
+      }
+    },
+    {
+      "name": "390 v5 geometry .case-hero__figure",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 321.5,
+          "height": 232,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "29px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        "reference": {
+          "width": 321.5,
+          "height": 232,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "29px",
+          "fit": "fill",
+          "radius": "16px"
+        }
+      }
+    },
+    {
+      "name": "390 v5 geometry .sc-case-process__number-circle",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 32,
+          "height": 32,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "50%"
+        },
+        "reference": {
+          "width": 32,
+          "height": 32,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "50%"
+        }
+      }
+    },
+    {
+      "name": "390 v5 geometry .metal-result-banner",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 362,
+          "height": 567.640625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "22px"
+        },
+        "reference": {
+          "width": 362,
+          "height": 567.640625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "22px"
+        }
+      }
+    },
+    {
+      "name": "390 v5 geometry .metal-result-banner__value",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 155.34375,
+          "height": 64.671875,
+          "font": "66px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "64.68px",
+          "color": "rgb(228, 77, 31)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 155.34375,
+          "height": 64.671875,
+          "font": "66px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "64.68px",
+          "color": "rgb(228, 77, 31)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "390 v5 geometry .metal-result-banner__label",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 260,
+          "height": 48,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(83, 109, 130)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 260,
+          "height": 48,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(83, 109, 130)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "390 v5 geometry .sc-case-screens__grid",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 362,
+          "height": 1206.75,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 362,
+          "height": 1206.75,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "390 v5 geometry .sc-case-process__cta",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 362,
+          "height": 410,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "20px"
+        },
+        "reference": {
+          "width": 362,
+          "height": 410,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "20px"
+        }
+      }
+    },
+    {
+      "name": "390 v5 geometry .sc-case-process__cta-button",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 316,
+          "height": 52,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "100px"
+        },
+        "reference": {
+          "width": 316,
+          "height": 52,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "100px"
+        }
+      }
+    },
+    {
+      "name": "390 catalog primary route",
+      "pass": true
+    },
+    {
+      "name": "390 back navigation to catalog",
+      "pass": true
+    },
+    {
+      "name": "390 regression /#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "390 regression /.sc-work-frame",
+      "pass": true
+    },
+    {
+      "name": "390 regression /.sc-work-content",
+      "pass": true
+    },
+    {
+      "name": "390 regression /#contact",
+      "pass": true
+    },
+    {
+      "name": "390 regression /raboty/#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "390 regression /raboty/.case-card--beauty",
+      "pass": true
+    },
+    {
+      "name": "390 regression /raboty/.case-card--metal",
+      "pass": true
+    },
+    {
+      "name": "390 regression /raboty/#contact",
+      "pass": true
+    },
+    {
+      "name": "390 regression /raboty/beauty-insight/#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "390 regression /raboty/beauty-insight/h1",
+      "pass": true
+    },
+    {
+      "name": "390 regression /raboty/beauty-insight/.case-hero__media",
+      "pass": true
+    },
+    {
+      "name": "390 regression /raboty/beauty-insight/.sc-case-process__cta",
+      "pass": true
+    },
+    {
+      "name": "390 regression /raboty/beauty-insight/#contact",
+      "pass": true
+    },
+    {
+      "name": "768 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "768 five process steps",
+      "pass": true
+    },
+    {
+      "name": "768 four interfaces",
+      "pass": true
+    },
+    {
+      "name": "768 result metric",
+      "pass": true
+    },
+    {
+      "name": "768 one centered complete hero",
+      "pass": true
+    },
+    {
+      "name": "768 reduced hero visible without animation",
+      "pass": true
+    },
+    {
+      "name": "768 reduced native owner",
+      "pass": true
+    },
+    {
+      "name": "768 reduced parallax disabled",
+      "pass": true
+    },
+    {
+      "name": "768 sticky responsive",
+      "pass": true
+    },
+    {
+      "name": "768 CSS isolated to metal",
+      "pass": true
+    },
+    {
+      "name": "768 resource /css/main.css",
+      "pass": true
+    },
+    {
+      "name": "768 resource /css/fonts.css",
+      "pass": true
+    },
+    {
+      "name": "768 resource /assets/vendor/lenis-1.3.26.css",
+      "pass": true
+    },
+    {
+      "name": "768 resource /css/design-tokens.css",
+      "pass": true
+    },
+    {
+      "name": "768 resource /css/raboty-base.css",
+      "pass": true
+    },
+    {
+      "name": "768 resource /css/raboty-surface.css",
+      "pass": true
+    },
+    {
+      "name": "768 resource /css/raboty-cards.css",
+      "pass": true
+    },
+    {
+      "name": "768 resource /css/raboty-type.css",
+      "pass": true
+    },
+    {
+      "name": "768 resource /css/site-footer.css",
+      "pass": true
+    },
+    {
+      "name": "768 resource /css/shared-header-cta.css",
+      "pass": true
+    },
+    {
+      "name": "768 resource /css/case-detail.css",
+      "pass": true
+    },
+    {
+      "name": "768 resource /css/case-metal.css",
+      "pass": true
+    },
+    {
+      "name": "768 resource /js/raboty-motion.js",
+      "pass": true
+    },
+    {
+      "name": "768 resource /assets/cases/metal-calc/metal-project-calculation-v3.png",
+      "pass": true
+    },
+    {
+      "name": "768 resource /assets/cases/metal-calc/metal-result-halftone-tubes.png",
+      "pass": true
+    },
+    {
+      "name": "768 resource /assets/cases/metal-calc/metal-presets.png",
+      "pass": true
+    },
+    {
+      "name": "768 resource /assets/cases/metal-calc/metal-preset-details.png",
+      "pass": true
+    },
+    {
+      "name": "768 resource /assets/cases/metal-calc/metal-margin-detail-v2.png",
+      "pass": true
+    },
+    {
+      "name": "768 resource /assets/cases/shared/dashboard.webp",
+      "pass": true
+    },
+    {
+      "name": "768 resource /assets/cases/shared/design.webp",
+      "pass": true
+    },
+    {
+      "name": "768 resource /assets/cases/shared/analytics.webp",
+      "pass": true
+    },
+    {
+      "name": "768 resource /assets/works/crm-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "768 resource /assets/works/beauty-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "768 resource /assets/works/prostor-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "768 resource /assets/works/b2b-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "768 resource /assets/works/flowers-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "768 resource /assets/vendor/gsap-3.12.5.min.js",
+      "pass": true
+    },
+    {
+      "name": "768 resource /assets/vendor/ScrollTrigger-3.12.5.min.js",
+      "pass": true
+    },
+    {
+      "name": "768 resource /assets/vendor/lenis-1.3.26.min.js",
+      "pass": true
+    },
+    {
+      "name": "768 resource /js/site-header.js",
+      "pass": true
+    },
+    {
+      "name": "768 resource /js/raboty-scroll.js",
+      "pass": true
+    },
+    {
+      "name": "768 resource /js/case-detail.js",
+      "pass": true
+    },
+    {
+      "name": "768 resource /js/raboty-effects.js",
+      "pass": true
+    },
+    {
+      "name": "768 resource /js/footer-waves.js",
+      "pass": true
+    },
+    {
+      "name": "768 resource /js/footer-reveal.js",
+      "pass": true
+    },
+    {
+      "name": "768 resource /js/raboty-cards.js",
+      "pass": true
+    },
+    {
+      "name": "768 lightbox 0 opens",
+      "pass": true
+    },
+    {
+      "name": "768 lightbox 0 traps focus",
+      "pass": true
+    },
+    {
+      "name": "768 lightbox 0 closes/restores",
+      "pass": true
+    },
+    {
+      "name": "768 lightbox 1 opens",
+      "pass": true
+    },
+    {
+      "name": "768 lightbox 1 traps focus",
+      "pass": true
+    },
+    {
+      "name": "768 lightbox 1 closes/restores",
+      "pass": true
+    },
+    {
+      "name": "768 lightbox 2 opens",
+      "pass": true
+    },
+    {
+      "name": "768 lightbox 2 traps focus",
+      "pass": true
+    },
+    {
+      "name": "768 lightbox 2 closes/restores",
+      "pass": true
+    },
+    {
+      "name": "768 lightbox 3 opens",
+      "pass": true
+    },
+    {
+      "name": "768 lightbox 3 traps focus",
+      "pass": true
+    },
+    {
+      "name": "768 lightbox 3 closes/restores",
+      "pass": true
+    },
+    {
+      "name": "768 five other projects",
+      "pass": true
+    },
+    {
+      "name": "768 current metal excluded",
+      "pass": true
+    },
+    {
+      "name": "768 related Beauty has existing route",
+      "pass": true
+    },
+    {
+      "name": "768 related b2b modal",
+      "pass": true
+    },
+    {
+      "name": "768 related flowers modal",
+      "pass": true
+    },
+    {
+      "name": "768 related crm modal",
+      "pass": true
+    },
+    {
+      "name": "768 related prostor modal",
+      "pass": true
+    },
+    {
+      "name": "768 arrow does not lift",
+      "pass": true
+    },
+    {
+      "name": "768 carousel advances",
+      "pass": true
+    },
+    {
+      "name": "768 no glow .sc-case-process__cta-button",
+      "pass": true
+    },
+    {
+      "name": "768 no glow .sc-footer__cta",
+      "pass": true
+    },
+    {
+      "name": "768 v5 geometry h1",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 704,
+          "height": 40.6875,
+          "font": "37px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "40.7px",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 704,
+          "height": 40.6875,
+          "font": "37px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "40.7px",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "768 v5 geometry .case-hero__media",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 704,
+          "height": 414.71875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        "reference": {
+          "width": 704,
+          "height": 414.71875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        }
+      }
+    },
+    {
+      "name": "768 v5 geometry .case-hero__figure",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 661.78125,
+          "height": 348.375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "33.1719px",
+          "fit": "fill",
+          "radius": "22px"
+        },
+        "reference": {
+          "width": 661.78125,
+          "height": 348.375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "33.1719px",
+          "fit": "fill",
+          "radius": "22px"
+        }
+      }
+    },
+    {
+      "name": "768 v5 geometry .sc-case-process__number-circle",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 32,
+          "height": 32,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "50%"
+        },
+        "reference": {
+          "width": 32,
+          "height": 32,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "50%"
+        }
+      }
+    },
+    {
+      "name": "768 v5 geometry .metal-result-banner",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 728,
+          "height": 355.953125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "23.04px"
+        },
+        "reference": {
+          "width": 728,
+          "height": 355.953125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "23.04px"
+        }
+      }
+    },
+    {
+      "name": "768 v5 geometry .metal-result-banner__value",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 164.75,
+          "height": 68.59375,
+          "font": "70px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "68.6px",
+          "color": "rgb(228, 77, 31)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 164.75,
+          "height": 68.59375,
+          "font": "70px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "68.6px",
+          "color": "rgb(228, 77, 31)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "768 v5 geometry .metal-result-banner__label",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 200,
+          "height": 48,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(83, 109, 130)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 200,
+          "height": 48,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(83, 109, 130)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "768 v5 geometry .sc-case-screens__grid",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 728,
+          "height": 482,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 728,
+          "height": 482,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "768 v5 geometry .sc-case-process__cta",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 410,
+          "height": 393,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "20px"
+        },
+        "reference": {
+          "width": 410,
+          "height": 393,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "20px"
+        }
+      }
+    },
+    {
+      "name": "768 v5 geometry .sc-case-process__cta-button",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 372,
+          "height": 52,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "100px"
+        },
+        "reference": {
+          "width": 372,
+          "height": 52,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "100px"
+        }
+      }
+    },
+    {
+      "name": "768 catalog primary route",
+      "pass": true
+    },
+    {
+      "name": "768 back navigation to catalog",
+      "pass": true
+    },
+    {
+      "name": "768 regression /#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "768 regression /.sc-work-frame",
+      "pass": true
+    },
+    {
+      "name": "768 regression /.sc-work-content",
+      "pass": true
+    },
+    {
+      "name": "768 regression /#contact",
+      "pass": true
+    },
+    {
+      "name": "768 regression /raboty/#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "768 regression /raboty/.case-card--beauty",
+      "pass": true
+    },
+    {
+      "name": "768 regression /raboty/.case-card--metal",
+      "pass": true
+    },
+    {
+      "name": "768 regression /raboty/#contact",
+      "pass": true
+    },
+    {
+      "name": "768 regression /raboty/beauty-insight/#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "768 regression /raboty/beauty-insight/h1",
+      "pass": true
+    },
+    {
+      "name": "768 regression /raboty/beauty-insight/.case-hero__media",
+      "pass": true
+    },
+    {
+      "name": "768 regression /raboty/beauty-insight/.sc-case-process__cta",
+      "pass": true
+    },
+    {
+      "name": "768 regression /raboty/beauty-insight/#contact",
+      "pass": true
+    },
+    {
+      "name": "1440 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "1440 five process steps",
+      "pass": true
+    },
+    {
+      "name": "1440 four interfaces",
+      "pass": true
+    },
+    {
+      "name": "1440 result metric",
+      "pass": true
+    },
+    {
+      "name": "1440 one centered complete hero",
+      "pass": true
+    },
+    {
+      "name": "1440 reduced hero visible without animation",
+      "pass": true
+    },
+    {
+      "name": "1440 reduced native owner",
+      "pass": true
+    },
+    {
+      "name": "1440 reduced parallax disabled",
+      "pass": true
+    },
+    {
+      "name": "1440 sticky responsive",
+      "pass": true
+    },
+    {
+      "name": "1440 CSS isolated to metal",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /css/main.css",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /css/fonts.css",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /assets/vendor/lenis-1.3.26.css",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /css/design-tokens.css",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /css/raboty-base.css",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /css/raboty-surface.css",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /css/raboty-cards.css",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /css/raboty-type.css",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /css/site-footer.css",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /css/shared-header-cta.css",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /css/case-detail.css",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /css/case-metal.css",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /js/raboty-motion.js",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /assets/cases/metal-calc/metal-project-calculation-v3.png",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /assets/cases/metal-calc/metal-result-halftone-tubes.png",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /assets/cases/metal-calc/metal-presets.png",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /assets/cases/metal-calc/metal-preset-details.png",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /assets/cases/metal-calc/metal-margin-detail-v2.png",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /assets/cases/shared/dashboard.webp",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /assets/cases/shared/design.webp",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /assets/cases/shared/analytics.webp",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /assets/works/crm-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /assets/works/beauty-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /assets/works/prostor-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /assets/works/b2b-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /assets/works/flowers-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /assets/vendor/gsap-3.12.5.min.js",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /assets/vendor/ScrollTrigger-3.12.5.min.js",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /assets/vendor/lenis-1.3.26.min.js",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /js/site-header.js",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /js/raboty-scroll.js",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /js/case-detail.js",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /js/raboty-effects.js",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /js/footer-waves.js",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /js/footer-reveal.js",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /js/raboty-cards.js",
+      "pass": true
+    },
+    {
+      "name": "1440 lightbox 0 opens",
+      "pass": true
+    },
+    {
+      "name": "1440 lightbox 0 traps focus",
+      "pass": true
+    },
+    {
+      "name": "1440 lightbox 0 closes/restores",
+      "pass": true
+    },
+    {
+      "name": "1440 lightbox 1 opens",
+      "pass": true
+    },
+    {
+      "name": "1440 lightbox 1 traps focus",
+      "pass": true
+    },
+    {
+      "name": "1440 lightbox 1 closes/restores",
+      "pass": true
+    },
+    {
+      "name": "1440 lightbox 2 opens",
+      "pass": true
+    },
+    {
+      "name": "1440 lightbox 2 traps focus",
+      "pass": true
+    },
+    {
+      "name": "1440 lightbox 2 closes/restores",
+      "pass": true
+    },
+    {
+      "name": "1440 lightbox 3 opens",
+      "pass": true
+    },
+    {
+      "name": "1440 lightbox 3 traps focus",
+      "pass": true
+    },
+    {
+      "name": "1440 lightbox 3 closes/restores",
+      "pass": true
+    },
+    {
+      "name": "1440 five other projects",
+      "pass": true
+    },
+    {
+      "name": "1440 current metal excluded",
+      "pass": true
+    },
+    {
+      "name": "1440 related Beauty has existing route",
+      "pass": true
+    },
+    {
+      "name": "1440 related b2b modal",
+      "pass": true
+    },
+    {
+      "name": "1440 related flowers modal",
+      "pass": true
+    },
+    {
+      "name": "1440 related crm modal",
+      "pass": true
+    },
+    {
+      "name": "1440 related prostor modal",
+      "pass": true
+    },
+    {
+      "name": "1440 arrow does not lift",
+      "pass": true
+    },
+    {
+      "name": "1440 carousel advances",
+      "pass": true
+    },
+    {
+      "name": "1440 no glow .sc-case-process__cta-button",
+      "pass": true
+    },
+    {
+      "name": "1440 no glow .sc-footer__cta",
+      "pass": true
+    },
+    {
+      "name": "1440 v5 geometry h1",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 759.59375,
+          "height": 140.78125,
+          "font": "64px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "70.4px",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 759.59375,
+          "height": 140.78125,
+          "font": "64px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "70.4px",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "1440 v5 geometry .case-hero__media",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 1268,
+          "height": 560,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        "reference": {
+          "width": 1268,
+          "height": 560,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        }
+      }
+    },
+    {
+      "name": "1440 v5 geometry .case-hero__figure",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 1179.25,
+          "height": 481.625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "39.1875px",
+          "fit": "fill",
+          "radius": "22px"
+        },
+        "reference": {
+          "width": 1179.25,
+          "height": 481.6250305175781,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "39.1875px",
+          "fit": "fill",
+          "radius": "22px"
+        }
+      }
+    },
+    {
+      "name": "1440 v5 geometry .sc-case-process__number-circle",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 32,
+          "height": 32,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "50%"
+        },
+        "reference": {
+          "width": 32,
+          "height": 32,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "50%"
+        }
+      }
+    },
+    {
+      "name": "1440 v5 geometry .metal-result-banner",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 868.8125,
+          "height": 500.546875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "38px"
+        },
+        "reference": {
+          "width": 868.8125,
+          "height": 500.546875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "38px"
+        }
+      }
+    },
+    {
+      "name": "1440 v5 geometry .metal-result-banner__value",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 263.59375,
+          "height": 109.75,
+          "font": "112px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "109.76px",
+          "color": "rgb(228, 77, 31)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 263.59375,
+          "height": 109.75,
+          "font": "112px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "109.76px",
+          "color": "rgb(228, 77, 31)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "1440 v5 geometry .metal-result-banner__label",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 200,
+          "height": 48,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(83, 109, 130)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 200,
+          "height": 48,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(83, 109, 130)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "1440 v5 geometry .sc-case-screens__grid",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 868.8125,
+          "height": 604,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 868.8125,
+          "height": 604,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "1440 v5 geometry .sc-case-process__cta",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 320,
+          "height": 407,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "sticky",
+          "top": "210px",
+          "fit": "fill",
+          "radius": "20px"
+        },
+        "reference": {
+          "width": 320,
+          "height": 407,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "sticky",
+          "top": "210px",
+          "fit": "fill",
+          "radius": "20px"
+        }
+      }
+    },
+    {
+      "name": "1440 v5 geometry .sc-case-process__cta-button",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 278,
+          "height": 52,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "100px"
+        },
+        "reference": {
+          "width": 278,
+          "height": 52,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "100px"
+        }
+      }
+    },
+    {
+      "name": "1440 catalog primary route",
+      "pass": true
+    },
+    {
+      "name": "1440 back navigation to catalog",
+      "pass": true
+    },
+    {
+      "name": "1440 regression /#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "1440 regression /.sc-work-frame",
+      "pass": true
+    },
+    {
+      "name": "1440 regression /.sc-work-content",
+      "pass": true
+    },
+    {
+      "name": "1440 regression /#contact",
+      "pass": true
+    },
+    {
+      "name": "1440 regression /raboty/#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "1440 regression /raboty/.case-card--beauty",
+      "pass": true
+    },
+    {
+      "name": "1440 regression /raboty/.case-card--metal",
+      "pass": true
+    },
+    {
+      "name": "1440 regression /raboty/#contact",
+      "pass": true
+    },
+    {
+      "name": "1440 regression /raboty/beauty-insight/#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "1440 regression /raboty/beauty-insight/h1",
+      "pass": true
+    },
+    {
+      "name": "1440 regression /raboty/beauty-insight/.case-hero__media",
+      "pass": true
+    },
+    {
+      "name": "1440 regression /raboty/beauty-insight/.sc-case-process__cta",
+      "pass": true
+    },
+    {
+      "name": "1440 regression /raboty/beauty-insight/#contact",
+      "pass": true
+    },
+    {
+      "name": "1920 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "1920 five process steps",
+      "pass": true
+    },
+    {
+      "name": "1920 four interfaces",
+      "pass": true
+    },
+    {
+      "name": "1920 result metric",
+      "pass": true
+    },
+    {
+      "name": "1920 one centered complete hero",
+      "pass": true
+    },
+    {
+      "name": "1920 reduced hero visible without animation",
+      "pass": true
+    },
+    {
+      "name": "1920 reduced native owner",
+      "pass": true
+    },
+    {
+      "name": "1920 reduced parallax disabled",
+      "pass": true
+    },
+    {
+      "name": "1920 sticky responsive",
+      "pass": true
+    },
+    {
+      "name": "1920 CSS isolated to metal",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /css/main.css",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /css/fonts.css",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /assets/vendor/lenis-1.3.26.css",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /css/design-tokens.css",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /css/raboty-base.css",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /css/raboty-surface.css",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /css/raboty-cards.css",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /css/raboty-type.css",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /css/site-footer.css",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /css/shared-header-cta.css",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /css/case-detail.css",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /css/case-metal.css",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /js/raboty-motion.js",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /assets/cases/metal-calc/metal-project-calculation-v3.png",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /assets/cases/metal-calc/metal-result-halftone-tubes.png",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /assets/cases/metal-calc/metal-presets.png",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /assets/cases/metal-calc/metal-preset-details.png",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /assets/cases/metal-calc/metal-margin-detail-v2.png",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /assets/cases/shared/dashboard.webp",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /assets/cases/shared/design.webp",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /assets/cases/shared/analytics.webp",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /assets/works/crm-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /assets/works/beauty-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /assets/works/prostor-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /assets/works/b2b-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /assets/works/flowers-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /assets/vendor/gsap-3.12.5.min.js",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /assets/vendor/ScrollTrigger-3.12.5.min.js",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /assets/vendor/lenis-1.3.26.min.js",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /js/site-header.js",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /js/raboty-scroll.js",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /js/case-detail.js",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /js/raboty-effects.js",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /js/footer-waves.js",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /js/footer-reveal.js",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /js/raboty-cards.js",
+      "pass": true
+    },
+    {
+      "name": "1920 lightbox 0 opens",
+      "pass": true
+    },
+    {
+      "name": "1920 lightbox 0 traps focus",
+      "pass": true
+    },
+    {
+      "name": "1920 lightbox 0 closes/restores",
+      "pass": true
+    },
+    {
+      "name": "1920 lightbox 1 opens",
+      "pass": true
+    },
+    {
+      "name": "1920 lightbox 1 traps focus",
+      "pass": true
+    },
+    {
+      "name": "1920 lightbox 1 closes/restores",
+      "pass": true
+    },
+    {
+      "name": "1920 lightbox 2 opens",
+      "pass": true
+    },
+    {
+      "name": "1920 lightbox 2 traps focus",
+      "pass": true
+    },
+    {
+      "name": "1920 lightbox 2 closes/restores",
+      "pass": true
+    },
+    {
+      "name": "1920 lightbox 3 opens",
+      "pass": true
+    },
+    {
+      "name": "1920 lightbox 3 traps focus",
+      "pass": true
+    },
+    {
+      "name": "1920 lightbox 3 closes/restores",
+      "pass": true
+    },
+    {
+      "name": "1920 five other projects",
+      "pass": true
+    },
+    {
+      "name": "1920 current metal excluded",
+      "pass": true
+    },
+    {
+      "name": "1920 related Beauty has existing route",
+      "pass": true
+    },
+    {
+      "name": "1920 related b2b modal",
+      "pass": true
+    },
+    {
+      "name": "1920 related flowers modal",
+      "pass": true
+    },
+    {
+      "name": "1920 related crm modal",
+      "pass": true
+    },
+    {
+      "name": "1920 related prostor modal",
+      "pass": true
+    },
+    {
+      "name": "1920 arrow does not lift",
+      "pass": true
+    },
+    {
+      "name": "1920 carousel advances",
+      "pass": true
+    },
+    {
+      "name": "1920 no glow .sc-case-process__cta-button",
+      "pass": true
+    },
+    {
+      "name": "1920 no glow .sc-footer__cta",
+      "pass": true
+    },
+    {
+      "name": "1920 v5 geometry h1",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 756,
+          "height": 140.78125,
+          "font": "64px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "70.4px",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 756,
+          "height": 140.78125,
+          "font": "64px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "70.4px",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "1920 v5 geometry .case-hero__media",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 1268,
+          "height": 560,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        "reference": {
+          "width": 1268,
+          "height": 560,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        }
+      }
+    },
+    {
+      "name": "1920 v5 geometry .case-hero__figure",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 1179.25,
+          "height": 481.625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "39.1875px",
+          "fit": "fill",
+          "radius": "22px"
+        },
+        "reference": {
+          "width": 1179.25,
+          "height": 481.625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "39.1875px",
+          "fit": "fill",
+          "radius": "22px"
+        }
+      }
+    },
+    {
+      "name": "1920 v5 geometry .sc-case-process__number-circle",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 32,
+          "height": 32,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "50%"
+        },
+        "reference": {
+          "width": 32,
+          "height": 32,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "50%"
+        }
+      }
+    },
+    {
+      "name": "1920 v5 geometry .metal-result-banner",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 864,
+          "height": 504.75,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "38px"
+        },
+        "reference": {
+          "width": 864,
+          "height": 504.75,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "38px"
+        }
+      }
+    },
+    {
+      "name": "1920 v5 geometry .metal-result-banner__value",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 263.59375,
+          "height": 109.75,
+          "font": "112px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "109.76px",
+          "color": "rgb(228, 77, 31)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 263.59375,
+          "height": 109.75,
+          "font": "112px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "109.76px",
+          "color": "rgb(228, 77, 31)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "1920 v5 geometry .metal-result-banner__label",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 200,
+          "height": 48,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(83, 109, 130)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 200,
+          "height": 48,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(83, 109, 130)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "1920 v5 geometry .sc-case-screens__grid",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 864,
+          "height": 604,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 864,
+          "height": 604,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "1920 v5 geometry .sc-case-process__cta",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 320,
+          "height": 407,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "sticky",
+          "top": "210px",
+          "fit": "fill",
+          "radius": "20px"
+        },
+        "reference": {
+          "width": 320,
+          "height": 407,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "sticky",
+          "top": "210px",
+          "fit": "fill",
+          "radius": "20px"
+        }
+      }
+    },
+    {
+      "name": "1920 v5 geometry .sc-case-process__cta-button",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 278,
+          "height": 52,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "100px"
+        },
+        "reference": {
+          "width": 278,
+          "height": 52,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "100px"
+        }
+      }
+    },
+    {
+      "name": "1920 catalog primary route",
+      "pass": true
+    },
+    {
+      "name": "1920 back navigation to catalog",
+      "pass": true
+    },
+    {
+      "name": "1920 regression /#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "1920 regression /.sc-work-frame",
+      "pass": true
+    },
+    {
+      "name": "1920 regression /.sc-work-content",
+      "pass": true
+    },
+    {
+      "name": "1920 regression /#contact",
+      "pass": true
+    },
+    {
+      "name": "1920 regression /raboty/#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "1920 regression /raboty/.case-card--beauty",
+      "pass": true
+    },
+    {
+      "name": "1920 regression /raboty/.case-card--metal",
+      "pass": true
+    },
+    {
+      "name": "1920 regression /raboty/#contact",
+      "pass": true
+    },
+    {
+      "name": "1920 regression /raboty/beauty-insight/#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "1920 regression /raboty/beauty-insight/h1",
+      "pass": true
+    },
+    {
+      "name": "1920 regression /raboty/beauty-insight/.case-hero__media",
+      "pass": true
+    },
+    {
+      "name": "1920 regression /raboty/beauty-insight/.sc-case-process__cta",
+      "pass": true
+    },
+    {
+      "name": "1920 regression /raboty/beauty-insight/#contact",
+      "pass": true
+    },
+    {
+      "name": "1440 one Lenis owner",
+      "pass": true
+    },
+    {
+      "name": "1440 normal hover no lift/glow .sc-case-process__cta-button",
+      "pass": true
+    },
+    {
+      "name": "1440 normal hover no lift/glow .sc-footer__cta",
+      "pass": true
+    },
+    {
+      "name": "1440 sticky through process/result/interfaces",
+      "pass": true,
+      "data": [
+        {
+          "y": 210,
+          "top": 210
+        },
+        {
+          "y": 210,
+          "top": 210
+        },
+        {
+          "y": 210,
+          "top": 210
+        }
+      ]
+    },
+    {
+      "name": "1440 sticky releases before other works",
+      "pass": true
+    },
+    {
+      "name": "1440 rapid reverse scroll responsive",
+      "pass": true
+    },
+    {
+      "name": "1440 preference change destroys Lenis",
+      "pass": true
+    },
+    {
+      "name": "1440 preference change restores one owner",
+      "pass": true
+    },
+    {
+      "name": "390 one Lenis owner",
+      "pass": true
+    },
+    {
+      "name": "390 normal hover no lift/glow .sc-case-process__cta-button",
+      "pass": true
+    },
+    {
+      "name": "390 normal hover no lift/glow .sc-footer__cta",
+      "pass": true
+    },
+    {
+      "name": "390 rapid reverse scroll responsive",
+      "pass": true
+    },
+    {
+      "name": "390 preference change destroys Lenis",
+      "pass": true
+    },
+    {
+      "name": "390 preference change restores one owner",
+      "pass": true
+    },
+    {
+      "name": "all acceptance scenarios completed",
+      "pass": true
+    },
+    {
+      "name": "no JS/console/network failures",
+      "pass": true,
+      "data": []
+    }
+  ],
+  "errors": [],
+  "measurements": [
+    {
+      "width": 390,
+      "actual": {
+        "h1": {
+          "width": 342,
+          "height": 112.171875,
+          "font": "34px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "37.4px",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".case-hero__media": {
+          "width": 342,
+          "height": 290,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "19px"
+        },
+        ".case-hero__figure": {
+          "width": 321.5,
+          "height": 232,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "29px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".sc-case-process__number-circle": {
+          "width": 32,
+          "height": 32,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "50%"
+        },
+        ".metal-result-banner": {
+          "width": 362,
+          "height": 567.640625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "22px"
+        },
+        ".metal-result-banner__value": {
+          "width": 155.34375,
+          "height": 64.671875,
+          "font": "66px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "64.68px",
+          "color": "rgb(228, 77, 31)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".metal-result-banner__label": {
+          "width": 260,
+          "height": 48,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(83, 109, 130)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".sc-case-screens__grid": {
+          "width": 362,
+          "height": 1206.75,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".sc-case-process__cta": {
+          "width": 362,
+          "height": 410,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "20px"
+        },
+        ".sc-case-process__cta-button": {
+          "width": 316,
+          "height": 52,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "100px"
+        }
+      },
+      "reference": {
+        "h1": {
+          "width": 342,
+          "height": 112.171875,
+          "font": "34px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "37.4px",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".case-hero__media": {
+          "width": 342,
+          "height": 290,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "19px"
+        },
+        ".case-hero__figure": {
+          "width": 321.5,
+          "height": 232,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "29px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".sc-case-process__number-circle": {
+          "width": 32,
+          "height": 32,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "50%"
+        },
+        ".metal-result-banner": {
+          "width": 362,
+          "height": 567.640625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "22px"
+        },
+        ".metal-result-banner__value": {
+          "width": 155.34375,
+          "height": 64.671875,
+          "font": "66px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "64.68px",
+          "color": "rgb(228, 77, 31)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".metal-result-banner__label": {
+          "width": 260,
+          "height": 48,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(83, 109, 130)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".sc-case-screens__grid": {
+          "width": 362,
+          "height": 1206.75,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".sc-case-process__cta": {
+          "width": 362,
+          "height": 410,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "20px"
+        },
+        ".sc-case-process__cta-button": {
+          "width": 316,
+          "height": 52,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "100px"
+        }
+      }
+    },
+    {
+      "width": 768,
+      "actual": {
+        "h1": {
+          "width": 704,
+          "height": 40.6875,
+          "font": "37px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "40.7px",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".case-hero__media": {
+          "width": 704,
+          "height": 414.71875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        ".case-hero__figure": {
+          "width": 661.78125,
+          "height": 348.375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "33.1719px",
+          "fit": "fill",
+          "radius": "22px"
+        },
+        ".sc-case-process__number-circle": {
+          "width": 32,
+          "height": 32,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "50%"
+        },
+        ".metal-result-banner": {
+          "width": 728,
+          "height": 355.953125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "23.04px"
+        },
+        ".metal-result-banner__value": {
+          "width": 164.75,
+          "height": 68.59375,
+          "font": "70px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "68.6px",
+          "color": "rgb(228, 77, 31)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".metal-result-banner__label": {
+          "width": 200,
+          "height": 48,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(83, 109, 130)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".sc-case-screens__grid": {
+          "width": 728,
+          "height": 482,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".sc-case-process__cta": {
+          "width": 410,
+          "height": 393,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "20px"
+        },
+        ".sc-case-process__cta-button": {
+          "width": 372,
+          "height": 52,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "100px"
+        }
+      },
+      "reference": {
+        "h1": {
+          "width": 704,
+          "height": 40.6875,
+          "font": "37px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "40.7px",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".case-hero__media": {
+          "width": 704,
+          "height": 414.71875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        ".case-hero__figure": {
+          "width": 661.78125,
+          "height": 348.375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "33.1719px",
+          "fit": "fill",
+          "radius": "22px"
+        },
+        ".sc-case-process__number-circle": {
+          "width": 32,
+          "height": 32,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "50%"
+        },
+        ".metal-result-banner": {
+          "width": 728,
+          "height": 355.953125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "23.04px"
+        },
+        ".metal-result-banner__value": {
+          "width": 164.75,
+          "height": 68.59375,
+          "font": "70px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "68.6px",
+          "color": "rgb(228, 77, 31)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".metal-result-banner__label": {
+          "width": 200,
+          "height": 48,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(83, 109, 130)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".sc-case-screens__grid": {
+          "width": 728,
+          "height": 482,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".sc-case-process__cta": {
+          "width": 410,
+          "height": 393,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "20px"
+        },
+        ".sc-case-process__cta-button": {
+          "width": 372,
+          "height": 52,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "100px"
+        }
+      }
+    },
+    {
+      "width": 1440,
+      "actual": {
+        "h1": {
+          "width": 759.59375,
+          "height": 140.78125,
+          "font": "64px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "70.4px",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".case-hero__media": {
+          "width": 1268,
+          "height": 560,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        ".case-hero__figure": {
+          "width": 1179.25,
+          "height": 481.625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "39.1875px",
+          "fit": "fill",
+          "radius": "22px"
+        },
+        ".sc-case-process__number-circle": {
+          "width": 32,
+          "height": 32,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "50%"
+        },
+        ".metal-result-banner": {
+          "width": 868.8125,
+          "height": 500.546875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "38px"
+        },
+        ".metal-result-banner__value": {
+          "width": 263.59375,
+          "height": 109.75,
+          "font": "112px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "109.76px",
+          "color": "rgb(228, 77, 31)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".metal-result-banner__label": {
+          "width": 200,
+          "height": 48,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(83, 109, 130)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".sc-case-screens__grid": {
+          "width": 868.8125,
+          "height": 604,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".sc-case-process__cta": {
+          "width": 320,
+          "height": 407,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "sticky",
+          "top": "210px",
+          "fit": "fill",
+          "radius": "20px"
+        },
+        ".sc-case-process__cta-button": {
+          "width": 278,
+          "height": 52,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "100px"
+        }
+      },
+      "reference": {
+        "h1": {
+          "width": 759.59375,
+          "height": 140.78125,
+          "font": "64px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "70.4px",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".case-hero__media": {
+          "width": 1268,
+          "height": 560,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        ".case-hero__figure": {
+          "width": 1179.25,
+          "height": 481.6250305175781,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "39.1875px",
+          "fit": "fill",
+          "radius": "22px"
+        },
+        ".sc-case-process__number-circle": {
+          "width": 32,
+          "height": 32,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "50%"
+        },
+        ".metal-result-banner": {
+          "width": 868.8125,
+          "height": 500.546875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "38px"
+        },
+        ".metal-result-banner__value": {
+          "width": 263.59375,
+          "height": 109.75,
+          "font": "112px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "109.76px",
+          "color": "rgb(228, 77, 31)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".metal-result-banner__label": {
+          "width": 200,
+          "height": 48,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(83, 109, 130)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".sc-case-screens__grid": {
+          "width": 868.8125,
+          "height": 604,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".sc-case-process__cta": {
+          "width": 320,
+          "height": 407,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "sticky",
+          "top": "210px",
+          "fit": "fill",
+          "radius": "20px"
+        },
+        ".sc-case-process__cta-button": {
+          "width": 278,
+          "height": 52,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "100px"
+        }
+      }
+    },
+    {
+      "width": 1920,
+      "actual": {
+        "h1": {
+          "width": 756,
+          "height": 140.78125,
+          "font": "64px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "70.4px",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".case-hero__media": {
+          "width": 1268,
+          "height": 560,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        ".case-hero__figure": {
+          "width": 1179.25,
+          "height": 481.625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "39.1875px",
+          "fit": "fill",
+          "radius": "22px"
+        },
+        ".sc-case-process__number-circle": {
+          "width": 32,
+          "height": 32,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "50%"
+        },
+        ".metal-result-banner": {
+          "width": 864,
+          "height": 504.75,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "38px"
+        },
+        ".metal-result-banner__value": {
+          "width": 263.59375,
+          "height": 109.75,
+          "font": "112px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "109.76px",
+          "color": "rgb(228, 77, 31)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".metal-result-banner__label": {
+          "width": 200,
+          "height": 48,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(83, 109, 130)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".sc-case-screens__grid": {
+          "width": 864,
+          "height": 604,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".sc-case-process__cta": {
+          "width": 320,
+          "height": 407,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "sticky",
+          "top": "210px",
+          "fit": "fill",
+          "radius": "20px"
+        },
+        ".sc-case-process__cta-button": {
+          "width": 278,
+          "height": 52,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "100px"
+        }
+      },
+      "reference": {
+        "h1": {
+          "width": 756,
+          "height": 140.78125,
+          "font": "64px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "70.4px",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".case-hero__media": {
+          "width": 1268,
+          "height": 560,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        ".case-hero__figure": {
+          "width": 1179.25,
+          "height": 481.625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "39.1875px",
+          "fit": "fill",
+          "radius": "22px"
+        },
+        ".sc-case-process__number-circle": {
+          "width": 32,
+          "height": 32,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "50%"
+        },
+        ".metal-result-banner": {
+          "width": 864,
+          "height": 504.75,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "38px"
+        },
+        ".metal-result-banner__value": {
+          "width": 263.59375,
+          "height": 109.75,
+          "font": "112px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "109.76px",
+          "color": "rgb(228, 77, 31)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".metal-result-banner__label": {
+          "width": 200,
+          "height": 48,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(83, 109, 130)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".sc-case-screens__grid": {
+          "width": 864,
+          "height": 604,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".sc-case-process__cta": {
+          "width": 320,
+          "height": 407,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "sticky",
+          "top": "210px",
+          "fit": "fill",
+          "radius": "20px"
+        },
+        ".sc-case-process__cta-button": {
+          "width": 278,
+          "height": 52,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "100px"
+        }
+      }
+    }
+  ],
+  "referenceDifferences": [
+    "Shared title/summary and related cards use current catalog copy.",
+    "The reference hides the focus image with reduced motion; the integrated variant keeps it visible without animation."
+  ],
+  "limitations": [
+    "Automated scrolling does not prove physical-device smoothness.",
+    "Firefox/WebKit and real mobile hardware are not tested."
+  ],
+  "pass": true
+}

@@ -15,7 +15,7 @@ node scripts/verify-works-static.cjs
 node scripts/verify-services-static.cjs
 node scripts/check-hero-geometry.cjs
 node scripts/verify-sticky-handoff-v61.cjs
-node --test scripts/test-static-checks.cjs scripts/test-shared-site.cjs scripts/test-button-policy.cjs
+node --test scripts/test-static-checks.cjs scripts/test-shared-site.cjs scripts/test-button-policy.cjs scripts/test-case-pages.cjs scripts/test-project-copy.cjs scripts/test-metal-case.cjs
 git ls-files --cached --others --exclude-standard | node scripts/check-doc-links.cjs
 ```
 
@@ -77,7 +77,21 @@ node --test scripts/test-project-copy.cjs
 
 Актуальная приёмка единых текстов и меток: [87 статических и 172 браузерных проверки](qa/project-copy-sync/README.md). Снимки предыдущего v20 относятся к состоянию до синхронизации заголовка, краткого описания и меток.
 
-Обязательны 320/390/768/1024/1100/1440 px, lightbox с возвратом фокуса, пять модалок, карусель, touch, неподвижный hover стрелок, sticky до «Других работ», обратная прокрутка и reduced motion. Главная и каталог проверяются повторно. Точная вставка ссылки Beauty на каждой из старых страниц разрешена владельцем; остальные тексты, структура и движение сохраняют прежний контроль.
+Для базового v20 обязательны 320/390/768/1024/1100/1440 px, lightbox с возвратом фокуса, модалки работ без страницы, карусель, touch, неподвижный hover стрелок, sticky до «Других работ», обратная прокрутка и reduced motion. Главная и каталог проверяются повторно. Точная вставка ссылки зарегистрированного кейса на старых страницах разрешена владельцем; остальные тексты, структура и движение сохраняют прежний контроль.
+
+## Калькулятор металлоизделий v5
+
+[Свежий отчёт и снимки](qa/metal-v5/README.md) относятся к ветке `feature/metal-calculator-detail` поверх `main` `3b7dd38`. Проверяются 390/768/1440/1920 px, полный центральный скрин, пять этапов, четыре lightbox, баннер −50%, sticky, обычная/обратная прокрутка, смена reduced motion, ссылки и регрессии существующих страниц.
+
+```powershell
+node --test scripts/test-metal-case.cjs
+node scripts/verify-metal-browser.cjs
+$env:CASE_PROJECT = 'metal'
+node scripts/verify-case-links-browser.cjs
+Remove-Item Env:CASE_PROJECT
+```
+
+Сравнительный сценарий требует текущий сайт на 4176, распакованную автономную v5 на 4186 и экспорт исходного `main` на 4187. Можно переопределить `SYNTHECORE_URL`, `METAL_REFERENCE_URL`, `METAL_BASELINE_URL`. Архив и локальные эталоны не коммитятся; при их отсутствии сравнительная приёмка не выполнена. Результаты пишутся в `output/playwright/metal-v5/` и `output/playwright/case-primary-links-metal/`. В `docs/qa/metal-v5/` сохранены доказательства этого запуска. Заголовок/описание намеренно берутся из каталога по общему правилу; reduced motion исправляет скрытый центральный скрин автономного исходника, сохраняя его без анимации.
 
 Полный режим `verify-v62-import.cjs --strict` сравнивает 437 файлов самостоятельного архива v62, включая его прежнюю оболочку и документацию. Итоговый сайт имеет другой согласованный состав. Исторические 423/437 не являются текущей нормой: после очистки старых документов расхождений будет больше. Это не ошибка анимаций. Исходный манифест сохраняется как описание архива; менять его под новый состав нельзя.
 

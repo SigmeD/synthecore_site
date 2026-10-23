@@ -171,7 +171,8 @@ async function preserved(page, key, selectors) {
           for (const id of ['b2b', 'flowers', 'crm', 'beauty', 'prostor', 'metal']) {
             const project=page.locator('[data-project="'+id+'"]');
             if(await project.evaluate(e=>e.tagName==='A')){
-              await project.click();await page.waitForURL('**/raboty/beauty-insight/');
+              const href=await project.getAttribute('href');
+              await project.click();await page.waitForURL('**'+href);
               check(label+'/'+id+' primary link navigates',await page.locator('#caseTitle').isVisible());
               await page.goBack();await page.waitForSelector('#catalog-title');continue;
             }
