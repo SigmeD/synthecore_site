@@ -5,7 +5,7 @@ const base=process.env.SYNTHECORE_URL||'http://127.0.0.1:4176/';
 const reference=process.env.METAL_REFERENCE_URL||'http://127.0.0.1:4186/';
 const baseline=process.env.METAL_BASELINE_URL||'http://127.0.0.1:4187/';
 const dir=path.resolve('output/playwright/metal-v5');fs.mkdirSync(dir,{recursive:true});
-const report={date:new Date().toISOString(),base,reference,baseline,checks:[],errors:[],measurements:[],referenceDifferences:['Shared title/summary and related cards use current catalog copy.','The reference hides the focus image with reduced motion; the integrated variant keeps it visible without animation.'],limitations:['Automated scrolling does not prove physical-device smoothness.','Firefox/WebKit and real mobile hardware are not tested.']};
+const report={date:new Date().toISOString(),base,reference,baseline,checks:[],errors:[],measurements:[],referenceDifferences:['Shared title/summary and related cards use current catalog copy.','The reference hides the focus image with reduced motion; the integrated variant keeps it visible without animation.','Owner refinement on 23 October removes the hero frame background, border and shadow; the image retains its own aspect ratio and rounding.'],limitations:['Automated scrolling does not prove physical-device smoothness.','Firefox/WebKit and real mobile hardware are not tested.']};
 const check=(name,pass,data)=>{report.checks.push({name,pass:!!pass,...(data===undefined?{}:{data})});if(!pass)console.log('FAIL '+name+' '+JSON.stringify(data))};
 const pause=ms=>new Promise(r=>setTimeout(r,ms));
 async function goto(page,url){await page.goto(url,{waitUntil:'networkidle'});await page.evaluate(()=>document.fonts.ready);await pause(1250)}
@@ -33,6 +33,10 @@ async function instrument(ctx){await ctx.addInitScript(()=>{window.__caseLenis={
     return img.complete&&img.naturalWidth>0&&getComputedStyle(img).objectFit==='contain'&&r.left>=m.left&&r.right<=m.right&&r.top>=m.top&&r.bottom<=m.bottom&&Math.abs(r.left+r.width/2-(m.left+m.width/2))<1;
    }));
    check(label+' reduced hero visible without animation',await page.locator('.case-hero__figure').evaluate(e=>getComputedStyle(e).opacity==='1'&&getComputedStyle(e).animationName==='none'));
+   check(label+' hero has no shadow or white side extensions',await page.locator('.case-hero__figure--focus').evaluate(e=>{
+    const c=getComputedStyle(e),img=e.querySelector('img'),r=img.getBoundingClientRect();
+    return c.boxShadow==='none'&&c.backgroundColor==='rgba(0, 0, 0, 0)'&&c.borderTopWidth==='0px'&&Math.abs(r.width/r.height-img.naturalWidth/img.naturalHeight)<.005;
+   }));
    check(label+' reduced native owner',await page.evaluate(()=>window.__caseLenis.live===0&&window.__synthecoreWorksScrollQA.getState().engine==='native'));
    check(label+' reduced parallax disabled',await page.evaluate(()=>ScrollTrigger.getAll().length===0));
    check(label+' sticky responsive',await page.locator('.sc-case-process__cta').evaluate((e,width)=>getComputedStyle(e).position===(width>=1100?'sticky':'relative'),width));

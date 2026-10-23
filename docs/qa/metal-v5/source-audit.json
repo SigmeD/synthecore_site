@@ -193,5 +193,12 @@
       "sha256": "f2ba305bcfa24615cae2fc5054d3280dfb5cc2c24e0ec7c6e5fc585e487c71c1",
       "integratedInto": "css/case-metal.css"
     }
-  ]
+  ],
+  "ownerRefinement": {
+    "date": "2026-10-23",
+    "reference": "SyntheCore_Metal_Calculator_Detail_v4_preview.html",
+    "referenceSHA256": "c3d74222e02e4bfe3bf994e9e3c5eacd7dd58bff40211fcc9bf2b2407e6ae7a2",
+    "request": "Remove the hero shadow and white side extensions; improve composition using v4 as a reference.",
+    "decision": "Keep the approved single complete v5 image and existing stage/motion. Make its wrapper transparent without border/shadow, center the image at its natural aspect ratio, and round the actual image. Do not restore the v4 three-card collage."
+  }
 }

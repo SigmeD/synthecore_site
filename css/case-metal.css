@@ -43,8 +43,9 @@ body.sc-case-metal .metal-hero__figure--right img{object-fit:cover;object-positi
 body.sc-case-metal .case-hero__media--focus{margin-top:72px;height:clamp(350px,45vw,560px);background:linear-gradient(180deg,#f4f8fb 0%,#f8fafc 100%);overflow:hidden;}
 body.sc-case-metal .case-hero__media--focus::before{background:radial-gradient(ellipse 56% 68% at 50% 42%,rgba(188,208,225,.34),transparent 76%);}
 body.sc-case-metal .case-hero__media--focus .case-hero__media-line{width:82%;left:9%;bottom:10%;background:#e8eef2;opacity:.95;}
-body.sc-case-metal .case-hero__figure--focus{position:absolute;z-index:2;left:3.5%;right:3.5%;top:7%;bottom:7%;border-radius:22px;box-shadow:0 24px 64px -42px rgba(23,35,45,.18),0 38px 88px -70px rgba(23,35,45,.12);overflow:visible;opacity:0;animation:scCaseEnter 1s cubic-bezier(.22,.71,.22,1) .08s both;}
-body.sc-case-metal .case-hero__figure--focus img{width:100%;height:100%;object-fit:contain;object-position:center center;background:transparent;display:block;}
+/* Owner refinement, 23 October: keep the image's own silhouette on the page background. */
+body.sc-case-metal .case-hero__figure--focus{position:absolute;z-index:2;left:3.5%;right:3.5%;top:7%;bottom:7%;display:flex;align-items:center;justify-content:center;border-radius:22px;border:0;background:transparent;box-shadow:none;overflow:visible;opacity:0;animation:scCaseEnter 1s cubic-bezier(.22,.71,.22,1) .08s both;}
+body.sc-case-metal .case-hero__figure--focus img{width:auto;height:auto;max-width:100%;max-height:100%;border-radius:inherit;object-fit:contain;object-position:center center;background:transparent;display:block;}
 @media(max-width:900px){body.sc-case-metal .case-hero__media--focus{height:clamp(300px,54vw,420px);}body.sc-case-metal .case-hero__figure--focus{left:3%;right:3%;top:8%;bottom:8%;}}
 @media(max-width:650px){body.sc-case-metal .case-hero__media--focus{margin-top:35px;height:290px;border-radius:19px;}body.sc-case-metal .case-hero__figure--focus{left:3%;right:3%;top:10%;bottom:10%;border-radius:16px;}}
 

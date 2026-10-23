@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-23T16:52:34.247Z",
+  "date": "2026-10-23T17:57:19.184Z",
   "base": "http://127.0.0.1:4176/",
   "reference": "http://127.0.0.1:4186/",
   "baseline": "http://127.0.0.1:4187/",
@@ -26,6 +26,10 @@
     },
     {
       "name": "390 reduced hero visible without animation",
+      "pass": true
+    },
+    {
+      "name": "390 hero has no shadow or white side extensions",
       "pass": true
     },
     {
@@ -665,6 +669,10 @@
       "pass": true
     },
     {
+      "name": "768 hero has no shadow or white side extensions",
+      "pass": true
+    },
+    {
       "name": "768 reduced native owner",
       "pass": true
     },
@@ -1301,6 +1309,10 @@
       "pass": true
     },
     {
+      "name": "1440 hero has no shadow or white side extensions",
+      "pass": true
+    },
+    {
       "name": "1440 reduced native owner",
       "pass": true
     },
@@ -1934,6 +1946,10 @@
     },
     {
       "name": "1920 reduced hero visible without animation",
+      "pass": true
+    },
+    {
+      "name": "1920 hero has no shadow or white side extensions",
       "pass": true
     },
     {
