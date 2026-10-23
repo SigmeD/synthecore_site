@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-23T19:10:57.592Z",
+  "base": "3b7dd382f3e5914b26aa0cef581659e655140ab8",
+  "branch": "feature/flowers-case-detail",
+  "checks": [
+    {
+      "command": "node scripts/verify-v62-import.cjs",
+      "exitCode": 0,
+      "pass": true,
+      "output": "SyntheCore v62 MOTION LOCK: 17/17 matched."
+    },
+    {
+      "command": "node docs/qa/v62-on-v27/verify-git.cjs",
+      "exitCode": 0,
+      "pass": true,
+      "output": "{\n  \"ref\": \"INDEX\",\n  \"motionFiles\": 17,\n  \"v27Files\": 25,\n  \"approvedCatalogCopy\": \"2026-10-21\",\n  \"approvedButtonPolicy\": \"2026-10-22\",\n  \"v62ContentMatches\": true,\n  \"failures\": [],\n  \"pass\": true\n}"
+    },
+    {
+      "command": "node scripts/build-site.cjs --check",
+      "exitCode": 0,
+      "pass": true,
+      "output": "PASS: shared Header/Footer are current in home, catalog and case routes."
+    },
+    {
+      "command": "node scripts/check-project.cjs --http http://127.0.0.1:4176/",
+      "exitCode": 0,
+      "pass": true,
+      "output": "PASS: 12 image/viewport combinations, 60 crop states, zero-size guards.\nPASS: current v60 structure/resources, 6 approved Works images, 40 vendor/asset manifest hashes. 59 HTTP resources match disk."
+    },
+    {
+      "command": "node scripts/verify-works-static.cjs",
+      "exitCode": 0,
+      "pass": true,
+      "output": "PASS: 6 ordered Works cards with approved copy, 6 approved PNG hashes/dimensions, unique ids/hooks, valid fragment targets, dependency order, one Lenis owner, 58 local resources. Offline checks only."
+    },
+    {
+      "command": "node scripts/verify-services-static.cjs",
+      "exitCode": 0,
+      "pass": true,
+      "output": "PASS: six services cards, accessible headings, twelve local illustrations (mono + color), idle tilt, active alignment, single scroll owner, no vertical wheel capture."
+    },
+    {
+      "command": "node scripts/check-hero-geometry.cjs",
+      "exitCode": 0,
+      "pass": true,
+      "output": "PASS: 12 image/viewport combinations, 60 crop states, zero-size guards."
+    },
+    {
+      "command": "node scripts/verify-sticky-handoff-v61.cjs",
+      "exitCode": 0,
+      "pass": true,
+      "output": "PASS: experimental CSS sticky scenes and +30% testimonials."
+    },
+    {
+      "command": "node --test scripts/test-static-checks.cjs scripts/test-shared-site.cjs scripts/test-case-pages.cjs scripts/test-project-copy.cjs scripts/test-button-policy.cjs scripts/test-flowers-case.cjs",
+      "exitCode": 0,
+      "pass": true,
+      "output": "✔ button policy exception accepts only the exact two additions to v27 (2.3938ms)\n✔ QA does not exempt protected motion files or unrelated components (1.0897ms)\n✔ case renderer builds a nested route from shared shell and case content (12.5283ms)\n✔ all case assets and local links resolve under the nested URL (2.9789ms)\n✔ case renderer escapes content and rejects missing or unsafe project data (11.309ms)\n✔ authorized case links restore exact original pages and reject other mutations (13.6215ms)\n✔ all six case registrations automatically wire primary homepage and catalog actions (1.7803ms)\n✔ imported case images retain verified handoff bytes (4.7552ms)\n✔ Flowers is built from the canonical catalog copy and existing shared components (11.5305ms)\n✔ Flowers retains three phones, four factual prototype stages, two result devices and four full interfaces (2.5823ms)\n✔ the Flowers variant rejects unapproved layouts and incorrect media/process data (4.1284ms)\n✔ Flowers assets retain source bytes, resources resolve, and other catalog/Beauty content remains unchanged (7.6523ms)\n✔ all six homepage titles and summaries match the catalog source (6.2656ms)\n✔ editing catalog copy updates both dependent templates automatically (59.3535ms)\n✔ case first screen and metadata use catalog title and summary, not independent copies (2.6114ms)\n✔ both static routes are generated from one header and one footer (12.2322ms)\n✔ route-aware shared navigation resolves every local anchor (7.2109ms)\n✔ catalog permits only approved naming while preserving six projects, descriptions and assets (18.9872ms)\n✔ catalog copy exception rejects unapproved copy and structural or shell changes (12.34ms)\n✔ single footer and menu owners retain local motion contracts (1.7272ms)\n✔ local Manrope distributions match the recorded hashes (10.1533ms)\n✔ combined build preserves v62 motion bytes/content and the owner-selected v27 shell (12.5637ms)\n▶ current v60 static checks accept the site and reject isolated fixture mutations\n  ✔ accepted package passes without HTTP or historical backups (95.0201ms)\n  ✔ missing card (14.47ms)\n  ✔ reordered cards (12.6098ms)\n  ✔ duplicate DOM id (11.7024ms)\n  ✔ missing label target (13.1517ms)\n  ✔ label targets another card (10.8605ms)\n  ✔ label target is not h2 (12.0654ms)\n  ✔ empty title (12.2814ms)\n  ✔ empty category (12.0909ms)\n  ✔ missing description (11.9729ms)\n  ✔ empty description (12.2248ms)\n  ✔ missing image (11.023ms)\n  ✔ empty image src (11.4106ms)\n  ✔ wrong image mapping (11.2299ms)\n  ✔ wrong natural dimension attribute (12.1867ms)\n  ✔ missing image file (10.028ms)\n  ✔ wrong PNG dimensions (14.3744ms)\n  ✔ wrong approved image hash (11.179ms)\n  ✔ wrong section order (11.5356ms)\n  ✔ nested rather than sequential section (10.9289ms)\n  ✔ duplicate Works CSS hook (31.0341ms)\n  ✔ duplicate Works JS hook (31.3476ms)\n  ✔ CSS hook before main (30.1845ms)\n  ✔ Works script before dependencies (29.657ms)\n  ✔ async Works script (30.2397ms)\n  ✔ duplicate vendor URL alias (31.0854ms)\n  ✔ second external library copy (37.3159ms)\n  ✔ second Lenis constructor (51.2347ms)\n  ✔ missing Lenis constructor (47.1944ms)\n  ✔ missing local CSS resource (23.9993ms)\n  ✔ malformed nested markup (10.3556ms)\n  ✔ removed prototype category qualification (12.2972ms)\n  ✔ removed prototype description qualification (13.3061ms)\n  ✔ removed demo-data qualification (17.3293ms)\n  ✔ removed concept qualification (18.4263ms)\n  ✔ dangling services navigation link (11.8943ms)\n  ✔ dangling encoded navigation link (10.547ms)\n  ✔ malformed percent-encoded fragment (10.8518ms)\n  ✔ empty fragment (12.4654ms)\n  ✔ b2b nonempty title copy changes (12.6698ms)\n  ✔ b2b nonempty category copy changes (10.4339ms)\n  ✔ b2b nonempty description copy changes (10.7103ms)\n  ✔ flowers nonempty title copy changes (14.0731ms)\n  ✔ flowers nonempty category copy changes (12.7274ms)\n  ✔ flowers nonempty description copy changes (11.594ms)\n  ✔ crm nonempty title copy changes (15.8159ms)\n  ✔ crm nonempty category copy changes (14.6266ms)\n  ✔ crm nonempty description copy changes (13.7369ms)\n  ✔ beauty nonempty title copy changes (17.8358ms)\n  ✔ beauty nonempty category copy changes (17.1337ms)\n  ✔ beauty nonempty description copy changes (17.4998ms)\n  ✔ prostor nonempty title copy changes (18.9561ms)\n  ✔ prostor nonempty category copy changes (19.1791ms)\n  ✔ prostor nonempty description copy changes (18.8413ms)\n  ✔ metal nonempty title copy changes (23.0166ms)\n  ✔ metal nonempty category copy changes (22.8908ms)\n  ✔ metal nonempty description copy changes (23.0044ms)\n  ✔ b2b image hash differs with same byte length (13.8899ms)\n  ✔ flowers image hash differs with same byte length (19.0752ms)\n  ✔ crm image hash differs with same byte length (17.684ms)\n  ✔ beauty image hash differs with same byte length (23.6873ms)\n  ✔ prostor image hash differs with same byte length (25.4113ms)\n  ✔ metal image hash differs with same byte length (27.2436ms)\n  ✔ whitespace, attribute quoting and nested inline text remain valid (39.086ms)\nPASS: 12 image/viewport combinations, 60 crop states, zero-size guards.\n  ✔ project check works offline from an unrelated cwd (46.2351ms)\n  ✔ asset manifest hash rejects same-length mutation (27.6894ms)\n  ✔ vendor manifest hash rejects same-length mutation (71.5197ms)\n  ✔ explicit HTTP verifies bytes and rejects stale content / 404 (54.966ms)\n✔ current v60 static checks accept the site and reject isolated fixture mutations (1567.4002ms)\nℹ tests 91\nℹ suites 0\nℹ pass 91\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 1681.3845"
+    },
+    {
+      "command": "git ls-files --cached --others --exclude-standard | node scripts/check-doc-links.cjs",
+      "exitCode": 0,
+      "pass": true,
+      "output": "PASS: 178 local links across 10 current/historical Markdown documents target supplied Git files."
+    }
+  ],
+  "pass": true
+}

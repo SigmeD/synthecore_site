@@ -53,7 +53,10 @@ function watch(page,label){page.on('pageerror',e=>report.errors.push({label,type
    }
    await scroll(page,(await top(page,'#other-work'))-100);
    for(const id of ['b2b','flowers','crm','prostor','metal']){
-    const card=page.locator(`.case-card:not([data-carousel-clone]) [data-project="${id}"]`);await card.click();
+    const card=page.locator(`.case-card:not([data-carousel-clone]) [data-project="${id}"]`);
+    const href=await card.getAttribute('href');
+    if(href){await card.click();await page.waitForURL('**'+href);check(label+' related route '+id,await page.locator('#caseTitle').isVisible());await page.goBack();await page.waitForSelector('#relatedViewport');continue;}
+    await card.click();
     check(label+' related modal '+id,await page.locator('#caseDialog').evaluate(e=>e.open));await page.keyboard.press('Escape');
     check(label+' related modal focus '+id,await card.evaluate(e=>document.activeElement===e));
    }

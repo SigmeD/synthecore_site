@@ -16,10 +16,10 @@
 <link rel="stylesheet" href="/css/raboty-type.css">
 <link rel="stylesheet" href="/css/site-footer.css">
 <link rel="stylesheet" href="/css/shared-header-cta.css">
-<link rel="stylesheet" href="/css/case-detail.css">
+<link rel="stylesheet" href="/css/case-detail.css">{{case_styles}}
 <script src="/js/raboty-motion.js"></script>
 </head>
-<body class="works-catalog sc-case-page">
+<body class="works-catalog sc-case-page{{case_class}}">
 {{header}}
 <main id="top" aria-label="{{short_name}} — {{status}}">
   <section class="works-page sc-case-first-page" aria-label="Начало проекта">
@@ -53,12 +53,7 @@
        <h1 id="caseTitle">{{h1}}</h1>
        <div class="case-hero__intro"><p>{{intro}}</p></div>
      </div>
-     <div class="case-hero__media" aria-label="Презентация экранов проекта">
-       <div class="case-hero__figure case-hero__figure--left"><img src="{{hero_left_src}}" alt="{{hero_left_alt}}"></div>
-       <div class="case-hero__figure case-hero__figure--main"><img src="{{hero_main_src}}" alt="{{hero_main_alt}}"></div>
-       <div class="case-hero__figure case-hero__figure--right"><img src="{{hero_right_src}}" alt="{{hero_right_alt}}"></div>
-       <div class="case-hero__media-line" aria-hidden="true"></div>
-     </div>
+     {{hero_media}}
    </div>
   </section>
     </div>
@@ -89,15 +84,7 @@
           </section>
           <section class="sc-case-result" id="case-result" aria-labelledby="resultTitle">
             <div class="sc-case-result__inner">
-              <div class="sc-case-result__heading sc-case-reveal">
-                <h2 id="resultTitle">Результат</h2>
-                <p>{{result}}</p>
-              </div>
-              <div class="sc-case-result__hero sc-case-reveal">
-                <div class="sc-case-result__hero-media">
-                  <img src="{{result_src}}" alt="{{result_alt}}" loading="lazy" decoding="async">
-                </div>
-              </div>
+{{result_content}}
             </div>
           </section>
           <section class="sc-case-screens" id="case-screens" aria-labelledby="screensTitle">

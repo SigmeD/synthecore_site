@@ -87,7 +87,8 @@ test('all six case registrations automatically wire primary homepage and catalog
  assert.equal((catalog.match(/<a [^>]+class="case-card__open"/g)||[]).length,6);
  assert.ok(!catalog.includes('<button aria-label="Открыть описание проекта:'));
  for(const data of cases){assert.ok(home.includes(`href="/raboty/${data.slug}/"`));assert.ok(catalog.includes(`href="/raboty/${data.slug}/"`))}
- const current=read('raboty/index.html');assert.equal((current.match(/<button [^>]+class="case-card__open"/g)||[]).length,5);
+ const current=read('raboty/index.html'),registered=require('./lib/case-page.cjs').casePages(root);
+ assert.equal((current.match(/<button [^>]+class="case-card__open"/g)||[]).length,6-registered.length);
  assert.ok(/<a [^>]+data-project="beauty" href="\/raboty\/beauty-insight\/">/.test(current));
 });
 
