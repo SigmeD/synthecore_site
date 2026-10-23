@@ -10,14 +10,16 @@ function catalogCopy(root,source){
   const id=card.attrs['data-project'],children=nodes.filter(n=>inside(n,card));
   if(!id||Object.hasOwn(copy,id))throw Error('Duplicate or missing catalog project');
   const value=tag=>{const matches=children.filter(n=>n.tag===tag);if(matches.length!==1)throw Error('Expected one catalog '+tag);return textContent(matches[0]).replace(/\s+/g,' ').trim()};
-  copy[id]={title:value('h2'),description:value('p')};
+  const tags=children.filter(n=>hasClass(n,'tag')).map(n=>textContent(n).replace(/\s+/g,' ').trim());
+  if(tags.length!==2||tags.some(tag=>!tag))throw Error('Expected catalog format and topic: '+id);
+  copy[id]={title:value('h2'),description:value('p'),tags,category:tags.join(' · ')};
   if(!copy[id].title||!copy[id].description)throw Error('Empty catalog copy: '+id);
  }
  return copy;
 }
 function renderHomeCopy(root,template){
  const copy=catalogCopy(root);
- return template.replace(/\{\{work_([a-z0-9]+)_(title|description)\}\}/g,(_,id,key)=>{
+ return template.replace(/\{\{work_([a-z0-9]+)_(title|description|category)\}\}/g,(_,id,key)=>{
   if(!copy[id])throw Error('Unknown catalog project '+id);
   return escape(copy[id][key]);
  });
