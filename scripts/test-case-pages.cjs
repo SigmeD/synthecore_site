@@ -38,7 +38,7 @@ test('all case assets and local links resolve under the nested URL',()=>{
 test('case renderer escapes content and rejects missing or unsafe project data',()=>{
  const {renderCase}=require('./lib/case-page.cjs');
  const data=JSON.parse(read('templates/data/cases/beauty-insight.json'));
- const changed=structuredClone(data);changed.intro='<script>alert("x")</script> {{header}} {{footer}} {{home}}';
+ const changed=structuredClone(data);changed.result='<script>alert("x")</script> {{header}} {{footer}} {{home}}';
  const html=renderCase(root,changed);
  assert.ok(html.includes('&lt;script&gt;'));
  assert.ok(!html.includes('<script>alert('));
@@ -50,7 +50,8 @@ test('case renderer escapes content and rejects missing or unsafe project data',
  const next=renderCase(root,{...data,slug:'next-case',catalog_id:'b2b',status:'Веб-сервис'});
  assert.ok(next.includes('data-project="beauty"'));
  assert.ok(!next.includes('sc-case-card-detail-link'),'catalog-only extra link must not alter future related-card geometry');
- assert.ok(next.includes('Beauty Insight AI — Веб-сервис'));
+ assert.ok(next.includes('Кабинет клиента — Веб-сервис'));
+ assert.throws(()=>renderCase(root,{...data,h1:['Другой заголовок']}),/must come from catalog/);
 });
 
 test('authorized case links restore exact original pages and reject other mutations',()=>{
