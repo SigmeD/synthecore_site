@@ -1,6 +1,7 @@
 'use strict';
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
 const {parseHTML,hasClass,inside,textContent}=require('./lib/static-html.cjs');
+const {restoreLaterCaseLinks}=require('./lib/case-baseline.cjs');
 const root=path.resolve(__dirname,'..'),read=file=>fs.readFileSync(path.join(root,file),'utf8').replace(/\r\n/g,'\n'),hash=text=>crypto.createHash('sha256').update(text).digest('hex');
 test('Flowers is built from the canonical catalog copy and existing shared components',()=>{
  const html=read('raboty/flowers/index.html');assert.equal(require('./build-site.cjs').renderPage(root,'flowers'),html);
@@ -34,7 +35,7 @@ test('Flowers assets retain source bytes, resources resolve, and other catalog/B
   const url=new URL(value,'http://local/raboty/flowers/');let file=url.pathname.slice(1)||'index.html';if(file.endsWith('/'))file+='index.html';assert.ok(fs.existsSync(path.join(root,file)),value);
   if(url.hash)assert.ok(read(file).includes('id="'+decodeURIComponent(url.hash.slice(1))+'"'),value);
  }
- for(const match of read('raboty/index.html').matchAll(/<article class="case-card case-card--([^\"]+)">[\s\S]*?<\/article>/g))if(match[1]!=='flowers')assert.equal(hash(match[0]),audit.catalogArticles[match[1]].baselineSHA256);
- const beauty=read('raboty/beauty-insight/index.html').replace(/<article class="case-card case-card--flowers">[\s\S]*?<\/article>/g,article=>article.replace('<a ','<button ').replace(' href="/raboty/flowers/">',' type="button">').replace('</a>','</button>'));
+ for(const match of restoreLaterCaseLinks(read('raboty/index.html')).matchAll(/<article class="case-card case-card--([^\"]+)">[\s\S]*?<\/article>/g))if(match[1]!=='flowers')assert.equal(hash(match[0]),audit.catalogArticles[match[1]].baselineSHA256);
+ const beauty=restoreLaterCaseLinks(read('raboty/beauty-insight/index.html'));
  assert.equal(hash(beauty),audit.beauty.baselineSHA256);
 });

@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-23T19:45:13.903Z",
+  "results": [
+    {
+      "file": "metal-scroll-1440.webm",
+      "duration": 24.84,
+      "width": 1440,
+      "height": 900,
+      "redRange": [
+        62,
+        255
+      ],
+      "pass": true
+    },
+    {
+      "file": "metal-scroll-390.webm",
+      "duration": 22.72,
+      "width": 390,
+      "height": 844,
+      "redRange": [
+        21,
+        255
+      ],
+      "pass": true
+    },
+    {
+      "file": "flowers-scroll-1440.webm",
+      "duration": 21.64,
+      "width": 1440,
+      "height": 1080,
+      "redRange": [
+        51,
+        255
+      ],
+      "pass": true
+    },
+    {
+      "file": "flowers-scroll-390.webm",
+      "duration": 25.04,
+      "width": 390,
+      "height": 844,
+      "redRange": [
+        22,
+        255
+      ],
+      "pass": true
+    }
+  ],
+  "pass": true
+}

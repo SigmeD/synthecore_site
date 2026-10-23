@@ -2,7 +2,7 @@
 const fs=require('node:fs'),path=require('node:path');
 const {chromium}=require(require.resolve('playwright',{paths:[process.cwd(),process.env.USERPROFILE||'']}));
 const base=process.env.SYNTHECORE_URL||'http://127.0.0.1:4176/',reference=process.env.FLOWERS_REFERENCE_URL||'http://127.0.0.1:4189/',baseline=process.env.FLOWERS_BASELINE_URL||'http://127.0.0.1:4190/';
-const dir=path.resolve('output/playwright/flowers-v2');fs.mkdirSync(dir,{recursive:true});
+const dir=path.resolve(process.env.CASE_QA_OUTPUT||'output/playwright/flowers-v2');fs.mkdirSync(dir,{recursive:true});
 const assetDimensions=JSON.parse(fs.readFileSync('docs/qa/flowers-v2/source-audit.json','utf8')).assets;
 const report={date:new Date().toISOString(),base,reference,baseline,checks:[],errors:[],measurements:[],referenceDifferences:['Canonical catalog title/summary/tags and current related cards replace the autonomous copy.','Shared current Header/Footer, CTA and v20 interaction fixes are reused.'],limitations:['Automated wheel/touch does not prove physical-device smoothness.','Firefox/WebKit and real mobile hardware are not tested.']};
 const check=(name,pass,data)=>{report.checks.push({name,pass:!!pass,...(data===undefined?{}:{data})});if(!pass)console.log('FAIL '+name+' '+JSON.stringify(data))};
@@ -59,7 +59,11 @@ async function swipe(page,ctx,selector,width){
    }
    const related=page.locator('.related-work__track > .case-card:not([data-carousel-clone])');check(label+' five related/current excluded',await related.count()===5&&await related.locator('[data-project="flowers"]').count()===0);
    check(label+' Beauty route',await related.locator('[data-project="beauty"]').getAttribute('href')==='/raboty/beauty-insight/');
-   for(const id of ['b2b','crm','prostor','metal']){const opener=related.locator('[data-project="'+id+'"]');await opener.click();check(label+' related '+id+' fallback modal',await page.locator('#caseDialog').evaluate(e=>e.open));await page.keyboard.press('Escape')}
+   for(const id of ['b2b','crm','prostor','metal']){
+    const opener=related.locator('[data-project="'+id+'"]'),href=await opener.getAttribute('href');await opener.click();
+    if(href){await page.waitForURL('**'+href);check(label+' related '+id+' route',await page.locator('#caseTitle').isVisible());await page.goBack({waitUntil:'networkidle'});await page.evaluate(()=>document.fonts.ready);await pause(800)}
+    else{check(label+' related '+id+' fallback modal',await page.locator('#caseDialog').evaluate(e=>e.open));await page.keyboard.press('Escape')}
+   }
    await scroll(page,(await top(page,'.related-work__controls'))-height/2);const arrow=page.locator('.related-work__arrow').last(),before=await arrow.boundingBox();await arrow.hover();await pause(250);const after=await arrow.boundingBox();
    check(label+' stationary arrow hover',Math.abs(before.x-after.x)<.5&&Math.abs(before.y-after.y)<.5);const initial=await page.locator('#relatedViewport').evaluate(e=>e.scrollLeft);await arrow.click();await pause(450);check(label+' carousel advances',Math.abs((await page.locator('#relatedViewport').evaluate(e=>e.scrollLeft))-initial)>30);
    for(const selector of ['.sc-case-process__cta-button','.sc-footer__cta']){const button=page.locator(selector);await button.scrollIntoViewIfNeeded();await button.hover();check(label+' CTA mail link/no glow '+selector,(await button.getAttribute('href')).startsWith('mailto:')&&await button.evaluate(e=>getComputedStyle(e).boxShadow==='none'))}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-23",
+  "integrationBase": "0aab90a24a1a3ef559a09867d9fa8e509a869d09",
+  "acceptedMetalHead": "aafcc8eb808ff786ba622396d521c37ccd8f857c",
+  "pages": {
+    "raboty/beauty-insight/index.html": {
+      "sourceCommit": "0aab90a24a1a3ef559a09867d9fa8e509a869d09",
+      "normalizedBaselineSHA256": "6b7c920f94acca1f5d73e572aeb4e7ce56720a53f0ea97d54edaf9fd2181e3f8",
+      "normalizedCurrentSHA256": "6b7c920f94acca1f5d73e572aeb4e7ce56720a53f0ea97d54edaf9fd2181e3f8",
+      "pass": true
+    },
+    "raboty/flowers/index.html": {
+      "sourceCommit": "0aab90a24a1a3ef559a09867d9fa8e509a869d09",
+      "normalizedBaselineSHA256": "f7aea0defc2f9f40ed45c624aef11928dfc80b601bf4a6ef67182433ea8600d7",
+      "normalizedCurrentSHA256": "f7aea0defc2f9f40ed45c624aef11928dfc80b601bf4a6ef67182433ea8600d7",
+      "pass": true
+    },
+    "raboty/metal-calc/index.html": {
+      "sourceCommit": "aafcc8eb808ff786ba622396d521c37ccd8f857c",
+      "normalizedBaselineSHA256": "0c2e220ba3b9fd94110d92a233239600f3a6316bb83772c4126402da1e009fd8",
+      "normalizedCurrentSHA256": "0c2e220ba3b9fd94110d92a233239600f3a6316bb83772c4126402da1e009fd8",
+      "pass": true
+    }
+  },
+  "runtime": {
+    "css/case-detail.css": {
+      "sourceCommit": "0aab90a24a1a3ef559a09867d9fa8e509a869d09",
+      "normalizesLineEndings": false,
+      "baselineSHA256": "88a50f1130921d103bbbf65d9605f218c66f9ce3f9b2c96f971a9028c54e51d8",
+      "currentSHA256": "88a50f1130921d103bbbf65d9605f218c66f9ce3f9b2c96f971a9028c54e51d8",
+      "pass": true
+    },
+    "js/case-detail.js": {
+      "sourceCommit": "0aab90a24a1a3ef559a09867d9fa8e509a869d09",
+      "normalizesLineEndings": false,
+      "baselineSHA256": "9e52d234eff3af1e6f694c8f6d0dd8ae311cada9c1ceb9cc6cc89278da406bc5",
+      "currentSHA256": "9e52d234eff3af1e6f694c8f6d0dd8ae311cada9c1ceb9cc6cc89278da406bc5",
+      "pass": true
+    },
+    "css/case-flowers.css": {
+      "sourceCommit": "0aab90a24a1a3ef559a09867d9fa8e509a869d09",
+      "normalizesLineEndings": false,
+      "baselineSHA256": "4d9022c35c63ba36032b319a4cb85492023c54a1d35297a8a77718b6afb21eeb",
+      "currentSHA256": "4d9022c35c63ba36032b319a4cb85492023c54a1d35297a8a77718b6afb21eeb",
+      "pass": true
+    },
+    "css/case-metal.css": {
+      "sourceCommit": "aafcc8eb808ff786ba622396d521c37ccd8f857c",
+      "normalizesLineEndings": false,
+      "baselineSHA256": "50d50bde34f29f41607f816a513cdb6ed3dda88215c898a43fd07394e549efda",
+      "currentSHA256": "50d50bde34f29f41607f816a513cdb6ed3dda88215c898a43fd07394e549efda",
+      "pass": true
+    },
+    "templates/partials/header.html": {
+      "sourceCommit": "0aab90a24a1a3ef559a09867d9fa8e509a869d09",
+      "normalizesLineEndings": true,
+      "baselineSHA256": "a193c375f27fa97720eb679437ab79c5b09412112095c6b59c853ee191c1593e",
+      "currentSHA256": "a193c375f27fa97720eb679437ab79c5b09412112095c6b59c853ee191c1593e",
+      "pass": true
+    },
+    "templates/partials/footer.html": {
+      "sourceCommit": "0aab90a24a1a3ef559a09867d9fa8e509a869d09",
+      "normalizesLineEndings": true,
+      "baselineSHA256": "8a9002f282515a3d8632d8828f05c46e4dbab6efba699445ba9effac123baf4b",
+      "currentSHA256": "8a9002f282515a3d8632d8828f05c46e4dbab6efba699445ba9effac123baf4b",
+      "pass": true
+    }
+  },
+  "pass": true
+}

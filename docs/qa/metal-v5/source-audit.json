@@ -1,0 +1,204 @@
+{
+  "base": "3b7dd382f3e5914b26aa0cef581659e655140ab8",
+  "archive": "SyntheCore_Metal_Calculator_Detail_v5.zip",
+  "archiveSHA256": "43e05d2d881c44a106613a0f744866e00f1cc668c66db409bdeb9be7c6b8af09",
+  "assets": {
+    "/assets/cases/metal-calc/metal-presets.png": {
+      "source": "assets/case-screens/metal-presets.png",
+      "bytes": 407226,
+      "sha256": "b55d7ab91dba40ee17af514595314227332bdf79a90b9604afaa64400328c391",
+      "width": 1892,
+      "height": 945
+    },
+    "/assets/cases/metal-calc/metal-preset-details.png": {
+      "source": "assets/case-screens/metal-preset-details.png",
+      "bytes": 455056,
+      "sha256": "440ced9209113d82a0426cfe01c85f8e22d16220060fddecb5eb56cca41eb685",
+      "width": 1892,
+      "height": 945
+    },
+    "/assets/cases/metal-calc/metal-project-calculation-v3.png": {
+      "source": "assets/case-screens/metal-project-calculation-v3.png",
+      "bytes": 416541,
+      "sha256": "cfb7f32cef2062197a5236885fc90328dc892b3fb9a12e0704e067af00a132e6",
+      "width": 2048,
+      "height": 1317
+    },
+    "/assets/cases/metal-calc/metal-margin-detail-v2.png": {
+      "source": "assets/case-screens/metal-margin-detail-v2.png",
+      "bytes": 388413,
+      "sha256": "6877977bdd55de703c632dc3fb10cd135cb8c493e3456c8c046dd76602ac1245",
+      "width": 2029,
+      "height": 1198
+    },
+    "/assets/cases/metal-calc/metal-result-halftone-tubes.png": {
+      "source": "assets/metal-result-halftone-tubes.png",
+      "bytes": 164633,
+      "sha256": "cae4bc4686045e31ae5f66e1431e014cc09d3dd3f1e10a40d13641fadad07c6a",
+      "width": 660,
+      "height": 728
+    }
+  },
+  "catalogArticles": {
+    "b2b": {
+      "baselineSHA256": "66d7a00b33d2799e71ac469fb476c7e56fb51d1d4d2e96931cfe65da799bf9b4",
+      "actualSHA256": "66d7a00b33d2799e71ac469fb476c7e56fb51d1d4d2e96931cfe65da799bf9b4",
+      "pass": true
+    },
+    "flowers": {
+      "baselineSHA256": "447752beb59eb91bc1f2046ccc5317e90e87fb6378a740d2eec92d34ba845bc0",
+      "actualSHA256": "447752beb59eb91bc1f2046ccc5317e90e87fb6378a740d2eec92d34ba845bc0",
+      "pass": true
+    },
+    "crm": {
+      "baselineSHA256": "ee5a27a1d0512b5fe9ec3c641104ae5aa9076196909d20985d628fcd78d2f852",
+      "actualSHA256": "ee5a27a1d0512b5fe9ec3c641104ae5aa9076196909d20985d628fcd78d2f852",
+      "pass": true
+    },
+    "beauty": {
+      "baselineSHA256": "a6646b89aae984fc0f9fa598e7c8d0e82ee85a10116b78ea357e47886ed8e04c",
+      "actualSHA256": "a6646b89aae984fc0f9fa598e7c8d0e82ee85a10116b78ea357e47886ed8e04c",
+      "pass": true
+    },
+    "prostor": {
+      "baselineSHA256": "4a980287d7e929c49f60ee8b54ab9fa35568c6f4106f8ed875d49c6a7b352b6f",
+      "actualSHA256": "4a980287d7e929c49f60ee8b54ab9fa35568c6f4106f8ed875d49c6a7b352b6f",
+      "pass": true
+    }
+  },
+  "beauty": {
+    "baselineSHA256": "6b7c920f94acca1f5d73e572aeb4e7ce56720a53f0ea97d54edaf9fd2181e3f8",
+    "normalizedCurrentSHA256": "6b7c920f94acca1f5d73e572aeb4e7ce56720a53f0ea97d54edaf9fd2181e3f8",
+    "pass": true
+  },
+  "sourceChanges": [
+    "Use actual shared shell, vendor, fonts, CTA assets and common v20 CSS/JS (all14 shared input SHA match).",
+    "Keep catalog title, summary and tags as canonical; v5 task detail is retained in its process text.",
+    "Scope only two metal CSS inputs and bind approved hero/result partial variants.",
+    "Keep focus image visible without animation when reduced motion is requested."
+  ],
+  "metric": {
+    "value": "−50%",
+    "source": "User-approved task and archive README.md",
+    "measurementMethod": "Not documented in supplied materials; no independent business measurement performed."
+  },
+  "sharedSources": [
+    {
+      "source": "css/detail-related-air-v9.css",
+      "sha256": "88dcbbe4a16bb5960440bff21b4277c13177f30fc32fcecbbc15787bf81351e7",
+      "approvedBeautySHA256": "88dcbbe4a16bb5960440bff21b4277c13177f30fc32fcecbbc15787bf81351e7",
+      "integratedInto": "css/case-detail.css",
+      "pass": true
+    },
+    {
+      "source": "css/detail-stage1.css",
+      "sha256": "5bc4c446d36bf6daa3455a634af1ce6ffe6db92b9fbdf22c3830548749ee620e",
+      "approvedBeautySHA256": "5bc4c446d36bf6daa3455a634af1ce6ffe6db92b9fbdf22c3830548749ee620e",
+      "integratedInto": "css/case-detail.css",
+      "pass": true
+    },
+    {
+      "source": "css/detail-stage2-cta-v15.css",
+      "sha256": "3b90bf1c7af7e18d5bb7c85871b8f8ce7bc9dcbcb47abe9ea64a44a519bb84e7",
+      "approvedBeautySHA256": "3b90bf1c7af7e18d5bb7c85871b8f8ce7bc9dcbcb47abe9ea64a44a519bb84e7",
+      "integratedInto": "css/case-detail.css",
+      "pass": true
+    },
+    {
+      "source": "css/detail-stage2-process.css",
+      "sha256": "09fdbb19cb0c226737975cedab9335b15da0c661da42c5e65802214baa85048a",
+      "approvedBeautySHA256": "09fdbb19cb0c226737975cedab9335b15da0c661da42c5e65802214baa85048a",
+      "integratedInto": "css/case-detail.css",
+      "pass": true
+    },
+    {
+      "source": "css/detail-stage2-surface-v6.css",
+      "sha256": "ea2b871c50fd7b94ff7791d77e0902a24af973e901db256f85d726681880b319",
+      "approvedBeautySHA256": "ea2b871c50fd7b94ff7791d77e0902a24af973e901db256f85d726681880b319",
+      "integratedInto": "css/case-detail.css",
+      "pass": true
+    },
+    {
+      "source": "css/detail-stage3-parallax-v10.css",
+      "sha256": "925dc6c9bbdf712bf1aa0e41eef55f7f21260d3afa1d05ebc616406012918f84",
+      "approvedBeautySHA256": "925dc6c9bbdf712bf1aa0e41eef55f7f21260d3afa1d05ebc616406012918f84",
+      "integratedInto": "css/case-detail.css",
+      "pass": true
+    },
+    {
+      "source": "css/detail-stage3-results.css",
+      "sha256": "3dd738148954e852ba76807022467b8cd7456e60fe5e00e07af4f1303c16858a",
+      "approvedBeautySHA256": "3dd738148954e852ba76807022467b8cd7456e60fe5e00e07af4f1303c16858a",
+      "integratedInto": "css/case-detail.css",
+      "pass": true
+    },
+    {
+      "source": "css/detail-stage4-refinement-v16.css",
+      "sha256": "f246d9c32ac28ca1ca40fdd3dc8b0e86fb7268bbf3ba30d38001a4f093f49ce8",
+      "approvedBeautySHA256": "f246d9c32ac28ca1ca40fdd3dc8b0e86fb7268bbf3ba30d38001a4f093f49ce8",
+      "integratedInto": "css/case-detail.css",
+      "pass": true
+    },
+    {
+      "source": "css/detail-v19-journey.css",
+      "sha256": "5aec66678574814fa2d7314dd9be88f9e487aa9ec61ec1bfe5ef87a2bc3000f2",
+      "approvedBeautySHA256": "5aec66678574814fa2d7314dd9be88f9e487aa9ec61ec1bfe5ef87a2bc3000f2",
+      "integratedInto": "css/case-detail.css",
+      "pass": true
+    },
+    {
+      "source": "js/detail-stage1.js",
+      "sha256": "294bdff030fd21d136df16ff6badbdc54bd3b96af28ebb14c2fe2a3f96cbb2f0",
+      "approvedBeautySHA256": "294bdff030fd21d136df16ff6badbdc54bd3b96af28ebb14c2fe2a3f96cbb2f0",
+      "integratedInto": "js/case-detail.js",
+      "pass": true
+    },
+    {
+      "source": "js/detail-stage2-process.js",
+      "sha256": "8b4be52ef81f6cef7d82b8400fefd763e495c0849a95c028bf4e5b6bbac2ae0e",
+      "approvedBeautySHA256": "8b4be52ef81f6cef7d82b8400fefd763e495c0849a95c028bf4e5b6bbac2ae0e",
+      "integratedInto": "js/case-detail.js",
+      "pass": true
+    },
+    {
+      "source": "js/detail-stage3-parallax-v10.js",
+      "sha256": "e11184b0e3bd3f7c7138361150510d1fe8832259edd230e900e1f6e0bbab171c",
+      "approvedBeautySHA256": "e11184b0e3bd3f7c7138361150510d1fe8832259edd230e900e1f6e0bbab171c",
+      "integratedInto": "js/case-detail.js",
+      "pass": true
+    },
+    {
+      "source": "js/detail-stage3-results.js",
+      "sha256": "df878cd63ac24450863a2693f237ee896ec1bd8bc06fd73e53fea628c01966fe",
+      "approvedBeautySHA256": "df878cd63ac24450863a2693f237ee896ec1bd8bc06fd73e53fea628c01966fe",
+      "integratedInto": "js/case-detail.js",
+      "pass": true
+    },
+    {
+      "source": "js/detail-stage4-refinement-v16.js",
+      "sha256": "c8da2e6cd26e2ab26a3cf4af07f9e4445f437a3a8cc55b033a0b000ac72d9f48",
+      "approvedBeautySHA256": "c8da2e6cd26e2ab26a3cf4af07f9e4445f437a3a8cc55b033a0b000ac72d9f48",
+      "integratedInto": "js/case-detail.js",
+      "pass": true
+    }
+  ],
+  "metalSources": [
+    {
+      "source": "css/detail-metal.css",
+      "sha256": "97cfa19c034540107bc22e373061fc96cbffbabe58fb1ca94116d351fb563d1f",
+      "integratedInto": "css/case-metal.css"
+    },
+    {
+      "source": "css/detail-metal-result-v2.css",
+      "sha256": "f2ba305bcfa24615cae2fc5054d3280dfb5cc2c24e0ec7c6e5fc585e487c71c1",
+      "integratedInto": "css/case-metal.css"
+    }
+  ],
+  "ownerRefinement": {
+    "date": "2026-10-23",
+    "reference": "SyntheCore_Metal_Calculator_Detail_v4_preview.html",
+    "referenceSHA256": "c3d74222e02e4bfe3bf994e9e3c5eacd7dd58bff40211fcc9bf2b2407e6ae7a2",
+    "request": "Remove the hero shadow and white side extensions; improve composition using v4 as a reference.",
+    "decision": "Keep the approved single complete v5 image and existing stage/motion. Make its wrapper transparent without border/shadow, center the image at its natural aspect ratio, and round the actual image. Do not restore the v4 three-card collage."
+  }
+}
