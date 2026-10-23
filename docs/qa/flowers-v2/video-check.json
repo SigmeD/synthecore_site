@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-23T19:08:22.538Z",
+  "results": [
+    {
+      "file": "scroll-1440.webm",
+      "duration": 21.56,
+      "width": 1440,
+      "height": 1080,
+      "currentTime": 0.613362,
+      "redRange": [
+        33,
+        255
+      ],
+      "pass": true
+    },
+    {
+      "file": "scroll-390.webm",
+      "duration": 25.04,
+      "width": 390,
+      "height": 844,
+      "currentTime": 0.608991,
+      "redRange": [
+        8,
+        255
+      ],
+      "pass": true
+    }
+  ],
+  "pass": true
+}

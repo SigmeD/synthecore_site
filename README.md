@@ -19,6 +19,7 @@
 - Главная: `http://127.0.0.1:4173/`.
 - Каталог: `http://127.0.0.1:4173/raboty/`.
 - Beauty Insight AI: `http://127.0.0.1:4173/raboty/beauty-insight/`.
+- Приложение заказа цветов: `http://127.0.0.1:4173/raboty/flowers/`.
 - Остановка сервера: Ctrl+C в его терминале.
 
 Для другого порта: `.\start-local.ps1 -Port 4176 -NoBrowser`.

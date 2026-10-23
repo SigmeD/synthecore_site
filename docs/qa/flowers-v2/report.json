@@ -1,0 +1,4678 @@
+{
+  "date": "2026-10-23T18:52:11.169Z",
+  "base": "http://127.0.0.1:4176/",
+  "reference": "http://127.0.0.1:4189/",
+  "baseline": "http://127.0.0.1:4190/",
+  "checks": [
+    {
+      "name": "320 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "320 three phones",
+      "pass": true
+    },
+    {
+      "name": "320 four process steps",
+      "pass": true
+    },
+    {
+      "name": "320 four interfaces",
+      "pass": true
+    },
+    {
+      "name": "320 two result devices",
+      "pass": true
+    },
+    {
+      "name": "320 no labels above phones",
+      "pass": true
+    },
+    {
+      "name": "320 prototype result and client attribution",
+      "pass": true
+    },
+    {
+      "name": "320 natural hero image proportions",
+      "pass": true
+    },
+    {
+      "name": "320 reduced phones visible without animation",
+      "pass": true
+    },
+    {
+      "name": "320 reduced native scroll/no parallax",
+      "pass": true
+    },
+    {
+      "name": "320 sticky responsive",
+      "pass": true
+    },
+    {
+      "name": "320 CSS isolated to Flowers",
+      "pass": true
+    },
+    {
+      "name": "320 resource /css/main.css",
+      "pass": true
+    },
+    {
+      "name": "320 resource /css/fonts.css",
+      "pass": true
+    },
+    {
+      "name": "320 resource /assets/vendor/lenis-1.3.26.css",
+      "pass": true
+    },
+    {
+      "name": "320 resource /css/design-tokens.css",
+      "pass": true
+    },
+    {
+      "name": "320 resource /css/raboty-base.css",
+      "pass": true
+    },
+    {
+      "name": "320 resource /css/raboty-surface.css",
+      "pass": true
+    },
+    {
+      "name": "320 resource /css/raboty-cards.css",
+      "pass": true
+    },
+    {
+      "name": "320 resource /css/raboty-type.css",
+      "pass": true
+    },
+    {
+      "name": "320 resource /css/site-footer.css",
+      "pass": true
+    },
+    {
+      "name": "320 resource /css/shared-header-cta.css",
+      "pass": true
+    },
+    {
+      "name": "320 resource /css/case-detail.css",
+      "pass": true
+    },
+    {
+      "name": "320 resource /css/case-flowers.css",
+      "pass": true
+    },
+    {
+      "name": "320 resource /js/raboty-motion.js",
+      "pass": true
+    },
+    {
+      "name": "320 resource /assets/cases/flowers/flowers-home.webp",
+      "pass": true
+    },
+    {
+      "name": "320 resource /assets/cases/flowers/flowers-catalog.webp",
+      "pass": true
+    },
+    {
+      "name": "320 resource /assets/cases/flowers/flowers-profile.webp",
+      "pass": true
+    },
+    {
+      "name": "320 resource /assets/cases/flowers/flowers-search.webp",
+      "pass": true
+    },
+    {
+      "name": "320 resource /assets/cases/shared/dashboard.webp",
+      "pass": true
+    },
+    {
+      "name": "320 resource /assets/cases/shared/design.webp",
+      "pass": true
+    },
+    {
+      "name": "320 resource /assets/cases/shared/analytics.webp",
+      "pass": true
+    },
+    {
+      "name": "320 resource /assets/works/beauty-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "320 resource /assets/works/prostor-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "320 resource /assets/works/metal-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "320 resource /assets/works/b2b-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "320 resource /assets/works/crm-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "320 resource /assets/vendor/gsap-3.12.5.min.js",
+      "pass": true
+    },
+    {
+      "name": "320 resource /assets/vendor/ScrollTrigger-3.12.5.min.js",
+      "pass": true
+    },
+    {
+      "name": "320 resource /assets/vendor/lenis-1.3.26.min.js",
+      "pass": true
+    },
+    {
+      "name": "320 resource /js/site-header.js",
+      "pass": true
+    },
+    {
+      "name": "320 resource /js/raboty-scroll.js",
+      "pass": true
+    },
+    {
+      "name": "320 resource /js/case-detail.js",
+      "pass": true
+    },
+    {
+      "name": "320 resource /js/raboty-effects.js",
+      "pass": true
+    },
+    {
+      "name": "320 resource /js/footer-waves.js",
+      "pass": true
+    },
+    {
+      "name": "320 resource /js/footer-reveal.js",
+      "pass": true
+    },
+    {
+      "name": "320 resource /js/raboty-cards.js",
+      "pass": true
+    },
+    {
+      "name": "320 gallery 0 natural proportions",
+      "pass": true
+    },
+    {
+      "name": "320 lightbox 0 full original",
+      "pass": true
+    },
+    {
+      "name": "320 lightbox 0 traps focus",
+      "pass": true
+    },
+    {
+      "name": "320 lightbox 0 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "320 gallery 1 natural proportions",
+      "pass": true
+    },
+    {
+      "name": "320 lightbox 1 full original",
+      "pass": true
+    },
+    {
+      "name": "320 lightbox 1 traps focus",
+      "pass": true
+    },
+    {
+      "name": "320 lightbox 1 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "320 gallery 2 natural proportions",
+      "pass": true
+    },
+    {
+      "name": "320 lightbox 2 full original",
+      "pass": true
+    },
+    {
+      "name": "320 lightbox 2 traps focus",
+      "pass": true
+    },
+    {
+      "name": "320 lightbox 2 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "320 gallery 3 natural proportions",
+      "pass": true
+    },
+    {
+      "name": "320 lightbox 3 full original",
+      "pass": true
+    },
+    {
+      "name": "320 lightbox 3 traps focus",
+      "pass": true
+    },
+    {
+      "name": "320 lightbox 3 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "320 five related/current excluded",
+      "pass": true
+    },
+    {
+      "name": "320 Beauty route",
+      "pass": true
+    },
+    {
+      "name": "320 related b2b fallback modal",
+      "pass": true
+    },
+    {
+      "name": "320 related crm fallback modal",
+      "pass": true
+    },
+    {
+      "name": "320 related prostor fallback modal",
+      "pass": true
+    },
+    {
+      "name": "320 related metal fallback modal",
+      "pass": true
+    },
+    {
+      "name": "320 stationary arrow hover",
+      "pass": true
+    },
+    {
+      "name": "320 carousel advances",
+      "pass": true
+    },
+    {
+      "name": "320 CTA mail link/no glow .sc-case-process__cta-button",
+      "pass": true
+    },
+    {
+      "name": "320 CTA mail link/no glow .sc-footer__cta",
+      "pass": true
+    },
+    {
+      "name": "320 v2 geometry h1",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 272,
+          "height": 77,
+          "font": "35px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "38.5px",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 272,
+          "height": 77,
+          "font": "35px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "38.5px",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "320 v2 geometry .flowers-hero",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 272,
+          "height": 460,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "19px"
+        },
+        "reference": {
+          "width": 272,
+          "height": 460,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "19px"
+        }
+      }
+    },
+    {
+      "name": "320 v2 geometry .flowers-hero__phones",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 272,
+          "height": 460,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 272,
+          "height": 460,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "320 v2 geometry .flowers-hero__phone--catalog",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 208,
+          "height": 415,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "30px"
+        },
+        "reference": {
+          "width": 208,
+          "height": 415,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "30px"
+        }
+      }
+    },
+    {
+      "name": "320 v2 geometry .sc-case-process__number-circle",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 32,
+          "height": 32,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "50%"
+        },
+        "reference": {
+          "width": 32,
+          "height": 32,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "50%"
+        }
+      }
+    },
+    {
+      "name": "320 v2 geometry .flowers-result",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 292,
+          "height": 379,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        "reference": {
+          "width": 292,
+          "height": 379,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        }
+      }
+    },
+    {
+      "name": "320 v2 geometry .sc-case-screens__grid",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 292,
+          "height": 1816,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 292,
+          "height": 1816,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "320 v2 geometry .sc-case-screens__open",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 292,
+          "height": 400,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        },
+        "reference": {
+          "width": 292,
+          "height": 400,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        }
+      }
+    },
+    {
+      "name": "320 v2 geometry .sc-case-process__cta",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 292,
+          "height": 410.671875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "20px"
+        },
+        "reference": {
+          "width": 292,
+          "height": 410.671875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "20px"
+        }
+      }
+    },
+    {
+      "name": "320 v2 geometry .sc-case-process__cta-button",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 252,
+          "height": 52,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "100px"
+        },
+        "reference": {
+          "width": 252,
+          "height": 52,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "100px"
+        }
+      }
+    },
+    {
+      "name": "320 native phones swipe",
+      "pass": true,
+      "data": {
+        "before": 0,
+        "after": 208,
+        "y": 484
+      }
+    },
+    {
+      "name": "320 phone 0 reachable without horizontal clipping",
+      "pass": true
+    },
+    {
+      "name": "320 phone 1 reachable without horizontal clipping",
+      "pass": true
+    },
+    {
+      "name": "320 phone 2 reachable without horizontal clipping",
+      "pass": true
+    },
+    {
+      "name": "320 catalog primary navigation",
+      "pass": true
+    },
+    {
+      "name": "320 mobile menu opens",
+      "pass": true
+    },
+    {
+      "name": "320 return to catalog",
+      "pass": true
+    },
+    {
+      "name": "320 regression /#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "320 regression /.sc-work-frame",
+      "pass": true
+    },
+    {
+      "name": "320 regression /.sc-work-content",
+      "pass": true
+    },
+    {
+      "name": "320 regression /#contact",
+      "pass": true
+    },
+    {
+      "name": "320 regression /raboty/#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "320 regression /raboty/.case-card--beauty",
+      "pass": true
+    },
+    {
+      "name": "320 regression /raboty/.case-card--flowers",
+      "pass": true
+    },
+    {
+      "name": "320 regression /raboty/#contact",
+      "pass": true
+    },
+    {
+      "name": "320 regression /raboty/beauty-insight/#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "320 regression /raboty/beauty-insight/h1",
+      "pass": true
+    },
+    {
+      "name": "320 regression /raboty/beauty-insight/.case-hero__media",
+      "pass": true
+    },
+    {
+      "name": "320 regression /raboty/beauty-insight/.sc-case-process__cta",
+      "pass": true
+    },
+    {
+      "name": "320 regression /raboty/beauty-insight/#contact",
+      "pass": true
+    },
+    {
+      "name": "390 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "390 three phones",
+      "pass": true
+    },
+    {
+      "name": "390 four process steps",
+      "pass": true
+    },
+    {
+      "name": "390 four interfaces",
+      "pass": true
+    },
+    {
+      "name": "390 two result devices",
+      "pass": true
+    },
+    {
+      "name": "390 no labels above phones",
+      "pass": true
+    },
+    {
+      "name": "390 prototype result and client attribution",
+      "pass": true
+    },
+    {
+      "name": "390 natural hero image proportions",
+      "pass": true
+    },
+    {
+      "name": "390 reduced phones visible without animation",
+      "pass": true
+    },
+    {
+      "name": "390 reduced native scroll/no parallax",
+      "pass": true
+    },
+    {
+      "name": "390 sticky responsive",
+      "pass": true
+    },
+    {
+      "name": "390 CSS isolated to Flowers",
+      "pass": true
+    },
+    {
+      "name": "390 resource /css/main.css",
+      "pass": true
+    },
+    {
+      "name": "390 resource /css/fonts.css",
+      "pass": true
+    },
+    {
+      "name": "390 resource /assets/vendor/lenis-1.3.26.css",
+      "pass": true
+    },
+    {
+      "name": "390 resource /css/design-tokens.css",
+      "pass": true
+    },
+    {
+      "name": "390 resource /css/raboty-base.css",
+      "pass": true
+    },
+    {
+      "name": "390 resource /css/raboty-surface.css",
+      "pass": true
+    },
+    {
+      "name": "390 resource /css/raboty-cards.css",
+      "pass": true
+    },
+    {
+      "name": "390 resource /css/raboty-type.css",
+      "pass": true
+    },
+    {
+      "name": "390 resource /css/site-footer.css",
+      "pass": true
+    },
+    {
+      "name": "390 resource /css/shared-header-cta.css",
+      "pass": true
+    },
+    {
+      "name": "390 resource /css/case-detail.css",
+      "pass": true
+    },
+    {
+      "name": "390 resource /css/case-flowers.css",
+      "pass": true
+    },
+    {
+      "name": "390 resource /js/raboty-motion.js",
+      "pass": true
+    },
+    {
+      "name": "390 resource /assets/cases/flowers/flowers-home.webp",
+      "pass": true
+    },
+    {
+      "name": "390 resource /assets/cases/flowers/flowers-catalog.webp",
+      "pass": true
+    },
+    {
+      "name": "390 resource /assets/cases/flowers/flowers-profile.webp",
+      "pass": true
+    },
+    {
+      "name": "390 resource /assets/cases/flowers/flowers-search.webp",
+      "pass": true
+    },
+    {
+      "name": "390 resource /assets/cases/shared/dashboard.webp",
+      "pass": true
+    },
+    {
+      "name": "390 resource /assets/cases/shared/design.webp",
+      "pass": true
+    },
+    {
+      "name": "390 resource /assets/cases/shared/analytics.webp",
+      "pass": true
+    },
+    {
+      "name": "390 resource /assets/works/beauty-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "390 resource /assets/works/prostor-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "390 resource /assets/works/metal-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "390 resource /assets/works/b2b-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "390 resource /assets/works/crm-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "390 resource /assets/vendor/gsap-3.12.5.min.js",
+      "pass": true
+    },
+    {
+      "name": "390 resource /assets/vendor/ScrollTrigger-3.12.5.min.js",
+      "pass": true
+    },
+    {
+      "name": "390 resource /assets/vendor/lenis-1.3.26.min.js",
+      "pass": true
+    },
+    {
+      "name": "390 resource /js/site-header.js",
+      "pass": true
+    },
+    {
+      "name": "390 resource /js/raboty-scroll.js",
+      "pass": true
+    },
+    {
+      "name": "390 resource /js/case-detail.js",
+      "pass": true
+    },
+    {
+      "name": "390 resource /js/raboty-effects.js",
+      "pass": true
+    },
+    {
+      "name": "390 resource /js/footer-waves.js",
+      "pass": true
+    },
+    {
+      "name": "390 resource /js/footer-reveal.js",
+      "pass": true
+    },
+    {
+      "name": "390 resource /js/raboty-cards.js",
+      "pass": true
+    },
+    {
+      "name": "390 gallery 0 natural proportions",
+      "pass": true
+    },
+    {
+      "name": "390 lightbox 0 full original",
+      "pass": true
+    },
+    {
+      "name": "390 lightbox 0 traps focus",
+      "pass": true
+    },
+    {
+      "name": "390 lightbox 0 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "390 gallery 1 natural proportions",
+      "pass": true
+    },
+    {
+      "name": "390 lightbox 1 full original",
+      "pass": true
+    },
+    {
+      "name": "390 lightbox 1 traps focus",
+      "pass": true
+    },
+    {
+      "name": "390 lightbox 1 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "390 gallery 2 natural proportions",
+      "pass": true
+    },
+    {
+      "name": "390 lightbox 2 full original",
+      "pass": true
+    },
+    {
+      "name": "390 lightbox 2 traps focus",
+      "pass": true
+    },
+    {
+      "name": "390 lightbox 2 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "390 gallery 3 natural proportions",
+      "pass": true
+    },
+    {
+      "name": "390 lightbox 3 full original",
+      "pass": true
+    },
+    {
+      "name": "390 lightbox 3 traps focus",
+      "pass": true
+    },
+    {
+      "name": "390 lightbox 3 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "390 five related/current excluded",
+      "pass": true
+    },
+    {
+      "name": "390 Beauty route",
+      "pass": true
+    },
+    {
+      "name": "390 related b2b fallback modal",
+      "pass": true
+    },
+    {
+      "name": "390 related crm fallback modal",
+      "pass": true
+    },
+    {
+      "name": "390 related prostor fallback modal",
+      "pass": true
+    },
+    {
+      "name": "390 related metal fallback modal",
+      "pass": true
+    },
+    {
+      "name": "390 stationary arrow hover",
+      "pass": true
+    },
+    {
+      "name": "390 carousel advances",
+      "pass": true
+    },
+    {
+      "name": "390 CTA mail link/no glow .sc-case-process__cta-button",
+      "pass": true
+    },
+    {
+      "name": "390 CTA mail link/no glow .sc-footer__cta",
+      "pass": true
+    },
+    {
+      "name": "390 v2 geometry h1",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 342,
+          "height": 77.1875,
+          "font": "35.1px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "38.61px",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 342,
+          "height": 77.1875,
+          "font": "35.1px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "38.61px",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "390 v2 geometry .flowers-hero",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 342,
+          "height": 460,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "19px"
+        },
+        "reference": {
+          "width": 342,
+          "height": 460,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "19px"
+        }
+      }
+    },
+    {
+      "name": "390 v2 geometry .flowers-hero__phones",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 342,
+          "height": 460,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 342,
+          "height": 460,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "390 v2 geometry .flowers-hero__phone--catalog",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 208,
+          "height": 415,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "30px"
+        },
+        "reference": {
+          "width": 208,
+          "height": 415,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "30px"
+        }
+      }
+    },
+    {
+      "name": "390 v2 geometry .sc-case-process__number-circle",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 32,
+          "height": 32,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "50%"
+        },
+        "reference": {
+          "width": 32,
+          "height": 32,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "50%"
+        }
+      }
+    },
+    {
+      "name": "390 v2 geometry .flowers-result",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 362,
+          "height": 379,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        "reference": {
+          "width": 362,
+          "height": 379,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        }
+      }
+    },
+    {
+      "name": "390 v2 geometry .sc-case-screens__grid",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 362,
+          "height": 1816,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 362,
+          "height": 1816,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "390 v2 geometry .sc-case-screens__open",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 362,
+          "height": 400,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        },
+        "reference": {
+          "width": 362,
+          "height": 400,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        }
+      }
+    },
+    {
+      "name": "390 v2 geometry .sc-case-process__cta",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 362,
+          "height": 410,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "20px"
+        },
+        "reference": {
+          "width": 362,
+          "height": 410,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "20px"
+        }
+      }
+    },
+    {
+      "name": "390 v2 geometry .sc-case-process__cta-button",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 316,
+          "height": 52,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "100px"
+        },
+        "reference": {
+          "width": 316,
+          "height": 52,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "100px"
+        }
+      }
+    },
+    {
+      "name": "390 native phones swipe",
+      "pass": true,
+      "data": {
+        "before": 0,
+        "after": 346,
+        "y": 484
+      }
+    },
+    {
+      "name": "390 phone 0 reachable without horizontal clipping",
+      "pass": true
+    },
+    {
+      "name": "390 phone 1 reachable without horizontal clipping",
+      "pass": true
+    },
+    {
+      "name": "390 phone 2 reachable without horizontal clipping",
+      "pass": true
+    },
+    {
+      "name": "390 catalog primary navigation",
+      "pass": true
+    },
+    {
+      "name": "390 mobile menu opens",
+      "pass": true
+    },
+    {
+      "name": "390 return to catalog",
+      "pass": true
+    },
+    {
+      "name": "390 regression /#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "390 regression /.sc-work-frame",
+      "pass": true
+    },
+    {
+      "name": "390 regression /.sc-work-content",
+      "pass": true
+    },
+    {
+      "name": "390 regression /#contact",
+      "pass": true
+    },
+    {
+      "name": "390 regression /raboty/#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "390 regression /raboty/.case-card--beauty",
+      "pass": true
+    },
+    {
+      "name": "390 regression /raboty/.case-card--flowers",
+      "pass": true
+    },
+    {
+      "name": "390 regression /raboty/#contact",
+      "pass": true
+    },
+    {
+      "name": "390 regression /raboty/beauty-insight/#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "390 regression /raboty/beauty-insight/h1",
+      "pass": true
+    },
+    {
+      "name": "390 regression /raboty/beauty-insight/.case-hero__media",
+      "pass": true
+    },
+    {
+      "name": "390 regression /raboty/beauty-insight/.sc-case-process__cta",
+      "pass": true
+    },
+    {
+      "name": "390 regression /raboty/beauty-insight/#contact",
+      "pass": true
+    },
+    {
+      "name": "768 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "768 three phones",
+      "pass": true
+    },
+    {
+      "name": "768 four process steps",
+      "pass": true
+    },
+    {
+      "name": "768 four interfaces",
+      "pass": true
+    },
+    {
+      "name": "768 two result devices",
+      "pass": true
+    },
+    {
+      "name": "768 no labels above phones",
+      "pass": true
+    },
+    {
+      "name": "768 prototype result and client attribution",
+      "pass": true
+    },
+    {
+      "name": "768 natural hero image proportions",
+      "pass": true
+    },
+    {
+      "name": "768 reduced phones visible without animation",
+      "pass": true
+    },
+    {
+      "name": "768 reduced native scroll/no parallax",
+      "pass": true
+    },
+    {
+      "name": "768 sticky responsive",
+      "pass": true
+    },
+    {
+      "name": "768 CSS isolated to Flowers",
+      "pass": true
+    },
+    {
+      "name": "768 resource /css/main.css",
+      "pass": true
+    },
+    {
+      "name": "768 resource /css/fonts.css",
+      "pass": true
+    },
+    {
+      "name": "768 resource /assets/vendor/lenis-1.3.26.css",
+      "pass": true
+    },
+    {
+      "name": "768 resource /css/design-tokens.css",
+      "pass": true
+    },
+    {
+      "name": "768 resource /css/raboty-base.css",
+      "pass": true
+    },
+    {
+      "name": "768 resource /css/raboty-surface.css",
+      "pass": true
+    },
+    {
+      "name": "768 resource /css/raboty-cards.css",
+      "pass": true
+    },
+    {
+      "name": "768 resource /css/raboty-type.css",
+      "pass": true
+    },
+    {
+      "name": "768 resource /css/site-footer.css",
+      "pass": true
+    },
+    {
+      "name": "768 resource /css/shared-header-cta.css",
+      "pass": true
+    },
+    {
+      "name": "768 resource /css/case-detail.css",
+      "pass": true
+    },
+    {
+      "name": "768 resource /css/case-flowers.css",
+      "pass": true
+    },
+    {
+      "name": "768 resource /js/raboty-motion.js",
+      "pass": true
+    },
+    {
+      "name": "768 resource /assets/cases/flowers/flowers-home.webp",
+      "pass": true
+    },
+    {
+      "name": "768 resource /assets/cases/flowers/flowers-catalog.webp",
+      "pass": true
+    },
+    {
+      "name": "768 resource /assets/cases/flowers/flowers-profile.webp",
+      "pass": true
+    },
+    {
+      "name": "768 resource /assets/cases/flowers/flowers-search.webp",
+      "pass": true
+    },
+    {
+      "name": "768 resource /assets/cases/shared/dashboard.webp",
+      "pass": true
+    },
+    {
+      "name": "768 resource /assets/cases/shared/design.webp",
+      "pass": true
+    },
+    {
+      "name": "768 resource /assets/cases/shared/analytics.webp",
+      "pass": true
+    },
+    {
+      "name": "768 resource /assets/works/beauty-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "768 resource /assets/works/prostor-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "768 resource /assets/works/metal-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "768 resource /assets/works/b2b-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "768 resource /assets/works/crm-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "768 resource /assets/vendor/gsap-3.12.5.min.js",
+      "pass": true
+    },
+    {
+      "name": "768 resource /assets/vendor/ScrollTrigger-3.12.5.min.js",
+      "pass": true
+    },
+    {
+      "name": "768 resource /assets/vendor/lenis-1.3.26.min.js",
+      "pass": true
+    },
+    {
+      "name": "768 resource /js/site-header.js",
+      "pass": true
+    },
+    {
+      "name": "768 resource /js/raboty-scroll.js",
+      "pass": true
+    },
+    {
+      "name": "768 resource /js/case-detail.js",
+      "pass": true
+    },
+    {
+      "name": "768 resource /js/raboty-effects.js",
+      "pass": true
+    },
+    {
+      "name": "768 resource /js/footer-waves.js",
+      "pass": true
+    },
+    {
+      "name": "768 resource /js/footer-reveal.js",
+      "pass": true
+    },
+    {
+      "name": "768 resource /js/raboty-cards.js",
+      "pass": true
+    },
+    {
+      "name": "768 gallery 0 natural proportions",
+      "pass": true
+    },
+    {
+      "name": "768 lightbox 0 full original",
+      "pass": true
+    },
+    {
+      "name": "768 lightbox 0 traps focus",
+      "pass": true
+    },
+    {
+      "name": "768 lightbox 0 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "768 gallery 1 natural proportions",
+      "pass": true
+    },
+    {
+      "name": "768 lightbox 1 full original",
+      "pass": true
+    },
+    {
+      "name": "768 lightbox 1 traps focus",
+      "pass": true
+    },
+    {
+      "name": "768 lightbox 1 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "768 gallery 2 natural proportions",
+      "pass": true
+    },
+    {
+      "name": "768 lightbox 2 full original",
+      "pass": true
+    },
+    {
+      "name": "768 lightbox 2 traps focus",
+      "pass": true
+    },
+    {
+      "name": "768 lightbox 2 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "768 gallery 3 natural proportions",
+      "pass": true
+    },
+    {
+      "name": "768 lightbox 3 full original",
+      "pass": true
+    },
+    {
+      "name": "768 lightbox 3 traps focus",
+      "pass": true
+    },
+    {
+      "name": "768 lightbox 3 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "768 five related/current excluded",
+      "pass": true
+    },
+    {
+      "name": "768 Beauty route",
+      "pass": true
+    },
+    {
+      "name": "768 related b2b fallback modal",
+      "pass": true
+    },
+    {
+      "name": "768 related crm fallback modal",
+      "pass": true
+    },
+    {
+      "name": "768 related prostor fallback modal",
+      "pass": true
+    },
+    {
+      "name": "768 related metal fallback modal",
+      "pass": true
+    },
+    {
+      "name": "768 stationary arrow hover",
+      "pass": true
+    },
+    {
+      "name": "768 carousel advances",
+      "pass": true
+    },
+    {
+      "name": "768 CTA mail link/no glow .sc-case-process__cta-button",
+      "pass": true
+    },
+    {
+      "name": "768 CTA mail link/no glow .sc-footer__cta",
+      "pass": true
+    },
+    {
+      "name": "768 v2 geometry h1",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 704,
+          "height": 41.796875,
+          "font": "38px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "41.8px",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 704,
+          "height": 83.59375,
+          "font": "38px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "41.8px",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "768 v2 geometry .flowers-hero",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 704,
+          "height": 495,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        "reference": {
+          "width": 704,
+          "height": 495,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        }
+      }
+    },
+    {
+      "name": "768 v2 geometry .flowers-hero__phones",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 704,
+          "height": 495,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 704,
+          "height": 495,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "768 v2 geometry .flowers-hero__phone--catalog",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 235,
+          "height": 500,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "36px"
+        },
+        "reference": {
+          "width": 235,
+          "height": 500,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "36px"
+        }
+      }
+    },
+    {
+      "name": "768 v2 geometry .sc-case-process__number-circle",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 32,
+          "height": 32,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "50%"
+        },
+        "reference": {
+          "width": 32,
+          "height": 32,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "50%"
+        }
+      }
+    },
+    {
+      "name": "768 v2 geometry .flowers-result",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 728,
+          "height": 513,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        "reference": {
+          "width": 728,
+          "height": 513,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        }
+      }
+    },
+    {
+      "name": "768 v2 geometry .sc-case-screens__grid",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 728,
+          "height": 758,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 728,
+          "height": 758,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "768 v2 geometry .sc-case-screens__open",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 355,
+          "height": 330,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        },
+        "reference": {
+          "width": 355,
+          "height": 330,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        }
+      }
+    },
+    {
+      "name": "768 v2 geometry .sc-case-process__cta",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 410,
+          "height": 393,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "20px"
+        },
+        "reference": {
+          "width": 410,
+          "height": 393,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "20px"
+        }
+      }
+    },
+    {
+      "name": "768 v2 geometry .sc-case-process__cta-button",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 372,
+          "height": 52,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "100px"
+        },
+        "reference": {
+          "width": 372,
+          "height": 52,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "100px"
+        }
+      }
+    },
+    {
+      "name": "768 catalog primary navigation",
+      "pass": true
+    },
+    {
+      "name": "768 mobile menu opens",
+      "pass": true
+    },
+    {
+      "name": "768 return to catalog",
+      "pass": true
+    },
+    {
+      "name": "768 regression /#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "768 regression /.sc-work-frame",
+      "pass": true
+    },
+    {
+      "name": "768 regression /.sc-work-content",
+      "pass": true
+    },
+    {
+      "name": "768 regression /#contact",
+      "pass": true
+    },
+    {
+      "name": "768 regression /raboty/#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "768 regression /raboty/.case-card--beauty",
+      "pass": true
+    },
+    {
+      "name": "768 regression /raboty/.case-card--flowers",
+      "pass": true
+    },
+    {
+      "name": "768 regression /raboty/#contact",
+      "pass": true
+    },
+    {
+      "name": "768 regression /raboty/beauty-insight/#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "768 regression /raboty/beauty-insight/h1",
+      "pass": true
+    },
+    {
+      "name": "768 regression /raboty/beauty-insight/.case-hero__media",
+      "pass": true
+    },
+    {
+      "name": "768 regression /raboty/beauty-insight/.sc-case-process__cta",
+      "pass": true
+    },
+    {
+      "name": "768 regression /raboty/beauty-insight/#contact",
+      "pass": true
+    },
+    {
+      "name": "1440 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "1440 three phones",
+      "pass": true
+    },
+    {
+      "name": "1440 four process steps",
+      "pass": true
+    },
+    {
+      "name": "1440 four interfaces",
+      "pass": true
+    },
+    {
+      "name": "1440 two result devices",
+      "pass": true
+    },
+    {
+      "name": "1440 no labels above phones",
+      "pass": true
+    },
+    {
+      "name": "1440 prototype result and client attribution",
+      "pass": true
+    },
+    {
+      "name": "1440 natural hero image proportions",
+      "pass": true
+    },
+    {
+      "name": "1440 reduced phones visible without animation",
+      "pass": true
+    },
+    {
+      "name": "1440 reduced native scroll/no parallax",
+      "pass": true
+    },
+    {
+      "name": "1440 sticky responsive",
+      "pass": true
+    },
+    {
+      "name": "1440 CSS isolated to Flowers",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /css/main.css",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /css/fonts.css",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /assets/vendor/lenis-1.3.26.css",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /css/design-tokens.css",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /css/raboty-base.css",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /css/raboty-surface.css",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /css/raboty-cards.css",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /css/raboty-type.css",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /css/site-footer.css",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /css/shared-header-cta.css",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /css/case-detail.css",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /css/case-flowers.css",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /js/raboty-motion.js",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /assets/cases/flowers/flowers-home.webp",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /assets/cases/flowers/flowers-catalog.webp",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /assets/cases/flowers/flowers-profile.webp",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /assets/cases/flowers/flowers-search.webp",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /assets/cases/shared/dashboard.webp",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /assets/cases/shared/design.webp",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /assets/cases/shared/analytics.webp",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /assets/works/beauty-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /assets/works/prostor-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /assets/works/metal-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /assets/works/b2b-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /assets/works/crm-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /assets/vendor/gsap-3.12.5.min.js",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /assets/vendor/ScrollTrigger-3.12.5.min.js",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /assets/vendor/lenis-1.3.26.min.js",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /js/site-header.js",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /js/raboty-scroll.js",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /js/case-detail.js",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /js/raboty-effects.js",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /js/footer-waves.js",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /js/footer-reveal.js",
+      "pass": true
+    },
+    {
+      "name": "1440 resource /js/raboty-cards.js",
+      "pass": true
+    },
+    {
+      "name": "1440 gallery 0 natural proportions",
+      "pass": true
+    },
+    {
+      "name": "1440 lightbox 0 full original",
+      "pass": true
+    },
+    {
+      "name": "1440 lightbox 0 traps focus",
+      "pass": true
+    },
+    {
+      "name": "1440 lightbox 0 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "1440 gallery 1 natural proportions",
+      "pass": true
+    },
+    {
+      "name": "1440 lightbox 1 full original",
+      "pass": true
+    },
+    {
+      "name": "1440 lightbox 1 traps focus",
+      "pass": true
+    },
+    {
+      "name": "1440 lightbox 1 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "1440 gallery 2 natural proportions",
+      "pass": true
+    },
+    {
+      "name": "1440 lightbox 2 full original",
+      "pass": true
+    },
+    {
+      "name": "1440 lightbox 2 traps focus",
+      "pass": true
+    },
+    {
+      "name": "1440 lightbox 2 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "1440 gallery 3 natural proportions",
+      "pass": true
+    },
+    {
+      "name": "1440 lightbox 3 full original",
+      "pass": true
+    },
+    {
+      "name": "1440 lightbox 3 traps focus",
+      "pass": true
+    },
+    {
+      "name": "1440 lightbox 3 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "1440 five related/current excluded",
+      "pass": true
+    },
+    {
+      "name": "1440 Beauty route",
+      "pass": true
+    },
+    {
+      "name": "1440 related b2b fallback modal",
+      "pass": true
+    },
+    {
+      "name": "1440 related crm fallback modal",
+      "pass": true
+    },
+    {
+      "name": "1440 related prostor fallback modal",
+      "pass": true
+    },
+    {
+      "name": "1440 related metal fallback modal",
+      "pass": true
+    },
+    {
+      "name": "1440 stationary arrow hover",
+      "pass": true
+    },
+    {
+      "name": "1440 carousel advances",
+      "pass": true
+    },
+    {
+      "name": "1440 CTA mail link/no glow .sc-case-process__cta-button",
+      "pass": true
+    },
+    {
+      "name": "1440 CTA mail link/no glow .sc-footer__cta",
+      "pass": true
+    },
+    {
+      "name": "1440 v2 geometry h1",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 759.59375,
+          "height": 154,
+          "font": "69.9984px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "76.9982px",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 759.59375,
+          "height": 154,
+          "font": "69.9984px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "76.9982px",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "1440 v2 geometry .flowers-hero",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 1268,
+          "height": 630,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        "reference": {
+          "width": 1268,
+          "height": 630,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        }
+      }
+    },
+    {
+      "name": "1440 v2 geometry .flowers-hero__phones",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 1268,
+          "height": 630,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 1268,
+          "height": 630,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "1440 v2 geometry .flowers-hero__phone--catalog",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 285,
+          "height": 585,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "36px"
+        },
+        "reference": {
+          "width": 285,
+          "height": 585,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "36px"
+        }
+      }
+    },
+    {
+      "name": "1440 v2 geometry .sc-case-process__number-circle",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 32,
+          "height": 32,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "50%"
+        },
+        "reference": {
+          "width": 32,
+          "height": 32,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "50%"
+        }
+      }
+    },
+    {
+      "name": "1440 v2 geometry .flowers-result",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 868.8125,
+          "height": 513,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        "reference": {
+          "width": 868.8125,
+          "height": 513,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        }
+      }
+    },
+    {
+      "name": "1440 v2 geometry .sc-case-screens__grid",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 868.8125,
+          "height": 1070,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 868.8125,
+          "height": 1070,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "1440 v2 geometry .sc-case-screens__open",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 425.40625,
+          "height": 480,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        },
+        "reference": {
+          "width": 425.40625,
+          "height": 480,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        }
+      }
+    },
+    {
+      "name": "1440 v2 geometry .sc-case-process__cta",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 320,
+          "height": 407,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "sticky",
+          "top": "210px",
+          "fit": "fill",
+          "radius": "20px"
+        },
+        "reference": {
+          "width": 320,
+          "height": 407,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "sticky",
+          "top": "210px",
+          "fit": "fill",
+          "radius": "20px"
+        }
+      }
+    },
+    {
+      "name": "1440 v2 geometry .sc-case-process__cta-button",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 278,
+          "height": 52,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "100px"
+        },
+        "reference": {
+          "width": 278,
+          "height": 52,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "100px"
+        }
+      }
+    },
+    {
+      "name": "1440 catalog primary navigation",
+      "pass": true
+    },
+    {
+      "name": "1440 return to catalog",
+      "pass": true
+    },
+    {
+      "name": "1440 regression /#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "1440 regression /.sc-work-frame",
+      "pass": true
+    },
+    {
+      "name": "1440 regression /.sc-work-content",
+      "pass": true
+    },
+    {
+      "name": "1440 regression /#contact",
+      "pass": true
+    },
+    {
+      "name": "1440 regression /raboty/#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "1440 regression /raboty/.case-card--beauty",
+      "pass": true
+    },
+    {
+      "name": "1440 regression /raboty/.case-card--flowers",
+      "pass": true
+    },
+    {
+      "name": "1440 regression /raboty/#contact",
+      "pass": true
+    },
+    {
+      "name": "1440 regression /raboty/beauty-insight/#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "1440 regression /raboty/beauty-insight/h1",
+      "pass": true
+    },
+    {
+      "name": "1440 regression /raboty/beauty-insight/.case-hero__media",
+      "pass": true
+    },
+    {
+      "name": "1440 regression /raboty/beauty-insight/.sc-case-process__cta",
+      "pass": true
+    },
+    {
+      "name": "1440 regression /raboty/beauty-insight/#contact",
+      "pass": true
+    },
+    {
+      "name": "1920 no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "1920 three phones",
+      "pass": true
+    },
+    {
+      "name": "1920 four process steps",
+      "pass": true
+    },
+    {
+      "name": "1920 four interfaces",
+      "pass": true
+    },
+    {
+      "name": "1920 two result devices",
+      "pass": true
+    },
+    {
+      "name": "1920 no labels above phones",
+      "pass": true
+    },
+    {
+      "name": "1920 prototype result and client attribution",
+      "pass": true
+    },
+    {
+      "name": "1920 natural hero image proportions",
+      "pass": true
+    },
+    {
+      "name": "1920 reduced phones visible without animation",
+      "pass": true
+    },
+    {
+      "name": "1920 reduced native scroll/no parallax",
+      "pass": true
+    },
+    {
+      "name": "1920 sticky responsive",
+      "pass": true
+    },
+    {
+      "name": "1920 CSS isolated to Flowers",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /css/main.css",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /css/fonts.css",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /assets/vendor/lenis-1.3.26.css",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /css/design-tokens.css",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /css/raboty-base.css",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /css/raboty-surface.css",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /css/raboty-cards.css",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /css/raboty-type.css",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /css/site-footer.css",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /css/shared-header-cta.css",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /css/case-detail.css",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /css/case-flowers.css",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /js/raboty-motion.js",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /assets/cases/flowers/flowers-home.webp",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /assets/cases/flowers/flowers-catalog.webp",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /assets/cases/flowers/flowers-profile.webp",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /assets/cases/flowers/flowers-search.webp",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /assets/cases/shared/dashboard.webp",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /assets/cases/shared/design.webp",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /assets/cases/shared/analytics.webp",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /assets/works/beauty-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /assets/works/prostor-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /assets/works/metal-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /assets/works/b2b-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /assets/works/crm-feature-wide.png",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /assets/vendor/gsap-3.12.5.min.js",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /assets/vendor/ScrollTrigger-3.12.5.min.js",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /assets/vendor/lenis-1.3.26.min.js",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /js/site-header.js",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /js/raboty-scroll.js",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /js/case-detail.js",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /js/raboty-effects.js",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /js/footer-waves.js",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /js/footer-reveal.js",
+      "pass": true
+    },
+    {
+      "name": "1920 resource /js/raboty-cards.js",
+      "pass": true
+    },
+    {
+      "name": "1920 gallery 0 natural proportions",
+      "pass": true
+    },
+    {
+      "name": "1920 lightbox 0 full original",
+      "pass": true
+    },
+    {
+      "name": "1920 lightbox 0 traps focus",
+      "pass": true
+    },
+    {
+      "name": "1920 lightbox 0 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "1920 gallery 1 natural proportions",
+      "pass": true
+    },
+    {
+      "name": "1920 lightbox 1 full original",
+      "pass": true
+    },
+    {
+      "name": "1920 lightbox 1 traps focus",
+      "pass": true
+    },
+    {
+      "name": "1920 lightbox 1 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "1920 gallery 2 natural proportions",
+      "pass": true
+    },
+    {
+      "name": "1920 lightbox 2 full original",
+      "pass": true
+    },
+    {
+      "name": "1920 lightbox 2 traps focus",
+      "pass": true
+    },
+    {
+      "name": "1920 lightbox 2 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "1920 gallery 3 natural proportions",
+      "pass": true
+    },
+    {
+      "name": "1920 lightbox 3 full original",
+      "pass": true
+    },
+    {
+      "name": "1920 lightbox 3 traps focus",
+      "pass": true
+    },
+    {
+      "name": "1920 lightbox 3 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "1920 five related/current excluded",
+      "pass": true
+    },
+    {
+      "name": "1920 Beauty route",
+      "pass": true
+    },
+    {
+      "name": "1920 related b2b fallback modal",
+      "pass": true
+    },
+    {
+      "name": "1920 related crm fallback modal",
+      "pass": true
+    },
+    {
+      "name": "1920 related prostor fallback modal",
+      "pass": true
+    },
+    {
+      "name": "1920 related metal fallback modal",
+      "pass": true
+    },
+    {
+      "name": "1920 stationary arrow hover",
+      "pass": true
+    },
+    {
+      "name": "1920 carousel advances",
+      "pass": true
+    },
+    {
+      "name": "1920 CTA mail link/no glow .sc-case-process__cta-button",
+      "pass": true
+    },
+    {
+      "name": "1920 CTA mail link/no glow .sc-footer__cta",
+      "pass": true
+    },
+    {
+      "name": "1920 v2 geometry h1",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 756,
+          "height": 154,
+          "font": "70px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "77px",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 756,
+          "height": 154,
+          "font": "70px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "77px",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "1920 v2 geometry .flowers-hero",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 1268,
+          "height": 630,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        "reference": {
+          "width": 1268,
+          "height": 630,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        }
+      }
+    },
+    {
+      "name": "1920 v2 geometry .flowers-hero__phones",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 1268,
+          "height": 630,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 1268,
+          "height": 630,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "1920 v2 geometry .flowers-hero__phone--catalog",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 285,
+          "height": 585,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "36px"
+        },
+        "reference": {
+          "width": 285,
+          "height": 585,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "36px"
+        }
+      }
+    },
+    {
+      "name": "1920 v2 geometry .sc-case-process__number-circle",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 32,
+          "height": 32,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "50%"
+        },
+        "reference": {
+          "width": 32,
+          "height": 32,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "50%"
+        }
+      }
+    },
+    {
+      "name": "1920 v2 geometry .flowers-result",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 864,
+          "height": 513,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        "reference": {
+          "width": 864,
+          "height": 513,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        }
+      }
+    },
+    {
+      "name": "1920 v2 geometry .sc-case-screens__grid",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 864,
+          "height": 1070,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 864,
+          "height": 1070,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "1920 v2 geometry .sc-case-screens__open",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 423,
+          "height": 480,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        },
+        "reference": {
+          "width": 423,
+          "height": 480,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        }
+      }
+    },
+    {
+      "name": "1920 v2 geometry .sc-case-process__cta",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 320,
+          "height": 407,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "sticky",
+          "top": "210px",
+          "fit": "fill",
+          "radius": "20px"
+        },
+        "reference": {
+          "width": 320,
+          "height": 407,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "sticky",
+          "top": "210px",
+          "fit": "fill",
+          "radius": "20px"
+        }
+      }
+    },
+    {
+      "name": "1920 v2 geometry .sc-case-process__cta-button",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 278,
+          "height": 52,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "100px"
+        },
+        "reference": {
+          "width": 278,
+          "height": 52,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "100px"
+        }
+      }
+    },
+    {
+      "name": "1920 catalog primary navigation",
+      "pass": true
+    },
+    {
+      "name": "1920 return to catalog",
+      "pass": true
+    },
+    {
+      "name": "1920 regression /#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "1920 regression /.sc-work-frame",
+      "pass": true
+    },
+    {
+      "name": "1920 regression /.sc-work-content",
+      "pass": true
+    },
+    {
+      "name": "1920 regression /#contact",
+      "pass": true
+    },
+    {
+      "name": "1920 regression /raboty/#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "1920 regression /raboty/.case-card--beauty",
+      "pass": true
+    },
+    {
+      "name": "1920 regression /raboty/.case-card--flowers",
+      "pass": true
+    },
+    {
+      "name": "1920 regression /raboty/#contact",
+      "pass": true
+    },
+    {
+      "name": "1920 regression /raboty/beauty-insight/#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "1920 regression /raboty/beauty-insight/h1",
+      "pass": true
+    },
+    {
+      "name": "1920 regression /raboty/beauty-insight/.case-hero__media",
+      "pass": true
+    },
+    {
+      "name": "1920 regression /raboty/beauty-insight/.sc-case-process__cta",
+      "pass": true
+    },
+    {
+      "name": "1920 regression /raboty/beauty-insight/#contact",
+      "pass": true
+    },
+    {
+      "name": "1440 one Lenis owner",
+      "pass": true
+    },
+    {
+      "name": "1440 phone entrance enabled",
+      "pass": true
+    },
+    {
+      "name": "1440 sticky through narrative",
+      "pass": true,
+      "data": [
+        {
+          "y": 210,
+          "top": 210
+        },
+        {
+          "y": 210,
+          "top": 210
+        },
+        {
+          "y": 210,
+          "top": 210
+        }
+      ]
+    },
+    {
+      "name": "1440 sticky releases before other works",
+      "pass": true
+    },
+    {
+      "name": "1440 gallery parallax active",
+      "pass": true
+    },
+    {
+      "name": "1440 normal CTA no lift/glow .sc-case-process__cta-button",
+      "pass": true
+    },
+    {
+      "name": "1440 normal CTA no lift/glow .sc-footer__cta",
+      "pass": true
+    },
+    {
+      "name": "1440 rapid reverse scroll responds",
+      "pass": true
+    },
+    {
+      "name": "1440 preference destroys Lenis",
+      "pass": true
+    },
+    {
+      "name": "1440 preference restores one owner",
+      "pass": true
+    },
+    {
+      "name": "390 one Lenis owner",
+      "pass": true
+    },
+    {
+      "name": "390 phone entrance enabled",
+      "pass": true
+    },
+    {
+      "name": "390 normal native phone swipe",
+      "pass": true,
+      "data": {
+        "before": 0,
+        "after": 346,
+        "y": 484
+      }
+    },
+    {
+      "name": "390 normal native related swipe",
+      "pass": true,
+      "data": {
+        "before": 1134,
+        "after": 1512,
+        "y": 351
+      }
+    },
+    {
+      "name": "390 normal CTA no lift/glow .sc-case-process__cta-button",
+      "pass": true
+    },
+    {
+      "name": "390 normal CTA no lift/glow .sc-footer__cta",
+      "pass": true
+    },
+    {
+      "name": "390 rapid reverse scroll responds",
+      "pass": true
+    },
+    {
+      "name": "390 preference destroys Lenis",
+      "pass": true
+    },
+    {
+      "name": "390 preference restores one owner",
+      "pass": true
+    },
+    {
+      "name": "all acceptance scenarios completed",
+      "pass": true
+    },
+    {
+      "name": "no JS/console/network failures",
+      "pass": true,
+      "data": []
+    }
+  ],
+  "errors": [],
+  "measurements": [
+    {
+      "width": 320,
+      "actual": {
+        "h1": {
+          "width": 272,
+          "height": 77,
+          "font": "35px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "38.5px",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".flowers-hero": {
+          "width": 272,
+          "height": 460,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "19px"
+        },
+        ".flowers-hero__phones": {
+          "width": 272,
+          "height": 460,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".flowers-hero__phone--catalog": {
+          "width": 208,
+          "height": 415,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "30px"
+        },
+        ".sc-case-process__number-circle": {
+          "width": 32,
+          "height": 32,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "50%"
+        },
+        ".flowers-result": {
+          "width": 292,
+          "height": 379,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        ".sc-case-screens__grid": {
+          "width": 292,
+          "height": 1816,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".sc-case-screens__open": {
+          "width": 292,
+          "height": 400,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        },
+        ".sc-case-process__cta": {
+          "width": 292,
+          "height": 410.671875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "20px"
+        },
+        ".sc-case-process__cta-button": {
+          "width": 252,
+          "height": 52,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "100px"
+        }
+      },
+      "reference": {
+        "h1": {
+          "width": 272,
+          "height": 77,
+          "font": "35px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "38.5px",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".flowers-hero": {
+          "width": 272,
+          "height": 460,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "19px"
+        },
+        ".flowers-hero__phones": {
+          "width": 272,
+          "height": 460,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".flowers-hero__phone--catalog": {
+          "width": 208,
+          "height": 415,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "30px"
+        },
+        ".sc-case-process__number-circle": {
+          "width": 32,
+          "height": 32,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "50%"
+        },
+        ".flowers-result": {
+          "width": 292,
+          "height": 379,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        ".sc-case-screens__grid": {
+          "width": 292,
+          "height": 1816,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".sc-case-screens__open": {
+          "width": 292,
+          "height": 400,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        },
+        ".sc-case-process__cta": {
+          "width": 292,
+          "height": 410.671875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "20px"
+        },
+        ".sc-case-process__cta-button": {
+          "width": 252,
+          "height": 52,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "100px"
+        }
+      }
+    },
+    {
+      "width": 390,
+      "actual": {
+        "h1": {
+          "width": 342,
+          "height": 77.1875,
+          "font": "35.1px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "38.61px",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".flowers-hero": {
+          "width": 342,
+          "height": 460,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "19px"
+        },
+        ".flowers-hero__phones": {
+          "width": 342,
+          "height": 460,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".flowers-hero__phone--catalog": {
+          "width": 208,
+          "height": 415,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "30px"
+        },
+        ".sc-case-process__number-circle": {
+          "width": 32,
+          "height": 32,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "50%"
+        },
+        ".flowers-result": {
+          "width": 362,
+          "height": 379,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        ".sc-case-screens__grid": {
+          "width": 362,
+          "height": 1816,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".sc-case-screens__open": {
+          "width": 362,
+          "height": 400,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        },
+        ".sc-case-process__cta": {
+          "width": 362,
+          "height": 410,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "20px"
+        },
+        ".sc-case-process__cta-button": {
+          "width": 316,
+          "height": 52,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "100px"
+        }
+      },
+      "reference": {
+        "h1": {
+          "width": 342,
+          "height": 77.1875,
+          "font": "35.1px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "38.61px",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".flowers-hero": {
+          "width": 342,
+          "height": 460,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "19px"
+        },
+        ".flowers-hero__phones": {
+          "width": 342,
+          "height": 460,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".flowers-hero__phone--catalog": {
+          "width": 208,
+          "height": 415,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "30px"
+        },
+        ".sc-case-process__number-circle": {
+          "width": 32,
+          "height": 32,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "50%"
+        },
+        ".flowers-result": {
+          "width": 362,
+          "height": 379,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        ".sc-case-screens__grid": {
+          "width": 362,
+          "height": 1816,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".sc-case-screens__open": {
+          "width": 362,
+          "height": 400,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        },
+        ".sc-case-process__cta": {
+          "width": 362,
+          "height": 410,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "20px"
+        },
+        ".sc-case-process__cta-button": {
+          "width": 316,
+          "height": 52,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "100px"
+        }
+      }
+    },
+    {
+      "width": 768,
+      "actual": {
+        "h1": {
+          "width": 704,
+          "height": 41.796875,
+          "font": "38px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "41.8px",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".flowers-hero": {
+          "width": 704,
+          "height": 495,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        ".flowers-hero__phones": {
+          "width": 704,
+          "height": 495,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".flowers-hero__phone--catalog": {
+          "width": 235,
+          "height": 500,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "36px"
+        },
+        ".sc-case-process__number-circle": {
+          "width": 32,
+          "height": 32,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "50%"
+        },
+        ".flowers-result": {
+          "width": 728,
+          "height": 513,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        ".sc-case-screens__grid": {
+          "width": 728,
+          "height": 758,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".sc-case-screens__open": {
+          "width": 355,
+          "height": 330,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        },
+        ".sc-case-process__cta": {
+          "width": 410,
+          "height": 393,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "20px"
+        },
+        ".sc-case-process__cta-button": {
+          "width": 372,
+          "height": 52,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "100px"
+        }
+      },
+      "reference": {
+        "h1": {
+          "width": 704,
+          "height": 83.59375,
+          "font": "38px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "41.8px",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".flowers-hero": {
+          "width": 704,
+          "height": 495,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        ".flowers-hero__phones": {
+          "width": 704,
+          "height": 495,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".flowers-hero__phone--catalog": {
+          "width": 235,
+          "height": 500,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "36px"
+        },
+        ".sc-case-process__number-circle": {
+          "width": 32,
+          "height": 32,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "50%"
+        },
+        ".flowers-result": {
+          "width": 728,
+          "height": 513,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        ".sc-case-screens__grid": {
+          "width": 728,
+          "height": 758,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".sc-case-screens__open": {
+          "width": 355,
+          "height": 330,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        },
+        ".sc-case-process__cta": {
+          "width": 410,
+          "height": 393,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "20px"
+        },
+        ".sc-case-process__cta-button": {
+          "width": 372,
+          "height": 52,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "100px"
+        }
+      }
+    },
+    {
+      "width": 1440,
+      "actual": {
+        "h1": {
+          "width": 759.59375,
+          "height": 154,
+          "font": "69.9984px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "76.9982px",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".flowers-hero": {
+          "width": 1268,
+          "height": 630,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        ".flowers-hero__phones": {
+          "width": 1268,
+          "height": 630,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".flowers-hero__phone--catalog": {
+          "width": 285,
+          "height": 585,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "36px"
+        },
+        ".sc-case-process__number-circle": {
+          "width": 32,
+          "height": 32,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "50%"
+        },
+        ".flowers-result": {
+          "width": 868.8125,
+          "height": 513,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        ".sc-case-screens__grid": {
+          "width": 868.8125,
+          "height": 1070,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".sc-case-screens__open": {
+          "width": 425.40625,
+          "height": 480,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        },
+        ".sc-case-process__cta": {
+          "width": 320,
+          "height": 407,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "sticky",
+          "top": "210px",
+          "fit": "fill",
+          "radius": "20px"
+        },
+        ".sc-case-process__cta-button": {
+          "width": 278,
+          "height": 52,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "100px"
+        }
+      },
+      "reference": {
+        "h1": {
+          "width": 759.59375,
+          "height": 154,
+          "font": "69.9984px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "76.9982px",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".flowers-hero": {
+          "width": 1268,
+          "height": 630,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        ".flowers-hero__phones": {
+          "width": 1268,
+          "height": 630,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".flowers-hero__phone--catalog": {
+          "width": 285,
+          "height": 585,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "36px"
+        },
+        ".sc-case-process__number-circle": {
+          "width": 32,
+          "height": 32,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "50%"
+        },
+        ".flowers-result": {
+          "width": 868.8125,
+          "height": 513,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        ".sc-case-screens__grid": {
+          "width": 868.8125,
+          "height": 1070,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".sc-case-screens__open": {
+          "width": 425.40625,
+          "height": 480,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        },
+        ".sc-case-process__cta": {
+          "width": 320,
+          "height": 407,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "sticky",
+          "top": "210px",
+          "fit": "fill",
+          "radius": "20px"
+        },
+        ".sc-case-process__cta-button": {
+          "width": 278,
+          "height": 52,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "100px"
+        }
+      }
+    },
+    {
+      "width": 1920,
+      "actual": {
+        "h1": {
+          "width": 756,
+          "height": 154,
+          "font": "70px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "77px",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".flowers-hero": {
+          "width": 1268,
+          "height": 630,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        ".flowers-hero__phones": {
+          "width": 1268,
+          "height": 630,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".flowers-hero__phone--catalog": {
+          "width": 285,
+          "height": 585,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "36px"
+        },
+        ".sc-case-process__number-circle": {
+          "width": 32,
+          "height": 32,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "50%"
+        },
+        ".flowers-result": {
+          "width": 864,
+          "height": 513,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        ".sc-case-screens__grid": {
+          "width": 864,
+          "height": 1070,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".sc-case-screens__open": {
+          "width": 423,
+          "height": 480,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        },
+        ".sc-case-process__cta": {
+          "width": 320,
+          "height": 407,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "sticky",
+          "top": "210px",
+          "fit": "fill",
+          "radius": "20px"
+        },
+        ".sc-case-process__cta-button": {
+          "width": 278,
+          "height": 52,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "100px"
+        }
+      },
+      "reference": {
+        "h1": {
+          "width": 756,
+          "height": 154,
+          "font": "70px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "77px",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".flowers-hero": {
+          "width": 1268,
+          "height": 630,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        ".flowers-hero__phones": {
+          "width": 1268,
+          "height": 630,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".flowers-hero__phone--catalog": {
+          "width": 285,
+          "height": 585,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "36px"
+        },
+        ".sc-case-process__number-circle": {
+          "width": 32,
+          "height": 32,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "50%"
+        },
+        ".flowers-result": {
+          "width": 864,
+          "height": 513,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        ".sc-case-screens__grid": {
+          "width": 864,
+          "height": 1070,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".sc-case-screens__open": {
+          "width": 423,
+          "height": 480,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        },
+        ".sc-case-process__cta": {
+          "width": 320,
+          "height": 407,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "sticky",
+          "top": "210px",
+          "fit": "fill",
+          "radius": "20px"
+        },
+        ".sc-case-process__cta-button": {
+          "width": 278,
+          "height": 52,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "16px",
+          "color": "rgb(255, 255, 255)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "100px"
+        }
+      }
+    }
+  ],
+  "referenceDifferences": [
+    "Canonical catalog title/summary/tags and current related cards replace the autonomous copy.",
+    "Shared current Header/Footer, CTA and v20 interaction fixes are reused."
+  ],
+  "limitations": [
+    "Automated wheel/touch does not prove physical-device smoothness.",
+    "Firefox/WebKit and real mobile hardware are not tested."
+  ],
+  "pass": true
+}

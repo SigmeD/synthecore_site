@@ -15,7 +15,7 @@ node scripts/verify-works-static.cjs
 node scripts/verify-services-static.cjs
 node scripts/check-hero-geometry.cjs
 node scripts/verify-sticky-handoff-v61.cjs
-node --test scripts/test-static-checks.cjs scripts/test-shared-site.cjs scripts/test-button-policy.cjs
+node --test scripts/test-static-checks.cjs scripts/test-shared-site.cjs scripts/test-button-policy.cjs scripts/test-case-pages.cjs scripts/test-project-copy.cjs scripts/test-flowers-case.cjs
 git ls-files --cached --others --exclude-standard | node scripts/check-doc-links.cjs
 ```
 
@@ -77,7 +77,21 @@ node --test scripts/test-project-copy.cjs
 
 Актуальная приёмка единых текстов и меток: [87 статических и 172 браузерных проверки](qa/project-copy-sync/README.md). Снимки предыдущего v20 относятся к состоянию до синхронизации заголовка, краткого описания и меток.
 
-Обязательны 320/390/768/1024/1100/1440 px, lightbox с возвратом фокуса, пять модалок, карусель, touch, неподвижный hover стрелок, sticky до «Других работ», обратная прокрутка и reduced motion. Главная и каталог проверяются повторно. Точная вставка ссылки Beauty на каждой из старых страниц разрешена владельцем; остальные тексты, структура и движение сохраняют прежний контроль.
+Для базового v20 обязательны 320/390/768/1024/1100/1440 px, lightbox с возвратом фокуса, модалки работ без страницы, карусель, touch, неподвижный hover стрелок, sticky до «Других работ», обратная прокрутка и reduced motion. Главная и каталог проверяются повторно. Точная вставка ссылки зарегистрированного кейса на старых страницах разрешена владельцем; остальные тексты, структура и движение сохраняют прежний контроль.
+
+## Приложение заказа цветов v2
+
+[Отчёт и свежие сравнительные снимки](qa/flowers-v2/README.md) относятся к ветке `feature/flowers-case-detail` поверх `main` `3b7dd38`. Обязательные ширины: 320/390/768/1440/1920 px. Проверяются три смартфона и их нативная прокрутка на телефоне, четыре этапа, два устройства результата, четыре lightbox с исходными размерами изображений, sticky CTA, меню, основные переходы, параллакс, обратный scroll, reduced motion и регрессии главной, каталога и Beauty.
+
+```powershell
+node --test scripts/test-flowers-case.cjs
+node scripts/verify-flowers-browser.cjs
+$env:CASE_PROJECT = 'flowers'
+node scripts/verify-case-links-browser.cjs
+Remove-Item Env:CASE_PROJECT
+```
+
+Сравнительный сценарий требует текущий сайт на 4176, распакованную автономную v2 на 4189 и экспорт исходного `main` на 4190. Адреса меняются через `SYNTHECORE_URL`, `FLOWERS_REFERENCE_URL`, `FLOWERS_BASELINE_URL`. Локальные эталоны, ZIP и standalone preview в Git не входят; без них сравнительную приёмку нельзя считать выполненной. Результаты пишутся в `output/playwright/flowers-v2/` и `output/playwright/case-primary-links-flowers/`; в `docs/qa/flowers-v2/` сохранены доказательства этого запуска. Заголовок/вводный текст намеренно берутся из каталога; статус прототипа и атрибуция 80% заказчику проверяются отдельно. Размеры всех четырёх исходных изображений берутся из аудита, а не предполагаются одинаковыми.
 
 Полный режим `verify-v62-import.cjs --strict` сравнивает 437 файлов самостоятельного архива v62, включая его прежнюю оболочку и документацию. Итоговый сайт имеет другой согласованный состав. Исторические 423/437 не являются текущей нормой: после очистки старых документов расхождений будет больше. Это не ошибка анимаций. Исходный манифест сохраняется как описание архива; менять его под новый состав нельзя.
 
