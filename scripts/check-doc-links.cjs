@@ -5,7 +5,7 @@ const path = require('node:path');
 const root = path.resolve(__dirname, '..');
 const files = new Set(fs.readFileSync(0, 'utf8').split(/\r?\n/).filter(Boolean));
 if (!files.size) { console.error('FAIL: pipe git ls-files --cached --others --exclude-standard into this check.'); process.exit(1); }
-const documents = [...files].filter(file => file === 'README.md' || /^docs\/.*\.md$/.test(file) || file === 'scripts/HISTORICAL_CHECKS.md');
+const documents = [...files].filter(file => file === 'README.md' || /^docs\/.*\.md$/.test(file) || file === 'scripts/README.md');
 const failures = [];
 let checked = 0;
 for (const file of documents) {

@@ -37,6 +37,7 @@ function parseHTML(source) {
       assert.equal(stack.at(-1).tag, closing[1].toLowerCase(), `Invalid closing tag / nesting near ${closing[0]}`);
       stack.pop(); cursor += closing[0].length; continue;
     }
+    const sourceStart = cursor;
     const opening = /^<([\w:-]+)/.exec(source.slice(cursor));
     assert.ok(opening, `Invalid HTML tag at offset ${cursor}`);
     const node = { tag: opening[1].toLowerCase(), attrs: {}, children: [], parent: stack.at(-1), index: nodes.length };
@@ -53,6 +54,7 @@ function parseHTML(source) {
       node.attrs[name] = decode(attribute[2] ?? attribute[3] ?? attribute[4] ?? '');
       cursor += attribute[0].length;
     }
+    node.sourceStart=sourceStart;node.sourceOpenEnd=cursor;
     node.parent.children.push(node); nodes.push(node);
     if (['script', 'style', 'textarea', 'title'].includes(node.tag) && !selfClosing) {
       const end = new RegExp(`</${node.tag}\\s*>`, 'ig'); end.lastIndex = cursor;

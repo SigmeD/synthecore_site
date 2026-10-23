@@ -1,5 +1,6 @@
 'use strict';
 const {restoreCaseLinks}=require('../../../scripts/lib/approved-case-links.cjs');
+const {isBundledHome,verifyHomeCSSSnapshot}=require('../../../scripts/lib/home-styles.cjs');
 const fs=require('node:fs'),cp=require('node:child_process'),crypto=require('node:crypto');
 const {restoreV27CatalogCopy}=require('../../../scripts/lib/approved-catalog-naming.cjs');
 const {restoreV27ButtonShadows}=require('../../../scripts/lib/approved-button-shadows.cjs');
@@ -15,6 +16,11 @@ for(const [f,h] of Object.entries(manifest.v27))if(hash(f.endsWith('.ttf')?blobs
 const html=restoreCaseLinks('index.html',blobs['index.html'].toString('utf8').replace(/\r\n/g,'\n'),blobs['templates/pages/works.html'].toString('utf8'));
 const content=html.slice(html.indexOf('<main>')+6,html.lastIndexOf('<section aria-labelledby="contact-title"'));
 if(hash(Buffer.from(content))!==manifest.v62ContentSha256)failures.push('v62 sections');
-const result={ref:ref||'INDEX',motionFiles:17,v27Files:25,approvedCatalogCopy:'2026-10-21',approvedButtonPolicy:'2026-10-22',v62ContentMatches:!failures.includes('v62 sections'),failures,pass:failures.length===0};
+let compiledHomeCSSMatches=null;
+if(isBundledHome(blobs['index.html'].toString('utf8'))){
+ const readBlob=file=>blobs[file]||(blobs[file]=cp.execFileSync('git',['show',ref+':'+file]));
+ try{verifyHomeCSSSnapshot(process.cwd(),readBlob);compiledHomeCSSMatches=true}catch(error){compiledHomeCSSMatches=false;failures.push('compiled CSS bundle: '+error.message)}
+}
+const result={ref:ref||'INDEX',motionFiles:17,v27Files:25,approvedCatalogCopy:'2026-10-21',approvedButtonPolicy:'2026-10-22',v62ContentMatches:!failures.includes('v62 sections'),compiledHomeCSSMatches,failures,pass:failures.length===0};
 console.log(JSON.stringify(result,null,2));
 if(failures.length)process.exitCode=1;

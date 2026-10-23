@@ -39,7 +39,9 @@ const mutations = [
   ['nested rather than sequential section', markup(s => s.replace('<section class="sc-works"', '<section id="extra"><section class="sc-works"').replace('<!-- Neutral scroll', '</section><!-- Neutral scroll')), /section|direct/i],
   ['duplicate Works CSS hook', markup(s => s.replace('</head>', '<link rel="stylesheet" href="./css/works.css"></head>')), /duplicate|exactly one/i],
   ['duplicate Works JS hook', markup(s => s.replace('</body>', '<script defer src="./js/works.js"></script></body>')), /duplicate|exactly one/i],
-  ['CSS hook before main', markup(s => s.replace('<link rel="stylesheet" href="./css/main.css">', '<link rel="stylesheet" href="./css/works.css">').replace(/(<link rel="stylesheet" href="\.\/assets\/vendor\/lenis[^>]+>\s*)<link rel="stylesheet" href="\.\/css\/works.css">/, '$1<link rel="stylesheet" href="./css/main.css">')), /CSS|stylesheet|order/i],
+  ['wrong homepage stylesheet entry', markup(s => s.replace('href="/css/generated/home.css"','href="./css/works.css"')), /CSS|stylesheet|order/i],
+  ['stale compiled stylesheet', edit('css/generated/home.css',s=>s+'\nhtml{display:none}'), /compiled|stylesheet|stale/i],
+  ['missing compiled stylesheet', fixture=>fs.unlinkSync(path.join(fixture,'css/generated/home.css')), /ENOENT|stylesheet/i],
   ['Works script before dependencies', markup(s => s.replace('<script defer src="./assets/vendor/gsap-3.12.5.min.js">', '<script defer src="./js/works.js"></script><script defer src="./assets/vendor/gsap-3.12.5.min.js">').replace('<script defer src="./js/main.js"></script>\n<script defer src="./js/works.js"></script>', '<script defer src="./js/main.js"></script>')), /script|order/i],
   ['async Works script', markup(s => s.replace('defer src="./js/works.js"', 'async src="./js/works.js"')), /defer|async/i],
   ['duplicate vendor URL alias', markup(s => s.replace('</body>', '<script defer src="./assets/vendor/../vendor/lenis-1.3.26.min.js"></script></body>')), /duplicate/i],
@@ -90,7 +92,7 @@ test('current v60 static checks accept the site and reject isolated fixture muta
         mutate(fixture);
         await assert.rejects(() => verifyWorks(fixture), expected);
       } finally {
-        for (const item of ['index.html', 'js/works.js', 'js/hero-scroll.js', 'css/works.css', ...['b2b', 'flowers', 'crm', 'beauty', 'prostor', 'metal'].map(id => `assets/works/${id}-feature-wide.png`)]) {
+        for (const item of ['index.html', 'js/works.js', 'js/hero-scroll.js', 'css/works.css', 'css/generated/home.css', ...['b2b', 'flowers', 'crm', 'beauty', 'prostor', 'metal'].map(id => `assets/works/${id}-feature-wide.png`)]) {
           fs.copyFileSync(path.join(root, item), path.join(fixture, item));
         }
       }

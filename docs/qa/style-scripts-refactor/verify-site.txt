@@ -1,0 +1,134 @@
+PASS: shared Header/Footer are current in home, catalog and case routes.
+SyntheCore v62 MOTION LOCK: 17/17 matched.
+{
+  "ref": "INDEX",
+  "motionFiles": 17,
+  "v27Files": 25,
+  "approvedCatalogCopy": "2026-10-21",
+  "approvedButtonPolicy": "2026-10-22",
+  "v62ContentMatches": true,
+  "compiledHomeCSSMatches": true,
+  "failures": [],
+  "pass": true
+}
+PASS: 12 image/viewport combinations, 60 crop states, zero-size guards.
+PASS: current v60 structure/resources, 6 approved Works images, 40 vendor/asset manifest hashes. 60 HTTP resources match disk.
+PASS: six services cards, accessible headings, twelve local illustrations (mono + color), idle tilt, active alignment, single scroll owner, no vertical wheel capture.
+PASS: experimental CSS sticky scenes and +30% testimonials.
+✔ button policy exception accepts only the exact two additions to v27 (2.8628ms)
+✔ QA does not exempt protected motion files or unrelated components (1.0256ms)
+✔ joint integration preserves every complete case and its styles against accepted branch snapshots (28.8839ms)
+✔ baseline comparison refuses malformed registered routes instead of hiding them (5.3246ms)
+✔ case renderer builds a nested route from shared shell and case content (35.0418ms)
+✔ all case assets and local links resolve under the nested URL (6.874ms)
+✔ case renderer escapes content and rejects missing or unsafe project data (16.8884ms)
+✔ authorized case links restore exact original pages and reject other mutations (70.5073ms)
+✔ all six case registrations automatically wire primary homepage and catalog actions (3.5994ms)
+✔ imported case images retain verified handoff bytes (6.1048ms)
+✔ CSS compilation keeps cascade order, imports once per occurrence and rebases only actual URL tokens (13.545ms)
+✔ font import stays valid without moving it across preceding font faces; unsupported imports fail safely (23.1953ms)
+✔ homepage has one exact compiled hook and preserves the original stylesheet list for baseline checks (107.1666ms)
+✔ a valid working copy cannot hide a stale or tampered bundle in a separate Git snapshot (117.8655ms)
+✔ Flowers is built from the canonical catalog copy and existing shared components (26.2371ms)
+✔ Flowers retains three phones, four factual prototype stages, two result devices and four full interfaces (3.4505ms)
+✔ the Flowers variant rejects unapproved layouts and incorrect media/process data (9.9756ms)
+✔ Flowers assets retain source bytes, resources resolve, and other catalog/Beauty content remains unchanged (14.877ms)
+✔ metal route is generated through the shared shell and catalog copy (26.1808ms)
+✔ metal variant renders one hero, five steps and the approved result banner (3.8664ms)
+✔ catalog registers the new primary route and keeps the other five cards (4.2483ms)
+✔ metal variant rejects extra hero images, unknown layouts and missing result proof fields (7.5166ms)
+✔ metal resources resolve from the nested route and imported images retain source bytes (9.5425ms)
+✔ Beauty and other catalog content retain baseline bytes after exact registered route additions (5.4857ms)
+✔ all six homepage titles and summaries match the catalog source (10.4179ms)
+✔ editing catalog copy updates both dependent templates automatically (95.1124ms)
+✔ case first screen and metadata use catalog title and summary, not independent copies (5.0142ms)
+✔ both static routes are generated from one header and one footer (27.9209ms)
+✔ route-aware shared navigation resolves every local anchor (9.9542ms)
+✔ catalog permits only approved naming while preserving six projects, descriptions and assets (18.6973ms)
+✔ catalog copy exception rejects unapproved copy and structural or shell changes (49.5163ms)
+✔ single footer and menu owners retain local motion contracts (2.2166ms)
+✔ local Manrope distributions match the recorded hashes (12.465ms)
+✔ combined build preserves v62 motion bytes/content and the owner-selected v27 shell (19.0643ms)
+▶ current v60 static checks accept the site and reject isolated fixture mutations
+  ✔ accepted package passes without HTTP or historical backups (169.165ms)
+  ✔ missing card (69.3794ms)
+  ✔ reordered cards (61.5055ms)
+  ✔ duplicate DOM id (61.7462ms)
+  ✔ missing label target (62.2953ms)
+  ✔ label targets another card (44.2064ms)
+  ✔ label target is not h2 (47.773ms)
+  ✔ empty title (44.6555ms)
+  ✔ empty category (48.0876ms)
+  ✔ missing description (45.7619ms)
+  ✔ empty description (48.6334ms)
+  ✔ missing image (40.9169ms)
+  ✔ empty image src (46.3827ms)
+  ✔ wrong image mapping (43.5843ms)
+  ✔ wrong natural dimension attribute (45.8198ms)
+  ✔ missing image file (56.9107ms)
+  ✔ wrong PNG dimensions (45.9273ms)
+  ✔ wrong approved image hash (54.6435ms)
+  ✔ wrong section order (44.1059ms)
+  ✔ nested rather than sequential section (15.849ms)
+  ✔ duplicate Works CSS hook (11.9103ms)
+  ✔ duplicate Works JS hook (62.1739ms)
+  ✔ wrong homepage stylesheet entry (14.262ms)
+  ✔ stale compiled stylesheet (42.1498ms)
+  ✔ missing compiled stylesheet (37.0758ms)
+  ✔ Works script before dependencies (76.8997ms)
+  ✔ async Works script (64.6845ms)
+  ✔ duplicate vendor URL alias (59.3208ms)
+  ✔ second external library copy (63.0337ms)
+  ✔ second Lenis constructor (85.1358ms)
+  ✔ missing Lenis constructor (84.2888ms)
+  ✔ missing local CSS resource (17.8093ms)
+  ✔ malformed nested markup (12.1917ms)
+  ✔ removed prototype category qualification (46.1304ms)
+  ✔ removed prototype description qualification (44.0645ms)
+  ✔ removed demo-data qualification (47.4469ms)
+  ✔ removed concept qualification (48.8391ms)
+  ✔ dangling services navigation link (44.6202ms)
+  ✔ dangling encoded navigation link (40.5243ms)
+  ✔ malformed percent-encoded fragment (39.2661ms)
+  ✔ empty fragment (42.8628ms)
+  ✔ b2b nonempty title copy changes (44.6609ms)
+  ✔ b2b nonempty category copy changes (38.6746ms)
+  ✔ b2b nonempty description copy changes (39.1171ms)
+  ✔ flowers nonempty title copy changes (42.6885ms)
+  ✔ flowers nonempty category copy changes (47.3273ms)
+  ✔ flowers nonempty description copy changes (40.1191ms)
+  ✔ crm nonempty title copy changes (43.7209ms)
+  ✔ crm nonempty category copy changes (46.584ms)
+  ✔ crm nonempty description copy changes (45.6676ms)
+  ✔ beauty nonempty title copy changes (48.5913ms)
+  ✔ beauty nonempty category copy changes (44.9445ms)
+  ✔ beauty nonempty description copy changes (49.7566ms)
+  ✔ prostor nonempty title copy changes (54.4763ms)
+  ✔ prostor nonempty category copy changes (53.1307ms)
+  ✔ prostor nonempty description copy changes (46.3722ms)
+  ✔ metal nonempty title copy changes (55.6605ms)
+  ✔ metal nonempty category copy changes (56.0135ms)
+  ✔ metal nonempty description copy changes (52.79ms)
+  ✔ b2b image hash differs with same byte length (42.8946ms)
+  ✔ flowers image hash differs with same byte length (48.6339ms)
+  ✔ crm image hash differs with same byte length (63.4996ms)
+  ✔ beauty image hash differs with same byte length (61.0634ms)
+  ✔ prostor image hash differs with same byte length (63.0688ms)
+  ✔ metal image hash differs with same byte length (56.2818ms)
+  ✔ whitespace, attribute quoting and nested inline text remain valid (78.1488ms)
+PASS: 12 image/viewport combinations, 60 crop states, zero-size guards.
+  ✔ project check works offline from an unrelated cwd (70.3834ms)
+  ✔ asset manifest hash rejects same-length mutation (83.539ms)
+  ✔ vendor manifest hash rejects same-length mutation (131.605ms)
+  ✔ explicit HTTP verifies bytes and rejects stale content / 404 (65.3187ms)
+✔ current v60 static checks accept the site and reject isolated fixture mutations (3879.8632ms)
+ℹ tests 105
+ℹ suites 0
+ℹ pass 105
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4072.8201
+PASS: 288 local links across 15 current/historical Markdown documents target supplied Git files.
+PASS: complete supported verification suite.

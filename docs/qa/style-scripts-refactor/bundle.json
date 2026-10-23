@@ -1,0 +1,105 @@
+{
+  "base": "612da61751bc45090fe2bedf0e6cfccca9b02902",
+  "bytes": 122879,
+  "sha256": "270b5b64223fc2383d9d4b6010a6775e19fb3c45446ba8624157f2c43f2c40f7",
+  "inputs": [
+    {
+      "path": "css/main.css",
+      "bytes": 49860,
+      "sha256": "83ce60a237a0c7d77baf7785f87596085e1557a376f3b1d3d6b3ec2463cb8674"
+    },
+    {
+      "path": "assets/vendor/lenis-1.3.26.css",
+      "bytes": 513,
+      "sha256": "2f668ae84a668327f246faf8a770383a2bf69196d214290fbc4d5548910606c5"
+    },
+    {
+      "path": "css/works.css",
+      "bytes": 6207,
+      "sha256": "1b7ba5202fc4d74be087b9fe46816fb39ebdeda286304c1e010c6e5469234249"
+    },
+    {
+      "path": "css/services.css",
+      "bytes": 9916,
+      "sha256": "d1ae5844f7eb3e683742a641891dab41c0da8af2f728fc77721431d90345dbf4"
+    },
+    {
+      "path": "css/process.css",
+      "bytes": 8480,
+      "sha256": "f691ad221f799b7e6237db91031f9b3ed46c60e99f7b44ee3a32f13eb872e963"
+    },
+    {
+      "path": "css/testimonials.css",
+      "bytes": 8045,
+      "sha256": "6deb37bf56574fb5117fba4dd256fa0998dc6afa3072a8fc253b962e362a5b5e"
+    },
+    {
+      "path": "css/faq-footer.css",
+      "bytes": 7999,
+      "sha256": "bb083c831c214735804ddb3ca5963ce6c948c8f9bfe29325c4d4615648339cb6"
+    },
+    {
+      "path": "css/design-system-v61.css",
+      "bytes": 8756,
+      "sha256": "5080c5c3abbefff90be14add970d083a34c6cc6ab2dbe3aaccaeebbc0bc37be1"
+    },
+    {
+      "path": "css/sticky-handoff-v61.css",
+      "bytes": 1223,
+      "sha256": "b4e622b3cec6d97a8d55bcfe9aa5a47174e23dbe103ac1c473ac0c8de7e64326"
+    },
+    {
+      "path": "css/v62-services-alignment.css",
+      "bytes": 1445,
+      "sha256": "796a112b05a8aa198bff5250c42c23cee762acd311adebc330cd0c0dc439290a"
+    },
+    {
+      "path": "css/v62-typography-content-candidate.css",
+      "bytes": 7121,
+      "sha256": "2fddeeade0b2cc2159d0699991032f570821509dbd736459b49ab190c9a34e2b"
+    },
+    {
+      "path": "css/v62-hero-copy.css",
+      "bytes": 619,
+      "sha256": "605b960ed54fd8bca4cb5fe4c8ff0f8b772b5c0d33442103d98b5150cfd28802"
+    },
+    {
+      "path": "css/fonts.css",
+      "bytes": 444,
+      "sha256": "31b406144f3cff672776f62d863f5b6fe94384a1ae64d27bdfa86a1849c1e92f"
+    },
+    {
+      "path": "css/design-tokens.css",
+      "bytes": 1460,
+      "sha256": "43b199429ed52e5328ced45ce2c0d69e99507ed7e69e7432e7b2c0e5d0c972a7"
+    },
+    {
+      "path": "css/site-footer.css",
+      "bytes": 4485,
+      "sha256": "79c5c261d2f6b31e331696304f25e68e13b8f50221e560609f8a22ed742da44f"
+    },
+    {
+      "path": "css/shared-header-cta.css",
+      "bytes": 4304,
+      "sha256": "c97d88357db81122337a74c61257a163fd9170668038dfd8d362d9ee8cdd0fa5"
+    },
+    {
+      "path": "css/button-interactions.css",
+      "bytes": 1223,
+      "sha256": "0b2443310ce6286bfeca69e1211a6191b95174d21a448462b823cdf90dc1d5c9"
+    },
+    {
+      "path": "css/v62-v27-shell-preservation.css",
+      "bytes": 1569,
+      "sha256": "1402950bd8279bb5b11843102040c23141c2b59985749a0dc317132fe2f5967c"
+    },
+    {
+      "path": "css/case-links.css",
+      "bytes": 349,
+      "sha256": "e23c8143b15e179c20185afe4d291f0d68a999a0bc861b1ff0ff0eb611f0bc84"
+    }
+  ],
+  "external": [
+    "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap"
+  ]
+}
