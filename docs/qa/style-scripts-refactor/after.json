@@ -1,0 +1,741 @@
+{
+  "base": "612da61751bc45090fe2bedf0e6cfccca9b02902",
+  "inventory": {
+    "css": {
+      "count": 28,
+      "bytes": 326760,
+      "exactDuplicates": [],
+      "files": [
+        {
+          "file": "css/button-interactions.css",
+          "bytes": 1223,
+          "sha256": "0b2443310ce6286bfeca69e1211a6191b95174d21a448462b823cdf90dc1d5c9"
+        },
+        {
+          "file": "css/case-detail.css",
+          "bytes": 40176,
+          "sha256": "88a50f1130921d103bbbf65d9605f218c66f9ce3f9b2c96f971a9028c54e51d8"
+        },
+        {
+          "file": "css/case-flowers.css",
+          "bytes": 6000,
+          "sha256": "4d9022c35c63ba36032b319a4cb85492023c54a1d35297a8a77718b6afb21eeb"
+        },
+        {
+          "file": "css/case-links.css",
+          "bytes": 349,
+          "sha256": "e23c8143b15e179c20185afe4d291f0d68a999a0bc861b1ff0ff0eb611f0bc84"
+        },
+        {
+          "file": "css/case-metal.css",
+          "bytes": 9977,
+          "sha256": "50d50bde34f29f41607f816a513cdb6ed3dda88215c898a43fd07394e549efda"
+        },
+        {
+          "file": "css/design-system-v61.css",
+          "bytes": 8756,
+          "sha256": "5080c5c3abbefff90be14add970d083a34c6cc6ab2dbe3aaccaeebbc0bc37be1"
+        },
+        {
+          "file": "css/design-tokens.css",
+          "bytes": 1460,
+          "sha256": "43b199429ed52e5328ced45ce2c0d69e99507ed7e69e7432e7b2c0e5d0c972a7"
+        },
+        {
+          "file": "css/faq-footer.css",
+          "bytes": 7999,
+          "sha256": "bb083c831c214735804ddb3ca5963ce6c948c8f9bfe29325c4d4615648339cb6"
+        },
+        {
+          "file": "css/fonts.css",
+          "bytes": 444,
+          "sha256": "31b406144f3cff672776f62d863f5b6fe94384a1ae64d27bdfa86a1849c1e92f"
+        },
+        {
+          "file": "css/generated/home.css",
+          "bytes": 122879,
+          "sha256": "270b5b64223fc2383d9d4b6010a6775e19fb3c45446ba8624157f2c43f2c40f7"
+        },
+        {
+          "file": "css/main.css",
+          "bytes": 49860,
+          "sha256": "83ce60a237a0c7d77baf7785f87596085e1557a376f3b1d3d6b3ec2463cb8674"
+        },
+        {
+          "file": "css/process.css",
+          "bytes": 8480,
+          "sha256": "f691ad221f799b7e6237db91031f9b3ed46c60e99f7b44ee3a32f13eb872e963"
+        },
+        {
+          "file": "css/raboty-base.css",
+          "bytes": 5566,
+          "sha256": "6a7f8e4fde52bf261c2ce51ade292df931637977683d6c0e5dffae6f103ca9dc"
+        },
+        {
+          "file": "css/raboty-cards.css",
+          "bytes": 6981,
+          "sha256": "79c50fee040eb5b8dc5030fbde593a2f3136fcebd5ffd2606c740ff7ba831afb"
+        },
+        {
+          "file": "css/raboty-reveal.css",
+          "bytes": 2107,
+          "sha256": "a1685c9daf756bfeb1aea663316879ad6ce18899d117f2d3c68660e42fedd39d"
+        },
+        {
+          "file": "css/raboty-scroll.css",
+          "bytes": 2192,
+          "sha256": "87f12451fbb0f482d7bd6c2ee9e23d0703ea5b19f0749a28c1d6b48745e9f211"
+        },
+        {
+          "file": "css/raboty-surface.css",
+          "bytes": 4433,
+          "sha256": "01cda7f635c2d2def5c983a4efab2df618c651f6489d0cfc21b4c5c3e22dfb66"
+        },
+        {
+          "file": "css/raboty-type.css",
+          "bytes": 2944,
+          "sha256": "c061a951b5a6f8b266011328017dc2d99a5d87ebc608662d4112ee72d4712c01"
+        },
+        {
+          "file": "css/services.css",
+          "bytes": 9916,
+          "sha256": "d1ae5844f7eb3e683742a641891dab41c0da8af2f728fc77721431d90345dbf4"
+        },
+        {
+          "file": "css/shared-header-cta.css",
+          "bytes": 4304,
+          "sha256": "c97d88357db81122337a74c61257a163fd9170668038dfd8d362d9ee8cdd0fa5"
+        },
+        {
+          "file": "css/site-footer.css",
+          "bytes": 4485,
+          "sha256": "79c5c261d2f6b31e331696304f25e68e13b8f50221e560609f8a22ed742da44f"
+        },
+        {
+          "file": "css/sticky-handoff-v61.css",
+          "bytes": 1223,
+          "sha256": "b4e622b3cec6d97a8d55bcfe9aa5a47174e23dbe103ac1c473ac0c8de7e64326"
+        },
+        {
+          "file": "css/testimonials.css",
+          "bytes": 8045,
+          "sha256": "6deb37bf56574fb5117fba4dd256fa0998dc6afa3072a8fc253b962e362a5b5e"
+        },
+        {
+          "file": "css/v62-hero-copy.css",
+          "bytes": 619,
+          "sha256": "605b960ed54fd8bca4cb5fe4c8ff0f8b772b5c0d33442103d98b5150cfd28802"
+        },
+        {
+          "file": "css/v62-services-alignment.css",
+          "bytes": 1445,
+          "sha256": "796a112b05a8aa198bff5250c42c23cee762acd311adebc330cd0c0dc439290a"
+        },
+        {
+          "file": "css/v62-typography-content-candidate.css",
+          "bytes": 7121,
+          "sha256": "2fddeeade0b2cc2159d0699991032f570821509dbd736459b49ab190c9a34e2b"
+        },
+        {
+          "file": "css/v62-v27-shell-preservation.css",
+          "bytes": 1569,
+          "sha256": "1402950bd8279bb5b11843102040c23141c2b59985749a0dc317132fe2f5967c"
+        },
+        {
+          "file": "css/works.css",
+          "bytes": 6207,
+          "sha256": "1b7ba5202fc4d74be087b9fe46816fb39ebdeda286304c1e010c6e5469234249"
+        }
+      ]
+    },
+    "scripts": {
+      "count": 46,
+      "bytes": 215763,
+      "exactDuplicates": [],
+      "files": [
+        {
+          "file": "scripts/README.md",
+          "bytes": 3557,
+          "sha256": "21370a0d25ee2e176db0bc6a994003c5f478e27bdcdf4bf31e3840649eeee392"
+        },
+        {
+          "file": "scripts/audit-project.cjs",
+          "bytes": 4123,
+          "sha256": "2d1ed7314a710353e5222679385bef42ecea66a041e71e573d4fc5d1bdf21f05"
+        },
+        {
+          "file": "scripts/build-site.cjs",
+          "bytes": 2935,
+          "sha256": "adbf2a0dd246d423c151bc20061bd93a3019807cb0f8faae9c5bd816beff9d65"
+        },
+        {
+          "file": "scripts/check-browser-access.cjs",
+          "bytes": 2393,
+          "sha256": "4514ab1b9d8794fd716f2a9c3491d3f61e004289bb304d33f41cd5b3f3a12d8e"
+        },
+        {
+          "file": "scripts/check-doc-links.cjs",
+          "bytes": 2030,
+          "sha256": "25220ed39f041b6e6e2b5cd6f255cf2e9fdc9f6f47fe9aa7e72c9b30280caf53"
+        },
+        {
+          "file": "scripts/check-handoff-videos.cjs",
+          "bytes": 2095,
+          "sha256": "9664ba626ae63d0117f070e6cf73b53195277a96bcf7b10c740e79dc19f7aa80"
+        },
+        {
+          "file": "scripts/check-hero-geometry.cjs",
+          "bytes": 2450,
+          "sha256": "ce79d9a29a739daf6c4998d2836a93457d80a4abd0567324babe763613f02668"
+        },
+        {
+          "file": "scripts/check-project.cjs",
+          "bytes": 1358,
+          "sha256": "26477939db10ae4fe8c25a577f847727241e7b86c448ee7b9a4362d4c44cfe1e"
+        },
+        {
+          "file": "scripts/lib/approved-button-shadows.cjs",
+          "bytes": 872,
+          "sha256": "2f9c4b32b474e9fceaffd79e69a3f96de51ef16c6a1845c8fde4221cc3639251"
+        },
+        {
+          "file": "scripts/lib/approved-case-links.cjs",
+          "bytes": 2465,
+          "sha256": "a3743751ec70e63f260f03f8e494fce7814905c07149a6e2c4296ce755280de3"
+        },
+        {
+          "file": "scripts/lib/approved-catalog-naming.cjs",
+          "bytes": 3933,
+          "sha256": "48c9b356f7e001af2b57bffac1bdfd17fa3b198b4555651ffe32f048726c182e"
+        },
+        {
+          "file": "scripts/lib/approved-home-copy.cjs",
+          "bytes": 4103,
+          "sha256": "829fa9bd0921a006ad2359c8495e7d13dbc792b5e7f134d99bdde981cceacb6c"
+        },
+        {
+          "file": "scripts/lib/browser-qa.cjs",
+          "bytes": 2518,
+          "sha256": "656acd45078cb2322e6007d413c2aea1b4eb98dd56ed54a06d390cb9343a4acc"
+        },
+        {
+          "file": "scripts/lib/case-baseline.cjs",
+          "bytes": 1153,
+          "sha256": "c7cfdb2b89456e2dca1d1ca6295d528c6a5f6d5ef3741faade2b92a77dc5f2fd"
+        },
+        {
+          "file": "scripts/lib/case-links.cjs",
+          "bytes": 1378,
+          "sha256": "fe23b85d1dc42c2c16708d1685f590fce7ae5dd7242536f28ef42791f9713281"
+        },
+        {
+          "file": "scripts/lib/case-page.cjs",
+          "bytes": 5709,
+          "sha256": "78a900cd9402ca323871266577d17cf28ea5cd58e3494f40514fe9def8312d7c"
+        },
+        {
+          "file": "scripts/lib/css-bundle.cjs",
+          "bytes": 3993,
+          "sha256": "0502b7b2c2ac545519138affd897fdc958e769507ebeef0028d36b9f78175f4a"
+        },
+        {
+          "file": "scripts/lib/home-styles.cjs",
+          "bytes": 3007,
+          "sha256": "d179e5c587dcc653a26112abc74e60227e6391d19e2d77e16c6e37f180b98b2e"
+        },
+        {
+          "file": "scripts/lib/project-copy.cjs",
+          "bytes": 1679,
+          "sha256": "c1e8c26f1790708edf59504e53625ed0b36023997724572d8ac936bd1e6ed12b"
+        },
+        {
+          "file": "scripts/lib/static-html.cjs",
+          "bytes": 3930,
+          "sha256": "0a053a5075b3e28538c21802b29de50c04ebd75804efb0917b25d2c6932e4162"
+        },
+        {
+          "file": "scripts/lib/static-resources.cjs",
+          "bytes": 2575,
+          "sha256": "a6cdb55fd821331d0443e021a72519ec7975bd1d43b49dcdb3ba7b60c714b3ff"
+        },
+        {
+          "file": "scripts/lib/works-assets.cjs",
+          "bytes": 977,
+          "sha256": "d4c3bf9d98eeca5391104b49a79f20c13c84d139b7a77f5818e23ba86e7715a2"
+        },
+        {
+          "file": "scripts/lib/works-copy.cjs",
+          "bytes": 3300,
+          "sha256": "352e4319f89e4479c6534973cdbea64c61a21e86c07c4688174b02818447fcfd"
+        },
+        {
+          "file": "scripts/start-chromium.ps1",
+          "bytes": 4209,
+          "sha256": "635653a16d43f8c944db1131fa988aa66bddc09da4b57703e9dd24e9c2013fbb"
+        },
+        {
+          "file": "scripts/test-button-policy.cjs",
+          "bytes": 2200,
+          "sha256": "b555840ad708112448afa49e5fbfba10e1f357bb1ef381d98eeb795d2706b642"
+        },
+        {
+          "file": "scripts/test-case-integration.cjs",
+          "bytes": 1295,
+          "sha256": "14f43ef0f20fdfa90d7fad057b518be137c221c840a17e91ca5bd89ff1fd37db"
+        },
+        {
+          "file": "scripts/test-case-pages.cjs",
+          "bytes": 7086,
+          "sha256": "fbd374470a778effae9694763baf96ad574674b7990e458d138018e03587e4df"
+        },
+        {
+          "file": "scripts/test-css-bundle.cjs",
+          "bytes": 5976,
+          "sha256": "1fe894f976ec4c6155e4b781027c5a3590361c2725b4b226273e8fc9366cd418"
+        },
+        {
+          "file": "scripts/test-flowers-case.cjs",
+          "bytes": 4490,
+          "sha256": "fd06ff1671255b4f6d2593d7ea3cec6adfd1b23465afdea6973580bfefe17e85"
+        },
+        {
+          "file": "scripts/test-metal-case.cjs",
+          "bytes": 5579,
+          "sha256": "185c9575117844da8bba6fbb4fc47faff84fdf659ce9e94dd503e55728e794d6"
+        },
+        {
+          "file": "scripts/test-project-copy.cjs",
+          "bytes": 4634,
+          "sha256": "a1b88d113926c11b899b111b35562953d103d055c29b93dfd17af44df69f4c8d"
+        },
+        {
+          "file": "scripts/test-shared-site.cjs",
+          "bytes": 8185,
+          "sha256": "285dcff6e4ea88879d76e0d2c56b9c091d7b94a96047b3ee60be9441bdfac14a"
+        },
+        {
+          "file": "scripts/test-static-checks.cjs",
+          "bytes": 11928,
+          "sha256": "14f309c8ab16d438f937bce837f62bc4db5f16660ce85175b97c597f56369a08"
+        },
+        {
+          "file": "scripts/vendor-dependencies.cjs",
+          "bytes": 2350,
+          "sha256": "089e151f29aece7a97d3379ea04b411be81f11a061e5b51cb899152d5416df49"
+        },
+        {
+          "file": "scripts/verify-case-browser.cjs",
+          "bytes": 14456,
+          "sha256": "c84e8c2f6fbbe37b4d74b08bfd4d78db8fce49179815106a5756182d4f216cfc"
+        },
+        {
+          "file": "scripts/verify-case-links-browser.cjs",
+          "bytes": 4925,
+          "sha256": "c00138037ca863e5379a38f1d9952c7301ee3d3bcab24c06bc2c4b4204b9e9fa"
+        },
+        {
+          "file": "scripts/verify-css-refactor-browser.cjs",
+          "bytes": 10928,
+          "sha256": "7e4e571e1c9ee2bc9baed77a002ec9b15f26592ba0efea3a4982c9e780ed6e73"
+        },
+        {
+          "file": "scripts/verify-flowers-browser.cjs",
+          "bytes": 15909,
+          "sha256": "fbe2afbaefacbe57f2d4eba18e656aff45e7973836c9f55db8bb46a470d24e40"
+        },
+        {
+          "file": "scripts/verify-metal-browser.cjs",
+          "bytes": 13589,
+          "sha256": "1b8d884167602e375492eacc3f7cbf3f1d9d1d0f9b32985188440d6b66607ced"
+        },
+        {
+          "file": "scripts/verify-orange-buttons.cjs",
+          "bytes": 13497,
+          "sha256": "a6e661e5b36b99ebc91a8929f5420fb7d113bfb7b81f1ca2c8191384e673c349"
+        },
+        {
+          "file": "scripts/verify-project-copy-browser.cjs",
+          "bytes": 5168,
+          "sha256": "5af672f1733e53fc1e88cee4863b34a2c8535742421cd26ee0950ebbc1e440c4"
+        },
+        {
+          "file": "scripts/verify-services-static.cjs",
+          "bytes": 2779,
+          "sha256": "f3bc75d1a5bdab2ff55ff263f63ba1a3999758b94a9ac778e1aa98e2cedf3b21"
+        },
+        {
+          "file": "scripts/verify-site.cjs",
+          "bytes": 2116,
+          "sha256": "432bee558fa93adc3473e8d8648374c3426a6a44b62d35134d4e193f252cd04f"
+        },
+        {
+          "file": "scripts/verify-sticky-handoff-v61.cjs",
+          "bytes": 1068,
+          "sha256": "8ca4fe136ddd49715c73bdca12630f40e091d22f56bc8d5b94923026e956e4d2"
+        },
+        {
+          "file": "scripts/verify-v62-import.cjs",
+          "bytes": 1568,
+          "sha256": "3f1b083fe8086d932bc317d2f0627b615a87c37885ad0cc193b7c0eec065cf81"
+        },
+        {
+          "file": "scripts/verify-works-static.cjs",
+          "bytes": 9295,
+          "sha256": "4494a2afc633f8533a8e12dc18b44a8e8da0595abf3ba2ada69d59d77d01a216"
+        }
+      ]
+    },
+    "backup": {
+      "count": 0,
+      "bytes": 0,
+      "exactDuplicates": [],
+      "files": []
+    }
+  },
+  "entries": {
+    "index.html": [
+      "/css/generated/home.css"
+    ],
+    "raboty/index.html": [
+      "/css/main.css",
+      "/css/fonts.css",
+      "/css/design-tokens.css",
+      "/css/raboty-base.css",
+      "/css/raboty-surface.css",
+      "/css/raboty-reveal.css",
+      "/css/raboty-cards.css",
+      "/css/raboty-scroll.css",
+      "/css/raboty-type.css",
+      "/css/site-footer.css",
+      "/css/shared-header-cta.css",
+      "/assets/vendor/lenis-1.3.26.css",
+      "/css/case-links.css"
+    ],
+    "raboty/beauty-insight/index.html": [
+      "/css/main.css",
+      "/css/fonts.css",
+      "/assets/vendor/lenis-1.3.26.css",
+      "/css/design-tokens.css",
+      "/css/raboty-base.css",
+      "/css/raboty-surface.css",
+      "/css/raboty-cards.css",
+      "/css/raboty-type.css",
+      "/css/site-footer.css",
+      "/css/shared-header-cta.css",
+      "/css/case-detail.css"
+    ],
+    "raboty/flowers/index.html": [
+      "/css/main.css",
+      "/css/fonts.css",
+      "/assets/vendor/lenis-1.3.26.css",
+      "/css/design-tokens.css",
+      "/css/raboty-base.css",
+      "/css/raboty-surface.css",
+      "/css/raboty-cards.css",
+      "/css/raboty-type.css",
+      "/css/site-footer.css",
+      "/css/shared-header-cta.css",
+      "/css/case-detail.css",
+      "/css/case-flowers.css"
+    ],
+    "raboty/metal-calc/index.html": [
+      "/css/main.css",
+      "/css/fonts.css",
+      "/assets/vendor/lenis-1.3.26.css",
+      "/css/design-tokens.css",
+      "/css/raboty-base.css",
+      "/css/raboty-surface.css",
+      "/css/raboty-cards.css",
+      "/css/raboty-type.css",
+      "/css/site-footer.css",
+      "/css/shared-header-cta.css",
+      "/css/case-detail.css",
+      "/css/case-metal.css"
+    ]
+  },
+  "unusedCSS": [],
+  "dependencies": [
+    {
+      "file": "docs/qa/v62-on-v27/verify-git.cjs",
+      "target": "scripts/lib/approved-case-links.cjs"
+    },
+    {
+      "file": "docs/qa/v62-on-v27/verify-git.cjs",
+      "target": "scripts/lib/home-styles.cjs"
+    },
+    {
+      "file": "docs/qa/v62-on-v27/verify-git.cjs",
+      "target": "scripts/lib/approved-catalog-naming.cjs"
+    },
+    {
+      "file": "docs/qa/v62-on-v27/verify-git.cjs",
+      "target": "scripts/lib/approved-button-shadows.cjs"
+    },
+    {
+      "file": "scripts/audit-project.cjs",
+      "target": "scripts/lib/home-styles.cjs"
+    },
+    {
+      "file": "scripts/build-site.cjs",
+      "target": "scripts/lib/case-page.cjs"
+    },
+    {
+      "file": "scripts/build-site.cjs",
+      "target": "scripts/lib/case-links.cjs"
+    },
+    {
+      "file": "scripts/build-site.cjs",
+      "target": "scripts/lib/project-copy.cjs"
+    },
+    {
+      "file": "scripts/build-site.cjs",
+      "target": "scripts/lib/home-styles.cjs"
+    },
+    {
+      "file": "scripts/check-hero-geometry.cjs",
+      "target": "js/hero-geometry.js"
+    },
+    {
+      "file": "scripts/check-project.cjs",
+      "target": "scripts/verify-works-static.cjs"
+    },
+    {
+      "file": "scripts/check-project.cjs",
+      "target": "scripts/lib/static-resources.cjs"
+    },
+    {
+      "file": "scripts/check-project.cjs",
+      "target": "scripts/check-hero-geometry.cjs"
+    },
+    {
+      "file": "scripts/lib/approved-case-links.cjs",
+      "target": "scripts/lib/case-page.cjs"
+    },
+    {
+      "file": "scripts/lib/approved-case-links.cjs",
+      "target": "scripts/lib/case-links.cjs"
+    },
+    {
+      "file": "scripts/lib/approved-case-links.cjs",
+      "target": "scripts/lib/approved-home-copy.cjs"
+    },
+    {
+      "file": "scripts/lib/approved-case-links.cjs",
+      "target": "scripts/lib/home-styles.cjs"
+    },
+    {
+      "file": "scripts/lib/approved-home-copy.cjs",
+      "target": "scripts/lib/project-copy.cjs"
+    },
+    {
+      "file": "scripts/lib/approved-home-copy.cjs",
+      "target": "scripts/lib/works-copy.cjs"
+    },
+    {
+      "file": "scripts/lib/case-baseline.cjs",
+      "target": "scripts/lib/case-page.cjs"
+    },
+    {
+      "file": "scripts/lib/case-page.cjs",
+      "target": "scripts/lib/project-copy.cjs"
+    },
+    {
+      "file": "scripts/lib/case-page.cjs",
+      "target": "scripts/lib/case-links.cjs"
+    },
+    {
+      "file": "scripts/lib/home-styles.cjs",
+      "target": "scripts/lib/css-bundle.cjs"
+    },
+    {
+      "file": "scripts/lib/home-styles.cjs",
+      "target": "scripts/lib/static-html.cjs"
+    },
+    {
+      "file": "scripts/lib/project-copy.cjs",
+      "target": "scripts/lib/static-html.cjs"
+    },
+    {
+      "file": "scripts/test-button-policy.cjs",
+      "target": "scripts/lib/approved-button-shadows.cjs"
+    },
+    {
+      "file": "scripts/test-case-integration.cjs",
+      "target": "scripts/lib/case-baseline.cjs"
+    },
+    {
+      "file": "scripts/test-case-pages.cjs",
+      "target": "scripts/build-site.cjs"
+    },
+    {
+      "file": "scripts/test-case-pages.cjs",
+      "target": "scripts/lib/case-page.cjs"
+    },
+    {
+      "file": "scripts/test-case-pages.cjs",
+      "target": "scripts/lib/approved-case-links.cjs"
+    },
+    {
+      "file": "scripts/test-case-pages.cjs",
+      "target": "scripts/lib/case-links.cjs"
+    },
+    {
+      "file": "scripts/test-case-pages.cjs",
+      "target": "scripts/lib/case-page.cjs"
+    },
+    {
+      "file": "scripts/test-case-pages.cjs",
+      "target": "scripts/lib/case-links.cjs"
+    },
+    {
+      "file": "scripts/test-case-pages.cjs",
+      "target": "scripts/lib/case-page.cjs"
+    },
+    {
+      "file": "scripts/test-css-bundle.cjs",
+      "target": "scripts/lib/css-bundle.cjs"
+    },
+    {
+      "file": "scripts/test-css-bundle.cjs",
+      "target": "scripts/lib/home-styles.cjs"
+    },
+    {
+      "file": "scripts/test-flowers-case.cjs",
+      "target": "scripts/lib/static-html.cjs"
+    },
+    {
+      "file": "scripts/test-flowers-case.cjs",
+      "target": "scripts/lib/case-baseline.cjs"
+    },
+    {
+      "file": "scripts/test-flowers-case.cjs",
+      "target": "scripts/build-site.cjs"
+    },
+    {
+      "file": "scripts/test-flowers-case.cjs",
+      "target": "scripts/lib/case-page.cjs"
+    },
+    {
+      "file": "scripts/test-metal-case.cjs",
+      "target": "scripts/lib/static-html.cjs"
+    },
+    {
+      "file": "scripts/test-metal-case.cjs",
+      "target": "scripts/lib/case-baseline.cjs"
+    },
+    {
+      "file": "scripts/test-metal-case.cjs",
+      "target": "scripts/build-site.cjs"
+    },
+    {
+      "file": "scripts/test-metal-case.cjs",
+      "target": "scripts/lib/case-page.cjs"
+    },
+    {
+      "file": "scripts/test-metal-case.cjs",
+      "target": "scripts/lib/case-page.cjs"
+    },
+    {
+      "file": "scripts/test-project-copy.cjs",
+      "target": "scripts/lib/static-html.cjs"
+    },
+    {
+      "file": "scripts/test-project-copy.cjs",
+      "target": "scripts/lib/project-copy.cjs"
+    },
+    {
+      "file": "scripts/test-project-copy.cjs",
+      "target": "scripts/lib/case-page.cjs"
+    },
+    {
+      "file": "scripts/test-project-copy.cjs",
+      "target": "scripts/lib/approved-home-copy.cjs"
+    },
+    {
+      "file": "scripts/test-shared-site.cjs",
+      "target": "scripts/lib/approved-case-links.cjs"
+    },
+    {
+      "file": "scripts/test-shared-site.cjs",
+      "target": "scripts/lib/approved-catalog-naming.cjs"
+    },
+    {
+      "file": "scripts/test-shared-site.cjs",
+      "target": "scripts/lib/approved-button-shadows.cjs"
+    },
+    {
+      "file": "scripts/test-shared-site.cjs",
+      "target": "scripts/build-site.cjs"
+    },
+    {
+      "file": "scripts/test-shared-site.cjs",
+      "target": "scripts/lib/static-html.cjs"
+    },
+    {
+      "file": "scripts/test-shared-site.cjs",
+      "target": "scripts/lib/works-copy.cjs"
+    },
+    {
+      "file": "scripts/test-shared-site.cjs",
+      "target": "scripts/lib/works-assets.cjs"
+    },
+    {
+      "file": "scripts/test-shared-site.cjs",
+      "target": "scripts/lib/static-resources.cjs"
+    },
+    {
+      "file": "scripts/test-static-checks.cjs",
+      "target": "scripts/check-project.cjs"
+    },
+    {
+      "file": "scripts/test-static-checks.cjs",
+      "target": "scripts/check-project.cjs"
+    },
+    {
+      "file": "scripts/test-static-checks.cjs",
+      "target": "scripts/lib/static-resources.cjs"
+    },
+    {
+      "file": "scripts/verify-case-links-browser.cjs",
+      "target": "scripts/lib/case-page.cjs"
+    },
+    {
+      "file": "scripts/verify-flowers-browser.cjs",
+      "target": "scripts/lib/browser-qa.cjs"
+    },
+    {
+      "file": "scripts/verify-metal-browser.cjs",
+      "target": "scripts/lib/browser-qa.cjs"
+    },
+    {
+      "file": "scripts/verify-services-static.cjs",
+      "target": "scripts/lib/static-html.cjs"
+    },
+    {
+      "file": "scripts/verify-works-static.cjs",
+      "target": "scripts/lib/home-styles.cjs"
+    },
+    {
+      "file": "scripts/verify-works-static.cjs",
+      "target": "scripts/lib/static-html.cjs"
+    },
+    {
+      "file": "scripts/verify-works-static.cjs",
+      "target": "scripts/lib/static-resources.cjs"
+    },
+    {
+      "file": "scripts/verify-works-static.cjs",
+      "target": "scripts/lib/works-assets.cjs"
+    },
+    {
+      "file": "scripts/verify-works-static.cjs",
+      "target": "scripts/lib/works-copy.cjs"
+    },
+    {
+      "file": "scripts/verify-works-static.cjs",
+      "target": "scripts/lib/project-copy.cjs"
+    }
+  ],
+  "unresolvedRelativeRequires": [],
+  "legacyCandidates": []
+}

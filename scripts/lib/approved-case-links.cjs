@@ -4,9 +4,11 @@ const path=require('node:path');
 const {casePages}=require('./case-page.cjs');
 const {homeLink}=require('./case-links.cjs');
 const {restoreHomeCopy}=require('./approved-home-copy.cjs');
+const {restoreHomeHead}=require('./home-styles.cjs');
 const stylesheet='<link rel="stylesheet" href="/css/case-links.css">\n';
 function once(text,from,to){if(text.split(from).length!==2)throw Error('Expected exactly one authorized case link insertion');return text.replace(from,to)}
 function restoreCaseLinks(file,text,catalogSource){
+ text=restoreHomeHead(file,text);
  if(file==='js/raboty-cards.js')return once(once(text,"document.querySelectorAll('button.case-card__open')","document.querySelectorAll('.case-card__open')"),"const type=[...card.querySelectorAll('.case-card__tags .tag')].map(tag=>tag.textContent.trim()).join(' · ');","const type=card.querySelector('.case-card__tags .tag')?.textContent?.trim();");
  const page=['index.html','templates/pages/home.html'].includes(file)?'home':['raboty/index.html','templates/pages/works.html'].includes(file)?'works':null;
  if(!page)return text;

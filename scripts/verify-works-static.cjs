@@ -2,6 +2,7 @@ const fs = require('node:fs/promises');
 const path = require('node:path');
 const assert = require('node:assert/strict');
 const vm = require('node:vm');
+const {isBundledHome,restoreHomeHead,verifyHomeCSS}=require('./lib/home-styles.cjs');
 const { parseHTML, hasClass, textContent, inside } = require('./lib/static-html.cjs');
 const { localPath, sha256, verifyHTTP, parseCLI } = require('./lib/static-resources.cjs');
 const approved = require('./lib/works-assets.cjs');
@@ -16,7 +17,9 @@ const SCRIPT_ORDER = [
   'assets/vendor/lenis-1.3.26.min.js', 'js/hero-geometry.js', 'js/hero-scroll.js', 'js/main.js', 'js/works.js', 'js/services.js', 'js/process.js', 'js/testimonials.js', 'js/faq-footer.js', 'js/footer-waves.js', 'js/footer-reveal.js',
 ];
 async function verifyWorks(root = path.resolve(__dirname, '..')) {
-  const { nodes } = parseHTML(await fs.readFile(path.join(root, 'index.html'), 'utf8'));
+  const originalHTML=await fs.readFile(path.join(root,'index.html'),'utf8');
+  const bundle=isBundledHome(originalHTML)?verifyHomeCSS(root):null;
+  const { nodes } = parseHTML(restoreHomeHead('index.html',originalHTML));
   const ids = new Map();
   for (const node of nodes.filter(node => Object.hasOwn(node.attrs, 'id'))) {
     assert.ok(node.attrs.id.trim() && !ids.has(node.attrs.id), `Duplicate or empty DOM id: ${node.attrs.id}`);
@@ -72,6 +75,7 @@ async function verifyWorks(root = path.resolve(__dirname, '..')) {
     assert.equal(sha256(data), pin.sha256, `${id}: approved image hash`);
   }
   const resources = new Set();
+  if(bundle)resources.add(bundle);
   const scripts = [];
   const styles = [];
   for (const node of nodes) {

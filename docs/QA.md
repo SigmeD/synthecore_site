@@ -7,29 +7,22 @@
 Нужны Node.js и Git. Выполняйте из корня проекта:
 
 ```powershell
-node scripts/verify-v62-import.cjs
-node docs/qa/v62-on-v27/verify-git.cjs HEAD
-node scripts/build-site.cjs --check
-node scripts/check-project.cjs
-node scripts/verify-works-static.cjs
-node scripts/verify-services-static.cjs
-node scripts/check-hero-geometry.cjs
-node scripts/verify-sticky-handoff-v61.cjs
-node --test scripts/test-static-checks.cjs scripts/test-shared-site.cjs scripts/test-button-policy.cjs scripts/test-case-pages.cjs scripts/test-project-copy.cjs scripts/test-flowers-case.cjs scripts/test-metal-case.cjs scripts/test-case-integration.cjs
-git ls-files --cached --others --exclude-standard | node scripts/check-doc-links.cjs
+node scripts/verify-site.cjs --git-ref HEAD
 ```
 
-Команды проверяют сохранность анимаций, шаблоны, ресурсы, структуру разделов, геометрию и ссылки. Названия v60/v61 в отдельных сообщениях проверок унаследованы из разработки; это не предложение вернуть старую версию сайта.
+Команда проверяет сборку HTML/CSS, сохранность анимаций, шаблоны, ресурсы, структуру разделов, геометрию, все `test-*.cjs` и ссылки документации. До коммита сначала подготовьте файлы через `git add`, затем запустите без `--git-ref HEAD`: будет проверен индекс. Отдельные команды остаются доступны в [карте scripts](../scripts/README.md). Названия v60/v61 в сообщениях унаследованы из разработки и не предлагают вернуть старую версию сайта.
 
 При работающем сервере проверьте, что он отдаёт текущие файлы:
 
 ```powershell
-node scripts/check-project.cjs --http http://127.0.0.1:4176/
+node scripts/verify-site.cjs --git-ref HEAD --http http://127.0.0.1:4176/
 ```
 
 Замените порт, если сервер запущен по другому адресу.
 
 ## Что сравнивают контрольные суммы
+
+23 октября по заданию на рефакторинг главная получает один сгенерированный CSS вместо 18 тегов. Проверка восстанавливает только точный утверждённый блок подключений перед прежним сравнением HTML. Сам артефакт проверяется пересборкой из исходных blobs того же Git index/коммита; подмена файла на диске не скрывает ошибку в Git. Исходные manifests и все 27 модульных CSS остаются прежними. [Аудит](REFACTOR_AUDIT.md) и [результаты сравнения](qa/style-scripts-refactor/README.md).
 
 | Манифест | Что защищает |
 |---|---|
@@ -159,7 +152,7 @@ node docs/qa/v62-on-v27/shell.cjs
 
 Результаты сохранятся в `output/v62-on-v27/motion/` и `output/v62-on-v27/shell/`. Для узкого повтора motion есть `--only=1440x900` и `--only=390x844`; оба требуют сервер с исходным v62 на 4182. Такой повтор не заменяет полный набор размеров.
 
-Старые `verify-v60-*` и первоначальные v27 browser scripts описывают прежнюю главную. Не используйте их как обязательную приёмку текущей v62. Их исходники остались в `scripts` для исторической диагностики; отчёты прежних сборок можно получить из Git.
+Старые `verify-v60-*` и первоначальные v27 browser scripts описывают прежнюю главную. Их исходники удалены из текущего дерева после аудита зависимостей; получить их и отчёты можно из Git, например из коммита `612da61`. Поддерживаемые команды перечислены в [scripts](../scripts/README.md).
 
 ## Что уже проверено для принятой сборки
 

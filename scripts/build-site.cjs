@@ -4,6 +4,7 @@ const path = require('node:path');
 const {casePages,renderCase}=require('./lib/case-page.cjs');
 const {wireCaseLinks}=require('./lib/case-links.cjs');
 const {renderHomeCopy}=require('./lib/project-copy.cjs');
+const {BUNDLE_PATH,bundleHomeHead,buildHomeCSS}=require('./lib/home-styles.cjs');
 const PAGES = {home:'index.html', works:'raboty/index.html'};
 const read = (root, file) => fs.readFileSync(path.join(root, file), 'utf8').replace(/\r\n/g, '\n');
 
@@ -21,10 +22,13 @@ function renderPage(root, page) {
     .replace(/\{\{(header|footer)\}\}/g, (_, key) => values[key])
     .replace(/\{\{(home|worksCurrent)\}\}/g, (_, key) => values[key]);
   if (/\{\{[^}]+\}\}/.test(output)) throw new Error(`Unresolved template marker in ${page}`);
-  return output;
+  return page==='home'?bundleHomeHead(output):output;
 }
 
 function build(root, check = false) {
+  const css=buildHomeCSS(root).css,cssFile=path.join(root,BUNDLE_PATH);
+  if(check){if(!fs.existsSync(cssFile)||fs.readFileSync(cssFile,'utf8')!==css)throw new Error(`${BUNDLE_PATH} is stale; run node scripts/build-site.cjs`)}
+  else{fs.mkdirSync(path.dirname(cssFile),{recursive:true});fs.writeFileSync(cssFile,css)}
   const pages={...PAGES,...Object.fromEntries(casePages(root).map(data=>[data.slug,`raboty/${data.slug}/index.html`]))};
   for (const [page, file] of Object.entries(pages)) {
     const output = renderPage(root, page), destination = path.join(root, file);

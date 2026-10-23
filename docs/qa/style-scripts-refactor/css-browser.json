@@ -1,0 +1,4632 @@
+{
+  "date": "2026-10-23T20:47:26.229Z",
+  "base": "http://127.0.0.1:4176/",
+  "baseline": "http://127.0.0.1:4193/",
+  "checks": [
+    {
+      "name": "320 / CSSOM cascade unchanged",
+      "pass": true
+    },
+    {
+      "name": "320 / external font imports unchanged",
+      "pass": true
+    },
+    {
+      "name": "320 / computed styles unchanged",
+      "pass": true
+    },
+    {
+      "name": "320 / no overflow",
+      "pass": true
+    },
+    {
+      "name": "320 / stylesheet delivery",
+      "pass": true
+    },
+    {
+      "name": "320 / identical viewport pixels",
+      "pass": true,
+      "data": {
+        "changedPixels": 0,
+        "maxDelta": 0,
+        "totalPixels": 270080
+      }
+    },
+    {
+      "name": "320 /raboty/ CSSOM cascade unchanged",
+      "pass": true
+    },
+    {
+      "name": "320 /raboty/ external font imports unchanged",
+      "pass": true
+    },
+    {
+      "name": "320 /raboty/ computed styles unchanged",
+      "pass": true
+    },
+    {
+      "name": "320 /raboty/ no overflow",
+      "pass": true
+    },
+    {
+      "name": "320 /raboty/ stylesheet delivery",
+      "pass": true
+    },
+    {
+      "name": "320 /raboty/ unchanged HTML after newline normalization",
+      "pass": true
+    },
+    {
+      "name": "320 /raboty/beauty-insight/ CSSOM cascade unchanged",
+      "pass": true
+    },
+    {
+      "name": "320 /raboty/beauty-insight/ external font imports unchanged",
+      "pass": true
+    },
+    {
+      "name": "320 /raboty/beauty-insight/ computed styles unchanged",
+      "pass": true
+    },
+    {
+      "name": "320 /raboty/beauty-insight/ no overflow",
+      "pass": true
+    },
+    {
+      "name": "320 /raboty/beauty-insight/ stylesheet delivery",
+      "pass": true
+    },
+    {
+      "name": "320 /raboty/beauty-insight/ unchanged HTML after newline normalization",
+      "pass": true
+    },
+    {
+      "name": "320 /raboty/flowers/ CSSOM cascade unchanged",
+      "pass": true
+    },
+    {
+      "name": "320 /raboty/flowers/ external font imports unchanged",
+      "pass": true
+    },
+    {
+      "name": "320 /raboty/flowers/ computed styles unchanged",
+      "pass": true
+    },
+    {
+      "name": "320 /raboty/flowers/ no overflow",
+      "pass": true
+    },
+    {
+      "name": "320 /raboty/flowers/ stylesheet delivery",
+      "pass": true
+    },
+    {
+      "name": "320 /raboty/flowers/ unchanged HTML after newline normalization",
+      "pass": true
+    },
+    {
+      "name": "320 /raboty/metal-calc/ CSSOM cascade unchanged",
+      "pass": true
+    },
+    {
+      "name": "320 /raboty/metal-calc/ external font imports unchanged",
+      "pass": true
+    },
+    {
+      "name": "320 /raboty/metal-calc/ computed styles unchanged",
+      "pass": true
+    },
+    {
+      "name": "320 /raboty/metal-calc/ no overflow",
+      "pass": true
+    },
+    {
+      "name": "320 /raboty/metal-calc/ stylesheet delivery",
+      "pass": true
+    },
+    {
+      "name": "320 /raboty/metal-calc/ unchanged HTML after newline normalization",
+      "pass": true
+    },
+    {
+      "name": "390 / CSSOM cascade unchanged",
+      "pass": true
+    },
+    {
+      "name": "390 / external font imports unchanged",
+      "pass": true
+    },
+    {
+      "name": "390 / computed styles unchanged",
+      "pass": true
+    },
+    {
+      "name": "390 / no overflow",
+      "pass": true
+    },
+    {
+      "name": "390 / stylesheet delivery",
+      "pass": true
+    },
+    {
+      "name": "390 / identical viewport pixels",
+      "pass": true,
+      "data": {
+        "changedPixels": 0,
+        "maxDelta": 0,
+        "totalPixels": 329160
+      }
+    },
+    {
+      "name": "390 /raboty/ CSSOM cascade unchanged",
+      "pass": true
+    },
+    {
+      "name": "390 /raboty/ external font imports unchanged",
+      "pass": true
+    },
+    {
+      "name": "390 /raboty/ computed styles unchanged",
+      "pass": true
+    },
+    {
+      "name": "390 /raboty/ no overflow",
+      "pass": true
+    },
+    {
+      "name": "390 /raboty/ stylesheet delivery",
+      "pass": true
+    },
+    {
+      "name": "390 /raboty/ unchanged HTML after newline normalization",
+      "pass": true
+    },
+    {
+      "name": "390 /raboty/beauty-insight/ CSSOM cascade unchanged",
+      "pass": true
+    },
+    {
+      "name": "390 /raboty/beauty-insight/ external font imports unchanged",
+      "pass": true
+    },
+    {
+      "name": "390 /raboty/beauty-insight/ computed styles unchanged",
+      "pass": true
+    },
+    {
+      "name": "390 /raboty/beauty-insight/ no overflow",
+      "pass": true
+    },
+    {
+      "name": "390 /raboty/beauty-insight/ stylesheet delivery",
+      "pass": true
+    },
+    {
+      "name": "390 /raboty/beauty-insight/ unchanged HTML after newline normalization",
+      "pass": true
+    },
+    {
+      "name": "390 /raboty/flowers/ CSSOM cascade unchanged",
+      "pass": true
+    },
+    {
+      "name": "390 /raboty/flowers/ external font imports unchanged",
+      "pass": true
+    },
+    {
+      "name": "390 /raboty/flowers/ computed styles unchanged",
+      "pass": true
+    },
+    {
+      "name": "390 /raboty/flowers/ no overflow",
+      "pass": true
+    },
+    {
+      "name": "390 /raboty/flowers/ stylesheet delivery",
+      "pass": true
+    },
+    {
+      "name": "390 /raboty/flowers/ unchanged HTML after newline normalization",
+      "pass": true
+    },
+    {
+      "name": "390 /raboty/metal-calc/ CSSOM cascade unchanged",
+      "pass": true
+    },
+    {
+      "name": "390 /raboty/metal-calc/ external font imports unchanged",
+      "pass": true
+    },
+    {
+      "name": "390 /raboty/metal-calc/ computed styles unchanged",
+      "pass": true
+    },
+    {
+      "name": "390 /raboty/metal-calc/ no overflow",
+      "pass": true
+    },
+    {
+      "name": "390 /raboty/metal-calc/ stylesheet delivery",
+      "pass": true
+    },
+    {
+      "name": "390 /raboty/metal-calc/ unchanged HTML after newline normalization",
+      "pass": true
+    },
+    {
+      "name": "768 / CSSOM cascade unchanged",
+      "pass": true
+    },
+    {
+      "name": "768 / external font imports unchanged",
+      "pass": true
+    },
+    {
+      "name": "768 / computed styles unchanged",
+      "pass": true
+    },
+    {
+      "name": "768 / no overflow",
+      "pass": true
+    },
+    {
+      "name": "768 / stylesheet delivery",
+      "pass": true
+    },
+    {
+      "name": "768 / identical viewport pixels",
+      "pass": true,
+      "data": {
+        "changedPixels": 0,
+        "maxDelta": 0,
+        "totalPixels": 648192
+      }
+    },
+    {
+      "name": "768 /raboty/ CSSOM cascade unchanged",
+      "pass": true
+    },
+    {
+      "name": "768 /raboty/ external font imports unchanged",
+      "pass": true
+    },
+    {
+      "name": "768 /raboty/ computed styles unchanged",
+      "pass": true
+    },
+    {
+      "name": "768 /raboty/ no overflow",
+      "pass": true
+    },
+    {
+      "name": "768 /raboty/ stylesheet delivery",
+      "pass": true
+    },
+    {
+      "name": "768 /raboty/ unchanged HTML after newline normalization",
+      "pass": true
+    },
+    {
+      "name": "768 /raboty/beauty-insight/ CSSOM cascade unchanged",
+      "pass": true
+    },
+    {
+      "name": "768 /raboty/beauty-insight/ external font imports unchanged",
+      "pass": true
+    },
+    {
+      "name": "768 /raboty/beauty-insight/ computed styles unchanged",
+      "pass": true
+    },
+    {
+      "name": "768 /raboty/beauty-insight/ no overflow",
+      "pass": true
+    },
+    {
+      "name": "768 /raboty/beauty-insight/ stylesheet delivery",
+      "pass": true
+    },
+    {
+      "name": "768 /raboty/beauty-insight/ unchanged HTML after newline normalization",
+      "pass": true
+    },
+    {
+      "name": "768 /raboty/flowers/ CSSOM cascade unchanged",
+      "pass": true
+    },
+    {
+      "name": "768 /raboty/flowers/ external font imports unchanged",
+      "pass": true
+    },
+    {
+      "name": "768 /raboty/flowers/ computed styles unchanged",
+      "pass": true
+    },
+    {
+      "name": "768 /raboty/flowers/ no overflow",
+      "pass": true
+    },
+    {
+      "name": "768 /raboty/flowers/ stylesheet delivery",
+      "pass": true
+    },
+    {
+      "name": "768 /raboty/flowers/ unchanged HTML after newline normalization",
+      "pass": true
+    },
+    {
+      "name": "768 /raboty/metal-calc/ CSSOM cascade unchanged",
+      "pass": true
+    },
+    {
+      "name": "768 /raboty/metal-calc/ external font imports unchanged",
+      "pass": true
+    },
+    {
+      "name": "768 /raboty/metal-calc/ computed styles unchanged",
+      "pass": true
+    },
+    {
+      "name": "768 /raboty/metal-calc/ no overflow",
+      "pass": true
+    },
+    {
+      "name": "768 /raboty/metal-calc/ stylesheet delivery",
+      "pass": true
+    },
+    {
+      "name": "768 /raboty/metal-calc/ unchanged HTML after newline normalization",
+      "pass": true
+    },
+    {
+      "name": "1440 / CSSOM cascade unchanged",
+      "pass": true
+    },
+    {
+      "name": "1440 / external font imports unchanged",
+      "pass": true
+    },
+    {
+      "name": "1440 / computed styles unchanged",
+      "pass": true
+    },
+    {
+      "name": "1440 / no overflow",
+      "pass": true
+    },
+    {
+      "name": "1440 / stylesheet delivery",
+      "pass": true
+    },
+    {
+      "name": "1440 / identical viewport pixels",
+      "pass": true,
+      "data": {
+        "changedPixels": 0,
+        "maxDelta": 0,
+        "totalPixels": 1296000
+      }
+    },
+    {
+      "name": "1440 /raboty/ CSSOM cascade unchanged",
+      "pass": true
+    },
+    {
+      "name": "1440 /raboty/ external font imports unchanged",
+      "pass": true
+    },
+    {
+      "name": "1440 /raboty/ computed styles unchanged",
+      "pass": true
+    },
+    {
+      "name": "1440 /raboty/ no overflow",
+      "pass": true
+    },
+    {
+      "name": "1440 /raboty/ stylesheet delivery",
+      "pass": true
+    },
+    {
+      "name": "1440 /raboty/ unchanged HTML after newline normalization",
+      "pass": true
+    },
+    {
+      "name": "1440 /raboty/beauty-insight/ CSSOM cascade unchanged",
+      "pass": true
+    },
+    {
+      "name": "1440 /raboty/beauty-insight/ external font imports unchanged",
+      "pass": true
+    },
+    {
+      "name": "1440 /raboty/beauty-insight/ computed styles unchanged",
+      "pass": true
+    },
+    {
+      "name": "1440 /raboty/beauty-insight/ no overflow",
+      "pass": true
+    },
+    {
+      "name": "1440 /raboty/beauty-insight/ stylesheet delivery",
+      "pass": true
+    },
+    {
+      "name": "1440 /raboty/beauty-insight/ unchanged HTML after newline normalization",
+      "pass": true
+    },
+    {
+      "name": "1440 /raboty/flowers/ CSSOM cascade unchanged",
+      "pass": true
+    },
+    {
+      "name": "1440 /raboty/flowers/ external font imports unchanged",
+      "pass": true
+    },
+    {
+      "name": "1440 /raboty/flowers/ computed styles unchanged",
+      "pass": true
+    },
+    {
+      "name": "1440 /raboty/flowers/ no overflow",
+      "pass": true
+    },
+    {
+      "name": "1440 /raboty/flowers/ stylesheet delivery",
+      "pass": true
+    },
+    {
+      "name": "1440 /raboty/flowers/ unchanged HTML after newline normalization",
+      "pass": true
+    },
+    {
+      "name": "1440 /raboty/metal-calc/ CSSOM cascade unchanged",
+      "pass": true
+    },
+    {
+      "name": "1440 /raboty/metal-calc/ external font imports unchanged",
+      "pass": true
+    },
+    {
+      "name": "1440 /raboty/metal-calc/ computed styles unchanged",
+      "pass": true
+    },
+    {
+      "name": "1440 /raboty/metal-calc/ no overflow",
+      "pass": true
+    },
+    {
+      "name": "1440 /raboty/metal-calc/ stylesheet delivery",
+      "pass": true
+    },
+    {
+      "name": "1440 /raboty/metal-calc/ unchanged HTML after newline normalization",
+      "pass": true
+    },
+    {
+      "name": "1920 / CSSOM cascade unchanged",
+      "pass": true
+    },
+    {
+      "name": "1920 / external font imports unchanged",
+      "pass": true
+    },
+    {
+      "name": "1920 / computed styles unchanged",
+      "pass": true
+    },
+    {
+      "name": "1920 / no overflow",
+      "pass": true
+    },
+    {
+      "name": "1920 / stylesheet delivery",
+      "pass": true
+    },
+    {
+      "name": "1920 / identical viewport pixels",
+      "pass": true,
+      "data": {
+        "changedPixels": 0,
+        "maxDelta": 0,
+        "totalPixels": 1728000
+      }
+    },
+    {
+      "name": "1920 /raboty/ CSSOM cascade unchanged",
+      "pass": true
+    },
+    {
+      "name": "1920 /raboty/ external font imports unchanged",
+      "pass": true
+    },
+    {
+      "name": "1920 /raboty/ computed styles unchanged",
+      "pass": true
+    },
+    {
+      "name": "1920 /raboty/ no overflow",
+      "pass": true
+    },
+    {
+      "name": "1920 /raboty/ stylesheet delivery",
+      "pass": true
+    },
+    {
+      "name": "1920 /raboty/ unchanged HTML after newline normalization",
+      "pass": true
+    },
+    {
+      "name": "1920 /raboty/beauty-insight/ CSSOM cascade unchanged",
+      "pass": true
+    },
+    {
+      "name": "1920 /raboty/beauty-insight/ external font imports unchanged",
+      "pass": true
+    },
+    {
+      "name": "1920 /raboty/beauty-insight/ computed styles unchanged",
+      "pass": true
+    },
+    {
+      "name": "1920 /raboty/beauty-insight/ no overflow",
+      "pass": true
+    },
+    {
+      "name": "1920 /raboty/beauty-insight/ stylesheet delivery",
+      "pass": true
+    },
+    {
+      "name": "1920 /raboty/beauty-insight/ unchanged HTML after newline normalization",
+      "pass": true
+    },
+    {
+      "name": "1920 /raboty/flowers/ CSSOM cascade unchanged",
+      "pass": true
+    },
+    {
+      "name": "1920 /raboty/flowers/ external font imports unchanged",
+      "pass": true
+    },
+    {
+      "name": "1920 /raboty/flowers/ computed styles unchanged",
+      "pass": true
+    },
+    {
+      "name": "1920 /raboty/flowers/ no overflow",
+      "pass": true
+    },
+    {
+      "name": "1920 /raboty/flowers/ stylesheet delivery",
+      "pass": true
+    },
+    {
+      "name": "1920 /raboty/flowers/ unchanged HTML after newline normalization",
+      "pass": true
+    },
+    {
+      "name": "1920 /raboty/metal-calc/ CSSOM cascade unchanged",
+      "pass": true
+    },
+    {
+      "name": "1920 /raboty/metal-calc/ external font imports unchanged",
+      "pass": true
+    },
+    {
+      "name": "1920 /raboty/metal-calc/ computed styles unchanged",
+      "pass": true
+    },
+    {
+      "name": "1920 /raboty/metal-calc/ no overflow",
+      "pass": true
+    },
+    {
+      "name": "1920 /raboty/metal-calc/ stylesheet delivery",
+      "pass": true
+    },
+    {
+      "name": "1920 /raboty/metal-calc/ unchanged HTML after newline normalization",
+      "pass": true
+    },
+    {
+      "name": "1440 one existing main owner",
+      "pass": true
+    },
+    {
+      "name": "1440 normal scroll #audiences",
+      "pass": true
+    },
+    {
+      "name": "1440 normal scroll #works",
+      "pass": true
+    },
+    {
+      "name": "1440 normal scroll #services",
+      "pass": true
+    },
+    {
+      "name": "1440 normal scroll #process",
+      "pass": true
+    },
+    {
+      "name": "1440 normal scroll #testimonials",
+      "pass": true
+    },
+    {
+      "name": "1440 normal scroll #faq",
+      "pass": true
+    },
+    {
+      "name": "1440 normal scroll #contact",
+      "pass": true
+    },
+    {
+      "name": "1440 reverse scroll",
+      "pass": true
+    },
+    {
+      "name": "1440 reduced motion switches owner",
+      "pass": true
+    },
+    {
+      "name": "390 one existing main owner",
+      "pass": true
+    },
+    {
+      "name": "390 normal scroll #audiences",
+      "pass": true
+    },
+    {
+      "name": "390 normal scroll #works",
+      "pass": true
+    },
+    {
+      "name": "390 normal scroll #services",
+      "pass": true
+    },
+    {
+      "name": "390 normal scroll #process",
+      "pass": true
+    },
+    {
+      "name": "390 normal scroll #testimonials",
+      "pass": true
+    },
+    {
+      "name": "390 normal scroll #faq",
+      "pass": true
+    },
+    {
+      "name": "390 normal scroll #contact",
+      "pass": true
+    },
+    {
+      "name": "390 reverse scroll",
+      "pass": true
+    },
+    {
+      "name": "mobile menu opens",
+      "pass": true
+    },
+    {
+      "name": "mobile menu closes",
+      "pass": true
+    },
+    {
+      "name": "390 reduced motion switches owner",
+      "pass": true
+    },
+    {
+      "name": "all comparison scenarios completed",
+      "pass": true
+    },
+    {
+      "name": "no JS/console/network failures",
+      "pass": true,
+      "data": []
+    }
+  ],
+  "errors": [],
+  "comparisons": [
+    {
+      "width": 320,
+      "route": "/",
+      "rulesBefore": "cd7461ec332664c8f6450b06389e1d757684587e729cfdcfa94b7a3810bd3f48",
+      "rulesAfter": "cd7461ec332664c8f6450b06389e1d757684587e729cfdcfa94b7a3810bd3f48",
+      "stylesBefore": "b3246944ae9a28622d4ca45b6d109c34d58c815f32c1f3c114bc5d360145388e",
+      "stylesAfter": "b3246944ae9a28622d4ca45b6d109c34d58c815f32c1f3c114bc5d360145388e",
+      "styleLinksBefore": 18,
+      "styleLinksAfter": 1,
+      "localCSSRequestsBefore": 19,
+      "localCSSRequestsAfter": 1,
+      "pixels": {
+        "changedPixels": 0,
+        "maxDelta": 0,
+        "totalPixels": 270080
+      }
+    },
+    {
+      "width": 320,
+      "route": "/raboty/",
+      "rulesBefore": "7c5e90e4751c8fcf09a6fc551c72b21ab9d0b11c30675ac7663f49483691e26e",
+      "rulesAfter": "7c5e90e4751c8fcf09a6fc551c72b21ab9d0b11c30675ac7663f49483691e26e",
+      "stylesBefore": "0b0b585629b23c94ad3554e26cab7e0c812829571010b58d1a6e78a4b6804bbd",
+      "stylesAfter": "0b0b585629b23c94ad3554e26cab7e0c812829571010b58d1a6e78a4b6804bbd",
+      "styleLinksBefore": 13,
+      "styleLinksAfter": 13,
+      "localCSSRequestsBefore": 14,
+      "localCSSRequestsAfter": 14,
+      "pixels": {
+        "changedPixels": 0,
+        "maxDelta": 0,
+        "totalPixels": 270080
+      }
+    },
+    {
+      "width": 320,
+      "route": "/raboty/beauty-insight/",
+      "rulesBefore": "33d200aa6077431927f98f974d09f928907252fbf6f560dc2fcd5482f5d53bdf",
+      "rulesAfter": "33d200aa6077431927f98f974d09f928907252fbf6f560dc2fcd5482f5d53bdf",
+      "stylesBefore": "68744059d53efdadbf5e039143a0ae93a43e79fe19df347945f8cfe4ad56be2e",
+      "stylesAfter": "68744059d53efdadbf5e039143a0ae93a43e79fe19df347945f8cfe4ad56be2e",
+      "styleLinksBefore": 11,
+      "styleLinksAfter": 11,
+      "localCSSRequestsBefore": 12,
+      "localCSSRequestsAfter": 12,
+      "pixels": {
+        "changedPixels": 0,
+        "maxDelta": 0,
+        "totalPixels": 270080
+      }
+    },
+    {
+      "width": 320,
+      "route": "/raboty/flowers/",
+      "rulesBefore": "5c08d6b269b8b37b365d84cfeb142183a5c6d7fee0fdf75a7fa87428b93c832f",
+      "rulesAfter": "5c08d6b269b8b37b365d84cfeb142183a5c6d7fee0fdf75a7fa87428b93c832f",
+      "stylesBefore": "989a13b68b839cd941d52b3cba7050f5969bcd5dbae8ba8cb921d2d2f87b7240",
+      "stylesAfter": "989a13b68b839cd941d52b3cba7050f5969bcd5dbae8ba8cb921d2d2f87b7240",
+      "styleLinksBefore": 12,
+      "styleLinksAfter": 12,
+      "localCSSRequestsBefore": 13,
+      "localCSSRequestsAfter": 13,
+      "pixels": {
+        "changedPixels": 0,
+        "maxDelta": 0,
+        "totalPixels": 270080
+      }
+    },
+    {
+      "width": 320,
+      "route": "/raboty/metal-calc/",
+      "rulesBefore": "3f2c1a6c5df32cfdad5e2ccdb93b335f59c659df4383c11a87a94c4bdb4e52cb",
+      "rulesAfter": "3f2c1a6c5df32cfdad5e2ccdb93b335f59c659df4383c11a87a94c4bdb4e52cb",
+      "stylesBefore": "252dc387bfef4a04c5d8cf7f7df399192dfddd4e9a05714f74d395162ef1ade9",
+      "stylesAfter": "252dc387bfef4a04c5d8cf7f7df399192dfddd4e9a05714f74d395162ef1ade9",
+      "styleLinksBefore": 12,
+      "styleLinksAfter": 12,
+      "localCSSRequestsBefore": 13,
+      "localCSSRequestsAfter": 13,
+      "pixels": {
+        "changedPixels": 0,
+        "maxDelta": 0,
+        "totalPixels": 270080
+      }
+    },
+    {
+      "width": 390,
+      "route": "/",
+      "rulesBefore": "cd7461ec332664c8f6450b06389e1d757684587e729cfdcfa94b7a3810bd3f48",
+      "rulesAfter": "cd7461ec332664c8f6450b06389e1d757684587e729cfdcfa94b7a3810bd3f48",
+      "stylesBefore": "6d703c678e156aee95611246c0ecccd8e4f05b3233e1e520f7dd5d7eb3a91f37",
+      "stylesAfter": "6d703c678e156aee95611246c0ecccd8e4f05b3233e1e520f7dd5d7eb3a91f37",
+      "styleLinksBefore": 18,
+      "styleLinksAfter": 1,
+      "localCSSRequestsBefore": 19,
+      "localCSSRequestsAfter": 1,
+      "pixels": {
+        "changedPixels": 0,
+        "maxDelta": 0,
+        "totalPixels": 329160
+      }
+    },
+    {
+      "width": 390,
+      "route": "/raboty/",
+      "rulesBefore": "7c5e90e4751c8fcf09a6fc551c72b21ab9d0b11c30675ac7663f49483691e26e",
+      "rulesAfter": "7c5e90e4751c8fcf09a6fc551c72b21ab9d0b11c30675ac7663f49483691e26e",
+      "stylesBefore": "53b7e822a38378266ee8c63c49e473974012520695d1f272c25bbab71b7a3796",
+      "stylesAfter": "53b7e822a38378266ee8c63c49e473974012520695d1f272c25bbab71b7a3796",
+      "styleLinksBefore": 13,
+      "styleLinksAfter": 13,
+      "localCSSRequestsBefore": 14,
+      "localCSSRequestsAfter": 14,
+      "pixels": {
+        "changedPixels": 0,
+        "maxDelta": 0,
+        "totalPixels": 329160
+      }
+    },
+    {
+      "width": 390,
+      "route": "/raboty/beauty-insight/",
+      "rulesBefore": "33d200aa6077431927f98f974d09f928907252fbf6f560dc2fcd5482f5d53bdf",
+      "rulesAfter": "33d200aa6077431927f98f974d09f928907252fbf6f560dc2fcd5482f5d53bdf",
+      "stylesBefore": "8e0cbecfe6523b877ea702b527b568b5f5d98c18b415f88a0fac9ce55c4e807a",
+      "stylesAfter": "8e0cbecfe6523b877ea702b527b568b5f5d98c18b415f88a0fac9ce55c4e807a",
+      "styleLinksBefore": 11,
+      "styleLinksAfter": 11,
+      "localCSSRequestsBefore": 12,
+      "localCSSRequestsAfter": 12,
+      "pixels": {
+        "changedPixels": 0,
+        "maxDelta": 0,
+        "totalPixels": 329160
+      }
+    },
+    {
+      "width": 390,
+      "route": "/raboty/flowers/",
+      "rulesBefore": "5c08d6b269b8b37b365d84cfeb142183a5c6d7fee0fdf75a7fa87428b93c832f",
+      "rulesAfter": "5c08d6b269b8b37b365d84cfeb142183a5c6d7fee0fdf75a7fa87428b93c832f",
+      "stylesBefore": "a4abe9209811cd67e5b617a7f784a78b5417d3c75f5af4a2c1ac217d77d1a29d",
+      "stylesAfter": "a4abe9209811cd67e5b617a7f784a78b5417d3c75f5af4a2c1ac217d77d1a29d",
+      "styleLinksBefore": 12,
+      "styleLinksAfter": 12,
+      "localCSSRequestsBefore": 13,
+      "localCSSRequestsAfter": 13,
+      "pixels": {
+        "changedPixels": 0,
+        "maxDelta": 0,
+        "totalPixels": 329160
+      }
+    },
+    {
+      "width": 390,
+      "route": "/raboty/metal-calc/",
+      "rulesBefore": "3f2c1a6c5df32cfdad5e2ccdb93b335f59c659df4383c11a87a94c4bdb4e52cb",
+      "rulesAfter": "3f2c1a6c5df32cfdad5e2ccdb93b335f59c659df4383c11a87a94c4bdb4e52cb",
+      "stylesBefore": "74c524bff934a03cf183dda34aba81b5f1917d8b25cdf5eb2b787f58e6d0d014",
+      "stylesAfter": "74c524bff934a03cf183dda34aba81b5f1917d8b25cdf5eb2b787f58e6d0d014",
+      "styleLinksBefore": 12,
+      "styleLinksAfter": 12,
+      "localCSSRequestsBefore": 13,
+      "localCSSRequestsAfter": 13,
+      "pixels": {
+        "changedPixels": 0,
+        "maxDelta": 0,
+        "totalPixels": 329160
+      }
+    },
+    {
+      "width": 768,
+      "route": "/",
+      "rulesBefore": "cd7461ec332664c8f6450b06389e1d757684587e729cfdcfa94b7a3810bd3f48",
+      "rulesAfter": "cd7461ec332664c8f6450b06389e1d757684587e729cfdcfa94b7a3810bd3f48",
+      "stylesBefore": "12ab2a6ae459e4635445e709d69340e135ffd88c1af50040a1329b2f60decf4b",
+      "stylesAfter": "12ab2a6ae459e4635445e709d69340e135ffd88c1af50040a1329b2f60decf4b",
+      "styleLinksBefore": 18,
+      "styleLinksAfter": 1,
+      "localCSSRequestsBefore": 19,
+      "localCSSRequestsAfter": 1,
+      "pixels": {
+        "changedPixels": 0,
+        "maxDelta": 0,
+        "totalPixels": 648192
+      }
+    },
+    {
+      "width": 768,
+      "route": "/raboty/",
+      "rulesBefore": "7c5e90e4751c8fcf09a6fc551c72b21ab9d0b11c30675ac7663f49483691e26e",
+      "rulesAfter": "7c5e90e4751c8fcf09a6fc551c72b21ab9d0b11c30675ac7663f49483691e26e",
+      "stylesBefore": "0ae2befbcd2fe6d5c2fb1bdac43e6113aa438510dbbde8d6e79c26bbfdc5d68e",
+      "stylesAfter": "0ae2befbcd2fe6d5c2fb1bdac43e6113aa438510dbbde8d6e79c26bbfdc5d68e",
+      "styleLinksBefore": 13,
+      "styleLinksAfter": 13,
+      "localCSSRequestsBefore": 14,
+      "localCSSRequestsAfter": 14,
+      "pixels": {
+        "changedPixels": 138,
+        "maxDelta": 4,
+        "totalPixels": 648192
+      }
+    },
+    {
+      "width": 768,
+      "route": "/raboty/beauty-insight/",
+      "rulesBefore": "33d200aa6077431927f98f974d09f928907252fbf6f560dc2fcd5482f5d53bdf",
+      "rulesAfter": "33d200aa6077431927f98f974d09f928907252fbf6f560dc2fcd5482f5d53bdf",
+      "stylesBefore": "5a5046b082bf387d8b9b031b183bbc145212313d3edba5977dcdd6793439ef32",
+      "stylesAfter": "5a5046b082bf387d8b9b031b183bbc145212313d3edba5977dcdd6793439ef32",
+      "styleLinksBefore": 11,
+      "styleLinksAfter": 11,
+      "localCSSRequestsBefore": 12,
+      "localCSSRequestsAfter": 12,
+      "pixels": {
+        "changedPixels": 0,
+        "maxDelta": 0,
+        "totalPixels": 648192
+      }
+    },
+    {
+      "width": 768,
+      "route": "/raboty/flowers/",
+      "rulesBefore": "5c08d6b269b8b37b365d84cfeb142183a5c6d7fee0fdf75a7fa87428b93c832f",
+      "rulesAfter": "5c08d6b269b8b37b365d84cfeb142183a5c6d7fee0fdf75a7fa87428b93c832f",
+      "stylesBefore": "3835f47b090aec2a70fcec620622c10db46b2042aebd3e1c3ddfcacf1510a430",
+      "stylesAfter": "3835f47b090aec2a70fcec620622c10db46b2042aebd3e1c3ddfcacf1510a430",
+      "styleLinksBefore": 12,
+      "styleLinksAfter": 12,
+      "localCSSRequestsBefore": 13,
+      "localCSSRequestsAfter": 13,
+      "pixels": {
+        "changedPixels": 917,
+        "maxDelta": 88,
+        "totalPixels": 648192
+      }
+    },
+    {
+      "width": 768,
+      "route": "/raboty/metal-calc/",
+      "rulesBefore": "3f2c1a6c5df32cfdad5e2ccdb93b335f59c659df4383c11a87a94c4bdb4e52cb",
+      "rulesAfter": "3f2c1a6c5df32cfdad5e2ccdb93b335f59c659df4383c11a87a94c4bdb4e52cb",
+      "stylesBefore": "2593acf81bc9d129ac3c8ed070f1d967df518b13bfc80b03813e1242c6c784a6",
+      "stylesAfter": "2593acf81bc9d129ac3c8ed070f1d967df518b13bfc80b03813e1242c6c784a6",
+      "styleLinksBefore": 12,
+      "styleLinksAfter": 12,
+      "localCSSRequestsBefore": 13,
+      "localCSSRequestsAfter": 13,
+      "pixels": {
+        "changedPixels": 0,
+        "maxDelta": 0,
+        "totalPixels": 648192
+      }
+    },
+    {
+      "width": 1440,
+      "route": "/",
+      "rulesBefore": "cd7461ec332664c8f6450b06389e1d757684587e729cfdcfa94b7a3810bd3f48",
+      "rulesAfter": "cd7461ec332664c8f6450b06389e1d757684587e729cfdcfa94b7a3810bd3f48",
+      "stylesBefore": "ccf61eb37fb2bcc5f90605bca9aee4f1d1fbbba41d662cd259c3384132a57caf",
+      "stylesAfter": "ccf61eb37fb2bcc5f90605bca9aee4f1d1fbbba41d662cd259c3384132a57caf",
+      "styleLinksBefore": 18,
+      "styleLinksAfter": 1,
+      "localCSSRequestsBefore": 19,
+      "localCSSRequestsAfter": 1,
+      "pixels": {
+        "changedPixels": 0,
+        "maxDelta": 0,
+        "totalPixels": 1296000
+      }
+    },
+    {
+      "width": 1440,
+      "route": "/raboty/",
+      "rulesBefore": "7c5e90e4751c8fcf09a6fc551c72b21ab9d0b11c30675ac7663f49483691e26e",
+      "rulesAfter": "7c5e90e4751c8fcf09a6fc551c72b21ab9d0b11c30675ac7663f49483691e26e",
+      "stylesBefore": "ba491df21e3875f95bfa2bb29d6cb5651a044d745f775e2bd7c9b23d9f983115",
+      "stylesAfter": "ba491df21e3875f95bfa2bb29d6cb5651a044d745f775e2bd7c9b23d9f983115",
+      "styleLinksBefore": 13,
+      "styleLinksAfter": 13,
+      "localCSSRequestsBefore": 14,
+      "localCSSRequestsAfter": 14,
+      "pixels": {
+        "changedPixels": 0,
+        "maxDelta": 0,
+        "totalPixels": 1296000
+      }
+    },
+    {
+      "width": 1440,
+      "route": "/raboty/beauty-insight/",
+      "rulesBefore": "33d200aa6077431927f98f974d09f928907252fbf6f560dc2fcd5482f5d53bdf",
+      "rulesAfter": "33d200aa6077431927f98f974d09f928907252fbf6f560dc2fcd5482f5d53bdf",
+      "stylesBefore": "c97e9589fd3c726d7de7931c3d418fdc9e5060d9d22ebd9a5a4f0cbd6336e3a0",
+      "stylesAfter": "c97e9589fd3c726d7de7931c3d418fdc9e5060d9d22ebd9a5a4f0cbd6336e3a0",
+      "styleLinksBefore": 11,
+      "styleLinksAfter": 11,
+      "localCSSRequestsBefore": 12,
+      "localCSSRequestsAfter": 12,
+      "pixels": {
+        "changedPixels": 0,
+        "maxDelta": 0,
+        "totalPixels": 1296000
+      }
+    },
+    {
+      "width": 1440,
+      "route": "/raboty/flowers/",
+      "rulesBefore": "5c08d6b269b8b37b365d84cfeb142183a5c6d7fee0fdf75a7fa87428b93c832f",
+      "rulesAfter": "5c08d6b269b8b37b365d84cfeb142183a5c6d7fee0fdf75a7fa87428b93c832f",
+      "stylesBefore": "da9d347005aeda6f98819b7afd1e4d8d9d84f7ab43c7f29af9e4d33549b0aef7",
+      "stylesAfter": "da9d347005aeda6f98819b7afd1e4d8d9d84f7ab43c7f29af9e4d33549b0aef7",
+      "styleLinksBefore": 12,
+      "styleLinksAfter": 12,
+      "localCSSRequestsBefore": 13,
+      "localCSSRequestsAfter": 13,
+      "pixels": {
+        "changedPixels": 0,
+        "maxDelta": 0,
+        "totalPixels": 1296000
+      }
+    },
+    {
+      "width": 1440,
+      "route": "/raboty/metal-calc/",
+      "rulesBefore": "3f2c1a6c5df32cfdad5e2ccdb93b335f59c659df4383c11a87a94c4bdb4e52cb",
+      "rulesAfter": "3f2c1a6c5df32cfdad5e2ccdb93b335f59c659df4383c11a87a94c4bdb4e52cb",
+      "stylesBefore": "3a77f72a8f7d6490c93d609fb29c4aaeec82f5df41ccfcf5f0530e235836a40f",
+      "stylesAfter": "3a77f72a8f7d6490c93d609fb29c4aaeec82f5df41ccfcf5f0530e235836a40f",
+      "styleLinksBefore": 12,
+      "styleLinksAfter": 12,
+      "localCSSRequestsBefore": 13,
+      "localCSSRequestsAfter": 13,
+      "pixels": {
+        "changedPixels": 0,
+        "maxDelta": 0,
+        "totalPixels": 1296000
+      }
+    },
+    {
+      "width": 1920,
+      "route": "/",
+      "rulesBefore": "cd7461ec332664c8f6450b06389e1d757684587e729cfdcfa94b7a3810bd3f48",
+      "rulesAfter": "cd7461ec332664c8f6450b06389e1d757684587e729cfdcfa94b7a3810bd3f48",
+      "stylesBefore": "84db68d4b807af615d128c5cd1eb0773b67dcd2d1b7aae8bfd2b85a5e39e4202",
+      "stylesAfter": "84db68d4b807af615d128c5cd1eb0773b67dcd2d1b7aae8bfd2b85a5e39e4202",
+      "styleLinksBefore": 18,
+      "styleLinksAfter": 1,
+      "localCSSRequestsBefore": 19,
+      "localCSSRequestsAfter": 1,
+      "pixels": {
+        "changedPixels": 0,
+        "maxDelta": 0,
+        "totalPixels": 1728000
+      }
+    },
+    {
+      "width": 1920,
+      "route": "/raboty/",
+      "rulesBefore": "7c5e90e4751c8fcf09a6fc551c72b21ab9d0b11c30675ac7663f49483691e26e",
+      "rulesAfter": "7c5e90e4751c8fcf09a6fc551c72b21ab9d0b11c30675ac7663f49483691e26e",
+      "stylesBefore": "69b038a17009b6d54f43cc94d9d29698dc12bfb432c5a795ff3727184ed2a780",
+      "stylesAfter": "69b038a17009b6d54f43cc94d9d29698dc12bfb432c5a795ff3727184ed2a780",
+      "styleLinksBefore": 13,
+      "styleLinksAfter": 13,
+      "localCSSRequestsBefore": 14,
+      "localCSSRequestsAfter": 14,
+      "pixels": {
+        "changedPixels": 0,
+        "maxDelta": 0,
+        "totalPixels": 1728000
+      }
+    },
+    {
+      "width": 1920,
+      "route": "/raboty/beauty-insight/",
+      "rulesBefore": "33d200aa6077431927f98f974d09f928907252fbf6f560dc2fcd5482f5d53bdf",
+      "rulesAfter": "33d200aa6077431927f98f974d09f928907252fbf6f560dc2fcd5482f5d53bdf",
+      "stylesBefore": "0cd65abe12c0ef08ee89833de5ce79e58287c4fef892ca8dbbb21b1486219827",
+      "stylesAfter": "0cd65abe12c0ef08ee89833de5ce79e58287c4fef892ca8dbbb21b1486219827",
+      "styleLinksBefore": 11,
+      "styleLinksAfter": 11,
+      "localCSSRequestsBefore": 12,
+      "localCSSRequestsAfter": 12,
+      "pixels": {
+        "changedPixels": 0,
+        "maxDelta": 0,
+        "totalPixels": 1728000
+      }
+    },
+    {
+      "width": 1920,
+      "route": "/raboty/flowers/",
+      "rulesBefore": "5c08d6b269b8b37b365d84cfeb142183a5c6d7fee0fdf75a7fa87428b93c832f",
+      "rulesAfter": "5c08d6b269b8b37b365d84cfeb142183a5c6d7fee0fdf75a7fa87428b93c832f",
+      "stylesBefore": "daf44939e8631a76bb7bb66fa45b8ecf47c824184f0b7e0183e032d86e8943cc",
+      "stylesAfter": "daf44939e8631a76bb7bb66fa45b8ecf47c824184f0b7e0183e032d86e8943cc",
+      "styleLinksBefore": 12,
+      "styleLinksAfter": 12,
+      "localCSSRequestsBefore": 13,
+      "localCSSRequestsAfter": 13,
+      "pixels": {
+        "changedPixels": 0,
+        "maxDelta": 0,
+        "totalPixels": 1728000
+      }
+    },
+    {
+      "width": 1920,
+      "route": "/raboty/metal-calc/",
+      "rulesBefore": "3f2c1a6c5df32cfdad5e2ccdb93b335f59c659df4383c11a87a94c4bdb4e52cb",
+      "rulesAfter": "3f2c1a6c5df32cfdad5e2ccdb93b335f59c659df4383c11a87a94c4bdb4e52cb",
+      "stylesBefore": "d36aa6a7068bc01206b2428bc9058bbfc3e7897bf748a9c321fb13d022bc985c",
+      "stylesAfter": "d36aa6a7068bc01206b2428bc9058bbfc3e7897bf748a9c321fb13d022bc985c",
+      "styleLinksBefore": 12,
+      "styleLinksAfter": 12,
+      "localCSSRequestsBefore": 13,
+      "localCSSRequestsAfter": 13,
+      "pixels": {
+        "changedPixels": 0,
+        "maxDelta": 0,
+        "totalPixels": 1728000
+      }
+    }
+  ],
+  "limitations": [
+    "Chromium automation does not prove physical-device smoothness.",
+    "Firefox/WebKit and real mobile hardware are not tested."
+  ],
+  "ruleAudit": {
+    "sourceFiles": 27,
+    "styleRules": 1486,
+    "exactRuleGroups": [
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [
+            "@media (max-width: 800px)"
+          ],
+          "index": 1,
+          "selector": "body.sc-case-page .case-hero__head",
+          "declarations": "display: block;"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [
+            "@media (max-width: 800px)"
+          ],
+          "index": 0,
+          "selector": "body.sc-case-page .case-hero__head",
+          "declarations": "display: block;"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [
+            "@media (max-width: 650px)"
+          ],
+          "index": 2,
+          "selector": "body.sc-case-page .case-hero__intro p",
+          "declarations": "font-size: var(--sc-font-size-body);"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [
+            "@media (max-width: 650px)"
+          ],
+          "index": 0,
+          "selector": "body.sc-case-page .case-hero__intro p",
+          "declarations": "font-size: var(--sc-font-size-body);"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 15,
+          "selector": ".contact-footer.sc-footer",
+          "declarations": "position: relative; display: block; isolation: isolate; overflow: hidden; background: linear-gradient(rgb(255, 255, 255) 0%, rgb(255, 255, 255) 39%, rgb(251, 253, 255) 59%, rgb(246, 251, 255) 79%, rgb(237, 247, 255) 100%); color: rgb(23, 30, 35); min-height: 780px; padding: 60px max(24px, -600px + 50vw) 32px;"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [],
+          "index": 2,
+          "selector": ".contact-footer.sc-footer",
+          "declarations": "position: relative; display: block; isolation: isolate; overflow: hidden; background: linear-gradient(rgb(255, 255, 255) 0%, rgb(255, 255, 255) 39%, rgb(251, 253, 255) 59%, rgb(246, 251, 255) 79%, rgb(237, 247, 255) 100%); color: rgb(23, 30, 35); min-height: 780px; padding: 60px max(24px, -600px + 50vw) 32px;"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 28,
+          "selector": ".sc-footer__content",
+          "declarations": "position: relative; z-index: 1; display: flex; flex-direction: column; justify-content: space-between; gap: 55px; min-height: 690px; margin: auto; max-width: 1200px;"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [],
+          "index": 3,
+          "selector": ".sc-footer__content",
+          "declarations": "position: relative; z-index: 1; display: flex; flex-direction: column; justify-content: space-between; gap: 55px; min-height: 690px; margin: auto; max-width: 1200px;"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 29,
+          "selector": ".sc-footer__intro",
+          "declarations": "text-align: center; padding: 35px 0px 70px;"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [],
+          "index": 4,
+          "selector": ".sc-footer__intro",
+          "declarations": "text-align: center; padding: 35px 0px 70px;"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 30,
+          "selector": ".contact-footer.sc-footer h2",
+          "declarations": "font-size: clamp(58px, 7vw, 108px); font-weight: 400; line-height: 1.04; letter-spacing: -0.067em; margin: 0px auto 24px; text-wrap: balance;"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [],
+          "index": 5,
+          "selector": ".contact-footer.sc-footer h2",
+          "declarations": "font-size: clamp(58px, 7vw, 108px); font-weight: 400; line-height: 1.04; letter-spacing: -0.067em; margin: 0px auto 24px; text-wrap: balance;"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 31,
+          "selector": ".sc-footer__intro p",
+          "declarations": "margin: 0px auto 30px; max-width: 560px; font-size: clamp(15px, 1.1vw, 17px); line-height: 1.55; color: rgb(104, 120, 132);"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [],
+          "index": 6,
+          "selector": ".sc-footer__intro p",
+          "declarations": "margin: 0px auto 30px; max-width: 560px; font-size: clamp(15px, 1.1vw, 17px); line-height: 1.55; color: rgb(104, 120, 132);"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 32,
+          "selector": ".contact-footer.sc-footer .sc-footer__cta",
+          "declarations": "display: inline-flex; min-height: 53px; padding: 0px 23px; gap: 16px; border: 0px; background: var(--orange); color: rgb(255, 255, 255); font-weight: 610; font-size: 14px; text-decoration: none; box-shadow: rgba(228, 77, 31, 0.18) 0px 8px 22px; transition: transform 0.24s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.24s, background-color 0.24s;"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [],
+          "index": 7,
+          "selector": ".contact-footer.sc-footer .sc-footer__cta",
+          "declarations": "display: inline-flex; min-height: 53px; padding: 0px 23px; gap: 16px; border: 0px; background: var(--orange); color: rgb(255, 255, 255); font-weight: 610; font-size: 14px; text-decoration: none; box-shadow: rgba(228, 77, 31, 0.18) 0px 8px 22px; transition: transform 0.24s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.24s, background-color 0.24s;"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 33,
+          "selector": ".contact-footer.sc-footer .sc-footer__cta:is(:hover, :focus-visible)",
+          "declarations": "background: rgb(252, 112, 69); transform: none; box-shadow: rgba(228, 77, 31, 0.24) 0px 11px 27px;"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [],
+          "index": 8,
+          "selector": ".contact-footer.sc-footer .sc-footer__cta:is(:hover, :focus-visible)",
+          "declarations": "background: rgb(252, 112, 69); transform: none; box-shadow: rgba(228, 77, 31, 0.24) 0px 11px 27px;"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 34,
+          "selector": ".sc-footer__cta .arrow",
+          "declarations": "stroke-linecap: round; stroke-linejoin: round; transition: transform 0.34s cubic-bezier(0.22, 1, 0.36, 1);"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [],
+          "index": 9,
+          "selector": ".sc-footer__cta .arrow",
+          "declarations": "stroke-linecap: round; stroke-linejoin: round; transition: transform 0.34s cubic-bezier(0.22, 1, 0.36, 1);"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 35,
+          "selector": ".sc-footer__cta:is(:hover, :focus-visible) .arrow",
+          "declarations": "transform: rotate(-45deg);"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [],
+          "index": 10,
+          "selector": ".sc-footer__cta:is(:hover, :focus-visible) .arrow",
+          "declarations": "transform: rotate(-45deg);"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 36,
+          "selector": ".sc-footer__cta:active .arrow",
+          "declarations": "transform: rotate(-45deg);"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [],
+          "index": 11,
+          "selector": ".sc-footer__cta:active .arrow",
+          "declarations": "transform: rotate(-45deg);"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 37,
+          "selector": ".sc-footer__bottom",
+          "declarations": "display: flex; align-items: flex-start; justify-content: space-between; gap: 44px; padding: 0px 0px 37px;"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [],
+          "index": 12,
+          "selector": ".sc-footer__bottom",
+          "declarations": "display: flex; align-items: flex-start; justify-content: space-between; gap: 44px; padding: 0px 0px 37px;"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 38,
+          "selector": ".sc-footer__brand .brand",
+          "declarations": "display: inline-flex; text-decoration: none; color: rgb(23, 30, 35);"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [],
+          "index": 13,
+          "selector": ".sc-footer__brand .brand",
+          "declarations": "display: inline-flex; text-decoration: none; color: rgb(23, 30, 35);"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 39,
+          "selector": ".sc-footer__brand .brand-name",
+          "declarations": "font-size: 25px;"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [],
+          "index": 14,
+          "selector": ".sc-footer__brand .brand-name",
+          "declarations": "font-size: 25px;"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 40,
+          "selector": ".sc-footer__nav",
+          "declarations": "display: flex; align-items: center; gap: clamp(18px, 2.8vw, 38px); flex-wrap: wrap;"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [],
+          "index": 15,
+          "selector": ".sc-footer__nav",
+          "declarations": "display: flex; align-items: center; gap: clamp(18px, 2.8vw, 38px); flex-wrap: wrap;"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 41,
+          "selector": ".contact-footer.sc-footer .sc-footer__nav a",
+          "declarations": "font-size: 14px; color: rgb(39, 55, 69); text-decoration: none; white-space: nowrap; transition: color 0.2s;"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [],
+          "index": 16,
+          "selector": ".contact-footer.sc-footer .sc-footer__nav a",
+          "declarations": "font-size: 14px; color: rgb(39, 55, 69); text-decoration: none; white-space: nowrap; transition: color 0.2s;"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 42,
+          "selector": ".contact-footer.sc-footer .sc-footer__nav a:hover",
+          "declarations": "color: var(--orange);"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [],
+          "index": 17,
+          "selector": ".contact-footer.sc-footer .sc-footer__nav a:hover",
+          "declarations": "color: var(--orange);"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 43,
+          "selector": ".sc-footer__fine",
+          "declarations": "padding-top: 17px; border-top: 1px solid rgba(91, 139, 181, 0.18); font-size: 12px; color: rgb(105, 129, 153);"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [],
+          "index": 18,
+          "selector": ".sc-footer__fine",
+          "declarations": "padding-top: 17px; border-top: 1px solid rgba(91, 139, 181, 0.18); font-size: 12px; color: rgb(105, 129, 153);"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [
+            "@media (max-width: 1000px)"
+          ],
+          "index": 3,
+          "selector": ".contact-footer.sc-footer",
+          "declarations": "padding-inline: 36px;"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [
+            "@media (max-width: 1000px)"
+          ],
+          "index": 0,
+          "selector": ".contact-footer.sc-footer",
+          "declarations": "padding-inline: 36px;"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [
+            "@media (max-width: 700px)"
+          ],
+          "index": 7,
+          "selector": ".contact-footer.sc-footer",
+          "declarations": "padding: 22px 22px 26px; min-height: 700px;"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [
+            "@media (max-width: 700px)"
+          ],
+          "index": 0,
+          "selector": ".contact-footer.sc-footer",
+          "declarations": "padding: 22px 22px 26px; min-height: 700px;"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [
+            "@media (max-width: 700px)"
+          ],
+          "index": 8,
+          "selector": ".sc-footer__content",
+          "declarations": "min-height: 652px; gap: 40px;"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [
+            "@media (max-width: 700px)"
+          ],
+          "index": 1,
+          "selector": ".sc-footer__content",
+          "declarations": "min-height: 652px; gap: 40px;"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [
+            "@media (max-width: 700px)"
+          ],
+          "index": 9,
+          "selector": ".sc-footer__intro",
+          "declarations": "padding: 54px 0px 35px;"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [
+            "@media (max-width: 700px)"
+          ],
+          "index": 2,
+          "selector": ".sc-footer__intro",
+          "declarations": "padding: 54px 0px 35px;"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [
+            "@media (max-width: 700px)"
+          ],
+          "index": 10,
+          "selector": ".contact-footer.sc-footer h2",
+          "declarations": "font-size: clamp(46px, 11vw, 68px);"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [
+            "@media (max-width: 700px)"
+          ],
+          "index": 3,
+          "selector": ".contact-footer.sc-footer h2",
+          "declarations": "font-size: clamp(46px, 11vw, 68px);"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [
+            "@media (max-width: 700px)"
+          ],
+          "index": 11,
+          "selector": ".sc-footer__bottom",
+          "declarations": "flex-direction: column; gap: 25px; padding-bottom: 22px;"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [
+            "@media (max-width: 700px)"
+          ],
+          "index": 4,
+          "selector": ".sc-footer__bottom",
+          "declarations": "flex-direction: column; gap: 25px; padding-bottom: 22px;"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [
+            "@media (max-width: 700px)"
+          ],
+          "index": 12,
+          "selector": ".sc-footer__nav",
+          "declarations": "gap: 16px 22px;"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [
+            "@media (max-width: 700px)"
+          ],
+          "index": 5,
+          "selector": ".sc-footer__nav",
+          "declarations": "gap: 16px 22px;"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [
+            "@media (max-width: 700px)"
+          ],
+          "index": 17,
+          "selector": ".sc-footer__fine",
+          "declarations": "font-size: 11px;"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [
+            "@media (max-width: 700px)"
+          ],
+          "index": 6,
+          "selector": ".sc-footer__fine",
+          "declarations": "font-size: 11px;"
+        }
+      ]
+    ],
+    "repeatedSelectors": [
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 4,
+          "selector": "body.sc-case-page .case-hero",
+          "declarations": "padding: clamp(135px, 12vw, 190px) max(24px, -634px + 50vw) 112px; overflow: hidden;"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 50,
+          "selector": "body.sc-case-page .case-hero",
+          "declarations": "padding-bottom: clamp(95px, 10vw, 154px);"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 6,
+          "selector": "body.sc-case-page .case-hero__head",
+          "declarations": "display: grid; grid-template-columns: minmax(0px, 1.65fr) minmax(270px, 0.7fr); gap: 60px; align-items: end;"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 51,
+          "selector": "body.sc-case-page .case-hero__head",
+          "declarations": "grid-template-columns: minmax(0px, 1.35fr) minmax(300px, 0.75fr); align-items: end; gap: clamp(28px, 6vw, 92px);"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 8,
+          "selector": "body.sc-case-page .case-hero__intro",
+          "declarations": "max-width: 380px; padding-bottom: 6px;"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 52,
+          "selector": "body.sc-case-page .case-hero__intro",
+          "declarations": "max-width: 450px; padding: 0px 0px 8px;"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 10,
+          "selector": "body.sc-case-page .case-hero__intro p",
+          "declarations": "font-size: var(--sc-font-size-body); line-height: 1.5; font-weight: 400; color: rgb(104, 119, 132); margin: 19px 0px 0px;"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 53,
+          "selector": "body.sc-case-page .case-hero__intro p",
+          "declarations": "font-size: var(--sc-font-size-body); line-height: 1.6; color: rgb(83, 99, 109); margin: 0px;"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 11,
+          "selector": "body.sc-case-page .case-hero__media",
+          "declarations": "position: relative; margin-top: 84px; height: clamp(400px, 47vw, 675px); background: rgb(244, 247, 249); border-radius: 24px; isolation: isolate; overflow: hidden; display: flex; align-items: center; justify-content: center;"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 54,
+          "selector": "body.sc-case-page .case-hero__media",
+          "declarations": "margin-top: clamp(50px, 6.3vw, 94px);"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 19,
+          "selector": "body.sc-case-page .case-hero__media-line",
+          "declarations": "height: 1px; width: 78%; position: absolute; left: 11%; bottom: 9%; background: rgb(228, 234, 237); z-index: 0;"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 55,
+          "selector": "body.sc-case-page .case-hero__media-line",
+          "declarations": "display: none;"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 30,
+          "selector": "body.sc-case-page .related-work",
+          "declarations": "position: relative; isolation: isolate; padding: clamp(90px, 8.2vw, 132px) max(24px, -634px + 50vw) clamp(110px, 10vw, 156px); background: transparent; overflow: hidden;"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 154,
+          "selector": "body.sc-case-page .related-work",
+          "declarations": "background: rgb(255, 255, 255); isolation: auto; overflow: visible; padding-bottom: clamp(130px, 11vw, 180px);"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 31,
+          "selector": "body.sc-case-page .related-work::before",
+          "declarations": "content: \"\"; position: absolute; inset: 0px; pointer-events: none; z-index: -1; background: radial-gradient(75% 62% at 66% 44%, rgba(201, 225, 245, 0.3) 0%, rgba(218, 234, 248, 0.16) 43%, transparent 80%), radial-gradient(36% 50% at 6% 24%, rgba(225, 239, 251, 0.34), transparent 90%);"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 155,
+          "selector": "body.sc-case-page .related-work::before",
+          "declarations": "content: none;"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 32,
+          "selector": "body.sc-case-page .related-work__inner",
+          "declarations": "position: relative; z-index: 1; width: 100%; max-width: 1268px; margin-inline: auto; min-width: 0px;"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 156,
+          "selector": "body.sc-case-page .related-work__inner",
+          "declarations": "z-index: auto;"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 35,
+          "selector": "body.sc-case-page .related-work__viewport",
+          "declarations": "width: 100%; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; overscroll-behavior-inline: contain; scroll-padding-inline: 0px;"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 157,
+          "selector": "body.sc-case-page .related-work__viewport",
+          "declarations": "padding-block: 16px 58px; margin-block: -16px -58px;"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 39,
+          "selector": "body.sc-case-page .related-work__controls",
+          "declarations": "display: flex; justify-content: center; align-items: center; gap: 32px; margin-top: 44px;"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 158,
+          "selector": "body.sc-case-page .related-work__controls",
+          "declarations": "position: relative; z-index: 1; margin-top: 64px; padding: 0px; background: transparent; box-shadow: none; border: 0px;"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 40,
+          "selector": "body.sc-case-page .related-work__arrow",
+          "declarations": "appearance: none; width: 52px; height: 52px; min-width: 52px; padding: 0px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 999px; background: rgb(255, 255, 255); color: rgb(23, 30, 35); display: grid; place-items: center; cursor: pointer; box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 12px; transition: transform 0.2s, border-color 0.2s;"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 159,
+          "selector": "body.sc-case-page .related-work__arrow",
+          "declarations": "box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 12px;"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [
+            "@media (max-width: 800px)"
+          ],
+          "index": 1,
+          "selector": "body.sc-case-page .case-hero__head",
+          "declarations": "display: block;"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [
+            "@media (max-width: 800px)"
+          ],
+          "index": 0,
+          "selector": "body.sc-case-page .case-hero__head",
+          "declarations": "display: block;"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [
+            "@media (max-width: 800px)"
+          ],
+          "index": 2,
+          "selector": "body.sc-case-page .case-hero__intro",
+          "declarations": "margin-top: 24px; max-width: 590px;"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [
+            "@media (max-width: 800px)"
+          ],
+          "index": 1,
+          "selector": "body.sc-case-page .case-hero__intro",
+          "declarations": "margin-top: 30px; max-width: 590px;"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [
+            "@media (max-width: 650px)"
+          ],
+          "index": 0,
+          "selector": "body.sc-case-page .case-hero",
+          "declarations": "padding: 114px 14px 63px;"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [
+            "@media (max-width: 650px)"
+          ],
+          "index": 1,
+          "selector": "body.sc-case-page .case-hero",
+          "declarations": "padding-bottom: 88px;"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [
+            "@media (max-width: 650px)"
+          ],
+          "index": 2,
+          "selector": "body.sc-case-page .case-hero__intro p",
+          "declarations": "font-size: var(--sc-font-size-body);"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [
+            "@media (max-width: 650px)"
+          ],
+          "index": 0,
+          "selector": "body.sc-case-page .case-hero__intro p",
+          "declarations": "font-size: var(--sc-font-size-body);"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [
+            "@media (max-width: 650px)"
+          ],
+          "index": 3,
+          "selector": "body.sc-case-page .case-hero__media",
+          "declarations": "margin-top: 35px; height: 325px; border-radius: 19px;"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [
+            "@media (max-width: 650px)"
+          ],
+          "index": 2,
+          "selector": "body.sc-case-page .case-hero__media",
+          "declarations": "background: transparent;"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [
+            "@media (max-width: 650px)"
+          ],
+          "index": 10,
+          "selector": "body.sc-case-page .related-work",
+          "declarations": "padding: 112px 14px 108px;"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [
+            "@media (max-width: 650px)"
+          ],
+          "index": 0,
+          "selector": "body.sc-case-page .related-work",
+          "declarations": "padding-bottom: 116px;"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [
+            "@media (max-width: 650px)"
+          ],
+          "index": 13,
+          "selector": "body.sc-case-page .related-work__controls",
+          "declarations": "margin-top: 34px; gap: 28px;"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [
+            "@media (max-width: 650px)"
+          ],
+          "index": 1,
+          "selector": "body.sc-case-page .related-work__controls",
+          "declarations": "margin-top: 49px;"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 59,
+          "selector": "body.sc-case-page .sc-case-process",
+          "declarations": "--scp-ink: #171e23; position: relative; isolation: isolate; background: rgb(255, 255, 255); padding: clamp(80px, 8vw, 135px) max(24px, -634px + 50vw) clamp(70px, 7vw, 122px); font-family: var(--sc-font-ui,Manrope,sans-serif); color: var(--scp-ink);"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 93,
+          "selector": "body.sc-case-page .sc-case-process",
+          "declarations": "background: rgb(255, 255, 255);"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 176,
+          "selector": "body.sc-case-page .sc-case-process",
+          "declarations": "background: transparent; padding-top: clamp(26px, 3.7vw, 54px);"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 62,
+          "selector": "body.sc-case-page .sc-case-process__heading",
+          "declarations": "margin: 0px 0px clamp(45px, 5vw, 80px);"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 177,
+          "selector": "body.sc-case-page .sc-case-process__heading",
+          "declarations": "margin-bottom: clamp(30px, 3.4vw, 54px); will-change: transform;"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 66,
+          "selector": "body.sc-case-page .sc-case-process__timeline",
+          "declarations": "pointer-events: none; position: absolute; z-index: 0; top: 10px; bottom: 0px; left: 19px; width: 4px; background: linear-gradient(transparent, rgba(23, 30, 35, 0.56) 10%, rgba(23, 30, 35, 0.56) 90%, transparent);"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 179,
+          "selector": "body.sc-case-page .sc-case-process__timeline",
+          "declarations": "left: 18px; width: 4px; background: linear-gradient(rgba(122, 122, 122, 0), rgba(122, 122, 122, 0.62) 8%, rgba(122, 122, 122, 0.62) 92%, rgba(122, 122, 122, 0));"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 69,
+          "selector": "body.sc-case-page .sc-case-process__number-wrap",
+          "declarations": "z-index: 1; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 180,
+          "selector": "body.sc-case-page .sc-case-process__number-wrap",
+          "declarations": "isolation: isolate;"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 70,
+          "selector": "body.sc-case-page .sc-case-process__number-circle",
+          "declarations": "width: 40px; height: 40px; background: rgb(102, 102, 102); color: rgb(255, 255, 255); display: grid; place-items: center; border-radius: 50%; font-size: 14px; line-height: 1; font-weight: 500; box-shadow: rgb(255, 255, 255) 0px 0px 0px 7px; will-change: background-color;"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 178,
+          "selector": "body.sc-case-page .sc-case-process__number-circle",
+          "declarations": "width: 32px; height: 32px; flex: 0 0 auto; border-radius: 50%; background: rgb(102, 102, 102); color: rgb(255, 255, 255); font-size: 16px; font-weight: 400; box-shadow: rgba(134, 134, 134, 0.78) 0px 0px 0px 5px;"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 75,
+          "selector": "body.sc-case-page .sc-case-process__cta",
+          "declarations": "position: sticky; top: 30vh; width: 100%; min-height: 295px; padding: 29px 24px 24px; display: flex; flex-direction: column; justify-content: flex-end; isolation: isolate; overflow: hidden; border-radius: 20px; border: 1px solid rgba(141, 178, 206, 0.22); background: linear-gradient(138deg, rgb(255, 255, 255) 2%, rgb(241, 247, 252) 45%, rgb(220, 236, 251) 100%); box-shadow: rgba(28, 72, 106, 0.22) 0px 12px 38px -30px;"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 97,
+          "selector": "body.sc-case-page .sc-case-process__cta",
+          "declarations": "font-family: var(--sc-font-ui); display: block; min-height: 0px; padding: 18px 20px 20px; background: linear-gradient(140deg, rgb(255, 255, 255) 0%, rgb(245, 250, 255) 46%, rgb(222, 237, 252) 100%); border-color: rgba(137, 178, 210, 0.28); box-shadow: rgba(28, 72, 106, 0.2) 0px 12px 38px -30px; transition: border-color 0.45s cubic-bezier(0.22, 0.61, 0.36, 1);"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 76,
+          "selector": "body.sc-case-page .sc-case-process__cta::before",
+          "declarations": "content: \"\"; position: absolute; inset: 0px; z-index: -1; pointer-events: none; background: radial-gradient(70% 50% at 100% 0%, rgba(95, 162, 215, 0.17), transparent);"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 98,
+          "selector": "body.sc-case-page .sc-case-process__cta::before",
+          "declarations": "z-index: 0; background: radial-gradient(73% 41% at 74% 19%, rgba(228, 77, 31, 0.094), rgba(228, 77, 31, 0.035) 43%, transparent 81%); opacity: 0; transition: opacity 0.55s;"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 77,
+          "selector": "body.sc-case-page .sc-case-process__cta-content",
+          "declarations": "position: relative; z-index: 1;"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 107,
+          "selector": "body.sc-case-page .sc-case-process__cta-content",
+          "declarations": "position: relative; z-index: 2; margin: 165px 0px 0px;"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 78,
+          "selector": "body.sc-case-page .sc-case-process__cta h3",
+          "declarations": "font-size: clamp(26px, 2.25vw, 31px); line-height: 1.17; letter-spacing: -0.029em; font-weight: 400; margin: 0px 0px 14px; color: rgb(23, 30, 35);"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 108,
+          "selector": "body.sc-case-page .sc-case-process__cta h3",
+          "declarations": "max-width: 280px; margin: 0px 0px 12px; font-size: var(--sc-font-size-case-h3,32px); line-height: 1.12; letter-spacing: -0.032em; font-weight: 400;"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 79,
+          "selector": "body.sc-case-page .sc-case-process__cta p",
+          "declarations": "font-size: var(--sc-font-size-body); line-height: 1.56; color: rgb(89, 112, 130); margin: 0px 0px 28px;"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 109,
+          "selector": "body.sc-case-page .sc-case-process__cta p",
+          "declarations": "max-width: 275px; margin: 0px 0px 19px; color: rgb(95, 119, 139); font-size: var(--sc-font-size-body); line-height: 1.48;"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 80,
+          "selector": "body.sc-case-page .sc-case-process__cta-button.main-cta",
+          "declarations": "height: 52px; min-height: 52px; width: 100%; border-radius: 100px; padding: 0px 20px; display: flex; align-items: center; justify-content: space-between; gap: 8px; text-decoration: none; color: rgb(255, 255, 255); background: var(--orange,#e44d1f); font: 500 16px/1 var(--sc-font-ui,Manrope,sans-serif); box-shadow: var(--sc-button-shadow); transition: background-color 0.35s cubic-bezier(0.22, 0.61, 0.36, 1);"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 110,
+          "selector": "body.sc-case-page .sc-case-process__cta-button.main-cta",
+          "declarations": "display: inline-flex; justify-content: center; align-items: center; gap: 12px; width: 100%; height: 52px; min-height: 52px; padding: 0px 12px; border: 0px; border-radius: 100px; background: var(--orange,#e44d1f); color: rgb(255, 255, 255); font-size: var(--sc-font-size-body); font-family: var(--sc-font-ui); font-weight: 500; text-decoration: none; transform: none; box-shadow: var(--sc-button-shadow); transition: transform 0.24s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.24s;"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 82,
+          "selector": "body.sc-case-page .sc-case-process__cta-button .arrow",
+          "declarations": "stroke: currentcolor; stroke-width: 1.8; fill: none; width: 20px; height: 20px; flex: 0 0 auto; transform: rotate(0deg); transform-origin: center center; transition: transform 0.38s cubic-bezier(0.22, 1, 0.36, 1);"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 116,
+          "selector": "body.sc-case-page .sc-case-process__cta-button .arrow",
+          "declarations": "width: 21px; height: 21px;"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [
+            "@media (max-width: 1070px) and (min-width: 768px)"
+          ],
+          "index": 2,
+          "selector": "body.sc-case-page .sc-case-process__cta",
+          "declarations": "padding: 22px;"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [
+            "@media (max-width: 1070px) and (min-width: 768px)"
+          ],
+          "index": 0,
+          "selector": "body.sc-case-page .sc-case-process__cta",
+          "declarations": "padding: 17px 18px 19px;"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [
+            "@media (max-width: 767px)"
+          ],
+          "index": 1,
+          "selector": "body.sc-case-page .sc-case-process__heading",
+          "declarations": "margin-bottom: 42px;"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [
+            "@media (max-width: 767px)"
+          ],
+          "index": 0,
+          "selector": "body.sc-case-page .sc-case-process__heading",
+          "declarations": "margin-bottom: 38px; will-change: auto;"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [
+            "@media (max-width: 767px)"
+          ],
+          "index": 3,
+          "selector": "body.sc-case-page .sc-case-process__timeline",
+          "declarations": "left: 19px; top: 16px; bottom: 16px; width: 2px;"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [
+            "@media (max-width: 767px)"
+          ],
+          "index": 1,
+          "selector": "body.sc-case-page .sc-case-process__timeline",
+          "declarations": "left: 19px; width: 2px;"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [
+            "@media (max-width: 767px)"
+          ],
+          "index": 7,
+          "selector": "body.sc-case-page .sc-case-process__number-circle",
+          "declarations": "background: rgb(23, 30, 35); will-change: auto;"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [
+            "@media (max-width: 767px)"
+          ],
+          "index": 2,
+          "selector": "body.sc-case-page .sc-case-process__number-circle",
+          "declarations": "background: rgb(16, 16, 16); box-shadow: rgba(134, 134, 134, 0.72) 0px 0px 0px 4px;"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [
+            "@media (max-width: 767px)"
+          ],
+          "index": 11,
+          "selector": "body.sc-case-page .sc-case-process__cta",
+          "declarations": "position: static; max-width: 410px; min-height: 270px;"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [
+            "@media (max-width: 767px)"
+          ],
+          "index": 0,
+          "selector": "body.sc-case-page .sc-case-process__cta",
+          "declarations": "width: 100%; max-width: 410px; min-height: 0px; padding: 18px 22px 21px;"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [
+            "@media (max-width: 650px)"
+          ],
+          "index": 0,
+          "selector": "body.sc-case-page .sc-case-process",
+          "declarations": "padding-inline: 14px;"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [
+            "@media (max-width: 650px)"
+          ],
+          "index": 0,
+          "selector": "body.sc-case-page .sc-case-process",
+          "declarations": "padding-top: 28px;"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 89,
+          "selector": "body.sc-case-page .works-page.sc-case-first-page > .works-surface",
+          "declarations": "padding-bottom: clamp(50px, 5.4vw, 78px);"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 175,
+          "selector": "body.sc-case-page .works-page.sc-case-first-page > .works-surface",
+          "declarations": "padding-bottom: clamp(10px, 1.3vw, 20px);"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 92,
+          "selector": "body.sc-case-page .works-page.sc-case-first-page .case-hero__media",
+          "declarations": "margin-top: clamp(52px, 6.3vw, 90px);"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 172,
+          "selector": "body.sc-case-page .works-page.sc-case-first-page .case-hero__media",
+          "declarations": "background: transparent; isolation: isolate; overflow: hidden;"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [
+            "@media (max-width: 850px)"
+          ],
+          "index": 0,
+          "selector": "body.sc-case-page .works-page.sc-case-first-page > .works-surface",
+          "declarations": "padding-bottom: 60px;"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [
+            "@media (max-width: 850px)"
+          ],
+          "index": 0,
+          "selector": "body.sc-case-page .works-page.sc-case-first-page > .works-surface",
+          "declarations": "padding-bottom: 18px;"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 161,
+          "selector": "body.sc-case-page .sc-case-story",
+          "declarations": "position: relative; isolation: isolate; background: rgb(255, 255, 255); overflow: clip;"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 185,
+          "selector": "body.sc-case-page .sc-case-story",
+          "declarations": "overflow: clip; background: transparent;"
+        }
+      ],
+      [
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 162,
+          "selector": "body.sc-case-page .sc-case-story__depth",
+          "declarations": "position: absolute; z-index: 0; inset: 0px; overflow: hidden; pointer-events: none;"
+        },
+        {
+          "file": "css/case-detail.css",
+          "context": [],
+          "index": 186,
+          "selector": "body.sc-case-page .sc-case-story__depth",
+          "declarations": "z-index: 0;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [],
+          "index": 0,
+          "selector": "body",
+          "declarations": "font-family: var(--sc61-font); font-size: var(--sc61-body); line-height: 1.5;"
+        },
+        {
+          "file": "css/main.css",
+          "context": [],
+          "index": 3,
+          "selector": "body",
+          "declarations": "margin: 0px; color: var(--ink); background: rgb(255, 255, 255); font-family: Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif; -webkit-font-smoothing: antialiased;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [],
+          "index": 1,
+          "selector": ".floating-header",
+          "declarations": "width: min(1080px, 100% - 40px); gap: 24px;"
+        },
+        {
+          "file": "css/main.css",
+          "context": [],
+          "index": 9,
+          "selector": ".floating-header",
+          "declarations": "position: fixed; top: var(--header-top); left: 50%; transform: translateX(-50%) translateY(0px); display: flex; align-items: center; gap: 32px; width: min(1160px, 100% - 40px); min-height: 72px; padding: 7px 9px 7px 25px; z-index: 99; border-radius: 100px; border: 1px solid rgba(255, 255, 255, 0.92); background: rgba(255, 255, 255, 0.93); backdrop-filter: blur(18px) saturate(1.1); box-shadow: var(--pill-shadow); transition: box-shadow .34s var(--ease),background .34s var(--ease),top .34s var(--ease),transform .34s var(--ease),border-color .34s var(--ease);"
+        },
+        {
+          "file": "css/shared-header-cta.css",
+          "context": [],
+          "index": 1,
+          "selector": ".floating-header",
+          "declarations": "min-height: var(--sc-desktop-header-height); padding-top: 7px; padding-bottom: 7px;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [],
+          "index": 2,
+          "selector": ".brand-name",
+          "declarations": "font-family: var(--sc61-font); font-weight: 700;"
+        },
+        {
+          "file": "css/main.css",
+          "context": [],
+          "index": 12,
+          "selector": ".brand-name",
+          "declarations": "font-weight: 760; letter-spacing: -0.065em; font-size: 24px; line-height: 1;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [],
+          "index": 3,
+          "selector": ".header-links",
+          "declarations": "font-size: var(--sc61-nav); font-weight: 500; gap: 24px;"
+        },
+        {
+          "file": "css/main.css",
+          "context": [],
+          "index": 16,
+          "selector": ".header-links",
+          "declarations": "display: flex; align-items: center; gap: clamp(22px, 2vw, 36px); margin-left: auto; margin-right: auto; font-size: 14px; white-space: nowrap;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [],
+          "index": 4,
+          "selector": ".nav-cta",
+          "declarations": "font-size: 16px; font-weight: 500; line-height: 1.2;"
+        },
+        {
+          "file": "css/main.css",
+          "context": [],
+          "index": 20,
+          "selector": ".nav-cta",
+          "declarations": "min-height: 53px; padding: 0px 20px; background: rgb(23, 26, 28); color: rgb(255, 255, 255); font-size: 13px; font-weight: 610; box-shadow: rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [],
+          "index": 5,
+          "selector": ".mobile-panel a",
+          "declarations": "font-family: var(--sc61-font);"
+        },
+        {
+          "file": "css/main.css",
+          "context": [],
+          "index": 30,
+          "selector": ".mobile-panel a",
+          "declarations": "padding: 17px 18px; border-radius: 14px; font-size: 16px; font-weight: 580;"
+        },
+        {
+          "file": "css/shared-header-cta.css",
+          "context": [],
+          "index": 8,
+          "selector": ".mobile-panel a",
+          "declarations": "font-family: var(--sc-ui-font); font-size: 16px;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [],
+          "index": 7,
+          "selector": "#top .hero h1",
+          "declarations": "font-family: var(--sc61-font); font-size: var(--sc61-display); font-weight: 400; line-height: 1.1; letter-spacing: var(--sc61-tracking-display);"
+        },
+        {
+          "file": "css/v62-typography-content-candidate.css",
+          "context": [],
+          "index": 7,
+          "selector": "#top .hero h1",
+          "declarations": "font-family: var(--sc62-text-font); font-size: var(--sc62-text-display); font-weight: 400; line-height: 1.1; letter-spacing: -0.035em;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [],
+          "index": 8,
+          "selector": "#top .hero h1 span",
+          "declarations": "font-weight: 400;"
+        },
+        {
+          "file": "css/v62-typography-content-candidate.css",
+          "context": [],
+          "index": 8,
+          "selector": "#top .hero h1 span",
+          "declarations": "font-family: inherit; font-weight: 400;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [],
+          "index": 9,
+          "selector": "#top .hero .hero-stage",
+          "declarations": "max-width: var(--sc61-container);"
+        },
+        {
+          "file": "css/main.css",
+          "context": [],
+          "index": 157,
+          "selector": "#top .hero .hero-stage",
+          "declarations": "grid-auto-rows: max-content; align-self: start;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [],
+          "index": 13,
+          "selector": "#audiences.audience-section",
+          "declarations": "padding-top: 136px; padding-bottom: var(--sc61-space);"
+        },
+        {
+          "file": "css/main.css",
+          "context": [],
+          "index": 160,
+          "selector": "#audiences.audience-section",
+          "declarations": "margin: 0px; padding: clamp(80px, 7.6svh, 112px) 32px 140px; background: rgb(255, 255, 255); scroll-margin-top: 90px;"
+        },
+        {
+          "file": "css/main.css",
+          "context": [],
+          "index": 177,
+          "selector": "#audiences.audience-section",
+          "declarations": "min-height: 0px; padding-bottom: clamp(80px, 6vw, 112px);"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [],
+          "index": 14,
+          "selector": "#audiences .audience-container",
+          "declarations": "max-width: var(--sc61-container);"
+        },
+        {
+          "file": "css/main.css",
+          "context": [],
+          "index": 178,
+          "selector": "#audiences .audience-container",
+          "declarations": "width: min(var(--content-max),100%); display: grid; grid-template-columns: minmax(0px, 1fr) 440px; gap: 40px; align-items: start; position: relative;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [],
+          "index": 15,
+          "selector": "#audiences .audience-heading",
+          "declarations": "font-family: var(--sc61-font); font-size: var(--sc61-section); font-weight: 400; line-height: 1.1; letter-spacing: var(--sc61-tracking-section); margin-bottom: 48px;"
+        },
+        {
+          "file": "css/main.css",
+          "context": [],
+          "index": 161,
+          "selector": "#audiences .audience-heading",
+          "declarations": "opacity: 1; margin-top: 0px;"
+        },
+        {
+          "file": "css/main.css",
+          "context": [],
+          "index": 180,
+          "selector": "#audiences .audience-heading",
+          "declarations": "font-size: 32px; line-height: 1.2; font-weight: 400; margin: 0px 0px 36px; letter-spacing: -0.055em;"
+        },
+        {
+          "file": "css/v62-typography-content-candidate.css",
+          "context": [],
+          "index": 12,
+          "selector": "#audiences .audience-heading",
+          "declarations": "font-family: var(--sc62-text-font); font-size: 32px; font-weight: 400; line-height: 1.2; letter-spacing: -0.02em;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [],
+          "index": 16,
+          "selector": "#audiences .audience-option .audience-name",
+          "declarations": "font-family: var(--sc61-font); font-size: clamp(40px, 3.8vw, 60px); font-weight: 300; line-height: 1.2; letter-spacing: -0.035em;"
+        },
+        {
+          "file": "css/main.css",
+          "context": [],
+          "index": 184,
+          "selector": "#audiences .audience-option .audience-name",
+          "declarations": "font-size: clamp(40px, 3.15vw, 68px); font-weight: 300; line-height: 1.08; width: auto; min-width: 0px; white-space: normal; overflow-wrap: normal;"
+        },
+        {
+          "file": "css/v62-typography-content-candidate.css",
+          "context": [],
+          "index": 13,
+          "selector": "#audiences .audience-option .audience-name",
+          "declarations": "font-family: var(--sc62-text-font); font-size: 80px; font-weight: 300; letter-spacing: -0.035em; line-height: 1.13; white-space: normal; overflow-wrap: normal;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [],
+          "index": 17,
+          "selector": "#audiences .audience-option",
+          "declarations": "min-height: 104px;"
+        },
+        {
+          "file": "css/main.css",
+          "context": [],
+          "index": 182,
+          "selector": "#audiences .audience-option",
+          "declarations": "display: grid; grid-template-columns: 30px minmax(0px, 1fr); gap: 18px; width: 100%; min-height: 96px; padding: 0px; align-items: center;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [],
+          "index": 18,
+          "selector": "#audiences .audience-card h3",
+          "declarations": "font-family: var(--sc61-font); font-weight: 500; line-height: 1.2; letter-spacing: -0.015em;"
+        },
+        {
+          "file": "css/main.css",
+          "context": [],
+          "index": 192,
+          "selector": "#audiences .audience-card h3",
+          "declarations": "font-size: 30px; line-height: 1.2; font-weight: 400; margin: 0px 0px 12px;"
+        },
+        {
+          "file": "css/v62-typography-content-candidate.css",
+          "context": [],
+          "index": 15,
+          "selector": "#audiences .audience-card h3",
+          "declarations": "font-family: inherit; font-weight: 400;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [],
+          "index": 19,
+          "selector": "#audiences .audience-card p",
+          "declarations": "font-family: var(--sc61-font); font-size: 16px; line-height: 1.5;"
+        },
+        {
+          "file": "css/main.css",
+          "context": [],
+          "index": 193,
+          "selector": "#audiences .audience-card p",
+          "declarations": "font-size: 16px; line-height: 1.5; font-weight: 400; max-width: none;"
+        },
+        {
+          "file": "css/v62-typography-content-candidate.css",
+          "context": [],
+          "index": 16,
+          "selector": "#audiences .audience-card p",
+          "declarations": "font-family: inherit; font-size: 16px; font-weight: 400; line-height: 1.5;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [],
+          "index": 22,
+          "selector": ".sc-services__head",
+          "declarations": "max-width: var(--sc61-container); margin-bottom: 48px;"
+        },
+        {
+          "file": "css/services.css",
+          "context": [],
+          "index": 3,
+          "selector": ".sc-services__head",
+          "declarations": "width: min(1200px, 100% - 48px); margin: 0px auto clamp(36px, 5.3svh, 68px); display: flex; align-items: flex-start; justify-content: space-between; flex: 0 0 auto;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [],
+          "index": 23,
+          "selector": ".sc-services__title",
+          "declarations": "font-family: var(--sc61-font); font-size: var(--sc61-section); font-weight: 400; line-height: 1.1; letter-spacing: var(--sc61-tracking-section);"
+        },
+        {
+          "file": "css/services.css",
+          "context": [],
+          "index": 4,
+          "selector": ".sc-services__title",
+          "declarations": "margin: 0px; font-family: var(--sc-font-family,inherit); font-size: 32px; font-weight: 400; line-height: 1.2; letter-spacing: -0.055em; color: rgb(17, 20, 23);"
+        },
+        {
+          "file": "css/v62-typography-content-candidate.css",
+          "context": [],
+          "index": 19,
+          "selector": ".sc-services__title",
+          "declarations": "font-family: var(--sc62-text-font); font-size: 32px; font-weight: 400; line-height: 1.2; letter-spacing: -0.02em;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [],
+          "index": 24,
+          "selector": ".sc-service-card h3",
+          "declarations": "font-family: var(--sc61-font); font-size: var(--sc61-card-title); font-weight: 500; line-height: 1.2; letter-spacing: -0.015em;"
+        },
+        {
+          "file": "css/services.css",
+          "context": [],
+          "index": 14,
+          "selector": ".sc-service-card h3",
+          "declarations": "font-family: var(--sc-font-family,inherit); margin: 0px 0px 16px; color: rgb(22, 25, 27); font-size: clamp(24px, 1.75vw, 30px); font-weight: 400; line-height: 1.14; letter-spacing: -0.052em; text-wrap: balance; transition: color 0.28s;"
+        },
+        {
+          "file": "css/v62-typography-content-candidate.css",
+          "context": [],
+          "index": 20,
+          "selector": ".sc-service-card h3",
+          "declarations": "font-family: var(--sc62-text-font); font-size: 32px; font-weight: 400; line-height: 1.2; letter-spacing: -0.02em;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [],
+          "index": 25,
+          "selector": ".sc-service-card__body p",
+          "declarations": "font-family: var(--sc61-font); line-height: 1.5;"
+        },
+        {
+          "file": "css/services.css",
+          "context": [],
+          "index": 17,
+          "selector": ".sc-service-card__body p",
+          "declarations": "color: rgb(65, 69, 72); font: 400 12.5px/1.4 var(--sc-font-family,inherit); margin: 0px; max-width: 100%; transition: color 0.28s;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [],
+          "index": 26,
+          "selector": ".sc-process__title",
+          "declarations": "font-family: var(--sc61-font); font-size: var(--sc61-section); font-weight: 400; line-height: 1.1; letter-spacing: var(--sc61-tracking-section);"
+        },
+        {
+          "file": "css/process.css",
+          "context": [],
+          "index": 10,
+          "selector": ".sc-process__title",
+          "declarations": "max-width: 700px; margin: 0px; font-family: Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif; font-size: clamp(65px, 4.9vw, 105px); font-weight: 400; line-height: 1.04; letter-spacing: -0.068em; color: var(--sc-process-ink); text-wrap: balance;"
+        },
+        {
+          "file": "css/v62-typography-content-candidate.css",
+          "context": [],
+          "index": 23,
+          "selector": ".sc-process__title",
+          "declarations": "font-family: var(--sc62-text-font); font-size: 60px; font-weight: 400; line-height: 1.12; letter-spacing: -0.025em;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [],
+          "index": 27,
+          "selector": ".sc-process__step h3",
+          "declarations": "font-family: var(--sc61-font); font-size: var(--sc61-card-title); font-weight: 500; line-height: 1.2; letter-spacing: -0.015em; margin-bottom: 12px;"
+        },
+        {
+          "file": "css/process.css",
+          "context": [],
+          "index": 20,
+          "selector": ".sc-process__step h3",
+          "declarations": "margin: 0px 0px clamp(14px, 1.4vw, 21px); font-family: inherit; font-size: clamp(23px, 1.75vw, 31px); font-weight: 680; line-height: 1.17; letter-spacing: -0.045em; color: var(--sc-process-ink); text-wrap: balance;"
+        },
+        {
+          "file": "css/v62-typography-content-candidate.css",
+          "context": [],
+          "index": 24,
+          "selector": ".sc-process__step h3",
+          "declarations": "font-family: var(--sc62-text-font); font-size: 40px; font-weight: 400; line-height: 1.17; letter-spacing: -0.02em;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [],
+          "index": 28,
+          "selector": ".sc-process__step p",
+          "declarations": "font-family: var(--sc61-font); font-size: clamp(16px, 1.06vw, 18px); line-height: 1.5;"
+        },
+        {
+          "file": "css/process.css",
+          "context": [],
+          "index": 21,
+          "selector": ".sc-process__step p",
+          "declarations": "margin: 0px; max-width: 290px; color: var(--sc-process-muted); font-size: clamp(15px, 1.08vw, 19px); line-height: 1.52; font-weight: 400;"
+        },
+        {
+          "file": "css/v62-typography-content-candidate.css",
+          "context": [],
+          "index": 25,
+          "selector": ".sc-process__step p",
+          "declarations": "font-family: var(--sc62-text-font); font-size: 16px; line-height: 1.5; font-weight: 400;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [],
+          "index": 29,
+          "selector": ".sc-testimonials__center h2",
+          "declarations": "font-family: var(--sc61-font); font-size: var(--sc61-section); font-weight: 400; line-height: 1.1; letter-spacing: var(--sc61-tracking-section);"
+        },
+        {
+          "file": "css/testimonials.css",
+          "context": [],
+          "index": 6,
+          "selector": ".sc-testimonials__center h2",
+          "declarations": "margin: 0px; font: 400 clamp(48px, 5.3vw, 81px) / 1.02 Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; letter-spacing: -0.065em; color: rgb(20, 23, 25);"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [],
+          "index": 31,
+          "selector": ".sc-testimonial__topic",
+          "declarations": "font-weight: 500; letter-spacing: -0.015em;"
+        },
+        {
+          "file": "css/testimonials.css",
+          "context": [],
+          "index": 20,
+          "selector": ".sc-testimonial__topic",
+          "declarations": "font: 500 16px / 1.24 Inter, Arial, sans-serif; letter-spacing: -0.025em; margin: 18px 0px 10px; color: rgb(32, 37, 40);"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [],
+          "index": 32,
+          "selector": ".sc-faq",
+          "declarations": "padding-top: var(--sc61-space); padding-bottom: var(--sc61-space);"
+        },
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 0,
+          "selector": ".sc-faq",
+          "declarations": "position: relative; background: rgb(255, 255, 255); padding: clamp(110px, 10vw, 165px) max(24px, -600px + 50vw) clamp(105px, 10vw, 160px); scroll-margin-top: 108px;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [],
+          "index": 33,
+          "selector": ".sc-faq__inner",
+          "declarations": "max-width: var(--sc61-container); margin-inline: auto; grid-template-columns: minmax(0px, 0.9fr) minmax(0px, 1.1fr); column-gap: 72px;"
+        },
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 1,
+          "selector": ".sc-faq__inner",
+          "declarations": "display: grid; grid-template-columns: minmax(260px, 0.95fr) minmax(450px, 1.25fr); column-gap: clamp(52px, 7vw, 140px); align-items: start;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [],
+          "index": 34,
+          "selector": ".sc-faq__title",
+          "declarations": "font-family: var(--sc61-font); font-size: var(--sc61-section); font-weight: 400; line-height: 1.1; letter-spacing: var(--sc61-tracking-section); max-width: 490px;"
+        },
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 2,
+          "selector": ".sc-faq__title",
+          "declarations": "font-size: clamp(49px, 4.75vw, 74px); letter-spacing: -0.065em; line-height: 1.06; font-weight: 400; margin: 0px; color: var(--ink);"
+        },
+        {
+          "file": "css/v62-typography-content-candidate.css",
+          "context": [],
+          "index": 29,
+          "selector": ".sc-faq__title",
+          "declarations": "font-family: var(--sc62-text-font); font-size: 70px; font-weight: 400; line-height: 1.1; letter-spacing: -0.035em;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [],
+          "index": 35,
+          "selector": ".sc-faq__question",
+          "declarations": "font-family: var(--sc61-font); font-size: 18px; font-weight: 500; line-height: 1.45; letter-spacing: -0.015em;"
+        },
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 6,
+          "selector": ".sc-faq__question",
+          "declarations": "appearance: none; border: 0px; width: 100%; min-height: 83px; padding: 21px 0px; display: flex; align-items: center; justify-content: space-between; gap: 24px; text-align: left; background: transparent; color: rgb(23, 30, 35); font-size: clamp(17px, 1.25vw, 20px); font-weight: 420; line-height: 1.3; letter-spacing: -0.028em;"
+        },
+        {
+          "file": "css/v62-typography-content-candidate.css",
+          "context": [],
+          "index": 30,
+          "selector": ".sc-faq__question",
+          "declarations": "font-family: var(--sc62-text-font); font-size: 20px; font-weight: 400; line-height: 1.4; letter-spacing: -0.015em;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [],
+          "index": 36,
+          "selector": ".sc-faq__answer-inner p",
+          "declarations": "font-family: var(--sc61-font); font-size: 16px; line-height: 1.5;"
+        },
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 14,
+          "selector": ".sc-faq__answer-inner p",
+          "declarations": "margin: 0px; padding: 0px 70px 25px 0px; max-width: 590px; color: rgb(96, 112, 123); font-size: 15px; line-height: 1.65; letter-spacing: -0.008em;"
+        },
+        {
+          "file": "css/v62-typography-content-candidate.css",
+          "context": [],
+          "index": 31,
+          "selector": ".sc-faq__answer-inner p",
+          "declarations": "font-family: var(--sc62-text-font); font-size: 16px; line-height: 1.5; font-weight: 400;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [],
+          "index": 37,
+          "selector": ".contact-footer.sc-footer",
+          "declarations": "padding-left: max(var(--sc61-gutter),calc((100vw - var(--sc61-container))/2)); padding-right: max(var(--sc61-gutter),calc((100vw - var(--sc61-container))/2));"
+        },
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 15,
+          "selector": ".contact-footer.sc-footer",
+          "declarations": "position: relative; display: block; isolation: isolate; overflow: hidden; background: linear-gradient(rgb(255, 255, 255) 0%, rgb(255, 255, 255) 39%, rgb(251, 253, 255) 59%, rgb(246, 251, 255) 79%, rgb(237, 247, 255) 100%); color: rgb(23, 30, 35); min-height: 780px; padding: 60px max(24px, -600px + 50vw) 32px;"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [],
+          "index": 2,
+          "selector": ".contact-footer.sc-footer",
+          "declarations": "position: relative; display: block; isolation: isolate; overflow: hidden; background: linear-gradient(rgb(255, 255, 255) 0%, rgb(255, 255, 255) 39%, rgb(251, 253, 255) 59%, rgb(246, 251, 255) 79%, rgb(237, 247, 255) 100%); color: rgb(23, 30, 35); min-height: 780px; padding: 60px max(24px, -600px + 50vw) 32px;"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [],
+          "index": 23,
+          "selector": ".contact-footer.sc-footer",
+          "declarations": "background: rgb(255, 255, 255);"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [],
+          "index": 38,
+          "selector": ".contact-footer.sc-footer h2",
+          "declarations": "font-family: var(--sc61-font); font-size: var(--sc61-display); font-weight: 400; line-height: 1.1; letter-spacing: var(--sc61-tracking-display); max-width: 750px; margin-bottom: 28px;"
+        },
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 30,
+          "selector": ".contact-footer.sc-footer h2",
+          "declarations": "font-size: clamp(58px, 7vw, 108px); font-weight: 400; line-height: 1.04; letter-spacing: -0.067em; margin: 0px auto 24px; text-wrap: balance;"
+        },
+        {
+          "file": "css/shared-header-cta.css",
+          "context": [],
+          "index": 14,
+          "selector": ".contact-footer.sc-footer h2",
+          "declarations": "font-family: var(--sc-font-ui); font-size: var(--sc-font-size-display); font-weight: 400; letter-spacing: -0.02857em; line-height: var(--sc-line-display); margin-bottom: 24px; text-wrap: balance;"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [],
+          "index": 5,
+          "selector": ".contact-footer.sc-footer h2",
+          "declarations": "font-size: clamp(58px, 7vw, 108px); font-weight: 400; line-height: 1.04; letter-spacing: -0.067em; margin: 0px auto 24px; text-wrap: balance;"
+        },
+        {
+          "file": "css/v62-typography-content-candidate.css",
+          "context": [],
+          "index": 32,
+          "selector": ".contact-footer.sc-footer h2",
+          "declarations": "font-family: var(--sc62-text-font); font-size: 70px; font-weight: 400; line-height: 1.1; letter-spacing: -0.035em;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [],
+          "index": 39,
+          "selector": ".sc-footer__intro p",
+          "declarations": "font-family: var(--sc61-font); font-size: var(--sc61-body); line-height: 1.5; max-width: 680px; margin-bottom: 32px;"
+        },
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 31,
+          "selector": ".sc-footer__intro p",
+          "declarations": "margin: 0px auto 30px; max-width: 560px; font-size: clamp(15px, 1.1vw, 17px); line-height: 1.55; color: rgb(104, 120, 132);"
+        },
+        {
+          "file": "css/shared-header-cta.css",
+          "context": [],
+          "index": 15,
+          "selector": ".sc-footer__intro p",
+          "declarations": "font-family: var(--sc-font-ui); font-size: var(--sc-font-size-body); font-weight: 400; line-height: var(--sc-line-copy); letter-spacing: 0px;"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [],
+          "index": 6,
+          "selector": ".sc-footer__intro p",
+          "declarations": "margin: 0px auto 30px; max-width: 560px; font-size: clamp(15px, 1.1vw, 17px); line-height: 1.55; color: rgb(104, 120, 132);"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [],
+          "index": 40,
+          "selector": ".contact-footer.sc-footer .sc-footer__cta",
+          "declarations": "font-family: var(--sc61-font); font-size: 16px; font-weight: 500;"
+        },
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 32,
+          "selector": ".contact-footer.sc-footer .sc-footer__cta",
+          "declarations": "display: inline-flex; min-height: 53px; padding: 0px 23px; gap: 16px; border: 0px; background: var(--orange); color: rgb(255, 255, 255); font-weight: 610; font-size: 14px; text-decoration: none; box-shadow: rgba(228, 77, 31, 0.18) 0px 8px 22px; transition: transform 0.24s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.24s, background-color 0.24s;"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [],
+          "index": 7,
+          "selector": ".contact-footer.sc-footer .sc-footer__cta",
+          "declarations": "display: inline-flex; min-height: 53px; padding: 0px 23px; gap: 16px; border: 0px; background: var(--orange); color: rgb(255, 255, 255); font-weight: 610; font-size: 14px; text-decoration: none; box-shadow: rgba(228, 77, 31, 0.18) 0px 8px 22px; transition: transform 0.24s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.24s, background-color 0.24s;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [],
+          "index": 41,
+          "selector": ".contact-footer.sc-footer .sc-footer__nav a",
+          "declarations": "font-family: var(--sc61-font); font-size: 16px; font-weight: 500;"
+        },
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 41,
+          "selector": ".contact-footer.sc-footer .sc-footer__nav a",
+          "declarations": "font-size: 14px; color: rgb(39, 55, 69); text-decoration: none; white-space: nowrap; transition: color 0.2s;"
+        },
+        {
+          "file": "css/shared-header-cta.css",
+          "context": [],
+          "index": 13,
+          "selector": ".contact-footer.sc-footer .sc-footer__nav a",
+          "declarations": "font-family: var(--sc-ui-font); font-size: 16px; font-weight: 400; line-height: 1.5;"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [],
+          "index": 16,
+          "selector": ".contact-footer.sc-footer .sc-footer__nav a",
+          "declarations": "font-size: 14px; color: rgb(39, 55, 69); text-decoration: none; white-space: nowrap; transition: color 0.2s;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [
+            "@media (max-width: 991px)"
+          ],
+          "index": 3,
+          "selector": "#top .hero h1",
+          "declarations": "font-size: var(--sc61-display); line-height: 1.1;"
+        },
+        {
+          "file": "css/v62-typography-content-candidate.css",
+          "context": [
+            "@media (max-width: 991px)"
+          ],
+          "index": 0,
+          "selector": "#top .hero h1",
+          "declarations": "font-size: 52px;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [
+            "@media (max-width: 991px)"
+          ],
+          "index": 7,
+          "selector": ".sc-testimonials__center h2, .sc-testimonials.sc-testimonials--motion .sc-testimonials__center h2",
+          "declarations": "font-size: var(--sc61-section);"
+        },
+        {
+          "file": "css/v62-typography-content-candidate.css",
+          "context": [
+            "@media (max-width: 991px)"
+          ],
+          "index": 3,
+          "selector": ".sc-testimonials__center h2, .sc-testimonials.sc-testimonials--motion .sc-testimonials__center h2",
+          "declarations": "font-size: 48px;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [
+            "@media (max-width: 991px)"
+          ],
+          "index": 8,
+          "selector": ".contact-footer.sc-footer h2",
+          "declarations": "font-size: var(--sc61-display);"
+        },
+        {
+          "file": "css/v62-typography-content-candidate.css",
+          "context": [
+            "@media (max-width: 991px)"
+          ],
+          "index": 5,
+          "selector": ".contact-footer.sc-footer h2",
+          "declarations": "font-size: 52px;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [
+            "@media (max-width: 767px)"
+          ],
+          "index": 1,
+          "selector": "#top .hero h1",
+          "declarations": "font-size: var(--sc61-display); line-height: 1.1; letter-spacing: -0.035em;"
+        },
+        {
+          "file": "css/v62-typography-content-candidate.css",
+          "context": [
+            "@media (max-width: 767px)"
+          ],
+          "index": 0,
+          "selector": "#top .hero h1",
+          "declarations": "font-size: 36px;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [
+            "@media (max-width: 767px)"
+          ],
+          "index": 2,
+          "selector": "#top .hero .side-left p, #top .hero .side-right p",
+          "declarations": "font-size: 16px; line-height: 1.35;"
+        },
+        {
+          "file": "css/v62-typography-content-candidate.css",
+          "context": [
+            "@media (max-width: 767px)"
+          ],
+          "index": 1,
+          "selector": "#top .hero .side-left p, #top .hero .side-right p",
+          "declarations": "font-size: 16px;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [
+            "@media (max-width: 767px)"
+          ],
+          "index": 9,
+          "selector": "#audiences .audience-option .audience-name",
+          "declarations": "font-size: clamp(30px, 8.5vw, 40px); line-height: 1.14;"
+        },
+        {
+          "file": "css/v62-typography-content-candidate.css",
+          "context": [
+            "@media (max-width: 767px)"
+          ],
+          "index": 3,
+          "selector": "#audiences .audience-option .audience-name",
+          "declarations": "font-size: clamp(30px, 8vw, 40px); line-height: 1.14;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [
+            "@media (max-width: 767px)"
+          ],
+          "index": 12,
+          "selector": ".sc-service-card h3",
+          "declarations": "font-size: var(--sc61-card-title);"
+        },
+        {
+          "file": "css/v62-typography-content-candidate.css",
+          "context": [
+            "@media (max-width: 767px)"
+          ],
+          "index": 4,
+          "selector": ".sc-service-card h3",
+          "declarations": "font-size: 24px;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [
+            "@media (max-width: 767px)"
+          ],
+          "index": 13,
+          "selector": ".sc-process__title",
+          "declarations": "font-size: var(--sc61-section);"
+        },
+        {
+          "file": "css/v62-typography-content-candidate.css",
+          "context": [
+            "@media (max-width: 767px)"
+          ],
+          "index": 5,
+          "selector": ".sc-process__title",
+          "declarations": "font-size: 40px;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [
+            "@media (max-width: 767px)"
+          ],
+          "index": 14,
+          "selector": ".sc-process__step h3",
+          "declarations": "font-size: var(--sc61-card-title);"
+        },
+        {
+          "file": "css/v62-typography-content-candidate.css",
+          "context": [
+            "@media (max-width: 767px)"
+          ],
+          "index": 6,
+          "selector": ".sc-process__step h3",
+          "declarations": "font-size: 28px;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [
+            "@media (max-width: 767px)"
+          ],
+          "index": 18,
+          "selector": ".sc-faq__title",
+          "declarations": "font-size: var(--sc61-section); margin-bottom: 0px;"
+        },
+        {
+          "file": "css/v62-typography-content-candidate.css",
+          "context": [
+            "@media (max-width: 767px)"
+          ],
+          "index": 8,
+          "selector": ".sc-faq__title",
+          "declarations": "font-size: 36px;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [
+            "@media (max-width: 767px)"
+          ],
+          "index": 19,
+          "selector": ".sc-faq__question",
+          "declarations": "font-size: 16px;"
+        },
+        {
+          "file": "css/v62-typography-content-candidate.css",
+          "context": [
+            "@media (max-width: 767px)"
+          ],
+          "index": 9,
+          "selector": ".sc-faq__question",
+          "declarations": "font-size: 18px;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [
+            "@media (max-width: 767px)"
+          ],
+          "index": 21,
+          "selector": ".contact-footer.sc-footer h2",
+          "declarations": "font-size: var(--sc61-display); margin-bottom: 24px;"
+        },
+        {
+          "file": "css/v62-typography-content-candidate.css",
+          "context": [
+            "@media (max-width: 767px)"
+          ],
+          "index": 10,
+          "selector": ".contact-footer.sc-footer h2",
+          "declarations": "font-size: 36px;"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [
+            "@media (min-width: 1200px) and (min-height: 800px)"
+          ],
+          "index": 0,
+          "selector": ".sc-testimonials.sc-testimonials--motion .sc-testimonials__center h2",
+          "declarations": "font-size: var(--sc61-section); line-height: 1.1;"
+        },
+        {
+          "file": "css/testimonials.css",
+          "context": [
+            "@media (min-width: 1200px) and (min-height: 800px)"
+          ],
+          "index": 6,
+          "selector": ".sc-testimonials.sc-testimonials--motion .sc-testimonials__center h2",
+          "declarations": "font-size: clamp(54px, 4.9vw, 80px); opacity: 1; color: rgb(20, 23, 25);"
+        }
+      ],
+      [
+        {
+          "file": "css/design-system-v61.css",
+          "context": [
+            "@media (min-width: 1200px) and (min-height: 800px)"
+          ],
+          "index": 1,
+          "selector": ".sc-testimonials + .sc-faq",
+          "declarations": "padding-top: clamp(116px, 10svh, 146px);"
+        },
+        {
+          "file": "css/faq-footer.css",
+          "context": [
+            "@media (min-width: 1200px) and (min-height: 800px)"
+          ],
+          "index": 0,
+          "selector": ".sc-testimonials + .sc-faq",
+          "declarations": "margin-top: 0px; padding-top: clamp(32px, 4svh, 48px);"
+        }
+      ],
+      [
+        {
+          "file": "css/design-tokens.css",
+          "context": [],
+          "index": 0,
+          "selector": ":root",
+          "declarations": "--sc-color-ink: #171e23; --sc-color-accent: #e44d1f; --sc-color-accent-deep: #c63d14; --sc-button-shadow: none; --sc-button-hover-shadow: none; --sc-color-surface: #ffffff; --sc-color-copy-muted: #75828d; --sc-color-tag-blue-bg: #e3efff; --sc-color-tag-blue-text: #347ad0; --sc-color-tag-mint-bg: #e4f5ee; --sc-color-tag-mint-text: #329675; --sc-font-ui: \"Manrope\", \"Inter\", system-ui, sans-serif; --sc-font-size-display: clamp(35px, 4.86111vw, 70px); --sc-font-size-body: 16px; --sc-font-size-card-title: 24px; --sc-font-size-nav: 16px; --sc-font-size-tag: 14px; --sc-font-weight-display: 400; --sc-font-weight-copy: 500; --sc-line-display: 1.1; --sc-line-copy: 1.5; --sc-radius-card: 24px; --sc-radius-surface: clamp(20px, 1.5vw, 30px); --sc-surface-outer-gap: clamp(12px, 1vw, 18px); --sc-width-cards-max: 1268px; --sc-gap-card: 16px; --sc-card-padding-inline: 24px; --sc-card-media-fade: 72px; --sc-height-header-desktop: 56px; --sc-height-header-cta: 40px; --sc-height-primary-cta: 52px; --sc-icon-arrow-size: 20px; --sc-motion-card-shadow: 820ms; --sc-motion-card-lift: 640ms; --sc-motion-card-y: -3px;"
+        },
+        {
+          "file": "css/main.css",
+          "context": [],
+          "index": 0,
+          "selector": ":root",
+          "declarations": "--content-max: 1200px; --section-top-gap: 112px; --ink: #171e23; --muted: #64727e; --orange: #e44d1f; --orange-deep: #c63d14; --blue-pale: #e6f2ff; --pill-shadow: 0 18px 45px rgba(33,53,79,.10),0 2px 10px rgba(20,37,54,.06); --ease: cubic-bezier(.25,.8,.24,1); --hero-edge: clamp(12px,1vw,18px); --header-offset: clamp(14px,.8vw,20px); --header-top: calc(var(--hero-edge) + var(--header-offset)); --hero-strong: 23,30,35; --hero-secondary: 82,108,130; --hero-soft: 98,116,133; --hero-line: 168,186,201; --hero-shadow-alpha: 0;"
+        },
+        {
+          "file": "css/shared-header-cta.css",
+          "context": [],
+          "index": 0,
+          "selector": ":root",
+          "declarations": "--sc-ui-font: var(--sc-font-ui); --sc-nav-font-size: var(--sc-font-size-nav); --sc-header-cta-height: var(--sc-height-header-cta); --sc-desktop-header-height: var(--sc-height-header-desktop); --sc-primary-cta-height: var(--sc-height-primary-cta); --sc-cta-font-size: var(--sc-font-size-body); --sc-arrow-size: var(--sc-icon-arrow-size);"
+        },
+        {
+          "file": "css/v62-typography-content-candidate.css",
+          "context": [],
+          "index": 0,
+          "selector": ":root",
+          "declarations": "--sc62-text-font: \"Manrope\", sans-serif; --sc61-font: \"Manrope\", sans-serif; --sc-font-family: \"Manrope\", sans-serif; --sc62-text-base: 16px; --sc62-text-display: 70px; --sc62-text-section: 32px; --sc62-text-feature: 80px; --sc62-text-service: 32px; --sc62-text-process: 60px; --sc62-text-step: 40px; --sc62-text-large-section: 70px;"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 28,
+          "selector": ".sc-footer__content",
+          "declarations": "position: relative; z-index: 1; display: flex; flex-direction: column; justify-content: space-between; gap: 55px; min-height: 690px; margin: auto; max-width: 1200px;"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [],
+          "index": 3,
+          "selector": ".sc-footer__content",
+          "declarations": "position: relative; z-index: 1; display: flex; flex-direction: column; justify-content: space-between; gap: 55px; min-height: 690px; margin: auto; max-width: 1200px;"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 29,
+          "selector": ".sc-footer__intro",
+          "declarations": "text-align: center; padding: 35px 0px 70px;"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [],
+          "index": 4,
+          "selector": ".sc-footer__intro",
+          "declarations": "text-align: center; padding: 35px 0px 70px;"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 33,
+          "selector": ".contact-footer.sc-footer .sc-footer__cta:is(:hover, :focus-visible)",
+          "declarations": "background: rgb(252, 112, 69); transform: none; box-shadow: rgba(228, 77, 31, 0.24) 0px 11px 27px;"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [],
+          "index": 8,
+          "selector": ".contact-footer.sc-footer .sc-footer__cta:is(:hover, :focus-visible)",
+          "declarations": "background: rgb(252, 112, 69); transform: none; box-shadow: rgba(228, 77, 31, 0.24) 0px 11px 27px;"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 34,
+          "selector": ".sc-footer__cta .arrow",
+          "declarations": "stroke-linecap: round; stroke-linejoin: round; transition: transform 0.34s cubic-bezier(0.22, 1, 0.36, 1);"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [],
+          "index": 9,
+          "selector": ".sc-footer__cta .arrow",
+          "declarations": "stroke-linecap: round; stroke-linejoin: round; transition: transform 0.34s cubic-bezier(0.22, 1, 0.36, 1);"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 35,
+          "selector": ".sc-footer__cta:is(:hover, :focus-visible) .arrow",
+          "declarations": "transform: rotate(-45deg);"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [],
+          "index": 10,
+          "selector": ".sc-footer__cta:is(:hover, :focus-visible) .arrow",
+          "declarations": "transform: rotate(-45deg);"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 36,
+          "selector": ".sc-footer__cta:active .arrow",
+          "declarations": "transform: rotate(-45deg);"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [],
+          "index": 11,
+          "selector": ".sc-footer__cta:active .arrow",
+          "declarations": "transform: rotate(-45deg);"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 37,
+          "selector": ".sc-footer__bottom",
+          "declarations": "display: flex; align-items: flex-start; justify-content: space-between; gap: 44px; padding: 0px 0px 37px;"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [],
+          "index": 12,
+          "selector": ".sc-footer__bottom",
+          "declarations": "display: flex; align-items: flex-start; justify-content: space-between; gap: 44px; padding: 0px 0px 37px;"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 38,
+          "selector": ".sc-footer__brand .brand",
+          "declarations": "display: inline-flex; text-decoration: none; color: rgb(23, 30, 35);"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [],
+          "index": 13,
+          "selector": ".sc-footer__brand .brand",
+          "declarations": "display: inline-flex; text-decoration: none; color: rgb(23, 30, 35);"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 39,
+          "selector": ".sc-footer__brand .brand-name",
+          "declarations": "font-size: 25px;"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [],
+          "index": 14,
+          "selector": ".sc-footer__brand .brand-name",
+          "declarations": "font-size: 25px;"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 40,
+          "selector": ".sc-footer__nav",
+          "declarations": "display: flex; align-items: center; gap: clamp(18px, 2.8vw, 38px); flex-wrap: wrap;"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [],
+          "index": 15,
+          "selector": ".sc-footer__nav",
+          "declarations": "display: flex; align-items: center; gap: clamp(18px, 2.8vw, 38px); flex-wrap: wrap;"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 42,
+          "selector": ".contact-footer.sc-footer .sc-footer__nav a:hover",
+          "declarations": "color: var(--orange);"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [],
+          "index": 17,
+          "selector": ".contact-footer.sc-footer .sc-footer__nav a:hover",
+          "declarations": "color: var(--orange);"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [],
+          "index": 43,
+          "selector": ".sc-footer__fine",
+          "declarations": "padding-top: 17px; border-top: 1px solid rgba(91, 139, 181, 0.18); font-size: 12px; color: rgb(105, 129, 153);"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [],
+          "index": 18,
+          "selector": ".sc-footer__fine",
+          "declarations": "padding-top: 17px; border-top: 1px solid rgba(91, 139, 181, 0.18); font-size: 12px; color: rgb(105, 129, 153);"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [
+            "@media (max-width: 1000px)"
+          ],
+          "index": 3,
+          "selector": ".contact-footer.sc-footer",
+          "declarations": "padding-inline: 36px;"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [
+            "@media (max-width: 1000px)"
+          ],
+          "index": 0,
+          "selector": ".contact-footer.sc-footer",
+          "declarations": "padding-inline: 36px;"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [
+            "@media (max-width: 700px)"
+          ],
+          "index": 7,
+          "selector": ".contact-footer.sc-footer",
+          "declarations": "padding: 22px 22px 26px; min-height: 700px;"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [
+            "@media (max-width: 700px)"
+          ],
+          "index": 0,
+          "selector": ".contact-footer.sc-footer",
+          "declarations": "padding: 22px 22px 26px; min-height: 700px;"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [
+            "@media (max-width: 700px)"
+          ],
+          "index": 8,
+          "selector": ".sc-footer__content",
+          "declarations": "min-height: 652px; gap: 40px;"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [
+            "@media (max-width: 700px)"
+          ],
+          "index": 1,
+          "selector": ".sc-footer__content",
+          "declarations": "min-height: 652px; gap: 40px;"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [
+            "@media (max-width: 700px)"
+          ],
+          "index": 9,
+          "selector": ".sc-footer__intro",
+          "declarations": "padding: 54px 0px 35px;"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [
+            "@media (max-width: 700px)"
+          ],
+          "index": 2,
+          "selector": ".sc-footer__intro",
+          "declarations": "padding: 54px 0px 35px;"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [
+            "@media (max-width: 700px)"
+          ],
+          "index": 10,
+          "selector": ".contact-footer.sc-footer h2",
+          "declarations": "font-size: clamp(46px, 11vw, 68px);"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [
+            "@media (max-width: 700px)"
+          ],
+          "index": 3,
+          "selector": ".contact-footer.sc-footer h2",
+          "declarations": "font-size: clamp(46px, 11vw, 68px);"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [
+            "@media (max-width: 700px)"
+          ],
+          "index": 11,
+          "selector": ".sc-footer__bottom",
+          "declarations": "flex-direction: column; gap: 25px; padding-bottom: 22px;"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [
+            "@media (max-width: 700px)"
+          ],
+          "index": 4,
+          "selector": ".sc-footer__bottom",
+          "declarations": "flex-direction: column; gap: 25px; padding-bottom: 22px;"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [
+            "@media (max-width: 700px)"
+          ],
+          "index": 12,
+          "selector": ".sc-footer__nav",
+          "declarations": "gap: 16px 22px;"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [
+            "@media (max-width: 700px)"
+          ],
+          "index": 5,
+          "selector": ".sc-footer__nav",
+          "declarations": "gap: 16px 22px;"
+        }
+      ],
+      [
+        {
+          "file": "css/faq-footer.css",
+          "context": [
+            "@media (max-width: 700px)"
+          ],
+          "index": 17,
+          "selector": ".sc-footer__fine",
+          "declarations": "font-size: 11px;"
+        },
+        {
+          "file": "css/site-footer.css",
+          "context": [
+            "@media (max-width: 700px)"
+          ],
+          "index": 6,
+          "selector": ".sc-footer__fine",
+          "declarations": "font-size: 11px;"
+        }
+      ],
+      [
+        {
+          "file": "css/main.css",
+          "context": [],
+          "index": 15,
+          "selector": ".brand-note",
+          "declarations": "font-size: 9px; letter-spacing: 0.08em; line-height: 1.11; font-weight: 650; color: rgb(101, 110, 118); text-transform: uppercase;"
+        },
+        {
+          "file": "css/v62-typography-content-candidate.css",
+          "context": [],
+          "index": 6,
+          "selector": ".brand-note",
+          "declarations": "font-size: 12px;"
+        }
+      ],
+      [
+        {
+          "file": "css/main.css",
+          "context": [],
+          "index": 32,
+          "selector": ".mobile-panel a:last-child",
+          "declarations": "background: var(--orange); color: rgb(255, 255, 255); text-align: center; margin-top: 8px; display: flex; align-items: center; justify-content: center; gap: 12px;"
+        },
+        {
+          "file": "css/shared-header-cta.css",
+          "context": [],
+          "index": 9,
+          "selector": ".mobile-panel a:last-child",
+          "declarations": "min-height: var(--sc-primary-cta-height);"
+        }
+      ],
+      [
+        {
+          "file": "css/main.css",
+          "context": [],
+          "index": 36,
+          "selector": ".hero",
+          "declarations": "min-height: 100svh; width: 100%; position: relative; overflow: hidden; z-index: 0; display: flex; flex-direction: column; background: linear-gradient(177deg, rgb(249, 252, 255) 0%, rgb(236, 245, 255) 29%, rgb(214, 233, 255) 78%, rgb(201, 225, 255) 100%); border-radius: clamp(20px, 1.5vw, 30px); box-shadow: rgba(24, 46, 69, 0.08) 0px 14px 40px, rgba(255, 255, 255, 0.55) 0px 0px 0px 1px inset; isolation: isolate;"
+        },
+        {
+          "file": "css/main.css",
+          "context": [],
+          "index": 44,
+          "selector": ".hero",
+          "declarations": "--hero-accent: #e44d1f;"
+        },
+        {
+          "file": "css/main.css",
+          "context": [],
+          "index": 145,
+          "selector": ".hero",
+          "declarations": "box-shadow: none;"
+        }
+      ],
+      [
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (max-width: 1170px)"
+          ],
+          "index": 0,
+          "selector": ".hero-stage",
+          "declarations": "grid-template-columns: minmax(130px, 1fr) minmax(390px, 1.75fr) minmax(175px, 1fr); gap: 22px; width: calc(100% - 52px);"
+        },
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (max-width: 1170px)"
+          ],
+          "index": 2,
+          "selector": ".hero-stage",
+          "declarations": "margin-top: 50px;"
+        }
+      ],
+      [
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (max-width: 850px)"
+          ],
+          "index": 0,
+          "selector": ".floating-header",
+          "declarations": "width: calc(100% - 28px); min-height: 66px; padding: 8px 9px 8px 18px; gap: 10px;"
+        },
+        {
+          "file": "css/shared-header-cta.css",
+          "context": [
+            "@media (max-width: 850px)"
+          ],
+          "index": 0,
+          "selector": ".floating-header",
+          "declarations": "min-height: 66px; padding-top: 8px; padding-bottom: 8px;"
+        }
+      ],
+      [
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (max-width: 540px)"
+          ],
+          "index": 0,
+          "selector": ".floating-header",
+          "declarations": "top: var(--header-top); width: calc(100% - 24px); min-height: 62px;"
+        },
+        {
+          "file": "css/shared-header-cta.css",
+          "context": [
+            "@media (max-width: 540px)"
+          ],
+          "index": 0,
+          "selector": ".floating-header",
+          "declarations": "min-height: 62px;"
+        }
+      ],
+      [
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (min-width: 851px)"
+          ],
+          "index": 5,
+          "selector": ".hero-bottom",
+          "declarations": "width: min(1780px, 100% - clamp(72px, 6vw, 190px)); padding-top: 12px; padding-bottom: clamp(18px, 3.2svh, 60px);"
+        },
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (min-width: 851px)"
+          ],
+          "index": 0,
+          "selector": ".hero-bottom",
+          "declarations": "padding-bottom: clamp(54px, 8svh, 176px);"
+        }
+      ],
+      [
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (min-width: 851px)"
+          ],
+          "index": 0,
+          "selector": ".hero > .hero-content",
+          "declarations": "position: relative; z-index: 16; width: min(var(--content-max),calc(100% - 68px)); height: 100%; min-height: 0px; margin: 0px auto; display: flex; flex-direction: column; padding-top: clamp(125px, 12.2svh, 205px); padding-bottom: clamp(22px, 3.1svh, 52px);"
+        },
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (min-width: 851px)"
+          ],
+          "index": 0,
+          "selector": ".hero > .hero-content",
+          "declarations": "width: min(var(--content-max),calc(100% - 64px));"
+        }
+      ],
+      [
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (min-width: 851px)"
+          ],
+          "index": 3,
+          "selector": ".hero .hero-stage",
+          "declarations": "display: grid; flex: 0 0 auto; grid-template-columns: minmax(0px, 1fr) minmax(0px, 2.1fr) minmax(0px, 1fr); align-items: center; column-gap: clamp(18px, 1.65vw, 35px); width: 100%; max-width: none; margin: clamp(42px, 4.4svh, 72px) 0px 0px;"
+        },
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (min-width: 851px)"
+          ],
+          "index": 1,
+          "selector": ".hero .hero-stage",
+          "declarations": "width: 100%;"
+        }
+      ],
+      [
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (min-width: 851px) and (max-height: 850px)"
+          ],
+          "index": 0,
+          "selector": ".hero > .hero-content",
+          "declarations": "height: auto; min-height: 620px; padding-top: 112px; padding-bottom: 27px;"
+        },
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (min-width: 851px) and (max-height: 850px)"
+          ],
+          "index": 0,
+          "selector": ".hero > .hero-content",
+          "declarations": "width: min(1200px, 100% - 64px); height: auto; min-height: 0px; display: grid; grid-template-rows: max-content max-content max-content; align-content: start; padding: 110px 0px 30px; row-gap: 22px; margin: 0px auto;"
+        }
+      ],
+      [
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (min-width: 851px) and (max-height: 850px)"
+          ],
+          "index": 1,
+          "selector": ".hero .hero-stage",
+          "declarations": "margin-top: 25px;"
+        },
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (min-width: 851px) and (max-height: 850px)"
+          ],
+          "index": 2,
+          "selector": ".hero .hero-stage",
+          "declarations": "grid-auto-rows: max-content; align-self: start;"
+        }
+      ],
+      [
+        {
+          "file": "css/main.css",
+          "context": [],
+          "index": 92,
+          "selector": ".audience-container",
+          "declarations": "width: min(1320px, 100%); margin: 0px auto; display: grid; grid-template-columns: minmax(0px, 1.6fr) minmax(0px, 0.9fr); column-gap: clamp(34px, 3vw, 70px); align-items: center;"
+        },
+        {
+          "file": "css/main.css",
+          "context": [],
+          "index": 118,
+          "selector": ".audience-container",
+          "declarations": "transform: translate3d(0px, 0px, 0px); backface-visibility: hidden;"
+        }
+      ],
+      [
+        {
+          "file": "css/main.css",
+          "context": [],
+          "index": 101,
+          "selector": ".audience-visual",
+          "declarations": "min-width: 0px; padding: 20px 12px;"
+        },
+        {
+          "file": "css/main.css",
+          "context": [],
+          "index": 121,
+          "selector": ".audience-visual",
+          "declarations": "opacity: 0; visibility: hidden; pointer-events: none; transform: translate3d(0px, 25px, 0px); transition: opacity 0.48s cubic-bezier(0.18, 0.72, 0.25, 1), transform 0.78s cubic-bezier(0.16, 0.79, 0.18, 1), visibility 0.48s;"
+        }
+      ],
+      [
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (min-width: 851px)"
+          ],
+          "index": 0,
+          "selector": ".audience-section",
+          "declarations": "padding-top: clamp(74px, 7.5svh, 120px); scroll-margin-top: 95px;"
+        },
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (min-width: 851px)"
+          ],
+          "index": 1,
+          "selector": ".audience-section",
+          "declarations": "padding-top: clamp(64px, 7.6svh, 92px);"
+        },
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (min-width: 851px)"
+          ],
+          "index": 2,
+          "selector": ".audience-section",
+          "declarations": "padding-top: var(--section-top-gap); padding-left: clamp(28px, 5vw, 90px); padding-right: clamp(28px, 5vw, 90px);"
+        }
+      ],
+      [
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (min-width: 851px) and (min-height: 851px) and (max-aspect-ratio: 3 / 1)"
+          ],
+          "index": 0,
+          "selector": ".audience-section",
+          "declarations": "background: transparent; padding-top: clamp(74px, 7.5svh, 120px);"
+        },
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (min-width: 851px) and (min-height: 851px) and (max-aspect-ratio: 3 / 1)"
+          ],
+          "index": 5,
+          "selector": ".audience-section",
+          "declarations": "margin-top: 0px; padding-top: var(--section-top-gap); background: rgb(255, 255, 255);"
+        }
+      ],
+      [
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (min-width: 851px)"
+          ],
+          "index": 0,
+          "selector": ".audience-copy",
+          "declarations": "align-self: start;"
+        },
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (min-width: 851px)"
+          ],
+          "index": 4,
+          "selector": ".audience-copy",
+          "declarations": "width: 100%; min-width: 0px;"
+        }
+      ],
+      [
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (min-width: 851px) and (min-height: 851px) and (max-aspect-ratio: 3 / 1)"
+          ],
+          "index": 1,
+          "selector": ".hero > .hero-content",
+          "declarations": "width: min(var(--content-max),calc(100% - 64px)); height: 100%; display: grid; grid-template-columns: minmax(0px, 1fr); grid-template-rows: auto auto auto; align-content: start; row-gap: var(--hero-row-gap); padding: var(--hero-top-pad) 0 var(--hero-bottom-pad); margin: 0px auto;"
+        },
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (min-width: 851px) and (min-height: 851px) and (max-aspect-ratio: 3 / 1)"
+          ],
+          "index": 0,
+          "selector": ".hero > .hero-content",
+          "declarations": "width: min(1200px, 100% - 64px); padding: var(--hero-top-pad) 32px var(--hero-bottom-pad); row-gap: var(--hero-row-gap); max-height: 100%; overflow: visible; box-sizing: border-box;"
+        },
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (min-width: 851px) and (min-height: 851px) and (max-aspect-ratio: 3 / 1)"
+          ],
+          "index": 0,
+          "selector": ".hero > .hero-content",
+          "declarations": "display: grid; grid-template-rows: max-content max-content max-content; align-content: start; box-sizing: border-box;"
+        }
+      ],
+      [
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (min-width: 851px) and (min-height: 851px) and (max-aspect-ratio: 3 / 1)"
+          ],
+          "index": 2,
+          "selector": ".hero .hero-head",
+          "declarations": "min-height: 0px; margin: 0px; padding: 0px;"
+        },
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (min-width: 851px) and (min-height: 851px) and (max-aspect-ratio: 3 / 1)"
+          ],
+          "index": 1,
+          "selector": ".hero .hero-head",
+          "declarations": "align-self: start; min-height: 0px;"
+        }
+      ],
+      [
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (min-width: 851px) and (min-height: 851px) and (max-aspect-ratio: 3 / 1)"
+          ],
+          "index": 3,
+          "selector": ".hero .hero-stage",
+          "declarations": "margin: 0px; width: 100%; min-height: 0px;"
+        },
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (min-width: 851px) and (min-height: 851px) and (max-aspect-ratio: 3 / 1)"
+          ],
+          "index": 0,
+          "selector": ".hero .hero-stage",
+          "declarations": "margin-top: 0px;"
+        },
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (min-width: 851px) and (min-height: 851px) and (max-aspect-ratio: 3 / 1)"
+          ],
+          "index": 3,
+          "selector": ".hero .hero-stage",
+          "declarations": "margin: 0px;"
+        },
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (min-width: 851px) and (min-height: 851px) and (max-aspect-ratio: 3 / 1)"
+          ],
+          "index": 2,
+          "selector": ".hero .hero-stage",
+          "declarations": "align-self: start; min-height: max-content; grid-auto-rows: max-content; margin: 0px; padding: 0px;"
+        }
+      ],
+      [
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (min-width: 851px) and (min-height: 851px) and (max-aspect-ratio: 3 / 1)"
+          ],
+          "index": 4,
+          "selector": ".hero .hero-bottom",
+          "declarations": "width: 100%; min-height: 38px; margin: 0px; padding: 0px;"
+        },
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (min-width: 851px) and (min-height: 851px) and (max-aspect-ratio: 3 / 1)"
+          ],
+          "index": 1,
+          "selector": ".hero .hero-bottom",
+          "declarations": "margin-top: 0px;"
+        },
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (min-width: 851px) and (min-height: 851px) and (max-aspect-ratio: 3 / 1)"
+          ],
+          "index": 2,
+          "selector": ".hero .hero-bottom",
+          "declarations": "margin: 0px; padding: 0px;"
+        },
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (min-width: 851px) and (min-height: 851px) and (max-aspect-ratio: 3 / 1)"
+          ],
+          "index": 4,
+          "selector": ".hero .hero-bottom",
+          "declarations": "align-self: start; min-height: 38px; padding: 0px; margin: 0px;"
+        }
+      ],
+      [
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (min-width: 851px) and (min-height: 1101px) and (max-height: 1199px) and (max-aspect-ratio: 3 / 1)"
+          ],
+          "index": 0,
+          "selector": ":root",
+          "declarations": "--hero-top-pad: 96px; --hero-row-gap: 68px; --hero-bottom-pad: 17px;"
+        },
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (min-width: 851px) and (min-height: 1101px) and (max-height: 1199px) and (max-aspect-ratio: 3 / 1)"
+          ],
+          "index": 0,
+          "selector": ":root",
+          "declarations": "--hero-top-pad: 100px; --hero-bottom-pad: 64px; --hero-row-gap: 52px;"
+        }
+      ],
+      [
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (min-width: 851px) and (min-height: 951px) and (max-height: 1100px) and (max-aspect-ratio: 3 / 1)"
+          ],
+          "index": 0,
+          "selector": ":root",
+          "declarations": "--hero-top-pad: 92px; --hero-row-gap: 58px; --hero-bottom-pad: 16px;"
+        },
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (min-width: 851px) and (min-height: 951px) and (max-height: 1100px) and (max-aspect-ratio: 3 / 1)"
+          ],
+          "index": 0,
+          "selector": ":root",
+          "declarations": "--hero-top-pad: 108px; --hero-bottom-pad: 54px; --hero-row-gap: 68px;"
+        },
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (min-width: 851px) and (min-height: 951px) and (max-height: 1100px) and (max-aspect-ratio: 3 / 1)"
+          ],
+          "index": 0,
+          "selector": ":root",
+          "declarations": "--hero-top-pad: 96px; --hero-row-gap: 55px; --hero-bottom-pad: 40px;"
+        }
+      ],
+      [
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (min-width: 851px) and (min-height: 851px) and (max-height: 950px) and (max-aspect-ratio: 3 / 1)"
+          ],
+          "index": 0,
+          "selector": ":root",
+          "declarations": "--hero-top-pad: 78px; --hero-row-gap: 28px; --hero-bottom-pad: 14px;"
+        },
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (min-width: 851px) and (min-height: 851px) and (max-height: 950px) and (max-aspect-ratio: 3 / 1)"
+          ],
+          "index": 0,
+          "selector": ":root",
+          "declarations": "--hero-top-pad: 108px; --hero-bottom-pad: 25px; --hero-row-gap: 57px;"
+        },
+        {
+          "file": "css/main.css",
+          "context": [
+            "@media (min-width: 851px) and (min-height: 851px) and (max-height: 950px) and (max-aspect-ratio: 3 / 1)"
+          ],
+          "index": 0,
+          "selector": ":root",
+          "declarations": "--hero-top-pad: 94px; --hero-row-gap: 45px; --hero-bottom-pad: 24px;"
+        }
+      ],
+      [
+        {
+          "file": "css/raboty-cards.css",
+          "context": [],
+          "index": 0,
+          "selector": "body.works-catalog",
+          "declarations": "--cards-max-width: var(--sc-width-cards-max); --cards-gap: var(--sc-gap-card); --card-radius: var(--sc-radius-card); --card-font: var(--sc-font-ui); --card-media-ratio: 1.92; --card-media-fade-height: var(--sc-card-media-fade); --card-padding-x: var(--sc-card-padding-inline); --card-padding-top: 12px; --card-padding-bottom: 22px; --card-heading-size: 24px; --card-description-size: 16px; --card-cta-size: 16px; --card-tag-size: 12px; --card-hover-lift: var(--sc-motion-card-y); --card-shadow-duration: var(--sc-motion-card-shadow); --card-lift-duration: var(--sc-motion-card-lift); --card-shadow-ease: cubic-bezier(.22,1,.36,1); --card-accent: var(--sc-color-accent);"
+        },
+        {
+          "file": "css/raboty-scroll.css",
+          "context": [],
+          "index": 0,
+          "selector": "body.works-catalog",
+          "declarations": "--works-section-space-top: clamp(112px, 8vw, 160px); --works-section-space-bottom: clamp(112px, 11vw, 180px); --works-intro-lead-top: 16px; --works-intro-button-gap: 22px; --works-intro-to-grid: clamp(48px, 4.6vw, 76px); --works-reveal-y: 18px; --works-reveal-duration: 760ms; --works-reveal-ease: cubic-bezier(.22,.72,.25,1);"
+        },
+        {
+          "file": "css/raboty-surface.css",
+          "context": [],
+          "index": 0,
+          "selector": "body.works-catalog",
+          "declarations": "background: rgb(255, 255, 255); overflow-x: clip;"
+        },
+        {
+          "file": "css/raboty-type.css",
+          "context": [],
+          "index": 0,
+          "selector": "body.works-catalog",
+          "declarations": "--sc-type-family: var(--sc-font-ui); --sc-type-display-size: var(--sc-font-size-display); --sc-type-display-leading: var(--sc-line-display); --sc-type-display-tracking: -.02857em; --sc-type-body-size: var(--sc-font-size-body); --sc-type-body-leading: var(--sc-line-copy); --sc-type-card-title-size: var(--sc-font-size-card-title); --sc-type-card-caption-size: 16px; --sc-type-card-link-size: 16px; --sc-type-tag-size: var(--sc-font-size-tag); --sc-type-block-gap: 24px;"
+        },
+        {
+          "file": "css/raboty-type.css",
+          "context": [],
+          "index": 4,
+          "selector": "body.works-catalog",
+          "declarations": "--card-font: var(--sc-type-family); --card-heading-size: var(--sc-type-card-title-size); --card-description-size: var(--sc-type-card-caption-size); --card-cta-size: var(--sc-type-card-link-size); --card-tag-size: var(--sc-type-tag-size);"
+        }
+      ],
+      [
+        {
+          "file": "css/raboty-cards.css",
+          "context": [],
+          "index": 1,
+          "selector": "body.works-catalog .catalog-container",
+          "declarations": "width: min(100%,var(--cards-max-width)); margin-inline: auto;"
+        },
+        {
+          "file": "css/raboty-scroll.css",
+          "context": [],
+          "index": 3,
+          "selector": "body.works-catalog .catalog-container",
+          "declarations": "margin-top: var(--works-intro-to-grid);"
+        },
+        {
+          "file": "css/raboty-surface.css",
+          "context": [],
+          "index": 9,
+          "selector": "body.works-catalog .catalog-container",
+          "declarations": "width: min(1215px, 100%); margin: clamp(48px, 4.6vw, 76px) auto 0px;"
+        }
+      ],
+      [
+        {
+          "file": "css/raboty-cards.css",
+          "context": [],
+          "index": 10,
+          "selector": "body.works-catalog .case-card__body h2",
+          "declarations": "margin: 0px 0px 8px; font-size: var(--card-heading-size); line-height: 1.2; font-weight: 400; letter-spacing: -0.035em; color: rgb(23, 30, 35); overflow-wrap: anywhere;"
+        },
+        {
+          "file": "css/raboty-type.css",
+          "context": [],
+          "index": 5,
+          "selector": "body.works-catalog .case-card__body h2",
+          "declarations": "font-weight: 400; letter-spacing: -0.018em; line-height: 1.2;"
+        }
+      ],
+      [
+        {
+          "file": "css/raboty-cards.css",
+          "context": [],
+          "index": 12,
+          "selector": "body.works-catalog .case-card .tag",
+          "declarations": "display: inline-flex; align-items: center; max-width: 100%; min-height: 25px; padding: 5px 8px; border-radius: 6px; font-size: var(--card-tag-size); line-height: 1.28; font-weight: 500; overflow-wrap: anywhere;"
+        },
+        {
+          "file": "css/raboty-type.css",
+          "context": [],
+          "index": 7,
+          "selector": "body.works-catalog .case-card .tag",
+          "declarations": "font-weight: 500; line-height: 1.24;"
+        }
+      ],
+      [
+        {
+          "file": "css/raboty-cards.css",
+          "context": [],
+          "index": 15,
+          "selector": "body.works-catalog .case-card__body p",
+          "declarations": "display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin: 0px 0px 12px; color: var(--sc-color-copy-muted); font-size: var(--card-description-size); font-weight: 400; line-height: 1.48; letter-spacing: -0.012em;"
+        },
+        {
+          "file": "css/raboty-type.css",
+          "context": [],
+          "index": 6,
+          "selector": "body.works-catalog .case-card__body p",
+          "declarations": "font-weight: 500; line-height: var(--sc-type-body-leading); letter-spacing: 0px;"
+        }
+      ],
+      [
+        {
+          "file": "css/raboty-cards.css",
+          "context": [],
+          "index": 16,
+          "selector": "body.works-catalog .case-card__more",
+          "declarations": "display: inline-flex; flex: 0 0 auto; align-items: center; gap: 10px; margin-top: auto; color: rgb(23, 30, 35); font-size: var(--card-cta-size); font-weight: 500; line-height: 1.35; transition: color 240ms;"
+        },
+        {
+          "file": "css/raboty-type.css",
+          "context": [],
+          "index": 8,
+          "selector": "body.works-catalog .case-card__more",
+          "declarations": "font-weight: 500; line-height: 1.35;"
+        }
+      ],
+      [
+        {
+          "file": "css/raboty-reveal.css",
+          "context": [
+            "@media (prefers-reduced-motion: no-preference)"
+          ],
+          "index": 0,
+          "selector": "html.sc-works-motion body.works-catalog .floating-header",
+          "declarations": "animation: auto ease 0s 1 normal none running none; opacity: 1;"
+        },
+        {
+          "file": "css/raboty-surface.css",
+          "context": [
+            "@media (prefers-reduced-motion: no-preference)"
+          ],
+          "index": 1,
+          "selector": "html.sc-works-motion body.works-catalog .floating-header",
+          "declarations": "animation: 0.9s cubic-bezier(0.22, 0.71, 0.22, 1) 0.1s 1 normal both running sc5-header-in;"
+        }
+      ],
+      [
+        {
+          "file": "css/raboty-reveal.css",
+          "context": [
+            "@media (prefers-reduced-motion: no-preference)"
+          ],
+          "index": 1,
+          "selector": "html.sc-works-motion body.works-catalog .works-surface",
+          "declarations": "animation: 0.84s cubic-bezier(0.2, 0.74, 0.24, 1) 0s 1 normal both running sc13-surface-reveal; transform-origin: 50% 0px; backface-visibility: hidden;"
+        },
+        {
+          "file": "css/raboty-surface.css",
+          "context": [
+            "@media (prefers-reduced-motion: no-preference)"
+          ],
+          "index": 0,
+          "selector": "html.sc-works-motion body.works-catalog .works-surface",
+          "declarations": "animation: 1.35s cubic-bezier(0.22, 0.69, 0.21, 1) 0s 1 normal both running sc5-surface-in; backface-visibility: hidden;"
+        }
+      ],
+      [
+        {
+          "file": "css/raboty-scroll.css",
+          "context": [],
+          "index": 1,
+          "selector": "body.works-catalog .works-surface",
+          "declarations": "padding-top: var(--works-section-space-top); padding-bottom: var(--works-section-space-bottom);"
+        },
+        {
+          "file": "css/raboty-surface.css",
+          "context": [],
+          "index": 3,
+          "selector": "body.works-catalog .works-surface",
+          "declarations": "--surface-radius: clamp(20px,1.5vw,30px); position: relative; isolation: isolate; width: calc(100% - 2 * var(--hero-edge)); margin: var(--hero-edge) auto 0; padding: clamp(112px, 8vw, 160px) 24px clamp(112px, 11vw, 180px); border-radius: var(--surface-radius); overflow: hidden; background: rgb(255, 255, 255);"
+        }
+      ],
+      [
+        {
+          "file": "css/raboty-scroll.css",
+          "context": [],
+          "index": 2,
+          "selector": "body.works-catalog .catalog-intro__lead",
+          "declarations": "margin-top: var(--works-intro-lead-top); margin-bottom: var(--works-intro-button-gap);"
+        },
+        {
+          "file": "css/raboty-surface.css",
+          "context": [],
+          "index": 8,
+          "selector": "body.works-catalog .catalog-intro__lead",
+          "declarations": "margin: 16px auto 22px; max-width: 650px; font-size: clamp(14px, 0.98vw, 16px); font-weight: 400; line-height: 1.55; color: rgb(112, 128, 141);"
+        },
+        {
+          "file": "css/raboty-type.css",
+          "context": [],
+          "index": 2,
+          "selector": "body.works-catalog .catalog-intro__lead",
+          "declarations": "font-family: var(--sc-type-family); font-size: var(--sc-type-body-size); font-weight: 400; line-height: var(--sc-type-body-leading); letter-spacing: 0px;"
+        },
+        {
+          "file": "css/raboty-type.css",
+          "context": [],
+          "index": 3,
+          "selector": "body.works-catalog .catalog-intro__lead",
+          "declarations": "margin-top: var(--sc-type-block-gap); margin-bottom: var(--sc-type-block-gap);"
+        }
+      ],
+      [
+        {
+          "file": "css/raboty-scroll.css",
+          "context": [
+            "@media (max-width: 850px)"
+          ],
+          "index": 0,
+          "selector": "body.works-catalog",
+          "declarations": "--works-section-space-top: clamp(122px,15vw,145px); --works-section-space-bottom: 118px; --works-intro-to-grid: 52px;"
+        },
+        {
+          "file": "css/raboty-type.css",
+          "context": [
+            "@media (max-width: 850px)"
+          ],
+          "index": 0,
+          "selector": "body.works-catalog",
+          "declarations": "--sc-type-tag-size: 13px;"
+        }
+      ],
+      [
+        {
+          "file": "css/raboty-scroll.css",
+          "context": [
+            "@media (max-width: 650px)"
+          ],
+          "index": 0,
+          "selector": "body.works-catalog",
+          "declarations": "--works-section-space-top: clamp(118px,24vw,137px); --works-section-space-bottom: 96px; --works-intro-to-grid: 45px;"
+        },
+        {
+          "file": "css/raboty-type.css",
+          "context": [
+            "@media (max-width: 650px)"
+          ],
+          "index": 0,
+          "selector": "body.works-catalog",
+          "declarations": "--sc-type-body-size: 14px; --sc-type-card-title-size: 22px; --sc-type-card-caption-size: 14px; --sc-type-card-link-size: 14px; --sc-type-tag-size: 12px;"
+        }
+      ],
+      [
+        {
+          "file": "css/raboty-surface.css",
+          "context": [],
+          "index": 7,
+          "selector": "body.works-catalog .catalog-intro__inner h1",
+          "declarations": "margin: 0px; color: rgb(23, 30, 35); font-family: Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif; font-size: clamp(58px, 5.1vw, 86px); font-weight: 400; letter-spacing: -0.065em; line-height: 1.09;"
+        },
+        {
+          "file": "css/raboty-type.css",
+          "context": [],
+          "index": 1,
+          "selector": "body.works-catalog .catalog-intro__inner h1",
+          "declarations": "font-family: var(--sc-type-family); font-size: var(--sc-type-display-size); font-weight: 400; letter-spacing: var(--sc-type-display-tracking); line-height: var(--sc-type-display-leading); text-wrap: balance;"
+        }
+      ],
+      [
+        {
+          "file": "css/services.css",
+          "context": [],
+          "index": 6,
+          "selector": ".sc-services.sc-services--pinned .sc-services__viewport",
+          "declarations": "padding-block: 56px 72px; margin-block: -56px -72px;"
+        },
+        {
+          "file": "css/v62-services-alignment.css",
+          "context": [],
+          "index": 0,
+          "selector": ".sc-services.sc-services--pinned .sc-services__viewport",
+          "declarations": "overflow: clip;"
+        }
+      ],
+      [
+        {
+          "file": "css/v62-typography-content-candidate.css",
+          "context": [],
+          "index": 18,
+          "selector": ".sc-work-content__title",
+          "declarations": "font-family: var(--sc62-text-font); font-weight: 400;"
+        },
+        {
+          "file": "css/works.css",
+          "context": [],
+          "index": 19,
+          "selector": ".sc-work-content__title",
+          "declarations": "margin: 0px 0px 12px; font-family: var(--sc-font-family,inherit); font-size: clamp(31px, 2.35vw, 46px); font-weight: 460; letter-spacing: -0.058em; line-height: 1.08; text-wrap: balance; color: rgb(23, 30, 35);"
+        }
+      ],
+      [
+        {
+          "file": "css/works.css",
+          "context": [],
+          "index": 6,
+          "selector": ".sc-works--timeline .sc-work-item",
+          "declarations": "position: absolute; top: 0px; left: var(--works-gutter); right: var(--works-gutter); width: auto; height: 100%; min-height: 0px; display: block; margin: 0px; padding: var(--works-padding); will-change: transform;"
+        },
+        {
+          "file": "css/works.css",
+          "context": [],
+          "index": 7,
+          "selector": ".sc-works--timeline .sc-work-item",
+          "declarations": "z-index: var(--sc-work-layer,1);"
+        }
+      ],
+      [
+        {
+          "file": "css/works.css",
+          "context": [],
+          "index": 11,
+          "selector": ".sc-work-media",
+          "declarations": "position: absolute; inset: 0px; pointer-events: none;"
+        },
+        {
+          "file": "css/works.css",
+          "context": [],
+          "index": 12,
+          "selector": ".sc-work-media",
+          "declarations": "z-index: 1; overflow: hidden;"
+        }
+      ]
+    ],
+    "note": "Identical rule text is not a deletion proof: cascade position and intervening declarations can be intentional."
+  },
+  "paintNote": "Homepage pixels are a strict gate. Other unchanged HTML/CSS documents use exact input, CSSOM, visible-style and geometry checks; their pixel counts are diagnostic because same-URL reload controls reproduce raster differences.",
+  "pass": true
+}

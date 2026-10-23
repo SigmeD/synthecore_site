@@ -1,0 +1,68 @@
+[
+  {
+    "width": 1440,
+    "route": "/",
+    "iteration": 1,
+    "computedEqual": true,
+    "pixels": {
+      "changedPixels": 0,
+      "maxDelta": 0,
+      "totalPixels": 1296000
+    }
+  },
+  {
+    "width": 1440,
+    "route": "/",
+    "iteration": 2,
+    "computedEqual": true,
+    "pixels": {
+      "changedPixels": 0,
+      "maxDelta": 0,
+      "totalPixels": 1296000
+    }
+  },
+  {
+    "width": 320,
+    "route": "/raboty/",
+    "iteration": 1,
+    "computedEqual": true,
+    "pixels": {
+      "changedPixels": 0,
+      "maxDelta": 0,
+      "totalPixels": 270080
+    }
+  },
+  {
+    "width": 320,
+    "route": "/raboty/",
+    "iteration": 2,
+    "computedEqual": true,
+    "pixels": {
+      "changedPixels": 59,
+      "maxDelta": 4,
+      "totalPixels": 270080
+    }
+  },
+  {
+    "width": 1920,
+    "route": "/raboty/flowers/",
+    "iteration": 1,
+    "computedEqual": true,
+    "pixels": {
+      "changedPixels": 1063,
+      "maxDelta": 97,
+      "totalPixels": 1728000
+    }
+  },
+  {
+    "width": 1920,
+    "route": "/raboty/flowers/",
+    "iteration": 2,
+    "computedEqual": true,
+    "pixels": {
+      "changedPixels": 0,
+      "maxDelta": 0,
+      "totalPixels": 1728000
+    }
+  }
+]
