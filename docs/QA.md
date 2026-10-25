@@ -52,6 +52,10 @@ node scripts/verify-orange-buttons.cjs
 
 ## Детальные кейсы v20
 
+Новая проверка Prostor v1: `node --test scripts/test-prostor-case.cjs` и `node scripts/verify-prostor-browser.cjs`. Сравнительный сценарий требует текущий сайт на 4176, распакованный v1 на 4194 (с существующими локальными Manrope) и отдельный экспорт `e2790e6` на 4195. Адреса задаются через `SYNTHECORE_URL`, `PROSTOR_REFERENCE_URL`, `PROSTOR_BASELINE_URL`; результат — `output/playwright/prostor-v1/`. Проверяются 320/390/768/1024/1440/1920 px в обоих режимах движения, семь PNG-lightbox, четыре этапа, sticky, карусель, Header/Footer и регрессии пяти прежних маршрутов на desktop/mobile. [Свежая приёмка](qa/prostor-v1/README.md).
+
+Основные переходы проверяются отдельно: `$env:CASE_PROJECT = 'prostor'; node scripts/verify-case-links-browser.cjs`. Нужны реальные клики изображения, заголовка, CTA, Enter и Ctrl-клик на 390/1440 px с обычным движением и reduced motion. B2B и CRM сохраняют модалки. Старые отчёты ниже относятся к своим этапам и не подменяют новую приёмку.
+
 Правила общего шаблона и точные исключения ссылок — в [спецификации](CASE_TEMPLATE_V20.md). Новые доказательства и ограничения — в [приёмке Beauty Insight](qa/beauty-v20/README.md). Для проверки сборки и контента выполните:
 
 ```powershell

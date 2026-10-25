@@ -1,0 +1,631 @@
+{
+  "date": "2026-10-25T13:16:07.431Z",
+  "base": "http://127.0.0.1:4176/",
+  "project": "prostor",
+  "destination": "/raboty/prostor/",
+  "checks": [
+    {
+      "name": "390-no-preference-home/image native anchor",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference-home/image hit reaches primary link",
+      "pass": true,
+      "data": {
+        "x": 291.2,
+        "y": 110,
+        "hit": "/raboty/prostor/"
+      }
+    },
+    {
+      "name": "390-no-preference-home/image navigates",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference-home/image no modal",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference-home/title native anchor",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference-home/title hit reaches primary link",
+      "pass": true,
+      "data": {
+        "x": 149,
+        "y": 406.609375,
+        "hit": "/raboty/prostor/"
+      }
+    },
+    {
+      "name": "390-no-preference-home/title navigates",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference-home/title no modal",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference-home/keyboard native anchor",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference-home/keyboard navigates",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference-home/keyboard no modal",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference-home/new-tab native anchor",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference-home/Ctrl-click opens detail in new tab",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference-catalog/image native anchor",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference-catalog/image hit reaches primary link",
+      "pass": true,
+      "data": {
+        "x": 283.388125,
+        "y": 341.9826904296875,
+        "hit": "/raboty/prostor/"
+      }
+    },
+    {
+      "name": "390-no-preference-catalog/image navigates",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference-catalog/image no modal",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference-catalog/title native anchor",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference-catalog/title hit reaches primary link",
+      "pass": true,
+      "data": {
+        "x": 143,
+        "y": 502.413818359375,
+        "hit": "/raboty/prostor/"
+      }
+    },
+    {
+      "name": "390-no-preference-catalog/title navigates",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference-catalog/title no modal",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference-catalog/cta native anchor",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference-catalog/cta hit reaches primary link",
+      "pass": true,
+      "data": {
+        "x": 143,
+        "y": 630.19287109375,
+        "hit": "/raboty/prostor/"
+      }
+    },
+    {
+      "name": "390-no-preference-catalog/cta navigates",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference-catalog/cta no modal",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference-catalog/keyboard native anchor",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference-catalog/keyboard navigates",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference-catalog/keyboard no modal",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference-catalog/new-tab native anchor",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference-catalog/Ctrl-click opens detail in new tab",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference-catalog/b2b fallback modal",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference-catalog/crm fallback modal",
+      "pass": true
+    },
+    {
+      "name": "390-reduce-home/image native anchor",
+      "pass": true
+    },
+    {
+      "name": "390-reduce-home/image hit reaches primary link",
+      "pass": true,
+      "data": {
+        "x": 291.2,
+        "y": 219.828125,
+        "hit": "/raboty/prostor/"
+      }
+    },
+    {
+      "name": "390-reduce-home/image navigates",
+      "pass": true
+    },
+    {
+      "name": "390-reduce-home/image no modal",
+      "pass": true
+    },
+    {
+      "name": "390-reduce-home/title native anchor",
+      "pass": true
+    },
+    {
+      "name": "390-reduce-home/title hit reaches primary link",
+      "pass": true,
+      "data": {
+        "x": 149,
+        "y": 516.4375,
+        "hit": "/raboty/prostor/"
+      }
+    },
+    {
+      "name": "390-reduce-home/title navigates",
+      "pass": true
+    },
+    {
+      "name": "390-reduce-home/title no modal",
+      "pass": true
+    },
+    {
+      "name": "390-reduce-home/keyboard native anchor",
+      "pass": true
+    },
+    {
+      "name": "390-reduce-home/keyboard navigates",
+      "pass": true
+    },
+    {
+      "name": "390-reduce-home/keyboard no modal",
+      "pass": true
+    },
+    {
+      "name": "390-reduce-home/new-tab native anchor",
+      "pass": true
+    },
+    {
+      "name": "390-reduce-home/Ctrl-click opens detail in new tab",
+      "pass": true
+    },
+    {
+      "name": "390-reduce-catalog/image native anchor",
+      "pass": true
+    },
+    {
+      "name": "390-reduce-catalog/image hit reaches primary link",
+      "pass": true,
+      "data": {
+        "x": 283.388125,
+        "y": 345.553125,
+        "hit": "/raboty/prostor/"
+      }
+    },
+    {
+      "name": "390-reduce-catalog/image navigates",
+      "pass": true
+    },
+    {
+      "name": "390-reduce-catalog/image no modal",
+      "pass": true
+    },
+    {
+      "name": "390-reduce-catalog/title native anchor",
+      "pass": true
+    },
+    {
+      "name": "390-reduce-catalog/title hit reaches primary link",
+      "pass": true,
+      "data": {
+        "x": 143,
+        "y": 505.984375,
+        "hit": "/raboty/prostor/"
+      }
+    },
+    {
+      "name": "390-reduce-catalog/title navigates",
+      "pass": true
+    },
+    {
+      "name": "390-reduce-catalog/title no modal",
+      "pass": true
+    },
+    {
+      "name": "390-reduce-catalog/cta native anchor",
+      "pass": true
+    },
+    {
+      "name": "390-reduce-catalog/cta hit reaches primary link",
+      "pass": true,
+      "data": {
+        "x": 143,
+        "y": 633.6875,
+        "hit": "/raboty/prostor/"
+      }
+    },
+    {
+      "name": "390-reduce-catalog/cta navigates",
+      "pass": true
+    },
+    {
+      "name": "390-reduce-catalog/cta no modal",
+      "pass": true
+    },
+    {
+      "name": "390-reduce-catalog/keyboard native anchor",
+      "pass": true
+    },
+    {
+      "name": "390-reduce-catalog/keyboard navigates",
+      "pass": true
+    },
+    {
+      "name": "390-reduce-catalog/keyboard no modal",
+      "pass": true
+    },
+    {
+      "name": "390-reduce-catalog/new-tab native anchor",
+      "pass": true
+    },
+    {
+      "name": "390-reduce-catalog/Ctrl-click opens detail in new tab",
+      "pass": true
+    },
+    {
+      "name": "390-reduce-catalog/b2b fallback modal",
+      "pass": true
+    },
+    {
+      "name": "390-reduce-catalog/crm fallback modal",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference-home/image native anchor",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference-home/image hit reaches primary link",
+      "pass": true,
+      "data": {
+        "x": 1080.920625,
+        "y": 111.515625,
+        "hit": "/raboty/prostor/"
+      }
+    },
+    {
+      "name": "1440-no-preference-home/image navigates",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference-home/image no modal",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference-home/title native anchor",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference-home/title hit reaches primary link",
+      "pass": true,
+      "data": {
+        "x": 177.71875,
+        "y": 342.703125,
+        "hit": "/raboty/prostor/"
+      }
+    },
+    {
+      "name": "1440-no-preference-home/title navigates",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference-home/title no modal",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference-home/keyboard native anchor",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference-home/keyboard navigates",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference-home/keyboard no modal",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference-home/new-tab native anchor",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference-home/Ctrl-click opens detail in new tab",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference-catalog/image native anchor",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference-catalog/image hit reaches primary link",
+      "pass": true,
+      "data": {
+        "x": 826.588125,
+        "y": 514.87333984375,
+        "hit": "/raboty/prostor/"
+      }
+    },
+    {
+      "name": "1440-no-preference-catalog/image navigates",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference-catalog/image no modal",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference-catalog/title native anchor",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference-catalog/title hit reaches primary link",
+      "pass": true,
+      "data": {
+        "x": 639,
+        "y": 701.9200439453125,
+        "hit": "/raboty/prostor/"
+      }
+    },
+    {
+      "name": "1440-no-preference-catalog/title navigates",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference-catalog/title no modal",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference-catalog/cta native anchor",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference-catalog/cta hit reaches primary link",
+      "pass": true,
+      "data": {
+        "x": 639,
+        "y": 863.994873046875,
+        "hit": "/raboty/prostor/"
+      }
+    },
+    {
+      "name": "1440-no-preference-catalog/cta navigates",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference-catalog/cta no modal",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference-catalog/keyboard native anchor",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference-catalog/keyboard navigates",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference-catalog/keyboard no modal",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference-catalog/new-tab native anchor",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference-catalog/Ctrl-click opens detail in new tab",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference-catalog/b2b fallback modal",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference-catalog/crm fallback modal",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce-home/image native anchor",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce-home/image hit reaches primary link",
+      "pass": true,
+      "data": {
+        "x": 1080.920625,
+        "y": 221.734375,
+        "hit": "/raboty/prostor/"
+      }
+    },
+    {
+      "name": "1440-reduce-home/image navigates",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce-home/image no modal",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce-home/title native anchor",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce-home/title hit reaches primary link",
+      "pass": true,
+      "data": {
+        "x": 177.71875,
+        "y": 452.921875,
+        "hit": "/raboty/prostor/"
+      }
+    },
+    {
+      "name": "1440-reduce-home/title navigates",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce-home/title no modal",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce-home/keyboard native anchor",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce-home/keyboard navigates",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce-home/keyboard no modal",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce-home/new-tab native anchor",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce-home/Ctrl-click opens detail in new tab",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce-catalog/image native anchor",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce-catalog/image hit reaches primary link",
+      "pass": true,
+      "data": {
+        "x": 826.588125,
+        "y": 514.965625,
+        "hit": "/raboty/prostor/"
+      }
+    },
+    {
+      "name": "1440-reduce-catalog/image navigates",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce-catalog/image no modal",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce-catalog/title native anchor",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce-catalog/title hit reaches primary link",
+      "pass": true,
+      "data": {
+        "x": 639,
+        "y": 705.234375,
+        "hit": "/raboty/prostor/"
+      }
+    },
+    {
+      "name": "1440-reduce-catalog/title navigates",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce-catalog/title no modal",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce-catalog/cta native anchor",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce-catalog/cta hit reaches primary link",
+      "pass": true,
+      "data": {
+        "x": 639,
+        "y": 867.203125,
+        "hit": "/raboty/prostor/"
+      }
+    },
+    {
+      "name": "1440-reduce-catalog/cta navigates",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce-catalog/cta no modal",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce-catalog/keyboard native anchor",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce-catalog/keyboard navigates",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce-catalog/keyboard no modal",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce-catalog/new-tab native anchor",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce-catalog/Ctrl-click opens detail in new tab",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce-catalog/b2b fallback modal",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce-catalog/crm fallback modal",
+      "pass": true
+    },
+    {
+      "name": "all primary-link scenarios completed",
+      "pass": true
+    },
+    {
+      "name": "no JavaScript or HTTP errors",
+      "pass": true,
+      "data": []
+    }
+  ],
+  "errors": [],
+  "pass": true
+}

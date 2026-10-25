@@ -12,18 +12,22 @@ function casePages(root){
 function renderCase(root,data){
  if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(data.slug))throw Error('Invalid case slug');
  const variant=data.variant||'beauty-v20';
- if(!['beauty-v20','flowers-v2','metal-v5'].includes(variant))throw Error('Unknown case variant');
+ if(!['beauty-v20','flowers-v2','metal-v5','prostor-v1'].includes(variant))throw Error('Unknown case variant');
  const flowers=variant==='flowers-v2';
  const metal=variant==='metal-v5';
+ const prostor=variant==='prostor-v1';
+ if(prostor&&(data.slug!=='prostor'||data.catalog_id!=='prostor'))throw Error('Prostor v1 requires its own route and catalog project');
  for(const field of ['catalog_id','status','result'])if(typeof data[field]!=='string'||!data[field].trim())throw Error('Missing case field '+field);
  for(const field of ['h1','intro','meta_title','meta_description','short_name'])if(Object.hasOwn(data,field))throw Error('Case '+field+' must come from catalog');
  const copy=catalogCopy(root)[data.catalog_id];if(!copy)throw Error('Unknown catalog project '+data.catalog_id);
  if(!Array.isArray(data.process)||!data.process.length||data.process.some(s=>typeof s.title!=='string'||!s.title.trim()||typeof s.body!=='string'||!s.body.trim()))throw Error('Invalid process');
- if(!Array.isArray(data.screens)||data.screens.length!==4||data.screens.some(s=>typeof s.caption!=='string'||!s.caption.trim()))throw Error('Case screens must contain four approved images and captions');
+ if(!Array.isArray(data.screens)||data.screens.length!==(prostor?7:4)||data.screens.some(s=>!s||typeof s.caption!=='string'||!s.caption.trim()))throw Error(prostor?'Prostor screens must contain seven approved images and captions':'Case screens must contain four approved images and captions');
+ if(prostor&&new Set(data.screens.map(s=>s.src)).size!==7)throw Error('Prostor requires seven distinct screens');
+ if(prostor&&data.process.length!==4)throw Error('Prostor v1 requires four process steps');
  if(flowers&&data.process.length!==4)throw Error('Flowers v2 requires four process steps');
  if(metal&&data.process.length!==5)throw Error('Metal v5 requires five process steps');
  if(metal&&(!data.result_metric||['value','label','aria_label','art'].some(k=>typeof data.result_metric[k]!=='string'||!data.result_metric[k].trim())))throw Error('Missing metal result metric');
- const images=[...Object.values(data.hero_media||{}),...(flowers?[]:metal?[{src:data.result_metric.art,alt:'Result artwork'}]:[data.result_media]),...data.screens];
+ const images=[...Object.values(data.hero_media||{}),...(flowers?[]:metal?[{src:data.result_metric.art,alt:'Result artwork'}]:[data.result_media]),...data.screens,...(prostor?data.screens.filter(s=>Object.hasOwn(s,'full_src')).map(s=>({src:s.full_src,alt:s.alt})):[])];
  for(const image of images){
   if(!image||!/^\/assets\/[\w/.-]+$/.test(image.src)||image.src.includes('..')||!image.alt)throw Error('Invalid case asset');
   if(!fs.existsSync(path.join(root,image.src.slice(1))))throw Error('Missing case asset '+image.src);
@@ -31,15 +35,16 @@ function renderCase(root,data){
  for(const key of metal?['main']:['left','main','right'])if(!data.hero_media?.[key])throw Error('Missing hero asset '+key);
  if(flowers&&Object.keys(data.hero_media).length!==3)throw Error('Flowers hero requires exactly three phone screens');
  if(metal&&Object.keys(data.hero_media).length!==1)throw Error('Metal hero requires one complete central image');
+ if(prostor&&Object.keys(data.hero_media).length!==3)throw Error('Prostor hero requires exactly three screens');
  const values={result:escape(data.result),status:escape(data.status),h1:escape(copy.title),short_name:escape(copy.title),intro:escape(copy.description),meta_title:escape(copy.title+' — SyntheCore'),meta_description:escape(copy.description)};
  values.process=data.process.map((step,i)=>`<article class="sc-case-process__step" data-process-step="${i+1}"><div class="sc-case-process__number-wrap"><span class="sc-case-process__number-circle" aria-hidden="true">${i+1}</span></div><div class="sc-case-process__text"><h3>${escape(step.title)}</h3><p>${escape(step.body)}</p></div></article>`).join('\n');
- values.screens=data.screens.map(screen=>`<figure class="sc-case-screens__item sc-case-reveal"><button class="sc-case-screens__open" type="button" aria-label="Увеличить: ${escape(screen.caption)}" data-full="${escape(screen.src)}" data-title="${escape(screen.caption)}"><img src="${escape(screen.src)}" alt="${escape(screen.alt)}" loading="lazy" decoding="async"></button><figcaption>${escape(screen.caption)}</figcaption></figure>`).join('\n');
+ values.screens=data.screens.map(screen=>`<figure class="sc-case-screens__item sc-case-reveal"><button class="sc-case-screens__open" type="button" aria-label="Увеличить: ${escape(screen.caption)}" data-full="${escape(prostor&&screen.full_src?screen.full_src:screen.src)}" data-title="${escape(screen.caption)}"><img src="${escape(screen.src)}" alt="${escape(screen.alt)}" loading="lazy" decoding="async"></button><figcaption>${escape(screen.caption)}</figcaption></figure>`).join('\n');
  for(const [key,image] of Object.entries(data.hero_media)){values['hero_'+key+'_src']=escape(image.src);values['hero_'+key+'_alt']=escape(image.alt);}
  if(metal){
   values.metric_value=escape(data.result_metric.value);values.metric_label=escape(data.result_metric.label);values.metric_aria=escape(data.result_metric.aria_label);values.metric_art=escape(data.result_metric.art);
  }else if(!flowers){values.result_src=escape(data.result_media.src);values.result_alt=escape(data.result_media.alt);}
- values.case_class=flowers?' sc-case-flowers':metal?' sc-case-metal':'';
- values.case_styles=flowers?'\n<link rel="stylesheet" href="/css/case-flowers.css">':metal?'\n<link rel="stylesheet" href="/css/case-metal.css">':'';
+ values.case_class=flowers?' sc-case-flowers':metal?' sc-case-metal':prostor?' sc-case-prostor':'';
+ values.case_styles=flowers?'\n<link rel="stylesheet" href="/css/case-flowers.css">':metal?'\n<link rel="stylesheet" href="/css/case-metal.css">':prostor?'\n<link rel="stylesheet" href="/css/case-prostor.css">':'';
  // Reuse current semantic catalog cards and its dialog behavior, with no second project list.
  const {wireCaseLinks}=require('./case-links.cjs');
  const catalog=wireCaseLinks('works',read(root,'templates/pages/works.html'),casePages(root));
@@ -47,8 +52,8 @@ function renderCase(root,data){
  if(cards.length!==6||!cards.some(c=>c.includes(`data-project="${data.catalog_id}"`)))throw Error('Case must match one of six catalog projects');
  values.related=cards.filter(c=>!c.includes(`data-project="${data.catalog_id}"`)).join('\n');
  const template=read(root,'templates/pages/case.html')
-  .replace('{{hero_media}}',read(root,'templates/partials/cases/'+(flowers?'hero-flowers':metal?'hero-metal':'hero-collage')+'.html'))
-  .replace('{{result_content}}',read(root,'templates/partials/cases/'+(flowers?'result-flowers':metal?'result-metal':'result-screen')+'.html'));
+  .replace('{{hero_media}}',read(root,'templates/partials/cases/'+(flowers?'hero-flowers':metal?'hero-metal':prostor?'hero-prostor':'hero-collage')+'.html'))
+  .replace('{{result_content}}',read(root,'templates/partials/cases/'+(flowers?'result-flowers':metal?'result-metal':prostor?'result-prostor':'result-screen')+'.html'));
  return template.replace(/\{\{([a-z0-9_]+)\}\}/g,(marker,key)=>Object.hasOwn(values,key)?values[key]:marker);
 }
 module.exports={casePages,renderCase};

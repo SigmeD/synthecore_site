@@ -1,0 +1,139 @@
+PASS: shared Header/Footer are current in home, catalog and case routes.
+SyntheCore v62 MOTION LOCK: 17/17 matched.
+{
+  "ref": "INDEX",
+  "motionFiles": 17,
+  "v27Files": 25,
+  "approvedCatalogCopy": "2026-10-21",
+  "approvedButtonPolicy": "2026-10-22",
+  "v62ContentMatches": true,
+  "compiledHomeCSSMatches": true,
+  "failures": [],
+  "pass": true
+}
+PASS: 12 image/viewport combinations, 60 crop states, zero-size guards.
+PASS: current v60 structure/resources, 6 approved Works images, 40 vendor/asset manifest hashes. 60 HTTP resources match disk.
+PASS: six services cards, accessible headings, twelve local illustrations (mono + color), idle tilt, active alignment, single scroll owner, no vertical wheel capture.
+PASS: experimental CSS sticky scenes and +30% testimonials.
+✔ button policy exception accepts only the exact two additions to v27 (3.2595ms)
+✔ QA does not exempt protected motion files or unrelated components (0.8144ms)
+✔ joint integration preserves every complete case and its styles against accepted branch snapshots (11.4351ms)
+✔ baseline comparison refuses malformed registered routes instead of hiding them (4.5566ms)
+✔ case renderer builds a nested route from shared shell and case content (21.7743ms)
+✔ all case assets and local links resolve under the nested URL (4.6966ms)
+✔ case renderer escapes content and rejects missing or unsafe project data (14.469ms)
+✔ authorized case links restore exact original pages and reject other mutations (47.6802ms)
+✔ all six case registrations automatically wire primary homepage and catalog actions (3.7068ms)
+✔ imported case images retain verified handoff bytes (4.9516ms)
+✔ CSS compilation keeps cascade order, imports once per occurrence and rebases only actual URL tokens (10.774ms)
+✔ font import stays valid without moving it across preceding font faces; unsupported imports fail safely (16.3085ms)
+✔ homepage has one exact compiled hook and preserves the original stylesheet list for baseline checks (75.6153ms)
+✔ a valid working copy cannot hide a stale or tampered bundle in a separate Git snapshot (73.5159ms)
+✔ Flowers is built from the canonical catalog copy and existing shared components (19.99ms)
+✔ Flowers retains three phones, four factual prototype stages, two result devices and four full interfaces (2.6785ms)
+✔ the Flowers variant rejects unapproved layouts and incorrect media/process data (7.6286ms)
+✔ Flowers assets retain source bytes, resources resolve, and other catalog/Beauty content remains unchanged (10.3862ms)
+✔ metal route is generated through the shared shell and catalog copy (21.1677ms)
+✔ metal variant renders one hero, five steps and the approved result banner (2.8707ms)
+✔ catalog registers the new primary route and keeps the other five cards (3.5046ms)
+✔ metal variant rejects extra hero images, unknown layouts and missing result proof fields (8.0919ms)
+✔ metal resources resolve from the nested route and imported images retain source bytes (8.7646ms)
+✔ Beauty and other catalog content retain baseline bytes after exact registered route additions (5.7169ms)
+✔ all six homepage titles and summaries match the catalog source (10.242ms)
+✔ editing catalog copy updates both dependent templates automatically (86.1369ms)
+✔ case first screen and metadata use catalog title and summary, not independent copies (3.6885ms)
+✔ only Prostor v1 supports seven screens and separate full-size images (24.3999ms)
+✔ Prostor rejects wrong counts, duplicate screens, wrong identities and unsafe full-size images (18.8367ms)
+✔ Prostor builds canonical copy, approved screen order, shared shell and truthful prototype content (20.0613ms)
+✔ all fourteen imported images retain approved bytes and seven interfaces are distinct (11.087ms)
+✔ previous runtime, templates and pages retain exact baseline bytes except the registered Prostor anchor (17.5164ms)
+✔ both static routes are generated from one header and one footer (24.3792ms)
+✔ route-aware shared navigation resolves every local anchor (6.4832ms)
+✔ catalog permits only approved naming while preserving six projects, descriptions and assets (12.8582ms)
+✔ catalog copy exception rejects unapproved copy and structural or shell changes (36.0644ms)
+✔ single footer and menu owners retain local motion contracts (1.8733ms)
+✔ local Manrope distributions match the recorded hashes (9.0532ms)
+✔ combined build preserves v62 motion bytes/content and the owner-selected v27 shell (15.5296ms)
+▶ current v60 static checks accept the site and reject isolated fixture mutations
+  ✔ accepted package passes without HTTP or historical backups (125.4742ms)
+  ✔ missing card (51.1417ms)
+  ✔ reordered cards (48.8504ms)
+  ✔ duplicate DOM id (40.0873ms)
+  ✔ missing label target (54.7617ms)
+  ✔ label targets another card (35.307ms)
+  ✔ label target is not h2 (37.7649ms)
+  ✔ empty title (34.6172ms)
+  ✔ empty category (36.6892ms)
+  ✔ missing description (34.4995ms)
+  ✔ empty description (35.8792ms)
+  ✔ missing image (38.5237ms)
+  ✔ empty image src (35.809ms)
+  ✔ wrong image mapping (37.75ms)
+  ✔ wrong natural dimension attribute (38.1173ms)
+  ✔ missing image file (43.5575ms)
+  ✔ wrong PNG dimensions (38.5492ms)
+  ✔ wrong approved image hash (40.9245ms)
+  ✔ wrong section order (34.4055ms)
+  ✔ nested rather than sequential section (10.2557ms)
+  ✔ duplicate Works CSS hook (11.0267ms)
+  ✔ duplicate Works JS hook (49.3466ms)
+  ✔ wrong homepage stylesheet entry (11.1875ms)
+  ✔ stale compiled stylesheet (32.0603ms)
+  ✔ missing compiled stylesheet (31.1075ms)
+  ✔ Works script before dependencies (51.5929ms)
+  ✔ async Works script (47.0616ms)
+  ✔ duplicate vendor URL alias (47.064ms)
+  ✔ second external library copy (48.7937ms)
+  ✔ second Lenis constructor (69.2949ms)
+  ✔ missing Lenis constructor (66.0695ms)
+  ✔ missing local CSS resource (15.1634ms)
+  ✔ malformed nested markup (9.4772ms)
+  ✔ removed prototype category qualification (38.4867ms)
+  ✔ removed prototype description qualification (33.808ms)
+  ✔ removed demo-data qualification (38.6802ms)
+  ✔ removed concept qualification (39.323ms)
+  ✔ dangling services navigation link (36.0662ms)
+  ✔ dangling encoded navigation link (32.7265ms)
+  ✔ malformed percent-encoded fragment (31.9233ms)
+  ✔ empty fragment (32.4138ms)
+  ✔ b2b nonempty title copy changes (35.9925ms)
+  ✔ b2b nonempty category copy changes (31.4947ms)
+  ✔ b2b nonempty description copy changes (31.2021ms)
+  ✔ flowers nonempty title copy changes (33.9944ms)
+  ✔ flowers nonempty category copy changes (36.6179ms)
+  ✔ flowers nonempty description copy changes (33.1057ms)
+  ✔ crm nonempty title copy changes (35.1722ms)
+  ✔ crm nonempty category copy changes (35.528ms)
+  ✔ crm nonempty description copy changes (39.4815ms)
+  ✔ beauty nonempty title copy changes (37.7549ms)
+  ✔ beauty nonempty category copy changes (36.9675ms)
+  ✔ beauty nonempty description copy changes (38.4333ms)
+  ✔ prostor nonempty title copy changes (42.9316ms)
+  ✔ prostor nonempty category copy changes (39.0525ms)
+  ✔ prostor nonempty description copy changes (48.8727ms)
+  ✔ metal nonempty title copy changes (41.9915ms)
+  ✔ metal nonempty category copy changes (43.7017ms)
+  ✔ metal nonempty description copy changes (41.3416ms)
+  ✔ b2b image hash differs with same byte length (32.5378ms)
+  ✔ flowers image hash differs with same byte length (36.9299ms)
+  ✔ crm image hash differs with same byte length (46.0613ms)
+  ✔ beauty image hash differs with same byte length (41.6136ms)
+  ✔ prostor image hash differs with same byte length (43.6708ms)
+  ✔ metal image hash differs with same byte length (46.7044ms)
+  ✔ whitespace, attribute quoting and nested inline text remain valid (63.0781ms)
+PASS: 12 image/viewport combinations, 60 crop states, zero-size guards.
+  ✔ project check works offline from an unrelated cwd (54.9934ms)
+  ✔ asset manifest hash rejects same-length mutation (59.483ms)
+  ✔ vendor manifest hash rejects same-length mutation (98.2617ms)
+  ✔ explicit HTTP verifies bytes and rejects stale content / 404 (50.1848ms)
+✔ current v60 static checks accept the site and reject isolated fixture mutations (3024.2111ms)
+ℹ tests 110
+ℹ suites 0
+ℹ pass 110
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3168.0664
+PASS: 318 local links across 17 current/historical Markdown documents target supplied Git files.
+PASS: complete supported verification suite.
