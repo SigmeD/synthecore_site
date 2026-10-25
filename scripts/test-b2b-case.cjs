@@ -35,7 +35,8 @@ test('B2B content and original images match the approved kit and preview',()=>{
  assert.match(data.result,/интерактивный прототип и MVP/);assert.match(data.result_media.src,/request-detail.webp$/);assert.match(data.result_media.alt,/демонстрационные/);
  assert.deepEqual(data.screens.map(s=>s.caption),['Обзор кабинета','Реестр заявок','Платежи и реквизиты','Карточка заявки']);
  for(const [key,file]of [['left','requests'],['main','dashboard'],['right','payments']])assert.ok(data.hero_media[key].src.endsWith('/'+file+'.webp'));
- const track=nodes.find(n=>hasClass(n,'related-work__track')),cards=nodes.filter(n=>hasClass(n,'case-card__open')&&inside(n,track));assert.equal(cards.length,5);assert.ok(!cards.some(n=>n.attrs['data-project']==='b2b'));assert.equal(cards.find(n=>n.attrs['data-project']==='crm').tag,'button');
+ const track=nodes.find(n=>hasClass(n,'related-work__track')),cards=nodes.filter(n=>hasClass(n,'case-card__open')&&inside(n,track));assert.equal(cards.length,5);assert.ok(!cards.some(n=>n.attrs['data-project']==='b2b'));
+ const crmCard=cards.find(n=>n.attrs['data-project']==='crm');assert.equal(crmCard.tag,'a');assert.equal(crmCard.attrs.href,'/raboty/crm/');
  for(const file of ['site-header.js','raboty-scroll.js','case-detail.js','footer-waves.js','footer-reveal.js'])assert.equal(html.split('/js/'+file+'"').length-1,1);
  assert.doesNotMatch(html,/src="[^\"]*(?:main\.js|hero-scroll\.js)/);
  for(const value of Object.values(audit.previewMatches))assert.equal(value,true);
@@ -46,10 +47,11 @@ test('B2B content and original images match the approved kit and preview',()=>{
   const url=new URL(value,'http://local/raboty/b2b/'),file=(url.pathname.endsWith('/')?url.pathname+'index.html':url.pathname).slice(1);assert.ok(fs.existsSync(file),value);if(url.hash)assert.ok(read(file).includes('id="'+url.hash.slice(1)+'"'),value);
  }
 });
-test('registered B2B anchors are the only allowed changes to existing runtime/pages',()=>{
- const {restoreRegisteredCaseLinks}=require('./lib/case-baseline.cjs'),data=JSON.parse(read('templates/data/cases/b2b.json')),audit=JSON.parse(read('docs/qa/b2b-v1/source-audit.json'));
+test('registered anchors added after the B2B baseline are the only changes to existing runtime/pages',()=>{
+ const {restoreRegisteredCaseLinks}=require('./lib/case-baseline.cjs'),audit=JSON.parse(read('docs/qa/b2b-v1/source-audit.json'));
+ const later=require('./lib/case-page.cjs').casePages(root).filter(c=>!audit.baselineCaseIds.includes(c.catalog_id));
  for(const [file,expected]of Object.entries(audit.baselineFiles)){
-  const bytes=fs.readFileSync(file);let restored=file.endsWith('.html')&&!file.startsWith('templates/')?Buffer.from(restoreRegisteredCaseLinks(file,bytes.toString('utf8'),[data])):bytes;
+  const bytes=fs.readFileSync(file);let restored=file.endsWith('.html')&&!file.startsWith('templates/')?Buffer.from(restoreRegisteredCaseLinks(file,bytes.toString('utf8'),later)):bytes;
   if(audit.baselineTextEol.includes(file))restored=Buffer.from(restored.toString('utf8').replace(/\r\n/g,'\n'));
   assert.equal(hash(restored),expected,file);
  }
@@ -65,10 +67,12 @@ test('the B2B baseline names actual Git blobs and never normalizes protected mot
 test('baseline restoration refuses wrong URLs and duplicate links and does not hide changed copy',()=>{
  const {restoreRegisteredCaseLinks}=require('./lib/case-baseline.cjs'),data=JSON.parse(read('templates/data/cases/b2b.json'));
  const audit=JSON.parse(read('docs/qa/b2b-v1/source-audit.json'));
+ const later=require('./lib/case-page.cjs').casePages(root).filter(c=>!audit.baselineCaseIds.includes(c.catalog_id));
  for(const file of ['index.html','raboty/index.html','raboty/prostor/index.html']){
+  assert.equal(hash(restoreRegisteredCaseLinks(file,read(file),later)),audit.baselineFiles[file]);
   const html=read(file);assert.throws(()=>restoreRegisteredCaseLinks(file,html.replace('/raboty/b2b/','/raboty/wrong-b2b/'),[data]),/route|link/i);
   const marker=file==='index.html'?html.match(/<a class="sc-work-detail-link"[^>]*href="\/raboty\/b2b\/"[^>]*><\/a>/)[0]:html.match(/<a [^>]*data-project="b2b"[^>]*>/)[0];
   assert.throws(()=>restoreRegisteredCaseLinks(file,html.replace(marker,marker+marker),[data]),/anchor|link/i);
-  assert.notEqual(hash(restoreRegisteredCaseLinks(file,html.replace('Кабинет клиента','Другой кабинет'),[data])),audit.baselineFiles[file]);
+  assert.notEqual(hash(restoreRegisteredCaseLinks(file,html.replace('Кабинет клиента','Другой кабинет'),later)),audit.baselineFiles[file]);
  }
 });
