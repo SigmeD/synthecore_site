@@ -1,0 +1,5335 @@
+{
+  "date": "2026-10-25T14:32:08.397Z",
+  "base": "http://127.0.0.1:4198/",
+  "reference": "http://127.0.0.1:4199/",
+  "baseline": "http://127.0.0.1:4200/",
+  "checks": [
+    {
+      "name": "320-reduce no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "320-reduce canonical title and intro",
+      "pass": true
+    },
+    {
+      "name": "320-reduce four steps / three interfaces",
+      "pass": true
+    },
+    {
+      "name": "320-reduce one header/footer/scroll owner",
+      "pass": true
+    },
+    {
+      "name": "320-reduce all images loaded",
+      "pass": true
+    },
+    {
+      "name": "320-reduce Manrope",
+      "pass": true
+    },
+    {
+      "name": "320-reduce three hero roles and responsive visibility",
+      "pass": true
+    },
+    {
+      "name": "320-reduce central frame and undistorted image fit",
+      "pass": true
+    },
+    {
+      "name": "320-reduce reduced-motion/native or one Lenis",
+      "pass": true
+    },
+    {
+      "name": "320-reduce last gallery row preserves three independent cards",
+      "pass": true
+    },
+    {
+      "name": "320-reduce responsive sticky",
+      "pass": true
+    },
+    {
+      "name": "320-reduce CSS selectors isolated",
+      "pass": true
+    },
+    {
+      "name": "320-reduce v1 dimensions .case-hero__media",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 272,
+          "height": 300,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "19px"
+        },
+        "reference": {
+          "width": 272,
+          "height": 300,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "19px"
+        }
+      }
+    },
+    {
+      "name": "320-reduce v1 dimensions .case-hero__figure--main",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 255.671875,
+          "height": 228,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "30px",
+          "fit": "fill",
+          "radius": "11px"
+        },
+        "reference": {
+          "width": 255.671875,
+          "height": 228,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "30px",
+          "fit": "fill",
+          "radius": "11px"
+        }
+      }
+    },
+    {
+      "name": "320-reduce v1 dimensions .case-hero__figure--left",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 0,
+          "height": 0,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "27%",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        "reference": {
+          "width": 0,
+          "height": 0,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "27%",
+          "fit": "fill",
+          "radius": "16px"
+        }
+      }
+    },
+    {
+      "name": "320-reduce v1 dimensions .case-hero__figure--right",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 0,
+          "height": 0,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "25%",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        "reference": {
+          "width": 0,
+          "height": 0,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "25%",
+          "fit": "fill",
+          "radius": "16px"
+        }
+      }
+    },
+    {
+      "name": "320-reduce v1 dimensions .sc-case-result__hero",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 292,
+          "height": 219.5,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 292,
+          "height": 219.5,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "320-reduce v1 dimensions .crm-result__media",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 292,
+          "height": 219.5,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "12px"
+        },
+        "reference": {
+          "width": 292,
+          "height": 219.5,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "12px"
+        }
+      }
+    },
+    {
+      "name": "320-reduce v1 dimensions .sc-case-screens__grid",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 292,
+          "height": 816,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 292,
+          "height": 816,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "320-reduce v1 dimensions .sc-case-screens__open",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 292,
+          "height": 220,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        },
+        "reference": {
+          "width": 292,
+          "height": 220,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        }
+      }
+    },
+    {
+      "name": "320-reduce v1 dimensions .sc-case-process__cta",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 292,
+          "height": 410.671875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "20px"
+        },
+        "reference": {
+          "width": 292,
+          "height": 410.671875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "20px"
+        }
+      }
+    },
+    {
+      "name": "320-reduce step 1 text readable",
+      "pass": true
+    },
+    {
+      "name": "320-reduce step 2 text readable",
+      "pass": true
+    },
+    {
+      "name": "320-reduce step 3 text readable",
+      "pass": true
+    },
+    {
+      "name": "320-reduce step 4 text readable",
+      "pass": true
+    },
+    {
+      "name": "320-reduce lightbox 0 original PNG/title/alt",
+      "pass": true
+    },
+    {
+      "name": "320-reduce lightbox 0 traps focus",
+      "pass": true
+    },
+    {
+      "name": "320-reduce lightbox 0 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "320-reduce lightbox 1 original PNG/title/alt",
+      "pass": true
+    },
+    {
+      "name": "320-reduce lightbox 1 traps focus",
+      "pass": true
+    },
+    {
+      "name": "320-reduce lightbox 1 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "320-reduce lightbox 2 original PNG/title/alt",
+      "pass": true
+    },
+    {
+      "name": "320-reduce lightbox 2 traps focus",
+      "pass": true
+    },
+    {
+      "name": "320-reduce lightbox 2 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "320-reduce five related projects/current excluded",
+      "pass": true
+    },
+    {
+      "name": "320-reduce carousel hover stays stationary",
+      "pass": true,
+      "data": {
+        "before": {
+          "x": 174,
+          "y": 453.953125,
+          "width": 52,
+          "height": 52
+        },
+        "after": {
+          "x": 174,
+          "y": 453.953125,
+          "width": 52,
+          "height": 52
+        }
+      }
+    },
+    {
+      "name": "320-reduce carousel arrow works",
+      "pass": true
+    },
+    {
+      "name": "320-reduce native carousel touch works",
+      "pass": true,
+      "data": {
+        "before": 1232,
+        "after": 1540
+      }
+    },
+    {
+      "name": "320-reduce clones excluded from keyboard",
+      "pass": true
+    },
+    {
+      "name": "320-reduce CTA mailto/no glow .sc-case-process__cta-button",
+      "pass": true
+    },
+    {
+      "name": "320-reduce CTA mailto/no glow .sc-footer__cta",
+      "pass": true
+    },
+    {
+      "name": "320-reduce no overflow after full journey",
+      "pass": true
+    },
+    {
+      "name": "320-no-preference no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "320-no-preference canonical title and intro",
+      "pass": true
+    },
+    {
+      "name": "320-no-preference four steps / three interfaces",
+      "pass": true
+    },
+    {
+      "name": "320-no-preference one header/footer/scroll owner",
+      "pass": true
+    },
+    {
+      "name": "320-no-preference all images loaded",
+      "pass": true
+    },
+    {
+      "name": "320-no-preference Manrope",
+      "pass": true
+    },
+    {
+      "name": "320-no-preference three hero roles and responsive visibility",
+      "pass": true
+    },
+    {
+      "name": "320-no-preference central frame and undistorted image fit",
+      "pass": true
+    },
+    {
+      "name": "320-no-preference reduced-motion/native or one Lenis",
+      "pass": true
+    },
+    {
+      "name": "320-no-preference last gallery row preserves three independent cards",
+      "pass": true
+    },
+    {
+      "name": "320-no-preference responsive sticky",
+      "pass": true
+    },
+    {
+      "name": "320-no-preference CSS selectors isolated",
+      "pass": true
+    },
+    {
+      "name": "320-no-preference step 1 text readable",
+      "pass": true
+    },
+    {
+      "name": "320-no-preference step 2 text readable",
+      "pass": true
+    },
+    {
+      "name": "320-no-preference step 3 text readable",
+      "pass": true
+    },
+    {
+      "name": "320-no-preference step 4 text readable",
+      "pass": true
+    },
+    {
+      "name": "320-no-preference five related projects/current excluded",
+      "pass": true
+    },
+    {
+      "name": "320-no-preference carousel hover stays stationary",
+      "pass": true,
+      "data": {
+        "before": {
+          "x": 174,
+          "y": 453.953125,
+          "width": 52,
+          "height": 52
+        },
+        "after": {
+          "x": 174,
+          "y": 453.953125,
+          "width": 52,
+          "height": 52
+        }
+      }
+    },
+    {
+      "name": "320-no-preference carousel arrow works",
+      "pass": true
+    },
+    {
+      "name": "320-no-preference native carousel touch works",
+      "pass": true,
+      "data": {
+        "before": 1232,
+        "after": 1540
+      }
+    },
+    {
+      "name": "320-no-preference clones excluded from keyboard",
+      "pass": true
+    },
+    {
+      "name": "320-no-preference CTA mailto/no glow .sc-case-process__cta-button",
+      "pass": true
+    },
+    {
+      "name": "320-no-preference CTA mailto/no glow .sc-footer__cta",
+      "pass": true
+    },
+    {
+      "name": "320-no-preference no overflow after full journey",
+      "pass": true
+    },
+    {
+      "name": "390-reduce no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "390-reduce canonical title and intro",
+      "pass": true
+    },
+    {
+      "name": "390-reduce four steps / three interfaces",
+      "pass": true
+    },
+    {
+      "name": "390-reduce one header/footer/scroll owner",
+      "pass": true
+    },
+    {
+      "name": "390-reduce all images loaded",
+      "pass": true
+    },
+    {
+      "name": "390-reduce Manrope",
+      "pass": true
+    },
+    {
+      "name": "390-reduce three hero roles and responsive visibility",
+      "pass": true
+    },
+    {
+      "name": "390-reduce central frame and undistorted image fit",
+      "pass": true
+    },
+    {
+      "name": "390-reduce reduced-motion/native or one Lenis",
+      "pass": true
+    },
+    {
+      "name": "390-reduce last gallery row preserves three independent cards",
+      "pass": true
+    },
+    {
+      "name": "390-reduce responsive sticky",
+      "pass": true
+    },
+    {
+      "name": "390-reduce CSS selectors isolated",
+      "pass": true
+    },
+    {
+      "name": "390-reduce v1 dimensions .case-hero__media",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 342,
+          "height": 300,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "19px"
+        },
+        "reference": {
+          "width": 342,
+          "height": 300,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "19px"
+        }
+      }
+    },
+    {
+      "name": "390-reduce v1 dimensions .case-hero__figure--main",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 321.46875,
+          "height": 228,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "30px",
+          "fit": "fill",
+          "radius": "11px"
+        },
+        "reference": {
+          "width": 321.46875,
+          "height": 228,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "30px",
+          "fit": "fill",
+          "radius": "11px"
+        }
+      }
+    },
+    {
+      "name": "390-reduce v1 dimensions .case-hero__figure--left",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 0,
+          "height": 0,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "27%",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        "reference": {
+          "width": 0,
+          "height": 0,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "27%",
+          "fit": "fill",
+          "radius": "16px"
+        }
+      }
+    },
+    {
+      "name": "390-reduce v1 dimensions .case-hero__figure--right",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 0,
+          "height": 0,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "25%",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        "reference": {
+          "width": 0,
+          "height": 0,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "25%",
+          "fit": "fill",
+          "radius": "16px"
+        }
+      }
+    },
+    {
+      "name": "390-reduce v1 dimensions .sc-case-result__hero",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 362,
+          "height": 272,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 362,
+          "height": 272,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "390-reduce v1 dimensions .crm-result__media",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 362,
+          "height": 272,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "12px"
+        },
+        "reference": {
+          "width": 362,
+          "height": 272,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "12px"
+        }
+      }
+    },
+    {
+      "name": "390-reduce v1 dimensions .sc-case-screens__grid",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 362,
+          "height": 816,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 362,
+          "height": 816,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "390-reduce v1 dimensions .sc-case-screens__open",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 362,
+          "height": 220,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        },
+        "reference": {
+          "width": 362,
+          "height": 220,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        }
+      }
+    },
+    {
+      "name": "390-reduce v1 dimensions .sc-case-process__cta",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 362,
+          "height": 410,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "20px"
+        },
+        "reference": {
+          "width": 362,
+          "height": 410,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "20px"
+        }
+      }
+    },
+    {
+      "name": "390-reduce step 1 text readable",
+      "pass": true
+    },
+    {
+      "name": "390-reduce step 2 text readable",
+      "pass": true
+    },
+    {
+      "name": "390-reduce step 3 text readable",
+      "pass": true
+    },
+    {
+      "name": "390-reduce step 4 text readable",
+      "pass": true
+    },
+    {
+      "name": "390-reduce lightbox 0 original PNG/title/alt",
+      "pass": true
+    },
+    {
+      "name": "390-reduce lightbox 0 traps focus",
+      "pass": true
+    },
+    {
+      "name": "390-reduce lightbox 0 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "390-reduce lightbox 1 original PNG/title/alt",
+      "pass": true
+    },
+    {
+      "name": "390-reduce lightbox 1 traps focus",
+      "pass": true
+    },
+    {
+      "name": "390-reduce lightbox 1 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "390-reduce lightbox 2 original PNG/title/alt",
+      "pass": true
+    },
+    {
+      "name": "390-reduce lightbox 2 traps focus",
+      "pass": true
+    },
+    {
+      "name": "390-reduce lightbox 2 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "390-reduce five related projects/current excluded",
+      "pass": true
+    },
+    {
+      "name": "390-reduce carousel hover stays stationary",
+      "pass": true,
+      "data": {
+        "before": {
+          "x": 209,
+          "y": 453.34375,
+          "width": 52,
+          "height": 52
+        },
+        "after": {
+          "x": 209,
+          "y": 453.34375,
+          "width": 52,
+          "height": 52
+        }
+      }
+    },
+    {
+      "name": "390-reduce carousel arrow works",
+      "pass": true
+    },
+    {
+      "name": "390-reduce native carousel touch works",
+      "pass": true,
+      "data": {
+        "before": 1512,
+        "after": 1890
+      }
+    },
+    {
+      "name": "390-reduce clones excluded from keyboard",
+      "pass": true
+    },
+    {
+      "name": "390-reduce CTA mailto/no glow .sc-case-process__cta-button",
+      "pass": true
+    },
+    {
+      "name": "390-reduce CTA mailto/no glow .sc-footer__cta",
+      "pass": true
+    },
+    {
+      "name": "390-reduce no overflow after full journey",
+      "pass": true
+    },
+    {
+      "name": "390-reduce related beauty navigates",
+      "pass": true
+    },
+    {
+      "name": "390-reduce related flowers navigates",
+      "pass": true
+    },
+    {
+      "name": "390-reduce related metal navigates",
+      "pass": true
+    },
+    {
+      "name": "390-reduce related prostor navigates",
+      "pass": true
+    },
+    {
+      "name": "390-reduce related b2b navigates",
+      "pass": true
+    },
+    {
+      "name": "390-reduce mobile menu opens",
+      "pass": true
+    },
+    {
+      "name": "390-reduce back to catalog",
+      "pass": true
+    },
+    {
+      "name": "390-reduce baseline /#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "390-reduce baseline /.sc-work-frame",
+      "pass": true
+    },
+    {
+      "name": "390-reduce baseline /#contact",
+      "pass": true
+    },
+    {
+      "name": "390-reduce baseline /raboty/#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "390-reduce baseline /raboty/.case-card--crm",
+      "pass": true
+    },
+    {
+      "name": "390-reduce baseline /raboty/#contact",
+      "pass": true
+    },
+    {
+      "name": "390-reduce baseline /raboty/beauty-insight/#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "390-reduce baseline /raboty/beauty-insight/h1",
+      "pass": true
+    },
+    {
+      "name": "390-reduce baseline /raboty/beauty-insight/.case-hero__media",
+      "pass": true
+    },
+    {
+      "name": "390-reduce baseline /raboty/beauty-insight/.sc-case-process__cta",
+      "pass": true
+    },
+    {
+      "name": "390-reduce baseline /raboty/beauty-insight/#contact",
+      "pass": true
+    },
+    {
+      "name": "390-reduce incoming related link beauty-insight",
+      "pass": true
+    },
+    {
+      "name": "390-reduce baseline /raboty/flowers/#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "390-reduce baseline /raboty/flowers/h1",
+      "pass": true
+    },
+    {
+      "name": "390-reduce baseline /raboty/flowers/.case-hero__media",
+      "pass": true
+    },
+    {
+      "name": "390-reduce baseline /raboty/flowers/.sc-case-process__cta",
+      "pass": true
+    },
+    {
+      "name": "390-reduce baseline /raboty/flowers/#contact",
+      "pass": true
+    },
+    {
+      "name": "390-reduce incoming related link flowers",
+      "pass": true
+    },
+    {
+      "name": "390-reduce baseline /raboty/metal-calc/#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "390-reduce baseline /raboty/metal-calc/h1",
+      "pass": true
+    },
+    {
+      "name": "390-reduce baseline /raboty/metal-calc/.case-hero__media",
+      "pass": true
+    },
+    {
+      "name": "390-reduce baseline /raboty/metal-calc/.sc-case-process__cta",
+      "pass": true
+    },
+    {
+      "name": "390-reduce baseline /raboty/metal-calc/#contact",
+      "pass": true
+    },
+    {
+      "name": "390-reduce incoming related link metal-calc",
+      "pass": true
+    },
+    {
+      "name": "390-reduce baseline /raboty/prostor/#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "390-reduce baseline /raboty/prostor/h1",
+      "pass": true
+    },
+    {
+      "name": "390-reduce baseline /raboty/prostor/.case-hero__media",
+      "pass": true
+    },
+    {
+      "name": "390-reduce baseline /raboty/prostor/.sc-case-process__cta",
+      "pass": true
+    },
+    {
+      "name": "390-reduce baseline /raboty/prostor/#contact",
+      "pass": true
+    },
+    {
+      "name": "390-reduce incoming related link prostor",
+      "pass": true
+    },
+    {
+      "name": "390-reduce baseline /raboty/b2b/#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "390-reduce baseline /raboty/b2b/h1",
+      "pass": true
+    },
+    {
+      "name": "390-reduce baseline /raboty/b2b/.case-hero__media",
+      "pass": true
+    },
+    {
+      "name": "390-reduce baseline /raboty/b2b/.sc-case-process__cta",
+      "pass": true
+    },
+    {
+      "name": "390-reduce baseline /raboty/b2b/#contact",
+      "pass": true
+    },
+    {
+      "name": "390-reduce incoming related link b2b",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference canonical title and intro",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference four steps / three interfaces",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference one header/footer/scroll owner",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference all images loaded",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference Manrope",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference three hero roles and responsive visibility",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference central frame and undistorted image fit",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference reduced-motion/native or one Lenis",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference last gallery row preserves three independent cards",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference responsive sticky",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference CSS selectors isolated",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference step 1 text readable",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference step 2 text readable",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference step 3 text readable",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference step 4 text readable",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference lightbox 0 original PNG/title/alt",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference lightbox 0 traps focus",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference lightbox 0 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference lightbox 1 original PNG/title/alt",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference lightbox 1 traps focus",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference lightbox 1 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference lightbox 2 original PNG/title/alt",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference lightbox 2 traps focus",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference lightbox 2 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference five related projects/current excluded",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference carousel hover stays stationary",
+      "pass": true,
+      "data": {
+        "before": {
+          "x": 209,
+          "y": 453.34375,
+          "width": 52,
+          "height": 52
+        },
+        "after": {
+          "x": 209,
+          "y": 453.34375,
+          "width": 52,
+          "height": 52
+        }
+      }
+    },
+    {
+      "name": "390-no-preference carousel arrow works",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference native carousel touch works",
+      "pass": true,
+      "data": {
+        "before": 1512,
+        "after": 1890
+      }
+    },
+    {
+      "name": "390-no-preference clones excluded from keyboard",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference CTA mailto/no glow .sc-case-process__cta-button",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference CTA mailto/no glow .sc-footer__cta",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference no overflow after full journey",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference fast/reverse wheel responds",
+      "pass": true,
+      "data": {
+        "down": 4610,
+        "up": 1182
+      }
+    },
+    {
+      "name": "390-no-preference motion preference restores single owner",
+      "pass": true
+    },
+    {
+      "name": "768-reduce no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "768-reduce canonical title and intro",
+      "pass": true
+    },
+    {
+      "name": "768-reduce four steps / three interfaces",
+      "pass": true
+    },
+    {
+      "name": "768-reduce one header/footer/scroll owner",
+      "pass": true
+    },
+    {
+      "name": "768-reduce all images loaded",
+      "pass": true
+    },
+    {
+      "name": "768-reduce Manrope",
+      "pass": true
+    },
+    {
+      "name": "768-reduce three hero roles and responsive visibility",
+      "pass": true
+    },
+    {
+      "name": "768-reduce central frame and undistorted image fit",
+      "pass": true
+    },
+    {
+      "name": "768-reduce reduced-motion/native or one Lenis",
+      "pass": true
+    },
+    {
+      "name": "768-reduce last gallery row preserves three independent cards",
+      "pass": true
+    },
+    {
+      "name": "768-reduce responsive sticky",
+      "pass": true
+    },
+    {
+      "name": "768-reduce CSS selectors isolated",
+      "pass": true
+    },
+    {
+      "name": "768-reduce v1 dimensions .case-hero__media",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 704,
+          "height": 390,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        "reference": {
+          "width": 704,
+          "height": 390,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        }
+      }
+    },
+    {
+      "name": "768-reduce v1 dimensions .case-hero__figure--main",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 535.03125,
+          "height": 292.5,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "46.7969px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        "reference": {
+          "width": 535.03125,
+          "height": 292.5,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "46.7969px",
+          "fit": "fill",
+          "radius": "16px"
+        }
+      }
+    },
+    {
+      "name": "768-reduce v1 dimensions .case-hero__figure--left",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 239.359375,
+          "height": 226.1875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "105.297px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        "reference": {
+          "width": 239.359375,
+          "height": 226.1875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "105.297px",
+          "fit": "fill",
+          "radius": "16px"
+        }
+      }
+    },
+    {
+      "name": "768-reduce v1 dimensions .case-hero__figure--right",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 239.359375,
+          "height": 226.1875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "97.5px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        "reference": {
+          "width": 239.359375,
+          "height": 226.1875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "97.5px",
+          "fit": "fill",
+          "radius": "16px"
+        }
+      }
+    },
+    {
+      "name": "768-reduce v1 dimensions .sc-case-result__hero",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 728,
+          "height": 502.8125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 728,
+          "height": 502.8125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "768-reduce v1 dimensions .crm-result__media",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 669.75,
+          "height": 502.8125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        "reference": {
+          "width": 669.75,
+          "height": 502.8125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "16px"
+        }
+      }
+    },
+    {
+      "name": "768-reduce v1 dimensions .sc-case-screens__grid",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 728,
+          "height": 578,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 728,
+          "height": 578,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "768-reduce v1 dimensions .sc-case-screens__open",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 355,
+          "height": 240,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        },
+        "reference": {
+          "width": 355,
+          "height": 240,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        }
+      }
+    },
+    {
+      "name": "768-reduce v1 dimensions .sc-case-process__cta",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 410,
+          "height": 393,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "20px"
+        },
+        "reference": {
+          "width": 410,
+          "height": 393,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "20px"
+        }
+      }
+    },
+    {
+      "name": "768-reduce step 1 text readable",
+      "pass": true
+    },
+    {
+      "name": "768-reduce step 2 text readable",
+      "pass": true
+    },
+    {
+      "name": "768-reduce step 3 text readable",
+      "pass": true
+    },
+    {
+      "name": "768-reduce step 4 text readable",
+      "pass": true
+    },
+    {
+      "name": "768-reduce lightbox 0 original PNG/title/alt",
+      "pass": true
+    },
+    {
+      "name": "768-reduce lightbox 0 traps focus",
+      "pass": true
+    },
+    {
+      "name": "768-reduce lightbox 0 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "768-reduce lightbox 1 original PNG/title/alt",
+      "pass": true
+    },
+    {
+      "name": "768-reduce lightbox 1 traps focus",
+      "pass": true
+    },
+    {
+      "name": "768-reduce lightbox 1 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "768-reduce lightbox 2 original PNG/title/alt",
+      "pass": true
+    },
+    {
+      "name": "768-reduce lightbox 2 traps focus",
+      "pass": true
+    },
+    {
+      "name": "768-reduce lightbox 2 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "768-reduce five related projects/current excluded",
+      "pass": true
+    },
+    {
+      "name": "768-reduce carousel hover stays stationary",
+      "pass": true,
+      "data": {
+        "before": {
+          "x": 400,
+          "y": 543.5,
+          "width": 52,
+          "height": 52
+        },
+        "after": {
+          "x": 400,
+          "y": 543.5,
+          "width": 52,
+          "height": 52
+        }
+      }
+    },
+    {
+      "name": "768-reduce carousel arrow works",
+      "pass": true
+    },
+    {
+      "name": "768-reduce clones excluded from keyboard",
+      "pass": true
+    },
+    {
+      "name": "768-reduce CTA mailto/no glow .sc-case-process__cta-button",
+      "pass": true
+    },
+    {
+      "name": "768-reduce CTA mailto/no glow .sc-footer__cta",
+      "pass": true
+    },
+    {
+      "name": "768-reduce no overflow after full journey",
+      "pass": true
+    },
+    {
+      "name": "768-reduce related beauty navigates",
+      "pass": true
+    },
+    {
+      "name": "768-reduce related flowers navigates",
+      "pass": true
+    },
+    {
+      "name": "768-reduce related metal navigates",
+      "pass": true
+    },
+    {
+      "name": "768-reduce related prostor navigates",
+      "pass": true
+    },
+    {
+      "name": "768-reduce related b2b navigates",
+      "pass": true
+    },
+    {
+      "name": "768-reduce mobile menu opens",
+      "pass": true
+    },
+    {
+      "name": "768-reduce back to catalog",
+      "pass": true
+    },
+    {
+      "name": "768-reduce baseline /#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "768-reduce baseline /.sc-work-frame",
+      "pass": true
+    },
+    {
+      "name": "768-reduce baseline /#contact",
+      "pass": true
+    },
+    {
+      "name": "768-reduce baseline /raboty/#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "768-reduce baseline /raboty/.case-card--crm",
+      "pass": true
+    },
+    {
+      "name": "768-reduce baseline /raboty/#contact",
+      "pass": true
+    },
+    {
+      "name": "768-reduce baseline /raboty/beauty-insight/#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "768-reduce baseline /raboty/beauty-insight/h1",
+      "pass": true
+    },
+    {
+      "name": "768-reduce baseline /raboty/beauty-insight/.case-hero__media",
+      "pass": true
+    },
+    {
+      "name": "768-reduce baseline /raboty/beauty-insight/.sc-case-process__cta",
+      "pass": true
+    },
+    {
+      "name": "768-reduce baseline /raboty/beauty-insight/#contact",
+      "pass": true
+    },
+    {
+      "name": "768-reduce incoming related link beauty-insight",
+      "pass": true
+    },
+    {
+      "name": "768-reduce baseline /raboty/flowers/#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "768-reduce baseline /raboty/flowers/h1",
+      "pass": true
+    },
+    {
+      "name": "768-reduce baseline /raboty/flowers/.case-hero__media",
+      "pass": true
+    },
+    {
+      "name": "768-reduce baseline /raboty/flowers/.sc-case-process__cta",
+      "pass": true
+    },
+    {
+      "name": "768-reduce baseline /raboty/flowers/#contact",
+      "pass": true
+    },
+    {
+      "name": "768-reduce incoming related link flowers",
+      "pass": true
+    },
+    {
+      "name": "768-reduce baseline /raboty/metal-calc/#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "768-reduce baseline /raboty/metal-calc/h1",
+      "pass": true
+    },
+    {
+      "name": "768-reduce baseline /raboty/metal-calc/.case-hero__media",
+      "pass": true
+    },
+    {
+      "name": "768-reduce baseline /raboty/metal-calc/.sc-case-process__cta",
+      "pass": true
+    },
+    {
+      "name": "768-reduce baseline /raboty/metal-calc/#contact",
+      "pass": true
+    },
+    {
+      "name": "768-reduce incoming related link metal-calc",
+      "pass": true
+    },
+    {
+      "name": "768-reduce baseline /raboty/prostor/#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "768-reduce baseline /raboty/prostor/h1",
+      "pass": true
+    },
+    {
+      "name": "768-reduce baseline /raboty/prostor/.case-hero__media",
+      "pass": true
+    },
+    {
+      "name": "768-reduce baseline /raboty/prostor/.sc-case-process__cta",
+      "pass": true
+    },
+    {
+      "name": "768-reduce baseline /raboty/prostor/#contact",
+      "pass": true
+    },
+    {
+      "name": "768-reduce incoming related link prostor",
+      "pass": true
+    },
+    {
+      "name": "768-reduce baseline /raboty/b2b/#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "768-reduce baseline /raboty/b2b/h1",
+      "pass": true
+    },
+    {
+      "name": "768-reduce baseline /raboty/b2b/.case-hero__media",
+      "pass": true
+    },
+    {
+      "name": "768-reduce baseline /raboty/b2b/.sc-case-process__cta",
+      "pass": true
+    },
+    {
+      "name": "768-reduce baseline /raboty/b2b/#contact",
+      "pass": true
+    },
+    {
+      "name": "768-reduce incoming related link b2b",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference canonical title and intro",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference four steps / three interfaces",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference one header/footer/scroll owner",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference all images loaded",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference Manrope",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference three hero roles and responsive visibility",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference central frame and undistorted image fit",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference reduced-motion/native or one Lenis",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference last gallery row preserves three independent cards",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference responsive sticky",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference CSS selectors isolated",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference step 1 text readable",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference step 2 text readable",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference step 3 text readable",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference step 4 text readable",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference lightbox 0 original PNG/title/alt",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference lightbox 0 traps focus",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference lightbox 0 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference lightbox 1 original PNG/title/alt",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference lightbox 1 traps focus",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference lightbox 1 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference lightbox 2 original PNG/title/alt",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference lightbox 2 traps focus",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference lightbox 2 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference five related projects/current excluded",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference carousel hover stays stationary",
+      "pass": true,
+      "data": {
+        "before": {
+          "x": 400,
+          "y": 543.5,
+          "width": 52,
+          "height": 52
+        },
+        "after": {
+          "x": 400,
+          "y": 543.5,
+          "width": 52,
+          "height": 52
+        }
+      }
+    },
+    {
+      "name": "768-no-preference carousel arrow works",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference clones excluded from keyboard",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference CTA mailto/no glow .sc-case-process__cta-button",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference CTA mailto/no glow .sc-footer__cta",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference no overflow after full journey",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference fast/reverse wheel responds",
+      "pass": true,
+      "data": {
+        "down": 4482,
+        "up": 1050
+      }
+    },
+    {
+      "name": "768-no-preference motion preference restores single owner",
+      "pass": true
+    },
+    {
+      "name": "1024-reduce no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "1024-reduce canonical title and intro",
+      "pass": true
+    },
+    {
+      "name": "1024-reduce four steps / three interfaces",
+      "pass": true
+    },
+    {
+      "name": "1024-reduce one header/footer/scroll owner",
+      "pass": true
+    },
+    {
+      "name": "1024-reduce all images loaded",
+      "pass": true
+    },
+    {
+      "name": "1024-reduce Manrope",
+      "pass": true
+    },
+    {
+      "name": "1024-reduce three hero roles and responsive visibility",
+      "pass": true
+    },
+    {
+      "name": "1024-reduce central frame and undistorted image fit",
+      "pass": true
+    },
+    {
+      "name": "1024-reduce reduced-motion/native or one Lenis",
+      "pass": true
+    },
+    {
+      "name": "1024-reduce last gallery row preserves three independent cards",
+      "pass": true
+    },
+    {
+      "name": "1024-reduce responsive sticky",
+      "pass": true
+    },
+    {
+      "name": "1024-reduce CSS selectors isolated",
+      "pass": true
+    },
+    {
+      "name": "1024-reduce v1 dimensions .case-hero__media",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 952,
+          "height": 450.546875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        "reference": {
+          "width": 952,
+          "height": 450.546875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        }
+      }
+    },
+    {
+      "name": "1024-reduce v1 dimensions .case-hero__figure--main",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 609.265625,
+          "height": 351.421875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "45.0469px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        "reference": {
+          "width": 609.265625,
+          "height": 351.421875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "45.0469px",
+          "fit": "fill",
+          "radius": "16px"
+        }
+      }
+    },
+    {
+      "name": "1024-reduce v1 dimensions .case-hero__figure--left",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 276.078125,
+          "height": 274.828125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "108.125px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        "reference": {
+          "width": 276.078125,
+          "height": 274.828125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "108.125px",
+          "fit": "fill",
+          "radius": "16px"
+        }
+      }
+    },
+    {
+      "name": "1024-reduce v1 dimensions .case-hero__figure--right",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 276.078125,
+          "height": 270.328125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "94.6094px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        "reference": {
+          "width": 276.078125,
+          "height": 270.328125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "94.6094px",
+          "fit": "fill",
+          "radius": "16px"
+        }
+      }
+    },
+    {
+      "name": "1024-reduce v1 dimensions .sc-case-result__hero",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 984,
+          "height": 679.4375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 984,
+          "height": 679.4375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "1024-reduce v1 dimensions .crm-result__media",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 905.265625,
+          "height": 679.4375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        "reference": {
+          "width": 905.265625,
+          "height": 679.4375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "16px"
+        }
+      }
+    },
+    {
+      "name": "1024-reduce v1 dimensions .sc-case-screens__grid",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 984,
+          "height": 676.15625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 984,
+          "height": 676.15625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "1024-reduce v1 dimensions .sc-case-screens__open",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 483,
+          "height": 286.71875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        },
+        "reference": {
+          "width": 483,
+          "height": 286.71875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        }
+      }
+    },
+    {
+      "name": "1024-reduce v1 dimensions .sc-case-process__cta",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 410,
+          "height": 393,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "20px"
+        },
+        "reference": {
+          "width": 410,
+          "height": 393,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "20px"
+        }
+      }
+    },
+    {
+      "name": "1024-reduce step 1 text readable",
+      "pass": true
+    },
+    {
+      "name": "1024-reduce step 2 text readable",
+      "pass": true
+    },
+    {
+      "name": "1024-reduce step 3 text readable",
+      "pass": true
+    },
+    {
+      "name": "1024-reduce step 4 text readable",
+      "pass": true
+    },
+    {
+      "name": "1024-reduce lightbox 0 original PNG/title/alt",
+      "pass": true
+    },
+    {
+      "name": "1024-reduce lightbox 0 traps focus",
+      "pass": true
+    },
+    {
+      "name": "1024-reduce lightbox 0 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "1024-reduce lightbox 1 original PNG/title/alt",
+      "pass": true
+    },
+    {
+      "name": "1024-reduce lightbox 1 traps focus",
+      "pass": true
+    },
+    {
+      "name": "1024-reduce lightbox 1 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "1024-reduce lightbox 2 original PNG/title/alt",
+      "pass": true
+    },
+    {
+      "name": "1024-reduce lightbox 2 traps focus",
+      "pass": true
+    },
+    {
+      "name": "1024-reduce lightbox 2 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "1024-reduce five related projects/current excluded",
+      "pass": true
+    },
+    {
+      "name": "1024-reduce carousel hover stays stationary",
+      "pass": true,
+      "data": {
+        "before": {
+          "x": 528,
+          "y": 543.046875,
+          "width": 52,
+          "height": 52
+        },
+        "after": {
+          "x": 528,
+          "y": 543.046875,
+          "width": 52,
+          "height": 52
+        }
+      }
+    },
+    {
+      "name": "1024-reduce carousel arrow works",
+      "pass": true
+    },
+    {
+      "name": "1024-reduce clones excluded from keyboard",
+      "pass": true
+    },
+    {
+      "name": "1024-reduce CTA mailto/no glow .sc-case-process__cta-button",
+      "pass": true
+    },
+    {
+      "name": "1024-reduce CTA mailto/no glow .sc-footer__cta",
+      "pass": true
+    },
+    {
+      "name": "1024-reduce no overflow after full journey",
+      "pass": true
+    },
+    {
+      "name": "1024-no-preference no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "1024-no-preference canonical title and intro",
+      "pass": true
+    },
+    {
+      "name": "1024-no-preference four steps / three interfaces",
+      "pass": true
+    },
+    {
+      "name": "1024-no-preference one header/footer/scroll owner",
+      "pass": true
+    },
+    {
+      "name": "1024-no-preference all images loaded",
+      "pass": true
+    },
+    {
+      "name": "1024-no-preference Manrope",
+      "pass": true
+    },
+    {
+      "name": "1024-no-preference three hero roles and responsive visibility",
+      "pass": true
+    },
+    {
+      "name": "1024-no-preference central frame and undistorted image fit",
+      "pass": true
+    },
+    {
+      "name": "1024-no-preference reduced-motion/native or one Lenis",
+      "pass": true
+    },
+    {
+      "name": "1024-no-preference last gallery row preserves three independent cards",
+      "pass": true
+    },
+    {
+      "name": "1024-no-preference responsive sticky",
+      "pass": true
+    },
+    {
+      "name": "1024-no-preference CSS selectors isolated",
+      "pass": true
+    },
+    {
+      "name": "1024-no-preference step 1 text readable",
+      "pass": true
+    },
+    {
+      "name": "1024-no-preference step 2 text readable",
+      "pass": true
+    },
+    {
+      "name": "1024-no-preference step 3 text readable",
+      "pass": true
+    },
+    {
+      "name": "1024-no-preference step 4 text readable",
+      "pass": true
+    },
+    {
+      "name": "1024-no-preference five related projects/current excluded",
+      "pass": true
+    },
+    {
+      "name": "1024-no-preference carousel hover stays stationary",
+      "pass": true,
+      "data": {
+        "before": {
+          "x": 528,
+          "y": 531.046875,
+          "width": 52,
+          "height": 52
+        },
+        "after": {
+          "x": 528,
+          "y": 531.046875,
+          "width": 52,
+          "height": 52
+        }
+      }
+    },
+    {
+      "name": "1024-no-preference carousel arrow works",
+      "pass": true
+    },
+    {
+      "name": "1024-no-preference clones excluded from keyboard",
+      "pass": true
+    },
+    {
+      "name": "1024-no-preference CTA mailto/no glow .sc-case-process__cta-button",
+      "pass": true
+    },
+    {
+      "name": "1024-no-preference CTA mailto/no glow .sc-footer__cta",
+      "pass": true
+    },
+    {
+      "name": "1024-no-preference no overflow after full journey",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce canonical title and intro",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce four steps / three interfaces",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce one header/footer/scroll owner",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce all images loaded",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce Manrope",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce three hero roles and responsive visibility",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce central frame and undistorted image fit",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce reduced-motion/native or one Lenis",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce last gallery row preserves three independent cards",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce responsive sticky",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce CSS selectors isolated",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce v1 dimensions .case-hero__media",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 1268,
+          "height": 575,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        "reference": {
+          "width": 1268,
+          "height": 575,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        }
+      }
+    },
+    {
+      "name": "1440-reduce v1 dimensions .case-hero__figure--main",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 811.515625,
+          "height": 448.5,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "57.5px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        "reference": {
+          "width": 811.515625,
+          "height": 448.5,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "57.5px",
+          "fit": "fill",
+          "radius": "16px"
+        }
+      }
+    },
+    {
+      "name": "1440-reduce v1 dimensions .case-hero__figure--left",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 367.71875,
+          "height": 350.75,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "138px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        "reference": {
+          "width": 367.71875,
+          "height": 350.75,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "138px",
+          "fit": "fill",
+          "radius": "16px"
+        }
+      }
+    },
+    {
+      "name": "1440-reduce v1 dimensions .case-hero__figure--right",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 367.71875,
+          "height": 345,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "120.75px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        "reference": {
+          "width": 367.71875,
+          "height": 345,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "120.75px",
+          "fit": "fill",
+          "radius": "16px"
+        }
+      }
+    },
+    {
+      "name": "1440-reduce v1 dimensions .sc-case-result__hero",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 868.8125,
+          "height": 599.96875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 868.8125,
+          "height": 599.96875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "1440-reduce v1 dimensions .crm-result__media",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 799.296875,
+          "height": 599.96875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        "reference": {
+          "width": 799.296875,
+          "height": 599.96875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "16px"
+        }
+      }
+    },
+    {
+      "name": "1440-reduce v1 dimensions .sc-case-screens__grid",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 868.8125,
+          "height": 890,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 868.8125,
+          "height": 890,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "1440-reduce v1 dimensions .sc-case-screens__open",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 425.40625,
+          "height": 390,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        },
+        "reference": {
+          "width": 425.40625,
+          "height": 390,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        }
+      }
+    },
+    {
+      "name": "1440-reduce v1 dimensions .sc-case-process__cta",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 320,
+          "height": 407,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "sticky",
+          "top": "210px",
+          "fit": "fill",
+          "radius": "20px"
+        },
+        "reference": {
+          "width": 320,
+          "height": 407,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "sticky",
+          "top": "210px",
+          "fit": "fill",
+          "radius": "20px"
+        }
+      }
+    },
+    {
+      "name": "1440-reduce step 1 text readable",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce step 2 text readable",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce step 3 text readable",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce step 4 text readable",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce lightbox 0 original PNG/title/alt",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce lightbox 0 traps focus",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce lightbox 0 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce lightbox 1 original PNG/title/alt",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce lightbox 1 traps focus",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce lightbox 1 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce lightbox 2 original PNG/title/alt",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce lightbox 2 traps focus",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce lightbox 2 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce sticky throughout result and three screens",
+      "pass": true,
+      "data": [
+        {
+          "actual": 210,
+          "expected": 210
+        },
+        {
+          "actual": 210,
+          "expected": 210
+        }
+      ]
+    },
+    {
+      "name": "1440-reduce sticky ends before other work",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce five related projects/current excluded",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce carousel hover stays stationary",
+      "pass": true,
+      "data": {
+        "before": {
+          "x": 736,
+          "y": 838.015625,
+          "width": 52,
+          "height": 52
+        },
+        "after": {
+          "x": 736,
+          "y": 838.015625,
+          "width": 52,
+          "height": 52
+        }
+      }
+    },
+    {
+      "name": "1440-reduce carousel arrow works",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce clones excluded from keyboard",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce CTA mailto/no glow .sc-case-process__cta-button",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce CTA mailto/no glow .sc-footer__cta",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce no overflow after full journey",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce related beauty navigates",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce related flowers navigates",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce related metal navigates",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce related prostor navigates",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce related b2b navigates",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce back to catalog",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce baseline /#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce baseline /.sc-work-frame",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce baseline /#contact",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce baseline /raboty/#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce baseline /raboty/.case-card--crm",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce baseline /raboty/#contact",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce baseline /raboty/beauty-insight/#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce baseline /raboty/beauty-insight/h1",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce baseline /raboty/beauty-insight/.case-hero__media",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce baseline /raboty/beauty-insight/.sc-case-process__cta",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce baseline /raboty/beauty-insight/#contact",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce incoming related link beauty-insight",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce baseline /raboty/flowers/#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce baseline /raboty/flowers/h1",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce baseline /raboty/flowers/.case-hero__media",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce baseline /raboty/flowers/.sc-case-process__cta",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce baseline /raboty/flowers/#contact",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce incoming related link flowers",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce baseline /raboty/metal-calc/#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce baseline /raboty/metal-calc/h1",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce baseline /raboty/metal-calc/.case-hero__media",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce baseline /raboty/metal-calc/.sc-case-process__cta",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce baseline /raboty/metal-calc/#contact",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce incoming related link metal-calc",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce baseline /raboty/prostor/#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce baseline /raboty/prostor/h1",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce baseline /raboty/prostor/.case-hero__media",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce baseline /raboty/prostor/.sc-case-process__cta",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce baseline /raboty/prostor/#contact",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce incoming related link prostor",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce baseline /raboty/b2b/#floatingHeader",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce baseline /raboty/b2b/h1",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce baseline /raboty/b2b/.case-hero__media",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce baseline /raboty/b2b/.sc-case-process__cta",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce baseline /raboty/b2b/#contact",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce incoming related link b2b",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference canonical title and intro",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference four steps / three interfaces",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference one header/footer/scroll owner",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference all images loaded",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference Manrope",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference three hero roles and responsive visibility",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference central frame and undistorted image fit",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference reduced-motion/native or one Lenis",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference last gallery row preserves three independent cards",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference responsive sticky",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference CSS selectors isolated",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference step 1 text readable",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference step 2 text readable",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference step 3 text readable",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference step 4 text readable",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference process active state changes",
+      "pass": true,
+      "data": [
+        [
+          0.9994,
+          0.4,
+          0.4,
+          0.4
+        ],
+        [
+          0.4143,
+          0.9994,
+          0.4,
+          0.4
+        ],
+        [
+          0.4,
+          0.4147,
+          0.9994,
+          0.4
+        ],
+        [
+          0.4,
+          0.4,
+          0.4144,
+          0.9994
+        ]
+      ]
+    },
+    {
+      "name": "1440-no-preference reverse process restores first state",
+      "pass": true,
+      "data": {
+        "forward": [
+          0.9994,
+          0.4,
+          0.4,
+          0.4
+        ],
+        "reverse": [
+          0.9994,
+          0.4,
+          0.4,
+          0.4006
+        ]
+      }
+    },
+    {
+      "name": "1440-no-preference lightbox 0 original PNG/title/alt",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference lightbox 0 traps focus",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference lightbox 0 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference lightbox 1 original PNG/title/alt",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference lightbox 1 traps focus",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference lightbox 1 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference lightbox 2 original PNG/title/alt",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference lightbox 2 traps focus",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference lightbox 2 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference sticky throughout result and three screens",
+      "pass": true,
+      "data": [
+        {
+          "actual": 210,
+          "expected": 210
+        },
+        {
+          "actual": 210,
+          "expected": 210
+        }
+      ]
+    },
+    {
+      "name": "1440-no-preference sticky ends before other work",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference five related projects/current excluded",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference carousel hover stays stationary",
+      "pass": true,
+      "data": {
+        "before": {
+          "x": 736,
+          "y": 839.9819946289062,
+          "width": 52,
+          "height": 52
+        },
+        "after": {
+          "x": 736,
+          "y": 839.9819946289062,
+          "width": 52,
+          "height": 52
+        }
+      }
+    },
+    {
+      "name": "1440-no-preference carousel arrow works",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference clones excluded from keyboard",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference CTA mailto/no glow .sc-case-process__cta-button",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference CTA mailto/no glow .sc-footer__cta",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference no overflow after full journey",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference existing parallax targets gallery",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference fast/reverse wheel responds",
+      "pass": true,
+      "data": {
+        "down": 7370,
+        "up": 3981
+      }
+    },
+    {
+      "name": "1440-no-preference motion preference restores single owner",
+      "pass": true
+    },
+    {
+      "name": "1920-reduce no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "1920-reduce canonical title and intro",
+      "pass": true
+    },
+    {
+      "name": "1920-reduce four steps / three interfaces",
+      "pass": true
+    },
+    {
+      "name": "1920-reduce one header/footer/scroll owner",
+      "pass": true
+    },
+    {
+      "name": "1920-reduce all images loaded",
+      "pass": true
+    },
+    {
+      "name": "1920-reduce Manrope",
+      "pass": true
+    },
+    {
+      "name": "1920-reduce three hero roles and responsive visibility",
+      "pass": true
+    },
+    {
+      "name": "1920-reduce central frame and undistorted image fit",
+      "pass": true
+    },
+    {
+      "name": "1920-reduce reduced-motion/native or one Lenis",
+      "pass": true
+    },
+    {
+      "name": "1920-reduce last gallery row preserves three independent cards",
+      "pass": true
+    },
+    {
+      "name": "1920-reduce responsive sticky",
+      "pass": true
+    },
+    {
+      "name": "1920-reduce CSS selectors isolated",
+      "pass": true
+    },
+    {
+      "name": "1920-reduce v1 dimensions .case-hero__media",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 1268,
+          "height": 575,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        "reference": {
+          "width": 1268,
+          "height": 575,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        }
+      }
+    },
+    {
+      "name": "1920-reduce v1 dimensions .case-hero__figure--main",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 811.515625,
+          "height": 448.5,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "57.5px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        "reference": {
+          "width": 811.515625,
+          "height": 448.5,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "57.5px",
+          "fit": "fill",
+          "radius": "16px"
+        }
+      }
+    },
+    {
+      "name": "1920-reduce v1 dimensions .case-hero__figure--left",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 367.71875,
+          "height": 350.75,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "138px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        "reference": {
+          "width": 367.71875,
+          "height": 350.75,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "138px",
+          "fit": "fill",
+          "radius": "16px"
+        }
+      }
+    },
+    {
+      "name": "1920-reduce v1 dimensions .case-hero__figure--right",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 367.71875,
+          "height": 345,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "120.75px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        "reference": {
+          "width": 367.71875,
+          "height": 345,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "120.75px",
+          "fit": "fill",
+          "radius": "16px"
+        }
+      }
+    },
+    {
+      "name": "1920-reduce v1 dimensions .sc-case-result__hero",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 864,
+          "height": 596.65625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 864,
+          "height": 596.65625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "1920-reduce v1 dimensions .crm-result__media",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 794.875,
+          "height": 596.65625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        "reference": {
+          "width": 794.875,
+          "height": 596.65625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "16px"
+        }
+      }
+    },
+    {
+      "name": "1920-reduce v1 dimensions .sc-case-screens__grid",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 864,
+          "height": 890,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        "reference": {
+          "width": 864,
+          "height": 890,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "1920-reduce v1 dimensions .sc-case-screens__open",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 423,
+          "height": 390,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        },
+        "reference": {
+          "width": 423,
+          "height": 390,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        }
+      }
+    },
+    {
+      "name": "1920-reduce v1 dimensions .sc-case-process__cta",
+      "pass": true,
+      "data": {
+        "actual": {
+          "width": 320,
+          "height": 407,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "sticky",
+          "top": "210px",
+          "fit": "fill",
+          "radius": "20px"
+        },
+        "reference": {
+          "width": 320,
+          "height": 407,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "sticky",
+          "top": "210px",
+          "fit": "fill",
+          "radius": "20px"
+        }
+      }
+    },
+    {
+      "name": "1920-reduce step 1 text readable",
+      "pass": true
+    },
+    {
+      "name": "1920-reduce step 2 text readable",
+      "pass": true
+    },
+    {
+      "name": "1920-reduce step 3 text readable",
+      "pass": true
+    },
+    {
+      "name": "1920-reduce step 4 text readable",
+      "pass": true
+    },
+    {
+      "name": "1920-reduce lightbox 0 original PNG/title/alt",
+      "pass": true
+    },
+    {
+      "name": "1920-reduce lightbox 0 traps focus",
+      "pass": true
+    },
+    {
+      "name": "1920-reduce lightbox 0 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "1920-reduce lightbox 1 original PNG/title/alt",
+      "pass": true
+    },
+    {
+      "name": "1920-reduce lightbox 1 traps focus",
+      "pass": true
+    },
+    {
+      "name": "1920-reduce lightbox 1 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "1920-reduce lightbox 2 original PNG/title/alt",
+      "pass": true
+    },
+    {
+      "name": "1920-reduce lightbox 2 traps focus",
+      "pass": true
+    },
+    {
+      "name": "1920-reduce lightbox 2 closes/restores focus",
+      "pass": true
+    },
+    {
+      "name": "1920-reduce sticky throughout result and three screens",
+      "pass": true,
+      "data": [
+        {
+          "actual": 210,
+          "expected": 210
+        },
+        {
+          "actual": 210,
+          "expected": 210
+        }
+      ]
+    },
+    {
+      "name": "1920-reduce sticky ends before other work",
+      "pass": true
+    },
+    {
+      "name": "1920-reduce five related projects/current excluded",
+      "pass": true
+    },
+    {
+      "name": "1920-reduce carousel hover stays stationary",
+      "pass": true,
+      "data": {
+        "before": {
+          "x": 976,
+          "y": 852.34375,
+          "width": 52,
+          "height": 52
+        },
+        "after": {
+          "x": 976,
+          "y": 852.34375,
+          "width": 52,
+          "height": 52
+        }
+      }
+    },
+    {
+      "name": "1920-reduce carousel arrow works",
+      "pass": true
+    },
+    {
+      "name": "1920-reduce clones excluded from keyboard",
+      "pass": true
+    },
+    {
+      "name": "1920-reduce CTA mailto/no glow .sc-case-process__cta-button",
+      "pass": true
+    },
+    {
+      "name": "1920-reduce CTA mailto/no glow .sc-footer__cta",
+      "pass": true
+    },
+    {
+      "name": "1920-reduce no overflow after full journey",
+      "pass": true
+    },
+    {
+      "name": "1920-no-preference no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "1920-no-preference canonical title and intro",
+      "pass": true
+    },
+    {
+      "name": "1920-no-preference four steps / three interfaces",
+      "pass": true
+    },
+    {
+      "name": "1920-no-preference one header/footer/scroll owner",
+      "pass": true
+    },
+    {
+      "name": "1920-no-preference all images loaded",
+      "pass": true
+    },
+    {
+      "name": "1920-no-preference Manrope",
+      "pass": true
+    },
+    {
+      "name": "1920-no-preference three hero roles and responsive visibility",
+      "pass": true
+    },
+    {
+      "name": "1920-no-preference central frame and undistorted image fit",
+      "pass": true
+    },
+    {
+      "name": "1920-no-preference reduced-motion/native or one Lenis",
+      "pass": true
+    },
+    {
+      "name": "1920-no-preference last gallery row preserves three independent cards",
+      "pass": true
+    },
+    {
+      "name": "1920-no-preference responsive sticky",
+      "pass": true
+    },
+    {
+      "name": "1920-no-preference CSS selectors isolated",
+      "pass": true
+    },
+    {
+      "name": "1920-no-preference step 1 text readable",
+      "pass": true
+    },
+    {
+      "name": "1920-no-preference step 2 text readable",
+      "pass": true
+    },
+    {
+      "name": "1920-no-preference step 3 text readable",
+      "pass": true
+    },
+    {
+      "name": "1920-no-preference step 4 text readable",
+      "pass": true
+    },
+    {
+      "name": "1920-no-preference process active state changes",
+      "pass": true,
+      "data": [
+        [
+          0.998,
+          0.4,
+          0.4,
+          0.4
+        ],
+        [
+          0.4143,
+          0.9994,
+          0.4,
+          0.4
+        ],
+        [
+          0.4,
+          0.4146,
+          0.9994,
+          0.4
+        ],
+        [
+          0.4,
+          0.4,
+          0.4144,
+          0.9994
+        ]
+      ]
+    },
+    {
+      "name": "1920-no-preference reverse process restores first state",
+      "pass": true,
+      "data": {
+        "forward": [
+          0.998,
+          0.4,
+          0.4,
+          0.4
+        ],
+        "reverse": [
+          0.9994,
+          0.4,
+          0.4,
+          0.4006
+        ]
+      }
+    },
+    {
+      "name": "1920-no-preference sticky throughout result and three screens",
+      "pass": true,
+      "data": [
+        {
+          "actual": 210,
+          "expected": 210
+        },
+        {
+          "actual": 210,
+          "expected": 210
+        }
+      ]
+    },
+    {
+      "name": "1920-no-preference sticky ends before other work",
+      "pass": true
+    },
+    {
+      "name": "1920-no-preference five related projects/current excluded",
+      "pass": true
+    },
+    {
+      "name": "1920-no-preference carousel hover stays stationary",
+      "pass": true,
+      "data": {
+        "before": {
+          "x": 976,
+          "y": 855.0272216796875,
+          "width": 52,
+          "height": 52
+        },
+        "after": {
+          "x": 976,
+          "y": 855.0272216796875,
+          "width": 52,
+          "height": 52
+        }
+      }
+    },
+    {
+      "name": "1920-no-preference carousel arrow works",
+      "pass": true
+    },
+    {
+      "name": "1920-no-preference clones excluded from keyboard",
+      "pass": true
+    },
+    {
+      "name": "1920-no-preference CTA mailto/no glow .sc-case-process__cta-button",
+      "pass": true
+    },
+    {
+      "name": "1920-no-preference CTA mailto/no glow .sc-footer__cta",
+      "pass": true
+    },
+    {
+      "name": "1920-no-preference no overflow after full journey",
+      "pass": true
+    },
+    {
+      "name": "all viewport and motion scenarios completed",
+      "pass": true
+    },
+    {
+      "name": "no JavaScript/network/HTTP errors",
+      "pass": true,
+      "data": []
+    }
+  ],
+  "errors": [],
+  "measurements": [
+    {
+      "width": 320,
+      "actual": {
+        ".case-hero__media": {
+          "width": 272,
+          "height": 300,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "19px"
+        },
+        ".case-hero__figure--main": {
+          "width": 255.671875,
+          "height": 228,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "30px",
+          "fit": "fill",
+          "radius": "11px"
+        },
+        ".case-hero__figure--left": {
+          "width": 0,
+          "height": 0,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "27%",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".case-hero__figure--right": {
+          "width": 0,
+          "height": 0,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "25%",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".sc-case-result__hero": {
+          "width": 292,
+          "height": 219.5,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".crm-result__media": {
+          "width": 292,
+          "height": 219.5,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "12px"
+        },
+        ".sc-case-screens__grid": {
+          "width": 292,
+          "height": 816,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".sc-case-screens__open": {
+          "width": 292,
+          "height": 220,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        },
+        ".sc-case-process__cta": {
+          "width": 292,
+          "height": 410.671875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "20px"
+        }
+      },
+      "reference": {
+        ".case-hero__media": {
+          "width": 272,
+          "height": 300,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "19px"
+        },
+        ".case-hero__figure--main": {
+          "width": 255.671875,
+          "height": 228,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "30px",
+          "fit": "fill",
+          "radius": "11px"
+        },
+        ".case-hero__figure--left": {
+          "width": 0,
+          "height": 0,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "27%",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".case-hero__figure--right": {
+          "width": 0,
+          "height": 0,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "25%",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".sc-case-result__hero": {
+          "width": 292,
+          "height": 219.5,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".crm-result__media": {
+          "width": 292,
+          "height": 219.5,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "12px"
+        },
+        ".sc-case-screens__grid": {
+          "width": 292,
+          "height": 816,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".sc-case-screens__open": {
+          "width": 292,
+          "height": 220,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        },
+        ".sc-case-process__cta": {
+          "width": 292,
+          "height": 410.671875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "20px"
+        }
+      }
+    },
+    {
+      "width": 390,
+      "actual": {
+        ".case-hero__media": {
+          "width": 342,
+          "height": 300,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "19px"
+        },
+        ".case-hero__figure--main": {
+          "width": 321.46875,
+          "height": 228,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "30px",
+          "fit": "fill",
+          "radius": "11px"
+        },
+        ".case-hero__figure--left": {
+          "width": 0,
+          "height": 0,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "27%",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".case-hero__figure--right": {
+          "width": 0,
+          "height": 0,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "25%",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".sc-case-result__hero": {
+          "width": 362,
+          "height": 272,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".crm-result__media": {
+          "width": 362,
+          "height": 272,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "12px"
+        },
+        ".sc-case-screens__grid": {
+          "width": 362,
+          "height": 816,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".sc-case-screens__open": {
+          "width": 362,
+          "height": 220,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        },
+        ".sc-case-process__cta": {
+          "width": 362,
+          "height": 410,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "20px"
+        }
+      },
+      "reference": {
+        ".case-hero__media": {
+          "width": 342,
+          "height": 300,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "19px"
+        },
+        ".case-hero__figure--main": {
+          "width": 321.46875,
+          "height": 228,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "30px",
+          "fit": "fill",
+          "radius": "11px"
+        },
+        ".case-hero__figure--left": {
+          "width": 0,
+          "height": 0,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "27%",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".case-hero__figure--right": {
+          "width": 0,
+          "height": 0,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "25%",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".sc-case-result__hero": {
+          "width": 362,
+          "height": 272,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".crm-result__media": {
+          "width": 362,
+          "height": 272,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "12px"
+        },
+        ".sc-case-screens__grid": {
+          "width": 362,
+          "height": 816,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".sc-case-screens__open": {
+          "width": 362,
+          "height": 220,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        },
+        ".sc-case-process__cta": {
+          "width": 362,
+          "height": 410,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "20px"
+        }
+      }
+    },
+    {
+      "width": 768,
+      "actual": {
+        ".case-hero__media": {
+          "width": 704,
+          "height": 390,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        ".case-hero__figure--main": {
+          "width": 535.03125,
+          "height": 292.5,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "46.7969px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".case-hero__figure--left": {
+          "width": 239.359375,
+          "height": 226.1875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "105.297px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".case-hero__figure--right": {
+          "width": 239.359375,
+          "height": 226.1875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "97.5px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".sc-case-result__hero": {
+          "width": 728,
+          "height": 502.8125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".crm-result__media": {
+          "width": 669.75,
+          "height": 502.8125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".sc-case-screens__grid": {
+          "width": 728,
+          "height": 578,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".sc-case-screens__open": {
+          "width": 355,
+          "height": 240,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        },
+        ".sc-case-process__cta": {
+          "width": 410,
+          "height": 393,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "20px"
+        }
+      },
+      "reference": {
+        ".case-hero__media": {
+          "width": 704,
+          "height": 390,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        ".case-hero__figure--main": {
+          "width": 535.03125,
+          "height": 292.5,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "46.7969px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".case-hero__figure--left": {
+          "width": 239.359375,
+          "height": 226.1875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "105.297px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".case-hero__figure--right": {
+          "width": 239.359375,
+          "height": 226.1875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "97.5px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".sc-case-result__hero": {
+          "width": 728,
+          "height": 502.8125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".crm-result__media": {
+          "width": 669.75,
+          "height": 502.8125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".sc-case-screens__grid": {
+          "width": 728,
+          "height": 578,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".sc-case-screens__open": {
+          "width": 355,
+          "height": 240,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        },
+        ".sc-case-process__cta": {
+          "width": 410,
+          "height": 393,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "20px"
+        }
+      }
+    },
+    {
+      "width": 1024,
+      "actual": {
+        ".case-hero__media": {
+          "width": 952,
+          "height": 450.546875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        ".case-hero__figure--main": {
+          "width": 609.265625,
+          "height": 351.421875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "45.0469px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".case-hero__figure--left": {
+          "width": 276.078125,
+          "height": 274.828125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "108.125px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".case-hero__figure--right": {
+          "width": 276.078125,
+          "height": 270.328125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "94.6094px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".sc-case-result__hero": {
+          "width": 984,
+          "height": 679.4375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".crm-result__media": {
+          "width": 905.265625,
+          "height": 679.4375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".sc-case-screens__grid": {
+          "width": 984,
+          "height": 676.15625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".sc-case-screens__open": {
+          "width": 483,
+          "height": 286.71875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        },
+        ".sc-case-process__cta": {
+          "width": 410,
+          "height": 393,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "20px"
+        }
+      },
+      "reference": {
+        ".case-hero__media": {
+          "width": 952,
+          "height": 450.546875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        ".case-hero__figure--main": {
+          "width": 609.265625,
+          "height": 351.421875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "45.0469px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".case-hero__figure--left": {
+          "width": 276.078125,
+          "height": 274.828125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "108.125px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".case-hero__figure--right": {
+          "width": 276.078125,
+          "height": 270.328125,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "94.6094px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".sc-case-result__hero": {
+          "width": 984,
+          "height": 679.4375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".crm-result__media": {
+          "width": 905.265625,
+          "height": 679.4375,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".sc-case-screens__grid": {
+          "width": 984,
+          "height": 676.15625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".sc-case-screens__open": {
+          "width": 483,
+          "height": 286.71875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        },
+        ".sc-case-process__cta": {
+          "width": 410,
+          "height": 393,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "20px"
+        }
+      }
+    },
+    {
+      "width": 1440,
+      "actual": {
+        ".case-hero__media": {
+          "width": 1268,
+          "height": 575,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        ".case-hero__figure--main": {
+          "width": 811.515625,
+          "height": 448.5,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "57.5px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".case-hero__figure--left": {
+          "width": 367.71875,
+          "height": 350.75,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "138px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".case-hero__figure--right": {
+          "width": 367.71875,
+          "height": 345,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "120.75px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".sc-case-result__hero": {
+          "width": 868.8125,
+          "height": 599.96875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".crm-result__media": {
+          "width": 799.296875,
+          "height": 599.96875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".sc-case-screens__grid": {
+          "width": 868.8125,
+          "height": 890,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".sc-case-screens__open": {
+          "width": 425.40625,
+          "height": 390,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        },
+        ".sc-case-process__cta": {
+          "width": 320,
+          "height": 407,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "sticky",
+          "top": "210px",
+          "fit": "fill",
+          "radius": "20px"
+        }
+      },
+      "reference": {
+        ".case-hero__media": {
+          "width": 1268,
+          "height": 575,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        ".case-hero__figure--main": {
+          "width": 811.515625,
+          "height": 448.5,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "57.5px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".case-hero__figure--left": {
+          "width": 367.71875,
+          "height": 350.75,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "138px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".case-hero__figure--right": {
+          "width": 367.71875,
+          "height": 345,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "120.75px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".sc-case-result__hero": {
+          "width": 868.8125,
+          "height": 599.96875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".crm-result__media": {
+          "width": 799.296875,
+          "height": 599.96875,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".sc-case-screens__grid": {
+          "width": 868.8125,
+          "height": 890,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".sc-case-screens__open": {
+          "width": 425.40625,
+          "height": 390,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        },
+        ".sc-case-process__cta": {
+          "width": 320,
+          "height": 407,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "sticky",
+          "top": "210px",
+          "fit": "fill",
+          "radius": "20px"
+        }
+      }
+    },
+    {
+      "width": 1920,
+      "actual": {
+        ".case-hero__media": {
+          "width": 1268,
+          "height": 575,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        ".case-hero__figure--main": {
+          "width": 811.515625,
+          "height": 448.5,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "57.5px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".case-hero__figure--left": {
+          "width": 367.71875,
+          "height": 350.75,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "138px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".case-hero__figure--right": {
+          "width": 367.71875,
+          "height": 345,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "120.75px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".sc-case-result__hero": {
+          "width": 864,
+          "height": 596.65625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".crm-result__media": {
+          "width": 794.875,
+          "height": 596.65625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".sc-case-screens__grid": {
+          "width": 864,
+          "height": 890,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".sc-case-screens__open": {
+          "width": 423,
+          "height": 390,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        },
+        ".sc-case-process__cta": {
+          "width": 320,
+          "height": 407,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "sticky",
+          "top": "210px",
+          "fit": "fill",
+          "radius": "20px"
+        }
+      },
+      "reference": {
+        ".case-hero__media": {
+          "width": 1268,
+          "height": 575,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "24px"
+        },
+        ".case-hero__figure--main": {
+          "width": 811.515625,
+          "height": 448.5,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "57.5px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".case-hero__figure--left": {
+          "width": 367.71875,
+          "height": 350.75,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "138px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".case-hero__figure--right": {
+          "width": 367.71875,
+          "height": 345,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, Arial, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "absolute",
+          "top": "120.75px",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".sc-case-result__hero": {
+          "width": 864,
+          "height": 596.65625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".crm-result__media": {
+          "width": 794.875,
+          "height": 596.65625,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "16px"
+        },
+        ".sc-case-screens__grid": {
+          "width": 864,
+          "height": 890,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "static",
+          "top": "auto",
+          "fit": "fill",
+          "radius": "0px"
+        },
+        ".sc-case-screens__open": {
+          "width": 423,
+          "height": 390,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(0, 0, 0)",
+          "position": "relative",
+          "top": "0px",
+          "fit": "fill",
+          "radius": "14px"
+        },
+        ".sc-case-process__cta": {
+          "width": 320,
+          "height": 407,
+          "font": "16px",
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "lineHeight": "normal",
+          "color": "rgb(23, 30, 35)",
+          "position": "sticky",
+          "top": "210px",
+          "fit": "fill",
+          "radius": "20px"
+        }
+      }
+    }
+  ],
+  "differences": [
+    "H1, intro and SEO use the canonical catalog copy; text wrapping and vertical offsets therefore differ from standalone v1.",
+    "Current shared Header/Footer, fonts, CTA policy, related cards and v20 runtime are reused."
+  ],
+  "limitations": [
+    "Chromium with emulated viewports and touch; no physical mobile device or physical mouse/trackpad smoothness acceptance.",
+    "Firefox and WebKit were not tested."
+  ],
+  "pass": true
+}

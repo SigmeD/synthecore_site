@@ -1,0 +1,11 @@
+{
+  "ref": "INDEX",
+  "motionFiles": 17,
+  "v27Files": 25,
+  "approvedCatalogCopy": "2026-10-21",
+  "approvedButtonPolicy": "2026-10-22",
+  "v62ContentMatches": true,
+  "compiledHomeCSSMatches": true,
+  "failures": [],
+  "pass": true
+}

@@ -1,0 +1,151 @@
+PASS: shared Header/Footer are current in home, catalog and case routes.
+SyntheCore v62 MOTION LOCK: 17/17 matched.
+{
+  "ref": "INDEX",
+  "motionFiles": 17,
+  "v27Files": 25,
+  "approvedCatalogCopy": "2026-10-21",
+  "approvedButtonPolicy": "2026-10-22",
+  "v62ContentMatches": true,
+  "compiledHomeCSSMatches": true,
+  "failures": [],
+  "pass": true
+}
+PASS: 12 image/viewport combinations, 60 crop states, zero-size guards.
+PASS: current v60 structure/resources, 6 approved Works images, 40 vendor/asset manifest hashes. 60 HTTP resources match disk.
+PASS: six services cards, accessible headings, twelve local illustrations (mono + color), idle tilt, active alignment, single scroll owner, no vertical wheel capture.
+PASS: experimental CSS sticky scenes and +30% testimonials.
+✔ B2B v1 reuses the shared renderer with four steps and distinct preview/full image sources (92.29ms)
+✔ B2B v1 rejects incorrect route, step/screen count and unsafe full-size assets (30.3144ms)
+✔ B2B content and original images match the approved kit and preview (64.8912ms)
+✔ registered anchors added after the B2B baseline are the only changes to existing runtime/pages (41.2296ms)
+✔ the B2B baseline names actual Git blobs and never normalizes protected motion (2720.7115ms)
+✔ baseline restoration refuses wrong URLs and duplicate links and does not hide changed copy (9.7644ms)
+✔ button policy exception accepts only the exact two additions to v27 (2.9439ms)
+✔ QA does not exempt protected motion files or unrelated components (1.6576ms)
+✔ joint integration preserves every complete case and its styles against accepted branch snapshots (32.2136ms)
+✔ baseline comparison refuses malformed registered routes instead of hiding them (7.9681ms)
+✔ case renderer builds a nested route from shared shell and case content (34.7591ms)
+✔ all case assets and local links resolve under the nested URL (9.9919ms)
+✔ case renderer escapes content and rejects missing or unsafe project data (24.6845ms)
+✔ authorized case links restore exact original pages and reject other mutations (91.2124ms)
+✔ all six case registrations automatically wire primary homepage and catalog actions (7.0254ms)
+✔ imported case images retain verified handoff bytes (7.4445ms)
+✔ CRM alone renders three interfaces, four stages and separate full-size media (31.5582ms)
+✔ CRM rejects wrong route, three-screen count, duplicate images, steps and unsafe originals (30.3854ms)
+✔ CRM copy, source screens and related work match the catalog and approved preview (59.4133ms)
+✔ the CRM snapshot preserves all old runtime and pages after removing only its registered anchor (36.1793ms)
+✔ CRM baseline uses actual Git blobs and never normalizes raw motion (2868.1596ms)
+✔ CRM route restoration rejects malformed/duplicate links and preserves content checks (4.7338ms)
+✔ CSS compilation keeps cascade order, imports once per occurrence and rebases only actual URL tokens (16.0911ms)
+✔ font import stays valid without moving it across preceding font faces; unsupported imports fail safely (18.9303ms)
+✔ homepage has one exact compiled hook and preserves the original stylesheet list for baseline checks (104.1484ms)
+✔ a valid working copy cannot hide a stale or tampered bundle in a separate Git snapshot (146.8527ms)
+✔ Flowers is built from the canonical catalog copy and existing shared components (31.7617ms)
+✔ Flowers retains three phones, four factual prototype stages, two result devices and four full interfaces (4.3812ms)
+✔ the Flowers variant rejects unapproved layouts and incorrect media/process data (15.9812ms)
+✔ Flowers assets retain source bytes, resources resolve, and other catalog/Beauty content remains unchanged (21.6244ms)
+✔ metal route is generated through the shared shell and catalog copy (35.4649ms)
+✔ metal variant renders one hero, five steps and the approved result banner (3.8939ms)
+✔ catalog registers the new primary route and keeps the other five cards (7.2765ms)
+✔ metal variant rejects extra hero images, unknown layouts and missing result proof fields (11.3286ms)
+✔ metal resources resolve from the nested route and imported images retain source bytes (14.386ms)
+✔ Beauty and other catalog content retain baseline bytes after exact registered route additions (13.933ms)
+✔ all six homepage titles and summaries match the catalog source (13.286ms)
+✔ editing catalog copy updates both dependent templates automatically (148.629ms)
+✔ case first screen and metadata use catalog title and summary, not independent copies (5.3971ms)
+✔ only Prostor v1 supports seven screens and separate full-size images (45.1526ms)
+✔ Prostor rejects wrong counts, duplicate screens, wrong identities and unsafe full-size images (34.741ms)
+✔ Prostor builds canonical copy, approved screen order, shared shell and truthful prototype content (36.2748ms)
+✔ all fourteen imported images retain approved bytes and seven interfaces are distinct (22.3368ms)
+✔ historical runtime/pages preserve their SHA with only registered anchors and v27 text EOL differences (30.4959ms)
+✔ both static routes are generated from one header and one footer (51.9221ms)
+✔ route-aware shared navigation resolves every local anchor (19.478ms)
+✔ catalog permits only approved naming while preserving six projects, descriptions and assets (16.0785ms)
+✔ catalog copy exception rejects unapproved copy and structural or shell changes (83.6822ms)
+✔ single footer and menu owners retain local motion contracts (5.8416ms)
+✔ local Manrope distributions match the recorded hashes (11.2017ms)
+✔ combined build preserves v62 motion bytes/content and the owner-selected v27 shell (26.916ms)
+▶ current v60 static checks accept the site and reject isolated fixture mutations
+  ✔ accepted package passes without HTTP or historical backups (187.8068ms)
+  ✔ missing card (74.0098ms)
+  ✔ reordered cards (60.6638ms)
+  ✔ duplicate DOM id (55.2904ms)
+  ✔ missing label target (67.8088ms)
+  ✔ label targets another card (45.9294ms)
+  ✔ label target is not h2 (49.9122ms)
+  ✔ empty title (46.875ms)
+  ✔ empty category (49.7662ms)
+  ✔ missing description (44.1724ms)
+  ✔ empty description (48.2101ms)
+  ✔ missing image (55.4761ms)
+  ✔ empty image src (50.1861ms)
+  ✔ wrong image mapping (51.9831ms)
+  ✔ wrong natural dimension attribute (54.1169ms)
+  ✔ missing image file (57.637ms)
+  ✔ wrong PNG dimensions (49.5059ms)
+  ✔ wrong approved image hash (57.0701ms)
+  ✔ wrong section order (45.0917ms)
+  ✔ nested rather than sequential section (16.1291ms)
+  ✔ duplicate Works CSS hook (14.1017ms)
+  ✔ duplicate Works JS hook (67.79ms)
+  ✔ wrong homepage stylesheet entry (14.8116ms)
+  ✔ stale compiled stylesheet (45.2756ms)
+  ✔ missing compiled stylesheet (42.3327ms)
+  ✔ Works script before dependencies (71.4954ms)
+  ✔ async Works script (63.7262ms)
+  ✔ duplicate vendor URL alias (63.2056ms)
+  ✔ second external library copy (66.1169ms)
+  ✔ second Lenis constructor (93.9722ms)
+  ✔ missing Lenis constructor (89.3636ms)
+  ✔ missing local CSS resource (20.4594ms)
+  ✔ malformed nested markup (13.259ms)
+  ✔ removed prototype category qualification (63.905ms)
+  ✔ removed prototype description qualification (45.7062ms)
+  ✔ removed demo-data qualification (52.2189ms)
+  ✔ removed concept qualification (55.7012ms)
+  ✔ dangling services navigation link (50.2785ms)
+  ✔ dangling encoded navigation link (46.5885ms)
+  ✔ malformed percent-encoded fragment (53.9239ms)
+  ✔ empty fragment (44.7881ms)
+  ✔ b2b nonempty title copy changes (49.2932ms)
+  ✔ b2b nonempty category copy changes (44.9608ms)
+  ✔ b2b nonempty description copy changes (48.0563ms)
+  ✔ flowers nonempty title copy changes (48.9788ms)
+  ✔ flowers nonempty category copy changes (50.843ms)
+  ✔ flowers nonempty description copy changes (45.3065ms)
+  ✔ crm nonempty title copy changes (49.2632ms)
+  ✔ crm nonempty category copy changes (47.4972ms)
+  ✔ crm nonempty description copy changes (52.6687ms)
+  ✔ beauty nonempty title copy changes (62.9447ms)
+  ✔ beauty nonempty category copy changes (49.2574ms)
+  ✔ beauty nonempty description copy changes (46.1325ms)
+  ✔ prostor nonempty title copy changes (52.1657ms)
+  ✔ prostor nonempty category copy changes (48.231ms)
+  ✔ prostor nonempty description copy changes (48.3722ms)
+  ✔ metal nonempty title copy changes (50.6604ms)
+  ✔ metal nonempty category copy changes (54.9209ms)
+  ✔ metal nonempty description copy changes (49.9509ms)
+  ✔ b2b image hash differs with same byte length (42.9517ms)
+  ✔ flowers image hash differs with same byte length (47.1266ms)
+  ✔ crm image hash differs with same byte length (50.59ms)
+  ✔ beauty image hash differs with same byte length (47.3166ms)
+  ✔ prostor image hash differs with same byte length (49.3287ms)
+  ✔ metal image hash differs with same byte length (53.5233ms)
+  ✔ whitespace, attribute quoting and nested inline text remain valid (73.21ms)
+PASS: 12 image/viewport combinations, 60 crop states, zero-size guards.
+  ✔ project check works offline from an unrelated cwd (65.4716ms)
+  ✔ asset manifest hash rejects same-length mutation (69.2593ms)
+  ✔ vendor manifest hash rejects same-length mutation (121.9655ms)
+  ✔ explicit HTTP verifies bytes and rejects stale content / 404 (60.9937ms)
+✔ current v60 static checks accept the site and reject isolated fixture mutations (4040.4233ms)
+ℹ tests 122
+ℹ suites 0
+ℹ pass 122
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4253.0512
+PASS: 395 local links across 21 current/historical Markdown documents target supplied Git files.
+PASS: complete supported verification suite.
