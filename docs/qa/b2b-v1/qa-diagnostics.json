@@ -1,0 +1,193 @@
+{
+  "initialRun": {
+    "pass": false,
+    "passed": 559,
+    "total": 561,
+    "failedChecks": [
+      {
+        "name": "1024-no-preference carousel hover stays stationary",
+        "pass": false
+      },
+      {
+        "name": "no JavaScript/network/HTTP errors",
+        "pass": false,
+        "data": [
+          {
+            "label": "1440-reduce",
+            "type": "network",
+            "url": "http://127.0.0.1:4176/assets/works/prostor-feature-wide.png",
+            "error": "net::ERR_ABORTED"
+          },
+          {
+            "label": "1440-reduce",
+            "type": "network",
+            "url": "http://127.0.0.1:4176/assets/works/metal-feature-wide.png",
+            "error": "net::ERR_ABORTED"
+          },
+          {
+            "label": "1440-reduce",
+            "type": "network",
+            "url": "http://127.0.0.1:4176/js/footer-waves.js",
+            "error": "net::ERR_NO_BUFFER_SPACE"
+          },
+          {
+            "label": "1440-reduce",
+            "type": "console",
+            "message": "Failed to load resource: net::ERR_NO_BUFFER_SPACE"
+          }
+        ]
+      }
+    ],
+    "errors": [
+      {
+        "label": "1440-reduce",
+        "type": "network",
+        "url": "http://127.0.0.1:4176/assets/works/prostor-feature-wide.png",
+        "error": "net::ERR_ABORTED"
+      },
+      {
+        "label": "1440-reduce",
+        "type": "network",
+        "url": "http://127.0.0.1:4176/assets/works/metal-feature-wide.png",
+        "error": "net::ERR_ABORTED"
+      },
+      {
+        "label": "1440-reduce",
+        "type": "network",
+        "url": "http://127.0.0.1:4176/js/footer-waves.js",
+        "error": "net::ERR_NO_BUFFER_SPACE"
+      },
+      {
+        "label": "1440-reduce",
+        "type": "console",
+        "message": "Failed to load resource: net::ERR_NO_BUFFER_SPACE"
+      }
+    ]
+  },
+  "hoverControl": [
+    {
+      "label": "b2b",
+      "settle": 250,
+      "before": {
+        "x": 528,
+        "y": 533.7973022460938,
+        "scrollY": 4618,
+        "arrowTransform": "none",
+        "controlsTransform": "matrix(1, 0, 0, 1, 0, 1.8754)"
+      },
+      "after": {
+        "x": 528,
+        "y": 982.3341674804688,
+        "scrollY": 4178,
+        "arrowTransform": "none",
+        "controlsTransform": "matrix(1, 0, 0, 1, 0, 10.4123)"
+      }
+    },
+    {
+      "label": "b2b",
+      "settle": 1500,
+      "before": {
+        "x": 528,
+        "y": 531.921875,
+        "scrollY": 4618,
+        "arrowTransform": "none",
+        "controlsTransform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      "after": {
+        "x": 528,
+        "y": 531.921875,
+        "scrollY": 4618,
+        "arrowTransform": "none",
+        "controlsTransform": "matrix(1, 0, 0, 1, 0, 0)"
+      }
+    },
+    {
+      "label": "b2b",
+      "settle": 2000,
+      "before": {
+        "x": 528,
+        "y": 531.921875,
+        "scrollY": 4618,
+        "arrowTransform": "none",
+        "controlsTransform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      "after": {
+        "x": 528,
+        "y": 531.921875,
+        "scrollY": 4618,
+        "arrowTransform": "none",
+        "controlsTransform": "matrix(1, 0, 0, 1, 0, 0)"
+      }
+    },
+    {
+      "label": "baseline-beauty",
+      "settle": 250,
+      "before": {
+        "x": 528,
+        "y": 533.0545043945312,
+        "scrollY": 4106,
+        "arrowTransform": "none",
+        "controlsTransform": "matrix(1, 0, 0, 1, 0, 1.6326)"
+      },
+      "after": {
+        "x": 528,
+        "y": 982.8364868164062,
+        "scrollY": 3665,
+        "arrowTransform": "none",
+        "controlsTransform": "matrix(1, 0, 0, 1, 0, 10.4146)"
+      }
+    },
+    {
+      "label": "baseline-beauty",
+      "settle": 1500,
+      "before": {
+        "x": 528,
+        "y": 531.421875,
+        "scrollY": 4106,
+        "arrowTransform": "none",
+        "controlsTransform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      "after": {
+        "x": 528,
+        "y": 531.421875,
+        "scrollY": 4106,
+        "arrowTransform": "none",
+        "controlsTransform": "matrix(1, 0, 0, 1, 0, 0)"
+      }
+    },
+    {
+      "label": "baseline-beauty",
+      "settle": 2000,
+      "before": {
+        "x": 528,
+        "y": 531.421875,
+        "scrollY": 4106,
+        "arrowTransform": "none",
+        "controlsTransform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      "after": {
+        "x": 528,
+        "y": 531.421875,
+        "scrollY": 4106,
+        "arrowTransform": "none",
+        "controlsTransform": "matrix(1, 0, 0, 1, 0, 0)"
+      }
+    }
+  ],
+  "resolution": "Wait for the shared scroll-reveal scrub to finish before hover measurement. Use sequential Node QA HTTP serving the same project bytes. Runtime CSS/JS remain unchanged.",
+  "finalRun": {
+    "base": "http://127.0.0.1:4198/",
+    "pass": true,
+    "passed": 561,
+    "total": 561,
+    "errors": []
+  },
+  "lfExport": {
+    "buildCheck": true,
+    "b2bAndProstorTests": {
+      "passed": 11,
+      "failed": 0
+    },
+    "source": "Git index export with LF; no worktree"
+  }
+}
