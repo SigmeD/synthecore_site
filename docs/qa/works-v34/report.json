@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-26T21:54:45.006Z",
+  "date": "2026-10-26T22:15:48.289Z",
   "base": "http://127.0.0.1:4176/",
   "baseline": "91235aa239d49effb90bde72409d6f6f5db49e7b",
   "checks": [
@@ -355,11 +355,11 @@
       }
     },
     {
-      "name": "1920x1080 last card half-viewport hold then natural release",
+      "name": "1920x1080 last card 30svh hold then natural release",
       "pass": true,
       "data": {
         "pinEnd": 7734,
-        "holdDistance": 540,
+        "holdDistance": 324,
         "heldTop": 0,
         "releasedTop": -79.609375
       }
@@ -716,11 +716,11 @@
       }
     },
     {
-      "name": "1440x900 last card half-viewport hold then natural release",
+      "name": "1440x900 last card 30svh hold then natural release",
       "pass": true,
       "data": {
         "pinEnd": 6567,
-        "holdDistance": 450,
+        "holdDistance": 270,
         "heldTop": 0,
         "releasedTop": -79.609375
       }
@@ -1077,11 +1077,11 @@
       }
     },
     {
-      "name": "1280x800 last card half-viewport hold then natural release",
+      "name": "1280x800 last card 30svh hold then natural release",
       "pass": true,
       "data": {
         "pinEnd": 5946,
-        "holdDistance": 400,
+        "holdDistance": 240,
         "heldTop": 0,
         "releasedTop": -79.609375
       }
@@ -1438,13 +1438,13 @@
       }
     },
     {
-      "name": "390x844 last card half-viewport hold then natural release",
+      "name": "390x844 last card 30svh hold then natural release",
       "pass": true,
       "data": {
         "pinEnd": 5220,
-        "holdDistance": 422,
-        "heldTop": -0.484375,
-        "releasedTop": -80.484375
+        "holdDistance": 253.2,
+        "heldTop": -0.296875,
+        "releasedTop": -80.296875
       }
     },
     {
@@ -3111,11 +3111,11 @@
       }
     },
     {
-      "name": "classic-1440x900 last card half-viewport hold then natural release",
+      "name": "classic-1440x900 last card 30svh hold then natural release",
       "pass": true,
       "data": {
         "pinEnd": 6567,
-        "holdDistance": 450,
+        "holdDistance": 270,
         "heldTop": 0,
         "releasedTop": -79.609375
       }
@@ -3482,13 +3482,13 @@
       }
     },
     {
-      "name": "classic-390x844 last card half-viewport hold then natural release",
+      "name": "classic-390x844 last card 30svh hold then natural release",
       "pass": true,
       "data": {
         "pinEnd": 5220,
-        "holdDistance": 422,
-        "heldTop": -0.484375,
-        "releasedTop": -80.484375
+        "holdDistance": 253.2,
+        "heldTop": -0.296875,
+        "releasedTop": -80.296875
       }
     },
     {
@@ -7847,7 +7847,7 @@
       "data": {
         "pass": true,
         "elements": 44,
-        "maxGeometryDelta": 0.078,
+        "maxGeometryDelta": 0.109,
         "styleDifferences": 0,
         "contentDifferences": 0
       }
@@ -7883,32 +7883,32 @@
         "cards": [
           {
             "id": "b2b",
-            "top": 1140,
+            "top": 1125,
             "scale": 0.885
           },
           {
             "id": "flowers",
-            "top": 2040,
+            "top": 2025,
             "scale": 0.885
           },
           {
             "id": "crm",
-            "top": 2040,
+            "top": 2025,
             "scale": 0.885
           },
           {
             "id": "beauty",
-            "top": 2040,
+            "top": 2025,
             "scale": 0.885
           },
           {
             "id": "prostor",
-            "top": 2040,
+            "top": 2025,
             "scale": 0.885
           },
           {
             "id": "metal",
-            "top": 2040,
+            "top": 2025,
             "scale": 0.885
           }
         ]
@@ -8219,11 +8219,11 @@
       }
     },
     {
-      "name": "standalone-1440x900 last card half-viewport hold then natural release",
+      "name": "standalone-1440x900 last card 30svh hold then natural release",
       "pass": true,
       "data": {
         "pinEnd": 6567,
-        "holdDistance": 450,
+        "holdDistance": 270,
         "heldTop": 0,
         "releasedTop": -79.609375
       }
@@ -8243,7 +8243,7 @@
         "mode": "single-pinned-timeline",
         "itemCount": 6,
         "progress": 0,
-        "firstEntryProgress": 0.10071090047393365,
+        "firstEntryProgress": 0.09360189573459715,
         "firstEntryStart": 494,
         "firstEntryEnd": 1338,
         "pinStart": 1338,
@@ -8252,32 +8252,32 @@
         "cards": [
           {
             "id": "b2b",
-            "top": 759,
-            "scale": 0.9101
+            "top": 765,
+            "scale": 0.9094
           },
           {
             "id": "flowers",
-            "top": 1603,
+            "top": 1609,
             "scale": 0.9
           },
           {
             "id": "crm",
-            "top": 1603,
+            "top": 1609,
             "scale": 0.9
           },
           {
             "id": "beauty",
-            "top": 1603,
+            "top": 1609,
             "scale": 0.9
           },
           {
             "id": "prostor",
-            "top": 1603,
+            "top": 1609,
             "scale": 0.9
           },
           {
             "id": "metal",
-            "top": 1603,
+            "top": 1609,
             "scale": 0.9
           }
         ]
@@ -8588,13 +8588,13 @@
       }
     },
     {
-      "name": "standalone-390x844 last card half-viewport hold then natural release",
+      "name": "standalone-390x844 last card 30svh hold then natural release",
       "pass": true,
       "data": {
         "pinEnd": 5220,
-        "holdDistance": 422,
-        "heldTop": -0.484375,
-        "releasedTop": -80.484375
+        "holdDistance": 253.2,
+        "heldTop": -0.296875,
+        "releasedTop": -80.296875
       }
     },
     {
@@ -10309,8 +10309,8 @@
         }
       },
       "hold": {
-        "heldTop": -0.484375,
-        "releasedTop": -80.484375
+        "heldTop": -0.296875,
+        "releasedTop": -80.296875
       }
     },
     {
@@ -11161,8 +11161,8 @@
         }
       },
       "hold": {
-        "heldTop": -0.484375,
-        "releasedTop": -80.484375
+        "heldTop": -0.296875,
+        "releasedTop": -80.296875
       }
     }
   ],
@@ -17637,7 +17637,7 @@
       "selector": "#contact",
       "pass": true,
       "elements": 44,
-      "maxGeometryDelta": 0.078,
+      "maxGeometryDelta": 0.109,
       "styleDifferences": 0,
       "contentDifferences": 0
     }
@@ -17665,32 +17665,32 @@
         "cards": [
           {
             "id": "b2b",
-            "top": 1140,
+            "top": 1125,
             "scale": 0.885
           },
           {
             "id": "flowers",
-            "top": 2040,
+            "top": 2025,
             "scale": 0.885
           },
           {
             "id": "crm",
-            "top": 2040,
+            "top": 2025,
             "scale": 0.885
           },
           {
             "id": "beauty",
-            "top": 2040,
+            "top": 2025,
             "scale": 0.885
           },
           {
             "id": "prostor",
-            "top": 2040,
+            "top": 2025,
             "scale": 0.885
           },
           {
             "id": "metal",
-            "top": 2040,
+            "top": 2025,
             "scale": 0.885
           }
         ]
@@ -18082,7 +18082,7 @@
         "mode": "single-pinned-timeline",
         "itemCount": 6,
         "progress": 0,
-        "firstEntryProgress": 0.10071090047393365,
+        "firstEntryProgress": 0.09360189573459715,
         "firstEntryStart": 494,
         "firstEntryEnd": 1338,
         "pinStart": 1338,
@@ -18091,32 +18091,32 @@
         "cards": [
           {
             "id": "b2b",
-            "top": 759,
-            "scale": 0.9101
+            "top": 765,
+            "scale": 0.9094
           },
           {
             "id": "flowers",
-            "top": 1603,
+            "top": 1609,
             "scale": 0.9
           },
           {
             "id": "crm",
-            "top": 1603,
+            "top": 1609,
             "scale": 0.9
           },
           {
             "id": "beauty",
-            "top": 1603,
+            "top": 1609,
             "scale": 0.9
           },
           {
             "id": "prostor",
-            "top": 1603,
+            "top": 1609,
             "scale": 0.9
           },
           {
             "id": "metal",
-            "top": 1603,
+            "top": 1609,
             "scale": 0.9
           }
         ]
@@ -18498,8 +18498,8 @@
         }
       },
       "hold": {
-        "heldTop": -0.484375,
-        "releasedTop": -80.484375
+        "heldTop": -0.296875,
+        "releasedTop": -80.296875
       }
     }
   ],
