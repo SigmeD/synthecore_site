@@ -12,6 +12,8 @@
       --pill-shadow:0 18px 45px rgba(33,53,79,.10),0 2px 10px rgba(20,37,54,.06);
       --ease:cubic-bezier(.25,.8,.24,1);
       --hero-edge:clamp(12px,1vw,18px);
+      --hero-surface-height:clamp(620px,74.2svh,968px);
+      --hero-surface-radius:clamp(20px,1.5vw,30px);
       --header-offset:clamp(14px,.8vw,20px);
       --header-top:calc(var(--hero-edge) + var(--header-offset));
       --hero-strong:23,30,35;
@@ -78,7 +80,7 @@
       z-index:0;
       display:flex;flex-direction:column;
       background:linear-gradient(177deg,#f9fcff 0%,#ecf5ff 29%,#d6e9ff 78%,#c9e1ff 100%);
-      border-radius:clamp(20px,1.5vw,30px);
+      border-radius:var(--hero-surface-radius);
       box-shadow:0 14px 40px rgba(24,46,69,.08), inset 0 0 0 1px rgba(255,255,255,.55);
       isolation:isolate;
     }
@@ -195,8 +197,8 @@
       .floating-header.is-scrolled{top:var(--header-top);transform:translateX(-50%) translateY(0)}
       .brand-name{font-size:21px}.brand-note{font-size:8px}
       
-      :root{--hero-edge:10px;--header-offset:10px}
-      .hero{border-radius:18px;min-height:100svh}
+      :root{--hero-edge:10px;--header-offset:10px;--hero-surface-radius:18px}
+      .hero{min-height:100svh}
       .hero-head{padding-top:135px;text-align:left;width:calc(100% - 40px);padding-left:0;padding-right:0}
 
       h1{font-size:clamp(43px,11.2vw,62px);line-height:1.02}
@@ -900,7 +902,7 @@
   display:block;background:#fff;box-sizing:border-box;
 }
 #imageScrollSticky > .hero{
-  width:100%;height:clamp(620px,74.2svh,968px);min-height:0;
+  width:100%;height:var(--hero-surface-height);min-height:0;
   background:linear-gradient(177deg,#f9fcff 0%,#ecf5ff 29%,#d6e9ff 78%,#c9e1ff 100%);
   box-shadow:none;
 }
@@ -935,8 +937,7 @@
   :root {--hero-top-pad:max(78px,calc(var(--header-offset) + 88px));--hero-bottom-pad:24px;--hero-row-gap:32px;}
 }
 @media (min-width:851px) and (max-height:790px){
-  :root {--hero-top-pad:max(72px,calc(var(--header-offset) + 88px));--hero-bottom-pad:20px;--hero-row-gap:22px;}
-  #imageScrollSticky > .hero{height:max(600px,92svh)}
+  :root {--hero-top-pad:max(72px,calc(var(--header-offset) + 88px));--hero-bottom-pad:20px;--hero-row-gap:22px;--hero-surface-height:max(600px,92svh);}
   #top .hero h1{font-size:clamp(43px,3vw,62px)}
 }
 /* Avoid a 4K-sized photo on a compact screen even when width is large. */
@@ -944,9 +945,10 @@
   #top .hero .hero-stage .photo{max-height:27svh}
 }
 @media (max-width:850px){
+  :root {--hero-surface-height:100svh;}
   #top.image-scroll-scene{height:auto!important;min-height:0}
   #imageScrollSticky.image-scroll-sticky{position:relative;height:auto;overflow:visible;isolation:auto}
-  #imageScrollSticky > .hero{height:auto;min-height:100svh}
+  #imageScrollSticky > .hero{height:auto;min-height:var(--hero-surface-height)}
   #top .hero > .hero-content{display:contents;width:auto;height:auto;padding:0}
 
   #audiences.audience-section{padding:76px 24px 100px}
@@ -1133,15 +1135,10 @@ html.lenis body {
    Reduced-motion / no-JS: all six Works cards render in ordinary flow. */
 .sc-services-anchor {height:0;scroll-margin-top:20px}
 .sc-works {
-  --works-gutter:clamp(14px,1vw,28px);
-  --works-padding:clamp(10px,0.8vw,16px);
-  --works-radius:clamp(17px,1.25vw,28px);
-  --works-aspect:2.75268817;
-  --works-width:min(
-    calc(100vw - 2 * var(--works-gutter) - 2 * var(--works-padding)),
-    calc((100svh - 2 * var(--works-padding) - 24px) * var(--works-aspect))
-  );
-  --works-height:calc(var(--works-width) / var(--works-aspect));
+  --works-gutter:var(--hero-edge);
+  --works-radius:var(--hero-surface-radius);
+  --works-height:var(--hero-used-height,var(--hero-surface-height));
+  --works-hold:50svh;
   position:relative;
   width:100%;background:#fff;
   isolation:isolate;
@@ -1151,17 +1148,17 @@ html.lenis body {
 /* Scene height matches the visible frame. The stack MUST NOT clip: GSAP starts
    incoming cards below the viewport (y: innerHeight), not the stage. Keeping
    overflow visible preserves the bottom-of-screen entry on wide screens. */
-.sc-works--timeline {height:calc(var(--works-height) + 2 * var(--works-padding))}
+.sc-works--timeline {height:var(--works-height)}
 .sc-works--timeline .sc-works-stack {height:100%;overflow:visible;display:block}
 .sc-works--timeline .sc-work-item {
   position:absolute;top:0;left:var(--works-gutter);right:var(--works-gutter);
   width:auto;height:100%;min-height:0;display:block;
-  margin:0;padding:var(--works-padding);will-change:transform;
+  margin:0;padding:0;will-change:transform;
 }
 .sc-works--timeline .sc-work-item {z-index:var(--sc-work-layer,1)}
 .sc-work-frame {
   position:relative;display:block;overflow:hidden;
-  width:var(--works-width);height:var(--works-height);
+  width:100%;max-width:100%;height:var(--works-height);
   margin-inline:auto;border-radius:var(--works-radius);
   isolation:isolate;background:#d5d8db;
   transform:scale(1);transform-origin:50% 0%;
@@ -1173,7 +1170,7 @@ html.lenis body {
 .sc-works:not(.sc-works--timeline) .sc-work-item{
   position:relative;top:auto;z-index:auto;width:calc(100% - 2*var(--works-gutter));
   height:auto;min-height:var(--works-height);flex:none;
-  margin:0 auto;padding:var(--works-padding);pointer-events:auto;
+  margin:0 auto;padding:0;pointer-events:auto;
 }
 .sc-work-media {position:absolute;inset:0;pointer-events:none}
 .sc-work-media {z-index:1;overflow:hidden}
@@ -1229,14 +1226,12 @@ html.lenis body {
 /* Video assets can replace images without changing the pinned-stage layout. */
 .sc-work-media video{display:block;width:100%;height:100%;object-fit:cover}
 @media(max-width:850px){
-  .sc-works{--works-gutter:0px;--works-padding:10px;--works-width:calc(100vw - 20px);--works-height:calc(87svh - 20px)}
   .sc-work-media img{object-position:59% center}
   .sc-work-content{left:22px;bottom:24px;max-width:calc(100% - 44px);padding:24px 23px;transform:none}
   .sc-work-content__title{font-size:clamp(30px,6vw,46px)}
   .sc-work-content__description{font-size:15px}
 }
 @media(max-width:480px){
-  .sc-works{--works-height:calc(82svh - 20px);--works-radius:20px}
   .sc-work-media img{object-position:60% center}
   .sc-work-content{left:19px;bottom:21px;max-width:calc(100% - 38px);padding:20px 19px;border-radius:21px;transform:none}
   .sc-work-content__title{font-size:clamp(28px,7vw,35px);margin-bottom:9px}
@@ -2079,11 +2074,11 @@ body {font-family:var(--sc61-font);font-size:var(--sc61-body);line-height:1.5;}
   position:sticky;top:0;z-index:1;
 }
 .sc-works.sc-works--timeline {
-  height:calc(var(--works-height) + 2 * var(--works-padding) + var(--sc-works-scroll-length,0px));
+  height:calc(var(--works-height) + var(--sc-works-scroll-length,0px) + var(--works-hold));
 }
 .sc-works.sc-works--timeline .sc-works-stack {
   position:sticky;top:0;
-  height:calc(var(--works-height) + 2 * var(--works-padding));
+  height:var(--works-height);
 }
 .sc-services.sc-services--pinned {
   height:calc(100svh + var(--sc-services-scroll-length,0px));

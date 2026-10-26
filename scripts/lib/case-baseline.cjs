@@ -1,10 +1,20 @@
 'use strict';
 // Historical case snapshots used a Beauty-only registry. Restore only exact
 // later native anchors; keep all content and the preexisting Beauty link intact.
-const assert=require('node:assert/strict'),path=require('node:path');
+const assert=require('node:assert/strict'),path=require('node:path'),fs=require('node:fs');
 const {casePages}=require('./case-page.cjs');
 const {homeLink}=require('./case-links.cjs');
 const {restoreDiscussionLinks}=require('./approved-discussion-links.cjs');
+const {restoreWorksGeometry:restoreSourceGeometry}=require('./approved-works-geometry.cjs');
+const {BUNDLE_PATH,buildHomeCSS,verifyHomeCSSSnapshot}=require('./home-styles.cjs');
+function restoreWorksGeometry(file,bytes){
+ if(file!==BUNDLE_PATH)return restoreSourceGeometry(file,bytes);
+ // A generated artifact is accepted only when it matches its actual sources.
+ // Recompile those same sources after exact raw source reversal for old SHA.
+ const root=path.resolve(__dirname,'../..'),readFile=name=>name===file?bytes:fs.readFileSync(path.join(root,name));
+ verifyHomeCSSSnapshot(root,readFile);
+ return Buffer.from(buildHomeCSS(root,{readFile:name=>restoreSourceGeometry(name,readFile(name))}).css);
+}
 function restoreRegisteredCaseLinks(file,html,cases){
  html=restoreDiscussionLinks(file,html);
  const home=file==='index.html';
@@ -28,4 +38,4 @@ function restoreRegisteredCaseLinks(file,html,cases){
 function restoreLaterCaseLinks(html,file){
  return restoreRegisteredCaseLinks(file,html,casePages(path.resolve(__dirname,'../..')).filter(c=>c.catalog_id!=='beauty'));
 }
-module.exports={restoreLaterCaseLinks,restoreRegisteredCaseLinks};
+module.exports={restoreLaterCaseLinks,restoreRegisteredCaseLinks,restoreWorksGeometry};

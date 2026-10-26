@@ -21,6 +21,17 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   const smallPhone = window.matchMedia('(max-width: 480px)');
   const glassMotion = window.matchMedia('(min-width: 851px)');
+  const hero = document.querySelector('#imageScrollSticky > .hero');
+  let usedHeight = 0;
+  let surfaceFrame = null;
+  let resizeFrame = null;
+  function syncSurfaceHeight() {
+    const height = hero?.getBoundingClientRect().height;
+    if (!(height > 0) || Math.abs(height - usedHeight) < 0.01) return false;
+    usedHeight = height;
+    section.style.setProperty('--hero-used-height', height + 'px');
+    return true;
+  }
   let timeline = null;
   let entrance = null;
   let mode = 'initial';
@@ -49,6 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function setup() {
     reset();
+    syncSurfaceHeight();
     if (!gsap || !ScrollTrigger || reduced.matches || items.length < 2 || frames.some(f => !f) || !stack) {
       mode = reduced.matches ? 'reduced-motion' : 'fallback';
       return;
@@ -117,14 +129,23 @@ document.addEventListener('DOMContentLoaded', () => {
   // remove them. Rebuild when the 850px/480px motion branches change.
   glassMotion.addEventListener('change', setup);
   smallPhone.addEventListener('change', setup);
-  // On resize GSAP invalidates function-based geometry; no manual spacers.
+  // Rebuild the same timeline after viewport changes, dropping cached startAt
+  // values for reverse traversal as well as untouched incoming cards.
   window.addEventListener('resize',()=>{
-    if(timeline){
-      section.style.setProperty('--sc-works-scroll-length', `${Math.round((items.length-1)*innerHeight*motion.scrollScreensPerCard)}px`);
-      window.SyntheCoreMotion?.requestRefresh();
-    }
+    if (resizeFrame !== null) cancelAnimationFrame(resizeFrame);
+    resizeFrame = requestAnimationFrame(()=>{
+      resizeFrame = null;
+      setup();
+    });
   },{passive:true});
   window.addEventListener('load',()=>{if(timeline)window.SyntheCoreMotion?.requestRefresh();},{once:true});
+  if (hero && 'ResizeObserver' in window) new ResizeObserver(()=>{
+    if (surfaceFrame !== null) return;
+    surfaceFrame = requestAnimationFrame(()=>{
+      surfaceFrame = null;
+      if (syncSurfaceHeight()) (window.SyntheCoreMotion?.requestRefresh || (()=>ScrollTrigger?.refresh()))();
+    });
+  }).observe(hero);
   setup();
   window.__synthecoreWorksQA = {
     getState:()=>({

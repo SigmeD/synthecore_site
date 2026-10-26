@@ -61,13 +61,13 @@ test('all fourteen imported images retain approved bytes and seven interfaces ar
  for(const image of audit.images){const bytes=fs.readFileSync(path.join(root,image.destination));assert.equal(bytes.length,image.bytes);assert.equal(hash(bytes),image.sha256)}
  for(const field of ['src','full_src'])assert.equal(new Set(data.screens.map(s=>hash(fs.readFileSync(path.join(root,s[field].slice(1)))))).size,7);
 });
-test('historical runtime/pages preserve their SHA with only registered anchors and v27 text EOL differences',()=>{
+test('historical runtime/pages preserve SHA with exact anchors, v34 geometry reversal and v27 text EOL differences',()=>{
  const audit=JSON.parse(read('docs/qa/prostor-v1/source-audit.json')),hash=bytes=>crypto.createHash('sha256').update(bytes).digest('hex');
- const {restoreRegisteredCaseLinks}=require('./lib/case-baseline.cjs');
+ const {restoreRegisteredCaseLinks,restoreWorksGeometry}=require('./lib/case-baseline.cjs');
  const later=require('./lib/case-page.cjs').casePages(root).filter(c=>!['beauty','flowers','metal'].includes(c.catalog_id));
  const contract=JSON.parse(read('docs/V62_ON_V27_SOURCES.json'));
  for(const [file,expected]of Object.entries(audit.baselineFiles)){
-  let bytes=fs.readFileSync(path.join(root,file));
+  let bytes=restoreWorksGeometry(file,fs.readFileSync(path.join(root,file)));
   if(file.endsWith('.html')){
    bytes=Buffer.from(restoreRegisteredCaseLinks(file,bytes.toString('utf8'),later));
   }

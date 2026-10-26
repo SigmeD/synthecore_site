@@ -9,6 +9,8 @@
       --pill-shadow:0 18px 45px rgba(33,53,79,.10),0 2px 10px rgba(20,37,54,.06);
       --ease:cubic-bezier(.25,.8,.24,1);
       --hero-edge:clamp(12px,1vw,18px);
+      --hero-surface-height:clamp(620px,74.2svh,968px);
+      --hero-surface-radius:clamp(20px,1.5vw,30px);
       --header-offset:clamp(14px,.8vw,20px);
       --header-top:calc(var(--hero-edge) + var(--header-offset));
       --hero-strong:23,30,35;
@@ -75,7 +77,7 @@
       z-index:0;
       display:flex;flex-direction:column;
       background:linear-gradient(177deg,#f9fcff 0%,#ecf5ff 29%,#d6e9ff 78%,#c9e1ff 100%);
-      border-radius:clamp(20px,1.5vw,30px);
+      border-radius:var(--hero-surface-radius);
       box-shadow:0 14px 40px rgba(24,46,69,.08), inset 0 0 0 1px rgba(255,255,255,.55);
       isolation:isolate;
     }
@@ -192,8 +194,8 @@
       .floating-header.is-scrolled{top:var(--header-top);transform:translateX(-50%) translateY(0)}
       .brand-name{font-size:21px}.brand-note{font-size:8px}
       
-      :root{--hero-edge:10px;--header-offset:10px}
-      .hero{border-radius:18px;min-height:100svh}
+      :root{--hero-edge:10px;--header-offset:10px;--hero-surface-radius:18px}
+      .hero{min-height:100svh}
       .hero-head{padding-top:135px;text-align:left;width:calc(100% - 40px);padding-left:0;padding-right:0}
 
       h1{font-size:clamp(43px,11.2vw,62px);line-height:1.02}
@@ -897,7 +899,7 @@
   display:block;background:#fff;box-sizing:border-box;
 }
 #imageScrollSticky > .hero{
-  width:100%;height:clamp(620px,74.2svh,968px);min-height:0;
+  width:100%;height:var(--hero-surface-height);min-height:0;
   background:linear-gradient(177deg,#f9fcff 0%,#ecf5ff 29%,#d6e9ff 78%,#c9e1ff 100%);
   box-shadow:none;
 }
@@ -932,8 +934,7 @@
   :root {--hero-top-pad:max(78px,calc(var(--header-offset) + 88px));--hero-bottom-pad:24px;--hero-row-gap:32px;}
 }
 @media (min-width:851px) and (max-height:790px){
-  :root {--hero-top-pad:max(72px,calc(var(--header-offset) + 88px));--hero-bottom-pad:20px;--hero-row-gap:22px;}
-  #imageScrollSticky > .hero{height:max(600px,92svh)}
+  :root {--hero-top-pad:max(72px,calc(var(--header-offset) + 88px));--hero-bottom-pad:20px;--hero-row-gap:22px;--hero-surface-height:max(600px,92svh);}
   #top .hero h1{font-size:clamp(43px,3vw,62px)}
 }
 /* Avoid a 4K-sized photo on a compact screen even when width is large. */
@@ -941,9 +942,10 @@
   #top .hero .hero-stage .photo{max-height:27svh}
 }
 @media (max-width:850px){
+  :root {--hero-surface-height:100svh;}
   #top.image-scroll-scene{height:auto!important;min-height:0}
   #imageScrollSticky.image-scroll-sticky{position:relative;height:auto;overflow:visible;isolation:auto}
-  #imageScrollSticky > .hero{height:auto;min-height:100svh}
+  #imageScrollSticky > .hero{height:auto;min-height:var(--hero-surface-height)}
   #top .hero > .hero-content{display:contents;width:auto;height:auto;padding:0}
 
   #audiences.audience-section{padding:76px 24px 100px}

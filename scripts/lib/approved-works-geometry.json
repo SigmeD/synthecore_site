@@ -1,0 +1,110 @@
+{
+  "css/main.css": {
+    "originalSHA256": "83ce60a237a0c7d77baf7785f87596085e1557a376f3b1d3d6b3ec2463cb8674",
+    "eol": "\r\n",
+    "patches": [
+      [
+        "      --hero-edge:clamp(12px,1vw,18px);",
+        "      --hero-edge:clamp(12px,1vw,18px);\n      --hero-surface-height:clamp(620px,74.2svh,968px);\n      --hero-surface-radius:clamp(20px,1.5vw,30px);"
+      ],
+      [
+        "      border-radius:clamp(20px,1.5vw,30px);",
+        "      border-radius:var(--hero-surface-radius);"
+      ],
+      [
+        "      :root{--hero-edge:10px;--header-offset:10px}",
+        "      :root{--hero-edge:10px;--header-offset:10px;--hero-surface-radius:18px}"
+      ],
+      [
+        "      .hero{border-radius:18px;min-height:100svh}",
+        "      .hero{min-height:100svh}"
+      ],
+      [
+        "  width:100%;height:clamp(620px,74.2svh,968px);min-height:0;",
+        "  width:100%;height:var(--hero-surface-height);min-height:0;"
+      ],
+      [
+        "  :root {--hero-top-pad:max(72px,calc(var(--header-offset) + 88px));--hero-bottom-pad:20px;--hero-row-gap:22px;}\n  #imageScrollSticky > .hero{height:max(600px,92svh)}",
+        "  :root {--hero-top-pad:max(72px,calc(var(--header-offset) + 88px));--hero-bottom-pad:20px;--hero-row-gap:22px;--hero-surface-height:max(600px,92svh);}"
+      ],
+      [
+        "@media (max-width:850px){\n  #top.image-scroll-scene",
+        "@media (max-width:850px){\n  :root {--hero-surface-height:100svh;}\n  #top.image-scroll-scene"
+      ],
+      [
+        "  #imageScrollSticky > .hero{height:auto;min-height:100svh}",
+        "  #imageScrollSticky > .hero{height:auto;min-height:var(--hero-surface-height)}"
+      ]
+    ]
+  },
+  "css/works.css": {
+    "originalSHA256": "1b7ba5202fc4d74be087b9fe46816fb39ebdeda286304c1e010c6e5469234249",
+    "eol": "\r\n",
+    "patches": [
+      [
+        "  --works-gutter:clamp(14px,1vw,28px);\n  --works-padding:clamp(10px,0.8vw,16px);\n  --works-radius:clamp(17px,1.25vw,28px);\n  --works-aspect:2.75268817;\n  --works-width:min(\n    calc(100vw - 2 * var(--works-gutter) - 2 * var(--works-padding)),\n    calc((100svh - 2 * var(--works-padding) - 24px) * var(--works-aspect))\n  );\n  --works-height:calc(var(--works-width) / var(--works-aspect));",
+        "  --works-gutter:var(--hero-edge);\n  --works-radius:var(--hero-surface-radius);\n  --works-height:var(--hero-used-height,var(--hero-surface-height));\n  --works-hold:50svh;"
+      ],
+      [
+        ".sc-works--timeline {height:calc(var(--works-height) + 2 * var(--works-padding))}",
+        ".sc-works--timeline {height:var(--works-height)}"
+      ],
+      [
+        "  margin:0;padding:var(--works-padding);will-change:transform;",
+        "  margin:0;padding:0;will-change:transform;"
+      ],
+      [
+        "  width:var(--works-width);height:var(--works-height);",
+        "  width:100%;max-width:100%;height:var(--works-height);"
+      ],
+      [
+        "  margin:0 auto;padding:var(--works-padding);pointer-events:auto;",
+        "  margin:0 auto;padding:0;pointer-events:auto;"
+      ],
+      [
+        "  .sc-works{--works-gutter:0px;--works-padding:10px;--works-width:calc(100vw - 20px);--works-height:calc(87svh - 20px)}\n  .sc-work-media img{object-position:59% center}",
+        "  .sc-work-media img{object-position:59% center}"
+      ],
+      [
+        "  .sc-works{--works-height:calc(82svh - 20px);--works-radius:20px}\n  .sc-work-media img{object-position:60% center}",
+        "  .sc-work-media img{object-position:60% center}"
+      ]
+    ]
+  },
+  "css/sticky-handoff-v61.css": {
+    "originalSHA256": "b4e622b3cec6d97a8d55bcfe9aa5a47174e23dbe103ac1c473ac0c8de7e64326",
+    "eol": "\n",
+    "patches": [
+      [
+        "  height:calc(var(--works-height) + 2 * var(--works-padding) + var(--sc-works-scroll-length,0px));",
+        "  height:calc(var(--works-height) + var(--sc-works-scroll-length,0px) + var(--works-hold));"
+      ],
+      [
+        "  height:calc(var(--works-height) + 2 * var(--works-padding));",
+        "  height:var(--works-height);"
+      ]
+    ]
+  },
+  "js/works.js": {
+    "originalSHA256": "af9d9bc1c4a606972af477e0514e4fc168420fc45b27cd440c349922ca5ca67d",
+    "eol": "\n",
+    "patches": [
+      [
+        "  const glassMotion = window.matchMedia('(min-width: 851px)');\n",
+        "  const glassMotion = window.matchMedia('(min-width: 851px)');\n  const hero = document.querySelector('#imageScrollSticky > .hero');\n  let usedHeight = 0;\n  let surfaceFrame = null;\n  let resizeFrame = null;\n  function syncSurfaceHeight() {\n    const height = hero?.getBoundingClientRect().height;\n    if (!(height > 0) || Math.abs(height - usedHeight) < 0.01) return false;\n    usedHeight = height;\n    section.style.setProperty('--hero-used-height', height + 'px');\n    return true;\n  }\n"
+      ],
+      [
+        "  function setup() {\n    reset();",
+        "  function setup() {\n    reset();\n    syncSurfaceHeight();"
+      ],
+      [
+        "  // On resize GSAP invalidates function-based geometry; no manual spacers.\n  window.addEventListener('resize',()=>{\n    if(timeline){\n      section.style.setProperty('--sc-works-scroll-length', `${Math.round((items.length-1)*innerHeight*motion.scrollScreensPerCard)}px`);\n      window.SyntheCoreMotion?.requestRefresh();\n    }\n  },{passive:true});",
+        "  // Rebuild the same timeline after viewport changes, dropping cached startAt\n  // values for reverse traversal as well as untouched incoming cards.\n  window.addEventListener('resize',()=>{\n    if (resizeFrame !== null) cancelAnimationFrame(resizeFrame);\n    resizeFrame = requestAnimationFrame(()=>{\n      resizeFrame = null;\n      setup();\n    });\n  },{passive:true});"
+      ],
+      [
+        "  setup();\n  window.__synthecoreWorksQA",
+        "  if (hero && 'ResizeObserver' in window) new ResizeObserver(()=>{\n    if (surfaceFrame !== null) return;\n    surfaceFrame = requestAnimationFrame(()=>{\n      surfaceFrame = null;\n      if (syncSurfaceHeight()) (window.SyntheCoreMotion?.requestRefresh || (()=>ScrollTrigger?.refresh()))();\n    });\n  }).observe(hero);\n  setup();\n  window.__synthecoreWorksQA"
+      ]
+    ]
+  }
+}

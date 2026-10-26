@@ -47,11 +47,11 @@ test('B2B content and original images match the approved kit and preview',()=>{
   const url=new URL(value,'http://local/raboty/b2b/'),file=(url.pathname.endsWith('/')?url.pathname+'index.html':url.pathname).slice(1);assert.ok(fs.existsSync(file),value);if(url.hash)assert.ok(read(file).includes('id="'+url.hash.slice(1)+'"'),value);
  }
 });
-test('registered anchors added after the B2B baseline are the only changes to existing runtime/pages',()=>{
- const {restoreRegisteredCaseLinks}=require('./lib/case-baseline.cjs'),audit=JSON.parse(read('docs/qa/b2b-v1/source-audit.json'));
+test('B2B baseline preserves runtime/pages after exact registered anchors and v34 geometry reversal',()=>{
+ const {restoreRegisteredCaseLinks,restoreWorksGeometry}=require('./lib/case-baseline.cjs'),audit=JSON.parse(read('docs/qa/b2b-v1/source-audit.json'));
  const later=require('./lib/case-page.cjs').casePages(root).filter(c=>!audit.baselineCaseIds.includes(c.catalog_id));
  for(const [file,expected]of Object.entries(audit.baselineFiles)){
-  const bytes=fs.readFileSync(file);let restored=file.endsWith('.html')?Buffer.from(restoreRegisteredCaseLinks(file,bytes.toString('utf8'),later)):bytes;
+  const bytes=restoreWorksGeometry(file,fs.readFileSync(file));let restored=file.endsWith('.html')?Buffer.from(restoreRegisteredCaseLinks(file,bytes.toString('utf8'),later)):bytes;
   if(audit.baselineTextEol.includes(file))restored=Buffer.from(restored.toString('utf8').replace(/\r\n/g,'\n'));
   assert.equal(hash(restored),expected,file);
  }
