@@ -1138,7 +1138,7 @@ html.lenis body {
   --works-gutter:var(--hero-edge);
   --works-radius:var(--hero-surface-radius);
   --works-height:var(--hero-used-height,var(--hero-surface-height));
-  --works-hold:15svh;
+  --works-hold:0svh;
   position:relative;
   width:100%;background:#fff;
   isolation:isolate;

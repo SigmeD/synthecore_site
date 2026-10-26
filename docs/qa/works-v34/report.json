@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-26T22:20:55.543Z",
+  "date": "2026-10-26T22:27:15.389Z",
   "base": "http://127.0.0.1:4176/",
   "baseline": "91235aa239d49effb90bde72409d6f6f5db49e7b",
   "checks": [
@@ -355,11 +355,11 @@
       }
     },
     {
-      "name": "1920x1080 last card 15svh hold then natural release",
+      "name": "1920x1080 last card 0svh hold then natural release",
       "pass": true,
       "data": {
         "pinEnd": 7734,
-        "holdDistance": 162,
+        "holdDistance": 0,
         "heldTop": 0,
         "releasedTop": -79.609375
       }
@@ -716,11 +716,11 @@
       }
     },
     {
-      "name": "1440x900 last card 15svh hold then natural release",
+      "name": "1440x900 last card 0svh hold then natural release",
       "pass": true,
       "data": {
         "pinEnd": 6567,
-        "holdDistance": 135,
+        "holdDistance": 0,
         "heldTop": 0,
         "releasedTop": -79.609375
       }
@@ -1077,11 +1077,11 @@
       }
     },
     {
-      "name": "1280x800 last card 15svh hold then natural release",
+      "name": "1280x800 last card 0svh hold then natural release",
       "pass": true,
       "data": {
         "pinEnd": 5946,
-        "holdDistance": 120,
+        "holdDistance": 0,
         "heldTop": 0,
         "releasedTop": -79.609375
       }
@@ -1386,11 +1386,11 @@
       "data": {
         "caption": {
           "x": 29,
-          "y": 472.59375,
+          "y": 472.109375,
           "width": 332,
           "height": 350.40625,
           "right": 361,
-          "bottom": 823,
+          "bottom": 822.515625,
           "font": "16px",
           "glassY": "0px",
           "glassGlint": "0%",
@@ -1411,7 +1411,7 @@
       "name": "390x844 metal fully expanded",
       "pass": true,
       "data": {
-        "top": 0,
+        "top": -0.484375,
         "scale": 1
       }
     },
@@ -1438,13 +1438,13 @@
       }
     },
     {
-      "name": "390x844 last card 15svh hold then natural release",
+      "name": "390x844 last card 0svh hold then natural release",
       "pass": true,
       "data": {
         "pinEnd": 5220,
-        "holdDistance": 126.6,
-        "heldTop": -0.890625,
-        "releasedTop": -80.890625
+        "holdDistance": 0,
+        "heldTop": -0.484375,
+        "releasedTop": -80.484375
       }
     },
     {
@@ -1453,7 +1453,7 @@
       "data": {
         "mode": "single-pinned-timeline",
         "itemCount": 6,
-        "progress": 0.6598119858989424,
+        "progress": 0.6081081081081081,
         "firstEntryProgress": 1,
         "firstEntryStart": 1511,
         "firstEntryEnd": 2251,
@@ -1483,8 +1483,8 @@
           },
           {
             "id": "prostor",
-            "top": 519,
-            "scale": 0.9086
+            "top": 710,
+            "scale": 0.8855
           },
           {
             "id": "metal",
@@ -1502,37 +1502,37 @@
           "id": "b2b",
           "actual": 0,
           "expected": 0,
-          "time": 3.299059929494712
+          "time": 3.0405405405405403
         },
         {
           "id": "flowers",
           "actual": 0,
           "expected": 0,
-          "time": 3.299059929494712
+          "time": 3.0405405405405403
         },
         {
           "id": "crm",
           "actual": 0,
           "expected": 0,
-          "time": 3.299059929494712
+          "time": 3.0405405405405403
         },
         {
           "id": "beauty",
           "actual": 0,
           "expected": 0,
-          "time": 3.299059929494712
+          "time": 3.0405405405405403
         },
         {
           "id": "prostor",
-          "actual": 518.6956787109375,
-          "expected": 518.6956521739131,
-          "time": 3.299059929494712
+          "actual": 710,
+          "expected": 710.0000000000001,
+          "time": 3.0405405405405403
         },
         {
           "id": "metal",
           "actual": 740,
           "expected": 740,
-          "time": 3.299059929494712
+          "time": 3.0405405405405403
         }
       ]
     },
@@ -1753,7 +1753,7 @@
       "data": {
         "mode": "single-pinned-timeline",
         "itemCount": 6,
-        "progress": 0.6210716125708398,
+        "progress": 0.40288511076764555,
         "firstEntryProgress": 1,
         "firstEntryStart": 494,
         "firstEntryEnd": 1338,
@@ -1778,13 +1778,13 @@
           },
           {
             "id": "beauty",
-            "top": 0,
-            "scale": 1
+            "top": 832,
+            "scale": 0.9001
           },
           {
             "id": "prostor",
-            "top": 755,
-            "scale": 0.9027
+            "top": 844,
+            "scale": 0.9
           },
           {
             "id": "metal",
@@ -1802,37 +1802,37 @@
           "id": "b2b",
           "actual": 0,
           "expected": 0,
-          "time": 3.105358062854199
+          "time": 2.014425553838228
         },
         {
           "id": "flowers",
           "actual": 0,
           "expected": 0,
-          "time": 3.105358062854199
+          "time": 2.014425553838228
         },
         {
           "id": "crm",
           "actual": 0,
           "expected": 0,
-          "time": 3.105358062854199
+          "time": 2.014425553838228
         },
         {
           "id": "beauty",
-          "actual": 0,
-          "expected": 0,
-          "time": 3.105358062854199
+          "actual": 831.8248291015625,
+          "expected": 831.8248325605357,
+          "time": 2.014425553838228
         },
         {
           "id": "prostor",
-          "actual": 755.0778198242188,
-          "expected": 755.077794951056,
-          "time": 3.105358062854199
+          "actual": 844,
+          "expected": 844,
+          "time": 2.014425553838228
         },
         {
           "id": "metal",
           "actual": 844,
           "expected": 844,
-          "time": 3.105358062854199
+          "time": 2.014425553838228
         }
       ]
     },
@@ -2203,7 +2203,7 @@
       "data": {
         "mode": "single-pinned-timeline",
         "itemCount": 6,
-        "progress": 0.5891861761426979,
+        "progress": 0.7285395763656634,
         "firstEntryProgress": 1,
         "firstEntryStart": 1166,
         "firstEntryEnd": 1556,
@@ -2228,13 +2228,13 @@
           },
           {
             "id": "beauty",
-            "top": 21,
-            "scale": 0.9992
+            "top": 0,
+            "scale": 1
           },
           {
             "id": "prostor",
-            "top": 390,
-            "scale": 0.885
+            "top": 139,
+            "scale": 0.9674
           },
           {
             "id": "metal",
@@ -2252,37 +2252,37 @@
           "id": "b2b",
           "actual": 0,
           "expected": 0,
-          "time": 2.9459308807134894
+          "time": 3.6426978818283167
         },
         {
           "id": "flowers",
           "actual": 0,
           "expected": 0,
-          "time": 2.9459308807134894
+          "time": 3.6426978818283167
         },
         {
           "id": "crm",
           "actual": 0,
           "expected": 0,
-          "time": 2.9459308807134894
+          "time": 3.6426978818283167
         },
         {
           "id": "beauty",
-          "actual": 21.08690071105957,
-          "expected": 21.086956521739133,
-          "time": 2.9459308807134894
+          "actual": 0,
+          "expected": 0,
+          "time": 3.6426978818283167
         },
         {
           "id": "prostor",
-          "actual": 390,
-          "expected": 390,
-          "time": 2.9459308807134894
+          "actual": 139.34779357910156,
+          "expected": 139.3478260869565,
+          "time": 3.6426978818283167
         },
         {
           "id": "metal",
           "actual": 390,
           "expected": 390,
-          "time": 2.9459308807134894
+          "time": 3.6426978818283167
         }
       ]
     },
@@ -2353,7 +2353,7 @@
       "data": {
         "mode": "single-pinned-timeline",
         "itemCount": 6,
-        "progress": 0.2627958172812328,
+        "progress": 0.2468354430379747,
         "firstEntryProgress": 1,
         "firstEntryStart": 1578,
         "firstEntryEnd": 2368,
@@ -2373,8 +2373,8 @@
           },
           {
             "id": "crm",
-            "top": 542,
-            "scale": 0.9108
+            "top": 605,
+            "scale": 0.8999
           },
           {
             "id": "beauty",
@@ -2402,37 +2402,37 @@
           "id": "b2b",
           "actual": 0,
           "expected": 0,
-          "time": 1.313979086406164
+          "time": 1.2341772151898736
         },
         {
           "id": "flowers",
           "actual": 0,
           "expected": 0,
-          "time": 1.313979086406164
+          "time": 1.2341772151898736
         },
         {
           "id": "crm",
-          "actual": 541.9564819335938,
-          "expected": 541.9565217391304,
-          "time": 1.313979086406164
+          "actual": 605,
+          "expected": 604.9999999999999,
+          "time": 1.2341772151898736
         },
         {
           "id": "beauty",
           "actual": 790,
           "expected": 790,
-          "time": 1.313979086406164
+          "time": 1.2341772151898736
         },
         {
           "id": "prostor",
           "actual": 790,
           "expected": 790,
-          "time": 1.313979086406164
+          "time": 1.2341772151898736
         },
         {
           "id": "metal",
           "actual": 790,
           "expected": 790,
-          "time": 1.313979086406164
+          "time": 1.2341772151898736
         }
       ]
     },
@@ -2503,7 +2503,7 @@
       "data": {
         "mode": "single-pinned-timeline",
         "itemCount": 6,
-        "progress": 0.4115942028985507,
+        "progress": 0.4388888888888889,
         "firstEntryProgress": 1,
         "firstEntryStart": 1581,
         "firstEntryEnd": 2481,
@@ -2528,8 +2528,8 @@
           },
           {
             "id": "beauty",
-            "top": 848,
-            "scale": 0.886
+            "top": 725,
+            "scale": 0.8954
           },
           {
             "id": "prostor",
@@ -2552,37 +2552,37 @@
           "id": "b2b",
           "actual": 0,
           "expected": 0,
-          "time": 2.0579710144927534
+          "time": 2.1944444444444446
         },
         {
           "id": "flowers",
           "actual": 0,
           "expected": 0,
-          "time": 2.0579710144927534
+          "time": 2.1944444444444446
         },
         {
           "id": "crm",
           "actual": 0,
           "expected": 0,
-          "time": 2.0579710144927534
+          "time": 2.1944444444444446
         },
         {
           "id": "beauty",
-          "actual": 847.8261108398438,
-          "expected": 847.8260869565219,
-          "time": 2.0579710144927534
+          "actual": 725,
+          "expected": 724.9999999999998,
+          "time": 2.1944444444444446
         },
         {
           "id": "prostor",
           "actual": 900,
           "expected": 900,
-          "time": 2.0579710144927534
+          "time": 2.1944444444444446
         },
         {
           "id": "metal",
           "actual": 900,
           "expected": 900,
-          "time": 2.0579710144927534
+          "time": 2.1944444444444446
         }
       ]
     },
@@ -3111,11 +3111,11 @@
       }
     },
     {
-      "name": "classic-1440x900 last card 15svh hold then natural release",
+      "name": "classic-1440x900 last card 0svh hold then natural release",
       "pass": true,
       "data": {
         "pinEnd": 6567,
-        "holdDistance": 135,
+        "holdDistance": 0,
         "heldTop": 0,
         "releasedTop": -79.609375
       }
@@ -3430,11 +3430,11 @@
       "data": {
         "caption": {
           "x": 29,
-          "y": 472.59375,
+          "y": 472.109375,
           "width": 317,
           "height": 350.40625,
           "right": 346,
-          "bottom": 823,
+          "bottom": 822.515625,
           "font": "16px",
           "glassY": "0px",
           "glassGlint": "0%",
@@ -3455,7 +3455,7 @@
       "name": "classic-390x844 metal fully expanded",
       "pass": true,
       "data": {
-        "top": 0,
+        "top": -0.484375,
         "scale": 1
       }
     },
@@ -3482,13 +3482,13 @@
       }
     },
     {
-      "name": "classic-390x844 last card 15svh hold then natural release",
+      "name": "classic-390x844 last card 0svh hold then natural release",
       "pass": true,
       "data": {
         "pinEnd": 5220,
-        "holdDistance": 126.6,
-        "heldTop": -0.890625,
-        "releasedTop": -80.890625
+        "holdDistance": 0,
+        "heldTop": -0.484375,
+        "releasedTop": -80.484375
       }
     },
     {
@@ -7847,7 +7847,7 @@
       "data": {
         "pass": true,
         "elements": 44,
-        "maxGeometryDelta": 0.484,
+        "maxGeometryDelta": 0.078,
         "styleDifferences": 0,
         "contentDifferences": 0
       }
@@ -7883,32 +7883,32 @@
         "cards": [
           {
             "id": "b2b",
-            "top": 1125,
+            "top": 1129,
             "scale": 0.885
           },
           {
             "id": "flowers",
-            "top": 2025,
+            "top": 2029,
             "scale": 0.885
           },
           {
             "id": "crm",
-            "top": 2025,
+            "top": 2029,
             "scale": 0.885
           },
           {
             "id": "beauty",
-            "top": 2025,
+            "top": 2029,
             "scale": 0.885
           },
           {
             "id": "prostor",
-            "top": 2025,
+            "top": 2029,
             "scale": 0.885
           },
           {
             "id": "metal",
-            "top": 2025,
+            "top": 2029,
             "scale": 0.885
           }
         ]
@@ -8219,11 +8219,11 @@
       }
     },
     {
-      "name": "standalone-1440x900 last card 15svh hold then natural release",
+      "name": "standalone-1440x900 last card 0svh hold then natural release",
       "pass": true,
       "data": {
         "pinEnd": 6567,
-        "holdDistance": 135,
+        "holdDistance": 0,
         "heldTop": 0,
         "releasedTop": -79.609375
       }
@@ -8536,11 +8536,11 @@
       "data": {
         "caption": {
           "x": 29,
-          "y": 472.59375,
+          "y": 472.109375,
           "width": 332,
           "height": 350.40625,
           "right": 361,
-          "bottom": 823,
+          "bottom": 822.515625,
           "font": "16px",
           "glassY": "0px",
           "glassGlint": "0%",
@@ -8561,7 +8561,7 @@
       "name": "standalone-390x844 metal fully expanded",
       "pass": true,
       "data": {
-        "top": 0,
+        "top": -0.484375,
         "scale": 1
       }
     },
@@ -8588,13 +8588,13 @@
       }
     },
     {
-      "name": "standalone-390x844 last card 15svh hold then natural release",
+      "name": "standalone-390x844 last card 0svh hold then natural release",
       "pass": true,
       "data": {
         "pinEnd": 5220,
-        "holdDistance": 126.6,
-        "heldTop": -0.890625,
-        "releasedTop": -80.890625
+        "holdDistance": 0,
+        "heldTop": -0.484375,
+        "releasedTop": -80.484375
       }
     },
     {
@@ -10254,22 +10254,22 @@
           },
           "frame": {
             "x": 10,
-            "y": 0,
+            "y": -0.484375,
             "width": 370,
             "height": 844,
             "right": 10,
-            "bottom": 844,
+            "bottom": 843.515625,
             "radius": 18,
             "left": 10,
             "scale": 1
           },
           "caption": {
             "x": 29,
-            "y": 472.59375,
+            "y": 472.109375,
             "width": 332,
             "height": 350.40625,
             "right": 361,
-            "bottom": 823,
+            "bottom": 822.515625,
             "font": "16px",
             "glassY": "0px",
             "glassGlint": "0%",
@@ -10309,8 +10309,8 @@
         }
       },
       "hold": {
-        "heldTop": -0.890625,
-        "releasedTop": -80.890625
+        "heldTop": -0.484375,
+        "releasedTop": -80.484375
       }
     },
     {
@@ -11106,22 +11106,22 @@
           },
           "frame": {
             "x": 10,
-            "y": 0,
+            "y": -0.484375,
             "width": 355,
             "height": 844,
             "right": 10,
-            "bottom": 844,
+            "bottom": 843.515625,
             "radius": 18,
             "left": 10,
             "scale": 1
           },
           "caption": {
             "x": 29,
-            "y": 472.59375,
+            "y": 472.109375,
             "width": 317,
             "height": 350.40625,
             "right": 346,
-            "bottom": 823,
+            "bottom": 822.515625,
             "font": "16px",
             "glassY": "0px",
             "glassGlint": "0%",
@@ -11161,8 +11161,8 @@
         }
       },
       "hold": {
-        "heldTop": -0.890625,
-        "releasedTop": -80.890625
+        "heldTop": -0.484375,
+        "releasedTop": -80.484375
       }
     }
   ],
@@ -11175,7 +11175,7 @@
       "state": {
         "mode": "single-pinned-timeline",
         "itemCount": 6,
-        "progress": 0.6598119858989424,
+        "progress": 0.6081081081081081,
         "firstEntryProgress": 1,
         "firstEntryStart": 1511,
         "firstEntryEnd": 2251,
@@ -11205,8 +11205,8 @@
           },
           {
             "id": "prostor",
-            "top": 519,
-            "scale": 0.9086
+            "top": 710,
+            "scale": 0.8855
           },
           {
             "id": "metal",
@@ -11377,7 +11377,7 @@
       "state": {
         "mode": "single-pinned-timeline",
         "itemCount": 6,
-        "progress": 0.6210716125708398,
+        "progress": 0.40288511076764555,
         "firstEntryProgress": 1,
         "firstEntryStart": 494,
         "firstEntryEnd": 1338,
@@ -11402,13 +11402,13 @@
           },
           {
             "id": "beauty",
-            "top": 0,
-            "scale": 1
+            "top": 832,
+            "scale": 0.9001
           },
           {
             "id": "prostor",
-            "top": 755,
-            "scale": 0.9027
+            "top": 844,
+            "scale": 0.9
           },
           {
             "id": "metal",
@@ -11680,7 +11680,7 @@
       "state": {
         "mode": "single-pinned-timeline",
         "itemCount": 6,
-        "progress": 0.5891861761426979,
+        "progress": 0.7285395763656634,
         "firstEntryProgress": 1,
         "firstEntryStart": 1166,
         "firstEntryEnd": 1556,
@@ -11705,13 +11705,13 @@
           },
           {
             "id": "beauty",
-            "top": 21,
-            "scale": 0.9992
+            "top": 0,
+            "scale": 1
           },
           {
             "id": "prostor",
-            "top": 390,
-            "scale": 0.885
+            "top": 139,
+            "scale": 0.9674
           },
           {
             "id": "metal",
@@ -11781,7 +11781,7 @@
       "state": {
         "mode": "single-pinned-timeline",
         "itemCount": 6,
-        "progress": 0.2627958172812328,
+        "progress": 0.2468354430379747,
         "firstEntryProgress": 1,
         "firstEntryStart": 1578,
         "firstEntryEnd": 2368,
@@ -11801,8 +11801,8 @@
           },
           {
             "id": "crm",
-            "top": 542,
-            "scale": 0.9108
+            "top": 605,
+            "scale": 0.8999
           },
           {
             "id": "beauty",
@@ -11882,7 +11882,7 @@
       "state": {
         "mode": "single-pinned-timeline",
         "itemCount": 6,
-        "progress": 0.4115942028985507,
+        "progress": 0.4388888888888889,
         "firstEntryProgress": 1,
         "firstEntryStart": 1581,
         "firstEntryEnd": 2481,
@@ -11907,8 +11907,8 @@
           },
           {
             "id": "beauty",
-            "top": 848,
-            "scale": 0.886
+            "top": 725,
+            "scale": 0.8954
           },
           {
             "id": "prostor",
@@ -17637,7 +17637,7 @@
       "selector": "#contact",
       "pass": true,
       "elements": 44,
-      "maxGeometryDelta": 0.484,
+      "maxGeometryDelta": 0.078,
       "styleDifferences": 0,
       "contentDifferences": 0
     }
@@ -17665,32 +17665,32 @@
         "cards": [
           {
             "id": "b2b",
-            "top": 1125,
+            "top": 1129,
             "scale": 0.885
           },
           {
             "id": "flowers",
-            "top": 2025,
+            "top": 2029,
             "scale": 0.885
           },
           {
             "id": "crm",
-            "top": 2025,
+            "top": 2029,
             "scale": 0.885
           },
           {
             "id": "beauty",
-            "top": 2025,
+            "top": 2029,
             "scale": 0.885
           },
           {
             "id": "prostor",
-            "top": 2025,
+            "top": 2029,
             "scale": 0.885
           },
           {
             "id": "metal",
-            "top": 2025,
+            "top": 2029,
             "scale": 0.885
           }
         ]
@@ -18443,22 +18443,22 @@
           },
           "frame": {
             "x": 10,
-            "y": 0,
+            "y": -0.484375,
             "width": 370,
             "height": 844,
             "right": 10,
-            "bottom": 844,
+            "bottom": 843.515625,
             "radius": 18,
             "left": 10,
             "scale": 1
           },
           "caption": {
             "x": 29,
-            "y": 472.59375,
+            "y": 472.109375,
             "width": 332,
             "height": 350.40625,
             "right": 361,
-            "bottom": 823,
+            "bottom": 822.515625,
             "font": "16px",
             "glassY": "0px",
             "glassGlint": "0%",
@@ -18498,8 +18498,8 @@
         }
       },
       "hold": {
-        "heldTop": -0.890625,
-        "releasedTop": -80.890625
+        "heldTop": -0.484375,
+        "releasedTop": -80.484375
       }
     }
   ],
