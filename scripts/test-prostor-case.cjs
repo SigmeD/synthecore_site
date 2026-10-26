@@ -68,7 +68,7 @@ test('historical runtime/pages preserve their SHA with only registered anchors a
  const contract=JSON.parse(read('docs/V62_ON_V27_SOURCES.json'));
  for(const [file,expected]of Object.entries(audit.baselineFiles)){
   let bytes=fs.readFileSync(path.join(root,file));
-  if(file.endsWith('.html')&&!file.startsWith('templates/')){
+  if(file.endsWith('.html')){
    bytes=Buffer.from(restoreRegisteredCaseLinks(file,bytes.toString('utf8'),later));
   }
   // The historical audit recorded the original Windows working bytes. Keep

@@ -43,7 +43,7 @@ test('CRM copy, source screens and related work match the catalog and approved p
 test('the CRM snapshot preserves all old runtime and pages after removing only its registered anchor',()=>{
  const {restoreRegisteredCaseLinks}=require('./lib/case-baseline.cjs'),data=JSON.parse(read('templates/data/cases/crm.json')),audit=JSON.parse(read('docs/qa/crm-v1/source-audit.json'));
  for(const [file,expected]of Object.entries(audit.baselineFiles)){
-  let bytes=fs.readFileSync(file);if(file.endsWith('.html')&&!file.startsWith('templates/'))bytes=Buffer.from(restoreRegisteredCaseLinks(file,bytes.toString('utf8'),[data]));
+  let bytes=fs.readFileSync(file);if(file.endsWith('.html'))bytes=Buffer.from(restoreRegisteredCaseLinks(file,bytes.toString('utf8'),[data]));
   if(audit.baselineTextEol.includes(file))bytes=Buffer.from(bytes.toString('utf8').replace(/\r\n/g,'\n'));assert.equal(hash(bytes),expected,file);
  }
 });

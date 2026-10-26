@@ -68,10 +68,10 @@ test('metal resources resolve from the nested route and imported images retain s
 test('Beauty and other catalog content retain baseline bytes after exact registered route additions',()=>{
  const crypto=require('node:crypto'),audit=JSON.parse(read('docs/qa/metal-v5/source-audit.json'));
  const hash=text=>crypto.createHash('sha256').update(text).digest('hex');
- for(const match of restoreLaterCaseLinks(read('raboty/index.html')).matchAll(/<article class="case-card case-card--([^\"]+)">[\s\S]*?<\/article>/g)){
+ for(const match of restoreLaterCaseLinks(read('raboty/index.html'),'raboty/index.html').matchAll(/<article class="case-card case-card--([^\"]+)">[\s\S]*?<\/article>/g)){
   const article=match[0],id=match[1];
   if(id==='metal')continue;assert.equal(hash(article),audit.catalogArticles[id].baselineSHA256,'unchanged catalog card '+id);
  }
- const beauty=restoreLaterCaseLinks(read('raboty/beauty-insight/index.html'));
+ const beauty=restoreLaterCaseLinks(read('raboty/beauty-insight/index.html'),'raboty/beauty-insight/index.html');
  assert.equal(hash(beauty),audit.beauty.baselineSHA256);
 });

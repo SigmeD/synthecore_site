@@ -1,0 +1,4206 @@
+{
+  "version": "4.9.2",
+  "base": "http://127.0.0.1:4176/",
+  "createdAt": "2026-10-26T18:11:23.903Z",
+  "checks": [
+    {
+      "name": "320-reduce/get-started/ shared shell typography #floatingHeader",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 296,
+          "height": 62
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 296,
+          "height": 62
+        }
+      }
+    },
+    {
+      "name": "320-reduce/get-started/ shared shell typography #floatingHeader .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "21px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.365px",
+          "lineHeight": "21px",
+          "width": 103.6875,
+          "height": 21
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "21px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.365px",
+          "lineHeight": "21px",
+          "width": 103.6875,
+          "height": 21
+        }
+      }
+    },
+    {
+      "name": "320-reduce/get-started/ shared shell typography #floatingHeader .brand-note",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "8px",
+          "fontWeight": "650",
+          "letterSpacing": "0.64px",
+          "lineHeight": "8.88px",
+          "width": 77.734375,
+          "height": 17.75
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "8px",
+          "fontWeight": "650",
+          "letterSpacing": "0.64px",
+          "lineHeight": "8.88px",
+          "width": 77.734375,
+          "height": 17.75
+        }
+      }
+    },
+    {
+      "name": "320-reduce/get-started/ shared shell typography #floatingHeader .header-links",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 0,
+          "height": 0
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 0,
+          "height": 0
+        }
+      }
+    },
+    {
+      "name": "320-reduce/get-started/ shared shell typography #floatingHeader > .nav-cta",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 0,
+          "height": 0
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 0,
+          "height": 0
+        }
+      }
+    },
+    {
+      "name": "320-reduce/get-started/ shared shell typography #contact .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        }
+      }
+    },
+    {
+      "name": "320-reduce/get-started/ content retains Manrope",
+      "pass": true
+    },
+    {
+      "name": "320-reduce/privacy/ shared shell typography #floatingHeader",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 296,
+          "height": 62
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 296,
+          "height": 62
+        }
+      }
+    },
+    {
+      "name": "320-reduce/privacy/ shared shell typography #floatingHeader .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "21px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.365px",
+          "lineHeight": "21px",
+          "width": 103.6875,
+          "height": 21
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "21px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.365px",
+          "lineHeight": "21px",
+          "width": 103.6875,
+          "height": 21
+        }
+      }
+    },
+    {
+      "name": "320-reduce/privacy/ shared shell typography #floatingHeader .brand-note",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "8px",
+          "fontWeight": "650",
+          "letterSpacing": "0.64px",
+          "lineHeight": "8.88px",
+          "width": 77.734375,
+          "height": 17.75
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "8px",
+          "fontWeight": "650",
+          "letterSpacing": "0.64px",
+          "lineHeight": "8.88px",
+          "width": 77.734375,
+          "height": 17.75
+        }
+      }
+    },
+    {
+      "name": "320-reduce/privacy/ shared shell typography #floatingHeader .header-links",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 0,
+          "height": 0
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 0,
+          "height": 0
+        }
+      }
+    },
+    {
+      "name": "320-reduce/privacy/ shared shell typography #floatingHeader > .nav-cta",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 0,
+          "height": 0
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 0,
+          "height": 0
+        }
+      }
+    },
+    {
+      "name": "320-reduce/privacy/ shared shell typography #contact .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        }
+      }
+    },
+    {
+      "name": "320-reduce/privacy/ content retains Manrope",
+      "pass": true
+    },
+    {
+      "name": "320-no-preference/get-started/ shared shell typography #floatingHeader",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 296,
+          "height": 62
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 296,
+          "height": 62
+        }
+      }
+    },
+    {
+      "name": "320-no-preference/get-started/ shared shell typography #floatingHeader .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "21px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.365px",
+          "lineHeight": "21px",
+          "width": 103.6875,
+          "height": 21
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "21px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.365px",
+          "lineHeight": "21px",
+          "width": 103.6875,
+          "height": 21
+        }
+      }
+    },
+    {
+      "name": "320-no-preference/get-started/ shared shell typography #floatingHeader .brand-note",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "8px",
+          "fontWeight": "650",
+          "letterSpacing": "0.64px",
+          "lineHeight": "8.88px",
+          "width": 77.734375,
+          "height": 17.75
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "8px",
+          "fontWeight": "650",
+          "letterSpacing": "0.64px",
+          "lineHeight": "8.88px",
+          "width": 77.734375,
+          "height": 17.75
+        }
+      }
+    },
+    {
+      "name": "320-no-preference/get-started/ shared shell typography #floatingHeader .header-links",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 0,
+          "height": 0
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 0,
+          "height": 0
+        }
+      }
+    },
+    {
+      "name": "320-no-preference/get-started/ shared shell typography #floatingHeader > .nav-cta",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 0,
+          "height": 0
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 0,
+          "height": 0
+        }
+      }
+    },
+    {
+      "name": "320-no-preference/get-started/ shared shell typography #contact .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        }
+      }
+    },
+    {
+      "name": "320-no-preference/get-started/ content retains Manrope",
+      "pass": true
+    },
+    {
+      "name": "320-no-preference/privacy/ shared shell typography #floatingHeader",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 296,
+          "height": 62
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 296,
+          "height": 62
+        }
+      }
+    },
+    {
+      "name": "320-no-preference/privacy/ shared shell typography #floatingHeader .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "21px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.365px",
+          "lineHeight": "21px",
+          "width": 103.6875,
+          "height": 21
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "21px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.365px",
+          "lineHeight": "21px",
+          "width": 103.6875,
+          "height": 21
+        }
+      }
+    },
+    {
+      "name": "320-no-preference/privacy/ shared shell typography #floatingHeader .brand-note",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "8px",
+          "fontWeight": "650",
+          "letterSpacing": "0.64px",
+          "lineHeight": "8.88px",
+          "width": 77.734375,
+          "height": 17.75
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "8px",
+          "fontWeight": "650",
+          "letterSpacing": "0.64px",
+          "lineHeight": "8.88px",
+          "width": 77.734375,
+          "height": 17.75
+        }
+      }
+    },
+    {
+      "name": "320-no-preference/privacy/ shared shell typography #floatingHeader .header-links",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 0,
+          "height": 0
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 0,
+          "height": 0
+        }
+      }
+    },
+    {
+      "name": "320-no-preference/privacy/ shared shell typography #floatingHeader > .nav-cta",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 0,
+          "height": 0
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 0,
+          "height": 0
+        }
+      }
+    },
+    {
+      "name": "320-no-preference/privacy/ shared shell typography #contact .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        }
+      }
+    },
+    {
+      "name": "320-no-preference/privacy/ content retains Manrope",
+      "pass": true
+    },
+    {
+      "name": "390-reduce/get-started/ shared shell typography #floatingHeader",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 366,
+          "height": 62
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 366,
+          "height": 62
+        }
+      }
+    },
+    {
+      "name": "390-reduce/get-started/ shared shell typography #floatingHeader .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "21px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.365px",
+          "lineHeight": "21px",
+          "width": 103.6875,
+          "height": 21
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "21px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.365px",
+          "lineHeight": "21px",
+          "width": 103.6875,
+          "height": 21
+        }
+      }
+    },
+    {
+      "name": "390-reduce/get-started/ shared shell typography #floatingHeader .brand-note",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "8px",
+          "fontWeight": "650",
+          "letterSpacing": "0.64px",
+          "lineHeight": "8.88px",
+          "width": 77.734375,
+          "height": 17.75
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "8px",
+          "fontWeight": "650",
+          "letterSpacing": "0.64px",
+          "lineHeight": "8.88px",
+          "width": 77.734375,
+          "height": 17.75
+        }
+      }
+    },
+    {
+      "name": "390-reduce/get-started/ shared shell typography #floatingHeader .header-links",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 0,
+          "height": 0
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 0,
+          "height": 0
+        }
+      }
+    },
+    {
+      "name": "390-reduce/get-started/ shared shell typography #floatingHeader > .nav-cta",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 0,
+          "height": 0
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 0,
+          "height": 0
+        }
+      }
+    },
+    {
+      "name": "390-reduce/get-started/ shared shell typography #contact .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        }
+      }
+    },
+    {
+      "name": "390-reduce/get-started/ content retains Manrope",
+      "pass": true
+    },
+    {
+      "name": "390 reference dimensions .sc-contact__layout",
+      "pass": true,
+      "data": {
+        "actual": {
+          "x": 28,
+          "y": 128,
+          "width": 334,
+          "height": 798.875,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        },
+        "reference": {
+          "x": 28,
+          "y": 128,
+          "width": 334,
+          "height": 798.875,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "390 reference dimensions .sc-contact__form",
+      "pass": true,
+      "data": {
+        "actual": {
+          "x": 28,
+          "y": 336.875,
+          "width": 334,
+          "height": 590,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "22px"
+        },
+        "reference": {
+          "x": 28,
+          "y": 336.875,
+          "width": 334,
+          "height": 590,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "22px"
+        }
+      }
+    },
+    {
+      "name": "390 reference dimensions #scPhoneGroup",
+      "pass": true,
+      "data": {
+        "actual": {
+          "x": 50,
+          "y": 501.875,
+          "width": 290,
+          "height": 56,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "12px"
+        },
+        "reference": {
+          "x": 50,
+          "y": 501.875,
+          "width": 290,
+          "height": 56,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "12px"
+        }
+      }
+    },
+    {
+      "name": "390 reference dimensions .sc-contact__submit",
+      "pass": true,
+      "data": {
+        "actual": {
+          "x": 50,
+          "y": 847.875,
+          "width": 290,
+          "height": 52,
+          "font": "16px",
+          "lineHeight": "16px",
+          "radius": "100px"
+        },
+        "reference": {
+          "x": 50,
+          "y": 847.875,
+          "width": 290,
+          "height": 52,
+          "font": "16px",
+          "lineHeight": "16px",
+          "radius": "100px"
+        }
+      }
+    },
+    {
+      "name": "390 reference dimensions #relatedViewport",
+      "pass": true,
+      "data": {
+        "actual": {
+          "x": 22,
+          "y": 1085.921875,
+          "width": 346,
+          "height": 438.828125,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        },
+        "reference": {
+          "x": 22,
+          "y": 1085.921875,
+          "width": 346,
+          "height": 438.828125,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "390 reference dimensions .related-work__arrow",
+      "pass": true,
+      "data": {
+        "actual": {
+          "x": 129,
+          "y": 1520.75,
+          "width": 52,
+          "height": 52,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "50%"
+        },
+        "reference": {
+          "x": 129,
+          "y": 1520.75,
+          "width": 52,
+          "height": 52,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "50%"
+        }
+      }
+    },
+    {
+      "name": "390-reduce/privacy/ shared shell typography #floatingHeader",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 366,
+          "height": 62
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 366,
+          "height": 62
+        }
+      }
+    },
+    {
+      "name": "390-reduce/privacy/ shared shell typography #floatingHeader .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "21px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.365px",
+          "lineHeight": "21px",
+          "width": 103.6875,
+          "height": 21
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "21px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.365px",
+          "lineHeight": "21px",
+          "width": 103.6875,
+          "height": 21
+        }
+      }
+    },
+    {
+      "name": "390-reduce/privacy/ shared shell typography #floatingHeader .brand-note",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "8px",
+          "fontWeight": "650",
+          "letterSpacing": "0.64px",
+          "lineHeight": "8.88px",
+          "width": 77.734375,
+          "height": 17.75
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "8px",
+          "fontWeight": "650",
+          "letterSpacing": "0.64px",
+          "lineHeight": "8.88px",
+          "width": 77.734375,
+          "height": 17.75
+        }
+      }
+    },
+    {
+      "name": "390-reduce/privacy/ shared shell typography #floatingHeader .header-links",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 0,
+          "height": 0
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 0,
+          "height": 0
+        }
+      }
+    },
+    {
+      "name": "390-reduce/privacy/ shared shell typography #floatingHeader > .nav-cta",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 0,
+          "height": 0
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 0,
+          "height": 0
+        }
+      }
+    },
+    {
+      "name": "390-reduce/privacy/ shared shell typography #contact .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        }
+      }
+    },
+    {
+      "name": "390-reduce/privacy/ content retains Manrope",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference/get-started/ shared shell typography #floatingHeader",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 366,
+          "height": 62
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 366,
+          "height": 62
+        }
+      }
+    },
+    {
+      "name": "390-no-preference/get-started/ shared shell typography #floatingHeader .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "21px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.365px",
+          "lineHeight": "21px",
+          "width": 103.6875,
+          "height": 21
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "21px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.365px",
+          "lineHeight": "21px",
+          "width": 103.6875,
+          "height": 21
+        }
+      }
+    },
+    {
+      "name": "390-no-preference/get-started/ shared shell typography #floatingHeader .brand-note",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "8px",
+          "fontWeight": "650",
+          "letterSpacing": "0.64px",
+          "lineHeight": "8.88px",
+          "width": 77.734375,
+          "height": 17.75
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "8px",
+          "fontWeight": "650",
+          "letterSpacing": "0.64px",
+          "lineHeight": "8.88px",
+          "width": 77.734375,
+          "height": 17.75
+        }
+      }
+    },
+    {
+      "name": "390-no-preference/get-started/ shared shell typography #floatingHeader .header-links",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 0,
+          "height": 0
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 0,
+          "height": 0
+        }
+      }
+    },
+    {
+      "name": "390-no-preference/get-started/ shared shell typography #floatingHeader > .nav-cta",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 0,
+          "height": 0
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 0,
+          "height": 0
+        }
+      }
+    },
+    {
+      "name": "390-no-preference/get-started/ shared shell typography #contact .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        }
+      }
+    },
+    {
+      "name": "390-no-preference/get-started/ content retains Manrope",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference/privacy/ shared shell typography #floatingHeader",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 366,
+          "height": 62
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 366,
+          "height": 62
+        }
+      }
+    },
+    {
+      "name": "390-no-preference/privacy/ shared shell typography #floatingHeader .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "21px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.365px",
+          "lineHeight": "21px",
+          "width": 103.6875,
+          "height": 21
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "21px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.365px",
+          "lineHeight": "21px",
+          "width": 103.6875,
+          "height": 21
+        }
+      }
+    },
+    {
+      "name": "390-no-preference/privacy/ shared shell typography #floatingHeader .brand-note",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "8px",
+          "fontWeight": "650",
+          "letterSpacing": "0.64px",
+          "lineHeight": "8.88px",
+          "width": 77.734375,
+          "height": 17.75
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "8px",
+          "fontWeight": "650",
+          "letterSpacing": "0.64px",
+          "lineHeight": "8.88px",
+          "width": 77.734375,
+          "height": 17.75
+        }
+      }
+    },
+    {
+      "name": "390-no-preference/privacy/ shared shell typography #floatingHeader .header-links",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 0,
+          "height": 0
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 0,
+          "height": 0
+        }
+      }
+    },
+    {
+      "name": "390-no-preference/privacy/ shared shell typography #floatingHeader > .nav-cta",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 0,
+          "height": 0
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 0,
+          "height": 0
+        }
+      }
+    },
+    {
+      "name": "390-no-preference/privacy/ shared shell typography #contact .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        }
+      }
+    },
+    {
+      "name": "390-no-preference/privacy/ content retains Manrope",
+      "pass": true
+    },
+    {
+      "name": "768-reduce/get-started/ shared shell typography #floatingHeader",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 740,
+          "height": 66
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 740,
+          "height": 66
+        }
+      }
+    },
+    {
+      "name": "768-reduce/get-started/ shared shell typography #floatingHeader .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "22px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.43px",
+          "lineHeight": "22px",
+          "width": 108.640625,
+          "height": 22
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "22px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.43px",
+          "lineHeight": "22px",
+          "width": 108.640625,
+          "height": 22
+        }
+      }
+    },
+    {
+      "name": "768-reduce/get-started/ shared shell typography #floatingHeader .brand-note",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "8px",
+          "fontWeight": "650",
+          "letterSpacing": "0.64px",
+          "lineHeight": "8.88px",
+          "width": 77.734375,
+          "height": 17.75
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "8px",
+          "fontWeight": "650",
+          "letterSpacing": "0.64px",
+          "lineHeight": "8.88px",
+          "width": 77.734375,
+          "height": 17.75
+        }
+      }
+    },
+    {
+      "name": "768-reduce/get-started/ shared shell typography #floatingHeader .header-links",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 0,
+          "height": 0
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 0,
+          "height": 0
+        }
+      }
+    },
+    {
+      "name": "768-reduce/get-started/ shared shell typography #floatingHeader > .nav-cta",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 0,
+          "height": 0
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 0,
+          "height": 0
+        }
+      }
+    },
+    {
+      "name": "768-reduce/get-started/ shared shell typography #contact .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        }
+      }
+    },
+    {
+      "name": "768-reduce/get-started/ content retains Manrope",
+      "pass": true
+    },
+    {
+      "name": "768-reduce/privacy/ shared shell typography #floatingHeader",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 740,
+          "height": 66
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 740,
+          "height": 66
+        }
+      }
+    },
+    {
+      "name": "768-reduce/privacy/ shared shell typography #floatingHeader .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "22px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.43px",
+          "lineHeight": "22px",
+          "width": 108.640625,
+          "height": 22
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "22px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.43px",
+          "lineHeight": "22px",
+          "width": 108.640625,
+          "height": 22
+        }
+      }
+    },
+    {
+      "name": "768-reduce/privacy/ shared shell typography #floatingHeader .brand-note",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "8px",
+          "fontWeight": "650",
+          "letterSpacing": "0.64px",
+          "lineHeight": "8.88px",
+          "width": 77.734375,
+          "height": 17.75
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "8px",
+          "fontWeight": "650",
+          "letterSpacing": "0.64px",
+          "lineHeight": "8.88px",
+          "width": 77.734375,
+          "height": 17.75
+        }
+      }
+    },
+    {
+      "name": "768-reduce/privacy/ shared shell typography #floatingHeader .header-links",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 0,
+          "height": 0
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 0,
+          "height": 0
+        }
+      }
+    },
+    {
+      "name": "768-reduce/privacy/ shared shell typography #floatingHeader > .nav-cta",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 0,
+          "height": 0
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 0,
+          "height": 0
+        }
+      }
+    },
+    {
+      "name": "768-reduce/privacy/ shared shell typography #contact .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        }
+      }
+    },
+    {
+      "name": "768-reduce/privacy/ content retains Manrope",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference/get-started/ shared shell typography #floatingHeader",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 740,
+          "height": 66
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 740,
+          "height": 66
+        }
+      }
+    },
+    {
+      "name": "768-no-preference/get-started/ shared shell typography #floatingHeader .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "22px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.43px",
+          "lineHeight": "22px",
+          "width": 108.640625,
+          "height": 22
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "22px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.43px",
+          "lineHeight": "22px",
+          "width": 108.640625,
+          "height": 22
+        }
+      }
+    },
+    {
+      "name": "768-no-preference/get-started/ shared shell typography #floatingHeader .brand-note",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "8px",
+          "fontWeight": "650",
+          "letterSpacing": "0.64px",
+          "lineHeight": "8.88px",
+          "width": 77.734375,
+          "height": 17.75
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "8px",
+          "fontWeight": "650",
+          "letterSpacing": "0.64px",
+          "lineHeight": "8.88px",
+          "width": 77.734375,
+          "height": 17.75
+        }
+      }
+    },
+    {
+      "name": "768-no-preference/get-started/ shared shell typography #floatingHeader .header-links",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 0,
+          "height": 0
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 0,
+          "height": 0
+        }
+      }
+    },
+    {
+      "name": "768-no-preference/get-started/ shared shell typography #floatingHeader > .nav-cta",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 0,
+          "height": 0
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 0,
+          "height": 0
+        }
+      }
+    },
+    {
+      "name": "768-no-preference/get-started/ shared shell typography #contact .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        }
+      }
+    },
+    {
+      "name": "768-no-preference/get-started/ content retains Manrope",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference/privacy/ shared shell typography #floatingHeader",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 740,
+          "height": 66
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 740,
+          "height": 66
+        }
+      }
+    },
+    {
+      "name": "768-no-preference/privacy/ shared shell typography #floatingHeader .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "22px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.43px",
+          "lineHeight": "22px",
+          "width": 108.640625,
+          "height": 22
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "22px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.43px",
+          "lineHeight": "22px",
+          "width": 108.640625,
+          "height": 22
+        }
+      }
+    },
+    {
+      "name": "768-no-preference/privacy/ shared shell typography #floatingHeader .brand-note",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "8px",
+          "fontWeight": "650",
+          "letterSpacing": "0.64px",
+          "lineHeight": "8.88px",
+          "width": 77.734375,
+          "height": 17.75
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "8px",
+          "fontWeight": "650",
+          "letterSpacing": "0.64px",
+          "lineHeight": "8.88px",
+          "width": 77.734375,
+          "height": 17.75
+        }
+      }
+    },
+    {
+      "name": "768-no-preference/privacy/ shared shell typography #floatingHeader .header-links",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 0,
+          "height": 0
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 0,
+          "height": 0
+        }
+      }
+    },
+    {
+      "name": "768-no-preference/privacy/ shared shell typography #floatingHeader > .nav-cta",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 0,
+          "height": 0
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 0,
+          "height": 0
+        }
+      }
+    },
+    {
+      "name": "768-no-preference/privacy/ shared shell typography #contact .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        }
+      }
+    },
+    {
+      "name": "768-no-preference/privacy/ content retains Manrope",
+      "pass": true
+    },
+    {
+      "name": "1024-reduce/get-started/ shared shell typography #floatingHeader",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 984,
+          "height": 56
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 984,
+          "height": 56
+        }
+      }
+    },
+    {
+      "name": "1024-reduce/get-started/ shared shell typography #floatingHeader .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "24px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.56px",
+          "lineHeight": "24px",
+          "width": 118.515625,
+          "height": 24
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "24px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.56px",
+          "lineHeight": "24px",
+          "width": 118.515625,
+          "height": 24
+        }
+      }
+    },
+    {
+      "name": "1024-reduce/get-started/ shared shell typography #floatingHeader .brand-note",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "9px",
+          "fontWeight": "650",
+          "letterSpacing": "0.72px",
+          "lineHeight": "9.99px",
+          "width": 87.453125,
+          "height": 19.96875
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "9px",
+          "fontWeight": "650",
+          "letterSpacing": "0.72px",
+          "lineHeight": "9.99px",
+          "width": 87.453125,
+          "height": 19.96875
+        }
+      }
+    },
+    {
+      "name": "1024-reduce/get-started/ shared shell typography #floatingHeader .header-links",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 222.671875,
+          "height": 20.796875
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 222.671875,
+          "height": 20.796875
+        }
+      }
+    },
+    {
+      "name": "1024-reduce/get-started/ shared shell typography #floatingHeader > .nav-cta",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 184.75,
+          "height": 40
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 184.75,
+          "height": 40
+        }
+      }
+    },
+    {
+      "name": "1024-reduce/get-started/ shared shell typography #contact .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        }
+      }
+    },
+    {
+      "name": "1024-reduce/get-started/ content retains Manrope",
+      "pass": true
+    },
+    {
+      "name": "1024-reduce/privacy/ shared shell typography #floatingHeader",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 984,
+          "height": 56
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 984,
+          "height": 56
+        }
+      }
+    },
+    {
+      "name": "1024-reduce/privacy/ shared shell typography #floatingHeader .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "24px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.56px",
+          "lineHeight": "24px",
+          "width": 118.515625,
+          "height": 24
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "24px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.56px",
+          "lineHeight": "24px",
+          "width": 118.515625,
+          "height": 24
+        }
+      }
+    },
+    {
+      "name": "1024-reduce/privacy/ shared shell typography #floatingHeader .brand-note",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "9px",
+          "fontWeight": "650",
+          "letterSpacing": "0.72px",
+          "lineHeight": "9.99px",
+          "width": 87.453125,
+          "height": 19.96875
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "9px",
+          "fontWeight": "650",
+          "letterSpacing": "0.72px",
+          "lineHeight": "9.99px",
+          "width": 87.453125,
+          "height": 19.96875
+        }
+      }
+    },
+    {
+      "name": "1024-reduce/privacy/ shared shell typography #floatingHeader .header-links",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 222.671875,
+          "height": 20.796875
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 222.671875,
+          "height": 20.796875
+        }
+      }
+    },
+    {
+      "name": "1024-reduce/privacy/ shared shell typography #floatingHeader > .nav-cta",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 184.75,
+          "height": 40
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 184.75,
+          "height": 40
+        }
+      }
+    },
+    {
+      "name": "1024-reduce/privacy/ shared shell typography #contact .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        }
+      }
+    },
+    {
+      "name": "1024-reduce/privacy/ content retains Manrope",
+      "pass": true
+    },
+    {
+      "name": "1024-no-preference/get-started/ shared shell typography #floatingHeader",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 984,
+          "height": 56
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 984,
+          "height": 56
+        }
+      }
+    },
+    {
+      "name": "1024-no-preference/get-started/ shared shell typography #floatingHeader .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "24px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.56px",
+          "lineHeight": "24px",
+          "width": 118.515625,
+          "height": 24
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "24px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.56px",
+          "lineHeight": "24px",
+          "width": 118.515625,
+          "height": 24
+        }
+      }
+    },
+    {
+      "name": "1024-no-preference/get-started/ shared shell typography #floatingHeader .brand-note",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "9px",
+          "fontWeight": "650",
+          "letterSpacing": "0.72px",
+          "lineHeight": "9.99px",
+          "width": 87.453125,
+          "height": 19.96875
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "9px",
+          "fontWeight": "650",
+          "letterSpacing": "0.72px",
+          "lineHeight": "9.99px",
+          "width": 87.453125,
+          "height": 19.96875
+        }
+      }
+    },
+    {
+      "name": "1024-no-preference/get-started/ shared shell typography #floatingHeader .header-links",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 222.671875,
+          "height": 20.796875
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 222.671875,
+          "height": 20.796875
+        }
+      }
+    },
+    {
+      "name": "1024-no-preference/get-started/ shared shell typography #floatingHeader > .nav-cta",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 184.75,
+          "height": 40
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 184.75,
+          "height": 40
+        }
+      }
+    },
+    {
+      "name": "1024-no-preference/get-started/ shared shell typography #contact .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        }
+      }
+    },
+    {
+      "name": "1024-no-preference/get-started/ content retains Manrope",
+      "pass": true
+    },
+    {
+      "name": "1024-no-preference/privacy/ shared shell typography #floatingHeader",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 984,
+          "height": 56
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 984,
+          "height": 56
+        }
+      }
+    },
+    {
+      "name": "1024-no-preference/privacy/ shared shell typography #floatingHeader .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "24px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.56px",
+          "lineHeight": "24px",
+          "width": 118.515625,
+          "height": 24
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "24px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.56px",
+          "lineHeight": "24px",
+          "width": 118.515625,
+          "height": 24
+        }
+      }
+    },
+    {
+      "name": "1024-no-preference/privacy/ shared shell typography #floatingHeader .brand-note",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "9px",
+          "fontWeight": "650",
+          "letterSpacing": "0.72px",
+          "lineHeight": "9.99px",
+          "width": 87.453125,
+          "height": 19.96875
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "9px",
+          "fontWeight": "650",
+          "letterSpacing": "0.72px",
+          "lineHeight": "9.99px",
+          "width": 87.453125,
+          "height": 19.96875
+        }
+      }
+    },
+    {
+      "name": "1024-no-preference/privacy/ shared shell typography #floatingHeader .header-links",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 222.671875,
+          "height": 20.796875
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 222.671875,
+          "height": 20.796875
+        }
+      }
+    },
+    {
+      "name": "1024-no-preference/privacy/ shared shell typography #floatingHeader > .nav-cta",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 184.75,
+          "height": 40
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 184.75,
+          "height": 40
+        }
+      }
+    },
+    {
+      "name": "1024-no-preference/privacy/ shared shell typography #contact .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        }
+      }
+    },
+    {
+      "name": "1024-no-preference/privacy/ content retains Manrope",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce/get-started/ shared shell typography #floatingHeader",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 1160,
+          "height": 56
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 1160,
+          "height": 56
+        }
+      }
+    },
+    {
+      "name": "1440-reduce/get-started/ shared shell typography #floatingHeader .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "24px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.56px",
+          "lineHeight": "24px",
+          "width": 118.515625,
+          "height": 24
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "24px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.56px",
+          "lineHeight": "24px",
+          "width": 118.515625,
+          "height": 24
+        }
+      }
+    },
+    {
+      "name": "1440-reduce/get-started/ shared shell typography #floatingHeader .brand-note",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "9px",
+          "fontWeight": "650",
+          "letterSpacing": "0.72px",
+          "lineHeight": "9.99px",
+          "width": 87.453125,
+          "height": 19.96875
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "9px",
+          "fontWeight": "650",
+          "letterSpacing": "0.72px",
+          "lineHeight": "9.99px",
+          "width": 87.453125,
+          "height": 19.96875
+        }
+      }
+    },
+    {
+      "name": "1440-reduce/get-started/ shared shell typography #floatingHeader .header-links",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 236.265625,
+          "height": 20.796875
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 236.265625,
+          "height": 20.796875
+        }
+      }
+    },
+    {
+      "name": "1440-reduce/get-started/ shared shell typography #floatingHeader > .nav-cta",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 184.75,
+          "height": 40
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 184.75,
+          "height": 40
+        }
+      }
+    },
+    {
+      "name": "1440-reduce/get-started/ shared shell typography #contact .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        }
+      }
+    },
+    {
+      "name": "1440-reduce/get-started/ content retains Manrope",
+      "pass": true
+    },
+    {
+      "name": "1440 reference dimensions .sc-contact__layout",
+      "pass": true,
+      "data": {
+        "actual": {
+          "x": 112.5,
+          "y": 129.578125,
+          "width": 1215,
+          "height": 607,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        },
+        "reference": {
+          "x": 112.5,
+          "y": 129.578125,
+          "width": 1215,
+          "height": 607,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "1440 reference dimensions .sc-contact__form",
+      "pass": true,
+      "data": {
+        "actual": {
+          "x": 867.5,
+          "y": 129.578125,
+          "width": 460,
+          "height": 607,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "24px"
+        },
+        "reference": {
+          "x": 867.5,
+          "y": 129.578125,
+          "width": 460,
+          "height": 607,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "24px"
+        }
+      }
+    },
+    {
+      "name": "1440 reference dimensions #scPhoneGroup",
+      "pass": true,
+      "data": {
+        "actual": {
+          "x": 910.5,
+          "y": 312.578125,
+          "width": 374,
+          "height": 56,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "12px"
+        },
+        "reference": {
+          "x": 910.5,
+          "y": 312.578125,
+          "width": 374,
+          "height": 56,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "12px"
+        }
+      }
+    },
+    {
+      "name": "1440 reference dimensions .sc-contact__submit",
+      "pass": true,
+      "data": {
+        "actual": {
+          "x": 910.5,
+          "y": 641.578125,
+          "width": 374,
+          "height": 52,
+          "font": "16px",
+          "lineHeight": "16px",
+          "radius": "100px"
+        },
+        "reference": {
+          "x": 910.5,
+          "y": 641.578125,
+          "width": 374,
+          "height": 52,
+          "font": "16px",
+          "lineHeight": "16px",
+          "radius": "100px"
+        }
+      }
+    },
+    {
+      "name": "1440 reference dimensions #relatedViewport",
+      "pass": true,
+      "data": {
+        "actual": {
+          "x": 86,
+          "y": 999.328125,
+          "width": 1268,
+          "height": 525.09375,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        },
+        "reference": {
+          "x": 86,
+          "y": 999.328125,
+          "width": 1268,
+          "height": 525.09375,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "1440 reference dimensions .related-work__arrow",
+      "pass": true,
+      "data": {
+        "actual": {
+          "x": 652,
+          "y": 1510.421875,
+          "width": 52,
+          "height": 52,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "50%"
+        },
+        "reference": {
+          "x": 652,
+          "y": 1510.421875,
+          "width": 52,
+          "height": 52,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "50%"
+        }
+      }
+    },
+    {
+      "name": "1440-reduce/privacy/ shared shell typography #floatingHeader",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 1160,
+          "height": 56
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 1160,
+          "height": 56
+        }
+      }
+    },
+    {
+      "name": "1440-reduce/privacy/ shared shell typography #floatingHeader .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "24px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.56px",
+          "lineHeight": "24px",
+          "width": 118.515625,
+          "height": 24
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "24px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.56px",
+          "lineHeight": "24px",
+          "width": 118.515625,
+          "height": 24
+        }
+      }
+    },
+    {
+      "name": "1440-reduce/privacy/ shared shell typography #floatingHeader .brand-note",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "9px",
+          "fontWeight": "650",
+          "letterSpacing": "0.72px",
+          "lineHeight": "9.99px",
+          "width": 87.453125,
+          "height": 19.96875
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "9px",
+          "fontWeight": "650",
+          "letterSpacing": "0.72px",
+          "lineHeight": "9.99px",
+          "width": 87.453125,
+          "height": 19.96875
+        }
+      }
+    },
+    {
+      "name": "1440-reduce/privacy/ shared shell typography #floatingHeader .header-links",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 236.265625,
+          "height": 20.796875
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 236.265625,
+          "height": 20.796875
+        }
+      }
+    },
+    {
+      "name": "1440-reduce/privacy/ shared shell typography #floatingHeader > .nav-cta",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 184.75,
+          "height": 40
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 184.75,
+          "height": 40
+        }
+      }
+    },
+    {
+      "name": "1440-reduce/privacy/ shared shell typography #contact .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        }
+      }
+    },
+    {
+      "name": "1440-reduce/privacy/ content retains Manrope",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference/get-started/ shared shell typography #floatingHeader",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 1160,
+          "height": 56
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 1160,
+          "height": 56
+        }
+      }
+    },
+    {
+      "name": "1440-no-preference/get-started/ shared shell typography #floatingHeader .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "24px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.56px",
+          "lineHeight": "24px",
+          "width": 118.515625,
+          "height": 24
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "24px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.56px",
+          "lineHeight": "24px",
+          "width": 118.515625,
+          "height": 24
+        }
+      }
+    },
+    {
+      "name": "1440-no-preference/get-started/ shared shell typography #floatingHeader .brand-note",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "9px",
+          "fontWeight": "650",
+          "letterSpacing": "0.72px",
+          "lineHeight": "9.99px",
+          "width": 87.453125,
+          "height": 19.96875
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "9px",
+          "fontWeight": "650",
+          "letterSpacing": "0.72px",
+          "lineHeight": "9.99px",
+          "width": 87.453125,
+          "height": 19.96875
+        }
+      }
+    },
+    {
+      "name": "1440-no-preference/get-started/ shared shell typography #floatingHeader .header-links",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 236.265625,
+          "height": 20.796875
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 236.265625,
+          "height": 20.796875
+        }
+      }
+    },
+    {
+      "name": "1440-no-preference/get-started/ shared shell typography #floatingHeader > .nav-cta",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 184.75,
+          "height": 40
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 184.75,
+          "height": 40
+        }
+      }
+    },
+    {
+      "name": "1440-no-preference/get-started/ shared shell typography #contact .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        }
+      }
+    },
+    {
+      "name": "1440-no-preference/get-started/ content retains Manrope",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference/privacy/ shared shell typography #floatingHeader",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 1160,
+          "height": 56
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 1160,
+          "height": 56
+        }
+      }
+    },
+    {
+      "name": "1440-no-preference/privacy/ shared shell typography #floatingHeader .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "24px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.56px",
+          "lineHeight": "24px",
+          "width": 118.515625,
+          "height": 24
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "24px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.56px",
+          "lineHeight": "24px",
+          "width": 118.515625,
+          "height": 24
+        }
+      }
+    },
+    {
+      "name": "1440-no-preference/privacy/ shared shell typography #floatingHeader .brand-note",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "9px",
+          "fontWeight": "650",
+          "letterSpacing": "0.72px",
+          "lineHeight": "9.99px",
+          "width": 87.453125,
+          "height": 19.96875
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "9px",
+          "fontWeight": "650",
+          "letterSpacing": "0.72px",
+          "lineHeight": "9.99px",
+          "width": 87.453125,
+          "height": 19.96875
+        }
+      }
+    },
+    {
+      "name": "1440-no-preference/privacy/ shared shell typography #floatingHeader .header-links",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 236.265625,
+          "height": 20.796875
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 236.265625,
+          "height": 20.796875
+        }
+      }
+    },
+    {
+      "name": "1440-no-preference/privacy/ shared shell typography #floatingHeader > .nav-cta",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 184.75,
+          "height": 40
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 184.75,
+          "height": 40
+        }
+      }
+    },
+    {
+      "name": "1440-no-preference/privacy/ shared shell typography #contact .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        }
+      }
+    },
+    {
+      "name": "1440-no-preference/privacy/ content retains Manrope",
+      "pass": true
+    },
+    {
+      "name": "2560-reduce/get-started/ shared shell typography #floatingHeader",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 1100,
+          "height": 56
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 1100,
+          "height": 56
+        }
+      }
+    },
+    {
+      "name": "2560-reduce/get-started/ shared shell typography #floatingHeader .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "24px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.56px",
+          "lineHeight": "24px",
+          "width": 118.515625,
+          "height": 24
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "24px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.56px",
+          "lineHeight": "24px",
+          "width": 118.515625,
+          "height": 24
+        }
+      }
+    },
+    {
+      "name": "2560-reduce/get-started/ shared shell typography #floatingHeader .brand-note",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "9px",
+          "fontWeight": "650",
+          "letterSpacing": "0.72px",
+          "lineHeight": "9.99px",
+          "width": 87.453125,
+          "height": 19.96875
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "9px",
+          "fontWeight": "650",
+          "letterSpacing": "0.72px",
+          "lineHeight": "9.99px",
+          "width": 87.453125,
+          "height": 19.96875
+        }
+      }
+    },
+    {
+      "name": "2560-reduce/get-started/ shared shell typography #floatingHeader .header-links",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 238.671875,
+          "height": 20.796875
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 238.671875,
+          "height": 20.796875
+        }
+      }
+    },
+    {
+      "name": "2560-reduce/get-started/ shared shell typography #floatingHeader > .nav-cta",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 184.75,
+          "height": 40
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 184.75,
+          "height": 40
+        }
+      }
+    },
+    {
+      "name": "2560-reduce/get-started/ shared shell typography #contact .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        }
+      }
+    },
+    {
+      "name": "2560-reduce/get-started/ content retains Manrope",
+      "pass": true
+    },
+    {
+      "name": "2560-reduce/privacy/ shared shell typography #floatingHeader",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 1100,
+          "height": 56
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 1100,
+          "height": 56
+        }
+      }
+    },
+    {
+      "name": "2560-reduce/privacy/ shared shell typography #floatingHeader .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "24px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.56px",
+          "lineHeight": "24px",
+          "width": 118.515625,
+          "height": 24
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "24px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.56px",
+          "lineHeight": "24px",
+          "width": 118.515625,
+          "height": 24
+        }
+      }
+    },
+    {
+      "name": "2560-reduce/privacy/ shared shell typography #floatingHeader .brand-note",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "9px",
+          "fontWeight": "650",
+          "letterSpacing": "0.72px",
+          "lineHeight": "9.99px",
+          "width": 87.453125,
+          "height": 19.96875
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "9px",
+          "fontWeight": "650",
+          "letterSpacing": "0.72px",
+          "lineHeight": "9.99px",
+          "width": 87.453125,
+          "height": 19.96875
+        }
+      }
+    },
+    {
+      "name": "2560-reduce/privacy/ shared shell typography #floatingHeader .header-links",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 238.671875,
+          "height": 20.796875
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 238.671875,
+          "height": 20.796875
+        }
+      }
+    },
+    {
+      "name": "2560-reduce/privacy/ shared shell typography #floatingHeader > .nav-cta",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 184.75,
+          "height": 40
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 184.75,
+          "height": 40
+        }
+      }
+    },
+    {
+      "name": "2560-reduce/privacy/ shared shell typography #contact .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        }
+      }
+    },
+    {
+      "name": "2560-reduce/privacy/ content retains Manrope",
+      "pass": true
+    },
+    {
+      "name": "2560-no-preference/get-started/ shared shell typography #floatingHeader",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 1100,
+          "height": 56
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 1100,
+          "height": 56
+        }
+      }
+    },
+    {
+      "name": "2560-no-preference/get-started/ shared shell typography #floatingHeader .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "24px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.56px",
+          "lineHeight": "24px",
+          "width": 118.515625,
+          "height": 24
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "24px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.56px",
+          "lineHeight": "24px",
+          "width": 118.515625,
+          "height": 24
+        }
+      }
+    },
+    {
+      "name": "2560-no-preference/get-started/ shared shell typography #floatingHeader .brand-note",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "9px",
+          "fontWeight": "650",
+          "letterSpacing": "0.72px",
+          "lineHeight": "9.99px",
+          "width": 87.453125,
+          "height": 19.96875
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "9px",
+          "fontWeight": "650",
+          "letterSpacing": "0.72px",
+          "lineHeight": "9.99px",
+          "width": 87.453125,
+          "height": 19.96875
+        }
+      }
+    },
+    {
+      "name": "2560-no-preference/get-started/ shared shell typography #floatingHeader .header-links",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 238.671875,
+          "height": 20.796875
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 238.671875,
+          "height": 20.796875
+        }
+      }
+    },
+    {
+      "name": "2560-no-preference/get-started/ shared shell typography #floatingHeader > .nav-cta",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 184.75,
+          "height": 40
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 184.75,
+          "height": 40
+        }
+      }
+    },
+    {
+      "name": "2560-no-preference/get-started/ shared shell typography #contact .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        }
+      }
+    },
+    {
+      "name": "2560-no-preference/get-started/ content retains Manrope",
+      "pass": true
+    },
+    {
+      "name": "2560-no-preference/privacy/ shared shell typography #floatingHeader",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 1100,
+          "height": 56
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "normal",
+          "width": 1100,
+          "height": 56
+        }
+      }
+    },
+    {
+      "name": "2560-no-preference/privacy/ shared shell typography #floatingHeader .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "24px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.56px",
+          "lineHeight": "24px",
+          "width": 118.515625,
+          "height": 24
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "24px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.56px",
+          "lineHeight": "24px",
+          "width": 118.515625,
+          "height": 24
+        }
+      }
+    },
+    {
+      "name": "2560-no-preference/privacy/ shared shell typography #floatingHeader .brand-note",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "9px",
+          "fontWeight": "650",
+          "letterSpacing": "0.72px",
+          "lineHeight": "9.99px",
+          "width": 87.453125,
+          "height": 19.96875
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "9px",
+          "fontWeight": "650",
+          "letterSpacing": "0.72px",
+          "lineHeight": "9.99px",
+          "width": 87.453125,
+          "height": 19.96875
+        }
+      }
+    },
+    {
+      "name": "2560-no-preference/privacy/ shared shell typography #floatingHeader .header-links",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 238.671875,
+          "height": 20.796875
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "letterSpacing": "normal",
+          "lineHeight": "20.8px",
+          "width": 238.671875,
+          "height": 20.796875
+        }
+      }
+    },
+    {
+      "name": "2560-no-preference/privacy/ shared shell typography #floatingHeader > .nav-cta",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 184.75,
+          "height": 40
+        },
+        "actual": {
+          "fontFamily": "Manrope, Inter, system-ui, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "letterSpacing": "normal",
+          "lineHeight": "16px",
+          "width": 184.75,
+          "height": 40
+        }
+      }
+    },
+    {
+      "name": "2560-no-preference/privacy/ shared shell typography #contact .brand-name",
+      "pass": true,
+      "data": {
+        "expected": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        },
+        "actual": {
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "25px",
+          "fontWeight": "760",
+          "letterSpacing": "-1.625px",
+          "lineHeight": "25px",
+          "width": 123.453125,
+          "height": 25
+        }
+      }
+    },
+    {
+      "name": "2560-no-preference/privacy/ content retains Manrope",
+      "pass": true
+    },
+    {
+      "name": "all scenarios completed",
+      "pass": true
+    },
+    {
+      "name": "no browser JavaScript / HTTP / resource errors",
+      "pass": true,
+      "data": []
+    }
+  ],
+  "errors": [],
+  "viewports": [],
+  "reference": [
+    {
+      "width": 390,
+      "actual": {
+        ".works-surface": {
+          "x": 10,
+          "y": 10,
+          "width": 370,
+          "height": 960.875,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        },
+        ".sc-contact__layout": {
+          "x": 28,
+          "y": 128,
+          "width": 334,
+          "height": 798.875,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        },
+        ".sc-contact__intro h1": {
+          "x": 28,
+          "y": 128,
+          "width": 316,
+          "height": 92.8125,
+          "font": "42px",
+          "lineHeight": "46.41px",
+          "radius": "0px"
+        },
+        ".sc-contact__form": {
+          "x": 28,
+          "y": 336.875,
+          "width": 334,
+          "height": 590,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "22px"
+        },
+        "#scPhoneGroup": {
+          "x": 50,
+          "y": 501.875,
+          "width": 290,
+          "height": 56,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "12px"
+        },
+        ".sc-contact__submit": {
+          "x": 50,
+          "y": 847.875,
+          "width": 290,
+          "height": 52,
+          "font": "16px",
+          "lineHeight": "16px",
+          "radius": "100px"
+        },
+        ".related-work": {
+          "x": 8,
+          "y": 976.875,
+          "width": 374,
+          "height": 655.875,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "24px 24px 0px 0px"
+        },
+        "#relatedViewport": {
+          "x": 22,
+          "y": 1085.921875,
+          "width": 346,
+          "height": 438.828125,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        },
+        ".related-work__arrow": {
+          "x": 129,
+          "y": 1520.75,
+          "width": 52,
+          "height": 52,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "50%"
+        }
+      },
+      "reference": {
+        ".works-surface": {
+          "x": 10,
+          "y": 10,
+          "width": 370,
+          "height": 960.875,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        },
+        ".sc-contact__layout": {
+          "x": 28,
+          "y": 128,
+          "width": 334,
+          "height": 798.875,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        },
+        ".sc-contact__intro h1": {
+          "x": 28,
+          "y": 128,
+          "width": 316,
+          "height": 92.8125,
+          "font": "42px",
+          "lineHeight": "46.41px",
+          "radius": "0px"
+        },
+        ".sc-contact__form": {
+          "x": 28,
+          "y": 336.875,
+          "width": 334,
+          "height": 590,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "22px"
+        },
+        "#scPhoneGroup": {
+          "x": 50,
+          "y": 501.875,
+          "width": 290,
+          "height": 56,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "12px"
+        },
+        ".sc-contact__submit": {
+          "x": 50,
+          "y": 847.875,
+          "width": 290,
+          "height": 52,
+          "font": "16px",
+          "lineHeight": "16px",
+          "radius": "100px"
+        },
+        ".related-work": {
+          "x": 8,
+          "y": 976.875,
+          "width": 374,
+          "height": 655.875,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "24px 24px 0px 0px"
+        },
+        "#relatedViewport": {
+          "x": 22,
+          "y": 1085.921875,
+          "width": 346,
+          "height": 438.828125,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        },
+        ".related-work__arrow": {
+          "x": 129,
+          "y": 1520.75,
+          "width": 52,
+          "height": 52,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "50%"
+        }
+      }
+    },
+    {
+      "width": 1440,
+      "actual": {
+        ".works-surface": {
+          "x": 14.40625,
+          "y": 14.390625,
+          "width": 1411.1875,
+          "height": 797.0625,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        },
+        ".sc-contact__layout": {
+          "x": 112.5,
+          "y": 129.578125,
+          "width": 1215,
+          "height": 607,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        },
+        ".sc-contact__intro h1": {
+          "x": 112.5,
+          "y": 310.90625,
+          "width": 556.84375,
+          "height": 163.875,
+          "font": "74.16px",
+          "lineHeight": "81.9468px",
+          "radius": "0px"
+        },
+        ".sc-contact__form": {
+          "x": 867.5,
+          "y": 129.578125,
+          "width": 460,
+          "height": 607,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "24px"
+        },
+        "#scPhoneGroup": {
+          "x": 910.5,
+          "y": 312.578125,
+          "width": 374,
+          "height": 56,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "12px"
+        },
+        ".sc-contact__submit": {
+          "x": 910.5,
+          "y": 641.578125,
+          "width": 374,
+          "height": 52,
+          "font": "16px",
+          "lineHeight": "16px",
+          "radius": "100px"
+        },
+        ".related-work": {
+          "x": 8,
+          "y": 819.453125,
+          "width": 1424,
+          "height": 829.359375,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "40px 40px 0px 0px"
+        },
+        "#relatedViewport": {
+          "x": 86,
+          "y": 999.328125,
+          "width": 1268,
+          "height": 525.09375,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        },
+        ".related-work__arrow": {
+          "x": 652,
+          "y": 1510.421875,
+          "width": 52,
+          "height": 52,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "50%"
+        }
+      },
+      "reference": {
+        ".works-surface": {
+          "x": 14.40625,
+          "y": 14.390625,
+          "width": 1411.1875,
+          "height": 797.0625,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        },
+        ".sc-contact__layout": {
+          "x": 112.5,
+          "y": 129.578125,
+          "width": 1215,
+          "height": 607,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        },
+        ".sc-contact__intro h1": {
+          "x": 112.5,
+          "y": 310.90625,
+          "width": 556.84375,
+          "height": 163.875,
+          "font": "74.16px",
+          "lineHeight": "81.9468px",
+          "radius": "0px"
+        },
+        ".sc-contact__form": {
+          "x": 867.5,
+          "y": 129.578125,
+          "width": 460,
+          "height": 607,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "24px"
+        },
+        "#scPhoneGroup": {
+          "x": 910.5,
+          "y": 312.578125,
+          "width": 374,
+          "height": 56,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "12px"
+        },
+        ".sc-contact__submit": {
+          "x": 910.5,
+          "y": 641.578125,
+          "width": 374,
+          "height": 52,
+          "font": "16px",
+          "lineHeight": "16px",
+          "radius": "100px"
+        },
+        ".related-work": {
+          "x": 8,
+          "y": 819.453125,
+          "width": 1424,
+          "height": 829.359375,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "40px 40px 0px 0px"
+        },
+        "#relatedViewport": {
+          "x": 86,
+          "y": 999.328125,
+          "width": 1268,
+          "height": 525.09375,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        },
+        ".related-work__arrow": {
+          "x": 652,
+          "y": 1510.421875,
+          "width": 52,
+          "height": 52,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "50%"
+        }
+      }
+    }
+  ],
+  "cta": [],
+  "limitations": [
+    "Browser automation verifies wheel/touch response; it does not establish physical mouse/trackpad smoothness.",
+    "Historical modal CTA are tested by opening preserved dialogs programmatically: all six work cards now navigate directly, so these dialogs have no normal entry point.",
+    "The mailto fallback is inspected without launching an external email client. No backend or delivery exists.",
+    "Phone masks validate digit counts, not number ownership or carrier allocation. Privacy remains a draft."
+  ],
+  "pass": true
+}

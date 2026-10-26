@@ -4,7 +4,9 @@
 const assert=require('node:assert/strict'),path=require('node:path');
 const {casePages}=require('./case-page.cjs');
 const {homeLink}=require('./case-links.cjs');
+const {restoreDiscussionLinks}=require('./approved-discussion-links.cjs');
 function restoreRegisteredCaseLinks(file,html,cases){
+ html=restoreDiscussionLinks(file,html);
  const home=file==='index.html';
  return html.replace(/<article\b[\s\S]*?<\/article>/g,article=>{
   const project=cases.find(c=>article.includes((home?'data-work-id':'data-project')+'="'+c.catalog_id+'"'));if(!project)return article;
@@ -23,7 +25,7 @@ function restoreRegisteredCaseLinks(file,html,cases){
   return article.replace(opening,opening.replace('<a ','<button ').replace(' href="/raboty/'+project.slug+'/">',' type="button">')).replace('</a>','</button>');
  });
 }
-function restoreLaterCaseLinks(html){
- return restoreRegisteredCaseLinks('',html,casePages(path.resolve(__dirname,'../..')).filter(c=>c.catalog_id!=='beauty'));
+function restoreLaterCaseLinks(html,file){
+ return restoreRegisteredCaseLinks(file,html,casePages(path.resolve(__dirname,'../..')).filter(c=>c.catalog_id!=='beauty'));
 }
 module.exports={restoreLaterCaseLinks,restoreRegisteredCaseLinks};

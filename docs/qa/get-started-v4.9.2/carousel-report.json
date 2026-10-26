@@ -1,0 +1,815 @@
+{
+  "version": "4.9.2",
+  "base": "http://127.0.0.1:4176/",
+  "createdAt": "2026-10-26T17:34:32.770Z",
+  "checks": [
+    {
+      "name": "1440-reduce arrow advances transform",
+      "pass": true,
+      "data": {
+        "start": {
+          "first": "/raboty/b2b/",
+          "transform": "translate3d(-1284px, 0px, 0px)",
+          "scrollLeft": 0
+        },
+        "forward": {
+          "first": "/raboty/flowers/",
+          "transform": "translate3d(-1712px, 0px, 0px)",
+          "scrollLeft": 0
+        }
+      }
+    },
+    {
+      "name": "1440-reduce previous reverses",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce six quick clicks complete full loop",
+      "pass": true,
+      "data": {
+        "first": "/raboty/b2b/",
+        "transform": "translate3d(-1284px, 0px, 0px)",
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "1440-reduce previous full loop",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce keyboard next",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce keyboard previous",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce arrow hover white stationary neutral border",
+      "pass": true,
+      "data": {
+        "before": {
+          "x": 736,
+          "y": 626.421875,
+          "w": 52,
+          "h": 52,
+          "background": "rgb(255, 255, 255)",
+          "border": "rgba(0, 0, 0, 0.1)",
+          "transform": "none"
+        },
+        "after": {
+          "x": 736,
+          "y": 626.421875,
+          "w": 52,
+          "h": 52,
+          "background": "rgb(255, 255, 255)",
+          "border": "rgba(0, 0, 0, 0.1)",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1440-reduce clone links excluded from tab order",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce native Tab card 1 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/b2b/",
+        "inside": true,
+        "left": 87,
+        "right": 497,
+        "viewportLeft": 86,
+        "viewportRight": 1354,
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "1440-reduce native Tab card 2 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/flowers/",
+        "inside": true,
+        "left": 515,
+        "right": 925,
+        "viewportLeft": 86,
+        "viewportRight": 1354,
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "1440-reduce native Tab card 3 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/crm/",
+        "inside": true,
+        "left": 943,
+        "right": 1353,
+        "viewportLeft": 86,
+        "viewportRight": 1354,
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "1440-reduce native Tab card 4 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/beauty-insight/",
+        "inside": true,
+        "left": 87,
+        "right": 497,
+        "viewportLeft": 86,
+        "viewportRight": 1354,
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "1440-reduce native Tab card 5 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/prostor/",
+        "inside": true,
+        "left": 515,
+        "right": 925,
+        "viewportLeft": 86,
+        "viewportRight": 1354,
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "1440-reduce native Tab card 6 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/metal-calc/",
+        "inside": true,
+        "left": 943,
+        "right": 1353,
+        "viewportLeft": 86,
+        "viewportRight": 1354,
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "1440-reduce next after keyboard wrap uses transform",
+      "pass": true,
+      "data": {
+        "before": {
+          "first": "/raboty/beauty-insight/",
+          "transform": "translate3d(-2568px, 0px, 0px)",
+          "scrollLeft": 0
+        },
+        "expectedNext": "/raboty/prostor/",
+        "after": {
+          "first": "/raboty/prostor/",
+          "transform": "translate3d(-2996px, 0px, 0px)",
+          "scrollLeft": 0
+        }
+      }
+    },
+    {
+      "name": "1440-reduce full loop after native keyboard",
+      "pass": true,
+      "data": {
+        "expectedNext": "/raboty/prostor/",
+        "after": {
+          "first": "/raboty/prostor/",
+          "transform": "translate3d(-2996px, 0px, 0px)",
+          "scrollLeft": 0
+        }
+      }
+    },
+    {
+      "name": "1440-reduce ShiftTab after arrows 0 aligns real card",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce ShiftTab after arrows 1 aligns real card",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference arrow advances transform",
+      "pass": true,
+      "data": {
+        "start": {
+          "first": "/raboty/b2b/",
+          "transform": "translate3d(-1284px, 0px, 0px)",
+          "scrollLeft": 0
+        },
+        "forward": {
+          "first": "/raboty/flowers/",
+          "transform": "translate3d(-1712px, 0px, 0px)",
+          "scrollLeft": 0
+        }
+      }
+    },
+    {
+      "name": "1440-no-preference previous reverses",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference six quick clicks complete full loop",
+      "pass": true,
+      "data": {
+        "first": "/raboty/b2b/",
+        "transform": "translate3d(-1284px, 0px, 0px)",
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "1440-no-preference previous full loop",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference keyboard next",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference keyboard previous",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference arrow hover white stationary neutral border",
+      "pass": true,
+      "data": {
+        "before": {
+          "x": 736,
+          "y": 626.421875,
+          "w": 52,
+          "h": 52,
+          "background": "rgb(255, 255, 255)",
+          "border": "rgba(0, 0, 0, 0.1)",
+          "transform": "none"
+        },
+        "after": {
+          "x": 736,
+          "y": 626.421875,
+          "w": 52,
+          "h": 52,
+          "background": "rgb(255, 255, 255)",
+          "border": "rgba(0, 0, 0, 0.1)",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "1440-no-preference clone links excluded from tab order",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference native Tab card 1 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/b2b/",
+        "inside": true,
+        "left": 87,
+        "right": 497,
+        "viewportLeft": 86,
+        "viewportRight": 1354,
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "1440-no-preference native Tab card 2 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/flowers/",
+        "inside": true,
+        "left": 515,
+        "right": 925,
+        "viewportLeft": 86,
+        "viewportRight": 1354,
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "1440-no-preference native Tab card 3 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/crm/",
+        "inside": true,
+        "left": 943,
+        "right": 1353,
+        "viewportLeft": 86,
+        "viewportRight": 1354,
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "1440-no-preference native Tab card 4 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/beauty-insight/",
+        "inside": true,
+        "left": 87,
+        "right": 497,
+        "viewportLeft": 86,
+        "viewportRight": 1354,
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "1440-no-preference native Tab card 5 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/prostor/",
+        "inside": true,
+        "left": 515,
+        "right": 925,
+        "viewportLeft": 86,
+        "viewportRight": 1354,
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "1440-no-preference native Tab card 6 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/metal-calc/",
+        "inside": true,
+        "left": 943,
+        "right": 1353,
+        "viewportLeft": 86,
+        "viewportRight": 1354,
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "1440-no-preference next after keyboard wrap uses transform",
+      "pass": true,
+      "data": {
+        "before": {
+          "first": "/raboty/beauty-insight/",
+          "transform": "translate3d(-2568px, 0px, 0px)",
+          "scrollLeft": 0
+        },
+        "expectedNext": "/raboty/prostor/",
+        "after": {
+          "first": "/raboty/prostor/",
+          "transform": "translate3d(-2996px, 0px, 0px)",
+          "scrollLeft": 0
+        }
+      }
+    },
+    {
+      "name": "1440-no-preference full loop after native keyboard",
+      "pass": true,
+      "data": {
+        "expectedNext": "/raboty/prostor/",
+        "after": {
+          "first": "/raboty/prostor/",
+          "transform": "translate3d(-2996px, 0px, 0px)",
+          "scrollLeft": 0
+        }
+      }
+    },
+    {
+      "name": "1440-no-preference ShiftTab after arrows 0 aligns real card",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference ShiftTab after arrows 1 aligns real card",
+      "pass": true
+    },
+    {
+      "name": "2560-reduce arrow advances transform",
+      "pass": true,
+      "data": {
+        "start": {
+          "first": "/raboty/b2b/",
+          "transform": "translate3d(-1284px, 0px, 0px)",
+          "scrollLeft": 0
+        },
+        "forward": {
+          "first": "/raboty/flowers/",
+          "transform": "translate3d(-1712px, 0px, 0px)",
+          "scrollLeft": 0
+        }
+      }
+    },
+    {
+      "name": "2560-reduce previous reverses",
+      "pass": true
+    },
+    {
+      "name": "2560-reduce six quick clicks complete full loop",
+      "pass": true,
+      "data": {
+        "first": "/raboty/b2b/",
+        "transform": "translate3d(-1284px, 0px, 0px)",
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "2560-reduce previous full loop",
+      "pass": true
+    },
+    {
+      "name": "2560-reduce keyboard next",
+      "pass": true
+    },
+    {
+      "name": "2560-reduce keyboard previous",
+      "pass": true
+    },
+    {
+      "name": "2560-reduce arrow hover white stationary neutral border",
+      "pass": true,
+      "data": {
+        "before": {
+          "x": 1296,
+          "y": 626.09375,
+          "w": 52,
+          "h": 52,
+          "background": "rgb(255, 255, 255)",
+          "border": "rgba(0, 0, 0, 0.1)",
+          "transform": "none"
+        },
+        "after": {
+          "x": 1296,
+          "y": 626.09375,
+          "w": 52,
+          "h": 52,
+          "background": "rgb(255, 255, 255)",
+          "border": "rgba(0, 0, 0, 0.1)",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "2560-reduce clone links excluded from tab order",
+      "pass": true
+    },
+    {
+      "name": "2560-reduce native Tab card 1 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/b2b/",
+        "inside": true,
+        "left": 647,
+        "right": 1057,
+        "viewportLeft": 646,
+        "viewportRight": 1914,
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "2560-reduce native Tab card 2 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/flowers/",
+        "inside": true,
+        "left": 1075,
+        "right": 1485,
+        "viewportLeft": 646,
+        "viewportRight": 1914,
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "2560-reduce native Tab card 3 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/crm/",
+        "inside": true,
+        "left": 1503,
+        "right": 1913,
+        "viewportLeft": 646,
+        "viewportRight": 1914,
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "2560-reduce native Tab card 4 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/beauty-insight/",
+        "inside": true,
+        "left": 647,
+        "right": 1057,
+        "viewportLeft": 646,
+        "viewportRight": 1914,
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "2560-reduce native Tab card 5 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/prostor/",
+        "inside": true,
+        "left": 1075,
+        "right": 1485,
+        "viewportLeft": 646,
+        "viewportRight": 1914,
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "2560-reduce native Tab card 6 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/metal-calc/",
+        "inside": true,
+        "left": 1503,
+        "right": 1913,
+        "viewportLeft": 646,
+        "viewportRight": 1914,
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "2560-reduce next after keyboard wrap uses transform",
+      "pass": true,
+      "data": {
+        "before": {
+          "first": "/raboty/beauty-insight/",
+          "transform": "translate3d(-2568px, 0px, 0px)",
+          "scrollLeft": 0
+        },
+        "expectedNext": "/raboty/prostor/",
+        "after": {
+          "first": "/raboty/prostor/",
+          "transform": "translate3d(-2996px, 0px, 0px)",
+          "scrollLeft": 0
+        }
+      }
+    },
+    {
+      "name": "2560-reduce full loop after native keyboard",
+      "pass": true,
+      "data": {
+        "expectedNext": "/raboty/prostor/",
+        "after": {
+          "first": "/raboty/prostor/",
+          "transform": "translate3d(-2996px, 0px, 0px)",
+          "scrollLeft": 0
+        }
+      }
+    },
+    {
+      "name": "2560-reduce ShiftTab after arrows 0 aligns real card",
+      "pass": true
+    },
+    {
+      "name": "2560-reduce ShiftTab after arrows 1 aligns real card",
+      "pass": true
+    },
+    {
+      "name": "2560-no-preference arrow advances transform",
+      "pass": true,
+      "data": {
+        "start": {
+          "first": "/raboty/b2b/",
+          "transform": "translate3d(-1284px, 0px, 0px)",
+          "scrollLeft": 0
+        },
+        "forward": {
+          "first": "/raboty/flowers/",
+          "transform": "translate3d(-1712px, 0px, 0px)",
+          "scrollLeft": 0
+        }
+      }
+    },
+    {
+      "name": "2560-no-preference previous reverses",
+      "pass": true
+    },
+    {
+      "name": "2560-no-preference six quick clicks complete full loop",
+      "pass": true,
+      "data": {
+        "first": "/raboty/b2b/",
+        "transform": "translate3d(-1284px, 0px, 0px)",
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "2560-no-preference previous full loop",
+      "pass": true
+    },
+    {
+      "name": "2560-no-preference keyboard next",
+      "pass": true
+    },
+    {
+      "name": "2560-no-preference keyboard previous",
+      "pass": true
+    },
+    {
+      "name": "2560-no-preference arrow hover white stationary neutral border",
+      "pass": true,
+      "data": {
+        "before": {
+          "x": 1296,
+          "y": 626.09375,
+          "w": 52,
+          "h": 52,
+          "background": "rgb(255, 255, 255)",
+          "border": "rgba(0, 0, 0, 0.1)",
+          "transform": "none"
+        },
+        "after": {
+          "x": 1296,
+          "y": 626.09375,
+          "w": 52,
+          "h": 52,
+          "background": "rgb(255, 255, 255)",
+          "border": "rgba(0, 0, 0, 0.1)",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "2560-no-preference clone links excluded from tab order",
+      "pass": true
+    },
+    {
+      "name": "2560-no-preference native Tab card 1 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/b2b/",
+        "inside": true,
+        "left": 647,
+        "right": 1057,
+        "viewportLeft": 646,
+        "viewportRight": 1914,
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "2560-no-preference native Tab card 2 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/flowers/",
+        "inside": true,
+        "left": 1075,
+        "right": 1485,
+        "viewportLeft": 646,
+        "viewportRight": 1914,
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "2560-no-preference native Tab card 3 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/crm/",
+        "inside": true,
+        "left": 1503,
+        "right": 1913,
+        "viewportLeft": 646,
+        "viewportRight": 1914,
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "2560-no-preference native Tab card 4 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/beauty-insight/",
+        "inside": true,
+        "left": 647,
+        "right": 1057,
+        "viewportLeft": 646,
+        "viewportRight": 1914,
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "2560-no-preference native Tab card 5 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/prostor/",
+        "inside": true,
+        "left": 1075,
+        "right": 1485,
+        "viewportLeft": 646,
+        "viewportRight": 1914,
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "2560-no-preference native Tab card 6 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/metal-calc/",
+        "inside": true,
+        "left": 1503,
+        "right": 1913,
+        "viewportLeft": 646,
+        "viewportRight": 1914,
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "2560-no-preference next after keyboard wrap uses transform",
+      "pass": true,
+      "data": {
+        "before": {
+          "first": "/raboty/beauty-insight/",
+          "transform": "translate3d(-2568px, 0px, 0px)",
+          "scrollLeft": 0
+        },
+        "expectedNext": "/raboty/prostor/",
+        "after": {
+          "first": "/raboty/prostor/",
+          "transform": "translate3d(-2996px, 0px, 0px)",
+          "scrollLeft": 0
+        }
+      }
+    },
+    {
+      "name": "2560-no-preference full loop after native keyboard",
+      "pass": true,
+      "data": {
+        "expectedNext": "/raboty/prostor/",
+        "after": {
+          "first": "/raboty/prostor/",
+          "transform": "translate3d(-2996px, 0px, 0px)",
+          "scrollLeft": 0
+        }
+      }
+    },
+    {
+      "name": "2560-no-preference ShiftTab after arrows 0 aligns real card",
+      "pass": true
+    },
+    {
+      "name": "2560-no-preference ShiftTab after arrows 1 aligns real card",
+      "pass": true
+    },
+    {
+      "name": "390/get-started/ 15px scrollbar no overflow / symmetric outer hero",
+      "pass": true,
+      "data": {
+        "layoutWidth": 375,
+        "clientWidth": 390,
+        "innerWidth": 390,
+        "scrollWidth": 375,
+        "left": 10,
+        "right": 10,
+        "scrollbar": 15
+      }
+    },
+    {
+      "name": "390/privacy/ 15px scrollbar no overflow / symmetric outer hero",
+      "pass": true,
+      "data": {
+        "layoutWidth": 375,
+        "clientWidth": 390,
+        "innerWidth": 390,
+        "scrollWidth": 375,
+        "left": 10,
+        "right": 10,
+        "scrollbar": 15
+      }
+    },
+    {
+      "name": "1440/get-started/ 15px scrollbar no overflow / symmetric outer hero",
+      "pass": true,
+      "data": {
+        "layoutWidth": 1425,
+        "clientWidth": 1440,
+        "innerWidth": 1440,
+        "scrollWidth": 1425,
+        "left": 14.40625,
+        "right": 14.40625,
+        "scrollbar": 15
+      }
+    },
+    {
+      "name": "1440/privacy/ 15px scrollbar no overflow / symmetric outer hero",
+      "pass": true,
+      "data": {
+        "layoutWidth": 1425,
+        "clientWidth": 1440,
+        "innerWidth": 1440,
+        "scrollWidth": 1425,
+        "left": 14.40625,
+        "right": 14.40625,
+        "scrollbar": 15
+      }
+    },
+    {
+      "name": "all scenarios completed",
+      "pass": true
+    },
+    {
+      "name": "no browser JavaScript / HTTP / resource errors",
+      "pass": true,
+      "data": []
+    }
+  ],
+  "errors": [],
+  "viewports": [],
+  "reference": [],
+  "cta": [],
+  "limitations": [
+    "Browser automation verifies wheel/touch response; it does not establish physical mouse/trackpad smoothness.",
+    "Historical modal CTA are tested by opening preserved dialogs programmatically: all six work cards now navigate directly, so these dialogs have no normal entry point.",
+    "The mailto fallback is inspected without launching an external email client. No backend or delivery exists.",
+    "Phone masks validate digit counts, not number ownership or carrier allocation. Privacy remains a draft."
+  ],
+  "pass": true
+}
