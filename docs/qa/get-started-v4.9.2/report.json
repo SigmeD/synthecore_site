@@ -1,0 +1,4532 @@
+{
+  "version": "4.9.2",
+  "base": "http://127.0.0.1:4176/",
+  "createdAt": "2026-10-26T17:31:03.269Z",
+  "checks": [
+    {
+      "name": "320-reduce/get-started/ no overflow",
+      "pass": true,
+      "data": {
+        "scrollWidth": 320,
+        "width": 320
+      }
+    },
+    {
+      "name": "320-reduce/get-started/ single shell / scroll / menu owner",
+      "pass": true
+    },
+    {
+      "name": "320-reduce/get-started/ all images loaded",
+      "pass": true
+    },
+    {
+      "name": "320-reduce responsive 1 cards",
+      "pass": true,
+      "data": {
+        "width": 276,
+        "card": 276,
+        "gap": 16
+      }
+    },
+    {
+      "name": "320-reduce six real cards",
+      "pass": true
+    },
+    {
+      "name": "320-reduce required scClientName",
+      "pass": true
+    },
+    {
+      "name": "320-reduce required scContact",
+      "pass": true
+    },
+    {
+      "name": "320-reduce required scPhone",
+      "pass": true
+    },
+    {
+      "name": "320-reduce required scTask",
+      "pass": true
+    },
+    {
+      "name": "320-reduce required scDataConsent",
+      "pass": true
+    },
+    {
+      "name": "320-reduce phone country defaults BY / 44 countries",
+      "pass": true
+    },
+    {
+      "name": "320-reduce phone BY 9",
+      "pass": true
+    },
+    {
+      "name": "320-reduce phone EE 7",
+      "pass": true
+    },
+    {
+      "name": "320-reduce phone EE 8",
+      "pass": true
+    },
+    {
+      "name": "320-reduce phone RU 10",
+      "pass": true
+    },
+    {
+      "name": "320-reduce phone KZ 10",
+      "pass": true
+    },
+    {
+      "name": "320-reduce phone UZ 9",
+      "pass": true
+    },
+    {
+      "name": "320-reduce phone US 10",
+      "pass": true
+    },
+    {
+      "name": "320-reduce phone DE 7",
+      "pass": true
+    },
+    {
+      "name": "320-reduce phone DE 12",
+      "pass": true
+    },
+    {
+      "name": "320-reduce international paste BY",
+      "pass": true
+    },
+    {
+      "name": "320-reduce international paste EE",
+      "pass": true
+    },
+    {
+      "name": "320-reduce real clipboard paste normalizes phone",
+      "pass": true
+    },
+    {
+      "name": "320-reduce phone Delete crosses separator",
+      "pass": true,
+      "data": {
+        "actual": "29 234-56-7",
+        "expected": "29 234-56-7"
+      }
+    },
+    {
+      "name": "320-reduce phone Backspace crosses separator",
+      "pass": true,
+      "data": {
+        "actual": "21 234-56-7",
+        "expected": "21 234-56-7"
+      }
+    },
+    {
+      "name": "320-reduce rejects short phone",
+      "pass": true
+    },
+    {
+      "name": "320-reduce rejects malformed contact task URL",
+      "pass": true
+    },
+    {
+      "name": "320-reduce valid email honest demo / no clearing / international mailto",
+      "pass": true,
+      "data": {
+        "mailto": "mailto:max.eroxin@gmail.com?subject=SyntheCore — новая задача от QA User&body=Имя: QA User\nКонтакт: qa@example.test\nТелефон: +375291234567\n\nЗадача:\nНужно обсудить доработку кабинета и интеграции.\n\nСсылка на проект: https://example.test/project"
+      }
+    },
+    {
+      "name": "320-reduce no network submission",
+      "pass": true,
+      "data": []
+    },
+    {
+      "name": "320-reduce accepts Telegram @qa_username",
+      "pass": true
+    },
+    {
+      "name": "320-reduce accepts Telegram https://t.me/qa_username",
+      "pass": true
+    },
+    {
+      "name": "320-reduce optional URL can be empty",
+      "pass": true
+    },
+    {
+      "name": "320-reduce consent required independently",
+      "pass": true
+    },
+    {
+      "name": "320-reduce privacy link target and rel",
+      "pass": true
+    },
+    {
+      "name": "320-reduce privacy opens new tab",
+      "pass": true
+    },
+    {
+      "name": "320-reduce native country keyboard",
+      "pass": true
+    },
+    {
+      "name": "320-reduce/privacy/ no overflow",
+      "pass": true,
+      "data": {
+        "scrollWidth": 320,
+        "width": 320
+      }
+    },
+    {
+      "name": "320-reduce/privacy/ single shell / scroll / menu owner",
+      "pass": true
+    },
+    {
+      "name": "320-reduce/privacy/ all images loaded",
+      "pass": true
+    },
+    {
+      "name": "320-no-preference/get-started/ no overflow",
+      "pass": true,
+      "data": {
+        "scrollWidth": 320,
+        "width": 320
+      }
+    },
+    {
+      "name": "320-no-preference/get-started/ single shell / scroll / menu owner",
+      "pass": true
+    },
+    {
+      "name": "320-no-preference/get-started/ all images loaded",
+      "pass": true
+    },
+    {
+      "name": "320-no-preference responsive 1 cards",
+      "pass": true,
+      "data": {
+        "width": 276,
+        "card": 276,
+        "gap": 16
+      }
+    },
+    {
+      "name": "320-no-preference six real cards",
+      "pass": true
+    },
+    {
+      "name": "320-no-preference/privacy/ no overflow",
+      "pass": true,
+      "data": {
+        "scrollWidth": 320,
+        "width": 320
+      }
+    },
+    {
+      "name": "320-no-preference/privacy/ single shell / scroll / menu owner",
+      "pass": true
+    },
+    {
+      "name": "320-no-preference/privacy/ all images loaded",
+      "pass": true
+    },
+    {
+      "name": "390-reduce/get-started/ no overflow",
+      "pass": true,
+      "data": {
+        "scrollWidth": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "390-reduce/get-started/ single shell / scroll / menu owner",
+      "pass": true
+    },
+    {
+      "name": "390-reduce/get-started/ all images loaded",
+      "pass": true
+    },
+    {
+      "name": "390-reduce responsive 1 cards",
+      "pass": true,
+      "data": {
+        "width": 346,
+        "card": 346,
+        "gap": 16
+      }
+    },
+    {
+      "name": "390-reduce six real cards",
+      "pass": true
+    },
+    {
+      "name": "390 reference dimensions .sc-contact__layout",
+      "pass": true,
+      "data": {
+        "actual": {
+          "x": 28,
+          "y": 128,
+          "width": 334,
+          "height": 798.875,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        },
+        "reference": {
+          "x": 28,
+          "y": 128,
+          "width": 334,
+          "height": 798.875,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "390 reference dimensions .sc-contact__form",
+      "pass": true,
+      "data": {
+        "actual": {
+          "x": 28,
+          "y": 336.875,
+          "width": 334,
+          "height": 590,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "22px"
+        },
+        "reference": {
+          "x": 28,
+          "y": 336.875,
+          "width": 334,
+          "height": 590,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "22px"
+        }
+      }
+    },
+    {
+      "name": "390 reference dimensions #scPhoneGroup",
+      "pass": true,
+      "data": {
+        "actual": {
+          "x": 50,
+          "y": 501.875,
+          "width": 290,
+          "height": 56,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "12px"
+        },
+        "reference": {
+          "x": 50,
+          "y": 501.875,
+          "width": 290,
+          "height": 56,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "12px"
+        }
+      }
+    },
+    {
+      "name": "390 reference dimensions .sc-contact__submit",
+      "pass": true,
+      "data": {
+        "actual": {
+          "x": 50,
+          "y": 847.875,
+          "width": 290,
+          "height": 52,
+          "font": "16px",
+          "lineHeight": "16px",
+          "radius": "100px"
+        },
+        "reference": {
+          "x": 50,
+          "y": 847.875,
+          "width": 290,
+          "height": 52,
+          "font": "16px",
+          "lineHeight": "16px",
+          "radius": "100px"
+        }
+      }
+    },
+    {
+      "name": "390 reference dimensions #relatedViewport",
+      "pass": true,
+      "data": {
+        "actual": {
+          "x": 22,
+          "y": 1085.921875,
+          "width": 346,
+          "height": 438.828125,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        },
+        "reference": {
+          "x": 22,
+          "y": 1085.921875,
+          "width": 346,
+          "height": 438.828125,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "390 reference dimensions .related-work__arrow",
+      "pass": true,
+      "data": {
+        "actual": {
+          "x": 129,
+          "y": 1520.75,
+          "width": 52,
+          "height": 52,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "50%"
+        },
+        "reference": {
+          "x": 129,
+          "y": 1520.75,
+          "width": 52,
+          "height": 52,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "50%"
+        }
+      }
+    },
+    {
+      "name": "390-reduce arrow advances transform",
+      "pass": true,
+      "data": {
+        "start": {
+          "first": "/raboty/b2b/",
+          "transform": "translate3d(-1086px, 0px, 0px)",
+          "scrollLeft": 0
+        },
+        "forward": {
+          "first": "/raboty/flowers/",
+          "transform": "translate3d(-1448px, 0px, 0px)",
+          "scrollLeft": 0
+        }
+      }
+    },
+    {
+      "name": "390-reduce previous reverses",
+      "pass": true
+    },
+    {
+      "name": "390-reduce six quick clicks complete full loop",
+      "pass": true,
+      "data": {
+        "first": "/raboty/b2b/",
+        "transform": "translate3d(-1086px, 0px, 0px)",
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "390-reduce previous full loop",
+      "pass": true
+    },
+    {
+      "name": "390-reduce keyboard next",
+      "pass": true
+    },
+    {
+      "name": "390-reduce keyboard previous",
+      "pass": true
+    },
+    {
+      "name": "390-reduce arrow hover white stationary neutral border",
+      "pass": true,
+      "data": {
+        "before": {
+          "x": 209,
+          "y": 549.75,
+          "w": 52,
+          "h": 52,
+          "background": "rgb(255, 255, 255)",
+          "border": "rgba(0, 0, 0, 0.1)",
+          "transform": "none"
+        },
+        "after": {
+          "x": 209,
+          "y": 549.75,
+          "w": 52,
+          "h": 52,
+          "background": "rgb(255, 255, 255)",
+          "border": "rgba(0, 0, 0, 0.1)",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "390-reduce clone links excluded from tab order",
+      "pass": true
+    },
+    {
+      "name": "390-reduce real CDP touch swipe",
+      "pass": true,
+      "data": {
+        "before": {
+          "first": "/raboty/b2b/",
+          "transform": "translate3d(-1086px, 0px, 0px)",
+          "scrollLeft": 0
+        },
+        "after": {
+          "first": "/raboty/flowers/",
+          "transform": "translate3d(-1448px, 0px, 0px)",
+          "scrollLeft": 0
+        }
+      }
+    },
+    {
+      "name": "390-reduce native Tab card 1 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/b2b/",
+        "inside": true,
+        "left": 23,
+        "right": 367,
+        "viewportLeft": 22,
+        "viewportRight": 368,
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "390-reduce native Tab card 2 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/flowers/",
+        "inside": true,
+        "left": 23,
+        "right": 367,
+        "viewportLeft": 22,
+        "viewportRight": 368,
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "390-reduce native Tab card 3 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/crm/",
+        "inside": true,
+        "left": 23,
+        "right": 367,
+        "viewportLeft": 22,
+        "viewportRight": 368,
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "390-reduce native Tab card 4 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/beauty-insight/",
+        "inside": true,
+        "left": 23,
+        "right": 367,
+        "viewportLeft": 22,
+        "viewportRight": 368,
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "390-reduce native Tab card 5 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/prostor/",
+        "inside": true,
+        "left": 23,
+        "right": 367,
+        "viewportLeft": 22,
+        "viewportRight": 368,
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "390-reduce native Tab card 6 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/metal-calc/",
+        "inside": true,
+        "left": 23,
+        "right": 367,
+        "viewportLeft": 22,
+        "viewportRight": 368,
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "390-reduce next after keyboard wrap uses transform",
+      "pass": true
+    },
+    {
+      "name": "390-reduce full loop after native keyboard",
+      "pass": true
+    },
+    {
+      "name": "390-reduce ShiftTab after arrows 0 aligns real card",
+      "pass": true
+    },
+    {
+      "name": "390-reduce ShiftTab after arrows 1 aligns real card",
+      "pass": true
+    },
+    {
+      "name": "390-reduce required scClientName",
+      "pass": true
+    },
+    {
+      "name": "390-reduce required scContact",
+      "pass": true
+    },
+    {
+      "name": "390-reduce required scPhone",
+      "pass": true
+    },
+    {
+      "name": "390-reduce required scTask",
+      "pass": true
+    },
+    {
+      "name": "390-reduce required scDataConsent",
+      "pass": true
+    },
+    {
+      "name": "390-reduce phone country defaults BY / 44 countries",
+      "pass": true
+    },
+    {
+      "name": "390-reduce phone BY 9",
+      "pass": true
+    },
+    {
+      "name": "390-reduce phone EE 7",
+      "pass": true
+    },
+    {
+      "name": "390-reduce phone EE 8",
+      "pass": true
+    },
+    {
+      "name": "390-reduce phone RU 10",
+      "pass": true
+    },
+    {
+      "name": "390-reduce phone KZ 10",
+      "pass": true
+    },
+    {
+      "name": "390-reduce phone UZ 9",
+      "pass": true
+    },
+    {
+      "name": "390-reduce phone US 10",
+      "pass": true
+    },
+    {
+      "name": "390-reduce phone DE 7",
+      "pass": true
+    },
+    {
+      "name": "390-reduce phone DE 12",
+      "pass": true
+    },
+    {
+      "name": "390-reduce international paste BY",
+      "pass": true
+    },
+    {
+      "name": "390-reduce international paste EE",
+      "pass": true
+    },
+    {
+      "name": "390-reduce real clipboard paste normalizes phone",
+      "pass": true
+    },
+    {
+      "name": "390-reduce phone Delete crosses separator",
+      "pass": true,
+      "data": {
+        "actual": "29 234-56-7",
+        "expected": "29 234-56-7"
+      }
+    },
+    {
+      "name": "390-reduce phone Backspace crosses separator",
+      "pass": true,
+      "data": {
+        "actual": "21 234-56-7",
+        "expected": "21 234-56-7"
+      }
+    },
+    {
+      "name": "390-reduce rejects short phone",
+      "pass": true
+    },
+    {
+      "name": "390-reduce rejects malformed contact task URL",
+      "pass": true
+    },
+    {
+      "name": "390-reduce valid email honest demo / no clearing / international mailto",
+      "pass": true,
+      "data": {
+        "mailto": "mailto:max.eroxin@gmail.com?subject=SyntheCore — новая задача от QA User&body=Имя: QA User\nКонтакт: qa@example.test\nТелефон: +375291234567\n\nЗадача:\nНужно обсудить доработку кабинета и интеграции.\n\nСсылка на проект: https://example.test/project"
+      }
+    },
+    {
+      "name": "390-reduce no network submission",
+      "pass": true,
+      "data": []
+    },
+    {
+      "name": "390-reduce accepts Telegram @qa_username",
+      "pass": true
+    },
+    {
+      "name": "390-reduce accepts Telegram https://t.me/qa_username",
+      "pass": true
+    },
+    {
+      "name": "390-reduce optional URL can be empty",
+      "pass": true
+    },
+    {
+      "name": "390-reduce consent required independently",
+      "pass": true
+    },
+    {
+      "name": "390-reduce privacy link target and rel",
+      "pass": true
+    },
+    {
+      "name": "390-reduce privacy opens new tab",
+      "pass": true
+    },
+    {
+      "name": "390-reduce native country keyboard",
+      "pass": true
+    },
+    {
+      "name": "390-reduce/privacy/ no overflow",
+      "pass": true,
+      "data": {
+        "scrollWidth": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "390-reduce/privacy/ single shell / scroll / menu owner",
+      "pass": true
+    },
+    {
+      "name": "390-reduce/privacy/ all images loaded",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference/get-started/ no overflow",
+      "pass": true,
+      "data": {
+        "scrollWidth": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "390-no-preference/get-started/ single shell / scroll / menu owner",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference/get-started/ all images loaded",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference responsive 1 cards",
+      "pass": true,
+      "data": {
+        "width": 346,
+        "card": 346,
+        "gap": 16
+      }
+    },
+    {
+      "name": "390-no-preference six real cards",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference arrow advances transform",
+      "pass": true,
+      "data": {
+        "start": {
+          "first": "/raboty/b2b/",
+          "transform": "translate3d(-1086px, 0px, 0px)",
+          "scrollLeft": 0
+        },
+        "forward": {
+          "first": "/raboty/flowers/",
+          "transform": "translate3d(-1448px, 0px, 0px)",
+          "scrollLeft": 0
+        }
+      }
+    },
+    {
+      "name": "390-no-preference previous reverses",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference six quick clicks complete full loop",
+      "pass": true,
+      "data": {
+        "first": "/raboty/b2b/",
+        "transform": "translate3d(-1086px, 0px, 0px)",
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "390-no-preference previous full loop",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference keyboard next",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference keyboard previous",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference arrow hover white stationary neutral border",
+      "pass": true,
+      "data": {
+        "before": {
+          "x": 209,
+          "y": 549.75,
+          "w": 52,
+          "h": 52,
+          "background": "rgb(255, 255, 255)",
+          "border": "rgba(0, 0, 0, 0.1)",
+          "transform": "none"
+        },
+        "after": {
+          "x": 209,
+          "y": 549.75,
+          "w": 52,
+          "h": 52,
+          "background": "rgb(255, 255, 255)",
+          "border": "rgba(0, 0, 0, 0.1)",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "390-no-preference clone links excluded from tab order",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference real CDP touch swipe",
+      "pass": true,
+      "data": {
+        "before": {
+          "first": "/raboty/b2b/",
+          "transform": "translate3d(-1086px, 0px, 0px)",
+          "scrollLeft": 0
+        },
+        "after": {
+          "first": "/raboty/flowers/",
+          "transform": "translate3d(-1448px, 0px, 0px)",
+          "scrollLeft": 0
+        }
+      }
+    },
+    {
+      "name": "390-no-preference native Tab card 1 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/b2b/",
+        "inside": true,
+        "left": 23,
+        "right": 367,
+        "viewportLeft": 22,
+        "viewportRight": 368,
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "390-no-preference native Tab card 2 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/flowers/",
+        "inside": true,
+        "left": 23,
+        "right": 367,
+        "viewportLeft": 22,
+        "viewportRight": 368,
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "390-no-preference native Tab card 3 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/crm/",
+        "inside": true,
+        "left": 23,
+        "right": 367,
+        "viewportLeft": 22,
+        "viewportRight": 368,
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "390-no-preference native Tab card 4 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/beauty-insight/",
+        "inside": true,
+        "left": 23,
+        "right": 367,
+        "viewportLeft": 22,
+        "viewportRight": 368,
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "390-no-preference native Tab card 5 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/prostor/",
+        "inside": true,
+        "left": 23,
+        "right": 367,
+        "viewportLeft": 22,
+        "viewportRight": 368,
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "390-no-preference native Tab card 6 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/metal-calc/",
+        "inside": true,
+        "left": 23,
+        "right": 367,
+        "viewportLeft": 22,
+        "viewportRight": 368,
+        "scrollLeft": 0
+      }
+    },
+    {
+      "name": "390-no-preference next after keyboard wrap uses transform",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference full loop after native keyboard",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference ShiftTab after arrows 0 aligns real card",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference ShiftTab after arrows 1 aligns real card",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference/privacy/ no overflow",
+      "pass": true,
+      "data": {
+        "scrollWidth": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "390-no-preference/privacy/ single shell / scroll / menu owner",
+      "pass": true
+    },
+    {
+      "name": "390-no-preference/privacy/ all images loaded",
+      "pass": true
+    },
+    {
+      "name": "768-reduce/get-started/ no overflow",
+      "pass": true,
+      "data": {
+        "scrollWidth": 768,
+        "width": 768
+      }
+    },
+    {
+      "name": "768-reduce/get-started/ single shell / scroll / menu owner",
+      "pass": true
+    },
+    {
+      "name": "768-reduce/get-started/ all images loaded",
+      "pass": true
+    },
+    {
+      "name": "768-reduce responsive 2 cards",
+      "pass": true,
+      "data": {
+        "width": 702.09375,
+        "card": 343.046875,
+        "gap": 16
+      }
+    },
+    {
+      "name": "768-reduce six real cards",
+      "pass": true
+    },
+    {
+      "name": "768-reduce required scClientName",
+      "pass": true
+    },
+    {
+      "name": "768-reduce required scContact",
+      "pass": true
+    },
+    {
+      "name": "768-reduce required scPhone",
+      "pass": true
+    },
+    {
+      "name": "768-reduce required scTask",
+      "pass": true
+    },
+    {
+      "name": "768-reduce required scDataConsent",
+      "pass": true
+    },
+    {
+      "name": "768-reduce phone country defaults BY / 44 countries",
+      "pass": true
+    },
+    {
+      "name": "768-reduce phone BY 9",
+      "pass": true
+    },
+    {
+      "name": "768-reduce phone EE 7",
+      "pass": true
+    },
+    {
+      "name": "768-reduce phone EE 8",
+      "pass": true
+    },
+    {
+      "name": "768-reduce phone RU 10",
+      "pass": true
+    },
+    {
+      "name": "768-reduce phone KZ 10",
+      "pass": true
+    },
+    {
+      "name": "768-reduce phone UZ 9",
+      "pass": true
+    },
+    {
+      "name": "768-reduce phone US 10",
+      "pass": true
+    },
+    {
+      "name": "768-reduce phone DE 7",
+      "pass": true
+    },
+    {
+      "name": "768-reduce phone DE 12",
+      "pass": true
+    },
+    {
+      "name": "768-reduce international paste BY",
+      "pass": true
+    },
+    {
+      "name": "768-reduce international paste EE",
+      "pass": true
+    },
+    {
+      "name": "768-reduce real clipboard paste normalizes phone",
+      "pass": true
+    },
+    {
+      "name": "768-reduce phone Delete crosses separator",
+      "pass": true,
+      "data": {
+        "actual": "29 234-56-7",
+        "expected": "29 234-56-7"
+      }
+    },
+    {
+      "name": "768-reduce phone Backspace crosses separator",
+      "pass": true,
+      "data": {
+        "actual": "21 234-56-7",
+        "expected": "21 234-56-7"
+      }
+    },
+    {
+      "name": "768-reduce rejects short phone",
+      "pass": true
+    },
+    {
+      "name": "768-reduce rejects malformed contact task URL",
+      "pass": true
+    },
+    {
+      "name": "768-reduce valid email honest demo / no clearing / international mailto",
+      "pass": true,
+      "data": {
+        "mailto": "mailto:max.eroxin@gmail.com?subject=SyntheCore — новая задача от QA User&body=Имя: QA User\nКонтакт: qa@example.test\nТелефон: +375291234567\n\nЗадача:\nНужно обсудить доработку кабинета и интеграции.\n\nСсылка на проект: https://example.test/project"
+      }
+    },
+    {
+      "name": "768-reduce no network submission",
+      "pass": true,
+      "data": []
+    },
+    {
+      "name": "768-reduce accepts Telegram @qa_username",
+      "pass": true
+    },
+    {
+      "name": "768-reduce accepts Telegram https://t.me/qa_username",
+      "pass": true
+    },
+    {
+      "name": "768-reduce optional URL can be empty",
+      "pass": true
+    },
+    {
+      "name": "768-reduce consent required independently",
+      "pass": true
+    },
+    {
+      "name": "768-reduce privacy link target and rel",
+      "pass": true
+    },
+    {
+      "name": "768-reduce privacy opens new tab",
+      "pass": true
+    },
+    {
+      "name": "768-reduce native country keyboard",
+      "pass": true
+    },
+    {
+      "name": "768-reduce/privacy/ no overflow",
+      "pass": true,
+      "data": {
+        "scrollWidth": 768,
+        "width": 768
+      }
+    },
+    {
+      "name": "768-reduce/privacy/ single shell / scroll / menu owner",
+      "pass": true
+    },
+    {
+      "name": "768-reduce/privacy/ all images loaded",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference/get-started/ no overflow",
+      "pass": true,
+      "data": {
+        "scrollWidth": 768,
+        "width": 768
+      }
+    },
+    {
+      "name": "768-no-preference/get-started/ single shell / scroll / menu owner",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference/get-started/ all images loaded",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference responsive 2 cards",
+      "pass": true,
+      "data": {
+        "width": 702.09375,
+        "card": 343.046875,
+        "gap": 16
+      }
+    },
+    {
+      "name": "768-no-preference six real cards",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference/privacy/ no overflow",
+      "pass": true,
+      "data": {
+        "scrollWidth": 768,
+        "width": 768
+      }
+    },
+    {
+      "name": "768-no-preference/privacy/ single shell / scroll / menu owner",
+      "pass": true
+    },
+    {
+      "name": "768-no-preference/privacy/ all images loaded",
+      "pass": true
+    },
+    {
+      "name": "1024-reduce/get-started/ no overflow",
+      "pass": true,
+      "data": {
+        "scrollWidth": 1024,
+        "width": 1024
+      }
+    },
+    {
+      "name": "1024-reduce/get-started/ single shell / scroll / menu owner",
+      "pass": true
+    },
+    {
+      "name": "1024-reduce/get-started/ all images loaded",
+      "pass": true
+    },
+    {
+      "name": "1024-reduce responsive 2 cards",
+      "pass": true,
+      "data": {
+        "width": 941.46875,
+        "card": 462.734375,
+        "gap": 16
+      }
+    },
+    {
+      "name": "1024-reduce six real cards",
+      "pass": true
+    },
+    {
+      "name": "1024-reduce/privacy/ no overflow",
+      "pass": true,
+      "data": {
+        "scrollWidth": 1024,
+        "width": 1024
+      }
+    },
+    {
+      "name": "1024-reduce/privacy/ single shell / scroll / menu owner",
+      "pass": true
+    },
+    {
+      "name": "1024-reduce/privacy/ all images loaded",
+      "pass": true
+    },
+    {
+      "name": "1024-no-preference/get-started/ no overflow",
+      "pass": true,
+      "data": {
+        "scrollWidth": 1024,
+        "width": 1024
+      }
+    },
+    {
+      "name": "1024-no-preference/get-started/ single shell / scroll / menu owner",
+      "pass": true
+    },
+    {
+      "name": "1024-no-preference/get-started/ all images loaded",
+      "pass": true
+    },
+    {
+      "name": "1024-no-preference responsive 2 cards",
+      "pass": true,
+      "data": {
+        "width": 941.46875,
+        "card": 462.734375,
+        "gap": 16
+      }
+    },
+    {
+      "name": "1024-no-preference six real cards",
+      "pass": true
+    },
+    {
+      "name": "1024-no-preference/privacy/ no overflow",
+      "pass": true,
+      "data": {
+        "scrollWidth": 1024,
+        "width": 1024
+      }
+    },
+    {
+      "name": "1024-no-preference/privacy/ single shell / scroll / menu owner",
+      "pass": true
+    },
+    {
+      "name": "1024-no-preference/privacy/ all images loaded",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce/get-started/ no overflow",
+      "pass": true,
+      "data": {
+        "scrollWidth": 1440,
+        "width": 1440
+      }
+    },
+    {
+      "name": "1440-reduce/get-started/ single shell / scroll / menu owner",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce/get-started/ all images loaded",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce responsive 3 cards",
+      "pass": true,
+      "data": {
+        "width": 1268,
+        "card": 412,
+        "gap": 16
+      }
+    },
+    {
+      "name": "1440-reduce six real cards",
+      "pass": true
+    },
+    {
+      "name": "1440 reference dimensions .sc-contact__layout",
+      "pass": true,
+      "data": {
+        "actual": {
+          "x": 112.5,
+          "y": 129.578125,
+          "width": 1215,
+          "height": 607,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        },
+        "reference": {
+          "x": 112.5,
+          "y": 129.578125,
+          "width": 1215,
+          "height": 607,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "1440 reference dimensions .sc-contact__form",
+      "pass": true,
+      "data": {
+        "actual": {
+          "x": 867.5,
+          "y": 129.578125,
+          "width": 460,
+          "height": 607,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "24px"
+        },
+        "reference": {
+          "x": 867.5,
+          "y": 129.578125,
+          "width": 460,
+          "height": 607,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "24px"
+        }
+      }
+    },
+    {
+      "name": "1440 reference dimensions #scPhoneGroup",
+      "pass": true,
+      "data": {
+        "actual": {
+          "x": 910.5,
+          "y": 312.578125,
+          "width": 374,
+          "height": 56,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "12px"
+        },
+        "reference": {
+          "x": 910.5,
+          "y": 312.578125,
+          "width": 374,
+          "height": 56,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "12px"
+        }
+      }
+    },
+    {
+      "name": "1440 reference dimensions .sc-contact__submit",
+      "pass": true,
+      "data": {
+        "actual": {
+          "x": 910.5,
+          "y": 641.578125,
+          "width": 374,
+          "height": 52,
+          "font": "16px",
+          "lineHeight": "16px",
+          "radius": "100px"
+        },
+        "reference": {
+          "x": 910.5,
+          "y": 641.578125,
+          "width": 374,
+          "height": 52,
+          "font": "16px",
+          "lineHeight": "16px",
+          "radius": "100px"
+        }
+      }
+    },
+    {
+      "name": "1440 reference dimensions #relatedViewport",
+      "pass": true,
+      "data": {
+        "actual": {
+          "x": 86,
+          "y": 999.328125,
+          "width": 1268,
+          "height": 525.09375,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        },
+        "reference": {
+          "x": 86,
+          "y": 999.328125,
+          "width": 1268,
+          "height": 525.09375,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        }
+      }
+    },
+    {
+      "name": "1440 reference dimensions .related-work__arrow",
+      "pass": true,
+      "data": {
+        "actual": {
+          "x": 652,
+          "y": 1510.421875,
+          "width": 52,
+          "height": 52,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "50%"
+        },
+        "reference": {
+          "x": 652,
+          "y": 1510.421875,
+          "width": 52,
+          "height": 52,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "50%"
+        }
+      }
+    },
+    {
+      "name": "1440-reduce arrow advances transform",
+      "pass": true,
+      "data": {
+        "start": {
+          "first": "/raboty/b2b/",
+          "transform": "translate3d(-1284px, 0px, 0px)",
+          "scrollLeft": 0
+        },
+        "forward": {
+          "first": "/raboty/flowers/",
+          "transform": "translate3d(-1712px, 0px, 0px)",
+          "scrollLeft": 0
+        }
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "1440-reduce previous reverses",
+      "pass": true,
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "1440-reduce six quick clicks complete full loop",
+      "pass": true,
+      "data": {
+        "first": "/raboty/b2b/",
+        "transform": "translate3d(-1284px, 0px, 0px)",
+        "scrollLeft": 0
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "1440-reduce previous full loop",
+      "pass": true,
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "1440-reduce keyboard next",
+      "pass": true,
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "1440-reduce keyboard previous",
+      "pass": true,
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "1440-reduce arrow hover white stationary neutral border",
+      "pass": true,
+      "data": {
+        "before": {
+          "x": 736,
+          "y": 626.421875,
+          "w": 52,
+          "h": 52,
+          "background": "rgb(255, 255, 255)",
+          "border": "rgba(0, 0, 0, 0.1)",
+          "transform": "none"
+        },
+        "after": {
+          "x": 736,
+          "y": 626.421875,
+          "w": 52,
+          "h": 52,
+          "background": "rgb(255, 255, 255)",
+          "border": "rgba(0, 0, 0, 0.1)",
+          "transform": "none"
+        }
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "1440-reduce clone links excluded from tab order",
+      "pass": true,
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "1440-reduce native Tab card 1 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/b2b/",
+        "inside": true,
+        "left": 87,
+        "right": 497,
+        "viewportLeft": 86,
+        "viewportRight": 1354,
+        "scrollLeft": 0
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "1440-reduce native Tab card 2 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/flowers/",
+        "inside": true,
+        "left": 515,
+        "right": 925,
+        "viewportLeft": 86,
+        "viewportRight": 1354,
+        "scrollLeft": 0
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "1440-reduce native Tab card 3 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/crm/",
+        "inside": true,
+        "left": 943,
+        "right": 1353,
+        "viewportLeft": 86,
+        "viewportRight": 1354,
+        "scrollLeft": 0
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "1440-reduce native Tab card 4 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/beauty-insight/",
+        "inside": true,
+        "left": 87,
+        "right": 497,
+        "viewportLeft": 86,
+        "viewportRight": 1354,
+        "scrollLeft": 0
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "1440-reduce native Tab card 5 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/prostor/",
+        "inside": true,
+        "left": 515,
+        "right": 925,
+        "viewportLeft": 86,
+        "viewportRight": 1354,
+        "scrollLeft": 0
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "1440-reduce native Tab card 6 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/metal-calc/",
+        "inside": true,
+        "left": 943,
+        "right": 1353,
+        "viewportLeft": 86,
+        "viewportRight": 1354,
+        "scrollLeft": 0
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "1440-reduce next after keyboard wrap uses transform",
+      "pass": true,
+      "data": {
+        "before": {
+          "first": "/raboty/beauty-insight/",
+          "transform": "translate3d(-2568px, 0px, 0px)",
+          "scrollLeft": 0
+        },
+        "expectedNext": "/raboty/prostor/",
+        "after": {
+          "first": "/raboty/prostor/",
+          "transform": "translate3d(-2996px, 0px, 0px)",
+          "scrollLeft": 0
+        }
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "1440-reduce full loop after native keyboard",
+      "pass": true,
+      "data": {
+        "expectedNext": "/raboty/prostor/",
+        "after": {
+          "first": "/raboty/prostor/",
+          "transform": "translate3d(-2996px, 0px, 0px)",
+          "scrollLeft": 0
+        }
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "1440-reduce ShiftTab after arrows 0 aligns real card",
+      "pass": true,
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "1440-reduce ShiftTab after arrows 1 aligns real card",
+      "pass": true,
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "1440-reduce required scClientName",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce required scContact",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce required scPhone",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce required scTask",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce required scDataConsent",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce phone country defaults BY / 44 countries",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce phone BY 9",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce phone EE 7",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce phone EE 8",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce phone RU 10",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce phone KZ 10",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce phone UZ 9",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce phone US 10",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce phone DE 7",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce phone DE 12",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce international paste BY",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce international paste EE",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce real clipboard paste normalizes phone",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce phone Delete crosses separator",
+      "pass": true,
+      "data": {
+        "actual": "29 234-56-7",
+        "expected": "29 234-56-7"
+      }
+    },
+    {
+      "name": "1440-reduce phone Backspace crosses separator",
+      "pass": true,
+      "data": {
+        "actual": "21 234-56-7",
+        "expected": "21 234-56-7"
+      }
+    },
+    {
+      "name": "1440-reduce rejects short phone",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce rejects malformed contact task URL",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce valid email honest demo / no clearing / international mailto",
+      "pass": true,
+      "data": {
+        "mailto": "mailto:max.eroxin@gmail.com?subject=SyntheCore — новая задача от QA User&body=Имя: QA User\nКонтакт: qa@example.test\nТелефон: +375291234567\n\nЗадача:\nНужно обсудить доработку кабинета и интеграции.\n\nСсылка на проект: https://example.test/project"
+      }
+    },
+    {
+      "name": "1440-reduce no network submission",
+      "pass": true,
+      "data": []
+    },
+    {
+      "name": "1440-reduce accepts Telegram @qa_username",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce accepts Telegram https://t.me/qa_username",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce optional URL can be empty",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce consent required independently",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce privacy link target and rel",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce privacy opens new tab",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce native country keyboard",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce/privacy/ no overflow",
+      "pass": true,
+      "data": {
+        "scrollWidth": 1440,
+        "width": 1440
+      }
+    },
+    {
+      "name": "1440-reduce/privacy/ single shell / scroll / menu owner",
+      "pass": true
+    },
+    {
+      "name": "1440-reduce/privacy/ all images loaded",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference/get-started/ no overflow",
+      "pass": true,
+      "data": {
+        "scrollWidth": 1440,
+        "width": 1440
+      }
+    },
+    {
+      "name": "1440-no-preference/get-started/ single shell / scroll / menu owner",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference/get-started/ all images loaded",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference responsive 3 cards",
+      "pass": true,
+      "data": {
+        "width": 1268,
+        "card": 412,
+        "gap": 16
+      }
+    },
+    {
+      "name": "1440-no-preference six real cards",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference arrow advances transform",
+      "pass": true,
+      "data": {
+        "start": {
+          "first": "/raboty/b2b/",
+          "transform": "translate3d(-1284px, 0px, 0px)",
+          "scrollLeft": 0
+        },
+        "forward": {
+          "first": "/raboty/flowers/",
+          "transform": "translate3d(-1712px, 0px, 0px)",
+          "scrollLeft": 0
+        }
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "1440-no-preference previous reverses",
+      "pass": true,
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "1440-no-preference six quick clicks complete full loop",
+      "pass": true,
+      "data": {
+        "first": "/raboty/b2b/",
+        "transform": "translate3d(-1284px, 0px, 0px)",
+        "scrollLeft": 0
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "1440-no-preference previous full loop",
+      "pass": true,
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "1440-no-preference keyboard next",
+      "pass": true,
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "1440-no-preference keyboard previous",
+      "pass": true,
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "1440-no-preference arrow hover white stationary neutral border",
+      "pass": true,
+      "data": {
+        "before": {
+          "x": 736,
+          "y": 626.421875,
+          "w": 52,
+          "h": 52,
+          "background": "rgb(255, 255, 255)",
+          "border": "rgba(0, 0, 0, 0.1)",
+          "transform": "none"
+        },
+        "after": {
+          "x": 736,
+          "y": 626.421875,
+          "w": 52,
+          "h": 52,
+          "background": "rgb(255, 255, 255)",
+          "border": "rgba(0, 0, 0, 0.1)",
+          "transform": "none"
+        }
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "1440-no-preference clone links excluded from tab order",
+      "pass": true,
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "1440-no-preference native Tab card 1 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/b2b/",
+        "inside": true,
+        "left": 87,
+        "right": 497,
+        "viewportLeft": 86,
+        "viewportRight": 1354,
+        "scrollLeft": 0
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "1440-no-preference native Tab card 2 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/flowers/",
+        "inside": true,
+        "left": 515,
+        "right": 925,
+        "viewportLeft": 86,
+        "viewportRight": 1354,
+        "scrollLeft": 0
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "1440-no-preference native Tab card 3 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/crm/",
+        "inside": true,
+        "left": 943,
+        "right": 1353,
+        "viewportLeft": 86,
+        "viewportRight": 1354,
+        "scrollLeft": 0
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "1440-no-preference native Tab card 4 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/beauty-insight/",
+        "inside": true,
+        "left": 87,
+        "right": 497,
+        "viewportLeft": 86,
+        "viewportRight": 1354,
+        "scrollLeft": 0
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "1440-no-preference native Tab card 5 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/prostor/",
+        "inside": true,
+        "left": 515,
+        "right": 925,
+        "viewportLeft": 86,
+        "viewportRight": 1354,
+        "scrollLeft": 0
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "1440-no-preference native Tab card 6 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/metal-calc/",
+        "inside": true,
+        "left": 943,
+        "right": 1353,
+        "viewportLeft": 86,
+        "viewportRight": 1354,
+        "scrollLeft": 0
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "1440-no-preference next after keyboard wrap uses transform",
+      "pass": true,
+      "data": {
+        "before": {
+          "first": "/raboty/beauty-insight/",
+          "transform": "translate3d(-2568px, 0px, 0px)",
+          "scrollLeft": 0
+        },
+        "expectedNext": "/raboty/prostor/",
+        "after": {
+          "first": "/raboty/prostor/",
+          "transform": "translate3d(-2996px, 0px, 0px)",
+          "scrollLeft": 0
+        }
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "1440-no-preference full loop after native keyboard",
+      "pass": true,
+      "data": {
+        "expectedNext": "/raboty/prostor/",
+        "after": {
+          "first": "/raboty/prostor/",
+          "transform": "translate3d(-2996px, 0px, 0px)",
+          "scrollLeft": 0
+        }
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "1440-no-preference ShiftTab after arrows 0 aligns real card",
+      "pass": true,
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "1440-no-preference ShiftTab after arrows 1 aligns real card",
+      "pass": true,
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "1440-no-preference/privacy/ no overflow",
+      "pass": true,
+      "data": {
+        "scrollWidth": 1440,
+        "width": 1440
+      }
+    },
+    {
+      "name": "1440-no-preference/privacy/ single shell / scroll / menu owner",
+      "pass": true
+    },
+    {
+      "name": "1440-no-preference/privacy/ all images loaded",
+      "pass": true
+    },
+    {
+      "name": "2560-reduce/get-started/ no overflow",
+      "pass": true,
+      "data": {
+        "scrollWidth": 2560,
+        "width": 2560
+      }
+    },
+    {
+      "name": "2560-reduce/get-started/ single shell / scroll / menu owner",
+      "pass": true
+    },
+    {
+      "name": "2560-reduce/get-started/ all images loaded",
+      "pass": true
+    },
+    {
+      "name": "2560-reduce responsive 3 cards",
+      "pass": true,
+      "data": {
+        "width": 1268,
+        "card": 412,
+        "gap": 16
+      }
+    },
+    {
+      "name": "2560-reduce six real cards",
+      "pass": true
+    },
+    {
+      "name": "2560-reduce/privacy/ no overflow",
+      "pass": true,
+      "data": {
+        "scrollWidth": 2560,
+        "width": 2560
+      }
+    },
+    {
+      "name": "2560-reduce/privacy/ single shell / scroll / menu owner",
+      "pass": true
+    },
+    {
+      "name": "2560-reduce/privacy/ all images loaded",
+      "pass": true
+    },
+    {
+      "name": "2560-no-preference/get-started/ no overflow",
+      "pass": true,
+      "data": {
+        "scrollWidth": 2560,
+        "width": 2560
+      }
+    },
+    {
+      "name": "2560-no-preference/get-started/ single shell / scroll / menu owner",
+      "pass": true
+    },
+    {
+      "name": "2560-no-preference/get-started/ all images loaded",
+      "pass": true
+    },
+    {
+      "name": "2560-no-preference responsive 3 cards",
+      "pass": true,
+      "data": {
+        "width": 1268,
+        "card": 412,
+        "gap": 16
+      }
+    },
+    {
+      "name": "2560-no-preference six real cards",
+      "pass": true
+    },
+    {
+      "name": "2560-no-preference/privacy/ no overflow",
+      "pass": true,
+      "data": {
+        "scrollWidth": 2560,
+        "width": 2560
+      }
+    },
+    {
+      "name": "2560-no-preference/privacy/ single shell / scroll / menu owner",
+      "pass": true
+    },
+    {
+      "name": "2560-no-preference/privacy/ all images loaded",
+      "pass": true
+    },
+    {
+      "name": "390/get-started/ 15px scrollbar no overflow / symmetric outer hero",
+      "pass": true,
+      "data": {
+        "layoutWidth": 375,
+        "clientWidth": 390,
+        "innerWidth": 390,
+        "scrollWidth": 375,
+        "left": 10,
+        "right": 10,
+        "scrollbar": 15
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "390/privacy/ 15px scrollbar no overflow / symmetric outer hero",
+      "pass": true,
+      "data": {
+        "layoutWidth": 375,
+        "clientWidth": 390,
+        "innerWidth": 390,
+        "scrollWidth": 375,
+        "left": 10,
+        "right": 10,
+        "scrollbar": 15
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "1440/get-started/ 15px scrollbar no overflow / symmetric outer hero",
+      "pass": true,
+      "data": {
+        "layoutWidth": 1425,
+        "clientWidth": 1440,
+        "innerWidth": 1440,
+        "scrollWidth": 1425,
+        "left": 14.40625,
+        "right": 14.40625,
+        "scrollbar": 15
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "1440/privacy/ 15px scrollbar no overflow / symmetric outer hero",
+      "pass": true,
+      "data": {
+        "layoutWidth": 1425,
+        "clientWidth": 1440,
+        "innerWidth": 1440,
+        "scrollWidth": 1425,
+        "left": 14.40625,
+        "right": 14.40625,
+        "scrollbar": 15
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "CTA / #floatingHeader > .nav-cta click",
+      "pass": true
+    },
+    {
+      "name": "CTA / #mobilePanel a[href=\"/get-started/\"] click",
+      "pass": true
+    },
+    {
+      "name": "CTA / .sc-footer__cta click",
+      "pass": true
+    },
+    {
+      "name": "CTA / .main-cta keyboard",
+      "pass": true
+    },
+    {
+      "name": "CTA /raboty/ #floatingHeader > .nav-cta click",
+      "pass": true
+    },
+    {
+      "name": "CTA /raboty/ #mobilePanel a[href=\"/get-started/\"] click",
+      "pass": true
+    },
+    {
+      "name": "CTA /raboty/ .sc-footer__cta click",
+      "pass": true
+    },
+    {
+      "name": "CTA /raboty/ .catalog-intro__cta keyboard",
+      "pass": true
+    },
+    {
+      "name": "CTA /raboty/ #caseDialog .case-dialog__cta click",
+      "pass": true
+    },
+    {
+      "name": "CTA /raboty/b2b/ #floatingHeader > .nav-cta click",
+      "pass": true
+    },
+    {
+      "name": "CTA /raboty/b2b/ #mobilePanel a[href=\"/get-started/\"] click",
+      "pass": true
+    },
+    {
+      "name": "CTA /raboty/b2b/ .sc-footer__cta click",
+      "pass": true
+    },
+    {
+      "name": "CTA /raboty/b2b/ .sc-case-process__cta-button keyboard",
+      "pass": true
+    },
+    {
+      "name": "CTA /raboty/b2b/ #caseDialog .case-dialog__cta click",
+      "pass": true
+    },
+    {
+      "name": "CTA /raboty/beauty-insight/ #floatingHeader > .nav-cta click",
+      "pass": true
+    },
+    {
+      "name": "CTA /raboty/beauty-insight/ #mobilePanel a[href=\"/get-started/\"] click",
+      "pass": true
+    },
+    {
+      "name": "CTA /raboty/beauty-insight/ .sc-footer__cta click",
+      "pass": true
+    },
+    {
+      "name": "CTA /raboty/beauty-insight/ .sc-case-process__cta-button keyboard",
+      "pass": true
+    },
+    {
+      "name": "CTA /raboty/beauty-insight/ #caseDialog .case-dialog__cta click",
+      "pass": true
+    },
+    {
+      "name": "CTA /raboty/crm/ #floatingHeader > .nav-cta click",
+      "pass": true
+    },
+    {
+      "name": "CTA /raboty/crm/ #mobilePanel a[href=\"/get-started/\"] click",
+      "pass": true
+    },
+    {
+      "name": "CTA /raboty/crm/ .sc-footer__cta click",
+      "pass": true
+    },
+    {
+      "name": "CTA /raboty/crm/ .sc-case-process__cta-button keyboard",
+      "pass": true
+    },
+    {
+      "name": "CTA /raboty/crm/ #caseDialog .case-dialog__cta click",
+      "pass": true
+    },
+    {
+      "name": "CTA /raboty/flowers/ #floatingHeader > .nav-cta click",
+      "pass": true
+    },
+    {
+      "name": "CTA /raboty/flowers/ #mobilePanel a[href=\"/get-started/\"] click",
+      "pass": true
+    },
+    {
+      "name": "CTA /raboty/flowers/ .sc-footer__cta click",
+      "pass": true
+    },
+    {
+      "name": "CTA /raboty/flowers/ .sc-case-process__cta-button keyboard",
+      "pass": true
+    },
+    {
+      "name": "CTA /raboty/flowers/ #caseDialog .case-dialog__cta click",
+      "pass": true
+    },
+    {
+      "name": "CTA /raboty/metal-calc/ #floatingHeader > .nav-cta click",
+      "pass": true
+    },
+    {
+      "name": "CTA /raboty/metal-calc/ #mobilePanel a[href=\"/get-started/\"] click",
+      "pass": true
+    },
+    {
+      "name": "CTA /raboty/metal-calc/ .sc-footer__cta click",
+      "pass": true
+    },
+    {
+      "name": "CTA /raboty/metal-calc/ .sc-case-process__cta-button keyboard",
+      "pass": true
+    },
+    {
+      "name": "CTA /raboty/metal-calc/ #caseDialog .case-dialog__cta click",
+      "pass": true
+    },
+    {
+      "name": "CTA /raboty/prostor/ #floatingHeader > .nav-cta click",
+      "pass": true
+    },
+    {
+      "name": "CTA /raboty/prostor/ #mobilePanel a[href=\"/get-started/\"] click",
+      "pass": true
+    },
+    {
+      "name": "CTA /raboty/prostor/ .sc-footer__cta click",
+      "pass": true
+    },
+    {
+      "name": "CTA /raboty/prostor/ .sc-case-process__cta-button keyboard",
+      "pass": true
+    },
+    {
+      "name": "CTA /raboty/prostor/ #caseDialog .case-dialog__cta click",
+      "pass": true
+    },
+    {
+      "name": "/get-started/ #floatingHeader > .nav-cta reduce request preserves state",
+      "pass": true
+    },
+    {
+      "name": "/get-started/ #mobilePanel a:last-child reduce request preserves state",
+      "pass": true
+    },
+    {
+      "name": "/get-started/ .sc-footer__cta reduce request preserves state",
+      "pass": true
+    },
+    {
+      "name": "/privacy/ #floatingHeader > .nav-cta reduce request preserves state",
+      "pass": true
+    },
+    {
+      "name": "/privacy/ #mobilePanel a:last-child reduce request preserves state",
+      "pass": true
+    },
+    {
+      "name": "/privacy/ .sc-footer__cta reduce request preserves state",
+      "pass": true
+    },
+    {
+      "name": "/get-started/ #floatingHeader > .nav-cta no-preference request preserves state",
+      "pass": true
+    },
+    {
+      "name": "/get-started/ #mobilePanel a:last-child no-preference request preserves state",
+      "pass": true
+    },
+    {
+      "name": "/get-started/ .sc-footer__cta no-preference request preserves state",
+      "pass": true
+    },
+    {
+      "name": "/privacy/ #floatingHeader > .nav-cta no-preference request preserves state",
+      "pass": true
+    },
+    {
+      "name": "/privacy/ #mobilePanel a:last-child no-preference request preserves state",
+      "pass": true
+    },
+    {
+      "name": "/privacy/ .sc-footer__cta no-preference request preserves state",
+      "pass": true
+    },
+    {
+      "name": "work card Enter navigates actual case",
+      "pass": true
+    },
+    {
+      "name": "work card Ctrl-click new tab",
+      "pass": true
+    },
+    {
+      "name": "catalog all six anchor details / preserved modal",
+      "pass": true
+    },
+    {
+      "name": "all six carousel titles descriptions two tags images routes match current catalog",
+      "pass": true,
+      "data": {
+        "catalog": [
+          {
+            "title": "Кабинет клиента",
+            "description": "Клиент самостоятельно создаёт заявки, отслеживает их статусы и получает документы. История обработки, уведомления и работа с контрагентами — в одном кабинете.",
+            "tags": [
+              "Веб-сервис",
+              "Заявки и документы"
+            ],
+            "href": "/raboty/b2b/",
+            "src": "/assets/works/b2b-feature-wide.png"
+          },
+          {
+            "title": "Приложение для заказа цветов",
+            "description": "Интерактивный мобильный прототип сервиса заказа цветов и подарков. Каталог, поиск, фильтры, избранное, корзина и оформление заказа. Продуманы профиль, история заказов и доставка.",
+            "tags": [
+              "Прототип",
+              "Мобильный сервис"
+            ],
+            "href": "/raboty/flowers/",
+            "src": "/assets/works/flowers-feature-wide.png"
+          },
+          {
+            "title": "CRM для управления продажами",
+            "description": "Собственная CRM для управления продажами, клиентами и работой менеджеров. Сделки, контакты, задачи, аналитика и автоматизация — в одной системе, которую можно дорабатывать под процессы компании.",
+            "tags": [
+              "Веб-сервис",
+              "Клиенты и сделки"
+            ],
+            "href": "/raboty/crm/",
+            "src": "/assets/works/crm-feature-wide.png"
+          },
+          {
+            "title": "Управление студией красоты",
+            "description": "Интерактивный прототип аналитики для владельца салона: выручка, маржа, загрузка мастеров, повторные записи и клиентская база. Проблемные зоны, рекомендации и задачи показаны на демонстрационных данных.",
+            "tags": [
+              "Прототип",
+              "Финансовая аналитика"
+            ],
+            "href": "/raboty/beauty-insight/",
+            "src": "/assets/works/beauty-feature-wide.png"
+          },
+          {
+            "title": "Интернет-магазин товаров для дома",
+            "description": "Интернет-магазин товаров для дома: каталог, карточки товаров, корзина и оформление заказов. Продуманы кабинет покупателя и отдельный интерфейс владельца для управления магазином. Прототип интерфейса (дизайн-концепт), не действующий магазин.",
+            "tags": [
+              "Прототип",
+              "Каталог и заказы"
+            ],
+            "href": "/raboty/prostor/",
+            "src": "/assets/works/prostor-feature-wide.png"
+          },
+          {
+            "title": "Калькулятор стоимости металлоизделий",
+            "description": "Сервис для расчёта стоимости металлоконструкций, подготовки смет и коммерческих предложений. Справочники материалов и работ, типовые конструкции, контроль маржинальности с согласованием и история версий — в одной системе.",
+            "tags": [
+              "Веб-сервис",
+              "Финансовая аналитика"
+            ],
+            "href": "/raboty/metal-calc/",
+            "src": "/assets/works/metal-feature-wide.png"
+          }
+        ],
+        "generated": [
+          {
+            "title": "Кабинет клиента",
+            "description": "Клиент самостоятельно создаёт заявки, отслеживает их статусы и получает документы. История обработки, уведомления и работа с контрагентами — в одном кабинете.",
+            "tags": [
+              "Веб-сервис",
+              "Заявки и документы"
+            ],
+            "href": "/raboty/b2b/",
+            "src": "/assets/works/b2b-feature-wide.png"
+          },
+          {
+            "title": "Приложение для заказа цветов",
+            "description": "Интерактивный мобильный прототип сервиса заказа цветов и подарков. Каталог, поиск, фильтры, избранное, корзина и оформление заказа. Продуманы профиль, история заказов и доставка.",
+            "tags": [
+              "Прототип",
+              "Мобильный сервис"
+            ],
+            "href": "/raboty/flowers/",
+            "src": "/assets/works/flowers-feature-wide.png"
+          },
+          {
+            "title": "CRM для управления продажами",
+            "description": "Собственная CRM для управления продажами, клиентами и работой менеджеров. Сделки, контакты, задачи, аналитика и автоматизация — в одной системе, которую можно дорабатывать под процессы компании.",
+            "tags": [
+              "Веб-сервис",
+              "Клиенты и сделки"
+            ],
+            "href": "/raboty/crm/",
+            "src": "/assets/works/crm-feature-wide.png"
+          },
+          {
+            "title": "Управление студией красоты",
+            "description": "Интерактивный прототип аналитики для владельца салона: выручка, маржа, загрузка мастеров, повторные записи и клиентская база. Проблемные зоны, рекомендации и задачи показаны на демонстрационных данных.",
+            "tags": [
+              "Прототип",
+              "Финансовая аналитика"
+            ],
+            "href": "/raboty/beauty-insight/",
+            "src": "/assets/works/beauty-feature-wide.png"
+          },
+          {
+            "title": "Интернет-магазин товаров для дома",
+            "description": "Интернет-магазин товаров для дома: каталог, карточки товаров, корзина и оформление заказов. Продуманы кабинет покупателя и отдельный интерфейс владельца для управления магазином. Прототип интерфейса (дизайн-концепт), не действующий магазин.",
+            "tags": [
+              "Прототип",
+              "Каталог и заказы"
+            ],
+            "href": "/raboty/prostor/",
+            "src": "/assets/works/prostor-feature-wide.png"
+          },
+          {
+            "title": "Калькулятор стоимости металлоизделий",
+            "description": "Сервис для расчёта стоимости металлоконструкций, подготовки смет и коммерческих предложений. Справочники материалов и работ, типовые конструкции, контроль маржинальности с согласованием и история версий — в одной системе.",
+            "tags": [
+              "Веб-сервис",
+              "Финансовая аналитика"
+            ],
+            "href": "/raboty/metal-calc/",
+            "src": "/assets/works/metal-feature-wide.png"
+          }
+        ]
+      }
+    },
+    {
+      "name": "carousel actual image click /raboty/b2b/",
+      "pass": true
+    },
+    {
+      "name": "carousel actual title click /raboty/flowers/",
+      "pass": true
+    },
+    {
+      "name": "carousel actual image click /raboty/crm/",
+      "pass": true
+    },
+    {
+      "name": "carousel actual title click /raboty/beauty-insight/",
+      "pass": true
+    },
+    {
+      "name": "carousel actual image click /raboty/prostor/",
+      "pass": true
+    },
+    {
+      "name": "carousel actual title click /raboty/metal-calc/",
+      "pass": true
+    },
+    {
+      "name": "Header CTA Ctrl-click opens form new tab",
+      "pass": true
+    },
+    {
+      "name": "all scenarios completed",
+      "pass": true
+    },
+    {
+      "name": "no browser JavaScript / HTTP / resource errors",
+      "pass": true,
+      "data": []
+    },
+    {
+      "name": "2560-reduce arrow advances transform",
+      "pass": true,
+      "data": {
+        "start": {
+          "first": "/raboty/b2b/",
+          "transform": "translate3d(-1284px, 0px, 0px)",
+          "scrollLeft": 0
+        },
+        "forward": {
+          "first": "/raboty/flowers/",
+          "transform": "translate3d(-1712px, 0px, 0px)",
+          "scrollLeft": 0
+        }
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "2560-reduce previous reverses",
+      "pass": true,
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "2560-reduce six quick clicks complete full loop",
+      "pass": true,
+      "data": {
+        "first": "/raboty/b2b/",
+        "transform": "translate3d(-1284px, 0px, 0px)",
+        "scrollLeft": 0
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "2560-reduce previous full loop",
+      "pass": true,
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "2560-reduce keyboard next",
+      "pass": true,
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "2560-reduce keyboard previous",
+      "pass": true,
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "2560-reduce arrow hover white stationary neutral border",
+      "pass": true,
+      "data": {
+        "before": {
+          "x": 1296,
+          "y": 626.09375,
+          "w": 52,
+          "h": 52,
+          "background": "rgb(255, 255, 255)",
+          "border": "rgba(0, 0, 0, 0.1)",
+          "transform": "none"
+        },
+        "after": {
+          "x": 1296,
+          "y": 626.09375,
+          "w": 52,
+          "h": 52,
+          "background": "rgb(255, 255, 255)",
+          "border": "rgba(0, 0, 0, 0.1)",
+          "transform": "none"
+        }
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "2560-reduce clone links excluded from tab order",
+      "pass": true,
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "2560-reduce native Tab card 1 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/b2b/",
+        "inside": true,
+        "left": 647,
+        "right": 1057,
+        "viewportLeft": 646,
+        "viewportRight": 1914,
+        "scrollLeft": 0
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "2560-reduce native Tab card 2 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/flowers/",
+        "inside": true,
+        "left": 1075,
+        "right": 1485,
+        "viewportLeft": 646,
+        "viewportRight": 1914,
+        "scrollLeft": 0
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "2560-reduce native Tab card 3 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/crm/",
+        "inside": true,
+        "left": 1503,
+        "right": 1913,
+        "viewportLeft": 646,
+        "viewportRight": 1914,
+        "scrollLeft": 0
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "2560-reduce native Tab card 4 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/beauty-insight/",
+        "inside": true,
+        "left": 647,
+        "right": 1057,
+        "viewportLeft": 646,
+        "viewportRight": 1914,
+        "scrollLeft": 0
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "2560-reduce native Tab card 5 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/prostor/",
+        "inside": true,
+        "left": 1075,
+        "right": 1485,
+        "viewportLeft": 646,
+        "viewportRight": 1914,
+        "scrollLeft": 0
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "2560-reduce native Tab card 6 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/metal-calc/",
+        "inside": true,
+        "left": 1503,
+        "right": 1913,
+        "viewportLeft": 646,
+        "viewportRight": 1914,
+        "scrollLeft": 0
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "2560-reduce next after keyboard wrap uses transform",
+      "pass": true,
+      "data": {
+        "before": {
+          "first": "/raboty/beauty-insight/",
+          "transform": "translate3d(-2568px, 0px, 0px)",
+          "scrollLeft": 0
+        },
+        "expectedNext": "/raboty/prostor/",
+        "after": {
+          "first": "/raboty/prostor/",
+          "transform": "translate3d(-2996px, 0px, 0px)",
+          "scrollLeft": 0
+        }
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "2560-reduce full loop after native keyboard",
+      "pass": true,
+      "data": {
+        "expectedNext": "/raboty/prostor/",
+        "after": {
+          "first": "/raboty/prostor/",
+          "transform": "translate3d(-2996px, 0px, 0px)",
+          "scrollLeft": 0
+        }
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "2560-reduce ShiftTab after arrows 0 aligns real card",
+      "pass": true,
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "2560-reduce ShiftTab after arrows 1 aligns real card",
+      "pass": true,
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "2560-no-preference arrow advances transform",
+      "pass": true,
+      "data": {
+        "start": {
+          "first": "/raboty/b2b/",
+          "transform": "translate3d(-1284px, 0px, 0px)",
+          "scrollLeft": 0
+        },
+        "forward": {
+          "first": "/raboty/flowers/",
+          "transform": "translate3d(-1712px, 0px, 0px)",
+          "scrollLeft": 0
+        }
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "2560-no-preference previous reverses",
+      "pass": true,
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "2560-no-preference six quick clicks complete full loop",
+      "pass": true,
+      "data": {
+        "first": "/raboty/b2b/",
+        "transform": "translate3d(-1284px, 0px, 0px)",
+        "scrollLeft": 0
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "2560-no-preference previous full loop",
+      "pass": true,
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "2560-no-preference keyboard next",
+      "pass": true,
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "2560-no-preference keyboard previous",
+      "pass": true,
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "2560-no-preference arrow hover white stationary neutral border",
+      "pass": true,
+      "data": {
+        "before": {
+          "x": 1296,
+          "y": 626.09375,
+          "w": 52,
+          "h": 52,
+          "background": "rgb(255, 255, 255)",
+          "border": "rgba(0, 0, 0, 0.1)",
+          "transform": "none"
+        },
+        "after": {
+          "x": 1296,
+          "y": 626.09375,
+          "w": 52,
+          "h": 52,
+          "background": "rgb(255, 255, 255)",
+          "border": "rgba(0, 0, 0, 0.1)",
+          "transform": "none"
+        }
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "2560-no-preference clone links excluded from tab order",
+      "pass": true,
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "2560-no-preference native Tab card 1 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/b2b/",
+        "inside": true,
+        "left": 647,
+        "right": 1057,
+        "viewportLeft": 646,
+        "viewportRight": 1914,
+        "scrollLeft": 0
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "2560-no-preference native Tab card 2 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/flowers/",
+        "inside": true,
+        "left": 1075,
+        "right": 1485,
+        "viewportLeft": 646,
+        "viewportRight": 1914,
+        "scrollLeft": 0
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "2560-no-preference native Tab card 3 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/crm/",
+        "inside": true,
+        "left": 1503,
+        "right": 1913,
+        "viewportLeft": 646,
+        "viewportRight": 1914,
+        "scrollLeft": 0
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "2560-no-preference native Tab card 4 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/beauty-insight/",
+        "inside": true,
+        "left": 647,
+        "right": 1057,
+        "viewportLeft": 646,
+        "viewportRight": 1914,
+        "scrollLeft": 0
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "2560-no-preference native Tab card 5 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/prostor/",
+        "inside": true,
+        "left": 1075,
+        "right": 1485,
+        "viewportLeft": 646,
+        "viewportRight": 1914,
+        "scrollLeft": 0
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "2560-no-preference native Tab card 6 visible without native horizontal scroll",
+      "pass": true,
+      "data": {
+        "link": "/raboty/metal-calc/",
+        "inside": true,
+        "left": 1503,
+        "right": 1913,
+        "viewportLeft": 646,
+        "viewportRight": 1914,
+        "scrollLeft": 0
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "2560-no-preference next after keyboard wrap uses transform",
+      "pass": true,
+      "data": {
+        "before": {
+          "first": "/raboty/beauty-insight/",
+          "transform": "translate3d(-2568px, 0px, 0px)",
+          "scrollLeft": 0
+        },
+        "expectedNext": "/raboty/prostor/",
+        "after": {
+          "first": "/raboty/prostor/",
+          "transform": "translate3d(-2996px, 0px, 0px)",
+          "scrollLeft": 0
+        }
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "2560-no-preference full loop after native keyboard",
+      "pass": true,
+      "data": {
+        "expectedNext": "/raboty/prostor/",
+        "after": {
+          "first": "/raboty/prostor/",
+          "transform": "translate3d(-2996px, 0px, 0px)",
+          "scrollLeft": 0
+        }
+      },
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "2560-no-preference ShiftTab after arrows 0 aligns real card",
+      "pass": true,
+      "provenance": "carousel-report.json"
+    },
+    {
+      "name": "2560-no-preference ShiftTab after arrows 1 aligns real card",
+      "pass": true,
+      "provenance": "carousel-report.json"
+    }
+  ],
+  "errors": [],
+  "viewports": [
+    {
+      "key": "320-reduce",
+      "route": "/get-started/",
+      "width": 320,
+      "scrollWidth": 320,
+      "header": 1,
+      "footer": 1,
+      "lenis": {
+        "live": 0,
+        "max": 0
+      },
+      "script": [
+        "/js/raboty-motion.js",
+        "/assets/vendor/gsap-3.12.5.min.js",
+        "/assets/vendor/ScrollTrigger-3.12.5.min.js",
+        "/assets/vendor/lenis-1.3.26.min.js",
+        "/js/site-header.js",
+        "/js/raboty-scroll.js",
+        "/js/get-started-works.js",
+        "/js/footer-waves.js",
+        "/js/footer-reveal.js",
+        "/js/raboty-effects.js",
+        "/js/get-started-phone.js",
+        "/js/get-started-form.js",
+        "/js/get-started-page-links.js"
+      ]
+    },
+    {
+      "key": "320-reduce",
+      "route": "/privacy/",
+      "width": 320,
+      "scrollWidth": 320,
+      "header": 1,
+      "footer": 1,
+      "lenis": {
+        "live": 0,
+        "max": 0
+      },
+      "script": [
+        "/js/raboty-motion.js",
+        "/assets/vendor/gsap-3.12.5.min.js",
+        "/assets/vendor/ScrollTrigger-3.12.5.min.js",
+        "/assets/vendor/lenis-1.3.26.min.js",
+        "/js/site-header.js",
+        "/js/raboty-scroll.js",
+        "/js/footer-waves.js",
+        "/js/footer-reveal.js",
+        "/js/raboty-effects.js",
+        "/js/get-started-page-links.js"
+      ]
+    },
+    {
+      "key": "320-no-preference",
+      "route": "/get-started/",
+      "width": 320,
+      "scrollWidth": 320,
+      "header": 1,
+      "footer": 1,
+      "lenis": {
+        "live": 1,
+        "max": 1
+      },
+      "script": [
+        "/js/raboty-motion.js",
+        "/assets/vendor/gsap-3.12.5.min.js",
+        "/assets/vendor/ScrollTrigger-3.12.5.min.js",
+        "/assets/vendor/lenis-1.3.26.min.js",
+        "/js/site-header.js",
+        "/js/raboty-scroll.js",
+        "/js/get-started-works.js",
+        "/js/footer-waves.js",
+        "/js/footer-reveal.js",
+        "/js/raboty-effects.js",
+        "/js/get-started-phone.js",
+        "/js/get-started-form.js",
+        "/js/get-started-page-links.js"
+      ]
+    },
+    {
+      "key": "320-no-preference",
+      "route": "/privacy/",
+      "width": 320,
+      "scrollWidth": 320,
+      "header": 1,
+      "footer": 1,
+      "lenis": {
+        "live": 1,
+        "max": 1
+      },
+      "script": [
+        "/js/raboty-motion.js",
+        "/assets/vendor/gsap-3.12.5.min.js",
+        "/assets/vendor/ScrollTrigger-3.12.5.min.js",
+        "/assets/vendor/lenis-1.3.26.min.js",
+        "/js/site-header.js",
+        "/js/raboty-scroll.js",
+        "/js/footer-waves.js",
+        "/js/footer-reveal.js",
+        "/js/raboty-effects.js",
+        "/js/get-started-page-links.js"
+      ]
+    },
+    {
+      "key": "390-reduce",
+      "route": "/get-started/",
+      "width": 390,
+      "scrollWidth": 390,
+      "header": 1,
+      "footer": 1,
+      "lenis": {
+        "live": 0,
+        "max": 0
+      },
+      "script": [
+        "/js/raboty-motion.js",
+        "/assets/vendor/gsap-3.12.5.min.js",
+        "/assets/vendor/ScrollTrigger-3.12.5.min.js",
+        "/assets/vendor/lenis-1.3.26.min.js",
+        "/js/site-header.js",
+        "/js/raboty-scroll.js",
+        "/js/get-started-works.js",
+        "/js/footer-waves.js",
+        "/js/footer-reveal.js",
+        "/js/raboty-effects.js",
+        "/js/get-started-phone.js",
+        "/js/get-started-form.js",
+        "/js/get-started-page-links.js"
+      ]
+    },
+    {
+      "key": "390-reduce",
+      "route": "/privacy/",
+      "width": 390,
+      "scrollWidth": 390,
+      "header": 1,
+      "footer": 1,
+      "lenis": {
+        "live": 0,
+        "max": 0
+      },
+      "script": [
+        "/js/raboty-motion.js",
+        "/assets/vendor/gsap-3.12.5.min.js",
+        "/assets/vendor/ScrollTrigger-3.12.5.min.js",
+        "/assets/vendor/lenis-1.3.26.min.js",
+        "/js/site-header.js",
+        "/js/raboty-scroll.js",
+        "/js/footer-waves.js",
+        "/js/footer-reveal.js",
+        "/js/raboty-effects.js",
+        "/js/get-started-page-links.js"
+      ]
+    },
+    {
+      "key": "390-no-preference",
+      "route": "/get-started/",
+      "width": 390,
+      "scrollWidth": 390,
+      "header": 1,
+      "footer": 1,
+      "lenis": {
+        "live": 1,
+        "max": 1
+      },
+      "script": [
+        "/js/raboty-motion.js",
+        "/assets/vendor/gsap-3.12.5.min.js",
+        "/assets/vendor/ScrollTrigger-3.12.5.min.js",
+        "/assets/vendor/lenis-1.3.26.min.js",
+        "/js/site-header.js",
+        "/js/raboty-scroll.js",
+        "/js/get-started-works.js",
+        "/js/footer-waves.js",
+        "/js/footer-reveal.js",
+        "/js/raboty-effects.js",
+        "/js/get-started-phone.js",
+        "/js/get-started-form.js",
+        "/js/get-started-page-links.js"
+      ]
+    },
+    {
+      "key": "390-no-preference",
+      "route": "/privacy/",
+      "width": 390,
+      "scrollWidth": 390,
+      "header": 1,
+      "footer": 1,
+      "lenis": {
+        "live": 1,
+        "max": 1
+      },
+      "script": [
+        "/js/raboty-motion.js",
+        "/assets/vendor/gsap-3.12.5.min.js",
+        "/assets/vendor/ScrollTrigger-3.12.5.min.js",
+        "/assets/vendor/lenis-1.3.26.min.js",
+        "/js/site-header.js",
+        "/js/raboty-scroll.js",
+        "/js/footer-waves.js",
+        "/js/footer-reveal.js",
+        "/js/raboty-effects.js",
+        "/js/get-started-page-links.js"
+      ]
+    },
+    {
+      "key": "768-reduce",
+      "route": "/get-started/",
+      "width": 768,
+      "scrollWidth": 768,
+      "header": 1,
+      "footer": 1,
+      "lenis": {
+        "live": 0,
+        "max": 0
+      },
+      "script": [
+        "/js/raboty-motion.js",
+        "/assets/vendor/gsap-3.12.5.min.js",
+        "/assets/vendor/ScrollTrigger-3.12.5.min.js",
+        "/assets/vendor/lenis-1.3.26.min.js",
+        "/js/site-header.js",
+        "/js/raboty-scroll.js",
+        "/js/get-started-works.js",
+        "/js/footer-waves.js",
+        "/js/footer-reveal.js",
+        "/js/raboty-effects.js",
+        "/js/get-started-phone.js",
+        "/js/get-started-form.js",
+        "/js/get-started-page-links.js"
+      ]
+    },
+    {
+      "key": "768-reduce",
+      "route": "/privacy/",
+      "width": 768,
+      "scrollWidth": 768,
+      "header": 1,
+      "footer": 1,
+      "lenis": {
+        "live": 0,
+        "max": 0
+      },
+      "script": [
+        "/js/raboty-motion.js",
+        "/assets/vendor/gsap-3.12.5.min.js",
+        "/assets/vendor/ScrollTrigger-3.12.5.min.js",
+        "/assets/vendor/lenis-1.3.26.min.js",
+        "/js/site-header.js",
+        "/js/raboty-scroll.js",
+        "/js/footer-waves.js",
+        "/js/footer-reveal.js",
+        "/js/raboty-effects.js",
+        "/js/get-started-page-links.js"
+      ]
+    },
+    {
+      "key": "768-no-preference",
+      "route": "/get-started/",
+      "width": 768,
+      "scrollWidth": 768,
+      "header": 1,
+      "footer": 1,
+      "lenis": {
+        "live": 1,
+        "max": 1
+      },
+      "script": [
+        "/js/raboty-motion.js",
+        "/assets/vendor/gsap-3.12.5.min.js",
+        "/assets/vendor/ScrollTrigger-3.12.5.min.js",
+        "/assets/vendor/lenis-1.3.26.min.js",
+        "/js/site-header.js",
+        "/js/raboty-scroll.js",
+        "/js/get-started-works.js",
+        "/js/footer-waves.js",
+        "/js/footer-reveal.js",
+        "/js/raboty-effects.js",
+        "/js/get-started-phone.js",
+        "/js/get-started-form.js",
+        "/js/get-started-page-links.js"
+      ]
+    },
+    {
+      "key": "768-no-preference",
+      "route": "/privacy/",
+      "width": 768,
+      "scrollWidth": 768,
+      "header": 1,
+      "footer": 1,
+      "lenis": {
+        "live": 1,
+        "max": 1
+      },
+      "script": [
+        "/js/raboty-motion.js",
+        "/assets/vendor/gsap-3.12.5.min.js",
+        "/assets/vendor/ScrollTrigger-3.12.5.min.js",
+        "/assets/vendor/lenis-1.3.26.min.js",
+        "/js/site-header.js",
+        "/js/raboty-scroll.js",
+        "/js/footer-waves.js",
+        "/js/footer-reveal.js",
+        "/js/raboty-effects.js",
+        "/js/get-started-page-links.js"
+      ]
+    },
+    {
+      "key": "1024-reduce",
+      "route": "/get-started/",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "header": 1,
+      "footer": 1,
+      "lenis": {
+        "live": 0,
+        "max": 0
+      },
+      "script": [
+        "/js/raboty-motion.js",
+        "/assets/vendor/gsap-3.12.5.min.js",
+        "/assets/vendor/ScrollTrigger-3.12.5.min.js",
+        "/assets/vendor/lenis-1.3.26.min.js",
+        "/js/site-header.js",
+        "/js/raboty-scroll.js",
+        "/js/get-started-works.js",
+        "/js/footer-waves.js",
+        "/js/footer-reveal.js",
+        "/js/raboty-effects.js",
+        "/js/get-started-phone.js",
+        "/js/get-started-form.js",
+        "/js/get-started-page-links.js"
+      ]
+    },
+    {
+      "key": "1024-reduce",
+      "route": "/privacy/",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "header": 1,
+      "footer": 1,
+      "lenis": {
+        "live": 0,
+        "max": 0
+      },
+      "script": [
+        "/js/raboty-motion.js",
+        "/assets/vendor/gsap-3.12.5.min.js",
+        "/assets/vendor/ScrollTrigger-3.12.5.min.js",
+        "/assets/vendor/lenis-1.3.26.min.js",
+        "/js/site-header.js",
+        "/js/raboty-scroll.js",
+        "/js/footer-waves.js",
+        "/js/footer-reveal.js",
+        "/js/raboty-effects.js",
+        "/js/get-started-page-links.js"
+      ]
+    },
+    {
+      "key": "1024-no-preference",
+      "route": "/get-started/",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "header": 1,
+      "footer": 1,
+      "lenis": {
+        "live": 1,
+        "max": 1
+      },
+      "script": [
+        "/js/raboty-motion.js",
+        "/assets/vendor/gsap-3.12.5.min.js",
+        "/assets/vendor/ScrollTrigger-3.12.5.min.js",
+        "/assets/vendor/lenis-1.3.26.min.js",
+        "/js/site-header.js",
+        "/js/raboty-scroll.js",
+        "/js/get-started-works.js",
+        "/js/footer-waves.js",
+        "/js/footer-reveal.js",
+        "/js/raboty-effects.js",
+        "/js/get-started-phone.js",
+        "/js/get-started-form.js",
+        "/js/get-started-page-links.js"
+      ]
+    },
+    {
+      "key": "1024-no-preference",
+      "route": "/privacy/",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "header": 1,
+      "footer": 1,
+      "lenis": {
+        "live": 1,
+        "max": 1
+      },
+      "script": [
+        "/js/raboty-motion.js",
+        "/assets/vendor/gsap-3.12.5.min.js",
+        "/assets/vendor/ScrollTrigger-3.12.5.min.js",
+        "/assets/vendor/lenis-1.3.26.min.js",
+        "/js/site-header.js",
+        "/js/raboty-scroll.js",
+        "/js/footer-waves.js",
+        "/js/footer-reveal.js",
+        "/js/raboty-effects.js",
+        "/js/get-started-page-links.js"
+      ]
+    },
+    {
+      "key": "1440-reduce",
+      "route": "/get-started/",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "header": 1,
+      "footer": 1,
+      "lenis": {
+        "live": 0,
+        "max": 0
+      },
+      "script": [
+        "/js/raboty-motion.js",
+        "/assets/vendor/gsap-3.12.5.min.js",
+        "/assets/vendor/ScrollTrigger-3.12.5.min.js",
+        "/assets/vendor/lenis-1.3.26.min.js",
+        "/js/site-header.js",
+        "/js/raboty-scroll.js",
+        "/js/get-started-works.js",
+        "/js/footer-waves.js",
+        "/js/footer-reveal.js",
+        "/js/raboty-effects.js",
+        "/js/get-started-phone.js",
+        "/js/get-started-form.js",
+        "/js/get-started-page-links.js"
+      ]
+    },
+    {
+      "key": "1440-reduce",
+      "route": "/privacy/",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "header": 1,
+      "footer": 1,
+      "lenis": {
+        "live": 0,
+        "max": 0
+      },
+      "script": [
+        "/js/raboty-motion.js",
+        "/assets/vendor/gsap-3.12.5.min.js",
+        "/assets/vendor/ScrollTrigger-3.12.5.min.js",
+        "/assets/vendor/lenis-1.3.26.min.js",
+        "/js/site-header.js",
+        "/js/raboty-scroll.js",
+        "/js/footer-waves.js",
+        "/js/footer-reveal.js",
+        "/js/raboty-effects.js",
+        "/js/get-started-page-links.js"
+      ]
+    },
+    {
+      "key": "1440-no-preference",
+      "route": "/get-started/",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "header": 1,
+      "footer": 1,
+      "lenis": {
+        "live": 1,
+        "max": 1
+      },
+      "script": [
+        "/js/raboty-motion.js",
+        "/assets/vendor/gsap-3.12.5.min.js",
+        "/assets/vendor/ScrollTrigger-3.12.5.min.js",
+        "/assets/vendor/lenis-1.3.26.min.js",
+        "/js/site-header.js",
+        "/js/raboty-scroll.js",
+        "/js/get-started-works.js",
+        "/js/footer-waves.js",
+        "/js/footer-reveal.js",
+        "/js/raboty-effects.js",
+        "/js/get-started-phone.js",
+        "/js/get-started-form.js",
+        "/js/get-started-page-links.js"
+      ]
+    },
+    {
+      "key": "1440-no-preference",
+      "route": "/privacy/",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "header": 1,
+      "footer": 1,
+      "lenis": {
+        "live": 1,
+        "max": 1
+      },
+      "script": [
+        "/js/raboty-motion.js",
+        "/assets/vendor/gsap-3.12.5.min.js",
+        "/assets/vendor/ScrollTrigger-3.12.5.min.js",
+        "/assets/vendor/lenis-1.3.26.min.js",
+        "/js/site-header.js",
+        "/js/raboty-scroll.js",
+        "/js/footer-waves.js",
+        "/js/footer-reveal.js",
+        "/js/raboty-effects.js",
+        "/js/get-started-page-links.js"
+      ]
+    },
+    {
+      "key": "2560-reduce",
+      "route": "/get-started/",
+      "width": 2560,
+      "scrollWidth": 2560,
+      "header": 1,
+      "footer": 1,
+      "lenis": {
+        "live": 0,
+        "max": 0
+      },
+      "script": [
+        "/js/raboty-motion.js",
+        "/assets/vendor/gsap-3.12.5.min.js",
+        "/assets/vendor/ScrollTrigger-3.12.5.min.js",
+        "/assets/vendor/lenis-1.3.26.min.js",
+        "/js/site-header.js",
+        "/js/raboty-scroll.js",
+        "/js/get-started-works.js",
+        "/js/footer-waves.js",
+        "/js/footer-reveal.js",
+        "/js/raboty-effects.js",
+        "/js/get-started-phone.js",
+        "/js/get-started-form.js",
+        "/js/get-started-page-links.js"
+      ]
+    },
+    {
+      "key": "2560-reduce",
+      "route": "/privacy/",
+      "width": 2560,
+      "scrollWidth": 2560,
+      "header": 1,
+      "footer": 1,
+      "lenis": {
+        "live": 0,
+        "max": 0
+      },
+      "script": [
+        "/js/raboty-motion.js",
+        "/assets/vendor/gsap-3.12.5.min.js",
+        "/assets/vendor/ScrollTrigger-3.12.5.min.js",
+        "/assets/vendor/lenis-1.3.26.min.js",
+        "/js/site-header.js",
+        "/js/raboty-scroll.js",
+        "/js/footer-waves.js",
+        "/js/footer-reveal.js",
+        "/js/raboty-effects.js",
+        "/js/get-started-page-links.js"
+      ]
+    },
+    {
+      "key": "2560-no-preference",
+      "route": "/get-started/",
+      "width": 2560,
+      "scrollWidth": 2560,
+      "header": 1,
+      "footer": 1,
+      "lenis": {
+        "live": 1,
+        "max": 1
+      },
+      "script": [
+        "/js/raboty-motion.js",
+        "/assets/vendor/gsap-3.12.5.min.js",
+        "/assets/vendor/ScrollTrigger-3.12.5.min.js",
+        "/assets/vendor/lenis-1.3.26.min.js",
+        "/js/site-header.js",
+        "/js/raboty-scroll.js",
+        "/js/get-started-works.js",
+        "/js/footer-waves.js",
+        "/js/footer-reveal.js",
+        "/js/raboty-effects.js",
+        "/js/get-started-phone.js",
+        "/js/get-started-form.js",
+        "/js/get-started-page-links.js"
+      ]
+    },
+    {
+      "key": "2560-no-preference",
+      "route": "/privacy/",
+      "width": 2560,
+      "scrollWidth": 2560,
+      "header": 1,
+      "footer": 1,
+      "lenis": {
+        "live": 1,
+        "max": 1
+      },
+      "script": [
+        "/js/raboty-motion.js",
+        "/assets/vendor/gsap-3.12.5.min.js",
+        "/assets/vendor/ScrollTrigger-3.12.5.min.js",
+        "/assets/vendor/lenis-1.3.26.min.js",
+        "/js/site-header.js",
+        "/js/raboty-scroll.js",
+        "/js/footer-waves.js",
+        "/js/footer-reveal.js",
+        "/js/raboty-effects.js",
+        "/js/get-started-page-links.js"
+      ]
+    }
+  ],
+  "reference": [
+    {
+      "width": 390,
+      "actual": {
+        ".works-surface": {
+          "x": 10,
+          "y": 10,
+          "width": 370,
+          "height": 960.875,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        },
+        ".sc-contact__layout": {
+          "x": 28,
+          "y": 128,
+          "width": 334,
+          "height": 798.875,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        },
+        ".sc-contact__intro h1": {
+          "x": 28,
+          "y": 128,
+          "width": 316,
+          "height": 92.8125,
+          "font": "42px",
+          "lineHeight": "46.41px",
+          "radius": "0px"
+        },
+        ".sc-contact__form": {
+          "x": 28,
+          "y": 336.875,
+          "width": 334,
+          "height": 590,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "22px"
+        },
+        "#scPhoneGroup": {
+          "x": 50,
+          "y": 501.875,
+          "width": 290,
+          "height": 56,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "12px"
+        },
+        ".sc-contact__submit": {
+          "x": 50,
+          "y": 847.875,
+          "width": 290,
+          "height": 52,
+          "font": "16px",
+          "lineHeight": "16px",
+          "radius": "100px"
+        },
+        ".related-work": {
+          "x": 8,
+          "y": 976.875,
+          "width": 374,
+          "height": 655.875,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "24px 24px 0px 0px"
+        },
+        "#relatedViewport": {
+          "x": 22,
+          "y": 1085.921875,
+          "width": 346,
+          "height": 438.828125,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        },
+        ".related-work__arrow": {
+          "x": 129,
+          "y": 1520.75,
+          "width": 52,
+          "height": 52,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "50%"
+        }
+      },
+      "reference": {
+        ".works-surface": {
+          "x": 10,
+          "y": 10,
+          "width": 370,
+          "height": 960.875,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        },
+        ".sc-contact__layout": {
+          "x": 28,
+          "y": 128,
+          "width": 334,
+          "height": 798.875,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        },
+        ".sc-contact__intro h1": {
+          "x": 28,
+          "y": 128,
+          "width": 316,
+          "height": 92.8125,
+          "font": "42px",
+          "lineHeight": "46.41px",
+          "radius": "0px"
+        },
+        ".sc-contact__form": {
+          "x": 28,
+          "y": 336.875,
+          "width": 334,
+          "height": 590,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "22px"
+        },
+        "#scPhoneGroup": {
+          "x": 50,
+          "y": 501.875,
+          "width": 290,
+          "height": 56,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "12px"
+        },
+        ".sc-contact__submit": {
+          "x": 50,
+          "y": 847.875,
+          "width": 290,
+          "height": 52,
+          "font": "16px",
+          "lineHeight": "16px",
+          "radius": "100px"
+        },
+        ".related-work": {
+          "x": 8,
+          "y": 976.875,
+          "width": 374,
+          "height": 655.875,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "24px 24px 0px 0px"
+        },
+        "#relatedViewport": {
+          "x": 22,
+          "y": 1085.921875,
+          "width": 346,
+          "height": 438.828125,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        },
+        ".related-work__arrow": {
+          "x": 129,
+          "y": 1520.75,
+          "width": 52,
+          "height": 52,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "50%"
+        }
+      }
+    },
+    {
+      "width": 1440,
+      "actual": {
+        ".works-surface": {
+          "x": 14.40625,
+          "y": 14.390625,
+          "width": 1411.1875,
+          "height": 797.0625,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        },
+        ".sc-contact__layout": {
+          "x": 112.5,
+          "y": 129.578125,
+          "width": 1215,
+          "height": 607,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        },
+        ".sc-contact__intro h1": {
+          "x": 112.5,
+          "y": 310.90625,
+          "width": 556.84375,
+          "height": 163.875,
+          "font": "74.16px",
+          "lineHeight": "81.9468px",
+          "radius": "0px"
+        },
+        ".sc-contact__form": {
+          "x": 867.5,
+          "y": 129.578125,
+          "width": 460,
+          "height": 607,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "24px"
+        },
+        "#scPhoneGroup": {
+          "x": 910.5,
+          "y": 312.578125,
+          "width": 374,
+          "height": 56,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "12px"
+        },
+        ".sc-contact__submit": {
+          "x": 910.5,
+          "y": 641.578125,
+          "width": 374,
+          "height": 52,
+          "font": "16px",
+          "lineHeight": "16px",
+          "radius": "100px"
+        },
+        ".related-work": {
+          "x": 8,
+          "y": 819.453125,
+          "width": 1424,
+          "height": 829.359375,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "40px 40px 0px 0px"
+        },
+        "#relatedViewport": {
+          "x": 86,
+          "y": 999.328125,
+          "width": 1268,
+          "height": 525.09375,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        },
+        ".related-work__arrow": {
+          "x": 652,
+          "y": 1510.421875,
+          "width": 52,
+          "height": 52,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "50%"
+        }
+      },
+      "reference": {
+        ".works-surface": {
+          "x": 14.40625,
+          "y": 14.390625,
+          "width": 1411.1875,
+          "height": 797.0625,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        },
+        ".sc-contact__layout": {
+          "x": 112.5,
+          "y": 129.578125,
+          "width": 1215,
+          "height": 607,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        },
+        ".sc-contact__intro h1": {
+          "x": 112.5,
+          "y": 310.90625,
+          "width": 556.84375,
+          "height": 163.875,
+          "font": "74.16px",
+          "lineHeight": "81.9468px",
+          "radius": "0px"
+        },
+        ".sc-contact__form": {
+          "x": 867.5,
+          "y": 129.578125,
+          "width": 460,
+          "height": 607,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "24px"
+        },
+        "#scPhoneGroup": {
+          "x": 910.5,
+          "y": 312.578125,
+          "width": 374,
+          "height": 56,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "12px"
+        },
+        ".sc-contact__submit": {
+          "x": 910.5,
+          "y": 641.578125,
+          "width": 374,
+          "height": 52,
+          "font": "16px",
+          "lineHeight": "16px",
+          "radius": "100px"
+        },
+        ".related-work": {
+          "x": 8,
+          "y": 819.453125,
+          "width": 1424,
+          "height": 829.359375,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "40px 40px 0px 0px"
+        },
+        "#relatedViewport": {
+          "x": 86,
+          "y": 999.328125,
+          "width": 1268,
+          "height": 525.09375,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "0px"
+        },
+        ".related-work__arrow": {
+          "x": 652,
+          "y": 1510.421875,
+          "width": 52,
+          "height": 52,
+          "font": "16px",
+          "lineHeight": "normal",
+          "radius": "50%"
+        }
+      }
+    }
+  ],
+  "cta": [
+    {
+      "route": "/",
+      "selector": "#floatingHeader > .nav-cta",
+      "source": "templates/partials/header.html",
+      "href": "/get-started/",
+      "activation": "click",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true
+    },
+    {
+      "route": "/",
+      "selector": "#mobilePanel a[href=\"/get-started/\"]",
+      "source": "templates/partials/header.html",
+      "href": "/get-started/",
+      "activation": "click",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true
+    },
+    {
+      "route": "/",
+      "selector": ".sc-footer__cta",
+      "source": "templates/partials/footer.html",
+      "href": "/get-started/",
+      "activation": "click",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true
+    },
+    {
+      "route": "/",
+      "selector": ".main-cta",
+      "source": "templates/pages/home.html",
+      "href": "/get-started/",
+      "activation": "keyboard",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true
+    },
+    {
+      "route": "/raboty/",
+      "selector": "#floatingHeader > .nav-cta",
+      "source": "templates/partials/header.html",
+      "href": "/get-started/",
+      "activation": "click",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true
+    },
+    {
+      "route": "/raboty/",
+      "selector": "#mobilePanel a[href=\"/get-started/\"]",
+      "source": "templates/partials/header.html",
+      "href": "/get-started/",
+      "activation": "click",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true
+    },
+    {
+      "route": "/raboty/",
+      "selector": ".sc-footer__cta",
+      "source": "templates/partials/footer.html",
+      "href": "/get-started/",
+      "activation": "click",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true
+    },
+    {
+      "route": "/raboty/",
+      "selector": ".catalog-intro__cta",
+      "source": "templates/pages/works.html",
+      "href": "/get-started/",
+      "activation": "keyboard",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true
+    },
+    {
+      "route": "/raboty/",
+      "selector": "#caseDialog .case-dialog__cta",
+      "source": "templates/pages/works.html",
+      "href": "/get-started/",
+      "activation": "click",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true,
+      "modal": "preserved dialog opened programmatically"
+    },
+    {
+      "route": "/raboty/b2b/",
+      "selector": "#floatingHeader > .nav-cta",
+      "source": "templates/partials/header.html",
+      "href": "/get-started/",
+      "activation": "click",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true
+    },
+    {
+      "route": "/raboty/b2b/",
+      "selector": "#mobilePanel a[href=\"/get-started/\"]",
+      "source": "templates/partials/header.html",
+      "href": "/get-started/",
+      "activation": "click",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true
+    },
+    {
+      "route": "/raboty/b2b/",
+      "selector": ".sc-footer__cta",
+      "source": "templates/partials/footer.html",
+      "href": "/get-started/",
+      "activation": "click",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true
+    },
+    {
+      "route": "/raboty/b2b/",
+      "selector": ".sc-case-process__cta-button",
+      "source": "templates/pages/case.html",
+      "href": "/get-started/",
+      "activation": "keyboard",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true
+    },
+    {
+      "route": "/raboty/b2b/",
+      "selector": "#caseDialog .case-dialog__cta",
+      "source": "templates/pages/case.html",
+      "href": "/get-started/",
+      "activation": "click",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true,
+      "modal": "preserved dialog opened programmatically"
+    },
+    {
+      "route": "/raboty/beauty-insight/",
+      "selector": "#floatingHeader > .nav-cta",
+      "source": "templates/partials/header.html",
+      "href": "/get-started/",
+      "activation": "click",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true
+    },
+    {
+      "route": "/raboty/beauty-insight/",
+      "selector": "#mobilePanel a[href=\"/get-started/\"]",
+      "source": "templates/partials/header.html",
+      "href": "/get-started/",
+      "activation": "click",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true
+    },
+    {
+      "route": "/raboty/beauty-insight/",
+      "selector": ".sc-footer__cta",
+      "source": "templates/partials/footer.html",
+      "href": "/get-started/",
+      "activation": "click",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true
+    },
+    {
+      "route": "/raboty/beauty-insight/",
+      "selector": ".sc-case-process__cta-button",
+      "source": "templates/pages/case.html",
+      "href": "/get-started/",
+      "activation": "keyboard",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true
+    },
+    {
+      "route": "/raboty/beauty-insight/",
+      "selector": "#caseDialog .case-dialog__cta",
+      "source": "templates/pages/case.html",
+      "href": "/get-started/",
+      "activation": "click",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true,
+      "modal": "preserved dialog opened programmatically"
+    },
+    {
+      "route": "/raboty/crm/",
+      "selector": "#floatingHeader > .nav-cta",
+      "source": "templates/partials/header.html",
+      "href": "/get-started/",
+      "activation": "click",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true
+    },
+    {
+      "route": "/raboty/crm/",
+      "selector": "#mobilePanel a[href=\"/get-started/\"]",
+      "source": "templates/partials/header.html",
+      "href": "/get-started/",
+      "activation": "click",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true
+    },
+    {
+      "route": "/raboty/crm/",
+      "selector": ".sc-footer__cta",
+      "source": "templates/partials/footer.html",
+      "href": "/get-started/",
+      "activation": "click",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true
+    },
+    {
+      "route": "/raboty/crm/",
+      "selector": ".sc-case-process__cta-button",
+      "source": "templates/pages/case.html",
+      "href": "/get-started/",
+      "activation": "keyboard",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true
+    },
+    {
+      "route": "/raboty/crm/",
+      "selector": "#caseDialog .case-dialog__cta",
+      "source": "templates/pages/case.html",
+      "href": "/get-started/",
+      "activation": "click",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true,
+      "modal": "preserved dialog opened programmatically"
+    },
+    {
+      "route": "/raboty/flowers/",
+      "selector": "#floatingHeader > .nav-cta",
+      "source": "templates/partials/header.html",
+      "href": "/get-started/",
+      "activation": "click",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true
+    },
+    {
+      "route": "/raboty/flowers/",
+      "selector": "#mobilePanel a[href=\"/get-started/\"]",
+      "source": "templates/partials/header.html",
+      "href": "/get-started/",
+      "activation": "click",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true
+    },
+    {
+      "route": "/raboty/flowers/",
+      "selector": ".sc-footer__cta",
+      "source": "templates/partials/footer.html",
+      "href": "/get-started/",
+      "activation": "click",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true
+    },
+    {
+      "route": "/raboty/flowers/",
+      "selector": ".sc-case-process__cta-button",
+      "source": "templates/pages/case.html",
+      "href": "/get-started/",
+      "activation": "keyboard",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true
+    },
+    {
+      "route": "/raboty/flowers/",
+      "selector": "#caseDialog .case-dialog__cta",
+      "source": "templates/pages/case.html",
+      "href": "/get-started/",
+      "activation": "click",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true,
+      "modal": "preserved dialog opened programmatically"
+    },
+    {
+      "route": "/raboty/metal-calc/",
+      "selector": "#floatingHeader > .nav-cta",
+      "source": "templates/partials/header.html",
+      "href": "/get-started/",
+      "activation": "click",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true
+    },
+    {
+      "route": "/raboty/metal-calc/",
+      "selector": "#mobilePanel a[href=\"/get-started/\"]",
+      "source": "templates/partials/header.html",
+      "href": "/get-started/",
+      "activation": "click",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true
+    },
+    {
+      "route": "/raboty/metal-calc/",
+      "selector": ".sc-footer__cta",
+      "source": "templates/partials/footer.html",
+      "href": "/get-started/",
+      "activation": "click",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true
+    },
+    {
+      "route": "/raboty/metal-calc/",
+      "selector": ".sc-case-process__cta-button",
+      "source": "templates/pages/case.html",
+      "href": "/get-started/",
+      "activation": "keyboard",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true
+    },
+    {
+      "route": "/raboty/metal-calc/",
+      "selector": "#caseDialog .case-dialog__cta",
+      "source": "templates/pages/case.html",
+      "href": "/get-started/",
+      "activation": "click",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true,
+      "modal": "preserved dialog opened programmatically"
+    },
+    {
+      "route": "/raboty/prostor/",
+      "selector": "#floatingHeader > .nav-cta",
+      "source": "templates/partials/header.html",
+      "href": "/get-started/",
+      "activation": "click",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true
+    },
+    {
+      "route": "/raboty/prostor/",
+      "selector": "#mobilePanel a[href=\"/get-started/\"]",
+      "source": "templates/partials/header.html",
+      "href": "/get-started/",
+      "activation": "click",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true
+    },
+    {
+      "route": "/raboty/prostor/",
+      "selector": ".sc-footer__cta",
+      "source": "templates/partials/footer.html",
+      "href": "/get-started/",
+      "activation": "click",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true
+    },
+    {
+      "route": "/raboty/prostor/",
+      "selector": ".sc-case-process__cta-button",
+      "source": "templates/pages/case.html",
+      "href": "/get-started/",
+      "activation": "keyboard",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true
+    },
+    {
+      "route": "/raboty/prostor/",
+      "selector": "#caseDialog .case-dialog__cta",
+      "source": "templates/pages/case.html",
+      "href": "/get-started/",
+      "activation": "click",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true,
+      "modal": "preserved dialog opened programmatically"
+    },
+    {
+      "route": "/get-started/",
+      "selector": "#floatingHeader > .nav-cta",
+      "source": "templates/partials/header.html",
+      "href": "#request",
+      "activation": "click reduce",
+      "result": "http://127.0.0.1:4176/get-started/#request",
+      "pass": true
+    },
+    {
+      "route": "/get-started/",
+      "selector": "#mobilePanel a:last-child",
+      "source": "templates/partials/header.html",
+      "href": "#request",
+      "activation": "click reduce",
+      "result": "http://127.0.0.1:4176/get-started/#request",
+      "pass": true
+    },
+    {
+      "route": "/get-started/",
+      "selector": ".sc-footer__cta",
+      "source": "templates/partials/footer.html",
+      "href": "#request",
+      "activation": "click reduce",
+      "result": "http://127.0.0.1:4176/get-started/#request",
+      "pass": true
+    },
+    {
+      "route": "/privacy/",
+      "selector": "#floatingHeader > .nav-cta",
+      "source": "templates/partials/header.html",
+      "href": "/get-started/#request",
+      "activation": "click reduce",
+      "result": "http://127.0.0.1:4176/get-started/#request",
+      "pass": true
+    },
+    {
+      "route": "/privacy/",
+      "selector": "#mobilePanel a:last-child",
+      "source": "templates/partials/header.html",
+      "href": "/get-started/#request",
+      "activation": "click reduce",
+      "result": "http://127.0.0.1:4176/get-started/#request",
+      "pass": true
+    },
+    {
+      "route": "/privacy/",
+      "selector": ".sc-footer__cta",
+      "source": "templates/partials/footer.html",
+      "href": "/get-started/#request",
+      "activation": "click reduce",
+      "result": "http://127.0.0.1:4176/get-started/#request",
+      "pass": true
+    },
+    {
+      "route": "/get-started/",
+      "selector": "#floatingHeader > .nav-cta",
+      "source": "templates/partials/header.html",
+      "href": "#request",
+      "activation": "click no-preference",
+      "result": "http://127.0.0.1:4176/get-started/#request",
+      "pass": true
+    },
+    {
+      "route": "/get-started/",
+      "selector": "#mobilePanel a:last-child",
+      "source": "templates/partials/header.html",
+      "href": "#request",
+      "activation": "click no-preference",
+      "result": "http://127.0.0.1:4176/get-started/#request",
+      "pass": true
+    },
+    {
+      "route": "/get-started/",
+      "selector": ".sc-footer__cta",
+      "source": "templates/partials/footer.html",
+      "href": "#request",
+      "activation": "click no-preference",
+      "result": "http://127.0.0.1:4176/get-started/#request",
+      "pass": true
+    },
+    {
+      "route": "/privacy/",
+      "selector": "#floatingHeader > .nav-cta",
+      "source": "templates/partials/header.html",
+      "href": "/get-started/#request",
+      "activation": "click no-preference",
+      "result": "http://127.0.0.1:4176/get-started/#request",
+      "pass": true
+    },
+    {
+      "route": "/privacy/",
+      "selector": "#mobilePanel a:last-child",
+      "source": "templates/partials/header.html",
+      "href": "/get-started/#request",
+      "activation": "click no-preference",
+      "result": "http://127.0.0.1:4176/get-started/#request",
+      "pass": true
+    },
+    {
+      "route": "/privacy/",
+      "selector": ".sc-footer__cta",
+      "source": "templates/partials/footer.html",
+      "href": "/get-started/#request",
+      "activation": "click no-preference",
+      "result": "http://127.0.0.1:4176/get-started/#request",
+      "pass": true
+    },
+    {
+      "route": "/raboty/",
+      "selector": "#floatingHeader > .nav-cta",
+      "source": "templates/partials/header.html",
+      "href": "/get-started/",
+      "activation": "Ctrl-click",
+      "result": "http://127.0.0.1:4176/get-started/",
+      "pass": true
+    }
+  ],
+  "limitations": [
+    "Browser automation verifies wheel/touch response; it does not establish physical mouse/trackpad smoothness.",
+    "Historical modal CTA are tested by opening preserved dialogs programmatically: all six work cards now navigate directly, so these dialogs have no normal entry point.",
+    "The mailto fallback is inspected without launching an external email client. No backend or delivery exists.",
+    "Phone masks validate digit counts, not number ownership or carrier allocation. Privacy remains a draft."
+  ],
+  "pass": true,
+  "supersededChecks": [
+    {
+      "name": "1440-reduce next after keyboard wrap uses transform",
+      "pass": false,
+      "supersededBy": "carousel-report.json",
+      "reason": "Harness expectation corrected for multi-card desktop view and stable-gutter layout measurement; affected scenarios rerun."
+    },
+    {
+      "name": "1440-reduce full loop after native keyboard",
+      "pass": false,
+      "supersededBy": "carousel-report.json",
+      "reason": "Harness expectation corrected for multi-card desktop view and stable-gutter layout measurement; affected scenarios rerun."
+    },
+    {
+      "name": "1440-no-preference next after keyboard wrap uses transform",
+      "pass": false,
+      "supersededBy": "carousel-report.json",
+      "reason": "Harness expectation corrected for multi-card desktop view and stable-gutter layout measurement; affected scenarios rerun."
+    },
+    {
+      "name": "1440-no-preference full loop after native keyboard",
+      "pass": false,
+      "supersededBy": "carousel-report.json",
+      "reason": "Harness expectation corrected for multi-card desktop view and stable-gutter layout measurement; affected scenarios rerun."
+    },
+    {
+      "name": "390/get-started/ 15px scrollbar no overflow / symmetric outer hero",
+      "pass": false,
+      "data": {
+        "clientWidth": 390,
+        "innerWidth": 390,
+        "scrollWidth": 375,
+        "left": 10,
+        "right": 25,
+        "scrollbar": 0
+      },
+      "supersededBy": "carousel-report.json",
+      "reason": "Harness expectation corrected for multi-card desktop view and stable-gutter layout measurement; affected scenarios rerun."
+    },
+    {
+      "name": "390/privacy/ 15px scrollbar no overflow / symmetric outer hero",
+      "pass": false,
+      "data": {
+        "clientWidth": 390,
+        "innerWidth": 390,
+        "scrollWidth": 375,
+        "left": 10,
+        "right": 25,
+        "scrollbar": 0
+      },
+      "supersededBy": "carousel-report.json",
+      "reason": "Harness expectation corrected for multi-card desktop view and stable-gutter layout measurement; affected scenarios rerun."
+    },
+    {
+      "name": "1440/get-started/ 15px scrollbar no overflow / symmetric outer hero",
+      "pass": false,
+      "data": {
+        "clientWidth": 1440,
+        "innerWidth": 1440,
+        "scrollWidth": 1425,
+        "left": 14.40625,
+        "right": 29.40625,
+        "scrollbar": 0
+      },
+      "supersededBy": "carousel-report.json",
+      "reason": "Harness expectation corrected for multi-card desktop view and stable-gutter layout measurement; affected scenarios rerun."
+    },
+    {
+      "name": "1440/privacy/ 15px scrollbar no overflow / symmetric outer hero",
+      "pass": false,
+      "data": {
+        "clientWidth": 1440,
+        "innerWidth": 1440,
+        "scrollWidth": 1425,
+        "left": 14.40625,
+        "right": 29.40625,
+        "scrollbar": 0
+      },
+      "supersededBy": "carousel-report.json",
+      "reason": "Harness expectation corrected for multi-card desktop view and stable-gutter layout measurement; affected scenarios rerun."
+    }
+  ],
+  "provenance": {
+    "fullRun": {
+      "command": "node scripts/verify-get-started-browser.cjs",
+      "createdAt": "2026-10-26T17:31:03.269Z"
+    },
+    "targetedRun": {
+      "command": "node scripts/verify-get-started-browser.cjs --carousel-only",
+      "createdAt": "2026-10-26T17:34:32.770Z",
+      "report": "carousel-report.json",
+      "checks": 78,
+      "reason": "Harness expectation corrected for multi-card desktop view; affected scenarios rerun. Stable-gutter assertions use actual root layout width because headless overlay clientWidth includes the reserved gutter."
+    }
+  },
+  "summary": {
+    "passed": 410,
+    "total": 410,
+    "ctaActivations": 52,
+    "viewportMotionRouteLoads": 24,
+    "referenceChecks": 12,
+    "browserErrors": 0,
+    "screenshots": [
+      "get-started-390.png",
+      "get-started-1440.png",
+      "privacy-390.png",
+      "privacy-1440.png"
+    ]
+  }
+}

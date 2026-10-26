@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f2f6fa">
+<meta name="sc-prototype-version" content="4.9.2">
+<meta name="description" content="Расскажите SyntheCore о своей IT-задаче: доработка сервиса, интеграция, аудит или новая система. Можно без готового ТЗ.">
+<title>Обсудить задачу — SyntheCore</title>
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/fonts.css">
+<link rel="stylesheet" href="/css/design-tokens.css">
+<link rel="stylesheet" href="/css/raboty-base.css">
+<link rel="stylesheet" href="/css/raboty-surface.css">
+<link rel="stylesheet" href="/css/raboty-scroll.css">
+<link rel="stylesheet" href="/css/raboty-type.css">
+<link rel="stylesheet" href="/css/raboty-cards.css">
+<link rel="stylesheet" href="/css/site-footer.css">
+<link rel="stylesheet" href="/css/shared-header-cta.css">
+<link rel="stylesheet" href="/css/get-started.css">
+<link rel="stylesheet" href="/assets/vendor/lenis-1.3.26.css">
+<script src="/js/raboty-motion.js"></script>
+</head>
+<body class="works-catalog sc-get-started">
+{{header}}
+<main id="top">
+  <section class="works-page" aria-labelledby="contact-page-heading">
+    <div class="works-surface">
+<svg aria-hidden="true" class="works-surface__art" preserveaspectratio="xMidYMin slice" viewbox="0 0 1440 590" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<lineargradient id="base" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0" stop-color="#f9fbfd"></stop>
+<stop offset=".52" stop-color="#eef3f7"></stop>
+<stop offset="1" stop-color="#ffffff"></stop>
+</lineargradient>
+<radialgradient id="left"><stop stop-color="#bad9f2" stop-opacity=".74"></stop><stop offset="1" stop-color="#bad9f2" stop-opacity="0"></stop></radialgradient>
+<radialgradient id="right"><stop stop-color="#b4cedf" stop-opacity=".72"></stop><stop offset="1" stop-color="#b4cedf" stop-opacity="0"></stop></radialgradient>
+<radialgradient id="milk"><stop stop-color="#fff" stop-opacity="1"></stop><stop offset="1" stop-color="#fff" stop-opacity="0"></stop></radialgradient>
+<lineargradient id="dissolve" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#f0f1f2" stop-opacity="0"></stop><stop offset="1" stop-color="#ffffff" stop-opacity="1"></stop></lineargradient>
+<filter id="soft"><fegaussianblur stddeviation="38"></fegaussianblur></filter>
+</defs>
+<rect fill="url(#base)" height="590" width="1440"></rect>
+<g filter="url(#soft)">
+<ellipse cx="180" cy="60" fill="url(#left)" rx="410" ry="220"></ellipse>
+<ellipse cx="1330" cy="90" fill="url(#right)" rx="510" ry="245"></ellipse>
+<ellipse cx="780" cy="210" fill="url(#milk)" rx="630" ry="265"></ellipse>
+<ellipse cx="90" cy="410" fill="url(#milk)" opacity=".48" rx="560" ry="175"></ellipse>
+</g>
+<rect fill="url(#dissolve)" height="250" width="1440" y="340"></rect>
+</svg>
+      <div class="works-surface__content">
+        <div class="sc-contact__layout" id="request">
+          <div class="sc-contact__intro">
+            <h1 id="contact-page-heading">Давайте обсудим<br><span>вашу задачу</span></h1>
+            <p class="sc-contact__lead">Расскажите, что хотите сделать или улучшить. Можно без готового ТЗ — мы уточним детали и обсудим, как можем помочь.</p>
+          </div>
+          <div class="sc-contact__form-wrap">
+            <form class="sc-contact__form" id="projectRequestForm" novalidate aria-label="Обсудить задачу">
+              <div class="sc-contact__fields">
+                <div class="sc-contact__field">
+                  <label class="sr-only" for="scClientName">Ваше имя (обязательно)</label>
+                  <input autocomplete="name" id="scClientName" name="name" type="text" maxlength="80" placeholder="Ваше имя *" aria-describedby="scNameError" required>
+                  <span class="sc-contact__field-error" id="scNameError" role="alert"></span>
+                </div>
+                <div class="sc-contact__field">
+                  <label class="sr-only" for="scContact">Email или Telegram (обязательно)</label>
+                  <input autocomplete="off" id="scContact" name="contact" type="text" inputmode="email" maxlength="180" placeholder="Email или Telegram *" aria-describedby="scContactError" required>
+                  <span class="sc-contact__field-error" id="scContactError" role="alert"></span>
+                </div>
+                <div class="sc-contact__field">
+  <label class="sr-only" for="scPhone">Телефон (обязательно)</label>
+  <div class="sc-phone" id="scPhoneGroup">
+    <div class="sc-phone__country">
+      <span class="sc-phone__country-display" id="scPhoneCountryDisplay" aria-hidden="true">🇧🇾 +375</span>
+      <svg class="sc-phone__chevron" aria-hidden="true" viewBox="0 0 16 16"><path d="m3 6 5 5 5-5"/></svg>
+      <select id="scPhoneCountry" name="phone_country" aria-label="Выберите страну и телефонный код"></select>
+    </div>
+    <input id="scPhone" class="sc-phone__input" name="phone_national" type="tel" inputmode="tel" autocomplete="tel-national" maxlength="32" placeholder="Телефон *" aria-describedby="scPhoneError" required>
+  </div>
+  <input type="hidden" id="scPhoneE164" name="phone">
+  <span class="sc-contact__field-error" id="scPhoneError" role="alert"></span>
+</div>
+                <div class="sc-contact__field">
+                  <label class="sr-only" for="scTask">Описание задачи (обязательно)</label>
+                  <textarea id="scTask" name="task" rows="4" minlength="15" maxlength="2500" placeholder="Опишите задачу *" aria-describedby="scTaskError" required></textarea>
+                  <span class="sc-contact__field-error" id="scTaskError" role="alert"></span>
+                </div>
+                <div class="sc-contact__field">
+                  <label class="sr-only" for="scProjectUrl">Ссылка на проект (необязательно)</label>
+                  <input id="scProjectUrl" name="url" type="url" inputmode="url" maxlength="600" placeholder="Ссылка на проект (необязательно)" aria-describedby="scUrlError">
+                  <span class="sc-contact__field-error" id="scUrlError" role="alert"></span>
+                </div>
+              </div>
+              <div class="sc-contact__privacy-wrap">
+                <label class="sc-contact__consent" for="scDataConsent">
+                  <input id="scDataConsent" name="consent" type="checkbox" aria-describedby="scConsentError" required>
+                  <span>Даю согласие на обработку <a class="sc-contact__privacy-link" href="/privacy/" target="_blank" rel="noopener noreferrer">персональных данных</a> <span class="sc-contact__required" aria-hidden="true">*</span></span>
+                </label>
+                <span class="sc-contact__field-error" id="scConsentError" role="alert"></span>
+              </div>
+              <div class="sc-contact__form-actions">
+                <button class="sc-contact__submit" type="submit">Давайте обсудим <svg aria-hidden="true" class="arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></button>
+                <div id="scSubmitStatus" class="sc-contact__submit-status" role="status" aria-live="polite" hidden>
+                  <p>Заявка ещё не отправлена. Откройте подготовленное письмо и отправьте его из почты.</p>
+                  <a id="scMailtoFallback" href="mailto:max.eroxin@gmail.com">Открыть письмо <span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="related-work" id="our-works" aria-labelledby="ourWorksTitle">
+    <div class="related-work__inner">
+      <div class="related-work__head"><h2 id="ourWorksTitle">Наши работы</h2></div>
+      <div class="related-work__viewport" id="relatedViewport" aria-label="Наши работы SyntheCore" tabindex="0">
+        <div class="related-work__track">{{contactRelated}}</div>
+      </div>
+      <div class="related-work__controls" aria-label="Навигация по работам">
+        <button class="related-work__arrow" type="button" data-direction="-1" aria-label="Предыдущие работы"><svg viewBox="0 0 24 24" aria-hidden="true" width="22" height="22"><path d="M15 18l-6-6 6-6M9 12h12"/></svg></button>
+        <button class="related-work__arrow" type="button" data-direction="1" aria-label="Следующие работы"><svg viewBox="0 0 24 24" aria-hidden="true" width="22" height="22"><path d="M9 18l6-6-6-6M15 12H3"/></svg></button>
+      </div>
+    </div>
+  </section>
+  {{footer}}
+</main>
+<script defer src="/assets/vendor/gsap-3.12.5.min.js"></script>
+<script defer src="/assets/vendor/ScrollTrigger-3.12.5.min.js"></script>
+<script defer src="/assets/vendor/lenis-1.3.26.min.js"></script>
+<script defer src="/js/site-header.js"></script>
+<script defer src="/js/raboty-scroll.js"></script>
+<script defer src="/js/get-started-works.js"></script>
+<script defer src="/js/footer-waves.js"></script>
+<script defer src="/js/footer-reveal.js"></script>
+<script defer src="/js/raboty-effects.js"></script>
+<script defer src="/js/get-started-phone.js"></script>
+<script defer src="/js/get-started-form.js"></script>
+<script defer src="/js/get-started-page-links.js"></script>
+</body>
+</html>

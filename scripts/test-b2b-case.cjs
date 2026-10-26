@@ -51,7 +51,7 @@ test('registered anchors added after the B2B baseline are the only changes to ex
  const {restoreRegisteredCaseLinks}=require('./lib/case-baseline.cjs'),audit=JSON.parse(read('docs/qa/b2b-v1/source-audit.json'));
  const later=require('./lib/case-page.cjs').casePages(root).filter(c=>!audit.baselineCaseIds.includes(c.catalog_id));
  for(const [file,expected]of Object.entries(audit.baselineFiles)){
-  const bytes=fs.readFileSync(file);let restored=file.endsWith('.html')&&!file.startsWith('templates/')?Buffer.from(restoreRegisteredCaseLinks(file,bytes.toString('utf8'),later)):bytes;
+  const bytes=fs.readFileSync(file);let restored=file.endsWith('.html')?Buffer.from(restoreRegisteredCaseLinks(file,bytes.toString('utf8'),later)):bytes;
   if(audit.baselineTextEol.includes(file))restored=Buffer.from(restored.toString('utf8').replace(/\r\n/g,'\n'));
   assert.equal(hash(restored),expected,file);
  }

@@ -19,6 +19,7 @@ node scripts/audit-project.cjs
 | Тесты сборки и отрицательные проверки | Все `test-*.cjs`; общий runner находит их автоматически |
 | Браузер | `verify-case-browser.cjs`, `verify-case-links-browser.cjs`, `verify-metal-browser.cjs`, `verify-flowers-browser.cjs`, `verify-prostor-browser.cjs`, `verify-b2b-browser.cjs`, `verify-crm-browser.cjs`, `verify-project-copy-browser.cjs`, `verify-orange-buttons.cjs`, `verify-css-refactor-browser.cjs` |
 | Ручная диагностика | `check-browser-access.cjs`, `start-chromium.ps1`, `check-handoff-videos.cjs` |
+| Get Started / Privacy | `verify-get-started-browser.cjs`, `test-get-started.cjs`, `test-discussion-links.cjs` |
 | Контролируемое обновление vendor | `vendor-dependencies.cjs`; запускать только по отдельному заданию, версии библиотек заморожены |
 | Общие функции | `lib/`: разбор HTML, ресурсы, контент, шаблоны, точные исключения приёмки, CSS-сборка и браузерные помощники |
 

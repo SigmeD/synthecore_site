@@ -35,7 +35,7 @@ test('Flowers assets retain source bytes, resources resolve, and other catalog/B
   const url=new URL(value,'http://local/raboty/flowers/');let file=url.pathname.slice(1)||'index.html';if(file.endsWith('/'))file+='index.html';assert.ok(fs.existsSync(path.join(root,file)),value);
   if(url.hash)assert.ok(read(file).includes('id="'+decodeURIComponent(url.hash.slice(1))+'"'),value);
  }
- for(const match of restoreLaterCaseLinks(read('raboty/index.html')).matchAll(/<article class="case-card case-card--([^\"]+)">[\s\S]*?<\/article>/g))if(match[1]!=='flowers')assert.equal(hash(match[0]),audit.catalogArticles[match[1]].baselineSHA256);
- const beauty=restoreLaterCaseLinks(read('raboty/beauty-insight/index.html'));
+ for(const match of restoreLaterCaseLinks(read('raboty/index.html'),'raboty/index.html').matchAll(/<article class="case-card case-card--([^\"]+)">[\s\S]*?<\/article>/g))if(match[1]!=='flowers')assert.equal(hash(match[0]),audit.catalogArticles[match[1]].baselineSHA256);
+ const beauty=restoreLaterCaseLinks(read('raboty/beauty-insight/index.html'),'raboty/beauty-insight/index.html');
  assert.equal(hash(beauty),audit.beauty.baselineSHA256);
 });
