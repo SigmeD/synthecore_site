@@ -20,8 +20,8 @@ test('the existing transitions and glass animation retain bytes outside the exac
  const glass=source=>source.slice(source.indexOf('.sc-work-content {'),source.indexOf('@supports not'));
  assert.equal(glass(read('css/works.css')),glass(originalCSS));
 });
-test('last-card hold extends the existing sticky stage by 30svh without stretching transitions',()=>{
- assert.match(read('css/works.css'),/--works-hold:30svh/);
+test('last-card hold extends the existing sticky stage by 15svh without stretching transitions',()=>{
+ assert.match(read('css/works.css'),/--works-hold:15svh/);
  assert.match(read('css/sticky-handoff-v61.css'),/height:calc\(var\(--works-height\) \+ var\(--sc-works-scroll-length,0px\) \+ var\(--works-hold\)\)/);
  assert.match(read('js/works.js'),/scrollScreensPerCard: 0\.92/);
 });

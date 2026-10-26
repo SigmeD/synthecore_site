@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-26T22:15:48.289Z",
+  "date": "2026-10-26T22:20:55.543Z",
   "base": "http://127.0.0.1:4176/",
   "baseline": "91235aa239d49effb90bde72409d6f6f5db49e7b",
   "checks": [
@@ -355,11 +355,11 @@
       }
     },
     {
-      "name": "1920x1080 last card 30svh hold then natural release",
+      "name": "1920x1080 last card 15svh hold then natural release",
       "pass": true,
       "data": {
         "pinEnd": 7734,
-        "holdDistance": 324,
+        "holdDistance": 162,
         "heldTop": 0,
         "releasedTop": -79.609375
       }
@@ -716,11 +716,11 @@
       }
     },
     {
-      "name": "1440x900 last card 30svh hold then natural release",
+      "name": "1440x900 last card 15svh hold then natural release",
       "pass": true,
       "data": {
         "pinEnd": 6567,
-        "holdDistance": 270,
+        "holdDistance": 135,
         "heldTop": 0,
         "releasedTop": -79.609375
       }
@@ -1077,11 +1077,11 @@
       }
     },
     {
-      "name": "1280x800 last card 30svh hold then natural release",
+      "name": "1280x800 last card 15svh hold then natural release",
       "pass": true,
       "data": {
         "pinEnd": 5946,
-        "holdDistance": 240,
+        "holdDistance": 120,
         "heldTop": 0,
         "releasedTop": -79.609375
       }
@@ -1438,13 +1438,13 @@
       }
     },
     {
-      "name": "390x844 last card 30svh hold then natural release",
+      "name": "390x844 last card 15svh hold then natural release",
       "pass": true,
       "data": {
         "pinEnd": 5220,
-        "holdDistance": 253.2,
-        "heldTop": -0.296875,
-        "releasedTop": -80.296875
+        "holdDistance": 126.6,
+        "heldTop": -0.890625,
+        "releasedTop": -80.890625
       }
     },
     {
@@ -3111,11 +3111,11 @@
       }
     },
     {
-      "name": "classic-1440x900 last card 30svh hold then natural release",
+      "name": "classic-1440x900 last card 15svh hold then natural release",
       "pass": true,
       "data": {
         "pinEnd": 6567,
-        "holdDistance": 270,
+        "holdDistance": 135,
         "heldTop": 0,
         "releasedTop": -79.609375
       }
@@ -3482,13 +3482,13 @@
       }
     },
     {
-      "name": "classic-390x844 last card 30svh hold then natural release",
+      "name": "classic-390x844 last card 15svh hold then natural release",
       "pass": true,
       "data": {
         "pinEnd": 5220,
-        "holdDistance": 253.2,
-        "heldTop": -0.296875,
-        "releasedTop": -80.296875
+        "holdDistance": 126.6,
+        "heldTop": -0.890625,
+        "releasedTop": -80.890625
       }
     },
     {
@@ -7847,7 +7847,7 @@
       "data": {
         "pass": true,
         "elements": 44,
-        "maxGeometryDelta": 0.109,
+        "maxGeometryDelta": 0.484,
         "styleDifferences": 0,
         "contentDifferences": 0
       }
@@ -8219,11 +8219,11 @@
       }
     },
     {
-      "name": "standalone-1440x900 last card 30svh hold then natural release",
+      "name": "standalone-1440x900 last card 15svh hold then natural release",
       "pass": true,
       "data": {
         "pinEnd": 6567,
-        "holdDistance": 270,
+        "holdDistance": 135,
         "heldTop": 0,
         "releasedTop": -79.609375
       }
@@ -8243,7 +8243,7 @@
         "mode": "single-pinned-timeline",
         "itemCount": 6,
         "progress": 0,
-        "firstEntryProgress": 0.09360189573459715,
+        "firstEntryProgress": 0.10071090047393365,
         "firstEntryStart": 494,
         "firstEntryEnd": 1338,
         "pinStart": 1338,
@@ -8252,32 +8252,32 @@
         "cards": [
           {
             "id": "b2b",
-            "top": 765,
-            "scale": 0.9094
+            "top": 759,
+            "scale": 0.9101
           },
           {
             "id": "flowers",
-            "top": 1609,
+            "top": 1603,
             "scale": 0.9
           },
           {
             "id": "crm",
-            "top": 1609,
+            "top": 1603,
             "scale": 0.9
           },
           {
             "id": "beauty",
-            "top": 1609,
+            "top": 1603,
             "scale": 0.9
           },
           {
             "id": "prostor",
-            "top": 1609,
+            "top": 1603,
             "scale": 0.9
           },
           {
             "id": "metal",
-            "top": 1609,
+            "top": 1603,
             "scale": 0.9
           }
         ]
@@ -8588,13 +8588,13 @@
       }
     },
     {
-      "name": "standalone-390x844 last card 30svh hold then natural release",
+      "name": "standalone-390x844 last card 15svh hold then natural release",
       "pass": true,
       "data": {
         "pinEnd": 5220,
-        "holdDistance": 253.2,
-        "heldTop": -0.296875,
-        "releasedTop": -80.296875
+        "holdDistance": 126.6,
+        "heldTop": -0.890625,
+        "releasedTop": -80.890625
       }
     },
     {
@@ -10309,8 +10309,8 @@
         }
       },
       "hold": {
-        "heldTop": -0.296875,
-        "releasedTop": -80.296875
+        "heldTop": -0.890625,
+        "releasedTop": -80.890625
       }
     },
     {
@@ -11161,8 +11161,8 @@
         }
       },
       "hold": {
-        "heldTop": -0.296875,
-        "releasedTop": -80.296875
+        "heldTop": -0.890625,
+        "releasedTop": -80.890625
       }
     }
   ],
@@ -17637,7 +17637,7 @@
       "selector": "#contact",
       "pass": true,
       "elements": 44,
-      "maxGeometryDelta": 0.109,
+      "maxGeometryDelta": 0.484,
       "styleDifferences": 0,
       "contentDifferences": 0
     }
@@ -18082,7 +18082,7 @@
         "mode": "single-pinned-timeline",
         "itemCount": 6,
         "progress": 0,
-        "firstEntryProgress": 0.09360189573459715,
+        "firstEntryProgress": 0.10071090047393365,
         "firstEntryStart": 494,
         "firstEntryEnd": 1338,
         "pinStart": 1338,
@@ -18091,32 +18091,32 @@
         "cards": [
           {
             "id": "b2b",
-            "top": 765,
-            "scale": 0.9094
+            "top": 759,
+            "scale": 0.9101
           },
           {
             "id": "flowers",
-            "top": 1609,
+            "top": 1603,
             "scale": 0.9
           },
           {
             "id": "crm",
-            "top": 1609,
+            "top": 1603,
             "scale": 0.9
           },
           {
             "id": "beauty",
-            "top": 1609,
+            "top": 1603,
             "scale": 0.9
           },
           {
             "id": "prostor",
-            "top": 1609,
+            "top": 1603,
             "scale": 0.9
           },
           {
             "id": "metal",
-            "top": 1609,
+            "top": 1603,
             "scale": 0.9
           }
         ]
@@ -18498,8 +18498,8 @@
         }
       },
       "hold": {
-        "heldTop": -0.296875,
-        "releasedTop": -80.296875
+        "heldTop": -0.890625,
+        "releasedTop": -80.890625
       }
     }
   ],

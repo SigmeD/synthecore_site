@@ -30,7 +30,7 @@ test('geometry reversal refuses changed dimensions, glass, Hero, neighbors, extr
   ['css/main.css','74.2svh','74.3svh'],
   ['css/main.css','--hero-edge:clamp(12px,1vw,18px)','--hero-edge:clamp(13px,1vw,18px)'],
   ['css/main.css','#f9fcff','#f9fcfe'],
-  ['css/works.css','--works-hold:30svh','--works-hold:49svh'],
+  ['css/works.css','--works-hold:15svh','--works-hold:49svh'],
   ['css/works.css','max-width:100%','max-width:99%'],
   ['css/works.css','backdrop-filter:','backdrop-filter:none;--changed:'],
   ['css/sticky-handoff-v61.css','var(--works-hold)','51svh'],
@@ -73,7 +73,7 @@ test('Git index checks use index CSS and bundle bytes and reject unauthorized in
   assert.equal(verify().pass,true,'original ref remains valid');
   for(const file of [...files,'css/generated/home.css'])stage(file,read(file));
   let result=verify();assert.equal(result.pass,true,JSON.stringify(result));assert.equal(result.rawMotionFiles,13);assert.equal(result.approvedGeometryFiles,4);assert.equal(result.compiledHomeCSSMatches,true);
-  stage('css/works.css',Buffer.from(read('css/works.css').toString().replace('--works-hold:30svh','--works-hold:49svh')));
+  stage('css/works.css',Buffer.from(read('css/works.css').toString().replace('--works-hold:15svh','--works-hold:49svh')));
   result=verify();assert.equal(result.pass,false);assert.ok(result.failures.some(f=>f.includes('css/works.css')));assert.equal(result.compiledHomeCSSMatches,false);
   stage('css/works.css',read('css/works.css'));stage('css/generated/home.css',original('css/generated/home.css'));
   result=verify();assert.equal(result.pass,false);assert.equal(result.compiledHomeCSSMatches,false);

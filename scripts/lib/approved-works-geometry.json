@@ -43,7 +43,7 @@
     "patches": [
       [
         "  --works-gutter:clamp(14px,1vw,28px);\n  --works-padding:clamp(10px,0.8vw,16px);\n  --works-radius:clamp(17px,1.25vw,28px);\n  --works-aspect:2.75268817;\n  --works-width:min(\n    calc(100vw - 2 * var(--works-gutter) - 2 * var(--works-padding)),\n    calc((100svh - 2 * var(--works-padding) - 24px) * var(--works-aspect))\n  );\n  --works-height:calc(var(--works-width) / var(--works-aspect));",
-        "  --works-gutter:var(--hero-edge);\n  --works-radius:var(--hero-surface-radius);\n  --works-height:var(--hero-used-height,var(--hero-surface-height));\n  --works-hold:30svh;"
+        "  --works-gutter:var(--hero-edge);\n  --works-radius:var(--hero-surface-radius);\n  --works-height:var(--hero-used-height,var(--hero-surface-height));\n  --works-hold:15svh;"
       ],
       [
         ".sc-works--timeline {height:calc(var(--works-height) + 2 * var(--works-padding))}",

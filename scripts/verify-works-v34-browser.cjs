@@ -47,10 +47,10 @@ async function cards(page,label,shots=false) {
  await scroll(page,s.pinEnd);await scroll(page,mid);const reverse=await measure(page,2);
  const expectedScale=page.viewportSize().width<=480?.95:.9425;
  check(label+' forward/reverse midpoint scale and glass',Math.abs(forward.frame.scale-expectedScale)<.002&&Math.abs(reverse.frame.scale-forward.frame.scale)<.001&&Math.abs(forward.frame.y-page.viewportSize().height/2)<1&&forward.caption.glassY===reverse.caption.glassY&&forward.caption.glassGlint===reverse.caption.glassGlint,{forward:{scale:forward.frame.scale,top:forward.frame.y,glassY:forward.caption.glassY,glassGlint:forward.caption.glassGlint},reverse:{scale:reverse.frame.scale,top:reverse.frame.y,glassY:reverse.caption.glassY,glassGlint:reverse.caption.glassGlint}});
- const hold=page.viewportSize().height*.3;
+ const hold=page.viewportSize().height*.15;
  await scroll(page,s.pinEnd+hold);const held=await measure(page,5);
  await scroll(page,s.pinEnd+hold+80);const released=await measure(page,5);
- check(label+' last card 30svh hold then natural release',Math.abs(held.frame.y)<=1&&Math.abs(released.frame.y+80)<=1,{pinEnd:s.pinEnd,holdDistance:hold,heldTop:held.frame.y,releasedTop:released.frame.y});
+ check(label+' last card 15svh hold then natural release',Math.abs(held.frame.y)<=1&&Math.abs(released.frame.y+80)<=1,{pinEnd:s.pinEnd,holdDistance:hold,heldTop:held.frame.y,releasedTop:released.frame.y});
  return {label,initial,measurements,midpoint:{forward:{scale:forward.frame.scale,top:forward.frame.y,glassY:forward.caption.glassY,glassGlint:forward.caption.glassGlint},reverse:{scale:reverse.frame.scale,top:reverse.frame.y,glassY:reverse.caption.glassY,glassGlint:reverse.caption.glassGlint}},hold:{heldTop:held.frame.y,releasedTop:released.frame.y}};
 }
 async function sectionSnapshot(page,selector) {return page.locator(selector).evaluate(root=>{
