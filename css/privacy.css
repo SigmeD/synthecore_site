@@ -1,5 +1,5 @@
 /* Privacy policy: isolated styling, shared site typography, background, header/footer. */
-body.sc-privacy-page {font-family:var(--sc-font-ui,Manrope,sans-serif);}
+body.sc-privacy-page > main {font-family:var(--sc-font-ui,Manrope,sans-serif);}
 body.sc-privacy-page .sc-privacy .works-surface {min-height:100svh;padding:clamp(125px,10vw,165px) 26px 105px;}
 body.sc-privacy-page .works-surface__content {width:100%;}
 .sc-privacy__content {width:min(930px,100%);margin:0 auto;position:relative;z-index:1;}

@@ -6,6 +6,7 @@ const {createBrowserQA}=require('./lib/browser-qa.cjs');
 const base=process.env.SYNTHECORE_QA_BASE||'http://127.0.0.1:4176/';
 const dir=path.join(process.cwd(),'output/playwright/get-started-v4.9.2');
 const carouselOnly=process.argv.includes('--carousel-only');
+const shellOnly=process.argv.includes('--shell-only');
 fs.mkdirSync(dir,{recursive:true});
 const report={version:'4.9.2',base,createdAt:new Date().toISOString(),checks:[],errors:[],viewports:[],reference:[],cta:[],limitations:[
  'Browser automation verifies wheel/touch response; it does not establish physical mouse/trackpad smoothness.',
@@ -124,9 +125,35 @@ async function scrollbarChecks(browser){
   await ctx.close();
  }
 }
+async function shellTypography(browser){
+ const selectors=['#floatingHeader','#floatingHeader .brand-name','#floatingHeader .brand-note','#floatingHeader .header-links','#floatingHeader > .nav-cta','#contact .brand-name'];
+ const metrics=page=>page.evaluate(selectors=>Object.fromEntries(selectors.map(selector=>{
+  const e=document.querySelector(selector),s=getComputedStyle(e),r=e.getBoundingClientRect();
+  return[selector,{fontFamily:s.fontFamily,fontSize:s.fontSize,fontWeight:s.fontWeight,letterSpacing:s.letterSpacing,lineHeight:s.lineHeight,width:r.width,height:r.height}];
+ })),selectors);
+ for(const width of [320,390,768,1024,1440,2560])for(const reducedMotion of ['reduce','no-preference']){
+  const key=width+'-'+reducedMotion,ctx=await browser.newContext({viewport:{width,height:1000},reducedMotion});
+  const page=await ctx.newPage();watch(page,'shell '+key);await goto(page,url('/raboty/'));
+  const expected=await metrics(page);
+  for(const route of ['/get-started/','/privacy/']){
+   await goto(page,url(route));const actual=await metrics(page);
+   for(const selector of selectors){
+    const before=expected[selector],after=actual[selector];
+    check(key+route+' shared shell typography '+selector,Object.keys(before).every(property=>typeof before[property]==='number'?Math.abs(before[property]-after[property])<0.1:before[property]===after[property]),{expected:before,actual:after});
+   }
+   check(key+route+' content retains Manrope',await page.locator('main').evaluate(e=>getComputedStyle(e).fontFamily.startsWith('Manrope')));
+   if(reducedMotion==='reduce'&&[390,1440].includes(width)){
+    if(route==='/get-started/')await compareReference(page,ctx,width);
+    await page.screenshot({path:path.join(dir,(route==='/privacy/'?'privacy':'get-started')+'-'+width+'.png')});
+   }
+  }
+  await ctx.close();console.log('Shell '+key);
+ }
+}
 (async()=>{
  const browser=await chromium.launch({headless:true});let completed=false;
  try{
+  if(shellOnly){await shellTypography(browser);completed=true;return;}
   if(carouselOnly){
    for(const width of [1440,2560])for(const reducedMotion of ['reduce','no-preference']){
     const key=width+'-'+reducedMotion,ctx=await browser.newContext({viewport:{width,height:1000},reducedMotion});await instrument(ctx);const page=await ctx.newPage();watch(page,key);await goto(page,url('/get-started/'));await eager(page);await carousel(page,ctx,key,width,reducedMotion==='reduce');await ctx.close();console.log('Carousel rerun '+key);
@@ -176,8 +203,8 @@ async function scrollbarChecks(browser){
    await goto(page,url('/get-started/'));await eager(page);const a=page.locator(original+' a').nth(i);await a.focus();await a.locator(i%2?'h2,h3':'.case-card__image').click();await page.waitForURL('**'+catalog[i].href);await page.waitForLoadState('networkidle');await eager(page);check('carousel actual '+(i%2?'title':'image')+' click '+catalog[i].href,await page.locator('#caseTitle').isVisible()&&!await page.locator('#caseDialog[open]').count());
   }
   await goto(page,url('/raboty/'));await eager(page);const ctaPopupWait=ctx.waitForEvent('page');await page.locator('#floatingHeader > .nav-cta').click({modifiers:['Control']});const ctaPopup=await ctaPopupWait;await ctaPopup.waitForURL('**/get-started/');await ctaPopup.waitForLoadState('networkidle');const ctaPopupPass=new URL(ctaPopup.url()).pathname==='/get-started/'&&new URL(page.url()).pathname==='/raboty/';check('Header CTA Ctrl-click opens form new tab',ctaPopupPass);report.cta.push({route:'/raboty/',selector:'#floatingHeader > .nav-cta',source:'templates/partials/header.html',href:'/get-started/',activation:'Ctrl-click',result:ctaPopup.url(),pass:ctaPopupPass});await ctaPopup.close();
-  await ctx.close();completed=true;
+  await ctx.close();await shellTypography(browser);completed=true;
  }finally{
-  await browser.close();check('all scenarios completed',completed);check('no browser JavaScript / HTTP / resource errors',report.errors.length===0,report.errors);report.pass=report.checks.every(c=>c.pass);fs.writeFileSync(path.join(dir,carouselOnly?'carousel-report.json':'report.json'),JSON.stringify(report,null,2)+'\n');console.log(report.checks.filter(c=>c.pass).length+'/'+report.checks.length+' passed; '+report.cta.length+' CTA activations');if(!report.pass)process.exitCode=1;
+  await browser.close();check('all scenarios completed',completed);check('no browser JavaScript / HTTP / resource errors',report.errors.length===0,report.errors);report.pass=report.checks.every(c=>c.pass);fs.writeFileSync(path.join(dir,shellOnly?'shell-report.json':carouselOnly?'carousel-report.json':'report.json'),JSON.stringify(report,null,2)+'\n');console.log(report.checks.filter(c=>c.pass).length+'/'+report.checks.length+' passed; '+report.cta.length+' CTA activations');if(!report.pass)process.exitCode=1;
  }
 })().catch(e=>{console.error(e);process.exitCode=1});
