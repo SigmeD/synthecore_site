@@ -5,6 +5,7 @@ const fs=require('node:fs');
 const path=require('node:path');
 const {restoreV27CatalogCopy}=require('./lib/approved-catalog-naming.cjs');
 const {restoreV27ButtonShadows}=require('./lib/approved-button-shadows.cjs');
+const {restoreWorksGeometry}=require('./lib/approved-works-geometry.cjs');
 const root=path.resolve(__dirname,'..');
 const read=file=>fs.readFileSync(path.join(root,file),'utf8').replace(/\r\n/g,'\n');
 
@@ -112,13 +113,13 @@ test('local Manrope distributions match the recorded hashes',async()=>{
  assert.equal(await verifyManifest(root,'docs/font-manifest.json'),4);
 });
 
-test('combined build preserves v62 motion bytes/content and the owner-selected v27 shell',()=>{
+test('combined build preserves 13 raw motion files, 4 exact geometry exceptions, v62 content and the v27 shell',()=>{
  const crypto=require('node:crypto');
  const sources=JSON.parse(read('docs/V62_ON_V27_SOURCES.json'));
  const hash=data=>crypto.createHash('sha256').update(data).digest('hex');
  assert.equal(Object.keys(sources.motion).length,17);
  for(const [file,expected] of Object.entries(sources.motion)) {
-  assert.equal(hash(fs.readFileSync(path.join(root,file))),expected,`protected v62 bytes: ${file}`);
+  assert.equal(hash(restoreWorksGeometry(file,fs.readFileSync(path.join(root,file)))),expected,`v62 bytes after exact approved geometry reversal: ${file}`);
  }
  for(const [file,expected] of Object.entries(sources.v27)) {
   const data=fs.readFileSync(path.join(root,file));

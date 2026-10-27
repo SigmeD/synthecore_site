@@ -3,15 +3,10 @@
    Reduced-motion / no-JS: all six Works cards render in ordinary flow. */
 .sc-services-anchor {height:0;scroll-margin-top:20px}
 .sc-works {
-  --works-gutter:clamp(14px,1vw,28px);
-  --works-padding:clamp(10px,0.8vw,16px);
-  --works-radius:clamp(17px,1.25vw,28px);
-  --works-aspect:2.75268817;
-  --works-width:min(
-    calc(100vw - 2 * var(--works-gutter) - 2 * var(--works-padding)),
-    calc((100svh - 2 * var(--works-padding) - 24px) * var(--works-aspect))
-  );
-  --works-height:calc(var(--works-width) / var(--works-aspect));
+  --works-gutter:var(--hero-edge);
+  --works-radius:var(--hero-surface-radius);
+  --works-height:var(--hero-used-height,var(--hero-surface-height));
+  --works-hold:0svh;
   position:relative;
   width:100%;background:#fff;
   isolation:isolate;
@@ -21,17 +16,17 @@
 /* Scene height matches the visible frame. The stack MUST NOT clip: GSAP starts
    incoming cards below the viewport (y: innerHeight), not the stage. Keeping
    overflow visible preserves the bottom-of-screen entry on wide screens. */
-.sc-works--timeline {height:calc(var(--works-height) + 2 * var(--works-padding))}
+.sc-works--timeline {height:var(--works-height)}
 .sc-works--timeline .sc-works-stack {height:100%;overflow:visible;display:block}
 .sc-works--timeline .sc-work-item {
   position:absolute;top:0;left:var(--works-gutter);right:var(--works-gutter);
   width:auto;height:100%;min-height:0;display:block;
-  margin:0;padding:var(--works-padding);will-change:transform;
+  margin:0;padding:0;will-change:transform;
 }
 .sc-works--timeline .sc-work-item {z-index:var(--sc-work-layer,1)}
 .sc-work-frame {
   position:relative;display:block;overflow:hidden;
-  width:var(--works-width);height:var(--works-height);
+  width:100%;max-width:100%;height:var(--works-height);
   margin-inline:auto;border-radius:var(--works-radius);
   isolation:isolate;background:#d5d8db;
   transform:scale(1);transform-origin:50% 0%;
@@ -43,7 +38,7 @@
 .sc-works:not(.sc-works--timeline) .sc-work-item{
   position:relative;top:auto;z-index:auto;width:calc(100% - 2*var(--works-gutter));
   height:auto;min-height:var(--works-height);flex:none;
-  margin:0 auto;padding:var(--works-padding);pointer-events:auto;
+  margin:0 auto;padding:0;pointer-events:auto;
 }
 .sc-work-media {position:absolute;inset:0;pointer-events:none}
 .sc-work-media {z-index:1;overflow:hidden}
@@ -99,14 +94,12 @@
 /* Video assets can replace images without changing the pinned-stage layout. */
 .sc-work-media video{display:block;width:100%;height:100%;object-fit:cover}
 @media(max-width:850px){
-  .sc-works{--works-gutter:0px;--works-padding:10px;--works-width:calc(100vw - 20px);--works-height:calc(87svh - 20px)}
   .sc-work-media img{object-position:59% center}
   .sc-work-content{left:22px;bottom:24px;max-width:calc(100% - 44px);padding:24px 23px;transform:none}
   .sc-work-content__title{font-size:clamp(30px,6vw,46px)}
   .sc-work-content__description{font-size:15px}
 }
 @media(max-width:480px){
-  .sc-works{--works-height:calc(82svh - 20px);--works-radius:20px}
   .sc-work-media img{object-position:60% center}
   .sc-work-content{left:19px;bottom:21px;max-width:calc(100% - 38px);padding:20px 19px;border-radius:21px;transform:none}
   .sc-work-content__title{font-size:clamp(28px,7vw,35px);margin-bottom:9px}

@@ -9,11 +9,11 @@
   position:sticky;top:0;z-index:1;
 }
 .sc-works.sc-works--timeline {
-  height:calc(var(--works-height) + 2 * var(--works-padding) + var(--sc-works-scroll-length,0px));
+  height:calc(var(--works-height) + var(--sc-works-scroll-length,0px) + var(--works-hold));
 }
 .sc-works.sc-works--timeline .sc-works-stack {
   position:sticky;top:0;
-  height:calc(var(--works-height) + 2 * var(--works-padding));
+  height:var(--works-height);
 }
 .sc-services.sc-services--pinned {
   height:calc(100svh + var(--sc-services-scroll-length,0px));
